@@ -96,7 +96,8 @@ export default async function SiteFooter() {
                                 </a>
                             </li>
                             <li>
-                                <a href="type:email" dir="ltr" className="hover:text-blue-600 transition-colors">
+                                {t.has('email') && <span className="font-bold text-slate-700">{t('email')}: </span>}
+                                <a href="mailto:info@reviumtech.com" dir="ltr" className="hover:text-blue-600 transition-colors">
                                     info@reviumtech.com
                                 </a>
                             </li>
