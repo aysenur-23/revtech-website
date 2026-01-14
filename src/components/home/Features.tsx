@@ -50,7 +50,7 @@ export default function Features() {
     ];
 
     return (
-        <section aria-labelledby="features-heading" className="relative bg-white overflow-hidden pt-12 pb-0 lg:pt-24 lg:pb-0">
+        <section aria-labelledby="features-heading" className="relative bg-white overflow-hidden pt-12 pb-12 lg:pt-24 lg:pb-24">
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
                 <div className="text-center space-y-8 mb-8 lg:mb-12">
                     <h2

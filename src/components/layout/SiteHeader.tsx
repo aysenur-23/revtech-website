@@ -26,7 +26,7 @@ const productCategories = [
         products: [
             { slug: 'revium-hilux-power-pack', name: { tr: 'Hilux Güç Paketi', en: 'Hilux Power Pack', ar: 'حزمة طاقة هايلكس' }, image: '/images/products/hilux-21-6kwh-1.png' },
             { slug: 'revium-voltwagon', name: { tr: 'VoltWagon', en: 'VoltWagon', ar: 'VoltWagon' }, image: '/images/products/solar-voltwagon.png' },
-            { slug: 'revium-unimog', name: { tr: 'Unimog Güç Paketi', en: 'Unimog Power Pack', ar: 'Unimog Power Pack' }, image: '/images/products/unimog-200kwh-1.jpg' },
+            { slug: 'revium-unimog', name: { tr: 'Unimog Güç Paketi', en: 'Unimog Power Pack', ar: 'Unimog Power Pack' }, image: '/images/products/vehicle-category-new.jpg' },
         ]
     },
     {
@@ -211,10 +211,7 @@ export default function SiteHeader() {
                                                 <h3 className="text-[13px] font-bold text-neutral-800 uppercase tracking-wide mb-4">
                                                     {productCategories[activeProductCategory].name[locale]}
                                                 </h3>
-                                                <div className={cn(
-                                                    "grid gap-3",
-                                                    activeProductCategory === 2 ? "grid-cols-5" : "grid-cols-4"
-                                                )}>
+                                                <div className="grid grid-cols-4 gap-3">
                                                     {productCategories[activeProductCategory].products.map((product) => (
                                                         <Link
                                                             key={product.slug}
