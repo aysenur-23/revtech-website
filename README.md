@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Revium Tech Website
 
-## Getting Started
+This is the official website for **Revium Tech**, built with **Next.js 14**, **Tailwind CSS**, and **next-intl** for internationalization.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern UI/UX**: Premium design with glassmorphism, gradients, and micro-animations.
+- **Responsive & Adaptive**: Fully optimized for mobile, tablet, and desktop devices.
+- **Multilingual Support**: Native support for **English (en)**, **Turkish (tr)**, and **Arabic (ar)** with RTL layout adjustments.
+- **Dynamic Product Pages**: Catalog system with detailed specifications, galleries, and filtering.
+- **Functional Forms**: Integrated "Contact" and "Get a Quote" forms powered by **Nodemailer** (SMTP).
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/aysenur-23/revtech-website.git
+cd revtech-website
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment
+Create a `.env.local` file in the root directory and add your SMTP credentials to enable email functionality:
+
+```env
+SMTP_HOST=smtp.hostinger.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=aysenuraslan@reviumtech.com
+SMTP_PASS=YOUR_PASSWORD_HERE
+SMTP_FROM_EMAIL=aysenuraslan@reviumtech.com
+SMTP_TO_EMAIL=info@reviumtech.com
+```
+
+### 4. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **`src/app`**: Next.js App Router structure (Pages & API routes).
+- **`src/components`**: Reusable UI components (Hero, Services, Products, etc.).
+- **`messages`**: Translation JSON files for i18n (`en.json`, `tr.json`, `ar.json`).
+- **`public`**: Static assets (images, logos).
 
-## Learn More
+## 📦 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
+- **Email**: Nodemailer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 Revium Tech. All rights reserved.
