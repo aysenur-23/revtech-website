@@ -55,7 +55,7 @@ export default function Services() {
                     <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full opacity-20" />
                 </div>
                 {/* Services Grid */}
-                <div className="flex flex-wrap justify-center items-center gap-8 max-w-5xl mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
                     {services.map((service, index) => (
                         <AnimatedServiceCard
                             key={service.slug}
@@ -95,7 +95,7 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
             ref={cardRef}
             href={`/${locale}/hizmetlerimiz/${service.slug}/`}
             className={cn(
-                "group relative aspect-[1.35/1] w-full md:w-[400px] flex flex-col overflow-hidden rounded-3xl border border-slate-100 shadow-sm transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform",
+                "group relative aspect-[1.35/1] flex flex-col overflow-hidden rounded-3xl border border-slate-100 shadow-sm transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform",
                 isVisible
                     ? "opacity-100 translate-y-0 translate-x-0 scale-100"
                     : cn(
