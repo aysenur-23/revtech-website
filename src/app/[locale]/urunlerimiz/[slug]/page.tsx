@@ -413,6 +413,29 @@ function translateLabel(label: string, locale: string): string {
         'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة LED' },
         'TV + Modem': { en: 'TV + Modem', ar: 'تلفزيون + مودم' },
         'Genel Ev': { en: 'General Home', ar: 'المنزل العام' },
+        // Usage Areas
+        'Kamp': { en: 'Camping', ar: 'تخييم' },
+        'Acil Durum': { en: 'Emergency', ar: 'طوارئ' },
+        'Saha Çalışması': { en: 'Field Work', ar: 'عمل ميداني' },
+        'Zorlu Arazi': { en: 'Rugged Terrain', ar: 'تضاريس وعرة' },
+        'Endüstriyel Saha': { en: 'Industrial Site', ar: 'موقع صناعي' },
+        'Ev Depolama': { en: 'Home Storage', ar: 'تخزين منزلي' },
+        'Yedek Güç': { en: 'Backup Power', ar: 'طاقة احتياطية' },
+        'Mobil Ev': { en: 'Mobile Home', ar: 'منزل متنقل' },
+        'Atölye': { en: 'Workshop', ar: 'ورشة عمل' },
+        'Otopark': { en: 'Parking', ar: 'موقف سيارات' },
+        'AVM': { en: 'Mall', ar: 'مركز تسوق' },
+        'Solar Park': { en: 'Solar Park', ar: 'حديقة شمسية' },
+        'Araç Üstü': { en: 'Vehicle Mounted', ar: 'محمول على مركبة' },
+        'Mobil İstasyon': { en: 'Mobile Station', ar: 'محطة متنقلة' },
+        'Veri Merkezi': { en: 'Data Center', ar: 'مركز بيانات' },
+        'Şebeke': { en: 'Grid', ar: 'شبكة' },
+        'Büyük Tesis': { en: 'Large Facility', ar: 'منشأة كبيرة' },
+        'Off-grid': { en: 'Off-grid', ar: 'خارج الشبكة' },
+        'Mobil Şarj': { en: 'Mobile Charging', ar: 'شحن متنقل' },
+        'Askeri Saha': { en: 'Military Field', ar: 'ميدان عسكري' },
+        'Tesisler': { en: 'Facilities', ar: 'مرافق' },
+        'Şebeke Destek': { en: 'Grid Support', ar: 'دعم الشبكة' },
     };
 
     let result = label;
@@ -625,14 +648,16 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {locale === 'en' ? 'Device-Based Runtime' : locale === 'ar' ? 'مدة التشغيل حسب الجهاز' : 'Cihaz Bazlı Çalışma Süreleri'}
                                 </h2>
                                 <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                                    {locale === 'en' && product.runtimeSummary
-                                        ? product.runtimeSummary
-                                            .replace('taşınabilir güç paketleri', 'portable power packs')
-                                            .replace('modelinde bir hiltiyi', 'model can power a hammer drill for')
-                                            .replace('bir evi ise', 'and a home for')
-                                            .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
-                                            .replace(/saat/gi, 'hours')
-                                        : product.runtimeSummary}
+                                    {tDetail.has(`products.${slug}.runtimeSummary`)
+                                        ? tDetail(`products.${slug}.runtimeSummary`)
+                                        : locale === 'en' && product.runtimeSummary
+                                            ? product.runtimeSummary
+                                                .replace('taşınabilir güç paketleri', 'portable power packs')
+                                                .replace('modelinde bir hiltiyi', 'model can power a hammer drill for')
+                                                .replace('bir evi ise', 'and a home for')
+                                                .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
+                                                .replace(/saat/gi, 'hours')
+                                            : product.runtimeSummary}
                                 </p>
                             </div>
 
@@ -811,7 +836,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     </div>
                                                 </div>
                                                 <span className="text-xs sm:text-sm md:text-base text-neutral-700 font-medium group-hover:text-neutral-900 transition-colors duration-300">
-                                                    {area.label}
+                                                    {translateLabel(area.label, locale)}
                                                 </span>
                                             </div>
                                         );
@@ -890,10 +915,10 @@ export default async function ProductDetailPage({ params }: Props) {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
                             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
-                                {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : 'More Information'}
+                                {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : locale === 'ar' ? 'مزيد من المعلومات حول' : 'More Information About'}
                             </h2>
                             <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
-                                {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : 'Contact our expert team for detailed information or to request a quote for this product'}
+                                {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : locale === 'ar' ? 'اتصل بفريق خبرائنا للحصول على معلومات مفصلة أو طلب عرض سعر لهذا المنتج' : 'Contact our expert team for detailed information or to request a quote for this product'}
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                                 <Link
@@ -907,7 +932,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     href={`/${locale}/iletisim/`}
                                     className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
-                                    <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : 'Expert Consultation'}</span>
+                                    <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'ar' ? 'استشارة الخبراء' : 'Expert Consultation'}</span>
                                 </Link>
                             </div>
                         </div>
