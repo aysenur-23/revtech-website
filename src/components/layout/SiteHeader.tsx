@@ -26,6 +26,7 @@ const productCategories = [
         products: [
             { slug: 'revium-hilux-power-pack', name: { tr: 'Hilux Güç Paketi', en: 'Hilux Power Pack', ar: 'حزمة طاقة هايلكس' }, image: '/images/products/hilux-21-6kwh-1.png' },
             { slug: 'revium-voltwagon', name: { tr: 'VoltWagon', en: 'VoltWagon', ar: 'VoltWagon' }, image: '/images/products/solar-voltwagon.png' },
+            { slug: 'revium-unimog', name: { tr: 'Unimog Güç Paketi', en: 'Unimog Power Pack', ar: 'Unimog Power Pack' }, image: '/images/products/unimog-200kwh-1.jpg' },
         ]
     },
     {
@@ -33,7 +34,6 @@ const productCategories = [
         name: { tr: 'KABİN TİPİ GÜÇ PAKETLERİ', en: 'CABINET POWER PACKS', ar: 'حزم طاقة الخزانة' },
         icon: Zap,
         products: [
-            { slug: 'revium-storage-battery', name: { tr: 'Storage Battery', en: 'Storage Battery', ar: 'بطارية التخزين' }, image: '/images/products/stack-21-6kwh-1.png' },
             { slug: 'revium-power-cabinet', name: { tr: 'Güç Kabini', en: 'Power Cabinet', ar: 'خزانة الطاقة' }, image: '/images/products/cabin-power.png' },
             { slug: 'revium-power-layer', name: { tr: 'Güç Katmanı', en: 'Power Layer', ar: 'طبقة الطاقة' }, image: '/images/products/stack-21-6kwh-1.png' },
             { slug: 'revium-gridpack', name: { tr: 'Gridpack', en: 'Gridpack', ar: 'Gridpack' }, image: '/images/products/gridpack-100.png' },
