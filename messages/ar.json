@@ -104,7 +104,10 @@
         "vehiclePower": "حزم طاقة المركبات",
         "gesInstallation": "تركيب الطاقة الشمسية",
         "industrialInstallation": "التركيب الصناعي",
-        "getDirections": "احصل على الاتجاهات"
+        "getDirections": "احصل على الاتجاهات",
+        "corporate": "من نحن",
+        "getQuote": "احصل على عرض سعر",
+        "gesProducts": "منتجات الطاقة الشمسية"
     },
     "hero": {
         "title1": "نعيد تعريف",

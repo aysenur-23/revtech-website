@@ -92,7 +92,7 @@ export default async function SiteFooter() {
                         <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-neutral-600">
                             <li>
                                 <a href="tel:+905518291613" className="hover:text-blue-600 transition-colors">
-                                    +90 (551) 829-1613
+                                    {locale === 'ar' ? '+٩٠ (٥٥١) ٨٢٩-١٦١٣' : '+90 (551) 829-1613'}
                                 </a>
                             </li>
                             <li>
@@ -123,7 +123,11 @@ export default async function SiteFooter() {
                 {/* Copyright */}
                 <div className="mt-8 sm:mt-10 border-t border-neutral-200 pt-4 sm:pt-6 text-xs text-neutral-600">
                     <p className="text-center">
-                        © {currentYear} Revium — {t('copyright')}
+                        © {
+                            locale === 'ar'
+                                ? String(currentYear).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[parseInt(d)])
+                                : currentYear
+                        } Revium — {t('copyright')}
                     </p>
                 </div>
             </div>

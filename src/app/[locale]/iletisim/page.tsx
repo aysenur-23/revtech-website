@@ -54,7 +54,7 @@ export default function Iletisim() {
         {
             icon: Phone,
             title: t('phone'),
-            value: '+90 (551) 829-1613',
+            value: locale === 'ar' ? '+٩٠ (٥٥١) ٨٢٩-١٦١٣' : '+90 (551) 829-1613',
             href: 'tel:+905518291613',
             color: 'text-blue-600',
             bg: 'bg-blue-50'
@@ -89,7 +89,7 @@ export default function Iletisim() {
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
                             <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
                             <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
-                                {locale === 'tr' ? 'İletişim' : 'Contact'}
+                                {locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact'}
                             </span>
                         </div>
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">

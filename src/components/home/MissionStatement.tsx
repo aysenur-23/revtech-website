@@ -55,7 +55,7 @@ export default function MissionStatement() {
                 <div className="text-center space-y-12">
                     <div className="space-y-6">
                         <span className="text-blue-600 font-bold tracking-widest text-xs uppercase block">
-                            {locale === 'tr' ? 'VİZYONUMUZ' : 'OUR VISION'}
+                            {locale === 'tr' ? 'VİZYONUMUZ' : locale === 'ar' ? 'رؤيتنا' : 'OUR VISION'}
                         </span>
 
                         {/* Typewriter Text Container */}
