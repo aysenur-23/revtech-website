@@ -117,7 +117,7 @@ export default function PortablePower() {
                                 <div className="relative group">
                                     {/* Watermark Logo - Behind */}
                                     <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none opacity-20 select-none overflow-visible">
-                                        <div className="w-[120%] h-[120%] relative">
+                                        <div className="w-[150%] h-[150%] relative">
                                             <Image
                                                 src="/favicon.png"
                                                 alt=""
