@@ -198,6 +198,7 @@ export default function Iletisim() {
                                             href={method.href}
                                             target={method.icon === MapPin ? "_blank" : undefined}
                                             rel={method.icon === MapPin ? "noopener noreferrer" : undefined}
+                                            dir={method.icon === MapPin ? undefined : "ltr"}
                                             className="text-[17px] font-bold text-slate-900 hover:text-blue-600 transition-colors"
                                         >
                                             {method.value}
