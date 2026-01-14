@@ -52,10 +52,7 @@ export default function Features() {
     return (
         <section aria-labelledby="features-heading" className="relative bg-white overflow-hidden pt-10 pb-0 lg:pt-20 lg:pb-0">
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
-                <div className="text-center space-y-4 mb-8 lg:mb-12">
-                    <span className="text-blue-600 font-bold tracking-widest text-xs uppercase block">
-                        {locale === 'tr' ? 'NEDEN REVIUM?' : 'WHY REVIUM?'}
-                    </span>
+                <div className="text-center space-y-8 mb-8 lg:mb-12">
                     <h2
                         id="features-heading"
                         className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight"

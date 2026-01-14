@@ -96,7 +96,7 @@
       "portable": "Taşınabilir Güç Paketleri",
       "vehicle": "Araç Tipi Güç Paketleri",
       "cabin": "Kabin Tipi Güç Paketleri",
-      "ges": "GES Ürünleri",
+      "ges": "Solar Ürünler",
       "industrial": "Endüstriyel Sistemler",
       "special": "Özel Çözümler",
       "other": "Diğer"
@@ -149,7 +149,7 @@
     "portablePower": "Taşınabilir Güç Paketleri",
     "cabinPower": "Kabin Tipi Güç Paketleri",
     "vehiclePower": "Araç Tipi Güç Paketleri",
-    "gesProducts": "GES Ürünleri",
+    "gesProducts": "Solar Ürünler",
     "gesInstallation": "GES Kurulumu",
     "industrialInstallation": "Endüstriyel Kurulum",
     "getDirections": "Yol Tarifi Al",

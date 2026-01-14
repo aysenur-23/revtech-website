@@ -43,15 +43,12 @@ export default function Services() {
 
     return (
         <section className="py-8 lg:py-12 bg-white overflow-hidden" id="services-section">
-            <div className="container px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Section Header */}
                 <div className={cn(
                     "text-center max-w-3xl mx-auto mb-8 lg:mb-10 transition-all duration-1000 ease-out transform",
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )} ref={headerRef}>
-                    <span className="text-blue-600 font-bold tracking-widest text-xs uppercase mb-4 block">
-                        {t('subtitle')}
-                    </span>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-6">
                         {t('title')}
                     </h2>
