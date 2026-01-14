@@ -618,7 +618,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 {tDetail('labels.technicalSpecs') || 'Özellikler'}
                             </h2>
                             <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
-                                {localizedName} {locale === 'tr' ? 'ürününün teknik özellikleri ve avantajları' : 'technical specifications and advantages'}
+                                {locale === 'tr' ? `${localizedName} ürününün teknik özellikleri ve avantajları` : locale === 'ar' ? `المواصفات الفنية والمزايا لـ ${localizedName}` : `${localizedName} technical specifications and advantages`}
                             </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -672,7 +672,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <div className="p-3 rounded-2xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
                                                         <Icon className="w-6 h-6 text-blue-600" />
                                                     </div>
-                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{stat.power}</div>
+                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{stat.power.replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <h4 className="text-slate-500 font-bold text-xs uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
@@ -719,10 +719,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'Modem', power: '20W' },
                                                     { label: 'LED Lighting', power: '80W' }
                                                 ] : locale === 'ar' ? [
-                                                    { label: 'ثلاجة', power: '150W' },
-                                                    { label: 'تلفزيون', power: '100W' },
-                                                    { label: 'مودم', power: '20W' },
-                                                    { label: 'إضاءة LED', power: '80W' }
+                                                    { label: 'ثلاجة', power: '150 واط' },
+                                                    { label: 'تلفزيون', power: '100 واط' },
+                                                    { label: 'مودم', power: '20 واط' },
+                                                    { label: 'إضاءة LED', power: '80 واط' }
                                                 ] : [
                                                     { label: 'Buzdolabı', power: '150W' },
                                                     { label: 'TV', power: '100W' },
@@ -738,7 +738,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-blue-600">≈ 350 W</span>
+                                                    <span className="text-xl font-black text-blue-600">≈ 350 {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
