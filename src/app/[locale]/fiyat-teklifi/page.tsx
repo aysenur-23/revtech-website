@@ -233,11 +233,11 @@ export default function QuotePage() {
                                                     className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('powerSelect')}</option>
-                                                    <option value="0-5">0-5 kW</option>
-                                                    <option value="5-20">5-20 kW</option>
-                                                    <option value="20-50">20-50 kW</option>
-                                                    <option value="50-100">50-100 kW</option>
-                                                    <option value="100+">100+ kW</option>
+                                                    <option value="0-5">{locale === 'ar' ? '٠-٥ كيلوواط' : '0-5 kW'}</option>
+                                                    <option value="5-20">{locale === 'ar' ? '٥-٢٠ كيلوواط' : '5-20 kW'}</option>
+                                                    <option value="20-50">{locale === 'ar' ? '٢٠-٥٠ كيلوواط' : '20-50 kW'}</option>
+                                                    <option value="50-100">{locale === 'ar' ? '٥٠-١٠٠ كيلوواط' : '50-100 kW'}</option>
+                                                    <option value="100+">{locale === 'ar' ? '١٠٠+ كيلوواط' : '100+ kW'}</option>
                                                 </select>
                                                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                                                     <ArrowRight className="w-4 h-4 text-slate-400 rotate-90" />
@@ -253,11 +253,11 @@ export default function QuotePage() {
                                                     className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('areaSelect')}</option>
-                                                    <option value="residential">{locale === 'tr' ? 'Konut' : 'Residential'}</option>
-                                                    <option value="commercial">{locale === 'tr' ? 'Ticari' : 'Commercial'}</option>
-                                                    <option value="industrial">{locale === 'tr' ? 'Endüstriyel' : 'Industrial'}</option>
-                                                    <option value="vehicle">{locale === 'tr' ? 'Araç' : 'Vehicle'}</option>
-                                                    <option value="offgrid">{locale === 'tr' ? 'Şebekeden Bağımsız' : 'Off-Grid'}</option>
+                                                    <option value="residential">{locale === 'tr' ? 'Konut' : locale === 'ar' ? 'سكني' : 'Residential'}</option>
+                                                    <option value="commercial">{locale === 'tr' ? 'Ticari' : locale === 'ar' ? 'تجاري' : 'Commercial'}</option>
+                                                    <option value="industrial">{locale === 'tr' ? 'Endüstriyel' : locale === 'ar' ? 'صناعي' : 'Industrial'}</option>
+                                                    <option value="vehicle">{locale === 'tr' ? 'Araç' : locale === 'ar' ? 'مركبة' : 'Vehicle'}</option>
+                                                    <option value="offgrid">{locale === 'tr' ? 'Şebekeden Bağımsız' : locale === 'ar' ? 'خارج الشبكة' : 'Off-Grid'}</option>
                                                 </select>
                                                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                                                     <ArrowRight className="w-4 h-4 text-slate-400 rotate-90" />

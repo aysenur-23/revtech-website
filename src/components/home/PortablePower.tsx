@@ -29,10 +29,10 @@ export default function PortablePower() {
     }, []);
 
     const features = [
-        { key: 'capacity', value: '5.4 kWh', icon: Battery },
-        { key: 'output', value: '2000W', icon: Zap },
-        { key: 'pvCharging', value: '1500W', icon: Gauge },
-        { key: 'protection', value: 'Advanced BMS', icon: ShieldCheck }
+        { key: 'capacity', value: locale === 'ar' ? '٥.٤ كيلوواط ساعة' : '5.4 kWh', icon: Battery },
+        { key: 'output', value: locale === 'ar' ? '٢٠٠٠ واط' : '2000W', icon: Zap },
+        { key: 'pvCharging', value: locale === 'ar' ? '١٥٠٠ واط' : '1500W', icon: Gauge },
+        { key: 'protection', value: locale === 'ar' ? 'نظام إدارة بطارية متطور' : 'Advanced BMS', icon: ShieldCheck }
     ];
 
     return (
@@ -128,7 +128,7 @@ export default function PortablePower() {
                                     </div>
 
                                     <Image
-                                        alt="Revium 5.4 kWh Taşınabilir (Yüksek Çıkış)"
+                                        alt={t.has('imageAlt') ? t('imageAlt') : (locale === 'ar' ? 'طاقة ريفيوم المحمولة ٥.٤ كيلوواط (انتاج عالي)' : 'Revium 5.4 kWh Portable (High Output)')}
                                         src="/images/products/5-4kwh-h-1.png"
                                         width={750}
                                         height={600}

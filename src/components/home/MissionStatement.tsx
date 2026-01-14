@@ -15,7 +15,9 @@ export default function MissionStatement() {
 
     const visionText = locale === 'tr'
         ? 'Performans, dayanıklılık ve özgürlük — enerjiyi yeniden tanımlıyoruz.'
-        : 'Performance, durability, and freedom — we are redefining energy.';
+        : locale === 'ar'
+            ? 'الأداء والمتانة والحرية — نحن نعيد تعريف الطاقة.'
+            : 'Performance, durability, and freedom — we are redefining energy.';
 
     useEffect(() => {
         const observer = new IntersectionObserver(

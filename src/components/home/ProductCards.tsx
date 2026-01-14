@@ -73,7 +73,7 @@ export default function ProductCards() {
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )} ref={sectionRef}>
                     <span className="text-blue-600 font-bold tracking-widest text-xs uppercase mb-4 block">
-                        {locale === 'tr' ? 'REVİUM ENERJİ' : 'REVIUM ENERGY'}
+                        {locale === 'tr' ? 'REVİUM ENERJİ' : locale === 'ar' ? 'ريفيوم للطاقة' : 'REVIUM ENERGY'}
                     </span>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
                         {t('categories.title')}

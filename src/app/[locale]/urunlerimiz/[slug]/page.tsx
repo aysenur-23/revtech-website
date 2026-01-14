@@ -862,10 +862,10 @@ export default async function ProductDetailPage({ params }: Props) {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
-                                {locale === 'tr' ? 'Neden Revium?' : 'Why Revium?'}
+                                {locale === 'tr' ? 'Neden Revium?' : locale === 'ar' ? 'لماذا ريفيوم؟' : 'Why Revium?'}
                             </h2>
                             <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
-                                {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : 'reasons to choose this product'}
+                                {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : locale === 'ar' ? 'أسباب قوية لاختيار هذا المنتج' : 'reasons to choose this product'}
                             </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-5xl mx-auto">
@@ -878,10 +878,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
-                                    {locale === 'tr' ? 'Güvenilir Teknoloji' : 'Reliable Technology'}
+                                    {locale === 'tr' ? 'Güvenilir Teknoloji' : locale === 'ar' ? 'تقنية موثوقة' : 'Reliable Technology'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                                    {locale === 'tr' ? 'En son teknoloji ve güvenilir çözümlerle donatılmış ürünler' : 'Equipped with the latest technology and reliable solutions'}
+                                    {locale === 'tr' ? 'En son teknoloji ve güvenilir çözümlerle donatılmış ürünler' : locale === 'ar' ? 'منتجات مجهزة بأحدث التقنيات والحلول الموثوقة' : 'Equipped with the latest technology and reliable solutions'}
                                 </p>
                             </div>
 
@@ -894,10 +894,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
-                                    {locale === 'tr' ? 'Yüksek Performans' : 'High Performance'}
+                                    {locale === 'tr' ? 'Yüksek Performans' : locale === 'ar' ? 'أداء عالي' : 'High Performance'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                                    {locale === 'tr' ? 'Uzun ömürlü ve yüksek verimlilikte enerji depolama çözümleri' : 'Long-lasting and high-efficiency energy storage solutions'}
+                                    {locale === 'tr' ? 'Uzun ömürlü ve yüksek verimlilikte enerji depolama çözümleri' : locale === 'ar' ? 'حلول تخزين طاقة طويلة الأمد وعالية الكفاءة' : 'Long-lasting and high-efficiency energy storage solutions'}
                                 </p>
                             </div>
 
@@ -910,10 +910,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-600">
-                                    {locale === 'tr' ? 'Global Kalite' : 'Global Quality'}
+                                    {locale === 'tr' ? 'Global Kalite' : locale === 'ar' ? 'جودة عالمية' : 'Global Quality'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                                    {locale === 'tr' ? 'Uluslararası standartlarda kalite ve sertifikasyonlar' : 'International standards of quality and certifications'}
+                                    {locale === 'tr' ? 'Uluslararası standartlarda kalite ve sertifikasyonlar' : locale === 'ar' ? 'معايير جودة وشهادات دولية' : 'International standards of quality and certifications'}
                                 </p>
                             </div>
                         </div>
