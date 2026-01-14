@@ -116,8 +116,8 @@ export default function PortablePower() {
                             )}>
                                 <div className="relative group">
                                     {/* Watermark Logo - Behind */}
-                                    <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none opacity-20 select-none">
-                                        <div className="w-[70%] h-[70%] relative">
+                                    <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none opacity-20 select-none overflow-visible">
+                                        <div className="w-[120%] h-[120%] relative">
                                             <Image
                                                 src="/favicon.png"
                                                 alt=""
@@ -132,7 +132,7 @@ export default function PortablePower() {
                                         src="/images/products/5-4kwh-h-1.png"
                                         width={750}
                                         height={600}
-                                        className="relative z-10 w-full h-auto transform group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] mix-blend-multiply"
+                                        className="relative z-10 w-full h-auto transform group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]"
                                         priority
                                     />
                                     <div className="absolute top-[80%] left-1/2 -translate-x-1/2 w-4/5 h-1/5 bg-slate-900/5 blur-[40px] rounded-[100%]" />

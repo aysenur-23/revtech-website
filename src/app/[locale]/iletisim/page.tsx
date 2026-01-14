@@ -11,18 +11,18 @@ export default function Iletisim() {
     const locale = useLocale();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
 
         // Get form data
-        const formData = new FormData(e.target as HTMLFormElement);
+        const formData = new FormData(e.currentTarget);
         const data = {
             type: 'contact',
-            name: (formData.elements[0] as HTMLInputElement).value,
-            email: (formData.elements[1] as HTMLInputElement).value,
-            subject: (formData.elements[2] as HTMLInputElement).value,
-            message: (formData.elements[3] as HTMLTextAreaElement).value,
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
         };
 
         try {
@@ -38,7 +38,7 @@ export default function Iletisim() {
 
             if (response.ok) {
                 alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');
-                (e.target as HTMLFormElement).reset();
+                e.currentTarget.reset();
             } else {
                 throw new Error(result.message || 'Bir hata oluştu');
             }
@@ -123,6 +123,7 @@ export default function Iletisim() {
                                     <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('nameLabel')}</label>
                                     <input
                                         type="text"
+                                        name="name"
                                         required
                                         className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
@@ -131,6 +132,7 @@ export default function Iletisim() {
                                     <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('emailLabel')}</label>
                                     <input
                                         type="email"
+                                        name="email"
                                         required
                                         className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
@@ -140,6 +142,7 @@ export default function Iletisim() {
                                 <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('subjectLabel')}</label>
                                 <input
                                     type="text"
+                                    name="subject"
                                     required
                                     className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                 />
@@ -147,6 +150,7 @@ export default function Iletisim() {
                             <div className="space-y-1.5">
                                 <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('messageLabel')}</label>
                                 <textarea
+                                    name="message"
                                     rows={5}
                                     required
                                     className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
