@@ -8,7 +8,7 @@ import { Shield, Lightbulb, Users, Award, ArrowRight, Target, Eye, Battery, Zap 
 import { cn } from '@/lib/utils';
 
 export default function Kurumsal() {
-    const t = useTranslations('corporate');
+    const t = useTranslations('corporatePage');
     const locale = useLocale();
     const [isVisible, setIsVisible] = useState(false);
     const heroRef = useRef<HTMLDivElement>(null);
