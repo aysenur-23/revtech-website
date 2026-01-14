@@ -754,11 +754,11 @@ export default async function ProductDetailPage({ params }: Props) {
 
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
-                                                <span className="font-bold text-slate-900">2.7 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="font-bold text-slate-900">{formatNumber('2.7', locale)} {locale === 'ar' ? 'كيلوواط ساعة' : 'kWh'} {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
                                                 <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '٧-٨' : '7–8'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
-                                                <span className="font-bold text-slate-900">5.4 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="font-bold text-slate-900">{formatNumber('5.4', locale)} {locale === 'ar' ? 'كيلوواط ساعة' : 'kWh'} {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
                                                 <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '١٥-١٦' : '15–16'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
