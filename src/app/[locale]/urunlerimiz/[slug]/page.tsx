@@ -543,7 +543,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Battery className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{product.capacity}</div>
+                                        <div className="text-2xl font-black text-slate-900">{product.capacity.replace('kWh', locale === 'ar' ? 'كيلوواط ساعة' : 'kWh')}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -551,7 +551,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Zap className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{product.power}</div>
+                                        <div className="text-2xl font-black text-slate-900">{product.power.replace('W', locale === 'ar' ? 'واط' : 'W')}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -600,7 +600,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
                                     {/* Model Badge */}
                                     <div className="absolute -bottom-2 right-4 sm:right-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
-                                        <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Model ID</div>
+                                        <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
                                         <div className="text-xl font-bold text-slate-900">{product.modelId}</div>
                                     </div>
                                 </div>
