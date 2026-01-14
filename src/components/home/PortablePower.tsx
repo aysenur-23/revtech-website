@@ -36,7 +36,7 @@ export default function PortablePower() {
     ];
 
     return (
-        <section className="py-12 lg:py-20 bg-white overflow-hidden" ref={sectionRef}>
+        <section className="py-16 lg:py-24 bg-white overflow-hidden" ref={sectionRef}>
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className={cn(
                     "relative bg-slate-50 rounded-3xl overflow-hidden transition-all duration-1000 transform border border-slate-100 shadow-[0_24px_60px_rgba(0,0,0,0.05)]",

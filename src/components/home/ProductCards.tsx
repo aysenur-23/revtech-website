@@ -66,7 +66,7 @@ export default function ProductCards() {
     ];
 
     return (
-        <section className="py-8 lg:py-12 bg-white overflow-hidden" id="products-section">
+        <section className="py-10 lg:py-16 bg-white overflow-hidden" id="products-section">
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className={cn(
                     "mb-8 lg:mb-10 text-center transition-all duration-1000 ease-out transform",

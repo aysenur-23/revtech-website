@@ -50,9 +50,9 @@ export default function MissionStatement() {
     }, [isVisible, visionText]);
 
     return (
-        <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200" ref={sectionRef}>
+        <section className="py-20 lg:py-32 bg-slate-50 border-b border-slate-200" ref={sectionRef}>
             <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-                <div className="text-center space-y-8">
+                <div className="text-center space-y-12">
                     <div className="space-y-6">
                         <span className="text-blue-600 font-bold tracking-widest text-xs uppercase block">
                             {locale === 'tr' ? 'VİZYONUMUZ' : 'OUR VISION'}

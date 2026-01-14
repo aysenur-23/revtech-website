@@ -70,7 +70,7 @@ export default function CustomSolutions() {
 
     return (
         <section
-            className="py-8 lg:py-16 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden"
+            className="py-12 lg:py-20 bg-gradient-to-b from-white via-slate-50/50 to-white relative overflow-hidden"
             ref={sectionRef}
         >
             {/* Subtle Background Pattern */}

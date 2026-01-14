@@ -40,7 +40,7 @@ export default function FeaturedProject() {
     ];
 
     return (
-        <section className="py-8 lg:py-16 bg-white overflow-hidden" ref={sectionRef}>
+        <section className="py-12 lg:py-20 bg-white overflow-hidden" ref={sectionRef}>
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 

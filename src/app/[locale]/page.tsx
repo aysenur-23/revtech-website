@@ -21,14 +21,12 @@ export default async function HomePage({ params }: Props) {
             {/* Hero Section - Unscaled */}
             <Hero />
 
-            {/* Main Content - Scaled 95% (Using zoom to avoid layout ghost space) */}
-            <div className="mx-auto w-[105.263%]" style={{ zoom: 0.95 }}>
+            {/* Main Content */}
+            <div className="relative">
                 {/* Mission Statement */}
                 <section className="relative z-10 overflow-hidden">
                     <MissionStatement />
                 </section>
-
-
 
                 {/* Product Categories */}
                 <section className="relative z-40 overflow-hidden">
