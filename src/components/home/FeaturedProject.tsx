@@ -82,56 +82,55 @@ export default function FeaturedProject() {
                             </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Right: Content */}
-                <div className={cn(
-                    "flex flex-col justify-center order-1 lg:order-2 transition-all duration-700 delay-100 transform",
-                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                )}>
-                    <div className="space-y-10">
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-blue-50 border border-blue-100">
-                                <div className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse" />
-                                <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">
-                                    {t('badge')}
-                                </span>
-                            </div>
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight mb-6">
-                                {t('title')}
-                            </h2>
-                            <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                                {t('description')}
-                            </p>
-                        </div>
-
-                        {/* Features Grid */}
-                        <div className="grid grid-cols-2 gap-4">
-                            {features.map((feature, idx) => (
-                                <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-100 rounded-2xl group/item hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                                    <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-blue-600 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-600 transition-all shadow-sm">
-                                        <feature.icon className="w-5 h-5" strokeWidth={1.5} />
-                                    </div>
-                                    <span className="text-sm font-bold text-slate-900">{feature.title}</span>
+                    {/* Right: Content */}
+                    <div className={cn(
+                        "flex flex-col justify-center order-1 lg:order-2 transition-all duration-700 delay-100 transform",
+                        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    )}>
+                        <div className="space-y-10">
+                            <div>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-blue-50 border border-blue-100">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse" />
+                                    <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">
+                                        {t('badge')}
+                                    </span>
                                 </div>
-                            ))}
-                        </div>
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight mb-6">
+                                    {t('title')}
+                                </h2>
+                                <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                                    {t('description')}
+                                </p>
+                            </div>
 
-                        {/* Stats Bar - Light Theme */}
-                        <div className="p-6 bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl shadow-lg">
-                            <div className="grid grid-cols-3 gap-4 divide-x divide-white/20">
-                                {stats.map((stat, idx) => (
-                                    <div key={idx} className="flex flex-col items-center justify-center px-2 first:pl-0 last:pr-0">
-                                        <span className="text-xl sm:text-2xl font-bold text-white mb-0.5 tracking-tight">{stat.value}</span>
-                                        <span className="text-[9px] font-bold text-blue-100 uppercase tracking-wider text-center">{stat.label}</span>
+                            {/* Features Grid */}
+                            <div className="grid grid-cols-2 gap-4">
+                                {features.map((feature, idx) => (
+                                    <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-100 rounded-2xl group/item hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                                        <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-blue-600 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-600 transition-all shadow-sm">
+                                            <feature.icon className="w-5 h-5" strokeWidth={1.5} />
+                                        </div>
+                                        <span className="text-sm font-bold text-slate-900">{feature.title}</span>
                                     </div>
                                 ))}
+                            </div>
+
+                            {/* Stats Bar - Light Theme */}
+                            <div className="p-6 bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl shadow-lg">
+                                <div className="grid grid-cols-3 gap-4 divide-x divide-white/20">
+                                    {stats.map((stat, idx) => (
+                                        <div key={idx} className="flex flex-col items-center justify-center px-2 first:pl-0 last:pr-0">
+                                            <span className="text-xl sm:text-2xl font-bold text-white mb-0.5 tracking-tight">{stat.value}</span>
+                                            <span className="text-[9px] font-bold text-blue-100 uppercase tracking-wider text-center">{stat.label}</span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section >
+        </section>
     );
 }
