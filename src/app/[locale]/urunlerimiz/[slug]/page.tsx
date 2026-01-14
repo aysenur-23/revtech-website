@@ -1,0 +1,925 @@
+import { setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
+import Link from 'next/link';
+import {
+    Battery, Zap, Sun, Shield, ArrowRight, CheckCircle, Tent, TriangleAlert,
+    Plane, Mountain, Hammer, Laptop, Globe, Leaf, Factory, Briefcase,
+    Building2, Hospital, Server, RadioTower, Monitor, Snowflake,
+    Lightbulb, Tv, Home, Clock, Bus
+} from 'lucide-react';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+
+interface Props {
+    params: Promise<{ locale: string; slug: string }>;
+}
+
+// Tüm ürünlerin detaylı verileri
+const products: Record<string, {
+    name: string;
+    modelId: string;
+    capacity: string;
+    power: string;
+    image: string;
+    categoryTitle: string;
+    features: string[];
+    specs: { label: string; value: string }[];
+    description?: string;
+    usageAreas: { label: string; icon: any }[];
+    runtimeStats?: { label: string; power: string; duration: string; icon: string }[];
+    runtimeSummary?: string;
+}> = {
+    'revium-2-7-kwh': {
+        name: 'Revium 2.7 kWh Depolanabilir Güç Paketi',
+        modelId: 'R-P2700',
+        capacity: '2.7 kWh',
+        power: '2000 W',
+        image: '/images/products/2-7kwh-a-1.png',
+        categoryTitle: 'Taşınabilir Enerji Depolama',
+        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
+        features: [
+            'Enerji: 2.7 kWh',
+            'Çıkış Voltajı: 230 VAC',
+            'Sürekli Çıkış Gücü: 2000 W',
+            'Maks. PV Güç: 1000 W (MPPT)',
+            'Dalga Tipi: Pure Sine',
+            'Batarya Ömrü: 6000 çevrim',
+            'Ağırlık: 35 kg'
+        ],
+        specs: [
+            { label: 'Enerji', value: '2.7 kWh' },
+            { label: 'Çıkış Voltajı', value: '230 VAC' },
+            { label: 'Sürekli Güç', value: '2000 W' },
+            { label: 'Maks. PV Güç', value: '1000 W' },
+            { label: 'Boyutlar', value: '500 × 335 × 285 mm' },
+            { label: 'Ağırlık', value: '35 kg' },
+        ],
+        usageAreas: [
+            { label: 'Kamp', icon: 'Tent' },
+            { label: 'Acil Durum', icon: 'TriangleAlert' },
+            { label: 'Saha Çalışması', icon: 'Hammer' },
+        ],
+        runtimeStats: [
+            { label: 'Hilti / Kırıcı', power: '1000 W', duration: '≈ 2.7 saat', icon: 'Hammer' },
+            { label: 'Matkap / El Aleti', power: '500 W', duration: '≈ 5.4 saat', icon: 'Hammer' },
+            { label: 'Masaüstü Bilgisayar', power: '300 W', duration: '≈ 9 saat', icon: 'Monitor' },
+            { label: 'Laptop', power: '65 W', duration: '≈ 35–40 saat', icon: 'Laptop' },
+            { label: 'Buzdolabı (A++)', power: '150 W', duration: '≈ 18 saat', icon: 'Snowflake' },
+            { label: 'LED Aydınlatma', power: '100 W', duration: '≈ 27 saat', icon: 'Lightbulb' },
+            { label: 'TV + Modem', power: '120 W', duration: '≈ 22 saat', icon: 'Tv' },
+            { label: 'Genel Ev', power: '400 W', duration: '≈ 6–7 saat', icon: 'Home' },
+        ],
+        runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
+    },
+    'revium-2-7-kwh-bag': {
+        name: 'Revium 2.7 kWh Çanta Tip Depolanabilir Güç Paketi',
+        modelId: 'R-SB2700B',
+        capacity: '2.7 kWh',
+        power: '2000 W',
+        image: '/images/products/2-7kwh-b-1.png',
+        categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
+        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
+        features: [
+            'Enerji: 2.7 kWh',
+            'Çıkış Voltajı: 230 VAC',
+            'Sürekli Çıkış Gücü: 2000 W',
+            'Maks. PV Güç: 1000 W (MPPT)',
+            'Dalga Tipi: Pure Sine',
+            'Batarya Ömrü: 6000 çevrim',
+            'Ağırlık: 35 kg'
+        ],
+        specs: [
+            { label: 'Enerji', value: '2.7 kWh' },
+            { label: 'Çıkış Voltajı', value: '230 VAC' },
+            { label: 'Sürekli Güç', value: '2000 W' },
+            { label: 'Boyutlar', value: '548 × 391 × 335 mm' },
+            { label: 'Ağırlık', value: '35 kg' },
+        ],
+        usageAreas: [
+            { label: 'Zorlu Arazi', icon: 'Mountain' },
+            { label: 'Endüstriyel Saha', icon: 'Factory' },
+        ],
+        runtimeStats: [
+            { label: 'Hilti / Kırıcı', power: '1000 W', duration: '≈ 2.7 saat', icon: 'Hammer' },
+            { label: 'Matkap / El Aleti', power: '500 W', duration: '≈ 5.4 saat', icon: 'Hammer' },
+            { label: 'Masaüstü Bilgisayar', power: '300 W', duration: '≈ 9 saat', icon: 'Monitor' },
+            { label: 'Laptop', power: '65 W', duration: '≈ 35–40 saat', icon: 'Laptop' },
+            { label: 'Buzdolabı (A++)', power: '150 W', duration: '≈ 18 saat', icon: 'Snowflake' },
+            { label: 'LED Aydınlatma', power: '100 W', duration: '≈ 27 saat', icon: 'Lightbulb' },
+            { label: 'TV + Modem', power: '120 W', duration: '≈ 22 saat', icon: 'Tv' },
+            { label: 'Genel Ev', power: '400 W', duration: '≈ 6–7 saat', icon: 'Home' },
+        ],
+        runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
+    },
+    'revium-storage-battery': {
+        name: 'Revium Storage Battery (2.7 / 5.4 kWh)',
+        modelId: 'R-STORAGE',
+        capacity: '2.7 / 5.4 kWh',
+        power: 'VDC System',
+        image: '/images/products/stack-21-6kwh-1.png',
+        categoryTitle: 'Sabit / Modüler Batarya',
+        description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü.',
+        features: [
+            'Nominal Voltaj: 12 / 24 / 48 VDC',
+            'Kapasite: 206 Ah / 105 Ah',
+            'Enerji: 2.7 – 5.4 kWh',
+            'Batarya Ömrü: 6000 çevrim',
+            'Haberleşme: Bluetooth',
+            'Ağırlık: 25 / 45 kg'
+        ],
+        specs: [
+            { label: 'Nominal Voltaj', value: '12 / 24 / 48 VDC' },
+            { label: 'Kapasite', value: '206 Ah / 105 Ah' },
+            { label: 'Enerji', value: '2.7 – 5.4 kWh' },
+            { label: 'Haberleşme', value: 'Bluetooth' },
+            { label: 'Ağırlık', value: '25 / 45 kg' },
+        ],
+        usageAreas: [
+            { label: 'Ev Depolama', icon: 'Building2' },
+            { label: 'Yedek Güç', icon: 'Zap' },
+        ]
+    },
+    'revium-5-4-kwh': {
+        name: 'Revium 5.4 kWh Depolanabilir Güç Paketi',
+        modelId: 'R-P5400',
+        capacity: '5.4 kWh',
+        power: '3000 W',
+        image: '/images/products/5-4kwh-h-1.png',
+        categoryTitle: 'Yüksek Kapasiteli Taşınabilir Güç',
+        description: 'Yüksek enerji ihtiyacı duyan profesyoneller için 5.4 kWh kapasiteli devasa güç.',
+        features: [
+            'Enerji: 5.4 kWh',
+            'Çıkış Voltajı: 220 VAC',
+            'Sürekli Çıkış Gücü: 3000 W',
+            'Maks. PV Güç: 1000 W',
+            'Dalga Tipi: Pure Sine',
+            'Batarya Ömrü: 6000 çevrim',
+            'Ağırlık: 60 kg'
+        ],
+        specs: [
+            { label: 'Enerji', value: '5.4 kWh' },
+            { label: 'Sürekli Güç', value: '3000 W' },
+            { label: 'Ağırlık', value: '60 kg' },
+            { label: 'Boyutlar', value: '777 × 458 × 1340 mm' },
+        ],
+        usageAreas: [
+            { label: 'Mobil Ev', icon: 'Bus' },
+            { label: 'Atölye', icon: 'Factory' },
+        ],
+        runtimeStats: [
+            { label: 'Hilti / Kırıcı', power: '1000 W', duration: '≈ 5.4 saat', icon: 'Hammer' },
+            { label: 'Matkap / El Aleti', power: '500 W', duration: '≈ 10–11 saat', icon: 'Hammer' },
+            { label: 'Masaüstü Bilgisayar', power: '300 W', duration: '≈ 18 saat', icon: 'Monitor' },
+            { label: 'Laptop', power: '65 W', duration: '≈ 80 saat', icon: 'Laptop' },
+            { label: 'Buzdolabı (A++)', power: '150 W', duration: '≈ 36 saat (1.5 gün)', icon: 'Snowflake' },
+            { label: 'LED Aydınlatma', power: '100 W', duration: '≈ 54 saat', icon: 'Lightbulb' },
+            { label: 'TV + Modem', power: '120 W', duration: '≈ 45 saat', icon: 'Tv' },
+            { label: 'Genel Ev', power: '400 W', duration: '≈ 13–14 saat', icon: 'Home' },
+        ],
+        runtimeSummary: 'Revium taşınabilir güç paketleri; 5.4 kWh modelinde bir hiltiyi 5.4 saat, bir evi ise 14–16 saat aralığında kesintisiz besleyebilmektedir.'
+    },
+    'revium-power-cabinet': {
+        name: 'Revium Güç Kabini',
+        modelId: 'R-CABINET',
+        capacity: '5.4 – 21.6 kWh',
+        power: '3 kW – 22 kW',
+        image: '/images/products/cabin-power.png',
+        categoryTitle: 'Endüstriyel Enerji Depolama (Tek Kabin)',
+        description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini.',
+        features: [
+            'Enerji: 5.4 – 21.6 kWh',
+            'Çıkış Voltajı: 230 VAC',
+            'Çıkış Gücü: 3 kW – 22 kW',
+            'Maks. PV Güç: 1 – 13 kW',
+            'Dalga Tipi: Tam Sinüs',
+            'Batarya Ömrü: 6000 çevrim',
+            'Ağırlık: 255 – 1260 kg'
+        ],
+        specs: [
+            { label: 'Enerji Aralığı', value: '5.4 – 21.6 kWh' },
+            { label: 'Çıkış Gücü', value: '3 – 22 kW' },
+            { label: 'PV Giriş', value: '1 – 13 kW' },
+            { label: 'Ağırlık', value: '255 – 1260 kg' },
+        ],
+        usageAreas: [
+            { label: 'Tesisler', icon: 'Building2' },
+            { label: 'Şebeke Destek', icon: 'Zap' },
+        ]
+    },
+    'revium-hilux-power-pack': {
+        name: 'Revium Hilux Güç Paketi',
+        modelId: 'R-HILUX',
+        capacity: '80 kWh',
+        power: '30 kW (3-Phase)',
+        image: '/images/products/hilux-21-6kwh-1.png',
+        categoryTitle: 'Araç Üstü Mobil Enerji Sistemi',
+        description: 'Araç üstü uygulamalar için geliştirilmiş 80 kWh kapasiteli ultra yüksek güçlü sistem.',
+        features: [
+            'Enerji: 80 kWh',
+            '3 Faz Çıkış: 3×10 kW (380 VAC)',
+            'Tek Faz Çıkış: 5×5 kW (220 VAC)',
+            'Maks. PV Güç: 20 kW',
+            'Dalga Tipi: Pure Sine',
+            'Batarya Ömrü: 6000 çevrim'
+        ],
+        specs: [
+            { label: 'Enerji', value: '80 kWh' },
+            { label: '3-Faz Çıkış', value: '3x10 kW' },
+            { label: 'PV Giriş', value: '20 kW' },
+            { label: 'Dalga Tipi', value: 'Pure Sine' },
+        ],
+        usageAreas: [
+            { label: 'Araç Üstü', icon: 'Truck' },
+            { label: 'Mobil İstasyon', icon: 'Zap' },
+        ]
+    },
+    'revium-power-layer': {
+        name: 'Revium Güç Katmanı – Modüler Enerji Depolama Ünitesi',
+        modelId: 'R-LAYER',
+        capacity: '5.4 – 172 kWh',
+        power: 'Scalable',
+        image: '/images/products/stack-21-6kwh-1.png',
+        categoryTitle: 'Ölçeklenebilir Endüstriyel Batarya',
+        description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları.',
+        features: [
+            'Nominal Voltaj: 51.2 V',
+            'Kapasite: 105 / 210 / 315 / 420 Ah',
+            'Enerji Aralığı: 5.4 – 172 kWh',
+            'Batarya Ömrü: 6000 çevrim',
+            'Ağırlık: 66 – 1190 kg'
+        ],
+        specs: [
+            { label: 'Voltaj', value: '51.2 V' },
+            { label: 'Kapasite', value: 'Max 420 Ah' },
+            { label: 'Enerji Max', value: '172 kWh' },
+            { label: 'Döngü', value: '6000' },
+        ],
+        usageAreas: [
+            { label: 'Endüstriyel', icon: 'Hospital' },
+            { label: 'Veri Merkezi', icon: 'Server' },
+        ]
+    },
+    'revium-gridpack': {
+        name: 'Revium Gridpack',
+        modelId: 'GRIDPACK',
+        capacity: '500 kWh – 5 MWh',
+        power: '200 kW – 1 MW',
+        image: '/images/products/gridpack-100.png',
+        categoryTitle: 'Şebeke Ölçekli Konteyner Tip BESS',
+        description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
+        features: [
+            'Batarya Kapasitesi: 500 kWh – 5 MWh',
+            'Çıkış Gücü: 200 kW – 1 MW',
+            'Batarya Voltajı: 600 – 1500 VDC',
+            'Soğutma: Sıvı Soğutma',
+            'Çevrim: 6000 (%80 DOD)',
+            'Güvenlik: Entegre yangın söndürme',
+            'Ağırlık: ~9.650 kg'
+        ],
+        specs: [
+            { label: 'Kapasite', value: 'Up to 5 MWh' },
+            { label: 'Güç', value: 'Up to 1 MW' },
+            { label: 'Soğutma', value: 'Sıvı Soğutma' },
+            { label: 'Ağırlık', value: '9650 kg' },
+        ],
+        usageAreas: [
+            { label: 'Şebeke', icon: 'Zap' },
+            { label: 'Büyük Tesis', icon: 'Building2' },
+        ]
+    },
+    'revium-powerstation-series': {
+        name: 'Revium Powerstation Serisi',
+        modelId: 'POWERSTATION',
+        capacity: '500 kWh – 5 MW',
+        power: '200 kW – 1 MW',
+        image: '/images/products/ges-power-station.png',
+        categoryTitle: 'Konteyner Tip Enerji + Güneş Entegrasyonu',
+        description: 'Güneş enerjisi ve depolamayı tek bir konteynerde birleştiren hibrit çözüm.',
+        features: [
+            'Batarya Kapasitesi: 500 kWh – 5 MW',
+            'Çıkış Gücü: 200 kW – 1 MW',
+            'PV Giriş: 650A / 624VDC',
+            'PV Entegrasyonu: 624 adet 650Wp panel',
+            'Soğutma: Sıvı',
+            'Çevrim: 6000 (%80 DOD)'
+        ],
+        specs: [
+            { label: 'PV Kapasite', value: 'Max 624 Panels' },
+            { label: 'AC Giriş', value: '230 / 400 VAC' },
+            { label: 'Kapasite', value: 'Max 5 MW' },
+        ],
+        usageAreas: [
+            { label: 'Solar Park', icon: 'Sun' },
+            { label: 'Off-grid', icon: 'Globe' },
+        ]
+    },
+    'revium-voltwagon': {
+        name: 'Revium VoltWagon',
+        modelId: 'VOLTWAGON',
+        capacity: '192 kWh',
+        power: '20 kW',
+        image: '/images/products/solar-voltwagon.png',
+        categoryTitle: 'Mobil Güneş Enerjili Römork Sistem',
+        description: 'Her yere taşınabilen devasa güneş enerjili mobil römork sistemi.',
+        features: [
+            'Batarya Kapasitesi: 192 kWh',
+            'Çıkış Gücü: 20 kW',
+            'Batarya Voltajı: 604 VDC',
+            'PV Giriş: 70A – 624VDC',
+            'PV Panel Sayısı: 65×650Wp panel',
+            'Soğutma: Sıvı',
+            'Ağırlık: 2450 kg'
+        ],
+        specs: [
+            { label: 'Kapasite', value: '192 kWh' },
+            { label: 'Güç', value: '20 kW' },
+            { label: 'Ağırlık', value: '2450 kg' },
+        ],
+        usageAreas: [
+            { label: 'Mobil Şarj', icon: 'Zap' },
+            { label: 'Askeri Saha', icon: 'Shield' },
+        ]
+    },
+    'revium-solarport': {
+        name: 'Revium Solarport',
+        modelId: 'SOLARPORT',
+        capacity: '40 – 200 kWh',
+        power: '11 – 22 kW AC',
+        image: '/images/products/solarport-duo.png',
+        categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
+        description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
+        features: [
+            'Enerji Kapasitesi: 40 – 200 kWh',
+            'MPPT Güç: 40 – 180 kW',
+            'AC Çıkış: 11 – 22 kW',
+            'Termal Yönetim: Sıvı / Hava Soğutma',
+            'IP Koruma: IP54',
+            'Çalışma Sıcaklığı: -20 / +65 °C'
+        ],
+        specs: [
+            { label: 'Enerji', value: '40 – 200 kWh' },
+            { label: 'MPPT Güç', value: '40 – 180 kW' },
+            { label: 'AC Çıkış', value: '11 – 22 kW' },
+            { label: 'Koruma', value: 'IP54' },
+        ],
+        usageAreas: [
+            { label: 'Otopark', icon: 'Building2' },
+            { label: 'AVM', icon: 'Globe' },
+        ]
+    }
+};
+
+export const dynamic = 'force-dynamic';
+
+function getIcon(iconName: string) {
+    const icons: Record<string, any> = {
+        'Tent': Tent,
+        'TriangleAlert': TriangleAlert,
+        'Plane': Plane,
+        'Mountain': Mountain,
+        'Hammer': Hammer,
+        'Laptop': Laptop,
+        'Factory': Factory,
+        'Briefcase': Briefcase,
+        'Building2': Building2,
+        'Hospital': Hospital,
+        'Server': Server,
+        'RadioTower': RadioTower,
+        'Zap': Zap,
+        'Sun': Sun,
+        'Shield': Shield,
+        'Monitor': Monitor,
+        'Snowflake': Snowflake,
+        'Lightbulb': Lightbulb,
+        'Tv': Tv,
+        'Home': Home,
+        'Clock': Clock,
+        'Bus': Bus,
+    };
+    return icons[iconName] || Battery;
+}
+
+// Helper function to translate Turkish labels to other languages
+function translateLabel(label: string, locale: string): string {
+    if (locale === 'tr') return label;
+
+    const deviceTranslations: Record<string, Record<string, string>> = {
+        'Hilti / Kırıcı': { en: 'Demolition Hammer', ar: 'مطرقة الهدم' },
+        'Matkap / El Aleti': { en: 'Drill / Power Tool', ar: 'مثقاب / أداة كهربائية' },
+        'Masaüstü Bilgisayar': { en: 'Desktop Computer', ar: 'كمبيوتر مكتبي' },
+        'Laptop': { en: 'Laptop', ar: 'لابتوب' },
+        'Buzdolabı (A++)': { en: 'Refrigerator (A++)', ar: 'ثلاجة (A++)' },
+        'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة LED' },
+        'TV + Modem': { en: 'TV + Modem', ar: 'تلفزيون + مودم' },
+        'Genel Ev': { en: 'General Home', ar: 'المنزل العام' },
+    };
+
+    let result = label;
+
+    // First, translate device names
+    for (const [tr, trans] of Object.entries(deviceTranslations)) {
+        if (result.includes(tr)) {
+            result = result.replace(tr, trans[locale] || trans.en || tr);
+        }
+    }
+
+    // Then translate ALL time units (using regex with global flag)
+    const timeUnits: Record<string, Record<string, string>> = {
+        'saat': { en: 'hours', ar: 'ساعات' },
+        'gün': { en: 'days', ar: 'أيام' },
+    };
+
+    result = result.replace(/saat/gi, timeUnits['saat'][locale] || 'hours');
+    result = result.replace(/gün/gi, timeUnits['gün'][locale] || 'days');
+
+    return result;
+}
+
+export default async function ProductDetailPage({ params }: Props) {
+    const { locale, slug } = await params;
+    setRequestLocale(locale);
+
+    const t = await getTranslations('products');
+    const tDetail = await getTranslations('productDetails');
+
+    const product = products[slug];
+    if (!product) {
+        notFound();
+    }
+
+    // Replace data with localized versions if available
+    const localizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product.name;
+    const localizedDesc = tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : product.description;
+
+    // We treat 'features' as the main spec list for the grid now. 
+    // If translations exist, we use them, otherwise fallback to the hardcoded list.
+    const localizedFeatures = tDetail.has(`products.${slug}.features`) ? tDetail.raw(`products.${slug}.features`) as string[] : product.features;
+
+    return (
+        <div className="min-h-screen bg-white">
+            <div className="mx-auto w-[111.111%]" style={{ zoom: 0.9 }}>
+                {/* Hero Section - Light Theme, Compact */}
+                <section className="relative min-h-[60vh] flex items-center pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 z-0">
+                        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/40 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
+                    </div>
+
+                    <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
+
+                            {/* Left Content - Wider Text Area */}
+                            <div className="lg:col-span-7 space-y-8 text-center lg:text-left order-2 lg:order-1">
+                                <div className="space-y-6">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
+                                        <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
+                                        <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
+                                            {locale === 'en' ? ({
+                                                'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
+                                                'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
+                                                'Sabit / Modüler Batarya': 'Fixed / Modular Battery',
+                                                'Araç Tipi Güç Paketi': 'Vehicle Power Pack',
+                                                'Endüstriyel Güç Sistemleri': 'Industrial Power Systems',
+                                                'GES Ürünleri': 'Solar Products',
+                                            }[product.categoryTitle] || product.categoryTitle) : product.categoryTitle}
+                                        </span>
+                                    </div>
+                                    <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tight leading-[1.05]">
+                                        {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                                            {localizedName.split(' ').slice(-2).join(' ')}
+                                        </span>
+                                    </h1>
+                                    <p className="text-lg sm:text-xl text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                                        {localizedDesc}
+                                    </p>
+                                </div>
+
+                                {/* Key Specs - Light Theme */}
+                                <div className="flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-10 py-6 px-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
+                                    <div className="space-y-1 text-left">
+                                        <div className="flex items-center gap-2 text-blue-600">
+                                            <Battery className="h-5 w-5" />
+                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
+                                        </div>
+                                        <div className="text-2xl font-black text-slate-900">{product.capacity}</div>
+                                    </div>
+                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
+                                    <div className="space-y-1 text-left">
+                                        <div className="flex items-center gap-2 text-cyan-600">
+                                            <Zap className="h-5 w-5" />
+                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
+                                        </div>
+                                        <div className="text-2xl font-black text-slate-900">{product.power}</div>
+                                    </div>
+                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
+                                    <div className="space-y-1 text-left">
+                                        <div className="flex items-center gap-2 text-emerald-600">
+                                            <Shield className="h-5 w-5" />
+                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
+                                        </div>
+                                        <div className="text-2xl font-black text-slate-900">LiFePO₄</div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
+                                    <Link
+                                        href={`/${locale}/fiyat-teklifi/`}
+                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
+                                    >
+                                        <span>{tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
+                                        <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                                    </Link>
+                                    <Link
+                                        href={`/${locale}/iletisim/`}
+                                        className="group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm border-2 border-slate-200 hover:border-slate-300 transition-all duration-300 shadow-sm"
+                                    >
+                                        <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'en' ? 'Expert Consultation' : 'استشارة الخبراء'}</span>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Right Content - Larger Product Image */}
+                            <div className="lg:col-span-5 relative order-1 lg:order-2">
+                                <div className="relative flex items-center justify-center">
+                                    {/* Decorative Circle */}
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
+
+                                    {/* Product Image */}
+                                    <div className="relative w-full max-w-[500px] p-4 sm:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
+                                        <Image
+                                            src={product.image}
+                                            alt={localizedName}
+                                            width={800}
+                                            height={800}
+                                            className="w-full h-auto object-contain drop-shadow-2xl"
+                                            priority
+                                        />
+                                    </div>
+
+                                    {/* Model Badge */}
+                                    <div className="absolute -bottom-2 right-4 sm:right-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
+                                        <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Model ID</div>
+                                        <div className="text-xl font-bold text-slate-900">{product.modelId}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* Features / Specs Grid */}
+                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-neutral-50 via-white to-neutral-100">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                                {tDetail('labels.technicalSpecs') || 'Özellikler'}
+                            </h2>
+                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                                {localizedName} {locale === 'tr' ? 'ürününün teknik özellikleri ve avantajları' : 'technical specifications and advantages'}
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            {localizedFeatures.map((feature, index) => (
+                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-blue-200 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+                                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
+                                    <span className="text-sm sm:text-base text-neutral-700 font-medium">{feature}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Performance and Runtime Stats - Light Theme */}
+                {product.runtimeStats && (
+                    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-slate-50 relative overflow-hidden text-left">
+                        <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
+
+                        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="mx-auto max-w-3xl text-center mb-16 px-4">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 mb-4">
+                                    <Clock className="w-4 h-4 text-blue-600" />
+                                    <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
+                                        {locale === 'en' ? 'Real-World Performance' : locale === 'ar' ? 'أداء عالم حقيقي' : 'Gerçek Dünya Performansı'}
+                                    </span>
+                                </div>
+                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                                    {locale === 'en' ? 'Device-Based Runtime' : locale === 'ar' ? 'مدة التشغيل حسب الجهاز' : 'Cihaz Bazlı Çalışma Süreleri'}
+                                </h2>
+                                <p className="text-slate-600 text-lg leading-relaxed font-medium">
+                                    {locale === 'en' && product.runtimeSummary
+                                        ? product.runtimeSummary
+                                            .replace('taşınabilir güç paketleri', 'portable power packs')
+                                            .replace('modelinde bir hiltiyi', 'model can power a hammer drill for')
+                                            .replace('bir evi ise', 'and a home for')
+                                            .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
+                                            .replace(/saat/gi, 'hours')
+                                        : product.runtimeSummary}
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                                {product.runtimeStats.map((stat, index) => {
+                                    const Icon = getIcon(stat.icon);
+                                    return (
+                                        <div key={index} className="group relative p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                                            <div className="relative z-10">
+                                                <div className="flex items-center justify-between mb-5">
+                                                    <div className="p-3 rounded-2xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
+                                                        <Icon className="w-6 h-6 text-blue-600" />
+                                                    </div>
+                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{stat.power}</div>
+                                                </div>
+                                                <div className="space-y-1">
+                                                    <h4 className="text-slate-500 font-bold text-xs uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
+                                                    <div className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                                                        {translateLabel(stat.duration, locale)}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Decorative element */}
+                                            <div className="absolute bottom-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                                                <Icon className="w-12 h-12 text-slate-900" />
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </section>
+                )}
+
+                {/* Usage Scenarios Comparison */}
+                {(slug.includes('2-7-kwh') || slug.includes('5-4-kwh')) && (
+                    <section className="py-24 bg-white overflow-hidden text-left">
+                        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20">
+
+                                {/* Home Scenario */}
+                                <div className="relative p-8 sm:p-12 rounded-[3rem] bg-slate-50 border border-slate-100 overflow-hidden group">
+                                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                                        <Home className="w-40 h-40 text-slate-900" />
+                                    </div>
+                                    <div className="relative z-10 space-y-8">
+                                        <div className="space-y-4">
+                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-widest">
+                                                {locale === 'en' ? 'Example Scenario 01' : locale === 'ar' ? 'سيناريو مثال 01' : 'Örnek Senaryo 01'}
+                                            </div>
+                                            <h3 className="text-3xl font-black text-slate-900 tracking-tight">
+                                                {locale === 'en' ? 'General Home Usage' : locale === 'ar' ? 'استخدام منزلي عام' : 'Genel Ev Kullanımı'}
+                                            </h3>
+                                            <div className="grid grid-cols-2 gap-4">
+                                                {(locale === 'en' ? [
+                                                    { label: 'Refrigerator', power: '150W' },
+                                                    { label: 'TV', power: '100W' },
+                                                    { label: 'Modem', power: '20W' },
+                                                    { label: 'LED Lighting', power: '80W' }
+                                                ] : locale === 'ar' ? [
+                                                    { label: 'ثلاجة', power: '150W' },
+                                                    { label: 'تلفزيون', power: '100W' },
+                                                    { label: 'مودم', power: '20W' },
+                                                    { label: 'إضاءة LED', power: '80W' }
+                                                ] : [
+                                                    { label: 'Buzdolabı', power: '150W' },
+                                                    { label: 'TV', power: '100W' },
+                                                    { label: 'Modem', power: '20W' },
+                                                    { label: 'LED Aydınlatma', power: '80W' }
+                                                ]).map((item, i) => (
+                                                    <div key={i} className="flex items-center gap-2 text-slate-600 font-medium text-sm">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                                                        {item.label}: <span className="font-bold text-slate-900 ml-auto">{item.power}</span>
+                                                    </div>
+                                                ))}
+                                                <div className="col-span-2 pt-4 border-t border-slate-200 flex justify-between items-center">
+                                                    <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
+                                                        {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
+                                                    </span>
+                                                    <span className="text-xl font-black text-blue-600">≈ 350 W</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-4">
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
+                                                <span className="font-bold text-slate-900">2.7 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ 7–8 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                            </div>
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
+                                                <span className="font-bold text-slate-900">5.4 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ 15–16 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Site Scenario - Now Light Theme with Orange Accents */}
+                                <div className="relative p-8 sm:p-12 rounded-[3rem] bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 overflow-hidden group">
+                                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                                        <Hammer className="w-40 h-40 text-amber-600" />
+                                    </div>
+                                    <div className="relative z-10 space-y-8">
+                                        <div className="space-y-4">
+                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-[10px] font-bold uppercase tracking-widest border border-amber-200">
+                                                {locale === 'en' ? 'Example Scenario 02' : locale === 'ar' ? 'سيناريو مثال 02' : 'Örnek Senaryo 02'}
+                                            </div>
+                                            <h3 className="text-3xl font-black text-slate-900 tracking-tight">
+                                                {locale === 'en' ? 'Site / Construction Usage' : locale === 'ar' ? 'استخدام الموقع / البناء' : 'Saha / İnşaat Kullanımı'}
+                                            </h3>
+                                            <div className="grid grid-cols-1 gap-4">
+                                                {(locale === 'en' ? [
+                                                    { label: 'Demolition Hammer', power: '1000W' },
+                                                    { label: 'Site Lighting', power: '100W' }
+                                                ] : locale === 'ar' ? [
+                                                    { label: 'مطرقة الهدم', power: '1000W' },
+                                                    { label: 'إضاءة الموقع', power: '100W' }
+                                                ] : [
+                                                    { label: 'Hilti / Kırıcı', power: '1000W' },
+                                                    { label: 'Saha Aydınlatma', power: '100W' }
+                                                ]).map((item, i) => (
+                                                    <div key={i} className="flex items-center gap-2 text-slate-600 font-medium text-sm">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                                                        {item.label}: <span className="font-bold text-slate-900 ml-auto">{item.power}</span>
+                                                    </div>
+                                                ))}
+                                                <div className="pt-4 border-t border-amber-200 flex justify-between items-center">
+                                                    <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
+                                                        {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
+                                                    </span>
+                                                    <span className="text-xl font-black text-amber-600">≈ 1100 W</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-4">
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
+                                                <span className="font-bold text-slate-900">2.7 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="text-amber-600 font-black text-lg">≈ 2.3 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                            </div>
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
+                                                <span className="font-bold text-slate-900">5.4 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
+                                                <span className="text-amber-600 font-black text-lg">≈ 4.8–5 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                )
+                }
+
+                {/* Usage Areas Section (Only if available) */}
+                {
+                    product.usageAreas && product.usageAreas.length > 0 && (
+                        <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                                <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
+                                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                                        {locale === 'tr' ? 'Kullanım Alanları' : 'Usage Areas'}
+                                    </h2>
+                                    <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                                        {localizedName} {locale === 'tr' ? 'ürününün ideal kullanım alanları' : 'ideal usage areas'}
+                                    </p>
+                                </div>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+                                    {product.usageAreas.map((area, index) => {
+                                        const IconComponent = getIcon(area.icon);
+                                        return (
+                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-blue-200 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
+                                                <div className="flex-shrink-0">
+                                                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-blue-500 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                        <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
+                                                    </div>
+                                                </div>
+                                                <span className="text-xs sm:text-sm md:text-base text-neutral-700 font-medium group-hover:text-neutral-900 transition-colors duration-300">
+                                                    {area.label}
+                                                </span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </section>
+                    )
+                }
+
+                {/* Why Revium Section */}
+                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-blue-50 via-white to-teal-50">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                                {locale === 'tr' ? 'Neden Revium?' : 'Why Revium?'}
+                            </h2>
+                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                                {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : 'reasons to choose this product'}
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-5xl mx-auto">
+                            {/* Card 1 */}
+                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
+                                <div className="relative inline-block mb-4 sm:mb-6">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500 to-teal-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                        <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+                                    </div>
+                                </div>
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
+                                    {locale === 'tr' ? 'Güvenilir Teknoloji' : 'Reliable Technology'}
+                                </h3>
+                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                    {locale === 'tr' ? 'En son teknoloji ve güvenilir çözümlerle donatılmış ürünler' : 'Equipped with the latest technology and reliable solutions'}
+                                </p>
+                            </div>
+
+                            {/* Card 2 */}
+                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
+                                <div className="relative inline-block mb-4 sm:mb-6">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                        <Battery className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+                                    </div>
+                                </div>
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
+                                    {locale === 'tr' ? 'Yüksek Performans' : 'High Performance'}
+                                </h3>
+                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                    {locale === 'tr' ? 'Uzun ömürlü ve yüksek verimlilikte enerji depolama çözümleri' : 'Long-lasting and high-efficiency energy storage solutions'}
+                                </p>
+                            </div>
+
+                            {/* Card 3 */}
+                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-xs bg-white">
+                                <div className="relative inline-block mb-4 sm:mb-6">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-500 to-red-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                        <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+                                    </div>
+                                </div>
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-600">
+                                    {locale === 'tr' ? 'Global Kalite' : 'Global Quality'}
+                                </h3>
+                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                    {locale === 'tr' ? 'Uluslararası standartlarda kalite ve sertifikasyonlar' : 'International standards of quality and certifications'}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Final CTA */}
+                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-blue-50 to-slate-50">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="mx-auto max-w-4xl text-center">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
+                                {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : 'More Information'}
+                            </h2>
+                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
+                                {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : 'Contact our expert team for detailed information or to request a quote for this product'}
+                            </p>
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
+                                <Link
+                                    href={`/${locale}/fiyat-teklifi/`}
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                >
+                                    <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
+                                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                                </Link>
+                                <Link
+                                    href={`/${locale}/iletisim/`}
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                >
+                                    <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : 'Expert Consultation'}</span>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    );
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale, slug } = await params;
+
+    if (!slug) {
+        return {
+            title: 'Ürün Bulunamadı | Revium',
+        };
+    }
+
+    const tDetail = await getTranslations({ locale, namespace: 'productDetails' });
+    const product = products[slug];
+    const name = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product?.name || (slug ? slug.toUpperCase().replace(/-/g, ' ') : '');
+    const capacity = product?.capacity || '';
+
+    return {
+        title: `${name} | Revium`,
+        description: `Revium ${name} - ${capacity} kapasiteli enerji depolama sistemi`,
+    };
+}
