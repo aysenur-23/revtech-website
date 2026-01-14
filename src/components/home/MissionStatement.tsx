@@ -60,7 +60,7 @@ export default function MissionStatement() {
 
                         {/* Typewriter Text Container */}
                         <div className="min-h-[3.5rem] sm:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
-                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight tracking-tight">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight">
                                 <span className={cn(
                                     "bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent transition-opacity duration-300",
                                     isVisible ? "opacity-100" : "opacity-0"
