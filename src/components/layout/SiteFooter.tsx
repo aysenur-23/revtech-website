@@ -96,15 +96,12 @@ export default async function SiteFooter() {
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:info@reviumtech.com" className="hover:text-blue-600 transition-colors">
+                                <a href="type:email" dir="ltr" className="hover:text-blue-600 transition-colors">
                                     info@reviumtech.com
                                 </a>
                             </li>
                             <li className="text-neutral-600">
-                                Fevzi Çakmak Mahallesi Milenyum Caddesi No:81
-                            </li>
-                            <li className="text-neutral-600">
-                                Karatay/KONYA
+                                {t.has('address') ? t('address') : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81\nKaratay/KONYA'}
                             </li>
                             <li>
                                 <a

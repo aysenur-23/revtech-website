@@ -1,5 +1,14 @@
 import { setRequestLocale } from 'next-intl/server';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server'; // We need this for server-side translations if needed, or stick to passed dictionary
+
+// Helper to format numbers to Arabic numerals if locale is 'ar'
+function formatNumber(value: string | number, locale: string): string {
+    const str = value.toString();
+    if (locale !== 'ar') return str;
+    const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return str.replace(/\d/g, (d) => arabicDigits[parseInt(d)]);
+}
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -543,7 +552,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Battery className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{product.capacity.replace('kWh', locale === 'ar' ? 'كيلوواط ساعة' : 'kWh')}</div>
+                                        <div className="text-2xl font-black text-slate-900">{formatNumber(product.capacity, locale).replace('kWh', locale === 'ar' ? 'كيلوواط ساعة' : 'kWh')}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -551,7 +560,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Zap className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{product.power.replace('W', locale === 'ar' ? 'واط' : 'W')}</div>
+                                        <div className="text-2xl font-black text-slate-900">{formatNumber(product.power, locale).replace('W', locale === 'ar' ? 'واط' : 'W')}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -601,7 +610,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {/* Model Badge */}
                                     <div className="absolute -bottom-2 right-4 sm:right-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
                                         <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
-                                        <div className="text-xl font-bold text-slate-900">{product.modelId}</div>
+                                        <div className="text-xl font-bold text-slate-900">{formatNumber(product.modelId, locale)}</div>
                                     </div>
                                 </div>
                             </div>
@@ -672,12 +681,12 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <div className="p-3 rounded-2xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
                                                         <Icon className="w-6 h-6 text-blue-600" />
                                                     </div>
-                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{stat.power.replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
+                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{formatNumber(stat.power, locale).replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <h4 className="text-slate-500 font-bold text-xs uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
                                                     <div className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
-                                                        {translateLabel(stat.duration, locale)}
+                                                        {formatNumber(translateLabel(stat.duration, locale), locale)}
                                                     </div>
                                                 </div>
                                             </div>
@@ -719,10 +728,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'Modem', power: '20W' },
                                                     { label: 'LED Lighting', power: '80W' }
                                                 ] : locale === 'ar' ? [
-                                                    { label: 'ثلاجة', power: '150 واط' },
-                                                    { label: 'تلفزيون', power: '100 واط' },
-                                                    { label: 'مودم', power: '20 واط' },
-                                                    { label: 'إضاءة LED', power: '80 واط' }
+                                                    { label: 'ثلاجة', power: formatNumber('150', locale) + ' واط' },
+                                                    { label: 'تلفزيون', power: formatNumber('100', locale) + ' واط' },
+                                                    { label: 'مودم', power: formatNumber('20', locale) + ' واط' },
+                                                    { label: 'إضاءة LED', power: formatNumber('80', locale) + ' واط' }
                                                 ] : [
                                                     { label: 'Buzdolabı', power: '150W' },
                                                     { label: 'TV', power: '100W' },
@@ -738,7 +747,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-blue-600">≈ 350 {locale === 'ar' ? 'واط' : 'W'}</span>
+                                                    <span className="text-xl font-black text-blue-600">≈ {formatNumber('350', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -746,11 +755,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
                                                 <span className="font-bold text-slate-900">2.7 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ 7–8 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '٧-٨' : '7–8'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
                                                 <span className="font-bold text-slate-900">5.4 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ 15–16 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '١٥-١٦' : '15–16'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
                                     </div>
