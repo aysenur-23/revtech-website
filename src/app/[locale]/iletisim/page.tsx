@@ -70,7 +70,7 @@ export default function Iletisim() {
         {
             icon: MapPin,
             title: t('address'),
-            value: 'Konya, Türkiye',
+            value: locale === 'ar' ? 'قونية، تركيا' : 'Konya, Türkiye',
             href: 'https://maps.app.goo.gl/dEJViRBejc7dpB3WA',
             color: 'text-orange-600',
             bg: 'bg-orange-50'

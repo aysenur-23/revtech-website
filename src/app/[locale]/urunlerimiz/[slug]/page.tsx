@@ -477,13 +477,27 @@ export default async function ProductDetailPage({ params }: Props) {
                                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
                                         <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
                                         <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
-                                            {locale === 'en' ? ({
-                                                'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
-                                                'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
-                                                'Sabit / Modüler Batarya': 'Fixed / Modular Battery',
-                                                'Araç Tipi Güç Paketi': 'Vehicle Power Pack',
-                                                'Endüstriyel Güç Sistemleri': 'Industrial Power Systems',
-                                                'GES Ürünleri': 'Solar Products',
+                                            'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
+                                            'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
+                                            'Sabit / Modüler Batarya': 'Fixed / Modular Battery',
+                                            'Araç Tipi Güç Paketi': 'Vehicle Power Pack',
+                                            'Endüstriyel Güç Sistemleri': 'Industrial Power Systems',
+                                            'GES Ürünleri': 'Solar Products',
+                                            }[product.categoryTitle] || product.categoryTitle) : locale === 'ar' ? ({
+                                                'Taşınabilir Enerji Depolama': 'تخزين الطاقة المحمولة',
+                                            'Yüksek Kapasiteli Taşınabilir Güç': 'طاقة محمولة عالية السعة',
+                                            'Sabit / Modüler Batarya': 'بطارية ثابتة / معيارية',
+                                            'Araç Tipi Güç Paketi': 'حزمة طاقة المركبات',
+                                            'Endüstriyel Güç Sistemleri': 'أنظمة الطاقة الصناعية',
+                                            'GES Ürünleri': 'منتجات الطاقة الشمسية',
+                                            'Saha Tipi Taşınabilir Güç Ünitesi': 'وحدة طاقة محمولة للميدان',
+                                            'Endüstriyel Enerji Depolama (Tek Kabin)': 'تخزين الطاقة الصناعية (كابينة واحدة)',
+                                            'Araç Üstü Mobil Enerji Sistemi': 'نظام طاقة متنقل على المركبة',
+                                            'Ölçeklenebilir Endüstriyel Batarya': 'بطارية صناعية قابلة للتطوير',
+                                            'Şebeke Ölçekli Konteyner Tip BESS': 'BESS من نوع حاوية على نطاق الشبكة',
+                                            'Konteyner Tip Enerji + Güneş Entegrasyonu': 'تكامل الطاقة بالحاوية + الطاقة الشمسية',
+                                            'Mobil Güneş Enerjili Römork Sistem': 'نظام مقطورة بالطاقة الشمسية المتنقلة',
+                                            'Solar Carport + EV Şarj + Enerji Depolama': 'مرآب شمسي + شحن EV + تخزين الطاقة'
                                             }[product.categoryTitle] || product.categoryTitle) : product.categoryTitle}
                                         </span>
                                     </div>
