@@ -133,3 +133,9 @@ playwright/.cache/
 
 # Fly.io
 .fly
+
+# Deployment
+public_html/
+temp_htaccess
+temp_images_backup/
+optimize-images.mjs

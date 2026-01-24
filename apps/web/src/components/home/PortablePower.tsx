@@ -126,7 +126,7 @@ export default function PortablePower() {
 
                                     <Image
                                         alt={t.has('imageAlt') ? t('imageAlt') : (locale === 'ar' ? 'طاقة ريفيوم المحمولة ٥.٤ كيلوواط (انتاج عالي)' : 'Revium 5.4 kWh Portable (High Output)')}
-                                        src="/images/products/5-4kwh-h-1.png"
+                                        src="/images/products/5-4kwh-h-1.webp"
                                         width={750}
                                         height={600}
                                         className="relative z-10 w-full h-auto transform group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]"

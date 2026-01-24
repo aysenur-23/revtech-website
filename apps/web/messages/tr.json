@@ -139,7 +139,9 @@
     "categories": "Kategoriler",
     "openMenu": "Menüyü Aç",
     "closeMenu": "Menüyü Kapat",
-    "viewAll": "Tümünü Gör"
+    "viewAll": "Tümünü Gör",
+    "viewAllProducts": "Tüm Ürünler",
+    "viewAllServices": "Tüm Hizmetler"
   },
   "footer": {
     "products": "Ürünlerimiz",
@@ -199,32 +201,100 @@
     "portablePower": {
       "title": "Taşınabilir Güç Paketleri",
       "subtitle": "Kompakt ve Güçlü",
-      "description": "Kamp, saha ve acil durumlar için taşınabilir güç."
+      "description": "Kamp, saha ve acil durumlar için taşınabilir güç.",
+      "products": {
+        "revium-2-7-kwh": {
+          "name": "2.7 kWh Güç Paketi",
+          "description": "Taşınabilir enerji depolama çözümlerinde yeni standart."
+        },
+        "revium-2-7-kwh-bag": {
+          "name": "2.7 kWh Çanta Tip",
+          "description": "Dayanıklı çanta tipi tasarımı ile saha çözümü."
+        },
+        "revium-5-4-kwh": {
+          "name": "5.4 kWh Güç Paketi",
+          "description": "Yüksek kapasiteli profesyonel taşınabilir güç."
+        }
+      }
     },
     "vehiclePower": {
       "title": "Araç Tipi Güç",
       "subtitle": "Mobil Enerji",
-      "description": "Yüksek kapasiteli araç üstü sistemler."
+      "description": "Yüksek kapasiteli araç üstü sistemler.",
+      "products": {
+        "revium-pickup-power-pack": {
+          "name": "Pick Up Güç Paketi",
+          "description": "Revium Pick Up araçlar için özel güç çözümü."
+        }
+      }
     },
     "charging": {
       "title": "Şarj İstasyonları",
       "subtitle": "Elektrikli Araç Şarjı",
-      "description": "AC ve DC yüksek performanslı şarj çözümleri."
+      "description": "AC ve DC yüksek performanslı şarj çözümleri.",
+      "products": {
+        "revium-grid-core": {
+          "name": "Grid Core",
+          "description": "Yüksek hızlı ve akıllı EV şarj yönetim ünitesi."
+        },
+        "revium-grid-pulse": {
+          "name": "Grid Pulse",
+          "description": "Dinamik yük dengeleme ve enerji izleme modülü."
+        },
+        "revium-grid-pulse-gen2": {
+          "name": "Grid Pulse Gen2",
+          "description": "Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi."
+        }
+      }
     },
     "cabinPower": {
       "title": "Kabin Tipi Güç",
       "subtitle": "Endüstriyel güç çözümleri",
-      "description": "Büyük ölçekli projeler için yüksek kapasiteli kabin tipi enerji sistemleri."
+      "description": "Büyük ölçekli projeler için yüksek kapasiteli kabin tipi enerji sistemleri.",
+      "products": {
+        "revium-power-cabinet": {
+          "name": "Güç Kabini",
+          "description": "Endüstriyel tek kabin enerji depolama sistemi."
+        },
+        "revium-power-layer": {
+          "name": "Güç Katmanı",
+          "description": "Ölçeklenebilir endüstriyel batarya ünitesi."
+        },
+        "revium-gridpack": {
+          "name": "GRIDPACK",
+          "description": "Şebeke ölçekli BESS ve yenilenebilir enerji depolama."
+        }
+      }
     },
     "gesProducts": {
       "title": "Solar Ürünler",
       "subtitle": "Güneş enerjisi çözümleri",
-      "description": "Enerjisini güneşten alan güçlü komponentler."
+      "description": "Enerjisini güneşten alan güçlü komponentler.",
+      "products": {
+        "revium-powerstation-series": {
+          "name": "Powerstation Serisi",
+          "description": "Konteyner tipi GES entegre depolama."
+        },
+        "revium-solarport": {
+          "name": "Solarport",
+          "description": "Solar carport ve EV şarj entegrasyonu."
+        }
+      }
     },
     "batteryPower": {
       "title": "Batarya Sistemleri",
       "subtitle": "Yüksek Teknolojili Depolama",
-      "description": "Her alanda güvenilir enerji için gelişmiş batarya teknolojileri."
+      "description": "Her alanda güvenilir enerji için gelişmiş batarya teknolojileri.",
+      "products": {
+        "revium-2-7-kwh-lfp": {
+          "name": "2.7 kWh LFP Batarya",
+          "description": "Güneş enerjisi sistemleri için kompakt LFP çözüm."
+        },
+        "revium-5-4-kwh-lfp": {
+          "name": "5.4 kWh LFP Batarya",
+          "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli depolama."
+        }
+      }
     },
     "learnMore": "Detayları İncele",
     "viewDetails": "DETAYLI incele",
@@ -501,7 +571,7 @@
     },
     "products": {
       "revium-2-7-kwh": {
-        "name": "Revium 2.7 kWh Depolanabilir Güç Paketi",
+        "name": "2.7 kWh Depolanabilir Güç Paketi",
         "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
         "features": [
           "2.7 kWh Kapasite",
@@ -512,7 +582,7 @@
         ]
       },
       "revium-2-7-kwh-bag": {
-        "name": "Revium 2.7 kWh Çanta Tip Güç Paketi",
+        "name": "2.7 kWh Çanta Tip Güç Paketi",
         "description": "Dış mekan ve saha çalışmaları için özel olarak tasarlanmış, dayanıklı çanta tipi güç ünitesi.",
         "features": [
           "Su ve Darbe Dayanımı",
@@ -523,7 +593,7 @@
         ]
       },
       "revium-storage-battery": {
-        "name": "Revium Storage Battery",
+        "name": "Storage Battery",
         "description": "Modüler ve ölçeklenebilir batarya sistemleri. İhtiyaca göre kapasite artırımı imkanı.",
         "features": [
           "Modüler Tasarım",
@@ -534,7 +604,7 @@
         ]
       },
       "revium-5-4-kwh": {
-        "name": "Revium 5.4 kWh Depolanabilir Güç Paketi",
+        "name": "5.4 kWh Depolanabilir Güç Paketi",
         "description": "Profesyonel kullanım için yüksek kapasiteli, kesintisiz enerji çözümü.",
         "features": [
           "5.4 kWh Kapasite",
@@ -545,7 +615,7 @@
         ]
       },
       "revium-power-cabinet": {
-        "name": "Revium Güç Kabini",
+        "name": "Güç Kabini",
         "description": "Büyük kapasiteli enerji depolama ihtiyaçları için hepsi bir arada kabin çözümü.",
         "features": [
           "21.6 kWh Kapasite",
@@ -556,7 +626,7 @@
         ]
       },
       "revium-pickup-power-pack": {
-        "name": "Revium Pick Up Güç Paketi",
+        "name": "Pick Up Güç Paketi",
         "description": "Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.",
         "features": [
           "Enerji: 60 – 100 kWh",
@@ -568,7 +638,7 @@
         ]
       },
       "revium-power-layer": {
-        "name": "Revium Güç Katmanı",
+        "name": "Güç Katmanı",
         "description": "İstiflenebilir güç katmanları ile endüstriyel ölçekte depolama gücü.",
         "features": [
           "İstiflenebilir Yapı",
@@ -580,7 +650,7 @@
         ]
       },
       "revium-powerstation-series": {
-        "name": "Revium Powerstation Serisi",
+        "name": "Powerstation Serisi",
         "description": "Güneş enerjisi ve depolamayı tek bir ünitede birleştiren akıllı istasyonlar.",
         "features": [
           "Güneş Paneli Girişi",
@@ -592,7 +662,7 @@
         ]
       },
       "revium-voltwagon": {
-        "name": "Revium VoltWagon",
+        "name": "VoltWagon",
         "description": "Güneşten aldığı gücü mobil olarak taşıyan, her türlü araziye uygun güneş enerjili römork.",
         "features": [
           "Römork Tip Tasarım",
@@ -604,7 +674,7 @@
         ]
       },
       "revium-gridpack": {
-        "name": "Revium GRIDPACK",
+        "name": "GRIDPACK",
         "description": "Şebeke ölçekli enerji depolama ve yenilenebilir enerji entegrasyonu için yüksek kapasiteli BESS çözümü.",
         "features": [
           "500 kWh – 5 MWh Kapasite",
@@ -624,7 +694,7 @@
         }
       },
       "revium-2-7-kwh-lfp": {
-        "name": "Revium 2.7 kWh LFP Batarya",
+        "name": "2.7 kWh LFP Batarya",
         "description": "Güneş enerjisi sistemleri ve mobil güç çözümleri için kompakt, uzun ömürlü LFP batarya.",
         "features": [
           "2.7 kWh Kapasite",
@@ -644,7 +714,7 @@
         }
       },
       "revium-5-4-kwh-lfp": {
-        "name": "Revium 5.4 kWh LFP Batarya",
+        "name": "5.4 kWh LFP Batarya",
         "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli, uzun ömürlü enerji depolama çözümü.",
         "features": [
           "5.4 kWh Kapasite",
@@ -664,7 +734,7 @@
         }
       },
       "revium-grid-core": {
-        "name": "Revium Grid Core",
+        "name": "Grid Core",
         "description": "45-180 kW aralığında yüksek güçlü DC hızlı şarj istasyonu.",
         "features": [
           "45 – 180 kW DC Güç",
@@ -676,7 +746,7 @@
         ]
       },
       "revium-grid-pulse": {
-        "name": "Revium Grid Pulse",
+        "name": "Grid Pulse",
         "description": "90-270 kW çift çıkışlı esnek DC şarj istasyonu.",
         "features": [
           "90 – 270 kW DC Güç",
@@ -688,7 +758,7 @@
         ]
       },
       "revium-grid-pulse-gen2": {
-        "name": "Revium Grid Pulse Gen2",
+        "name": "Grid Pulse Gen2",
         "description": "Yeni nesil bağlantılı ve akıllı yüksek hızlı DC şarj istasyonu.",
         "features": [
           "90 – 270 kW DC Güç",
@@ -700,7 +770,7 @@
         ]
       },
       "revium-solarport": {
-        "name": "Revium Solarport",
+        "name": "Solarport",
         "description": "Elektrikli araç şarj istasyonu ve güneş enerjisi carport çözümü. Araçlarınızı korurken temiz enerji ile şarj edin.",
         "features": [
           "Çift Araç Kapasitesi",

@@ -10,30 +10,30 @@ interface Props {
 
 const allProducts = [
     // Portable Power
-    { id: 'revium-2-7-kwh', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-a-1.png', category: 'portablePower', descriptionKey: 'revium-2-7-kwh.description' },
-    { id: 'revium-2-7-kwh-bag', name: '2.7 kWh Çanta Tip', image: '/images/products/2-7kwh-b-1.png', category: 'portablePower', descriptionKey: 'revium-2-7-kwh-bag.description' },
-    { id: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.png', category: 'portablePower', descriptionKey: 'revium-5-4-kwh.description' },
+    { id: 'revium-2-7-kwh', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', category: 'portablePower', descriptionKey: 'revium-2-7-kwh.description' },
+    { id: 'revium-2-7-kwh-bag', name: '2.7 kWh Çanta Tip', image: '/images/products/2-7kwh-b-1.webp', category: 'portablePower', descriptionKey: 'revium-2-7-kwh-bag.description' },
+    { id: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', category: 'portablePower', descriptionKey: 'revium-5-4-kwh.description' },
 
     // Vehicle Power
-    { id: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.png', category: 'vehiclePower', descriptionKey: 'revium-pickup-power-pack.description' },
+    { id: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.webp', category: 'vehiclePower', descriptionKey: 'revium-pickup-power-pack.description' },
 
     // Charging Stations
-    { id: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.png', category: 'charging', descriptionKey: 'revium-grid-core.description' },
-    { id: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.png', category: 'charging', descriptionKey: 'revium-grid-pulse.description' },
-    { id: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.png', category: 'charging', descriptionKey: 'revium-grid-pulse-gen2.description' },
+    { id: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.webp', category: 'charging', descriptionKey: 'revium-grid-core.description' },
+    { id: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.webp', category: 'charging', descriptionKey: 'revium-grid-pulse.description' },
+    { id: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.webp', category: 'charging', descriptionKey: 'revium-grid-pulse-gen2.description' },
 
     // Cabin Power
-    { id: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.png', category: 'cabinPower', descriptionKey: 'revium-power-cabinet.description' },
-    { id: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.png', category: 'cabinPower', descriptionKey: 'revium-power-layer.description' },
-    { id: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.png', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
+    { id: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', category: 'cabinPower', descriptionKey: 'revium-power-cabinet.description' },
+    { id: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', category: 'cabinPower', descriptionKey: 'revium-power-layer.description' },
+    { id: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
 
     // Battery Systems
-    { id: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.png', category: 'batteryPower', descriptionKey: 'revium-2-7-kwh-lfp.description' },
-    { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.png', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
+    { id: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-2-7-kwh-lfp.description' },
+    { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
 
     // Solar Products
-    { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.png', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
-    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.png', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
+    { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
+    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
 ];
 
 const categories = [
@@ -78,7 +78,7 @@ export default async function ProductsPage({ params }: Props) {
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
             {/* Hero Section - Premium Redesign without Grid */}
-            <section className="relative pt-36 pb-32 lg:pt-44 lg:pb-32 overflow-hidden bg-white">
+            <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-white">
                 {/* Premium Animated Background */}
                 <div className="absolute inset-0 z-0">
                     <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-100/40 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
@@ -88,31 +88,33 @@ export default async function ProductsPage({ params }: Props) {
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100/50 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100/50 mb-8">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                         </span>
-                        <span className="text-xs font-bold text-blue-600 tracking-widest uppercase">{t('allProductsTitle')}</span>
+                        <span className="text-sm font-bold text-blue-600 tracking-widest uppercase">{t('allProductsTitle')}</span>
                     </div>
 
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-[1.15] mb-5">
-                        <span className="block font-normal text-slate-400 text-base sm:text-lg lg:text-xl mb-1 tracking-normal">
+                    <h1 className="font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
+                        <span className="block font-medium text-slate-500 text-base sm:text-lg lg:text-xl mb-3 tracking-normal">
                             {hero.titleLine1}
                         </span>
-                        {hero.titleLine2}{' '}
-                        <span className="relative inline-block">
-                            <span className="relative z-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 bg-clip-text text-transparent">
-                                {hero.titleHighlight}
+                        <span className="text-3xl sm:text-4xl lg:text-5xl block mb-2">
+                            {hero.titleLine2}{' '}
+                            <span className="relative inline-block">
+                                <span className="relative z-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 bg-clip-text text-transparent">
+                                    {hero.titleHighlight}
+                                </span>
+                                {/* Underline decoration */}
+                                <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
+                                </svg>
                             </span>
-                            {/* Underline decoration */}
-                            <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                            </svg>
                         </span>
                     </h1>
 
-                    <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
+                    <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
                         {hero.description}
                     </p>
                 </div>

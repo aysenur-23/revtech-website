@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
+import { toArabicNumeral } from '@/lib/utils';
 
 interface Props {
     params: Promise<{ locale: string; slug: string }>;
@@ -12,57 +13,64 @@ interface Props {
 const categoryData: Record<string, { titleKey: string; heroImage: string; products: { slug: string; name: string; image: string; description: string }[] }> = {
     portable: {
         titleKey: 'portablePower',
-        heroImage: '/images/categories/portable-power-new.png',
+        heroImage: '/images/categories/portable-power-new.webp',
         products: [
-            { slug: 'revium-2-7-kwh', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-a-1.png', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
-            { slug: 'revium-2-7-kwh-bag', name: '2.7 kWh Çanta Tip', image: '/images/products/2-7kwh-b-1.png', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
-            { slug: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.png', description: 'Yüksek kapasiteli profesyonel taşınabilir güç.' },
+            { slug: 'revium-2-7-kwh', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
+            { slug: 'revium-2-7-kwh-bag', name: '2.7 kWh Çanta Tip', image: '/images/products/2-7kwh-b-1.webp', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
+            { slug: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', description: 'Yüksek kapasiteli profesyonel taşınabilir güç.' },
         ],
     },
     vehicle: {
         titleKey: 'vehiclePower',
         heroImage: '/images/products/vehicle-category-new.jpg',
         products: [
-            { slug: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.png', description: 'Revium Pick Up araçlar için özel güç çözümü.' },
+            { slug: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.webp', description: 'Revium Pick Up araçlar için özel güç çözümü.' },
         ],
     },
     charging: {
         titleKey: 'charging',
-        heroImage: '/images/categories/charging-category.png',
+        heroImage: '/images/categories/charging-category.webp',
         products: [
-            { slug: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.png', description: 'Yüksek hızlı ve akıllı EV şarj yönetim ünitesi.' },
-            { slug: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.png', description: 'Dinamik yük dengeleme ve enerji izleme modülü.' },
-            { slug: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.png', description: 'Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi.' },
+            { slug: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.webp', description: 'Yüksek hızlı ve akıllı EV şarj yönetim ünitesi.' },
+            { slug: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.webp', description: 'Dinamik yük dengeleme ve enerji izleme modülü.' },
+            { slug: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.webp', description: 'Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi.' },
         ],
     },
     cabin: {
         titleKey: 'cabinPower',
         heroImage: '/images/categories/cabin-category.jpg',
         products: [
-            { slug: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.png', description: 'Endüstriyel tek kabin enerji depolama sistemi.' },
-            { slug: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.png', description: 'Ölçeklenebilir endüstriyel batarya ünitesi.' },
-            { slug: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.png', description: 'Şebeke ölçekli BESS ve yenilenebilir enerji depolama.' },
+            { slug: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', description: 'Endüstriyel tek kabin enerji depolama sistemi.' },
+            { slug: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', description: 'Ölçeklenebilir endüstriyel batarya ünitesi.' },
+            { slug: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', description: 'Şebeke ölçekli BESS ve yenilenebilir enerji depolama.' },
         ],
     },
     ges: {
         titleKey: 'gesProducts',
         heroImage: '/images/categories/solar-category.jpg',
         products: [
-            { slug: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.png', description: 'Konteyner tipi GES entegre depolama.' },
-            { slug: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.png', description: 'Solar carport ve EV şarj entegrasyonu.' },
+            { slug: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', description: 'Konteyner tipi GES entegre depolama.' },
+            { slug: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', description: 'Solar carport ve EV şarj entegrasyonu.' },
         ],
     },
     battery: {
         titleKey: 'batteryPower',
         heroImage: '/images/categories/battery-category.jpg',
         products: [
-            { slug: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.png', description: 'Güneş enerjisi sistemleri için kompakt LFP çözüm.' },
-            { slug: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.png', description: 'Ticari ve profesyonel kullanım için yüksek kapasiteli depolama.' },
+            { slug: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', description: 'Güneş enerjisi sistemleri için kompakt LFP çözüm.' },
+            { slug: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', description: 'Ticari ve profesyonel kullanım için yüksek kapasiteli depolama.' },
         ],
     },
 };
 
-export const dynamic = 'force-dynamic';
+const locales = ['tr', 'en', 'ar'];
+const categorySlugs = Object.keys(categoryData);
+
+export function generateStaticParams() {
+    return locales.flatMap((locale) =>
+        categorySlugs.map((slug) => ({ locale, slug }))
+    );
+}
 
 export default async function CategoryPage({ params }: Props) {
     const { locale, slug } = await params;
@@ -78,7 +86,7 @@ export default async function CategoryPage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             {/* Premium Category Hero - Enhanced Light Theme */}
-            <section className="relative pt-20 pb-12 sm:pt-24 sm:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/50">
+            <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/50">
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
@@ -102,12 +110,12 @@ export default async function CategoryPage({ params }: Props) {
                             </div>
 
                             {/* Title with Gradient Accent */}
-                            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.05] mb-6 drop-shadow-sm">
+                            <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight leading-[1.05] mb-4 drop-shadow-sm">
                                 {t(`${category.titleKey}.title`)}
                             </h1>
 
                             {/* Description */}
-                            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0 font-medium">
+                            <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 font-medium">
                                 {t(`${category.titleKey}.subtitle`)}
                             </p>
 
@@ -121,13 +129,13 @@ export default async function CategoryPage({ params }: Props) {
                                                     slug === 'battery' ? 'bg-purple-500 ring-purple-300' :
                                                         'bg-yellow-500 ring-yellow-300'
                                         }`} />
-                                    {category.products.length} {locale === 'tr' ? 'Ürün' : 'Products'}
+                                    {locale === 'ar' ? `${toArabicNumeral(category.products.length, locale)} منتجات` : locale === 'en' ? `${category.products.length} Products` : `${category.products.length} Ürün`}
                                 </div>
                                 <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm hover:scale-105 transition-transform duration-300 cursor-default">
-                                    Premium Kalite
+                                    {locale === 'ar' ? 'جودة ممتازة' : locale === 'en' ? 'Premium Quality' : 'Premium Kalite'}
                                 </div>
                                 <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm hover:scale-105 transition-transform duration-300 cursor-default">
-                                    Yerli Üretim
+                                    {locale === 'ar' ? 'إنتاج محلي' : locale === 'en' ? 'Local Production' : 'Yerli Üretim'}
                                 </div>
                             </div>
                         </div>
@@ -156,39 +164,48 @@ export default async function CategoryPage({ params }: Props) {
             <section className="py-12 lg:py-20 bg-slate-50">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {category.products.map((product, idx) => (
-                            <Link
-                                key={product.slug}
-                                href={`/${locale}/urunlerimiz/${product.slug}/`}
-                                className="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ring-1 ring-slate-100 hover:ring-blue-100"
-                                style={{ animationDelay: `${idx * 100}ms` }}
-                            >
-                                <div className="aspect-square relative p-8 flex items-center justify-center bg-gradient-to-b from-slate-50 to-white transition-colors group-hover:from-blue-50/30 group-hover:to-white">
-                                    <Image
-                                        src={product.image}
-                                        alt={product.name}
-                                        fill
-                                        className="object-contain p-6 group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
-                                    />
-                                </div>
+                        {category.products.map((product, idx) => {
+                            const productName = t.has(`${category.titleKey}.products.${product.slug}.name`)
+                                ? t(`${category.titleKey}.products.${product.slug}.name`)
+                                : product.name;
+                            const productDesc = t.has(`${category.titleKey}.products.${product.slug}.description`)
+                                ? t(`${category.titleKey}.products.${product.slug}.description`)
+                                : product.description;
 
-                                <div className="p-8 flex flex-col flex-grow">
-                                    <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors mb-3">
-                                        {product.name}
-                                    </h3>
-                                    <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-2">
-                                        {product.description}
-                                    </p>
+                            return (
+                                <Link
+                                    key={product.slug}
+                                    href={`/${locale}/urunlerimiz/${product.slug}/`}
+                                    className="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ring-1 ring-slate-100 hover:ring-blue-100"
+                                    style={{ animationDelay: `${idx * 100}ms` }}
+                                >
+                                    <div className="aspect-square relative p-8 flex items-center justify-center bg-gradient-to-b from-slate-50 to-white transition-colors group-hover:from-blue-50/30 group-hover:to-white">
+                                        <Image
+                                            src={product.image}
+                                            alt={productName}
+                                            fill
+                                            className="object-contain p-6 group-hover:scale-110 transition-transform duration-500 drop-shadow-lg"
+                                        />
+                                    </div>
 
-                                    <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-blue-600 transition-colors">
-                                        <span>{t('viewDetails')}</span>
-                                        <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-blue-100 text-slate-600 group-hover:text-blue-600 flex items-center justify-center transition-colors">
-                                            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                                    <div className="p-8 flex flex-col flex-grow">
+                                        <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors mb-3">
+                                            {productName}
+                                        </h3>
+                                        <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-2">
+                                            {productDesc}
+                                        </p>
+
+                                        <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-blue-600 transition-colors">
+                                            <span>{t('viewDetails')}</span>
+                                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-blue-100 text-slate-600 group-hover:text-blue-600 flex items-center justify-center transition-colors">
+                                                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </Link>
-                        ))}
+                                </Link>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
@@ -204,6 +221,12 @@ export default async function CategoryPage({ params }: Props) {
                             {t(`${category.titleKey}.subtitle`)}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link
+                                href={`/${locale}/urunlerimiz`}
+                                className="px-8 py-4 bg-blue-50 text-blue-700 border-2 border-blue-100 rounded-xl font-bold hover:bg-blue-100/50 hover:border-blue-200 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
+                            >
+                                {t('allProducts')}
+                            </Link>
                             <Link
                                 href={`/${locale}/iletisim/`}
                                 className="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"

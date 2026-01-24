@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 export default function Iletisim() {
     const t = useTranslations('contact');
@@ -13,41 +15,38 @@ export default function Iletisim() {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const form = e.currentTarget; // Store reference before async
+        const form = e.currentTarget;
         setIsSubmitting(true);
 
-        // Get form data
         const formData = new FormData(form);
-        const data = {
-            type: 'contact',
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message'),
-        };
 
         try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
+            // Firebase Firestore'a kaydet
+            await addDoc(collection(db, 'contact_messages'), {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message'),
+                locale: locale,
+                createdAt: serverTimestamp(),
+                status: 'new',
+                // Firebase Extension "Trigger Email" için
+                to: ['info@reviumtech.com'],
+                template: {
+                    name: 'contact',
+                    data: {
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        subject: formData.get('subject'),
+                        message: formData.get('message'),
+                    }
+                }
             });
 
-            const result = await response.json();
-
-            if (response.ok) {
-                alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');
-                form.reset(); // Use stored reference
-            } else {
-                // Show detailed error if available
-                const errorMessage = result.error || result.message || 'Bir hata oluştu';
-                throw new Error(errorMessage);
-            }
+            alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');
+            form.reset();
         } catch (error: any) {
             console.error('Submission error:', error);
-            // Show the actual error message to the user for debugging
             alert(`Hata: ${error.message || 'Mesaj gönderilemedi.'}`);
         } finally {
             setIsSubmitting(false);
@@ -74,7 +73,7 @@ export default function Iletisim() {
         {
             icon: MapPin,
             title: t('address'),
-            value: locale === 'ar' ? 'قونية، تركيا' : 'Konya, Türkiye',
+            value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: 81، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
             href: 'https://maps.app.goo.gl/dEJViRBejc7dpB3WA',
             color: 'text-orange-600',
             bg: 'bg-orange-50'

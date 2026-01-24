@@ -55,7 +55,7 @@ export default function Features() {
             <div
                 className="absolute inset-0 z-0 bg-no-repeat bg-center bg-cover"
                 style={{
-                    backgroundImage: 'url(/images/hero/revium-bg.png)',
+                    backgroundImage: 'url(/images/why-revium-bg.webp)',
                     backgroundAttachment: 'fixed'
                 }}
             >

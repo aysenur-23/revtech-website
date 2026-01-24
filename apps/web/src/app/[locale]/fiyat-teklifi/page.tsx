@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 export default function QuotePage() {
     const t = useTranslations('quote');
@@ -24,51 +26,35 @@ export default function QuotePage() {
         const form = e.currentTarget;
         const formData = {
             type: 'quote',
-            name: (form.elements[0] as HTMLInputElement).value, // Name
-            email: (form.elements[1] as HTMLInputElement).value, // Email
-            phone: (form.elements[2] as HTMLInputElement).value, // Phone
-            company: (form.elements[3] as HTMLInputElement).value, // Company
-            category: (form.elements[4] as HTMLSelectElement).value, // Category
-            power: (form.elements[5] as HTMLSelectElement).value, // Power
-            area: (form.elements[6] as HTMLSelectElement).value, // Area
-            budget: (form.elements[7] as HTMLSelectElement).value, // Budget
-            specs: (form.elements[8] as HTMLTextAreaElement).value, // Specs
-            date: (form.elements[9] as HTMLInputElement).value, // Date
-            message: (form.elements[10] as HTMLTextAreaElement).value, // Message
+            name: (form.elements[0] as HTMLInputElement).value,
+            email: (form.elements[1] as HTMLInputElement).value,
+            phone: (form.elements[2] as HTMLInputElement).value,
+            company: (form.elements[3] as HTMLInputElement).value,
+            category: (form.elements[4] as HTMLSelectElement).value,
+            power: (form.elements[5] as HTMLSelectElement).value,
+            area: (form.elements[6] as HTMLSelectElement).value,
+            budget: (form.elements[7] as HTMLSelectElement).value,
+            specs: (form.elements[8] as HTMLTextAreaElement).value,
+            date: (form.elements[9] as HTMLInputElement).value,
+            message: (form.elements[10] as HTMLTextAreaElement).value,
         };
 
         try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    type: 'quote',
-                    name: formData.name,
-                    email: formData.email,
-                    phone: formData.phone,
-                    product: `Category: ${formData.category}, Power: ${formData.power}, Area: ${formData.area}`,
-                    message: `
-                        Company: ${formData.company}
-                        Budget: ${formData.budget}
-                        Specs: ${formData.specs}
-                        Target Date: ${formData.date}
-                        
-                        Additional Message:
-                        ${formData.message}
-                    `,
-                    subject: 'New Quote Request'
-                }),
+            // Firebase Firestore'a kaydet
+            await addDoc(collection(db, 'quote_requests'), {
+                ...formData,
+                locale: locale,
+                createdAt: serverTimestamp(),
+                status: 'new',
+                // Firebase Extension "Trigger Email" için
+                to: ['info@reviumtech.com'],
+                template: {
+                    name: 'quote',
+                    data: formData
+                }
             });
 
-            const result = await response.json();
-
-            if (response.ok) {
-                setSubmitted(true);
-            } else {
-                throw new Error(result.message || 'Bir hata oluştu');
-            }
+            setSubmitted(true);
         } catch (error) {
             console.error('Submission error:', error);
             alert('Teklif formunu gönderirken bir hata oluştu. Lütfen tekrar deneyiniz.');

@@ -32,12 +32,12 @@ export default function ServiceCards() {
         {
             key: 'gesInstallation',
             slug: 'ges-kurulumu',
-            image: '/images/services/ges-service-new.png',
+            image: '/images/services/ges-service-new.webp',
         },
         {
             key: 'industrialInstallation',
             slug: 'endustriyel-kurulum',
-            image: '/images/services/industrial-service-new.png',
+            image: '/images/services/industrial-service-new.webp',
         },
     ];
 

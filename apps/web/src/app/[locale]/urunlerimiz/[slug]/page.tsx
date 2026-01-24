@@ -44,7 +44,7 @@ const products: Record<string, {
         modelId: 'R-P2700',
         capacity: '2.7 kWh',
         power: '2000 W',
-        image: '/images/products/2-7kwh-a-1.png',
+        image: '/images/products/2-7kwh-a-1.webp',
         categoryTitle: 'Taşınabilir Enerji Depolama',
         description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
         features: [
@@ -88,7 +88,7 @@ const products: Record<string, {
         modelId: 'R-SB2700B',
         capacity: '2.7 kWh',
         power: '2000 W',
-        image: '/images/products/2-7kwh-b-1.png',
+        image: '/images/products/2-7kwh-b-1.webp',
         categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
         description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
         features: [
@@ -125,12 +125,13 @@ const products: Record<string, {
         ],
         runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
     },
+
     'revium-storage-battery': {
         name: 'Revium Storage Battery (2.7 / 5.4 kWh)',
         modelId: 'R-STORAGE',
         capacity: '2.7 / 5.4 kWh',
         power: 'VDC System',
-        image: '/images/products/stack-21-6kwh-1.png',
+        image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Sabit / Modüler Batarya',
         description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü.',
         features: [
@@ -165,7 +166,7 @@ const products: Record<string, {
         modelId: 'R-P5400',
         capacity: '5.4 kWh',
         power: '3000 W',
-        image: '/images/products/5-4kwh-h-1.png',
+        image: '/images/products/5-4kwh-h-1.webp',
         categoryTitle: 'Yüksek Kapasiteli Taşınabilir Güç',
         description: 'Yüksek enerji ihtiyacı duyan profesyoneller için 5.4 kWh kapasiteli devasa güç.',
         features: [
@@ -207,7 +208,7 @@ const products: Record<string, {
         modelId: 'R-CABINET',
         capacity: '5.4 – 21.6 kWh',
         power: '3 kW – 22 kW',
-        image: '/images/products/cabin-power.png',
+        image: '/images/products/cabin-power.webp',
         categoryTitle: 'Endüstriyel Enerji Depolama (Tek Kabin)',
         description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini.',
         features: [
@@ -238,7 +239,7 @@ const products: Record<string, {
         modelId: 'R-PICKUP',
         capacity: '60 – 100 kWh',
         power: '30 kW (3-Phase)',
-        image: '/images/products/hilux-21-6kwh-1.png',
+        image: '/images/products/hilux-21-6kwh-1.webp',
         categoryTitle: 'Araç Üstü Mobil Enerji Sistemi',
         description: 'Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.',
         features: [
@@ -267,7 +268,7 @@ const products: Record<string, {
         modelId: 'R-LAYER',
         capacity: '5.4 – 172 kWh',
         power: 'Scalable',
-        image: '/images/products/stack-21-6kwh-1.png',
+        image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Ölçeklenebilir Endüstriyel Batarya',
         description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları.',
         features: [
@@ -298,7 +299,7 @@ const products: Record<string, {
         modelId: 'GRIDPACK',
         capacity: '500 kWh – 5 MWh',
         power: '200 kW – 1 MW',
-        image: '/images/products/gridpack.png',
+        image: '/images/products/gridpack.webp',
         categoryTitle: 'Şebeke Ölçekli Konteyner Tip BESS',
         description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
         features: [
@@ -329,7 +330,7 @@ const products: Record<string, {
         modelId: 'POWERSTATION',
         capacity: '500 kWh – 5 MW',
         power: '200 kW – 1 MW',
-        image: '/images/products/ges-power-station.png',
+        image: '/images/products/ges-power-station.webp',
         categoryTitle: 'Konteyner Tip Enerji + Güneş Entegrasyonu',
         description: 'Güneş enerjisi ve depolamayı tek bir konteynerde birleştiren hibrit çözüm.',
         features: [
@@ -358,7 +359,7 @@ const products: Record<string, {
         modelId: 'VOLTWAGON',
         capacity: '192 kWh',
         power: '20 kW',
-        image: '/images/products/solar-voltwagon.png',
+        image: '/images/products/solar-voltwagon.webp',
         categoryTitle: 'Mobil Güneş Enerjili Römork Sistem',
         description: 'Her yere taşınabilen devasa güneş enerjili mobil römork sistemi.',
         features: [
@@ -390,7 +391,7 @@ const products: Record<string, {
         modelId: 'SOLARPORT',
         capacity: '2 – 8 Araç',
         power: '6 – 24 kW AC',
-        image: '/images/products/solarport-duo.png',
+        image: '/images/products/solarport-duo.webp',
         categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
         description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
         features: [
@@ -418,7 +419,7 @@ const products: Record<string, {
         modelId: 'R-GRID-CORE',
         capacity: 'DC Şarj',
         power: '45 – 180 kW',
-        image: '/images/products/grid-core.png',
+        image: '/images/products/grid-core.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
         description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
         features: [
@@ -446,35 +447,92 @@ const products: Record<string, {
         modelId: 'R-GRID-PULSE',
         capacity: 'DC Şarj',
         power: '90 – 270 kW',
-        image: '/images/products/grid-pulse.png',
+        image: '/images/products/grid-pulse.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Çift çıkışlı, yüksek performanslı esnek DC şarj istasyonu.',
+        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
         features: [
             '90 – 270 kW DC Çıkış',
-            'Çift Çıkış (2 DC)',
-            'CCS1 / CCS2 Konnektör',
-            'RFID / QR / NFC Ödeme',
-            '400 VAC 3-Faz Giriş',
+            'Çift Çıkış (2x DC)',
+            '150 – 1000 VDC Gerilim',
+            'CCS1 / CCS2',
+            'RFID / QR Ödeme',
             'IP54 Koruma'
         ],
         specs: [
             { label: 'DC Güç', value: '90 – 270 kW' },
-            { label: 'AC Giriş', value: '400 VAC 3-Faz' },
-            { label: 'Çıkış Sayısı', value: '2 DC' },
-            { label: 'Konnektör', value: 'CCS1 / CCS2' },
+            { label: 'DC Gerilim', value: '150 – 1000 VDC' },
+            { label: 'Çıkış Sayısı', value: '2 (CCS1/CCS2)' },
+            { label: 'Verimlilik', value: '> 95%' },
         ],
         usageAreas: [
-            { label: 'Halka Açık Şarj', icon: 'Zap' },
+            { label: 'Halka Açık Şarj', icon: 'Globe' },
             { label: 'Filo Yönetimi', icon: 'Truck' },
-            { label: 'Plazalar', icon: 'Building2' },
+            { label: 'Plazalar', icon: 'Building' },
         ]
     },
+    'revium-2-7-kwh-lfp': {
+        name: 'Revium 2.7 kWh LFP Batarya',
+        modelId: '2.7-LFP',
+        capacity: '2.7 kWh',
+        power: '2.7 kW',
+        image: '/images/products/2.7-lfp.webp',
+        categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
+        description: 'Güneş enerjisi sistemleri ve mobil uygulamalar için güvenilir LFP batarya.',
+        features: [
+            'Nominal Voltaj: 24 VDC',
+            'Kapasite: 105 Ah',
+            'Enerji: 2.7 kWh',
+            'Haberleşme: Bluetooth',
+            'Ağırlık: 25 kg',
+            'Koruma: IP65'
+        ],
+        specs: [
+            { label: 'Voltaj', value: '24 VDC' },
+            { label: 'Kapasite', value: '105 Ah' },
+            { label: 'Enerji', value: '2.7 kWh' },
+            { label: 'Ağırlık', value: '25 kg' },
+        ],
+        usageAreas: [
+            { label: 'Karavan', icon: 'Truck' },
+            { label: 'Tekne', icon: 'Anchor' },
+            { label: 'Solar Sistem', icon: 'Sun' },
+        ]
+    },
+    'revium-5-4-kwh-lfp': {
+        name: 'Revium 5.4 kWh LFP Batarya',
+        modelId: '5.4-LFP',
+        capacity: '5.4 kWh',
+        power: '5.4 kW',
+        image: '/images/products/5.4-lfp.webp',
+        categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
+        description: 'Yüksek kapasiteli ve uzun ömürlü LFP batarya çözümü.',
+        features: [
+            'Nominal Voltaj: 48 VDC',
+            'Kapasite: 105 Ah',
+            'Enerji: 5.4 kWh',
+            'Haberleşme: Bluetooth',
+            'Ağırlık: 45 kg',
+            'Koruma: IP65'
+        ],
+        specs: [
+            { label: 'Voltaj', value: '48 VDC' },
+            { label: 'Kapasite', value: '105 Ah' },
+            { label: 'Enerji', value: '5.4 kWh' },
+            { label: 'Ağırlık', value: '45 kg' },
+        ],
+        usageAreas: [
+            { label: 'Ev Depolama', icon: 'Home' },
+            { label: 'Tiny House', icon: 'Home' },
+            { label: 'Off-grid', icon: 'Globe' },
+        ]
+    },
+
     'revium-grid-pulse-gen2': {
         name: 'Revium Grid Pulse Gen2',
         modelId: 'R-GRID-PULSE-G2',
         capacity: 'DC Şarj',
         power: '90 – 270 kW',
-        image: '/images/products/grid-pulse-gen2.png',
+        image: '/images/products/grid-pulse-gen2.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
         description: 'Yeni nesil, akıllı ve bağlantılı yüksek hızlı DC şarj istasyonu.',
         features: [
@@ -498,8 +556,6 @@ const products: Record<string, {
         ]
     }
 };
-
-export const dynamic = 'force-dynamic';
 
 function getIcon(iconName: string) {
     const icons: Record<string, any> = {
@@ -534,12 +590,17 @@ function translateLabel(label: string, locale: string): string {
     if (locale === 'tr') return label;
 
     const deviceTranslations: Record<string, Record<string, string>> = {
+        'Tiny House': { en: 'Tiny House', ar: 'منزل صغير' },
+        'Solar Sistem': { en: 'Solar System', ar: 'نظام شمسي' },
+        'Tekne': { en: 'Boat', ar: 'يخت' },
+        'Karavan': { en: 'Caravan', ar: 'كرفان' },
+        'Lityum Demir Fosfat (LFP) Batarya Çözümleri': { en: 'LFP Battery Solutions', ar: 'حلول بطاريات ليثيوم فوسفات الحديد (LFP)' },
         'Hilti / Kırıcı': { en: 'Demolition Hammer', ar: 'مطرقة الهدم' },
         'Matkap / El Aleti': { en: 'Drill / Power Tool', ar: 'مثقاب / أداة كهربائية' },
         'Masaüstü Bilgisayar': { en: 'Desktop Computer', ar: 'كمبيوتر مكتبي' },
         'Laptop': { en: 'Laptop', ar: 'لابتوب' },
         'Buzdolabı (A++)': { en: 'Refrigerator (A++)', ar: 'ثلاجة (A++)' },
-        'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة LED' },
+        'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة ليد' },
         'TV + Modem': { en: 'TV + Modem', ar: 'تلفزيون + مودم' },
         'Genel Ev': { en: 'General Home', ar: 'المنزل العام' },
         // Usage Areas
@@ -548,6 +609,7 @@ function translateLabel(label: string, locale: string): string {
         'Saha Çalışması': { en: 'Field Work', ar: 'عمل ميداني' },
         'Zorlu Arazi': { en: 'Rugged Terrain', ar: 'تضاريس وعرة' },
         'Endüstriyel Saha': { en: 'Industrial Site', ar: 'موقع صناعي' },
+        'Endüstriyel': { en: 'Industrial', ar: 'صناعي' },
         'Ev Depolama': { en: 'Home Storage', ar: 'تخزين منزلي' },
         'Yedek Güç': { en: 'Backup Power', ar: 'طاقة احتياطية' },
         'Mobil Ev': { en: 'Mobile Home', ar: 'منزل متنقل' },
@@ -565,6 +627,71 @@ function translateLabel(label: string, locale: string): string {
         'Askeri Saha': { en: 'Military Field', ar: 'ميدان عسكري' },
         'Tesisler': { en: 'Facilities', ar: 'مرافق' },
         'Şebeke Destek': { en: 'Grid Support', ar: 'دعم الشبكة' },
+        'Şantiye': { en: 'Construction Site', ar: 'موقع بناء' },
+        'Etkinlik Alanı': { en: 'Event Area', ar: 'منطقة الفعاليات' },
+        'Ofis Binası': { en: 'Office Building', ar: 'مبنى مكتبي' },
+        'Otoyol Tesisleri': { en: 'Highway Facilities', ar: 'مرافق الطريق السريع' },
+        'Otoyol': { en: 'Highway', ar: 'طريق سريع' },
+        'Akaryakıt İstasyonu': { en: 'Gas Station', ar: 'محطة وقود' },
+        'Halka Açık Şarj': { en: 'Public Charging', ar: 'شحن عام' },
+        'Filo Yönetimi': { en: 'Fleet Management', ar: 'إدارة أسطول' },
+        'Plazalar': { en: 'Plazas', ar: 'ساحات' },
+        'Akıllı Şehir': { en: 'Smart City', ar: 'مدينة ذكية' },
+        'Ticari Merkezler': { en: 'Commercial Centers', ar: 'مراكز تجارية' },
+        'Enerji İstasyonları': { en: 'Energy Stations', ar: 'محطات طاقة' },
+        'Telekomünikasyon': { en: 'Telecommunication', ar: 'الاتصالات' },
+        'Fabrika': { en: 'Factory', ar: 'مصنع' },
+        'Destek': { en: 'Support', ar: 'دعم' },
+        'DC Şarj': { en: 'DC Charging', ar: 'شحن تيار مستمر' },
+        'Scalable': { en: 'Scalable', ar: 'قابلة للتطوير' },
+        'Enerji Parkı': { en: 'Energy Park', ar: 'حديقة الطاقة' },
+        'Mikro Şebeke': { en: 'Microgrid', ar: 'شبكة صغيرة' },
+        // Technical Specs Labels
+        'Sürekli Çıkış Gücü': { en: 'Continuous Output Power', ar: 'طاقة خرج مستمرة' },
+        'Batarya Ömrü': { en: 'Battery Life', ar: 'عمر البطارية' },
+        'Kompakt Tasarım': { en: 'Compact Design', ar: 'تصميم مدمج' },
+        'Hızlı Şarj': { en: 'Fast Charging', ar: 'شحن سريع' },
+        'Yüksek Kapasite': { en: 'High Capacity', ar: 'سعة عالية' },
+        'Endüstriyel Güç': { en: 'Industrial Power', ar: 'طاقة صناعية' },
+        'Nominal Voltaj': { en: 'Nominal Voltage', ar: 'الجهد الاسمي' },
+        'çevrim': { en: 'cycles', ar: 'دورات' },
+        'CCS2 Konnektör': { en: 'CCS2 Connector', ar: 'CCS2' },
+        'IP54 Koruma': { en: 'IP54 Protection', ar: 'IP54' },
+        'OCPP 1.6 Protokolü': { en: 'OCPP 1.6 Protocol', ar: 'بروتوكول OCPP ١.٦' },
+        'DC Çıkış': { en: 'DC Output', ar: 'خرج تيار مستمر' },
+        'DC Giriş': { en: 'DC Input', ar: 'دخل تيار مستمر' },
+        'VDC Gerilim': { en: 'VDC Voltage', ar: 'جهد تيار مستمر' },
+        'Enerji': { en: 'Energy', ar: 'الطاقة' },
+        'Çıkış Voltajı': { en: 'Output Voltage', ar: 'جهد الخرج' },
+        'Sürekli Güç': { en: 'Continuous Power', ar: 'خرج مستمر' },
+        'Maks. PV Güç': { en: 'Max PV Power', ar: 'أقصى طاقة شمسية' },
+        'Boyutlar': { en: 'Dimensions', ar: 'الأبعاد' },
+        'Ağırlık': { en: 'Weight', ar: 'الوزن' },
+        'Enerji Aralığı': { en: 'Energy Range', ar: 'نطاق الطاقة' },
+        'Çıkış Gücü': { en: 'Output Power', ar: 'خرج الطاقة' },
+        'PV Giriş': { en: 'PV Input', ar: 'مدخل PV' },
+        '3-Faz Çıkış': { en: '3-Phase Output', ar: 'خرج 3 مراحل' },
+        'Dalga Tipi': { en: 'Wave Type', ar: 'نوع الموجة' },
+        'Voltaj': { en: 'Voltage', ar: 'الجهد' },
+        'Kapasite': { en: 'Capacity', ar: 'السعة' },
+        'Enerji Max': { en: 'Max Energy', ar: 'الطاقة القصوى' },
+        'Döngü': { en: 'Cycle', ar: 'الدورة' },
+        'Güç': { en: 'Power', ar: 'القوة' },
+        'Soğutma': { en: 'Cooling', ar: 'التبريد' },
+        'PV Kapasite': { en: 'PV Capacity', ar: 'سعة PV' },
+        'AC Giriş': { en: 'AC Input', ar: 'مدخل AC' },
+        'Koruma': { en: 'Protection', ar: 'الحماية' },
+        'Kurulu Güç': { en: 'Installed Power', ar: 'الطاقة المثبتة' },
+        'AC Çıkış': { en: 'AC Output', ar: 'خرج AC' },
+        'MPPT Voltaj': { en: 'MPPT Voltage', ar: 'جهد MPPT' },
+        'DC Güç': { en: 'DC Power', ar: 'طاقة تيار مستمر' },
+        'DC Gerilim': { en: 'DC Voltage', ar: 'جهد تيار مستمر' },
+        'Çıkış': { en: 'Output', ar: 'الخرج' },
+        'Çıkış Sayısı': { en: 'Number of Outputs', ar: 'عدد المخارج' },
+        'Konnektör': { en: 'Connector', ar: 'الموصل' },
+        'Haberleşme': { en: 'Communication', ar: 'الاتصال' },
+        'Gerilim': { en: 'Voltage', ar: 'الجهد' },
+        'Araç Kapasitesi': { en: 'Vehicle Capacity', ar: 'سعة المركبة' },
     };
 
     let result = label;
@@ -573,6 +700,51 @@ function translateLabel(label: string, locale: string): string {
     for (const [tr, trans] of Object.entries(deviceTranslations)) {
         if (result.includes(tr)) {
             result = result.replace(tr, trans[locale] || trans.en || tr);
+        }
+    }
+
+    // Translate technical units and abbreviations for Arabic
+    if (locale === 'ar') {
+        const units: Record<string, string> = {
+            'VDC': 'فولت تيار مستمر',
+            'VAC': 'فولت تيار متردد',
+            'kWh': 'كيلوواط ساعة', // Order matters (kWh before kW)
+            'MWh': 'ميغاواط ساعة',
+            'kW': 'كيلوواط',
+            'MW': 'ميغاواط',
+            'W': 'واط',
+            'Ah': 'أمبير ساعي',
+            'kg': 'كجم',
+            'mm': 'مم',
+            'Hz': 'هرتز',
+            'EV': 'مركبة كهربائية',
+            'BESS': 'نظام تخزين الطاقة',
+            'PV': 'طاقة شمسية',
+            'DC': 'تيار مستمر',
+            'AC': 'تيار متردد',
+            'Pure Sine': 'موجة جيبية نقية',
+            'LiFePO4': 'ليثيوم فوسفات الحديد',
+            'LFP': 'ليثيوم فوسفات الحديد',
+            'Bluetooth': 'بلوتوث',
+            'Class II': 'فئة ٢',
+            'IP54': 'آي بي ٥٤', // Keep prefix if needed
+            'IP65': 'آي بي ٦٥',
+            'IP67': 'آي بي ٦٧',
+            'CCS2': 'سي سي إس ٢',
+            'CCS1': 'سي سي إس ١',
+            'CCS': 'سي سي إس',
+            'Type 2': 'النوع ٢',
+            'RFID': 'آر إف آي دي',
+            'QR': 'كيو آر',
+            'Ethernet': 'إيثرنت',
+            '4G': '٤ جي',
+            'LTE': 'LTE',
+        };
+
+        for (const [unit, trans] of Object.entries(units)) {
+            // Case-insensitive replace for some units might be risky, stick to exact match or careful regex
+            // Using global replacement
+            result = result.split(unit).join(trans);
         }
     }
 
@@ -588,9 +760,37 @@ function translateLabel(label: string, locale: string): string {
     return result;
 }
 
+const locales = ['tr', 'en', 'ar'];
+const productSlugs = Object.keys(products);
+
+export function generateStaticParams() {
+    return locales.flatMap((locale) =>
+        productSlugs.map((slug) => ({ locale, slug }))
+    );
+}
+
 export default async function ProductDetailPage({ params }: Props) {
     const { locale, slug } = await params;
     setRequestLocale(locale);
+
+    const translateModelId = (id: string, locale: string) => {
+        if (locale !== 'ar') return id;
+        const map: Record<string, string> = {
+            'R-CABINET': 'آر-كابينة',
+            'R-LAYER': 'آر-طبقة',
+            'GRIDPACK': 'غريد باك',
+            'R-PICKUP': 'آر-بيك اب',
+            'R-GRID-CORE': 'آر-غريد كور',
+            'R-GRID-PULSE': 'آر-غريد بلس',
+            'R-GRID-PULSE-G2': 'آر-غريد بلس ٢',
+            'POWERSTATION': 'محطة طاقة',
+            'SOLARPORT': 'سولار بورت',
+            'VOLTWAGON': 'فولت واغون',
+            '2.7-LFP': '٢.٧ ليثيوم فوسفات الحديد',
+            '5.4-LFP': '٥.٤ ليثيوم فوسفات الحديد',
+        };
+        return map[id] || id;
+    };
 
     const t = await getTranslations('products');
     const tDetail = await getTranslations('productDetails');
@@ -610,9 +810,9 @@ export default async function ProductDetailPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
-            <div className="mx-auto w-[111.111%]" style={{ zoom: 0.9 }}>
+            <>
                 {/* Hero Section - Light Theme, Compact */}
-                <section className="relative min-h-[60vh] flex items-center pt-32 pb-24 lg:pt-36 lg:pb-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                <section className="relative min-h-[60vh] flex items-center pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
@@ -636,6 +836,16 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Araç Tipi Güç Paketi': 'Vehicle Power Pack',
                                                 'Endüstriyel Güç Sistemleri': 'Industrial Power Systems',
                                                 'GES Ürünleri': 'Solar Products',
+                                                'Saha Tipi Taşınabilir Güç Ünitesi': 'Field-Type Portable Power Unit',
+                                                'Endüstriyel Enerji Depolama (Tek Kabin)': 'Industrial Energy Storage (Single Cabinet)',
+                                                'Araç Üstü Mobil Enerji Sistemi': 'On-Vehicle Mobile Energy System',
+                                                'Ölçeklenebilir Endüstriyel Batarya': 'Scalable Industrial Battery',
+                                                'Şebeke Ölçekli Konteyner Tip BESS': 'Grid-Scale Container BESS',
+                                                'Konteyner Tip Enerji + Güneş Entegrasyonu': 'Container Type Energy + Solar Integration',
+                                                'Mobil Güneş Enerjili Römork Sistem': 'Mobile Solar Trailer System',
+                                                'Solar Carport + EV Şarj + Enerji Depolama': 'Solar Carport + EV Charging + Energy Storage',
+                                                'Elektrikli Araç Şarj Çözümleri': 'EV Charging Solutions',
+                                                'Lityum Demir Fosfat (LFP) Batarya Çözümleri': 'LFP Battery Solutions',
                                             }[product.categoryTitle] || product.categoryTitle) : locale === 'ar' ? ({
                                                 'Taşınabilir Enerji Depolama': 'تخزين الطاقة المحمولة',
                                                 'Yüksek Kapasiteli Taşınabilir Güç': 'طاقة محمولة عالية السعة',
@@ -650,17 +860,19 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Şebeke Ölçekli Konteyner Tip BESS': 'BESS من نوع حاوية على نطاق الشبكة',
                                                 'Konteyner Tip Enerji + Güneş Entegrasyonu': 'تكامل الطاقة بالحاوية + الطاقة الشمسية',
                                                 'Mobil Güneş Enerjili Römork Sistem': 'نظام مقطورة بالطاقة الشمسية المتنقلة',
-                                                'Solar Carport + EV Şarj + Enerji Depolama': 'مرآب شمسي + شحن EV + تخزين الطاقة'
+                                                'Solar Carport + EV Şarj + Enerji Depolama': 'مرآب شمسي + شحن المركبات الكهربائية + تخزين الطاقة',
+                                                'Elektrikli Araç Şarj Çözümleri': 'حلول شحن المركبات الكهربائية',
+                                                'Lityum Demir Fosfat (LFP) Batarya Çözümleri': 'حلول بطاريات ليثيوم فوسفات الحديد'
                                             }[product.categoryTitle] || product.categoryTitle) : product.categoryTitle}
                                         </span>
                                     </div>
-                                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-slate-900 tracking-tight leading-[1.05]">
+                                    <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
                                         {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                                             {localizedName.split(' ').slice(-2).join(' ')}
                                         </span>
                                     </h1>
-                                    <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                                    <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
                                         {localizedDesc}
                                     </p>
                                 </div>
@@ -672,7 +884,12 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Battery className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{formatNumber(product.capacity, locale).replace('kWh', locale === 'ar' ? 'كيلوواط ساعة' : 'kWh')}</div>
+                                        <div className="text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.capacity, locale)
+                                            .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
+                                            .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
+                                            .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
+                                            .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
+                                            .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -680,7 +897,12 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Zap className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{formatNumber(product.power, locale).replace('W', locale === 'ar' ? 'واط' : 'W')}</div>
+                                        <div className="text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.power, locale)
+                                            .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
+                                            .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
+                                            .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
+                                            .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
+                                            .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
@@ -688,7 +910,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             <Shield className="h-5 w-5" />
                                             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">LiFePO₄</div>
+                                        <div className="text-2xl font-black text-slate-900">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
                                     </div>
                                 </div>
 
@@ -730,7 +952,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {/* Model Badge */}
                                     <div className="absolute -bottom-2 right-4 sm:right-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
                                         <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
-                                        <div className="text-xl font-bold text-slate-900">{formatNumber(product.modelId, locale)}</div>
+                                        <div className="text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
                                 </div>
                             </div>
@@ -754,7 +976,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             {localizedFeatures.map((feature, index) => (
                                 <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-blue-200 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
                                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
-                                    <span className="text-sm sm:text-base text-neutral-700 font-medium">{feature}</span>
+                                    <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
                                 </div>
                             ))}
                         </div>
@@ -778,7 +1000,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {locale === 'en' ? 'Device-Based Runtime' : locale === 'ar' ? 'مدة التشغيل حسب الجهاز' : 'Cihaz Bazlı Çalışma Süreleri'}
                                 </h2>
                                 <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                                    {tDetail.has(`products.${slug}.runtimeSummary`)
+                                    {formatNumber(tDetail.has(`products.${slug}.runtimeSummary`)
                                         ? tDetail(`products.${slug}.runtimeSummary`)
                                         : locale === 'en' && product.runtimeSummary
                                             ? product.runtimeSummary
@@ -787,7 +1009,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 .replace('bir evi ise', 'and a home for')
                                                 .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
                                                 .replace(/saat/gi, 'hours')
-                                            : product.runtimeSummary}
+                                            : product.runtimeSummary || '', locale)}
                                 </p>
                             </div>
 
@@ -801,7 +1023,12 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <div className="p-3 rounded-2xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
                                                         <Icon className="w-6 h-6 text-blue-600" />
                                                     </div>
-                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{formatNumber(stat.power, locale).replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
+                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{formatNumber(stat.power, locale)
+                                                        .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
+                                                        .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
+                                                        .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
+                                                        .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
+                                                        .replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
                                                 </div>
                                                 <div className="space-y-1">
                                                     <h4 className="text-slate-500 font-bold text-xs uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
@@ -836,7 +1063,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     <div className="relative z-10 space-y-8">
                                         <div className="space-y-4">
                                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-widest">
-                                                {locale === 'en' ? 'Example Scenario 01' : locale === 'ar' ? 'سيناريو مثال 01' : 'Örnek Senaryo 01'}
+                                                {locale === 'en' ? 'Example Scenario 01' : locale === 'ar' ? 'سيناريو مثال ٠١' : 'Örnek Senaryo 01'}
                                             </div>
                                             <h3 className="text-3xl font-black text-slate-900 tracking-tight">
                                                 {locale === 'en' ? 'General Home Usage' : locale === 'ar' ? 'استخدام منزلي عام' : 'Genel Ev Kullanımı'}
@@ -874,12 +1101,12 @@ export default async function ProductDetailPage({ params }: Props) {
 
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
-                                                <span className="font-bold text-slate-900">{formatNumber('2.7', locale)} {locale === 'ar' ? 'كيلوواط ساعة' : 'kWh'} {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '٧-٨' : '7–8'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٢.٧ كيلوواط ساعة' : formatNumber('2.7', locale) + ' kWh ' + (locale === 'en' ? 'Pack' : 'Paket')}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ {formatNumber('7', locale)}–{formatNumber('8', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
-                                                <span className="font-bold text-slate-900">{formatNumber('5.4', locale)} {locale === 'ar' ? 'كيلوواط ساعة' : 'kWh'} {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ {locale === 'ar' ? '١٥-١٦' : '15–16'} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٥.٤ كيلوواط ساعة' : formatNumber('5.4', locale) + ' kWh ' + (locale === 'en' ? 'Pack' : 'Paket')}</span>
+                                                <span className="text-emerald-600 font-black text-lg">≈ {formatNumber('15', locale)}–{formatNumber('16', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -893,7 +1120,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     <div className="relative z-10 space-y-8">
                                         <div className="space-y-4">
                                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-[10px] font-bold uppercase tracking-widest border border-amber-200">
-                                                {locale === 'en' ? 'Example Scenario 02' : locale === 'ar' ? 'سيناريو مثال 02' : 'Örnek Senaryo 02'}
+                                                {locale === 'en' ? 'Example Scenario 02' : locale === 'ar' ? 'سيناريو مثال ٠٢' : 'Örnek Senaryo 02'}
                                             </div>
                                             <h3 className="text-3xl font-black text-slate-900 tracking-tight">
                                                 {locale === 'en' ? 'Site / Construction Usage' : locale === 'ar' ? 'استخدام الموقع / البناء' : 'Saha / İnşaat Kullanımı'}
@@ -903,8 +1130,8 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'Demolition Hammer', power: '1000W' },
                                                     { label: 'Site Lighting', power: '100W' }
                                                 ] : locale === 'ar' ? [
-                                                    { label: 'مطرقة الهدم', power: '1000W' },
-                                                    { label: 'إضاءة الموقع', power: '100W' }
+                                                    { label: 'مطرقة الهدم', power: formatNumber('1000', locale) + ' واط' },
+                                                    { label: 'إضاءة الموقع', power: formatNumber('100', locale) + ' واط' }
                                                 ] : [
                                                     { label: 'Hilti / Kırıcı', power: '1000W' },
                                                     { label: 'Saha Aydınlatma', power: '100W' }
@@ -918,19 +1145,19 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-amber-600">≈ 1100 W</span>
+                                                    <span className="text-xl font-black text-amber-600">≈ {formatNumber('1100', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
-                                                <span className="font-bold text-slate-900">2.7 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-amber-600 font-black text-lg">≈ 2.3 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٢.٧ كيلوواط ساعة' : `2.7 kWh ${locale === 'en' ? 'Pack' : 'Paket'}`}</span>
+                                                <span className="text-amber-600 font-black text-lg">≈ {formatNumber('2.3', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
-                                                <span className="font-bold text-slate-900">5.4 kWh {locale === 'en' ? 'Pack' : locale === 'ar' ? 'حزمة' : 'Paket'}</span>
-                                                <span className="text-amber-600 font-black text-lg">≈ 4.8–5 {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٥.٤ كيلوواط ساعة' : `5.4 kWh ${locale === 'en' ? 'Pack' : 'Paket'}`}</span>
+                                                <span className="text-amber-600 font-black text-lg">≈ {formatNumber('4.8', locale)}–{formatNumber('5', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -949,10 +1176,10 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                                 <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
-                                        {locale === 'tr' ? 'Kullanım Alanları' : 'Usage Areas'}
+                                        {locale === 'tr' ? 'Kullanım Alanları' : locale === 'ar' ? 'مجالات الاستخدام' : 'Usage Areas'}
                                     </h2>
                                     <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
-                                        {localizedName} {locale === 'tr' ? 'ürününün ideal kullanım alanları' : 'ideal usage areas'}
+                                        {localizedName} {locale === 'tr' ? 'ürününün ideal kullanım alanları' : locale === 'ar' ? 'مجالات الاستخدام المثالية' : 'ideal usage areas'}
                                     </p>
                                 </div>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
@@ -1068,7 +1295,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         </div>
                     </div>
                 </section>
-            </div>
+            </>
         </div>
     );
 }

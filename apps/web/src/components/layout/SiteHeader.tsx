@@ -11,12 +11,12 @@ import { cn } from '@/lib/utils';
 const productCategories = [
     {
         id: 'portable',
-        name: { tr: 'TAŞINABİLİR GÜÇ PAKETLERİ', en: 'PORTABLE POWER PACKS', ar: 'حزم الطاقة المحmولة' },
+        name: { tr: 'TAŞINABİLİR GÜÇ PAKETLERİ', en: 'PORTABLE POWER PACKS', ar: 'حزم الطاقة المحمولة' },
         icon: Battery,
         products: [
-            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Güç Paketi', en: '2.7 kWh Power Pack', ar: '2.7 كيلو واط ساعة حزمة الطاقة' }, image: '/images/products/2-7kwh-a-1.png' },
-            { slug: 'revium-2-7-kwh-bag', name: { tr: '2.7 kWh Çanta Tip', en: '2.7 kWh Case Type', ar: '2.7 كيلو واط ساعة نوع الحقيبة' }, image: '/images/products/2-7kwh-b-1.png' },
-            { slug: 'revium-5-4-kwh', name: { tr: '5.4 kWh Güç Paketi', en: '5.4 kWh Power Pack', ar: '5.4 كيلو واط ساعة حزمة الطاقة' }, image: '/images/products/5-4kwh-h-1.png' },
+            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Güç Paketi', en: '2.7 kWh Power Pack', ar: 'حزمة طاقة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-a-1.webp' },
+            { slug: 'revium-2-7-kwh-bag', name: { tr: '2.7 kWh Çanta Tip', en: '2.7 kWh Case Type', ar: 'حقيبة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-b-1.webp' },
+            { slug: 'revium-5-4-kwh', name: { tr: '5.4 kWh Güç Paketi', en: '5.4 kWh Power Pack', ar: 'حزمة طاقة ٥.٤ كيلوواط ساعة' }, image: '/images/products/5-4kwh-h-1.webp' },
         ]
     },
     {
@@ -24,19 +24,19 @@ const productCategories = [
         name: { tr: 'KABİN TİPİ GÜÇ PAKETLERİ', en: 'CABINET POWER PACKS', ar: 'حزم طاقة الخزانة' },
         icon: Zap,
         products: [
-            { slug: 'revium-power-cabinet', name: { tr: 'Güç Kabini', en: 'Power Cabinet', ar: 'خزانة الطاقة' }, image: '/images/products/cabin-power.png' },
-            { slug: 'revium-power-layer', name: { tr: 'Güç Katmanı', en: 'Power Layer', ar: 'طبقة الطاقة' }, image: '/images/products/stack-21-6kwh-1.png' },
-            { slug: 'revium-gridpack', name: { tr: 'GRIDPACK', en: 'GRIDPACK', ar: 'GRIDPACK' }, image: '/images/products/gridpack.png' },
+            { slug: 'revium-power-cabinet', name: { tr: 'Güç Kabini', en: 'Power Cabinet', ar: 'خزانة الطاقة' }, image: '/images/products/cabin-power.webp' },
+            { slug: 'revium-power-layer', name: { tr: 'Güç Katmanı', en: 'Power Layer', ar: 'طبقة الطاقة' }, image: '/images/products/stack-21-6kwh-1.webp' },
+            { slug: 'revium-gridpack', name: { tr: 'GRIDPACK', en: 'GRIDPACK', ar: 'جريد باك' }, image: '/images/products/gridpack.webp' },
         ]
     },
     {
         id: 'charging',
-        name: { tr: 'EV ŞARJ ÇÖZÜMLERİ', en: 'EV CHARGING SOLUTIONS', ar: 'EV CHARGING SOLUTIONS' },
+        name: { tr: 'EV ŞARJ ÇÖZÜMLERİ', en: 'EV CHARGING SOLUTIONS', ar: 'حلول شحن السيارات الكهربائية' },
         icon: Zap,
         products: [
-            { slug: 'revium-grid-core', name: { tr: 'Grid Core', en: 'Grid Core', ar: 'Grid Core' }, image: '/images/products/grid-core.png' },
-            { slug: 'revium-grid-pulse', name: { tr: 'Grid Pulse', en: 'Grid Pulse', ar: 'Grid Pulse' }, image: '/images/products/grid-pulse.png' },
-            { slug: 'revium-grid-pulse-gen2', name: { tr: 'Grid Pulse Gen2', en: 'Grid Pulse Gen2', ar: 'Grid Pulse Gen2' }, image: '/images/products/grid-pulse-gen2.png' },
+            { slug: 'revium-grid-core', name: { tr: 'Grid Core', en: 'Grid Core', ar: 'جريد كور' }, image: '/images/products/grid-core.webp' },
+            { slug: 'revium-grid-pulse', name: { tr: 'Grid Pulse', en: 'Grid Pulse', ar: 'جريد بلس' }, image: '/images/products/grid-pulse.webp' },
+            { slug: 'revium-grid-pulse-gen2', name: { tr: 'Grid Pulse Gen2', en: 'Grid Pulse Gen2', ar: 'جريد بلس الجيل الثاني' }, image: '/images/products/grid-pulse-gen2.webp' },
         ]
     },
     {
@@ -44,8 +44,8 @@ const productCategories = [
         name: { tr: 'SOLAR ÜRÜNLER', en: 'SOLAR PRODUCTS', ar: 'المنتجات الشمسية' },
         icon: Sun,
         products: [
-            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطة الطاقة' }, image: '/images/products/ges-power-station.png' },
-            { slug: 'revium-solarport', name: { tr: 'Solarport', en: 'Solarport', ar: 'Solarport' }, image: '/images/products/solarport-duo.png' },
+            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطات الطاقة' }, image: '/images/products/ges-power-station.webp' },
+            { slug: 'revium-solarport', name: { tr: 'Solarport', en: 'Solarport', ar: 'سولار بورت' }, image: '/images/products/solarport-duo.webp' },
         ]
     },
     {
@@ -53,8 +53,8 @@ const productCategories = [
         name: { tr: 'BATARYA SİSTEMLERİ', en: 'BATTERY SYSTEMS', ar: 'أنظمة البطاريات' },
         icon: Battery,
         products: [
-            { slug: 'revium-2-7-kwh-lfp', name: { tr: '2.7 kWh LFP Batarya', en: '2.7 kWh LFP Battery', ar: 'بطارية 2.7 كيلو واط ساعة LFP' }, image: '/images/products/2.7-lfp.png' },
-            { slug: 'revium-5-4-kwh-lfp', name: { tr: '5.4 kWh LFP Batarya', en: '5.4 kWh LFP Battery', ar: 'بطارية 5.4 كيلو واط ساعة LFP' }, image: '/images/products/5.4-lfp.png' },
+            { slug: 'revium-2-7-kwh-lfp', name: { tr: '2.7 kWh LFP Batarya', en: '2.7 kWh LFP Battery', ar: 'بطارية ليثيوم فوسفات الحديد ٢.٧ كيلوواط ساعة' }, image: '/images/products/2.7-lfp.webp' },
+            { slug: 'revium-5-4-kwh-lfp', name: { tr: '5.4 kWh LFP Batarya', en: '5.4 kWh LFP Battery', ar: 'بطارية ليثيوم فوسفات الحديد ٥.٤ كيلوواط ساعة' }, image: '/images/products/5.4-lfp.webp' },
         ]
     },
     {
@@ -62,7 +62,7 @@ const productCategories = [
         name: { tr: 'ARAÇ TİPİ GÜÇ PAKETLERİ', en: 'VEHICLE POWER PACKS', ar: 'حزم طاقة المركبات' },
         icon: Truck,
         products: [
-            { slug: 'revium-pickup-power-pack', name: { tr: 'Pick Up Güç Paketi', en: 'Pick Up Power Pack', ar: 'Pick Up Power Pack' }, image: '/images/products/hilux-21-6kwh-1.png' },
+            { slug: 'revium-pickup-power-pack', name: { tr: 'Pick Up Güç Paketi', en: 'Pick Up Power Pack', ar: 'حزمة طاقة بيك آب' }, image: '/images/products/hilux-21-6kwh-1.webp' },
         ]
     },
 ];
@@ -72,14 +72,14 @@ const serviceCategories = [
         id: 'ges-kurulum',
         name: { tr: 'GES Kurulumu', en: 'Solar Plant Installation', ar: 'تركيب محطة الطاقة الشمسية' },
         services: [
-            { slug: 'ges-kurulumu', name: { tr: 'Güneş Paneli Kurulumu', en: 'Solar Panel Installation', ar: 'تركيب الألواح الشمسية' }, image: '/images/services/ges-service-new.png' },
+            { slug: 'ges-kurulumu', name: { tr: 'Güneş Paneli Kurulumu', en: 'Solar Panel Installation', ar: 'تركيب الألواح الشمسية' }, image: '/images/services/ges-service-new.webp' },
         ]
     },
     {
         id: 'endustriyel',
         name: { tr: 'Endüstriyel Kurulum', en: 'Industrial Installation', ar: 'التركيب الصناعي' },
         services: [
-            { slug: 'endustriyel-kurulum', name: { tr: 'Endüstriyel Enerji Çözümleri', en: 'Industrial Energy Solutions', ar: 'حلول الطاقة الصناعية' }, image: '/images/services/industrial-service-new.png' },
+            { slug: 'endustriyel-kurulum', name: { tr: 'Endüstriyel Enerji Çözümleri', en: 'Industrial Energy Solutions', ar: 'حلول الطاقة الصناعية' }, image: '/images/services/industrial-service-new.webp' },
         ]
     },
 ];
@@ -248,24 +248,18 @@ export default function SiteHeader() {
                                                             className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
                                                             onClick={handleLinkClick}
                                                         >
-                                                            <div className="aspect-square relative w-full rounded-lg overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
+                                                            <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
                                                                 <Image
                                                                     src={product.image}
                                                                     alt={typeof product.name === 'string' ? product.name : product.name[locale]}
                                                                     fill
                                                                     className="object-contain p-3 group-hover/card:scale-105 transition-transform duration-500"
                                                                 />
-                                                                {/* Arrow Button Overlay */}
-                                                                <div className="absolute right-3 bottom-3 opacity-0 group-hover/card:opacity-100 transition-all duration-300 translate-y-2 group-hover/card:translate-y-0">
-                                                                    <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-lg">
-                                                                        <ArrowRight className="w-4 h-4" />
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                             <div className="space-y-1">
                                                                 {/* Category Label (optional) */}
                                                                 <div className="text-[10px] font-bold text-blue-600 uppercase tracking-wider mb-1 opacity-0 group-hover/card:opacity-100 transition-opacity transform translate-y-2 group-hover/card:translate-y-0 duration-300">
-                                                                    Revium
+                                                                    {locale === 'ar' ? 'ريفيوم' : 'Revium'}
                                                                 </div>
                                                                 <p className="text-[13px] font-bold text-neutral-900 group-hover/card:text-blue-700 transition-colors line-clamp-2 leading-snug">
                                                                     {typeof product.name === 'string' ? product.name : product.name[locale]}
@@ -273,6 +267,24 @@ export default function SiteHeader() {
                                                             </div>
                                                         </Link>
                                                     ))}
+                                                    
+                                                    {/* Tüm Ürünler Kartı */}
+                                                    <Link
+                                                        href={`/${locale}/urunlerimiz/`}
+                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                        onClick={handleLinkClick}
+                                                    >
+                                                        <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-blue-50/50 group-hover/card:bg-blue-100/50 transition-colors flex items-center justify-center">
+                                                            <div className="w-14 h-14 rounded-xl bg-blue-100 group-hover/card:bg-blue-600 flex items-center justify-center transition-all duration-300">
+                                                                <ArrowRight className="w-7 h-7 text-blue-600 group-hover/card:text-white transition-colors duration-300" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="text-center">
+                                                            <p className="text-[13px] font-bold text-neutral-900 group-hover/card:text-blue-700 transition-colors">
+                                                                {t('viewAllProducts')}
+                                                            </p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -345,7 +357,7 @@ export default function SiteHeader() {
                                                             className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
                                                             onClick={handleLinkClick}
                                                         >
-                                                            <div className="aspect-square relative w-full rounded-lg overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
+                                                            <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
                                                                 <Image
                                                                     src={service.image}
                                                                     alt={service.name[locale]}
@@ -363,6 +375,24 @@ export default function SiteHeader() {
                                                             </div>
                                                         </Link>
                                                     ))}
+                                                    
+                                                    {/* Tüm Hizmetler Kartı */}
+                                                    <Link
+                                                        href={`/${locale}/hizmetlerimiz/`}
+                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                        onClick={handleLinkClick}
+                                                    >
+                                                        <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-blue-50/50 group-hover/card:bg-blue-100/50 transition-colors flex items-center justify-center">
+                                                            <div className="w-14 h-14 rounded-xl bg-blue-100 group-hover/card:bg-blue-600 flex items-center justify-center transition-all duration-300">
+                                                                <ArrowRight className="w-7 h-7 text-blue-600 group-hover/card:text-white transition-colors duration-300" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="text-center">
+                                                            <p className="text-[13px] font-bold text-neutral-900 group-hover/card:text-blue-700 transition-colors">
+                                                                {t('viewAllServices')}
+                                                            </p>
+                                                        </div>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

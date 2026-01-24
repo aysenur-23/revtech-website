@@ -138,7 +138,9 @@
         "categories": "Categories",
         "openMenu": "Open Menu",
         "closeMenu": "Close Menu",
-        "viewAll": "View All"
+        "viewAll": "View All",
+        "viewAllProducts": "All Products",
+        "viewAllServices": "All Services"
     },
     "footer": {
         "products": "Products",
@@ -156,7 +158,8 @@
         "corporate": "About Us",
         "getQuote": "Get Quote",
         "charging": "Charging Stations",
-        "batteryPower": "Battery Systems"
+        "batteryPower": "Battery Systems",
+        "address": "Fevzi Cakmak District, Milenyum Street No:81\nKaratay/KONYA"
     },
     "hero": {
         "title1": "Redefining",
@@ -198,32 +201,100 @@
         "portablePower": {
             "title": "Portable Power Packs",
             "subtitle": "Compact and Powerful",
-            "description": "Portable power for camping, field, and emergencies."
+            "description": "Portable power for camping, field, and emergencies.",
+            "products": {
+                "revium-2-7-kwh": {
+                    "name": "2.7 kWh Power Pack",
+                    "description": "New standard in portable energy storage solutions."
+                },
+                "revium-2-7-kwh-bag": {
+                    "name": "2.7 kWh Bag Type",
+                    "description": "Durable bag-type design field solution."
+                },
+                "revium-5-4-kwh": {
+                    "name": "5.4 kWh Power Pack",
+                    "description": "High-capacity professional portable power."
+                }
+            }
         },
         "vehiclePower": {
             "title": "Vehicle Power",
             "subtitle": "Mobile Energy",
-            "description": "High-capacity vehicle-mounted systems."
+            "description": "High-capacity vehicle-mounted systems.",
+            "products": {
+                "revium-pickup-power-pack": {
+                    "name": "Pick Up Power Pack",
+                    "description": "Special power solution for Revium Pick Up vehicles."
+                }
+            }
         },
         "charging": {
             "title": "Charging Stations",
             "subtitle": "EV Charging",
-            "description": "High-performance AC and DC charging solutions."
+            "description": "High-performance AC and DC charging solutions.",
+            "products": {
+                "revium-grid-core": {
+                    "name": "Grid Core",
+                    "description": "High-speed and smart EV charge management unit."
+                },
+                "revium-grid-pulse": {
+                    "name": "Grid Pulse",
+                    "description": "Dynamic load balancing and energy monitoring module."
+                },
+                "revium-grid-pulse-gen2": {
+                    "name": "Grid Pulse Gen2",
+                    "description": "Next-generation energy management with advanced connectivity."
+                }
+            }
         },
         "cabinPower": {
             "title": "Cabinet Power Packs",
             "subtitle": "Industrial Power",
-            "description": "High-capacity cabin-type energy systems for large-scale projects."
+            "description": "High-capacity cabin-type energy systems for large-scale projects.",
+            "products": {
+                "revium-power-cabinet": {
+                    "name": "Power Cabinet",
+                    "description": "Industrial single-cabin energy storage system."
+                },
+                "revium-power-layer": {
+                    "name": "Power Layer",
+                    "description": "Scalable industrial battery unit."
+                },
+                "revium-gridpack": {
+                    "name": "GRIDPACK",
+                    "description": "Grid-scale BESS and renewable energy storage."
+                }
+            }
         },
         "gesProducts": {
             "title": "Solar Products",
             "subtitle": "Solar energy solutions",
-            "description": "Complete product range for solar power plant installation."
+            "description": "Complete product range for solar power plant installation.",
+            "products": {
+                "revium-powerstation-series": {
+                    "name": "Powerstation Series",
+                    "description": "Container-type solar integrated storage."
+                },
+                "revium-solarport": {
+                    "name": "Solarport",
+                    "description": "Solar carport and EV charging integration."
+                }
+            }
         },
         "batteryPower": {
             "title": "Battery Systems",
             "subtitle": "High-Tech Storage",
-            "description": "Advanced battery technologies for reliable energy in every field."
+            "description": "Advanced battery technologies for reliable energy in every field.",
+            "products": {
+                "revium-2-7-kwh-lfp": {
+                    "name": "2.7 kWh LFP Battery",
+                    "description": "Compact LFP solution for solar energy systems."
+                },
+                "revium-5-4-kwh-lfp": {
+                    "name": "5.4 kWh LFP Battery",
+                    "description": "High-capacity storage for commercial and professional use."
+                }
+            }
         },
         "learnMore": "Learn More",
         "viewDetails": "VIEW DETAILS",
@@ -500,7 +571,7 @@
         },
         "products": {
             "revium-2-7-kwh": {
-                "name": "Revium 2.7 kWh Portable Power Pack",
+                "name": "2.7 kWh Portable Power Pack",
                 "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance.",
                 "features": [
                     "2.7 kWh Capacity",
@@ -511,7 +582,7 @@
                 ]
             },
             "revium-2-7-kwh-bag": {
-                "name": "Revium 2.7 kWh Case Type Power Pack",
+                "name": "2.7 kWh Case Type Power Pack",
                 "description": "Rugged case-type power unit specially designed for outdoor and field operations.",
                 "features": [
                     "Water & Impact Resistant",
@@ -522,7 +593,7 @@
                 ]
             },
             "revium-storage-battery": {
-                "name": "Revium Storage Battery",
+                "name": "Storage Battery",
                 "description": "Modular and scalable battery systems. Capacity expansion based on needs.",
                 "features": [
                     "Modular Design",
@@ -533,7 +604,7 @@
                 ]
             },
             "revium-5-4-kwh": {
-                "name": "Revium 5.4 kWh Portable Power Pack",
+                "name": "5.4 kWh Portable Power Pack",
                 "description": "High-capacity, uninterrupted energy solution for professional use.",
                 "features": [
                     "5.4 kWh Capacity",
@@ -544,7 +615,7 @@
                 ]
             },
             "revium-power-cabinet": {
-                "name": "Revium Power Cabinet",
+                "name": "Power Cabinet",
                 "description": "All-in-one cabinet solution for large-capacity energy storage needs.",
                 "features": [
                     "21.6 kWh Capacity",
@@ -555,7 +626,7 @@
                 ]
             },
             "revium-pickup-power-pack": {
-                "name": "Revium Pick Up Power Pack",
+                "name": "Pick Up Power Pack",
                 "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",
                 "features": [
                     "Energy: 60 – 100 kWh",
@@ -567,7 +638,7 @@
                 ]
             },
             "revium-power-layer": {
-                "name": "Revium Power Layer",
+                "name": "Power Layer",
                 "description": "Industrial-scale storage power with stackable power layers.",
                 "features": [
                     "Stackable Design",
@@ -579,7 +650,7 @@
                 ]
             },
             "revium-powerstation-series": {
-                "name": "Revium Powerstation Series",
+                "name": "Powerstation Series",
                 "description": "Smart stations combining solar energy and storage in a single unit.",
                 "features": [
                     "Solar Panel Input",
@@ -591,7 +662,7 @@
                 ]
             },
             "revium-voltwagon": {
-                "name": "Revium VoltWagon",
+                "name": "VoltWagon",
                 "description": "Solar-powered trailer carrying energy from the sun, suitable for all terrains.",
                 "features": [
                     "Trailer Design",
@@ -603,7 +674,7 @@
                 ]
             },
             "revium-gridpack": {
-                "name": "Revium GRIDPACK",
+                "name": "GRIDPACK",
                 "description": "High-capacity BESS solution for utility-scale energy storage and renewable energy integration.",
                 "features": [
                     "500 kWh – 5 MWh Capacity",
@@ -623,7 +694,7 @@
                 }
             },
             "revium-2-7-kwh-lfp": {
-                "name": "Revium 2.7 kWh LFP Battery",
+                "name": "2.7 kWh LFP Battery",
                 "description": "Compact, long-life LFP battery for solar energy systems and mobile power solutions.",
                 "features": [
                     "2.7 kWh Capacity",
@@ -643,7 +714,7 @@
                 }
             },
             "revium-5-4-kwh-lfp": {
-                "name": "Revium 5.4 kWh LFP Battery",
+                "name": "5.4 kWh LFP Battery",
                 "description": "High-capacity, long-life energy storage solution for commercial and professional use.",
                 "features": [
                     "5.4 kWh Capacity",
@@ -663,7 +734,7 @@
                 }
             },
             "revium-grid-core": {
-                "name": "Revium Grid Core",
+                "name": "Grid Core",
                 "description": "High-power DC fast charging station in the 45-180 kW range.",
                 "features": [
                     "45 – 180 kW DC Power",
@@ -675,7 +746,7 @@
                 ]
             },
             "revium-grid-pulse": {
-                "name": "Revium Grid Pulse",
+                "name": "Grid Pulse",
                 "description": "90-270 kW dual-output flexible DC charging station.",
                 "features": [
                     "90 – 270 kW DC Power",
@@ -687,7 +758,7 @@
                 ]
             },
             "revium-grid-pulse-gen2": {
-                "name": "Revium Grid Pulse Gen2",
+                "name": "Grid Pulse Gen2",
                 "description": "Next-generation connected and smart high-speed DC charging station.",
                 "features": [
                     "90 – 270 kW DC Power",
@@ -697,19 +768,19 @@
                     "Ethernet / 4G / LTE",
                     "OCPP 1.6 Protocol"
                 ]
+            },
+            "revium-solarport": {
+                "name": "Solarport",
+                "description": "EV charging station and solar carport solution. Charge your vehicles with clean energy while protecting them.",
+                "features": [
+                    "Dual Vehicle Capacity",
+                    "Integrated EV Charging",
+                    "Solar Power Generation",
+                    "Waterproof Structure",
+                    "Aesthetic Design",
+                    "Modular Installation"
+                ]
             }
-        },
-        "revium-solarport": {
-            "name": "Revium Solarport",
-            "description": "EV charging station and solar carport solution. Charge your vehicles with clean energy while protecting them.",
-            "features": [
-                "Dual Vehicle Capacity",
-                "Integrated EV Charging",
-                "Solar Power Generation",
-                "Waterproof Structure",
-                "Aesthetic Design",
-                "Modular Installation"
-            ]
         }
     }
 }

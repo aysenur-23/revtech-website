@@ -39,38 +39,44 @@ export default function ProductCards() {
         {
             key: 'portablePower',
             slug: 'portable',
-            image: '/images/categories/portable-power-new.png',
+            image: '/images/categories/portable-power-new.webp',
             priority: true,
+            defaultTitle: 'Taşınabilir Güç Paketleri',
         },
         {
             key: 'vehiclePower',
             slug: 'vehicle',
             image: '/images/products/vehicle-category-new.jpg',
             priority: true,
+            defaultTitle: 'Araç Tipi Güç Paketleri',
         },
         {
             key: 'charging',
             slug: 'charging',
-            image: '/images/categories/charging-category.png',
+            image: '/images/categories/charging-category.webp',
             priority: true,
+            defaultTitle: 'Şarj İstasyonları',
         },
         {
             key: 'cabinPower',
             slug: 'cabin',
             image: '/images/categories/cabin-category.jpg',
             priority: false,
+            defaultTitle: 'Kabin Tipi Güç Paketleri',
         },
         {
             key: 'gesProducts',
             slug: 'ges',
             image: '/images/categories/solar-category.jpg',
             priority: false,
+            defaultTitle: 'Solar Ürünler',
         },
         {
             key: 'batteryPower',
             slug: 'battery',
             image: '/images/categories/battery-category.jpg',
             priority: false,
+            defaultTitle: 'Batarya Sistemleri',
         },
     ];
 
@@ -130,19 +136,19 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
             {/* Full-Bleed Background Image */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image
-                    alt={t(`${category.key}.title`)}
+                    alt={t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                     src={category.image}
                     fill
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
                     priority={category.priority}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-50 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
             </div>
 
             {/* Content */}
             <div className="absolute bottom-4 left-6 sm:bottom-6 sm:left-8 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
-                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tighter leading-tight group-hover:text-blue-400 transition-colors duration-300 drop-shadow-md">
-                    {t(`${category.key}.title`)}
+                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tighter leading-tight group-hover:text-blue-400 transition-colors duration-300" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>
+                    {t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                 </h3>
 
                 <div className="mt-4 flex items-center gap-2.5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">

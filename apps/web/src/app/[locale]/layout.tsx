@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://reviumtech.com'),
+    // metadataBase: new URL('https://reviumtech.com'),
     title: {
         default: 'Revium Tech - Yenilenebilir Enerji Çözümleri',
         template: '%s | Revium Tech'

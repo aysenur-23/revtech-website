@@ -1,7 +1,5 @@
-'use client';
-
-import { use } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -10,7 +8,7 @@ import {
     Building2, Battery, Settings, Search, Layout,
     Truck, CheckCircle, Headphones, Phone, Mail
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, toArabicNumeral } from '@/lib/utils';
 
 interface Props {
     params: Promise<{ locale: string; slug: string }>;
@@ -23,19 +21,29 @@ const servicesData: Record<string, {
 }> = {
     'ges-kurulumu': {
         key: 'gesInstallation',
-        image: '/images/services/ges-service-new.png',
+        image: '/images/services/ges-service-new.webp',
         whyUsIcons: [Sun, Wrench, Zap, Shield],
     },
     'endustriyel-kurulum': {
         key: 'industrialInstallation',
-        image: '/images/services/industrial-service-new.png',
+        image: '/images/services/industrial-service-new.webp',
         whyUsIcons: [Building2, Battery, Settings, Shield],
     },
 };
 
-export default function ServiceDetailPage({ params }: Props) {
-    const { locale, slug } = use(params);
-    const t = useTranslations('services');
+const locales = ['tr', 'en', 'ar'];
+const serviceSlugs = Object.keys(servicesData);
+
+export function generateStaticParams() {
+    return locales.flatMap((locale) =>
+        serviceSlugs.map((slug) => ({ locale, slug }))
+    );
+}
+
+export default async function ServiceDetailPage({ params }: Props) {
+    const { locale, slug } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('services');
 
     const service = servicesData[slug];
     if (!service) {
@@ -202,7 +210,7 @@ export default function ServiceDetailPage({ params }: Props) {
                             >
                                 <div className="flex items-start gap-4">
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold flex-shrink-0">
-                                        {index + 1}
+                                        {toArabicNumeral(index + 1, locale)}
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-slate-900 mb-2">{step.title}</h3>
