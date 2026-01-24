@@ -85,7 +85,7 @@ export default function Kurumsal() {
                         <div className="relative bg-gradient-to-br from-blue-50 to-slate-100 rounded-3xl p-10 lg:p-16 border border-slate-200">
                             <div className="relative aspect-square max-w-md mx-auto">
                                 <Image
-                                    src="/images/categories/portable-power-new.webp"
+                                    src="/images/corporate/about-visual.webp"
                                     alt="Revium Enerji Depolama Sistemi"
                                     fill
                                     className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"

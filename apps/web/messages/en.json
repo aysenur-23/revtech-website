@@ -57,13 +57,13 @@
         "projectInfo": "Project Information",
         "technicalRequirements": "Technical Requirements",
         "additionalInfo": "Additional Information",
-        "nameLabel": "Full Name *",
+        "nameLabel": "Full Name",
         "namePlaceholder": "Your full name",
         "emailLabel": "Email *",
         "emailPlaceholder": "example@email.com",
         "phoneLabel": "Phone *",
         "phonePlaceholder": "+90 5XX XXX XX XX",
-        "companyLabel": "Company (Optional)",
+        "companyLabel": "Company",
         "companyPlaceholder": "Company name",
         "categoryLabel": "Product Category *",
         "categorySelect": "Select Category",
@@ -110,6 +110,8 @@
         "formTitle": "Send Us a Message",
         "nameLabel": "Full Name",
         "emailLabel": "Email",
+        "phoneLabel": "Phone",
+        "optional": "optional",
         "subjectLabel": "Subject",
         "messageLabel": "Your Message",
         "sendButton": "Send Message",
@@ -570,118 +572,43 @@
         "products": {
             "revium-2-7-kwh": {
                 "name": "2.7 kWh Case Type Power Pack",
-                "description": "Rugged case-type power unit specially designed for outdoor and field operations.",
-                "features": [
-                    "Water & Impact Resistant",
-                    "2.7 kWh Capacity",
-                    "Field-Type Connectors",
-                    "Easy Transport",
-                    "Smart BMS"
-                ]
+                "description": "Rugged case-type power unit specially designed for outdoor and field operations."
             },
             "revium-2-7-kwh-bag": {
                 "name": "2.7 kWh Portable Power Pack",
-                "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance.",
-                "features": [
-                    "2.7 kWh Capacity",
-                    "LiFePO4 Battery Technology",
-                    "Lightweight & Portable",
-                    "Solar Panel Support",
-                    "Silent Operation"
-                ]
+                "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance."
             },
             "revium-storage-battery": {
                 "name": "Storage Battery",
-                "description": "Modular and scalable battery systems. Capacity expansion based on needs.",
-                "features": [
-                    "Modular Design",
-                    "Quick Installation",
-                    "High Discharge Performance",
-                    "Safe Cells",
-                    "Long-Lasting"
-                ]
+                "description": "Modular and scalable battery systems. Capacity expansion based on needs."
             },
             "revium-5-4-kwh": {
                 "name": "5.4 kWh Portable Power Pack",
-                "description": "High-capacity, uninterrupted energy solution for professional use.",
-                "features": [
-                    "5.4 kWh Capacity",
-                    "Expandable Ports",
-                    "Industrial Efficiency",
-                    "Solar Integration",
-                    "LCD Control Panel"
-                ]
+                "description": "High-capacity, uninterrupted energy solution for professional use."
             },
             "revium-power-cabinet": {
                 "name": "Power Cabinet",
-                "description": "All-in-one cabinet solution for large-capacity energy storage needs.",
-                "features": [
-                    "21.6 kWh Capacity",
-                    "Built-in Inverter",
-                    "Smart Cooling",
-                    "Central Control",
-                    "Remote Monitoring"
-                ]
+                "description": "All-in-one cabinet solution for large-capacity energy storage needs."
             },
             "revium-pickup-power-pack": {
                 "name": "Pick Up Power Pack",
-                "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",
-                "features": [
-                    "Energy: 60 – 100 kWh",
-                    "3-Phase Output: 3×10 kW",
-                    "Single Phase Output: 5×5 kW",
-                    "Max PV Power: 30 kW",
-                    "Pure Sine Output",
-                    "6000+ Cycle Life"
-                ]
+                "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications."
             },
             "revium-power-layer": {
                 "name": "Power Layer",
-                "description": "Industrial-scale storage power with stackable power layers.",
-                "features": [
-                    "Stackable Design",
-                    "Physical Security",
-                    "Parallel Connection",
-                    "High Efficiency",
-                    "Industrial Standard",
-                    "Modular Design"
-                ]
+                "description": "Industrial-scale storage power with stackable power layers."
             },
             "revium-powerstation-series": {
                 "name": "Powerstation Series",
-                "description": "Smart stations combining solar energy and storage in a single unit.",
-                "features": [
-                    "Solar Panel Input",
-                    "Storage Unit",
-                    "Wheeled Mobile Chassis",
-                    "Plug-and-Play",
-                    "Energy Anywhere",
-                    "Remote Monitoring"
-                ]
+                "description": "Smart stations combining solar energy and storage in a single unit."
             },
             "revium-voltwagon": {
                 "name": "VoltWagon",
-                "description": "Solar-powered trailer carrying energy from the sun, suitable for all terrains.",
-                "features": [
-                    "Trailer Design",
-                    "Foldable Solar Panels",
-                    "Off-road Tires",
-                    "15 kWh Storage",
-                    "Multiple Output Ports",
-                    "Easy Transport"
-                ]
+                "description": "Solar-powered trailer carrying energy from the sun, suitable for all terrains."
             },
             "revium-gridpack": {
                 "name": "GRIDPACK",
                 "description": "High-capacity BESS solution for utility-scale energy storage and renewable energy integration.",
-                "features": [
-                    "500 kWh – 5 MWh Capacity",
-                    "600 – 1500 VDC Voltage",
-                    "250 kW – 2.5 MW Power",
-                    "Liquid Cooling Technology",
-                    "6000+ Cycle Life",
-                    "Grid Integration"
-                ],
                 "techSpecs": {
                     "energy": "500 kWh – 5 MWh",
                     "voltage": "600 – 1500 VDC",
@@ -694,14 +621,6 @@
             "revium-2-7-kwh-lfp": {
                 "name": "2.7 kWh LFP Battery",
                 "description": "Compact, long-life LFP battery for solar energy systems and mobile power solutions.",
-                "features": [
-                    "2.7 kWh Capacity",
-                    "6000+ Cycle Life",
-                    "Bluetooth Connectivity",
-                    "25 kg Lightweight Design",
-                    "LiFePO4 Technology",
-                    "High Efficiency"
-                ],
                 "techSpecs": {
                     "voltage": "12 VDC / 24 VDC",
                     "capacity": "105 Ah / 206 Ah",
@@ -714,14 +633,6 @@
             "revium-5-4-kwh-lfp": {
                 "name": "5.4 kWh LFP Battery",
                 "description": "High-capacity, long-life energy storage solution for commercial and professional use.",
-                "features": [
-                    "5.4 kWh Capacity",
-                    "6000+ Cycle Life",
-                    "Bluetooth Connectivity",
-                    "High Performance",
-                    "LiFePO4 Technology",
-                    "Long Service Life"
-                ],
                 "techSpecs": {
                     "voltage": "24 VDC / 48 VDC",
                     "capacity": "105 Ah / 206 Ah",
@@ -733,51 +644,19 @@
             },
             "revium-grid-core": {
                 "name": "Grid Core",
-                "description": "High-power DC fast charging station in the 45-180 kW range.",
-                "features": [
-                    "45 – 180 kW DC Power",
-                    "150 – 1000 VDC",
-                    "CCS2 Connector",
-                    "OCPP 1.6 Support",
-                    "IP54 Protection",
-                    "Ethernet / 4G"
-                ]
+                "description": "High-power DC fast charging station in the 45-180 kW range."
             },
             "revium-grid-pulse": {
                 "name": "Grid Pulse",
-                "description": "90-270 kW dual-output flexible DC charging station.",
-                "features": [
-                    "90 – 270 kW DC Power",
-                    "Dual Output (2 DC)",
-                    "150 – 1000 VDC",
-                    "CCS1 / CCS2",
-                    "RFID / QR Payment",
-                    "IP54 Protection"
-                ]
+                "description": "90-270 kW dual-output flexible DC charging station."
             },
             "revium-grid-pulse-gen2": {
                 "name": "Grid Pulse Gen2",
-                "description": "Next-generation connected and smart high-speed DC charging station.",
-                "features": [
-                    "90 – 270 kW DC Power",
-                    "Next-Gen Technology",
-                    "150 – 1000 VDC",
-                    "CCS2 Connector",
-                    "Ethernet / 4G / LTE",
-                    "OCPP 1.6 Protocol"
-                ]
+                "description": "Next-generation connected and smart high-speed DC charging station."
             },
             "revium-solarport": {
                 "name": "Solarport",
-                "description": "EV charging station and solar carport solution. Charge your vehicles with clean energy while protecting them.",
-                "features": [
-                    "Dual Vehicle Capacity",
-                    "Integrated EV Charging",
-                    "Solar Power Generation",
-                    "Waterproof Structure",
-                    "Aesthetic Design",
-                    "Modular Installation"
-                ]
+                "description": "EV charging station and solar carport solution. Charge your vehicles with clean energy while protecting them."
             }
         }
     }

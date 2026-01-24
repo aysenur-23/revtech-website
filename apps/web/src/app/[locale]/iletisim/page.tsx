@@ -19,11 +19,13 @@ export default function Iletisim() {
         setIsSubmitting(true);
 
         const formData = new FormData(form);
+        const phone = formData.get('phone') as string;
 
         try {
             const contactData = {
                 name: formData.get('name'),
                 email: formData.get('email'),
+                phone: phone || null,
                 subject: formData.get('subject'),
                 message: formData.get('message'),
                 locale: locale,
@@ -43,6 +45,7 @@ export default function Iletisim() {
                         <h2>Yeni İletişim Formu Gönderimi</h2>
                         <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
                         <p><strong>Email:</strong> ${formData.get('email')}</p>
+                        ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
                         <p><strong>Konu:</strong> ${formData.get('subject')}</p>
                         <p><strong>Mesaj:</strong></p>
                         <p>${formData.get('message')}</p>
@@ -132,7 +135,7 @@ export default function Iletisim() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div className="space-y-1.5">
-                                    <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('nameLabel')}</label>
+                                    <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('nameLabel')} <span className="text-red-500">*</span></label>
                                     <input
                                         type="text"
                                         name="name"
@@ -141,7 +144,7 @@ export default function Iletisim() {
                                     />
                                 </div>
                                 <div className="space-y-1.5">
-                                    <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('emailLabel')}</label>
+                                    <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('emailLabel')} <span className="text-red-500">*</span></label>
                                     <input
                                         type="email"
                                         name="email"
@@ -151,7 +154,17 @@ export default function Iletisim() {
                                 </div>
                             </div>
                             <div className="space-y-1.5">
-                                <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('subjectLabel')}</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('phoneLabel')}</label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    dir="ltr"
+                                />
+                            </div>
+                            <div className="space-y-1.5">
+                                <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('subjectLabel')} <span className="text-red-500">*</span></label>
                                 <input
                                     type="text"
                                     name="subject"
@@ -160,7 +173,7 @@ export default function Iletisim() {
                                 />
                             </div>
                             <div className="space-y-1.5">
-                                <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('messageLabel')}</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('messageLabel')} <span className="text-red-500">*</span></label>
                                 <textarea
                                     name="message"
                                     rows={5}

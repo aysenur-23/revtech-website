@@ -58,13 +58,13 @@
     "projectInfo": "Proje Bilgileri",
     "technicalRequirements": "Teknik Gereksinimler",
     "additionalInfo": "Ek Bilgiler",
-    "nameLabel": "Ad Soyad *",
+    "nameLabel": "Ad Soyad",
     "namePlaceholder": "Adınız ve soyadınız",
     "emailLabel": "E-posta *",
     "emailPlaceholder": "ornek@email.com",
     "phoneLabel": "Telefon *",
     "phonePlaceholder": "+90 5XX XXX XX XX",
-    "companyLabel": "Şirket (Opsiyonel)",
+    "companyLabel": "Şirket",
     "companyPlaceholder": "Şirket adı",
     "categoryLabel": "Ürün Kategorisi *",
     "categorySelect": "Kategori Seçiniz",
@@ -111,6 +111,8 @@
     "formTitle": "Bize Mesaj Gönderin",
     "nameLabel": "Ad Soyad",
     "emailLabel": "E-posta",
+    "phoneLabel": "Telefon",
+    "optional": "opsiyonel",
     "subjectLabel": "Konu",
     "messageLabel": "Mesajınız",
     "sendButton": "Mesajı Gönder",
@@ -572,55 +574,68 @@
         "name": "2.7 kWh Çanta Tip Güç Paketi",
         "description": "Dış mekan ve saha çalışmaları için özel olarak tasarlanmış, dayanıklı çanta tipi güç ünitesi.",
         "features": [
-          "Su ve Darbe Dayanımı",
-          "2.7 kWh Kapasite",
-          "Saha Tipi Konnektörler",
-          "Kolay Taşıma",
-          "Akıllı BMS"
+          "Enerji: 2.7 kWh",
+          "Çıkış Voltajı: 220 VAC",
+          "Çıkış Gücü: 2000 W",
+          "Maks. PV Güç: 1000 W (MPPT)",
+          "Çevrim Ömrü: 6000 çevrim",
+          "Dalga Tipi: Saf Sinüs",
+          "Boyutlar: 548 × 391 × 335 mm",
+          "Ağırlık: 35 kg"
         ]
       },
       "revium-2-7-kwh-bag": {
         "name": "2.7 kWh Depolanabilir Güç Paketi",
         "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
         "features": [
-          "2.7 kWh Kapasite",
-          "LiFePO4 Batarya Teknolojisi",
-          "Hafif ve Taşınabilir",
-          "Güneş Paneli Desteği",
-          "Sessiz Çalışma"
+          "Enerji: 2.7 kWh",
+          "Çıkış Voltajı: 220 VAC",
+          "Çıkış Gücü: 2000 W",
+          "Maks. PV Güç: 1000 W (MPPT)",
+          "Çevrim Ömrü: 6000 çevrim",
+          "Dalga Tipi: Saf Sinüs",
+          "Boyutlar: 500 × 335 × 285 mm",
+          "Ağırlık: 35 kg"
         ]
       },
       "revium-storage-battery": {
         "name": "Storage Battery",
         "description": "Modüler ve ölçeklenebilir batarya sistemleri. İhtiyaca göre kapasite artırımı imkanı.",
         "features": [
-          "Modüler Tasarım",
-          "Hızlı Kurulum",
-          "Yüksek Deşarj Performansı",
-          "Emniyetli Hücreler",
-          "Uzun Ömürlü"
+          "Nominal Voltaj: 12 / 24 / 48 VDC",
+          "Kapasite: 105 / 206 Ah",
+          "Enerji: 2.7 – 5.4 kWh",
+          "Batarya Ömrü: 6000 çevrim",
+          "Boyutlar: 400 × 320 × 244 mm (2.7 kWh) / 400 × 391 × 244 mm (5.4 kWh)",
+          "Ağırlık: 25 / 45 kg",
+          "Bluetooth: Mevcut"
         ]
       },
       "revium-5-4-kwh": {
         "name": "5.4 kWh Depolanabilir Güç Paketi",
         "description": "Profesyonel kullanım için yüksek kapasiteli, kesintisiz enerji çözümü.",
         "features": [
-          "5.4 kWh Kapasite",
-          "Genişletilebilir Portlar",
-          "Endüstriyel Verimlilik",
-          "Güneş Entegrasyonu",
-          "LCD Kontrol Paneli"
+          "Enerji: 5.4 kWh",
+          "Çıkış Voltajı: 220 VAC",
+          "Çıkış Gücü: 3000 W",
+          "Maks. PV Güç: 1000 W (MPPT)",
+          "Çevrim Ömrü: 6000 çevrim",
+          "Dalga Tipi: Saf Sinüs",
+          "Boyutlar: 777 × 458 × 1340 mm",
+          "Ağırlık: 60 kg"
         ]
       },
       "revium-power-cabinet": {
         "name": "Güç Kabini",
         "description": "Büyük kapasiteli enerji depolama ihtiyaçları için hepsi bir arada kabin çözümü.",
         "features": [
-          "21.6 kWh Kapasite",
-          "Dahili Inverter",
-          "Akıllı Soğutma",
-          "Merkezi Kontrol",
-          "Uzaktan İzleme"
+          "Enerji: 5.4 – 21.6 kWh (tek kabin)",
+          "Çıkış Voltajı: 220 VAC",
+          "Çıkış Gücü: 3 – 20 kW",
+          "Max PV Güç: 1 – 30 kW (MPPT)",
+          "Batarya Ömrü: 6000 çevrim",
+          "Dalga Tipi: Saf Sinüs",
+          "Ağırlık: 70 – 270 kg"
         ]
       },
       "revium-pickup-power-pack": {
@@ -628,23 +643,22 @@
         "description": "Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.",
         "features": [
           "Enerji: 60 – 100 kWh",
-          "3 Faz Çıkış: 3×10 kW",
-          "Tek Faz Çıkış: 5×5 kW",
-          "Maks. PV Güç: 30 kW",
-          "Saf Sinüs Çıkış",
-          "6000+ Çevrim Ömrü"
+          "Çıkış Gücü (3 Faz): 3 × 10 kW (380 VAC)",
+          "Çıkış Gücü (Tek Faz): 5 × 5 kW (220 VAC)",
+          "Max PV Güç: 30 kW",
+          "Batarya Ömrü: 6000 çevrim",
+          "Dalga Tipi: Saf Sinüs"
         ]
       },
       "revium-power-layer": {
         "name": "Güç Katmanı",
         "description": "İstiflenebilir güç katmanları ile endüstriyel ölçekte depolama gücü.",
         "features": [
-          "İstiflenebilir Yapı",
-          "Fiziksel Güvenlik",
-          "Paralel Bağlantı",
-          "Yüksek Verim",
-          "Endüstriyel Standart",
-          "Modüler Tasarım"
+          "Nominal Voltaj: 51.2 V",
+          "Artırılabilir Kapasite: 105 / 210 / 315 / 420 Ah",
+          "Enerji Aralığı: 5.4 – 172 kWh",
+          "Batarya Ömrü: 6000 çevrim",
+          "Ağırlık: 66 – 950 kg"
         ]
       },
       "revium-powerstation-series": {
@@ -675,12 +689,13 @@
         "name": "GRIDPACK",
         "description": "Şebeke ölçekli enerji depolama ve yenilenebilir enerji entegrasyonu için yüksek kapasiteli BESS çözümü.",
         "features": [
-          "500 kWh – 5 MWh Kapasite",
-          "600 – 1500 VDC Voltaj",
-          "250 kW – 2.5 MW Güç",
-          "Sıvı Soğutma Teknolojisi",
-          "6000+ Çevrim Ömrü",
-          "Şebeke Entegrasyonu"
+          "Enerji Kapasitesi: 500 kWh – 5 MWh",
+          "Voltaj Aralığı: 600 – 1500 VDC",
+          "AC Çıkış Gücü: 250 kW – 2.5 MW",
+          "Çevrim Ömrü: 6000 çevrim",
+          "AC Dalga Tipi: Saf Sinüs",
+          "Çalışma Ortamı: -30°C ~ +55°C",
+          "Soğutma: Sıvı Soğutma"
         ],
         "techSpecs": {
           "energy": "500 kWh – 5 MWh",
@@ -695,12 +710,13 @@
         "name": "2.7 kWh LFP Batarya",
         "description": "Güneş enerjisi sistemleri ve mobil güç çözümleri için kompakt, uzun ömürlü LFP batarya.",
         "features": [
-          "2.7 kWh Kapasite",
-          "6000+ Çevrim Ömrü",
-          "Bluetooth Bağlantısı",
-          "25 kg Hafif Tasarım",
-          "LiFePO4 Teknolojisi",
-          "Yüksek Verimlilik"
+          "Nominal Voltaj: 12 / 24 VDC",
+          "Kapasite: 105 / 206 Ah",
+          "Enerji: 2.7 kWh",
+          "Batarya Ömrü: 6000 çevrim",
+          "Boyutlar: 400 × 320 × 244 mm",
+          "Ağırlık: 25 kg",
+          "Bluetooth: Mevcut"
         ],
         "techSpecs": {
           "voltage": "12 VDC / 24 VDC",
@@ -715,12 +731,13 @@
         "name": "5.4 kWh LFP Batarya",
         "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli, uzun ömürlü enerji depolama çözümü.",
         "features": [
-          "5.4 kWh Kapasite",
-          "6000+ Çevrim Ömrü",
-          "Bluetooth Bağlantısı",
-          "Yüksek Performans",
-          "LiFePO4 Teknolojisi",
-          "Uzun Kullanım Ömrü"
+          "Nominal Voltaj: 24 / 48 VDC",
+          "Kapasite: 105 / 206 Ah",
+          "Enerji: 5.4 kWh",
+          "Batarya Ömrü: 6000 çevrim",
+          "Boyutlar: 400 × 391 × 244 mm",
+          "Ağırlık: 45 kg",
+          "Bluetooth: Mevcut"
         ],
         "techSpecs": {
           "voltage": "24 VDC / 48 VDC",
@@ -735,48 +752,54 @@
         "name": "Grid Core",
         "description": "45-180 kW aralığında yüksek güçlü DC hızlı şarj istasyonu.",
         "features": [
-          "45 – 180 kW DC Güç",
-          "150 – 1000 VDC",
-          "CCS2 Konnektör",
-          "OCPP 1.6 Desteği",
-          "IP54 Koruma",
-          "Ethernet / 4G"
+          "DC Çıkış Gücü: 45 – 180 kW",
+          "DC Gerilim: 150 – 1000 VDC",
+          "AC Giriş: 400 VAC, 3 Faz",
+          "Konnektör: CCS2",
+          "Çıkış Sayısı: 1 DC",
+          "Haberleşme: Ethernet / CAN / 4G",
+          "Protokol: OCPP 1.6",
+          "Koruma: IP54"
         ]
       },
       "revium-grid-pulse": {
         "name": "Grid Pulse",
         "description": "90-270 kW çift çıkışlı esnek DC şarj istasyonu.",
         "features": [
-          "90 – 270 kW DC Güç",
-          "Çift Çıkış (2 DC)",
-          "150 – 1000 VDC",
-          "CCS1 / CCS2",
-          "RFID / QR Ödeme",
-          "IP54 Koruma"
+          "DC Çıkış Gücü: 90 – 270 kW",
+          "DC Gerilim: 150 – 1000 VDC",
+          "Konnektör: CCS1 / CCS2",
+          "Çıkış Sayısı: 2 DC",
+          "AC Giriş: 400 VAC, 3 Faz",
+          "Ödeme: RFID / QR / NFC",
+          "Koruma: IP54"
         ]
       },
       "revium-grid-pulse-gen2": {
         "name": "Grid Pulse Gen2",
         "description": "Yeni nesil bağlantılı ve akıllı yüksek hızlı DC şarj istasyonu.",
         "features": [
-          "90 – 270 kW DC Güç",
-          "Yeni Nesil Teknoloji",
-          "150 – 1000 VDC",
-          "CCS2 Konnektör",
-          "Ethernet / 4G / LTE",
-          "OCPP 1.6 Protokolü"
+          "DC Çıkış Gücü: 90 – 270 kW",
+          "DC Gerilim: 150 – 1000 VDC",
+          "Konnektör: CCS2",
+          "Çıkış Sayısı: 2 DC",
+          "AC Giriş: 400 VAC, 3 Faz",
+          "Haberleşme: Ethernet / 4G / LTE",
+          "Protokol: OCPP 1.6",
+          "Koruma: IP54"
         ]
       },
       "revium-solarport": {
         "name": "Solarport",
         "description": "Elektrikli araç şarj istasyonu ve güneş enerjisi carport çözümü. Araçlarınızı korurken temiz enerji ile şarj edin.",
         "features": [
-          "Çift Araç Kapasitesi",
-          "Entegre EV Şarj",
-          "Güneş Enerjisi Üretimi",
-          "Su Geçirmez Yapı",
-          "Estetik Tasarım",
-          "Modüler Kurulum"
+          "Araç Kapasitesi: 2 – 8 araç",
+          "Panel Sayısı: 8 – 48 adet",
+          "Kurulu Güç: 4.8 – 38.8 kWp",
+          "MPPT Voltaj Aralığı: 180 – 950 VDC",
+          "AC Çıkış Gücü: 6 – 24 kW",
+          "Şarj Altyapısı: 22 kW AC",
+          "Opsiyonel: DC hızlı şarj"
         ]
       }
     }

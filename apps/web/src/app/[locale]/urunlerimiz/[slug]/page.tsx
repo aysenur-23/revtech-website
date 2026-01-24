@@ -140,24 +140,21 @@ const products: Record<string, {
         description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü.',
         features: [
             'Nominal Voltaj: 12 / 24 / 48 VDC',
-            'Kapasite: 206 Ah / 105 Ah',
+            'Kapasite: 105 / 206 Ah',
             'Enerji: 2.7 – 5.4 kWh',
             'Batarya Ömrü: 6000 çevrim',
-            'Haberleşme: Bluetooth',
+            'Boyutlar: 400 × 320 × 244 mm (2.7) / 400 × 391 × 244 mm (5.4)',
             'Ağırlık: 25 / 45 kg',
-            'Modüler Tasarım',
-            'Kolay Kurulum',
-            'Kolay Kurulum',
-            'Yüksek Verimlilik',
-            'IP65 Koruma'
+            'Bluetooth: Mevcut',
+            'Hücre Tipi: LiFePO4'
         ],
         specs: [
             { label: 'Nominal Voltaj', value: '12 / 24 / 48 VDC' },
-            { label: 'Kapasite', value: '206 Ah / 105 Ah' },
+            { label: 'Kapasite', value: '105 / 206 Ah' },
             { label: 'Enerji', value: '2.7 – 5.4 kWh' },
-            { label: 'Haberleşme', value: 'Bluetooth' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
             { label: 'Ağırlık', value: '25 / 45 kg' },
-            { label: 'Koruma', value: 'IP65' },
+            { label: 'Bluetooth', value: 'Mevcut' },
         ],
         usageAreas: [
             { label: 'Ev Depolama', icon: 'Building2' },
@@ -176,19 +173,22 @@ const products: Record<string, {
         features: [
             'Enerji: 5.4 kWh',
             'Çıkış Voltajı: 220 VAC',
-            'Sürekli Çıkış Gücü: 3000 W',
-            'Maks. PV Güç: 1000 W',
-            'Dalga Tipi: Pure Sine',
-            'Batarya Ömrü: 6000 çevrim',
-            'Ağırlık: 60 kg',
-            'Yüksek Kapasite',
-            'Profesyonel Kullanım'
+            'Çıkış Gücü: 3000 W',
+            'Maks. PV Güç: 1000 W (MPPT)',
+            'Çevrim Ömrü: 6000 çevrim',
+            'Dalga Tipi: Saf Sinüs',
+            'Boyutlar: 777 × 458 × 1340 mm',
+            'Ağırlık: 60 kg'
         ],
         specs: [
             { label: 'Enerji', value: '5.4 kWh' },
-            { label: 'Sürekli Güç', value: '3000 W' },
-            { label: 'Ağırlık', value: '60 kg' },
+            { label: 'Çıkış Voltajı', value: '220 VAC' },
+            { label: 'Çıkış Gücü', value: '3000 W' },
+            { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
+            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Boyutlar', value: '777 × 458 × 1340 mm' },
+            { label: 'Ağırlık', value: '60 kg' },
         ],
         usageAreas: [
             { label: 'Mobil Ev', icon: 'Bus' },
@@ -222,7 +222,8 @@ const products: Record<string, {
             'Max PV Güç: 1 – 30 kW (MPPT)',
             'Batarya Ömrü: 6000 çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Ağırlık: 70 – 270 kg'
+            'Ağırlık: 70 – 270 kg',
+            'Koruma: IP54'
         ],
         specs: [
             { label: 'Enerji', value: '5.4 – 21.6 kWh' },
@@ -249,17 +250,18 @@ const products: Record<string, {
         description: 'Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.',
         features: [
             'Enerji: 60 – 100 kWh',
-            '3 Faz Çıkış: 3×10 kW (380 VAC)',
-            'Tek Faz Çıkış: 5×5 kW (220 VAC)',
-            'Maks. PV Güç: 30 kW',
-            'Dalga Tipi: Saf Sinüs',
+            'Çıkış Gücü (3 Faz): 3 × 10 kW (380 VAC)',
+            'Çıkış Gücü (Tek Faz): 5 × 5 kW (220 VAC)',
+            'Max PV Güç: 30 kW',
             'Batarya Ömrü: 6000 çevrim',
-            'IP67 Koruma'
+            'Dalga Tipi: Saf Sinüs'
         ],
         specs: [
             { label: 'Enerji', value: '60 – 100 kWh' },
-            { label: '3-Faz Çıkış', value: '3x10 kW' },
-            { label: 'PV Giriş', value: '30 kW' },
+            { label: 'Çıkış Gücü (3 Faz)', value: '3 × 10 kW (380 VAC)' },
+            { label: 'Çıkış Gücü (Tek Faz)', value: '5 × 5 kW (220 VAC)' },
+            { label: 'Max PV Güç', value: '30 kW' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
         ],
         usageAreas: [
@@ -278,20 +280,18 @@ const products: Record<string, {
         description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları.',
         features: [
             'Nominal Voltaj: 51.2 V',
-            'Kapasite: 105 / 210 / 315 / 420 Ah',
+            'Artırılabilir Kapasite: 105 / 210 / 315 / 420 Ah',
             'Enerji Aralığı: 5.4 – 172 kWh',
             'Batarya Ömrü: 6000 çevrim',
             'Ağırlık: 66 – 950 kg',
-            'Modüler Yapı',
-            'Yüksek Ölçeklenebilirlik',
-            'Akıllı BMS',
-            'Kolay Entegrasyon'
+            'Hücre Tipi: LiFePO4'
         ],
         specs: [
-            { label: 'Voltaj', value: '51.2 V' },
-            { label: 'Kapasite', value: 'Max 420 Ah' },
-            { label: 'Enerji Max', value: '172 kWh' },
-            { label: 'Döngü', value: '6000' },
+            { label: 'Nominal Voltaj', value: '51.2 V' },
+            { label: 'Artırılabilir Kapasite', value: '105 / 210 / 315 / 420 Ah' },
+            { label: 'Enerji Aralığı', value: '5.4 – 172 kWh' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Ağırlık', value: '66 – 950 kg' },
         ],
         usageAreas: [
             { label: 'Endüstriyel', icon: 'Hospital' },
@@ -314,13 +314,15 @@ const products: Record<string, {
             'Çevrim Ömrü: 6000 çevrim',
             'AC Dalga Tipi: Saf Sinüs',
             'Çalışma Ortamı: -30°C ~ +55°C',
-            'Soğutma: Sıvı Soğutma'
+            'Soğutma: Sıvı Soğutma',
+            'Koruma: IP54'
         ],
         specs: [
             { label: 'Enerji Kapasitesi', value: '500 kWh – 5 MWh' },
             { label: 'Voltaj Aralığı', value: '600 – 1500 VDC' },
             { label: 'AC Çıkış Gücü', value: '250 kW – 2.5 MW' },
             { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'AC Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Çalışma Ortamı', value: '-30°C ~ +55°C' },
             { label: 'Soğutma', value: 'Sıvı Soğutma' },
         ],
@@ -345,7 +347,8 @@ const products: Record<string, {
             'PV Entegrasyonu: 624 adet 650Wp panel',
             'Soğutma: Sıvı',
             'Çevrim: 6000 (%80 DOD)',
-            'İzolasyon: Class II'
+            'İzolasyon: Class II',
+            'Koruma: IP54'
         ],
         specs: [
             { label: 'PV Kapasite', value: 'Max 624 Panels' },
@@ -406,7 +409,8 @@ const products: Record<string, {
             'MPPT Voltaj Aralığı: 180 – 950 VDC',
             'AC Çıkış Gücü: 6 – 24 kW',
             'Şarj Altyapısı: 22 kW AC',
-            'Opsiyonel: DC hızlı şarj'
+            'Opsiyonel: DC hızlı şarj',
+            'Koruma: IP65'
         ],
         specs: [
             { label: 'Araç Kapasitesi', value: '2 – 8 araç' },
@@ -415,6 +419,7 @@ const products: Record<string, {
             { label: 'MPPT Voltaj Aralığı', value: '180 – 950 VDC' },
             { label: 'AC Çıkış Gücü', value: '6 – 24 kW' },
             { label: 'Şarj Altyapısı', value: '22 kW AC' },
+            { label: 'Opsiyonel', value: 'DC hızlı şarj' },
         ],
         usageAreas: [
             { label: 'Otopark', icon: 'Building2' },
@@ -471,6 +476,7 @@ const products: Record<string, {
             'Çıkış Sayısı: 2 DC',
             'AC Giriş: 400 VAC, 3 Faz',
             'Ödeme: RFID / QR / NFC',
+            'Protokol: OCPP 1.6',
             'Koruma: IP54'
         ],
         specs: [
@@ -479,6 +485,7 @@ const products: Record<string, {
             { label: 'Konnektör', value: 'CCS1 / CCS2' },
             { label: 'Çıkış Sayısı', value: '2 DC' },
             { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
+            { label: 'Ödeme', value: 'RFID / QR / NFC' },
             { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
@@ -502,7 +509,8 @@ const products: Record<string, {
             'Batarya Ömrü: 6000 çevrim',
             'Boyutlar: 400 × 320 × 244 mm',
             'Ağırlık: 25 kg',
-            'Bluetooth: Mevcut'
+            'Bluetooth: Mevcut',
+            'Hücre Tipi: LiFePO4'
         ],
         specs: [
             { label: 'Nominal Voltaj', value: '12 / 24 VDC' },
@@ -534,7 +542,8 @@ const products: Record<string, {
             'Batarya Ömrü: 6000 çevrim',
             'Boyutlar: 400 × 391 × 244 mm',
             'Ağırlık: 45 kg',
-            'Bluetooth: Mevcut'
+            'Bluetooth: Mevcut',
+            'Hücre Tipi: LiFePO4'
         ],
         specs: [
             { label: 'Nominal Voltaj', value: '24 / 48 VDC' },
@@ -723,6 +732,31 @@ function translateLabel(label: string, locale: string): string {
         'Haberleşme': { en: 'Communication', ar: 'الاتصال' },
         'Gerilim': { en: 'Voltage', ar: 'الجهد' },
         'Araç Kapasitesi': { en: 'Vehicle Capacity', ar: 'سعة المركبة' },
+        'Artırılabilir Kapasite': { en: 'Expandable Capacity', ar: 'السعة القابلة للتوسيع' },
+        'Çıkış Gücü (3 Faz)': { en: 'Output Power (3 Phase)', ar: 'خرج الطاقة (٣ مراحل)' },
+        'Çıkış Gücü (Tek Faz)': { en: 'Output Power (Single Phase)', ar: 'خرج الطاقة (مرحلة واحدة)' },
+        'Max PV Güç': { en: 'Max PV Power', ar: 'أقصى طاقة شمسية' },
+        'AC Dalga Tipi': { en: 'AC Wave Type', ar: 'نوع موجة التيار المتردد' },
+        'Çalışma Ortamı': { en: 'Operating Environment', ar: 'بيئة التشغيل' },
+        'Enerji Kapasitesi': { en: 'Energy Capacity', ar: 'سعة الطاقة' },
+        'Voltaj Aralığı': { en: 'Voltage Range', ar: 'نطاق الجهد' },
+        'AC Çıkış Gücü': { en: 'AC Output Power', ar: 'خرج طاقة التيار المتردد' },
+        'Çevrim Ömrü': { en: 'Cycle Life', ar: 'عمر الدورة' },
+        'Panel Sayısı': { en: 'Panel Count', ar: 'عدد الألواح' },
+        'MPPT Voltaj Aralığı': { en: 'MPPT Voltage Range', ar: 'نطاق جهد MPPT' },
+        'Şarj Altyapısı': { en: 'Charging Infrastructure', ar: 'البنية التحتية للشحن' },
+        'Opsiyonel': { en: 'Optional', ar: 'اختياري' },
+        'DC Çıkış Gücü': { en: 'DC Output Power', ar: 'خرج طاقة التيار المستمر' },
+        'DC hızlı şarj': { en: 'DC Fast Charging', ar: 'شحن سريع DC' },
+        'Ödeme': { en: 'Payment', ar: 'الدفع' },
+        'Protokol': { en: 'Protocol', ar: 'البروتوكول' },
+        'Saf Sinüs': { en: 'Pure Sine', ar: 'موجة جيبية نقية' },
+        'Mevcut': { en: 'Available', ar: 'متوفر' },
+        'Sıvı Soğutma': { en: 'Liquid Cooling', ar: 'تبريد سائل' },
+        'Hücre Tipi': { en: 'Cell Type', ar: 'نوع الخلية' },
+        'İzolasyon': { en: 'Insulation', ar: 'العزل' },
+        'Sıvı': { en: 'Liquid', ar: 'سائل' },
+        'Çevrim': { en: 'Cycle', ar: 'دورة' },
     };
 
     let result = label;
@@ -767,9 +801,16 @@ function translateLabel(label: string, locale: string): string {
             'Type 2': 'النوع ٢',
             'RFID': 'آر إف آي دي',
             'QR': 'كيو آر',
+            'NFC': 'إن إف سي',
+            'MPPT': 'إم بي بي تي',
+            'OCPP': 'أو سي بي بي',
             'Ethernet': 'إيثرنت',
             '4G': '٤ جي',
             'LTE': 'LTE',
+            'Wi-Fi': 'واي فاي',
+            'GPS': 'جي بي إس',
+            'USB': 'يو إس بي',
+            'LED': 'ليد',
         };
 
         for (const [unit, trans] of Object.entries(units)) {
@@ -839,9 +880,9 @@ export default async function ProductDetailPage({ params }: Props) {
     const localizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product.name;
     const localizedDesc = tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : product.description;
 
-    // We treat 'features' as the main spec list for the grid now. 
-    // If translations exist, we use them, otherwise fallback to the hardcoded list.
-    const localizedFeatures = tDetail.has(`products.${slug}.features`) ? tDetail.raw(`products.${slug}.features`) as string[] : product.features;
+    // We always use the hardcoded features from code (technical specs)
+    // The translateLabel function handles translations for other languages
+    const localizedFeatures = product.features;
 
     return (
         <div className="min-h-screen bg-white">
@@ -1020,21 +1061,21 @@ export default async function ProductDetailPage({ params }: Props) {
 
                 {/* Performance and Runtime Stats - Light Theme */}
                 {product.runtimeStats && (
-                    <section className="py-24 sm:py-32 bg-gradient-to-br from-blue-50 via-white to-slate-50 relative overflow-hidden text-left">
+                    <section className="py-12 sm:py-16 bg-gradient-to-br from-blue-50 via-white to-slate-50 relative overflow-hidden text-left">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
                         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-                            <div className="mx-auto max-w-3xl text-center mb-16 px-4">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200 mb-4">
-                                    <Clock className="w-4 h-4 text-blue-600" />
-                                    <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
+                            <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10 px-4">
+                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 border border-blue-200 mb-3">
+                                    <Clock className="w-3.5 h-3.5 text-blue-600" />
+                                    <span className="text-[10px] font-bold text-blue-700 uppercase tracking-wider">
                                         {locale === 'en' ? 'Real-World Performance' : locale === 'ar' ? 'أداء عالم حقيقي' : 'Gerçek Dünya Performansı'}
                                     </span>
                                 </div>
-                                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                                <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 mb-3 tracking-tight">
                                     {locale === 'en' ? 'Device-Based Runtime' : locale === 'ar' ? 'مدة التشغيل حسب الجهاز' : 'Cihaz Bazlı Çalışma Süreleri'}
                                 </h2>
-                                <p className="text-slate-600 text-lg leading-relaxed font-medium">
+                                <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                                     {formatNumber(tDetail.has(`products.${slug}.runtimeSummary`)
                                         ? tDetail(`products.${slug}.runtimeSummary`)
                                         : locale === 'en' && product.runtimeSummary
@@ -1048,33 +1089,33 @@ export default async function ProductDetailPage({ params }: Props) {
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
                                 {product.runtimeStats.map((stat, index) => {
                                     const Icon = getIcon(stat.icon);
                                     return (
-                                        <div key={index} className="group relative p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                                        <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                                             <div className="relative z-10">
-                                                <div className="flex items-center justify-between mb-5">
-                                                    <div className="p-3 rounded-2xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                                                        <Icon className="w-6 h-6 text-blue-600" />
+                                                <div className="flex items-center justify-between mb-3">
+                                                    <div className="p-2 rounded-xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
+                                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                                                     </div>
-                                                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{formatNumber(stat.power, locale)
+                                                    <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{formatNumber(stat.power, locale)
                                                         .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                                         .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                                         .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
                                                         .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
                                                         .replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
                                                 </div>
-                                                <div className="space-y-1">
-                                                    <h4 className="text-slate-500 font-bold text-xs uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
-                                                    <div className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                                                <div className="space-y-0.5">
+                                                    <h4 className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
+                                                    <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
                                                         {formatNumber(translateLabel(stat.duration, locale), locale)}
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* Decorative element */}
-                                            <div className="absolute bottom-4 right-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                                                <Icon className="w-12 h-12 text-slate-900" />
+                                            <div className="absolute bottom-3 right-3 opacity-5 group-hover:opacity-10 transition-opacity">
+                                                <Icon className="w-8 h-8 text-slate-900" />
                                             </div>
                                         </div>
                                     );

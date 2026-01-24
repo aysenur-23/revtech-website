@@ -44,7 +44,7 @@ const productCategories = [
         name: { tr: 'SOLAR ÜRÜNLER', en: 'SOLAR PRODUCTS', ar: 'المنتجات الشمسية' },
         icon: Sun,
         products: [
-            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطات الطاقة' }, image: '/images/products/ges-power-station.webp' },
+            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطات الطاقة' }, image: '/images/products/ges-power-station.webp', imageScale: 'scale-125' },
             { slug: 'revium-solarport', name: { tr: 'Solarport', en: 'Solarport', ar: 'سولار بورت' }, image: '/images/products/solarport-duo.webp' },
         ]
     },
@@ -251,7 +251,7 @@ export default function SiteHeader() {
                                                                     src={product.image}
                                                                     alt={typeof product.name === 'string' ? product.name : product.name[locale]}
                                                                     fill
-                                                                    className="object-contain p-3 group-hover/card:scale-105 transition-transform duration-500"
+                                                                    className={`object-contain p-3 group-hover/card:scale-105 transition-transform duration-500 ${product.imageScale || ''}`}
                                                                 />
                                                             </div>
                                                             <div className="space-y-1">
