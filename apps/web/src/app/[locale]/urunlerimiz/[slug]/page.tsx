@@ -807,6 +807,10 @@ export default async function ProductDetailPage({ params }: Props) {
     const translateModelId = (id: string, locale: string) => {
         if (locale !== 'ar') return id;
         const map: Record<string, string> = {
+            'R-SB2700': 'آر-إس بي ٢٧٠٠',
+            'R-P2700': 'آر-بي ٢٧٠٠',
+            'R-P5400': 'آر-بي ٥٤٠٠',
+            'R-STORAGE': 'آر-ستوريج',
             'R-CABINET': 'آر-كابينة',
             'R-LAYER': 'آر-طبقة',
             'GRIDPACK': 'غريد باك',
