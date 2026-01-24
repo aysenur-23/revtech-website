@@ -46,12 +46,38 @@ export default function QuotePage() {
                 locale: locale,
                 createdAt: serverTimestamp(),
                 status: 'new',
-                // Firebase Extension "Trigger Email" için
+            });
+
+            // Firebase Extension "Trigger Email" için mail collection'a ekle
+            await addDoc(collection(db, 'mail'), {
                 to: ['info@reviumtech.com'],
-                template: {
-                    name: 'quote',
-                    data: formData
-                }
+                message: {
+                    subject: `Yeni Teklif Talebi: ${formData.name} - ${formData.category}`,
+                    html: `
+                        <h2>Yeni Teklif Talebi</h2>
+                        <h3>Kişisel Bilgiler</h3>
+                        <p><strong>Ad Soyad:</strong> ${formData.name}</p>
+                        <p><strong>Email:</strong> ${formData.email}</p>
+                        <p><strong>Telefon:</strong> ${formData.phone}</p>
+                        <p><strong>Firma:</strong> ${formData.company || 'Belirtilmedi'}</p>
+                        
+                        <h3>Proje Bilgileri</h3>
+                        <p><strong>Kategori:</strong> ${formData.category}</p>
+                        <p><strong>Güç İhtiyacı:</strong> ${formData.power}</p>
+                        <p><strong>Kullanım Alanı:</strong> ${formData.area}</p>
+                        <p><strong>Bütçe:</strong> ${formData.budget || 'Belirtilmedi'}</p>
+                        
+                        <h3>Teknik Gereksinimler</h3>
+                        <p><strong>Özel İstekler:</strong> ${formData.specs || 'Belirtilmedi'}</p>
+                        <p><strong>Hedef Tarih:</strong> ${formData.date || 'Belirtilmedi'}</p>
+                        
+                        <h3>Ek Bilgiler</h3>
+                        <p>${formData.message || 'Ek bilgi yok'}</p>
+                        
+                        <hr>
+                        <p><small>Bu talep reviumtech.com teklif formundan gönderildi.</small></p>
+                    `,
+                },
             });
 
             setSubmitted(true);
@@ -323,7 +349,7 @@ export default function QuotePage() {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="w-full h-20 bg-blue-600 text-white rounded-[2rem] font-heavy text-xl hover:bg-slate-900 transition-all transform hover:-translate-y-1 shadow-2xl flex items-center justify-center gap-4 disabled:opacity-50 disabled:cursor-not-allowed italic"
+                                        className="w-full h-14 bg-blue-600 text-white rounded-xl font-bold text-base hover:bg-slate-900 transition-all shadow-lg flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         {isSubmitting ? (
                                             <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin" />

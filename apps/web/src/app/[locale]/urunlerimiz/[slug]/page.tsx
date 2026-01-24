@@ -40,30 +40,31 @@ const products: Record<string, {
     runtimeSummary?: string;
 }> = {
     'revium-2-7-kwh': {
-        name: 'Revium 2.7 kWh Depolanabilir Güç Paketi',
-        modelId: 'R-P2700',
+        name: 'Revium 2.7 kWh Çanta Tipi Güç Paketi',
+        modelId: 'R-SB2700',
         capacity: '2.7 kWh',
         power: '2000 W',
         image: '/images/products/2-7kwh-a-1.webp',
-        categoryTitle: 'Taşınabilir Enerji Depolama',
-        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
+        categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
+        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
         features: [
             'Enerji: 2.7 kWh',
-            'Çıkış Voltajı: 230 VAC',
-            'Sürekli Çıkış Gücü: 2000 W',
+            'Çıkış Voltajı: 220 VAC',
+            'Çıkış Gücü: 2000 W',
             'Maks. PV Güç: 1000 W (MPPT)',
-            'Dalga Tipi: Pure Sine',
-            'Batarya Ömrü: 6000 çevrim',
-            'Ağırlık: 35 kg',
-            'Kompakt Tasarım',
-            'Hızlı Şarj'
+            'Çevrim Ömrü: 6000 çevrim',
+            'Dalga Tipi: Saf Sinüs',
+            'Boyutlar: 548 × 391 × 335 mm',
+            'Ağırlık: 35 kg'
         ],
         specs: [
             { label: 'Enerji', value: '2.7 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
-            { label: 'Sürekli Güç', value: '2000 W' },
+            { label: 'Çıkış Gücü', value: '2000 W' },
             { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
-            { label: 'Boyutlar', value: '500 × 335 × 285 mm' },
+            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Boyutlar', value: '548 × 391 × 335 mm' },
             { label: 'Ağırlık', value: '35 kg' },
         ],
         usageAreas: [
@@ -84,28 +85,31 @@ const products: Record<string, {
         runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
     },
     'revium-2-7-kwh-bag': {
-        name: 'Revium 2.7 kWh Çanta Tip Depolanabilir Güç Paketi',
-        modelId: 'R-SB2700B',
+        name: 'Revium 2.7 kWh Depolanabilir Güç Paketi',
+        modelId: 'R-P2700',
         capacity: '2.7 kWh',
         power: '2000 W',
         image: '/images/products/2-7kwh-b-1.webp',
-        categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
-        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
+        categoryTitle: 'Taşınabilir Enerji Depolama',
+        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
         features: [
             'Enerji: 2.7 kWh',
-            'Çıkış Voltajı: 230 VAC',
-            'Sürekli Çıkış Gücü: 2000 W',
+            'Çıkış Voltajı: 220 VAC',
+            'Çıkış Gücü: 2000 W',
             'Maks. PV Güç: 1000 W (MPPT)',
-            'Dalga Tipi: Pure Sine',
-            'Batarya Ömrü: 6000 çevrim',
+            'Çevrim Ömrü: 6000 çevrim',
+            'Dalga Tipi: Saf Sinüs',
+            'Boyutlar: 500 × 335 × 285 mm',
             'Ağırlık: 35 kg'
         ],
         specs: [
             { label: 'Enerji', value: '2.7 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
-            { label: 'Sürekli Güç', value: '2000 W' },
+            { label: 'Çıkış Gücü', value: '2000 W' },
             { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
-            { label: 'Boyutlar', value: '548 × 391 × 335 mm' },
+            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Boyutlar', value: '500 × 335 × 285 mm' },
             { label: 'Ağırlık', value: '35 kg' },
         ],
         usageAreas: [
@@ -207,25 +211,26 @@ const products: Record<string, {
         name: 'Revium Güç Kabini',
         modelId: 'R-CABINET',
         capacity: '5.4 – 21.6 kWh',
-        power: '3 kW – 22 kW',
+        power: '3 – 20 kW',
         image: '/images/products/cabin-power.webp',
         categoryTitle: 'Endüstriyel Enerji Depolama (Tek Kabin)',
         description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini.',
         features: [
-            'Enerji: 5.4 – 21.6 kWh',
-            'Çıkış Voltajı: 230 VAC',
-            'Çıkış Gücü: 3 kW – 22 kW',
-            'Maks. PV Güç: 1 – 13 kW',
-            'Dalga Tipi: Tam Sinüs',
+            'Enerji: 5.4 – 21.6 kWh (tek kabin)',
+            'Çıkış Voltajı: 220 VAC',
+            'Çıkış Gücü: 3 – 20 kW',
+            'Max PV Güç: 1 – 30 kW (MPPT)',
             'Batarya Ömrü: 6000 çevrim',
-            'Ağırlık: 255 – 1260 kg',
-            'Kompakt Kabin',
-            'Kolay Kurulum'
+            'Dalga Tipi: Saf Sinüs',
+            'Ağırlık: 70 – 270 kg'
         ],
         specs: [
-            { label: 'Enerji Aralığı', value: '5.4 – 21.6 kWh' },
+            { label: 'Enerji', value: '5.4 – 21.6 kWh' },
+            { label: 'Çıkış Voltajı', value: '220 VAC' },
             { label: 'Çıkış Gücü', value: '3 – 20 kW' },
-            { label: 'PV Giriş', value: '1 – 30 kW' },
+            { label: 'Max PV Güç', value: '1 – 30 kW (MPPT)' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Ağırlık', value: '70 – 270 kg' },
         ],
         usageAreas: [
@@ -295,29 +300,29 @@ const products: Record<string, {
         ]
     },
     'revium-gridpack': {
-        name: 'Revium Gridpack',
+        name: 'Revium GRIDPACK',
         modelId: 'GRIDPACK',
         capacity: '500 kWh – 5 MWh',
-        power: '200 kW – 1 MW',
+        power: '250 kW – 2.5 MW',
         image: '/images/products/gridpack.webp',
         categoryTitle: 'Şebeke Ölçekli Konteyner Tip BESS',
         description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
         features: [
-            'Batarya Kapasitesi: 500 kWh – 5 MWh',
-            'Çıkış Gücü: 200 kW – 1 MW',
-            'Batarya Voltajı: 600 – 1500 VDC',
-            'Soğutma: Sıvı Soğutma',
-            'Çevrim: 6000 (%80 DOD)',
-            'Güvenlik: Entegre yangın söndürme',
-            'Ağırlık: ~9.650 kg',
-            'Konteyner Tip',
-            'Şebeke Entegrasyonu'
+            'Enerji Kapasitesi: 500 kWh – 5 MWh',
+            'Voltaj Aralığı: 600 – 1500 VDC',
+            'AC Çıkış Gücü: 250 kW – 2.5 MW',
+            'Çevrim Ömrü: 6000 çevrim',
+            'AC Dalga Tipi: Saf Sinüs',
+            'Çalışma Ortamı: -30°C ~ +55°C',
+            'Soğutma: Sıvı Soğutma'
         ],
         specs: [
-            { label: 'Kapasite', value: 'Up to 5 MWh' },
-            { label: 'Güç', value: 'Up to 1 MW' },
+            { label: 'Enerji Kapasitesi', value: '500 kWh – 5 MWh' },
+            { label: 'Voltaj Aralığı', value: '600 – 1500 VDC' },
+            { label: 'AC Çıkış Gücü', value: '250 kW – 2.5 MW' },
+            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Çalışma Ortamı', value: '-30°C ~ +55°C' },
             { label: 'Soğutma', value: 'Sıvı Soğutma' },
-            { label: 'Ağırlık', value: '9650 kg' },
         ],
         usageAreas: [
             { label: 'Şebeke', icon: 'Zap' },
@@ -395,18 +400,21 @@ const products: Record<string, {
         categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
         description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
         features: [
-            '2 – 8 Araç Kapasitesi',
-            '8 – 48 Panel Sayısı',
-            '4.8 – 38.8 kWp Kurulu Güç',
-            '6 – 24 kW AC Çıkış',
-            '22 kW AC Şarj Altyapısı',
-            'Opsiyonel DC Hızlı Şarj'
+            'Araç Kapasitesi: 2 – 8 araç',
+            'Panel Sayısı: 8 – 48 adet',
+            'Kurulu Güç: 4.8 – 38.8 kWp',
+            'MPPT Voltaj Aralığı: 180 – 950 VDC',
+            'AC Çıkış Gücü: 6 – 24 kW',
+            'Şarj Altyapısı: 22 kW AC',
+            'Opsiyonel: DC hızlı şarj'
         ],
         specs: [
-            { label: 'Araç Kapasitesi', value: '2 – 8 Araç' },
+            { label: 'Araç Kapasitesi', value: '2 – 8 araç' },
+            { label: 'Panel Sayısı', value: '8 – 48 adet' },
             { label: 'Kurulu Güç', value: '4.8 – 38.8 kWp' },
-            { label: 'AC Çıkış', value: '6 – 24 kW' },
-            { label: 'MPPT Voltaj', value: '180 – 950 VDC' },
+            { label: 'MPPT Voltaj Aralığı', value: '180 – 950 VDC' },
+            { label: 'AC Çıkış Gücü', value: '6 – 24 kW' },
+            { label: 'Şarj Altyapısı', value: '22 kW AC' },
         ],
         usageAreas: [
             { label: 'Otopark', icon: 'Building2' },
@@ -415,7 +423,7 @@ const products: Record<string, {
         ]
     },
     'revium-grid-core': {
-        name: 'Revium Grid Core (DC Hızlı Şarj)',
+        name: 'Revium Grid Core',
         modelId: 'R-GRID-CORE',
         capacity: 'DC Şarj',
         power: '45 – 180 kW',
@@ -423,18 +431,24 @@ const products: Record<string, {
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
         description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
         features: [
-            '45 – 180 kW DC Çıkış',
-            '150 – 1000 VDC Gerilim',
-            'CCS2 Konnektör',
-            'OCPP 1.6 Protokolü',
-            'IP54 Koruma',
-            'Ethernet / CAN / 4G'
+            'DC Çıkış Gücü: 45 – 180 kW',
+            'DC Gerilim: 150 – 1000 VDC',
+            'AC Giriş: 400 VAC, 3 Faz',
+            'Konnektör: CCS2',
+            'Çıkış Sayısı: 1 DC',
+            'Haberleşme: Ethernet / CAN / 4G',
+            'Protokol: OCPP 1.6',
+            'Koruma: IP54'
         ],
         specs: [
-            { label: 'DC Güç', value: '45 – 180 kW' },
+            { label: 'DC Çıkış Gücü', value: '45 – 180 kW' },
             { label: 'DC Gerilim', value: '150 – 1000 VDC' },
-            { label: 'AC Giriş', value: '400 VAC 3-Faz' },
-            { label: 'Çıkış', value: '1 DC (CCS2)' },
+            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
+            { label: 'Konnektör', value: 'CCS2' },
+            { label: 'Çıkış Sayısı', value: '1 DC' },
+            { label: 'Haberleşme', value: 'Ethernet / CAN / 4G' },
+            { label: 'Protokol', value: 'OCPP 1.6' },
+            { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
             { label: 'Otoyol Tesisleri', icon: 'Bus' },
@@ -451,18 +465,21 @@ const products: Record<string, {
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
         description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
         features: [
-            '90 – 270 kW DC Çıkış',
-            'Çift Çıkış (2x DC)',
-            '150 – 1000 VDC Gerilim',
-            'CCS1 / CCS2',
-            'RFID / QR Ödeme',
-            'IP54 Koruma'
+            'DC Çıkış Gücü: 90 – 270 kW',
+            'DC Gerilim: 150 – 1000 VDC',
+            'Konnektör: CCS1 / CCS2',
+            'Çıkış Sayısı: 2 DC',
+            'AC Giriş: 400 VAC, 3 Faz',
+            'Ödeme: RFID / QR / NFC',
+            'Koruma: IP54'
         ],
         specs: [
-            { label: 'DC Güç', value: '90 – 270 kW' },
+            { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
             { label: 'DC Gerilim', value: '150 – 1000 VDC' },
-            { label: 'Çıkış Sayısı', value: '2 (CCS1/CCS2)' },
-            { label: 'Verimlilik', value: '> 95%' },
+            { label: 'Konnektör', value: 'CCS1 / CCS2' },
+            { label: 'Çıkış Sayısı', value: '2 DC' },
+            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
+            { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
             { label: 'Halka Açık Şarj', icon: 'Globe' },
@@ -474,23 +491,27 @@ const products: Record<string, {
         name: 'Revium 2.7 kWh LFP Batarya',
         modelId: '2.7-LFP',
         capacity: '2.7 kWh',
-        power: '2.7 kW',
+        power: '12 / 24 VDC',
         image: '/images/products/2.7-lfp.webp',
         categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
         description: 'Güneş enerjisi sistemleri ve mobil uygulamalar için güvenilir LFP batarya.',
         features: [
-            'Nominal Voltaj: 24 VDC',
-            'Kapasite: 105 Ah',
+            'Nominal Voltaj: 12 / 24 VDC',
+            'Kapasite: 105 / 206 Ah',
             'Enerji: 2.7 kWh',
-            'Haberleşme: Bluetooth',
+            'Batarya Ömrü: 6000 çevrim',
+            'Boyutlar: 400 × 320 × 244 mm',
             'Ağırlık: 25 kg',
-            'Koruma: IP65'
+            'Bluetooth: Mevcut'
         ],
         specs: [
-            { label: 'Voltaj', value: '24 VDC' },
-            { label: 'Kapasite', value: '105 Ah' },
+            { label: 'Nominal Voltaj', value: '12 / 24 VDC' },
+            { label: 'Kapasite', value: '105 / 206 Ah' },
             { label: 'Enerji', value: '2.7 kWh' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Boyutlar', value: '400 × 320 × 244 mm' },
             { label: 'Ağırlık', value: '25 kg' },
+            { label: 'Bluetooth', value: 'Mevcut' },
         ],
         usageAreas: [
             { label: 'Karavan', icon: 'Truck' },
@@ -502,23 +523,27 @@ const products: Record<string, {
         name: 'Revium 5.4 kWh LFP Batarya',
         modelId: '5.4-LFP',
         capacity: '5.4 kWh',
-        power: '5.4 kW',
+        power: '24 / 48 VDC',
         image: '/images/products/5.4-lfp.webp',
         categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
         description: 'Yüksek kapasiteli ve uzun ömürlü LFP batarya çözümü.',
         features: [
-            'Nominal Voltaj: 48 VDC',
-            'Kapasite: 105 Ah',
+            'Nominal Voltaj: 24 / 48 VDC',
+            'Kapasite: 105 / 206 Ah',
             'Enerji: 5.4 kWh',
-            'Haberleşme: Bluetooth',
+            'Batarya Ömrü: 6000 çevrim',
+            'Boyutlar: 400 × 391 × 244 mm',
             'Ağırlık: 45 kg',
-            'Koruma: IP65'
+            'Bluetooth: Mevcut'
         ],
         specs: [
-            { label: 'Voltaj', value: '48 VDC' },
-            { label: 'Kapasite', value: '105 Ah' },
+            { label: 'Nominal Voltaj', value: '24 / 48 VDC' },
+            { label: 'Kapasite', value: '105 / 206 Ah' },
             { label: 'Enerji', value: '5.4 kWh' },
+            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Boyutlar', value: '400 × 391 × 244 mm' },
             { label: 'Ağırlık', value: '45 kg' },
+            { label: 'Bluetooth', value: 'Mevcut' },
         ],
         usageAreas: [
             { label: 'Ev Depolama', icon: 'Home' },
@@ -536,18 +561,24 @@ const products: Record<string, {
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
         description: 'Yeni nesil, akıllı ve bağlantılı yüksek hızlı DC şarj istasyonu.',
         features: [
-            '90 – 270 kW DC Çıkış',
-            '150 – 1000 VDC Gerilim',
-            'CCS2 Konnektör',
-            'Ethernet / 4G / LTE',
-            'OCPP 1.6 Protokolü',
-            'IP54 Koruma'
+            'DC Çıkış Gücü: 90 – 270 kW',
+            'DC Gerilim: 150 – 1000 VDC',
+            'Konnektör: CCS2',
+            'Çıkış Sayısı: 2 DC',
+            'AC Giriş: 400 VAC, 3 Faz',
+            'Haberleşme: Ethernet / 4G / LTE',
+            'Protokol: OCPP 1.6',
+            'Koruma: IP54'
         ],
         specs: [
-            { label: 'DC Güç', value: '90 – 270 kW' },
-            { label: 'Haberleşme', value: '4G / LTE / Ethernet' },
-            { label: 'Çıkış', value: '2 DC (CCS2)' },
-            { label: 'Gerilim', value: '150 – 1000 VDC' },
+            { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
+            { label: 'DC Gerilim', value: '150 – 1000 VDC' },
+            { label: 'Konnektör', value: 'CCS2' },
+            { label: 'Çıkış Sayısı', value: '2 DC' },
+            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
+            { label: 'Haberleşme', value: 'Ethernet / 4G / LTE' },
+            { label: 'Protokol', value: 'OCPP 1.6' },
+            { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
             { label: 'Akıllı Şehir', icon: 'Globe' },
@@ -821,10 +852,10 @@ export default async function ProductDetailPage({ params }: Props) {
                     </div>
 
                     <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-4 items-start lg:items-center">
 
                             {/* Left Content - Wider Text Area */}
-                            <div className="lg:col-span-7 space-y-8 text-center lg:text-left order-2 lg:order-1">
+                            <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
                                 <div className="space-y-6">
                                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
                                         <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
@@ -878,13 +909,13 @@ export default async function ProductDetailPage({ params }: Props) {
                                 </div>
 
                                 {/* Key Specs - Light Theme */}
-                                <div className="flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-10 py-6 px-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
+                                <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-2 text-blue-600">
-                                            <Battery className="h-5 w-5" />
-                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-blue-600">
+                                            <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.capacity, locale)
+                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.capacity, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
@@ -893,11 +924,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-2 text-cyan-600">
-                                            <Zap className="h-5 w-5" />
-                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-600">
+                                            <Zap className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.power, locale)
+                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.power, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
@@ -906,11 +937,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-2 text-emerald-600">
-                                            <Shield className="h-5 w-5" />
-                                            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600">
+                                            <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
                                         </div>
-                                        <div className="text-2xl font-black text-slate-900">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
+                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
                                     </div>
                                 </div>
 
@@ -932,27 +963,27 @@ export default async function ProductDetailPage({ params }: Props) {
                             </div>
 
                             {/* Right Content - Larger Product Image */}
-                            <div className="lg:col-span-5 relative order-1 lg:order-2">
-                                <div className="relative flex items-center justify-center">
-                                    {/* Decorative Circle */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
+                            <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
+                                <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
+                                    {/* Decorative Circle - Hidden on mobile */}
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
 
                                     {/* Product Image */}
-                                    <div className="relative w-full max-w-[500px] p-4 sm:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
+                                    <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
                                         <Image
                                             src={product.image}
                                             alt={localizedName}
                                             width={800}
                                             height={800}
-                                            className="w-full h-auto object-contain drop-shadow-2xl"
+                                            className="w-full h-auto object-contain drop-shadow-xl sm:drop-shadow-2xl"
                                             priority
                                         />
                                     </div>
 
                                     {/* Model Badge */}
-                                    <div className="absolute -bottom-2 right-4 sm:right-8 p-4 rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
+                                    <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
                                         <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
-                                        <div className="text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
+                                        <div className="text-lg sm:text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
                                 </div>
                             </div>

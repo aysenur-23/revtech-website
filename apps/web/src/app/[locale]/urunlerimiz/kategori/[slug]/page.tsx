@@ -15,8 +15,8 @@ const categoryData: Record<string, { titleKey: string; heroImage: string; produc
         titleKey: 'portablePower',
         heroImage: '/images/categories/portable-power-new.webp',
         products: [
-            { slug: 'revium-2-7-kwh', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
-            { slug: 'revium-2-7-kwh-bag', name: '2.7 kWh Çanta Tip', image: '/images/products/2-7kwh-b-1.webp', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
+            { slug: 'revium-2-7-kwh', name: '2.7 kWh Çanta Tipi Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
+            { slug: 'revium-2-7-kwh-bag', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-b-1.webp', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
             { slug: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', description: 'Yüksek kapasiteli profesyonel taşınabilir güç.' },
         ],
     },

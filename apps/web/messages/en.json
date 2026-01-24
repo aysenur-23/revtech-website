@@ -202,12 +202,12 @@
             "description": "Portable power for camping, field, and emergencies.",
             "products": {
                 "revium-2-7-kwh": {
-                    "name": "2.7 kWh Power Pack",
-                    "description": "New standard in portable energy storage solutions."
+                    "name": "2.7 kWh Case Type",
+                    "description": "Durable bag-type design field solution."
                 },
                 "revium-2-7-kwh-bag": {
-                    "name": "2.7 kWh Bag Type",
-                    "description": "Durable bag-type design field solution."
+                    "name": "2.7 kWh Power Pack",
+                    "description": "New standard in portable energy storage solutions."
                 },
                 "revium-5-4-kwh": {
                     "name": "5.4 kWh Power Pack",
@@ -569,17 +569,6 @@
         },
         "products": {
             "revium-2-7-kwh": {
-                "name": "2.7 kWh Portable Power Pack",
-                "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance.",
-                "features": [
-                    "2.7 kWh Capacity",
-                    "LiFePO4 Battery Technology",
-                    "Lightweight & Portable",
-                    "Solar Panel Support",
-                    "Silent Operation"
-                ]
-            },
-            "revium-2-7-kwh-bag": {
                 "name": "2.7 kWh Case Type Power Pack",
                 "description": "Rugged case-type power unit specially designed for outdoor and field operations.",
                 "features": [
@@ -588,6 +577,17 @@
                     "Field-Type Connectors",
                     "Easy Transport",
                     "Smart BMS"
+                ]
+            },
+            "revium-2-7-kwh-bag": {
+                "name": "2.7 kWh Portable Power Pack",
+                "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance.",
+                "features": [
+                    "2.7 kWh Capacity",
+                    "LiFePO4 Battery Technology",
+                    "Lightweight & Portable",
+                    "Solar Panel Support",
+                    "Silent Operation"
                 ]
             },
             "revium-storage-battery": {

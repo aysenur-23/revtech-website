@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
@@ -14,8 +14,8 @@ const productCategories = [
         name: { tr: 'TAŞINABİLİR GÜÇ PAKETLERİ', en: 'PORTABLE POWER PACKS', ar: 'حزم الطاقة المحمولة' },
         icon: Battery,
         products: [
-            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Güç Paketi', en: '2.7 kWh Power Pack', ar: 'حزمة طاقة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-a-1.webp' },
-            { slug: 'revium-2-7-kwh-bag', name: { tr: '2.7 kWh Çanta Tip', en: '2.7 kWh Case Type', ar: 'حقيبة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-b-1.webp' },
+            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Çanta Tipi Güç Paketi', en: '2.7 kWh Case Type Power Pack', ar: 'حزمة طاقة حقيبة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-a-1.webp' },
+            { slug: 'revium-2-7-kwh-bag', name: { tr: '2.7 kWh Güç Paketi', en: '2.7 kWh Power Pack', ar: 'حزمة طاقة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-b-1.webp' },
             { slug: 'revium-5-4-kwh', name: { tr: '5.4 kWh Güç Paketi', en: '5.4 kWh Power Pack', ar: 'حزمة طاقة ٥.٤ كيلوواط ساعة' }, image: '/images/products/5-4kwh-h-1.webp' },
         ]
     },
@@ -92,6 +92,11 @@ export default function SiteHeader() {
 
     // Unified state for mega menu
     const [activeMegaMenu, setActiveMegaMenu] = useState<null | 'products' | 'services'>(null);
+
+    // Mobile menu accordion states
+    const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+    const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+    const [mobileActiveCategoryId, setMobileActiveCategoryId] = useState<string | null>(null);
 
     const locale = useLocale() as 'tr' | 'en' | 'ar';
     const t = useTranslations('header');
@@ -231,13 +236,6 @@ export default function SiteHeader() {
                                                     <h3 className="text-sm font-bold text-neutral-900 flex items-center gap-2">
                                                         {productCategories[activeProductCategory].name[locale]}
                                                     </h3>
-                                                    <Link
-                                                        href={`/${locale}/urunlerimiz/kategori/${productCategories[activeProductCategory].id}/`}
-                                                        className="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group"
-                                                        onClick={handleLinkClick}
-                                                    >
-                                                        {t('viewAll')} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                                                    </Link>
                                                 </div>
 
                                                 <div className="grid grid-cols-4 gap-4">
@@ -340,13 +338,6 @@ export default function SiteHeader() {
                                                     <h3 className="text-sm font-bold text-neutral-900 flex items-center gap-2">
                                                         {serviceCategories[activeServiceCategory].name[locale]}
                                                     </h3>
-                                                    <Link
-                                                        href={`/${locale}/hizmetlerimiz/`}
-                                                        className="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 group"
-                                                        onClick={handleLinkClick}
-                                                    >
-                                                        {t('viewAll')} <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                                                    </Link>
                                                 </div>
 
                                                 <div className="grid grid-cols-4 gap-4">
@@ -497,21 +488,143 @@ export default function SiteHeader() {
 
             {/* Mobile Navigation */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden border-t border-neutral-200 bg-white">
-                    <nav className="container px-4 py-4 space-y-2">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="block px-3 py-2 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                <div className="lg:hidden border-t border-neutral-200 bg-white max-h-[80vh] overflow-y-auto">
+                    <nav className="container px-4 py-4 space-y-1">
+                        {/* Ana Sayfa */}
+                        <Link
+                            href={`/${locale}/`}
+                            className="block px-3 py-3 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t('home')}
+                        </Link>
+
+                        {/* Ürünler Accordion */}
+                        <div className="border-b border-neutral-100 pb-2">
+                            <button
+                                onClick={() => {
+                                    setMobileProductsOpen(!mobileProductsOpen);
+                                    setMobileServicesOpen(false);
+                                }}
+                                className="w-full flex items-center justify-between px-3 py-3 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
                             >
-                                {item.name}
-                            </Link>
-                        ))}
+                                <span>{t('products')}</span>
+                                <ChevronDown className={cn("h-4 w-4 transition-transform", mobileProductsOpen && "rotate-180")} />
+                            </button>
+                            
+                            {mobileProductsOpen && (
+                                <div className="mt-2 ml-2 space-y-1">
+                                    {productCategories.map((cat) => (
+                                        <div key={cat.id}>
+                                            <button
+                                                onClick={() => setMobileActiveCategoryId(mobileActiveCategoryId === cat.id ? null : cat.id)}
+                                                className={cn(
+                                                    "w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium rounded-lg transition-colors",
+                                                    mobileActiveCategoryId === cat.id
+                                                        ? "bg-blue-50 text-blue-600"
+                                                        : "text-neutral-600 hover:bg-neutral-50"
+                                                )}
+                                            >
+                                                <span>{cat.name[locale]}</span>
+                                                <ChevronRight className={cn("h-3.5 w-3.5 transition-transform", mobileActiveCategoryId === cat.id && "rotate-90")} />
+                                            </button>
+                                            
+                                            {mobileActiveCategoryId === cat.id && (
+                                                <div className="mt-1 ml-3 space-y-1 border-l-2 border-blue-100 pl-3">
+                                                    {cat.products.map((product) => (
+                                                        <Link
+                                                            key={product.slug}
+                                                            href={`/${locale}/urunlerimiz/${product.slug}/`}
+                                                            className="block px-3 py-2 text-sm text-neutral-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                                                            onClick={() => setIsMobileMenuOpen(false)}
+                                                        >
+                                                            {product.name[locale]}
+                                                        </Link>
+                                                    ))}
+                                                    <Link
+                                                        href={`/${locale}/urunlerimiz/kategori/${cat.id}/`}
+                                                        className="block px-3 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                                                        onClick={() => setIsMobileMenuOpen(false)}
+                                                    >
+                                                        {t('viewAll')} →
+                                                    </Link>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                    <Link
+                                        href={`/${locale}/urunlerimiz/`}
+                                        className="block px-3 py-2.5 text-sm font-bold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        {t('viewAllProducts')} →
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Hizmetler Accordion */}
+                        <div className="border-b border-neutral-100 pb-2">
+                            <button
+                                onClick={() => {
+                                    setMobileServicesOpen(!mobileServicesOpen);
+                                    setMobileProductsOpen(false);
+                                }}
+                                className="w-full flex items-center justify-between px-3 py-3 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                            >
+                                <span>{t('services')}</span>
+                                <ChevronDown className={cn("h-4 w-4 transition-transform", mobileServicesOpen && "rotate-180")} />
+                            </button>
+                            
+                            {mobileServicesOpen && (
+                                <div className="mt-2 ml-2 space-y-1">
+                                    {serviceCategories.map((cat) => (
+                                        <div key={cat.id}>
+                                            {cat.services.map((service) => (
+                                                <Link
+                                                    key={service.slug}
+                                                    href={`/${locale}/hizmetlerimiz/${service.slug}/`}
+                                                    className="block px-3 py-2.5 text-sm text-neutral-600 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                >
+                                                    {service.name[locale]}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    ))}
+                                    <Link
+                                        href={`/${locale}/hizmetlerimiz/`}
+                                        className="block px-3 py-2.5 text-sm font-bold text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        {t('viewAllServices')} →
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Kurumsal */}
+                        <Link
+                            href={`/${locale}/kurumsal/`}
+                            className="block px-3 py-3 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t('corporate')}
+                        </Link>
+
+                        {/* İletişim */}
+                        <Link
+                            href={`/${locale}/iletisim/`}
+                            className="block px-3 py-3 text-base font-medium text-neutral-800 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {t('contact')}
+                        </Link>
+
+                        {/* CTA Button */}
                         <Link
                             href={`/${locale}/fiyat-teklifi/`}
-                            className="block w-full text-center btn btn-primary gradient-electric hover:opacity-90 text-base px-4 py-3 mt-4"
+                            className="block w-full text-center bg-blue-600 text-white hover:bg-slate-900 text-base font-bold px-4 py-3 mt-4 rounded-xl transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {t('getQuote')}

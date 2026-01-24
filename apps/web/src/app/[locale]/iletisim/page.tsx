@@ -21,8 +21,7 @@ export default function Iletisim() {
         const formData = new FormData(form);
 
         try {
-            // Firebase Firestore'a kaydet
-            await addDoc(collection(db, 'contact_messages'), {
+            const contactData = {
                 name: formData.get('name'),
                 email: formData.get('email'),
                 subject: formData.get('subject'),
@@ -30,17 +29,27 @@ export default function Iletisim() {
                 locale: locale,
                 createdAt: serverTimestamp(),
                 status: 'new',
-                // Firebase Extension "Trigger Email" için
+            };
+
+            // Firebase Firestore'a kaydet
+            await addDoc(collection(db, 'contact_messages'), contactData);
+
+            // Firebase Extension "Trigger Email" için mail collection'a ekle
+            await addDoc(collection(db, 'mail'), {
                 to: ['info@reviumtech.com'],
-                template: {
-                    name: 'contact',
-                    data: {
-                        name: formData.get('name'),
-                        email: formData.get('email'),
-                        subject: formData.get('subject'),
-                        message: formData.get('message'),
-                    }
-                }
+                message: {
+                    subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
+                    html: `
+                        <h2>Yeni İletişim Formu Gönderimi</h2>
+                        <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
+                        <p><strong>Email:</strong> ${formData.get('email')}</p>
+                        <p><strong>Konu:</strong> ${formData.get('subject')}</p>
+                        <p><strong>Mesaj:</strong></p>
+                        <p>${formData.get('message')}</p>
+                        <hr>
+                        <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
+                    `,
+                },
             });
 
             alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');

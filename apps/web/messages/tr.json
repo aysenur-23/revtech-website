@@ -202,12 +202,12 @@
       "description": "Kamp, saha ve acil durumlar için taşınabilir güç.",
       "products": {
         "revium-2-7-kwh": {
-          "name": "2.7 kWh Güç Paketi",
-          "description": "Taşınabilir enerji depolama çözümlerinde yeni standart."
-        },
-        "revium-2-7-kwh-bag": {
           "name": "2.7 kWh Çanta Tip",
           "description": "Dayanıklı çanta tipi tasarımı ile saha çözümü."
+        },
+        "revium-2-7-kwh-bag": {
+          "name": "2.7 kWh Güç Paketi",
+          "description": "Taşınabilir enerji depolama çözümlerinde yeni standart."
         },
         "revium-5-4-kwh": {
           "name": "5.4 kWh Güç Paketi",
@@ -569,17 +569,6 @@
     },
     "products": {
       "revium-2-7-kwh": {
-        "name": "2.7 kWh Depolanabilir Güç Paketi",
-        "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
-        "features": [
-          "2.7 kWh Kapasite",
-          "LiFePO4 Batarya Teknolojisi",
-          "Hafif ve Taşınabilir",
-          "Güneş Paneli Desteği",
-          "Sessiz Çalışma"
-        ]
-      },
-      "revium-2-7-kwh-bag": {
         "name": "2.7 kWh Çanta Tip Güç Paketi",
         "description": "Dış mekan ve saha çalışmaları için özel olarak tasarlanmış, dayanıklı çanta tipi güç ünitesi.",
         "features": [
@@ -588,6 +577,17 @@
           "Saha Tipi Konnektörler",
           "Kolay Taşıma",
           "Akıllı BMS"
+        ]
+      },
+      "revium-2-7-kwh-bag": {
+        "name": "2.7 kWh Depolanabilir Güç Paketi",
+        "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
+        "features": [
+          "2.7 kWh Kapasite",
+          "LiFePO4 Batarya Teknolojisi",
+          "Hafif ve Taşınabilir",
+          "Güneş Paneli Desteği",
+          "Sessiz Çalışma"
         ]
       },
       "revium-storage-battery": {
