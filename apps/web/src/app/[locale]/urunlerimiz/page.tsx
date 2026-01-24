@@ -78,7 +78,7 @@ export default async function ProductsPage({ params }: Props) {
         <div className="min-h-screen bg-slate-50">
             {/* Hero Section */}
             {/* Hero Section - Premium Redesign without Grid */}
-            <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-white">
+            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-white">
                 {/* Premium Animated Background */}
                 <div className="absolute inset-0 z-0">
                     <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-100/40 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />

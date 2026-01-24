@@ -812,7 +812,7 @@ export default async function ProductDetailPage({ params }: Props) {
         <div className="min-h-screen bg-white">
             <>
                 {/* Hero Section - Light Theme, Compact */}
-                <section className="relative min-h-[60vh] flex items-center pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
