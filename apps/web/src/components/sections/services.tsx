@@ -6,7 +6,7 @@ import { useTranslation } from '@/hooks/useTranslation'
 
 export function Services() {
   const { t, locale, loading } = useTranslation()
-  
+
   const serviceCards: CardProps[] = [
     {
       title: loading ? 'GES Kurulumu' : t('products.solarInstallation.title'),
@@ -19,7 +19,7 @@ export function Services() {
     },
     {
       title: loading ? 'Endüstriyel Sistem Kurulumu' : t('products.industrialInstallation.title'),
-      imageSrc: '/images/services/power-installation.png',
+      imageSrc: '/images/services/industrial-service-new.webp',
       imageAlt: loading ? 'Endüstriyel Enerji Depolama Sistemleri' : t('products.industrialInstallation.title'),
       href: `/${locale}/hizmetlerimiz/endustriyel-kurulum`,
       ratio: '4:3',

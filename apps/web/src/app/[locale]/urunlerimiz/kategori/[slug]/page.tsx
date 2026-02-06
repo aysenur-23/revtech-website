@@ -42,7 +42,7 @@ const categoryData: Record<string, { titleKey: string; heroImage: string; produc
         products: [
             { slug: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', description: 'Endüstriyel tek kabin enerji depolama sistemi.' },
             { slug: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', description: 'Ölçeklenebilir endüstriyel batarya ünitesi.' },
-            { slug: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', description: 'Şebeke ölçekli BESS ve yenilenebilir enerji depolama.' },
+            { slug: 'revium-gridpack', name: 'Şebeke Paketi', image: '/images/products/gridpack.webp', description: 'Şebeke ölçekli batarya enerji depolama sistemi ve yenilenebilir enerji depolama.' },
         ],
     },
     ges: {

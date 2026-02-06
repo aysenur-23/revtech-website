@@ -35,7 +35,7 @@
     "stats": {
       "projects": "Completed Pilot Projects",
       "delivered": "Successfully Delivered Projects",
-      "satisfaction": "Customer Satisfaction", 
+      "satisfaction": "Customer Satisfaction",
       "years": "Years of Experience"
     },
     "achievements": [
@@ -500,16 +500,31 @@
     "description": "Every project has its own unique requirements. Together with our expert team, we design and implement the most suitable energy solutions for your needs.",
     "technicalConsulting": "Technical Consulting",
     "technicalConsultingDesc": "Expert consulting service for energy solutions tailored to your needs.",
-    "technicalConsultingFeatures": ["Needs analysis", "Technical evaluation", "Solution proposals"],
+    "technicalConsultingFeatures": [
+      "Needs analysis",
+      "Technical evaluation",
+      "Solution proposals"
+    ],
     "customDesign": "Custom Design",
     "customDesignDesc": "Systems specially designed for your unique requirements.",
-    "customDesignFeatures": ["Custom engineering", "Prototype development", "Testing and validation"],
+    "customDesignFeatures": [
+      "Custom engineering",
+      "Prototype development",
+      "Testing and validation"
+    ],
     "projectManagement": "Project Management",
     "projectManagementDesc": "Professional management of all processes from installation to delivery.",
-    "projectManagementFeatures": ["Project planning", "Time management", "Quality control"],
+    "projectManagementFeatures": [
+      "Project planning",
+      "Time management",
+      "Quality control"
+    ],
     "ongoingSupport": "Ongoing Support",
     "ongoingSupportDesc": "Continuous maintenance and support for optimal performance of your system.",
-    "ongoingSupportFeatures": ["Periodic maintenance", "Spare parts supply"],
+    "ongoingSupportFeatures": [
+      "Periodic maintenance",
+      "Spare parts supply"
+    ],
     "consultationButton": "Request Consultation"
   },
   "featuredProject": {
@@ -768,8 +783,8 @@
       }
     },
     "gridpack100": {
-      "title": "GridPack 100",
-      "description": "REVIUM GridPack 100 is a high-capacity energy storage and management system developed for industrial facilities, defense areas, mobile energy centers, and disaster zones. With integrated inverter, MPPT charge control, intelligent battery management system (BMS), and remote monitoring features, it offers a fully integrated plug-and-play energy station that can manage the entire energy process from a single point. Thanks to its durable structure, long-lasting LiFePO₄ battery technology, and high efficiency, it provides uninterrupted, safe, and sustainable energy under all conditions.",
+      "title": "Grid Pack 100",
+      "description": "REVIUM Grid Pack 100 is a high-capacity energy storage and management system developed for industrial facilities, defense areas, mobile energy centers, and disaster zones. With integrated inverter, MPPT charge control, intelligent battery management system (BMS), and remote monitoring features, it offers a fully integrated plug-and-play energy station that can manage the entire energy process from a single point. Thanks to its durable structure, long-lasting LiFePO₄ battery technology, and high efficiency, it provides uninterrupted, safe, and sustainable energy under all conditions.",
       "applications": {
         "industrial": "Industrial facilities",
         "defense": "Defense areas",
@@ -797,90 +812,6 @@
         "usbAc": "USB and AC outputs",
         "ledLight": "LED light system",
         "solarCompatible": "Solar panel compatibility",
-        "quickCharge": "Fast charging support"
-      },
-      "applications": {
-        "largeHomes": "Large-scale homes",
-        "mediumBusiness": "Medium-scale businesses",
-        "camping": "Camping and caravans",
-        "emergency": "Emergency backup",
-        "outdoor": "Outdoor events",
-        "mobileOffice": "Mobile offices"
-      }
-    },
-    "rSb2700d": {
-      "title": "2.7 kWh Portable Power Pack",
-      "description": "Ideal 2.7 kWh portable power pack for use in harsh conditions with durable design. Compact/robust body and 2 kW pure sine output.",
-      "features": {
-        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
-        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 700 W PV charging",
-        "cycleLife": "Cycle Life: ≈4000 cycles",
-        "dimensions": "Dimensions: 500 × 335 × 285 mm",
-        "weight": "Weight: 35 kg",
-        "operatingTemp": "Operating Temperature: -20°C to +60°C",
-        "warranty": "Warranty: 3 years",
-        "compact": "Compact/robust body",
-        "sineOutput": "2 kW pure sine output",
-        "durable": "Durable case design",
-        "usbAc": "USB and AC outputs",
-        "ledLight": "LED light system",
-        "quickCharge": "Fast charging support"
-      },
-      "applications": {
-        "construction": "Construction sites",
-        "emergency": "Emergencies",
-        "travel": "Travel and camping",
-        "outdoor": "Outdoor events",
-        "smallBusiness": "Small businesses",
-        "mobileOffice": "Mobile offices"
-      }
-    },
-    "rSb5400c": {
-      "title": "5.4 kWh Portable Power Pack",
-      "description": "5.4 kWh capacity portable power pack with medium case design. 3 kW pure sine output and field-use suitable form.",
-      "features": {
-        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
-        "powerOutput": "Power Output: 220 VAC, 3000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 1500 W PV charging",
-        "cycleLife": "Cycle Life: ≈4000 cycles",
-        "dimensions": "Dimensions: 400 × 391 × 410 mm",
-        "weight": "Weight: 62 kg",
-        "operatingTemp": "Operating Temperature: -20°C to +60°C",
-        "warranty": "Warranty: 3 years",
-        "sineOutput": "3 kW pure sine output",
-        "fieldUse": "Field-use suitable form",
-        "mediumCase": "Medium case design",
-        "usbAc": "USB and AC outputs",
-        "ledLight": "LED light system",
-        "quickCharge": "Fast charging support"
-      },
-      "applications": {
-        "mediumHomes": "Medium-scale homes",
-        "smallBusiness": "Small businesses",
-        "camping": "Camping and caravans",
-        "emergency": "Emergency backup",
-        "outdoor": "Outdoor events",
-        "mobileOffice": "Mobile offices"
-      }
-    },
-    "rSb5400h": {
-      "title": "5.4 kWh Portable Power Pack",
-      "description": "5.4 kWh capacity portable power pack with high output power. Meets demanding energy needs with 4 kW high power and 3 kW PV support.",
-      "features": {
-        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
-        "powerOutput": "Power Output: 220 VAC, 4000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 3000 W PV charging",
-        "cycleLife": "Cycle Life: ≈4000 cycles",
-        "dimensions": "Dimensions: 400 × 391 × 488 mm",
-        "weight": "Weight: 67 kg",
-        "operatingTemp": "Operating Temperature: -20°C to +60°C",
-        "warranty": "Warranty: 3 years",
-        "highPower": "4 kW high power",
-        "pvSupport": "3 kW PV support",
-        "highOutput": "High output power",
-        "usbAc": "USB and AC outputs",
-        "ledLight": "LED light system",
         "quickCharge": "Fast charging support"
       },
       "applications": {

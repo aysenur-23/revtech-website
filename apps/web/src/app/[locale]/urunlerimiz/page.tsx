@@ -25,7 +25,7 @@ const allProducts = [
     // Cabin Power
     { id: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', category: 'cabinPower', descriptionKey: 'revium-power-cabinet.description' },
     { id: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', category: 'cabinPower', descriptionKey: 'revium-power-layer.description' },
-    { id: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
+    { id: 'revium-gridpack', name: 'Şebeke Paketi', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
 
     // Battery Systems
     { id: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-2-7-kwh-lfp.description' },
@@ -33,7 +33,7 @@ const allProducts = [
 
     // Solar Products
     { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
-    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
+    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-updated.png', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
 ];
 
 const categories = [
@@ -158,7 +158,8 @@ export default async function ProductsPage({ params }: Props) {
                                                 src={product.image}
                                                 alt={product.name}
                                                 fill
-                                                className="object-contain p-6 group-hover:scale-110 transition-transform duration-700 ease-out"
+                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-12' : 'p-6'
+                                                    }`}
                                             />
                                             <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                                                 <div className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm text-slate-800">

@@ -40,50 +40,55 @@ export default function QuotePage() {
         };
 
         try {
-            // Firebase Firestore'a kaydet
-            await addDoc(collection(db, 'quote_requests'), {
-                ...formData,
-                locale: locale,
-                createdAt: serverTimestamp(),
-                status: 'new',
-            });
+            // 15 saniye timeout
+            const submitPromise = async () => {
+                // Firebase Firestore'a kaydet
+                await addDoc(collection(db, 'quote_requests'), {
+                    ...formData,
+                    locale: locale,
+                    createdAt: serverTimestamp(),
+                    status: 'new',
+                });
 
-            // Firebase Extension "Trigger Email" için mail collection'a ekle
-            await addDoc(collection(db, 'mail'), {
-                to: ['info@reviumtech.com'],
-                message: {
-                    subject: `Yeni Teklif Talebi: ${formData.name} - ${formData.category}`,
-                    html: `
-                        <h2>Yeni Teklif Talebi</h2>
-                        <h3>Kişisel Bilgiler</h3>
-                        <p><strong>Ad Soyad:</strong> ${formData.name}</p>
-                        <p><strong>Email:</strong> ${formData.email}</p>
-                        <p><strong>Telefon:</strong> ${formData.phone}</p>
-                        <p><strong>Firma:</strong> ${formData.company || 'Belirtilmedi'}</p>
-                        
-                        <h3>Proje Bilgileri</h3>
-                        <p><strong>Kategori:</strong> ${formData.category}</p>
-                        <p><strong>Güç İhtiyacı:</strong> ${formData.power}</p>
-                        <p><strong>Kullanım Alanı:</strong> ${formData.area}</p>
-                        <p><strong>Bütçe:</strong> ${formData.budget || 'Belirtilmedi'}</p>
-                        
-                        <h3>Teknik Gereksinimler</h3>
-                        <p><strong>Özel İstekler:</strong> ${formData.specs || 'Belirtilmedi'}</p>
-                        <p><strong>Hedef Tarih:</strong> ${formData.date || 'Belirtilmedi'}</p>
-                        
-                        <h3>Ek Bilgiler</h3>
-                        <p>${formData.message || 'Ek bilgi yok'}</p>
-                        
-                        <hr>
-                        <p><small>Bu talep reviumtech.com teklif formundan gönderildi.</small></p>
-                    `,
-                },
-            });
+                // Firebase Extension "Trigger Email" için mail collection'a ekle
+                await addDoc(collection(db, 'mail'), {
+                    to: ['info@reviumtech.com', 'aslanaysenur063@gmail.com'],
+                    message: {
+                        subject: `Yeni Teklif Talebi: ${formData.name} - ${formData.category}`,
+                        html: `
+                            <h2>Yeni Teklif Talebi</h2>
+                            <h3>Kişisel Bilgiler</h3>
+                            <p><strong>Ad Soyad:</strong> ${formData.name}</p>
+                            <p><strong>Email:</strong> ${formData.email}</p>
+                            <p><strong>Telefon:</strong> ${formData.phone}</p>
+                            <p><strong>Firma:</strong> ${formData.company || 'Belirtilmedi'}</p>
+                            
+                            <h3>Proje Bilgileri</h3>
+                            <p><strong>Kategori:</strong> ${formData.category}</p>
+                            <p><strong>Güç İhtiyacı:</strong> ${formData.power}</p>
+                            <p><strong>Kullanım Alanı:</strong> ${formData.area}</p>
+                            <p><strong>Bütçe:</strong> ${formData.budget || 'Belirtilmedi'}</p>
+                            
+                            <h3>Teknik Gereksinimler</h3>
+                            <p><strong>Özel İstekler:</strong> ${formData.specs || 'Belirtilmedi'}</p>
+                            <p><strong>Hedef Tarih:</strong> ${formData.date || 'Belirtilmedi'}</p>
+                            
+                            <h3>Ek Bilgiler</h3>
+                            <p>${formData.message || 'Ek bilgi yok'}</p>
+                            
+                            <hr>
+                            <p><small>Bu talep reviumtech.com teklif formundan gönderildi.</small></p>
+                        `,
+                    },
+                });
+            };
+
+            await submitPromise();
 
             setSubmitted(true);
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Teklif formunu gönderirken bir hata oluştu. Lütfen tekrar deneyiniz.');
+            alert(`Hata: ${(error as any)?.message || 'Teklif formu gönderilemedi.'}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -188,6 +193,7 @@ export default function QuotePage() {
                                                     required
                                                     placeholder={t('phonePlaceholder')}
                                                     className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    dir="ltr"
                                                 />
                                             </div>
                                         </div>
@@ -284,9 +290,9 @@ export default function QuotePage() {
                                                     className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('budgetSelect')}</option>
-                                                    <option value="low">₺0 - ₺50.000</option>
-                                                    <option value="mid">₺50.000 - ₺200.000</option>
-                                                    <option value="high">₺200.000+</option>
+                                                    <option value="low">{locale === 'ar' ? '₺٠ - ₺٥٠.٠٠٠' : '₺0 - ₺50.000'}</option>
+                                                    <option value="mid">{locale === 'ar' ? '₺٥٠.٠٠٠ - ₺٢٠٠.٠٠٠' : '₺50.000 - ₺200.000'}</option>
+                                                    <option value="high">{locale === 'ar' ? '₺٢٠٠.٠٠٠+' : '₺200.000+'}</option>
                                                 </select>
                                                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                                                     <ArrowRight className="w-4 h-4 text-slate-400 rotate-90" />

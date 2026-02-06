@@ -14,7 +14,7 @@ const productCategories = [
         name: { tr: 'TAŞINABİLİR GÜÇ PAKETLERİ', en: 'PORTABLE POWER PACKS', ar: 'حزم الطاقة المحمولة' },
         icon: Battery,
         products: [
-            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Çanta Tipi Güç Paketi', en: '2.7 kWh Case Type Power Pack', ar: 'حزمة طاقة حقيبة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-a-1.webp' },
+            { slug: 'revium-2-7-kwh', name: { tr: '2.7 kWh Çanta Tipi Güç Paketi', en: '2.7 kWh Case Type Power Pack', ar: 'حزمة طاقة حقيبة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-a-1.webp', imageScale: 'scale-125' },
             { slug: 'revium-2-7-kwh-bag', name: { tr: '2.7 kWh Güç Paketi', en: '2.7 kWh Power Pack', ar: 'حزمة طاقة ٢.٧ كيلوواط ساعة' }, image: '/images/products/2-7kwh-b-1.webp' },
             { slug: 'revium-5-4-kwh', name: { tr: '5.4 kWh Güç Paketi', en: '5.4 kWh Power Pack', ar: 'حزمة طاقة ٥.٤ كيلوواط ساعة' }, image: '/images/products/5-4kwh-h-1.webp' },
         ]
@@ -26,7 +26,7 @@ const productCategories = [
         products: [
             { slug: 'revium-power-cabinet', name: { tr: 'Güç Kabini', en: 'Power Cabinet', ar: 'خزانة الطاقة' }, image: '/images/products/cabin-power.webp' },
             { slug: 'revium-power-layer', name: { tr: 'Güç Katmanı', en: 'Power Layer', ar: 'طبقة الطاقة' }, image: '/images/products/stack-21-6kwh-1.webp' },
-            { slug: 'revium-gridpack', name: { tr: 'GRIDPACK', en: 'GRIDPACK', ar: 'جريد باك' }, image: '/images/products/gridpack.webp' },
+            { slug: 'revium-gridpack', name: { tr: 'Şebeke Paketi', en: 'Grid Pack', ar: 'جريد باك' }, image: '/images/products/gridpack.webp' },
         ]
     },
     {
@@ -358,7 +358,7 @@ export default function SiteHeader() {
                                                             </div>
                                                             <div className="space-y-1">
                                                                 <div className="text-[10px] font-bold text-blue-600 uppercase tracking-wider mb-1 opacity-0 group-hover/card:opacity-100 transition-opacity transform translate-y-2 group-hover/card:translate-y-0 duration-300">
-                                                                    Revium
+                                                                    {locale === 'ar' ? 'ريفيوم' : 'Revium'}
                                                                 </div>
                                                                 <p className="text-[13px] font-bold text-neutral-900 group-hover/card:text-blue-700 transition-colors line-clamp-2 leading-snug">
                                                                     {service.name[locale]}

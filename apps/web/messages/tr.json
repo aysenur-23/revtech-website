@@ -218,7 +218,7 @@
       }
     },
     "vehiclePower": {
-      "title": "Araç Tipi Güç",
+      "title": "Araç Tipi Güç Paketleri",
       "subtitle": "Mobil Enerji",
       "description": "Yüksek kapasiteli araç üstü sistemler.",
       "products": {
@@ -248,7 +248,7 @@
       }
     },
     "cabinPower": {
-      "title": "Kabin Tipi Güç",
+      "title": "Kabin Tipi Güç Paketleri",
       "subtitle": "Endüstriyel güç çözümleri",
       "description": "Büyük ölçekli projeler için yüksek kapasiteli kabin tipi enerji sistemleri.",
       "products": {
@@ -313,12 +313,12 @@
     "title2": "Güç Paketi",
     "subtitle": "Yüksek Kapasiteli Taşınabilir Enerji Çözümü",
     "optimized": "LiFePO4 Optimize Edilmiş",
-    "description": "{capacity} kapasite ve {power} çıkış gücü ile kritik yükler, acil durumlar ve profesyonel uygulamalar için güvenilir enerji sağlar.",
+    "description": "Yüksek enerji kapasitesi ve tekerlekli yapısıyla saha operasyonları ve ağır hizmet uygulamaları için geliştirilmiş güçlü bir çözümdür.",
     "capacity": "5.4 kWh Kapasite",
     "capacityDesc": "LiFePO₄ teknolojisi ile yüksek enerji yoğunluğu",
     "output": "3000W Çıkış",
     "outputDesc": "Saf sinüs dalga, 20ms UPS geçiş",
-    "pvCharging": "1000W PV Şarj",
+    "pvCharging": "1000W MPPT Şarj",
     "pvChargingDesc": "Güneş enerjisi ile hızlı şarj",
     "protection": "Kapsamlı Koruma",
     "protectionDesc": "Aşırı yük, akım, termal koruma",
@@ -510,8 +510,8 @@
   },
   "featuredProject": {
     "badge": "Öne Çıkan Proje",
-    "title": "2,7 kWh Çanta Tipi Güç Depolama Sistemi",
-    "description": "Taşınabilir ve kompakt tasarımı ile her yerde kullanılabilen 2,7 kWh kapasiteli enerji depolama sistemi. Kolay taşıma ve hızlı kurulum imkanı sunar.",
+    "title": "2.7 kWh Çanta Tip Depolanabilir Güç Paketi",
+    "description": "Saha kullanımı için özel olarak dayanıklı bir gövdeye sahip, \"Çanta Tip\" olarak adlandırılan bu model, taşınabilir yapısıyla öne çıkar.",
     "capacity": "2,7 kWh Kapasite",
     "bagDesign": "Çanta Tasarımı",
     "portable": "Taşınabilir",
@@ -521,8 +521,8 @@
     "chargingFeature": "Şarj Özelliği",
     "fastCharging": "Hızlı Şarj",
     "capacityValue": "2,7 kWh",
-    "weightValue": "33 kg",
-    "imageAlt": "2,7 kWh Çanta Tipi Güç Depolama Sistemi"
+    "weightValue": "35 kg",
+    "imageAlt": "2.7 kWh Çanta Tip Depolanabilir Güç Paketi"
   },
   "notFound": {
     "title": "404 - Sayfa bulunamadı",
@@ -571,30 +571,30 @@
     },
     "products": {
       "revium-2-7-kwh": {
-        "name": "2.7 kWh Çanta Tip Güç Paketi",
-        "description": "Dış mekan ve saha çalışmaları için özel olarak tasarlanmış, dayanıklı çanta tipi güç ünitesi.",
+        "name": "2.7 kWh Çanta Tip Depolanabilir Güç Paketi",
+        "description": "Saha kullanımı için özel olarak dayanıklı bir gövdeye sahip, \"Çanta Tip\" olarak adlandırılan bu model, taşınabilir yapısıyla öne çıkar.",
         "features": [
           "Enerji: 2.7 kWh",
           "Çıkış Voltajı: 220 VAC",
           "Çıkış Gücü: 2000 W",
-          "Maks. PV Güç: 1000 W (MPPT)",
-          "Çevrim Ömrü: 6000 çevrim",
+          "Maksimum PV Güç: 1000W MPPT",
+          "Çevrim Ömrü: 6000 Çevrim",
           "Dalga Tipi: Saf Sinüs",
-          "Boyutlar: 548 × 391 × 335 mm",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 548 mm x 391 mm x 335 mm",
           "Ağırlık: 35 kg"
         ]
       },
       "revium-2-7-kwh-bag": {
         "name": "2.7 kWh Depolanabilir Güç Paketi",
-        "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
+        "description": "Bu ürün, elektrikli el aletleri ve aydınlatma sistemleri için tasarlanmış taşınabilir ve güvenilir bir enerji çözümüdür. Matkap, hilti veya LED aydınlatma gibi cihazları kesintisiz çalıştırabilir.",
         "features": [
           "Enerji: 2.7 kWh",
           "Çıkış Voltajı: 220 VAC",
           "Çıkış Gücü: 2000 W",
-          "Maks. PV Güç: 1000 W (MPPT)",
-          "Çevrim Ömrü: 6000 çevrim",
+          "Maksimum PV Güç: 1000W MPPT",
+          "Çevrim Ömrü: 6000 Çevrim",
           "Dalga Tipi: Saf Sinüs",
-          "Boyutlar: 500 × 335 × 285 mm",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 500 mm x 335 mm x 285 mm",
           "Ağırlık: 35 kg"
         ]
       },
@@ -613,52 +613,54 @@
       },
       "revium-5-4-kwh": {
         "name": "5.4 kWh Depolanabilir Güç Paketi",
-        "description": "Profesyonel kullanım için yüksek kapasiteli, kesintisiz enerji çözümü.",
+        "description": "Yüksek enerji kapasitesi ve tekerlekli yapısıyla saha operasyonları ve ağır hizmet uygulamaları için geliştirilmiş güçlü bir çözümdür.",
         "features": [
           "Enerji: 5.4 kWh",
           "Çıkış Voltajı: 220 VAC",
           "Çıkış Gücü: 3000 W",
-          "Maks. PV Güç: 1000 W (MPPT)",
-          "Çevrim Ömrü: 6000 çevrim",
+          "Maksimum PV Güç: 1000 W MPPT",
+          "Çevrim Ömrü: 6000 Çevrim",
           "Dalga Tipi: Saf Sinüs",
-          "Boyutlar: 777 × 458 × 1340 mm",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 777 mm x 458 mm x 1340 mm",
           "Ağırlık: 60 kg"
         ]
       },
       "revium-power-cabinet": {
-        "name": "Güç Kabini",
-        "description": "Büyük kapasiteli enerji depolama ihtiyaçları için hepsi bir arada kabin çözümü.",
+        "name": "Revium Güç Kabini",
+        "description": "Endüstriyel ve ticari uygulamalar için tasarlanmış, tek kabin içinde ölçeklenebilir enerji depolama ve güç yönetimi çözümüdür.",
         "features": [
-          "Enerji: 5.4 – 21.6 kWh (tek kabin)",
+          "Enerji Kapasitesi: 5.4 kWh – 21.6 kWh (Tek Kabinde)",
           "Çıkış Voltajı: 220 VAC",
-          "Çıkış Gücü: 3 – 20 kW",
-          "Max PV Güç: 1 – 30 kW (MPPT)",
-          "Batarya Ömrü: 6000 çevrim",
+          "Çıkış Gücü: 3 kW – 20 kW",
+          "Maksimum PV Güç: 1 kW – 30 kW MPPT",
+          "Batarya Ömrü: 6000 Çevrim",
           "Dalga Tipi: Saf Sinüs",
-          "Ağırlık: 70 – 270 kg"
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 480/960 mm x 460/900 mm x 1660/2250 mm",
+          "Ağırlık: 70 - 270 kg"
         ]
       },
       "revium-pickup-power-pack": {
         "name": "Pick Up Güç Paketi",
-        "description": "Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.",
+        "description": "Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.",
         "features": [
-          "Enerji: 60 – 100 kWh",
-          "Çıkış Gücü (3 Faz): 3 × 10 kW (380 VAC)",
-          "Çıkış Gücü (Tek Faz): 5 × 5 kW (220 VAC)",
-          "Max PV Güç: 30 kW",
-          "Batarya Ömrü: 6000 çevrim",
+          "Enerji: 60 - 100 kWh",
+          "Çıkış Gücü (3 Faz): 3x10 kW (380 VAC)",
+          "Çıkış Gücü (Tek Faz): 5x5 kW (220 VAC)",
+          "Maksimum PV Güç: 30 kW",
+          "Batarya Ömrü: 6000 Çevrim",
           "Dalga Tipi: Saf Sinüs"
         ]
       },
       "revium-power-layer": {
         "name": "Güç Katmanı",
-        "description": "İstiflenebilir güç katmanları ile endüstriyel ölçekte depolama gücü.",
+        "description": "Orta ve yüksek kapasiteli ihtiyaçlar için modüler mimariye sahip, 172 kWh'e kadar ölçeklenebilen bir sistemdir.",
         "features": [
           "Nominal Voltaj: 51.2 V",
-          "Artırılabilir Kapasite: 105 / 210 / 315 / 420 Ah",
-          "Enerji Aralığı: 5.4 – 172 kWh",
-          "Batarya Ömrü: 6000 çevrim",
-          "Ağırlık: 66 – 950 kg"
+          "Artırılabilir Kapasite: 105 Ah / 210 Ah / 315 Ah / 420 Ah",
+          "Enerji: 5.4 – 172 kWh",
+          "Batarya Ömrü: 6000 Çevrim",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 400/860 mm x 391/800 mm x 365/2.180 mm",
+          "Ağırlık: 66 - 950 kg"
         ]
       },
       "revium-powerstation-series": {
@@ -686,16 +688,15 @@
         ]
       },
       "revium-gridpack": {
-        "name": "GRIDPACK",
-        "description": "Şebeke ölçekli enerji depolama ve yenilenebilir enerji entegrasyonu için yüksek kapasiteli BESS çözümü.",
+        "name": "Revium Gridpack",
+        "description": "Şebeke ölçekli enerji depolama uygulamaları için tasarlanmış, konteyner tipi entegre batarya sistemidir.",
         "features": [
           "Enerji Kapasitesi: 500 kWh – 5 MWh",
-          "Voltaj Aralığı: 600 – 1500 VDC",
-          "AC Çıkış Gücü: 250 kW – 2.5 MW",
-          "Çevrim Ömrü: 6000 çevrim",
-          "AC Dalga Tipi: Saf Sinüs",
-          "Çalışma Ortamı: -30°C ~ +55°C",
-          "Soğutma: Sıvı Soğutma"
+          "Voltaj Aralığı: 600 - 1500 VDC",
+          "AC Çıkış Gücü: 250 kW - 2.5 MW",
+          "Çevrim Ömrü: 6000 Çevrim",
+          "Çalışma Ortamı: -30°C ~ 55°C",
+          "Soğutma Yöntemi: Sıvı Soğutma"
         ],
         "techSpecs": {
           "energy": "500 kWh – 5 MWh",
@@ -708,13 +709,13 @@
       },
       "revium-2-7-kwh-lfp": {
         "name": "2.7 kWh LFP Batarya",
-        "description": "Güneş enerjisi sistemleri ve mobil güç çözümleri için kompakt, uzun ömürlü LFP batarya.",
+        "description": "Kompakt yapısı ve uzun çevrim ömrü ile yedek enerji uygulamaları, güneş enerjisi sistemleri ve mobil güç çözümleri için tasarlanmıştır.",
         "features": [
           "Nominal Voltaj: 12 / 24 VDC",
           "Kapasite: 105 / 206 Ah",
           "Enerji: 2.7 kWh",
-          "Batarya Ömrü: 6000 çevrim",
-          "Boyutlar: 400 × 320 × 244 mm",
+          "Batarya Ömrü: 6000 Çevrim",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 400 mm x 320 mm x 244 mm",
           "Ağırlık: 25 kg",
           "Bluetooth: Mevcut"
         ],
@@ -729,13 +730,13 @@
       },
       "revium-5-4-kwh-lfp": {
         "name": "5.4 kWh LFP Batarya",
-        "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli, uzun ömürlü enerji depolama çözümü.",
+        "description": "Orta ölçekli yüklerin beslenmesi için uygun, uzun ömürlü ve güvenli LiFePO4 hücre teknolojisine sahip bir depolama birimidir.",
         "features": [
           "Nominal Voltaj: 24 / 48 VDC",
           "Kapasite: 105 / 206 Ah",
           "Enerji: 5.4 kWh",
-          "Batarya Ömrü: 6000 çevrim",
-          "Boyutlar: 400 × 391 × 244 mm",
+          "Batarya Ömrü: 6000 Çevrim",
+          "Boyutlar (Uzunluk x Genişlik x Yükseklik): 400 mm x 391 mm x 244 mm",
           "Ağırlık: 45 kg",
           "Bluetooth: Mevcut"
         ],
@@ -749,57 +750,53 @@
         }
       },
       "revium-grid-core": {
-        "name": "Grid Core",
-        "description": "45-180 kW aralığında yüksek güçlü DC hızlı şarj istasyonu.",
+        "name": "Revium Grid Core",
+        "description": "Yüksek güçlü DC hızlı şarj uygulamaları için geliştirilmiş elektrikli araç şarj istasyonudur.",
         "features": [
           "DC Çıkış Gücü: 45 – 180 kW",
-          "DC Gerilim: 150 – 1000 VDC",
-          "AC Giriş: 400 VAC, 3 Faz",
-          "Konnektör: CCS2",
-          "Çıkış Sayısı: 1 DC",
-          "Haberleşme: Ethernet / CAN / 4G",
-          "Protokol: OCPP 1.6",
-          "Koruma: IP54"
+          "DC Çıkış Gerilimi: 150 – 1000 VDC",
+          "AC Giriş: 400 VAC ±10%, 3 Faz, 50 Hz",
+          "Konnektör: CCS2 (1 CD çıkış)",
+          "Haberleşme/Protokol: Ethernet, CAN, 4G / OCPP 1.6",
+          "Ekran: 7” Dokunmatik",
+          "Boyutlar: 690 × 400 × 1950 mm"
         ]
       },
       "revium-grid-pulse": {
-        "name": "Grid Pulse",
-        "description": "90-270 kW çift çıkışlı esnek DC şarj istasyonu.",
+        "name": "Revium Grid Pulse",
+        "description": "Aynı anda birden fazla araca hizmet verebilen, yüksek kapasiteli DC hızlı şarj istasyonudur.",
         "features": [
           "DC Çıkış Gücü: 90 – 270 kW",
-          "DC Gerilim: 150 – 1000 VDC",
-          "Konnektör: CCS1 / CCS2",
-          "Çıkış Sayısı: 2 DC",
-          "AC Giriş: 400 VAC, 3 Faz",
-          "Ödeme: RFID / QR / NFC",
-          "Koruma: IP54"
+          "DC Çıkış Gerilimi: 150 – 1000 VDC",
+          "Konnektör: CCS1 / CCS2 (2 adet DC çıkış)",
+          "Ekran: 15” Dokunmatik Ekran",
+          "Ödeme Desteği: RFID / QR / NFC",
+          "Boyutlar: 580 × 970 × 1950 mm",
+          "Ağırlık: ≈ 450 kg"
         ]
       },
       "revium-grid-pulse-gen2": {
-        "name": "Grid Pulse Gen2",
-        "description": "Yeni nesil bağlantılı ve akıllı yüksek hızlı DC şarj istasyonu.",
+        "name": "Revium Grid Pulse Gen2",
+        "description": "Grid Pulse modelinin ikinci nesli olup, yoğun kullanım senaryoları için optimize edilmiş profesyonel bir DC şarj çözümüdür.",
         "features": [
-          "DC Çıkış Gücü: 90 – 270 kW",
-          "DC Gerilim: 150 – 1000 VDC",
-          "Konnektör: CCS2",
-          "Çıkış Sayısı: 2 DC",
-          "AC Giriş: 400 VAC, 3 Faz",
-          "Haberleşme: Ethernet / 4G / LTE",
-          "Protokol: OCPP 1.6",
-          "Koruma: IP54"
+          "DC Çıkış Gücü: 90 kW - 270 kW",
+          "DC Çıkış Gerilimi: 150 – 1000 VDC",
+          "Konnektör: CCS2 (2 adet DC çıkış)",
+          "Haberleşme: Ethernet / 4G / LTE (OCPP 1.6)",
+          "Boyutlar: 580 × 970 × 1950 mm",
+          "Ağırlık: ≈ 450 kg"
         ]
       },
       "revium-solarport": {
-        "name": "Solarport",
-        "description": "Elektrikli araç şarj istasyonu ve güneş enerjisi carport çözümü. Araçlarınızı korurken temiz enerji ile şarj edin.",
+        "name": "Revium SolarPort",
+        "description": "Güneş enerjisi üretimi ve elektrikli araç şarj altyapısını birleştiren otopark sistemidir.",
         "features": [
-          "Araç Kapasitesi: 2 – 8 araç",
-          "Panel Sayısı: 8 – 48 adet",
-          "Kurulu Güç: 4.8 – 38.8 kWp",
-          "MPPT Voltaj Aralığı: 180 – 950 VDC",
-          "AC Çıkış Gücü: 6 – 24 kW",
-          "Şarj Altyapısı: 22 kW AC",
-          "Opsiyonel: DC hızlı şarj"
+          "Araç Kapasitesi: 2 - 8 Araç",
+          "Panel Sayısı: 8 – 48 Adet",
+          "Toplam Kurulu Güç: 4.8 kWp – 38.8 kWp",
+          "MPPT Voltaj Aralığı: 180 VDC – 950 VDC",
+          "AC Çıkış Gücü: 6 kW - 24 kW",
+          "Şarj Altyapısı: 22 kW AC şarj ünitesi (Opsiyonel DC hızlı şarj)"
         ]
       }
     }

@@ -33,33 +33,52 @@ export default function Iletisim() {
                 status: 'new',
             };
 
-            // Firebase Firestore'a kaydet
-            await addDoc(collection(db, 'contact_messages'), contactData);
+            // 15 saniye timeout ile Firebase işlemi
+            const submitPromise = async () => {
+                console.log('--- SUBMIT START ---');
+                console.log('Data:', contactData);
 
-            // Firebase Extension "Trigger Email" için mail collection'a ekle
-            await addDoc(collection(db, 'mail'), {
-                to: ['info@reviumtech.com'],
-                message: {
-                    subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
-                    html: `
-                        <h2>Yeni İletişim Formu Gönderimi</h2>
-                        <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
-                        <p><strong>Email:</strong> ${formData.get('email')}</p>
-                        ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
-                        <p><strong>Konu:</strong> ${formData.get('subject')}</p>
-                        <p><strong>Mesaj:</strong></p>
-                        <p>${formData.get('message')}</p>
-                        <hr>
-                        <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
-                    `,
-                },
-            });
+                try {
+                    console.log('1. Adding contact doc...');
+                    // Firebase Firestore'a kaydet
+                    await addDoc(collection(db, 'contact_messages'), contactData);
+                    console.log('1. Contact doc added.');
+
+                    console.log('2. Adding mail doc...');
+                    // Firebase Extension "Trigger Email" için mail collection'a ekle
+                    await addDoc(collection(db, 'mail'), {
+                        to: ['info@reviumtech.com', 'aslanaysenur063@gmail.com'],
+                        message: {
+                            subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
+                            html: `
+                                <h2>Yeni İletişim Formu Gönderimi</h2>
+                                <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
+                                <p><strong>Email:</strong> ${formData.get('email')}</p>
+                                ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
+                                <p><strong>Konu:</strong> ${formData.get('subject')}</p>
+                                <p><strong>Mesaj:</strong></p>
+                                <p>${formData.get('message')}</p>
+                                <hr>
+                                <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
+                            `,
+                        },
+                    });
+                    console.log('2. Mail doc added.');
+                    console.log('--- SUBMIT SUCCESS ---');
+                } catch (e) {
+                    console.error('--- SUBMIT ERROR ---', e);
+                    throw e;
+                }
+            };
+
+            // Timeout kaldırıldı - Debug için
+            await submitPromise();
 
             alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');
             form.reset();
         } catch (error: any) {
             console.error('Submission error:', error);
-            alert(`Hata: ${error.message || 'Mesaj gönderilemedi.'}`);
+            alert(`Hata: ${error?.message || 'Mesaj gönderilemedi.'}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -77,7 +96,7 @@ export default function Iletisim() {
         {
             icon: Mail,
             title: t('email'),
-            value: 'info@reviumtech.com',
+            value: locale === 'ar' ? 'انفو@ريفيوم-تيك.كوم' : 'info@reviumtech.com',
             href: 'mailto:info@reviumtech.com',
             color: 'text-emerald-600',
             bg: 'bg-emerald-50'
@@ -85,7 +104,7 @@ export default function Iletisim() {
         {
             icon: MapPin,
             title: t('address'),
-            value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: 81، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
+            value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: ٨١، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
             href: 'https://maps.app.goo.gl/dEJViRBejc7dpB3WA',
             color: 'text-orange-600',
             bg: 'bg-orange-50'
@@ -158,7 +177,6 @@ export default function Iletisim() {
                                 <input
                                     type="tel"
                                     name="phone"
-                                    placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
                                     className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     dir="ltr"
                                 />

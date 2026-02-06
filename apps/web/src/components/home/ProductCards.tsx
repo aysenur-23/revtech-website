@@ -39,7 +39,7 @@ export default function ProductCards() {
         {
             key: 'portablePower',
             slug: 'portable',
-            image: '/images/categories/portable-power-new.webp',
+            image: '/images/portable-power-updated.png',
             priority: true,
             defaultTitle: 'Taşınabilir Güç Paketleri',
         },

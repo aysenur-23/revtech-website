@@ -6,14 +6,14 @@ import { Sun, TrendingUp, Shield } from 'lucide-react'
 
 export default function SolarportDuoPage() {
   const { t, loading } = useTranslation()
-  
+
   const sustainableTitle = t('productPage.whyChoose.ges.sustainable')
   const sustainableDesc = t('productPage.whyChoose.ges.sustainableDesc')
   const efficiencyTitle = t('productPage.whyChoose.ges.efficiency')
   const efficiencyDesc = t('productPage.whyChoose.ges.efficiencyDesc')
   const longevityTitle = t('productPage.whyChoose.ges.longevity')
   const longevityDesc = t('productPage.whyChoose.ges.longevityDesc')
-  
+
   const whyChooseItems = [
     {
       icon: Sun,
@@ -40,12 +40,12 @@ export default function SolarportDuoPage() {
       hoverColor: 'text-green-600'
     }
   ]
-  
+
   const product = {
     name: 'Solarport DUO',
     title: loading ? 'Solarport DUO' : t('productDetails.solarportDuo.title'),
     description: loading ? 'SolarPort Duo, güneş enerjisini modern mimariyle buluşturan yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum-çelik konstrüksiyonu, yüksek verimli güneş panelleri ve entegre enerji depolama birimi sayesinde hem estetik hem de fonksiyonel bir çözüm sunar. Elektrikli araç şarj istasyonlarıyla tam uyumlu yapısı, park alanlarını sadece koruma alanı olmaktan çıkarıp aktif bir enerji üretim merkezine dönüştürür. SolarPort Duo, temiz enerji üretimi, sürdürülebilir altyapı ve modern tasarımıyla geleceğin şehirlerine değer katan akıllı bir otopark sistemidir.' : t('productDetails.solarportDuo.description'),
-    image: '/images/products/solarport-duo.png',
+    image: '/images/products/solarport-updated.png',
     whyChooseItems,
     features: [],
     applications: loading ? [

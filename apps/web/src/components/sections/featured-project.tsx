@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 export function FeaturedProject() {
   const { t, locale, loading } = useTranslation()
-  
+
   const features = [
     {
       icon: Zap,
@@ -58,11 +58,11 @@ export function FeaturedProject() {
             <div className="relative rounded-3xl overflow-hidden hover-lift">
               {/* Project Image */}
               <div className="relative rounded-2xl aspect-[4/5] overflow-hidden">
-                <Image 
-                  src="/images/products/newsu.png" 
+                <Image
+                  src="/images/products/newsu.png"
                   alt={loading ? "2.7 kWh Çanta Tipi Güç Depolama Sistemi" : t('featuredProject.altText')}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -71,22 +71,22 @@ export function FeaturedProject() {
           </div>
 
           {/* Right Column - Project Information */}
-          <div className="space-y-4 sm:space-y-6 animate-slide-up" style={{animationDelay: '0.2s'}}>
+          <div className="space-y-4 sm:space-y-6 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             {/* Project Header */}
             <div className="space-y-3 mb-4 sm:mb-6">
               {/* Featured Badge */}
-              <div className="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <div className="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <div className="w-1 h-1 bg-blue-500 rounded-full mr-1.5 animate-pulse-slow"></div>
                 {loading ? 'Öne Çıkan Proje' : t('featuredProject.badge')}
               </div>
 
               {/* Main Title */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 animate-fade-in px-6 sm:px-0 leading-normal py-2 mb-3 sm:mb-4" style={{animationDelay: '0.6s'}}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-900 animate-fade-in px-6 sm:px-0 leading-normal py-2 mb-3 sm:mb-4" style={{ animationDelay: '0.6s' }}>
                 {loading ? '2.7 kWh Çanta Tipi Güç Depolama Sistemi' : t('featuredProject.title')}
               </h2>
 
               {/* Description */}
-              <p className="text-base sm:text-lg text-neutral-600 animate-fade-in px-6 sm:px-0 leading-relaxed" style={{animationDelay: '0.8s'}}>
+              <p className="text-base sm:text-lg text-neutral-600 animate-fade-in px-6 sm:px-0 leading-relaxed" style={{ animationDelay: '0.8s' }}>
                 {loading ? 'Taşınabilir ve kompakt tasarımı ile her yerde kullanılabilen 2.7 kWh kapasiteli güç depolama sistemi. Kolay taşıma ve hızlı kurulum imkanı sunar.' : t('featuredProject.description')}
               </p>
             </div>
@@ -94,7 +94,7 @@ export function FeaturedProject() {
             {/* Key Features */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6 px-6 sm:px-0">
               {features.map((feature, index) => (
-                <div key={index} className="bg-white rounded-2xl p-4 sm:p-6 text-center shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover-lift animate-scale-in" style={{animationDelay: `${1 + index * 0.1}s`}}>
+                <div key={index} className="bg-white rounded-2xl p-4 sm:p-6 text-center shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 hover-lift animate-scale-in" style={{ animationDelay: `${1 + index * 0.1}s` }}>
                   <div className="mx-auto mb-3 sm:mb-4">
                     <IconWrapper size="md" variant="primary">
                       <feature.icon className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -108,7 +108,7 @@ export function FeaturedProject() {
             </div>
 
             {/* Performance Statistics */}
-            <div className="bg-blue-50 rounded-2xl p-6 sm:p-8 hover-lift animate-fade-in mx-6 sm:mx-0" style={{animationDelay: '1.4s'}}>
+            <div className="bg-blue-50 rounded-2xl p-6 sm:p-8 hover-lift animate-fade-in mx-6 sm:mx-0" style={{ animationDelay: '1.4s' }}>
               <div className="grid grid-cols-3 gap-4 sm:gap-6 items-center">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center flex flex-col items-center justify-center">

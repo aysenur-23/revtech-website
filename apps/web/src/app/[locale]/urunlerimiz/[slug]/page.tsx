@@ -300,12 +300,12 @@ const products: Record<string, {
         ]
     },
     'revium-gridpack': {
-        name: 'Revium GRIDPACK',
-        modelId: 'GRIDPACK',
+        name: 'Revium Şebeke Paketi',
+        modelId: 'Şebeke Paketi',
         capacity: '500 kWh – 5 MWh',
         power: '250 kW – 2.5 MW',
         image: '/images/products/gridpack.webp',
-        categoryTitle: 'Şebeke Ölçekli Konteyner Tip BESS',
+        categoryTitle: 'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi',
         description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
         features: [
             'Enerji Kapasitesi: 500 kWh – 5 MWh',
@@ -399,7 +399,7 @@ const products: Record<string, {
         modelId: 'SOLARPORT',
         capacity: '2 – 8 Araç',
         power: '6 – 24 kW AC',
-        image: '/images/products/solarport-duo.webp',
+        image: '/images/products/solarport-final.png',
         categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
         description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
         features: [
@@ -784,6 +784,7 @@ function translateLabel(label: string, locale: string): string {
             'Hz': 'هرتز',
             'EV': 'مركبة كهربائية',
             'BESS': 'نظام تخزين الطاقة',
+            'GRIDPACK': 'جريد باك',
             'PV': 'طاقة شمسية',
             'DC': 'تيار مستمر',
             'AC': 'تيار متردد',
@@ -811,6 +812,57 @@ function translateLabel(label: string, locale: string): string {
             'GPS': 'جي بي إس',
             'USB': 'يو إس بي',
             'LED': 'ليد',
+            'Phase': 'طور',
+            '3-Phase': '٣ مراحل',
+            'Entegrasyonu': 'تكامل',
+            'adet': 'قطعة',
+            'panel': 'لوحة',
+            'DOD': 'عمق التفريغ',
+            'Batarya Kapasitesi': 'سعة البطارية',
+            'Batarya': 'بطارية',
+            'Kapasitesi': 'سعة',
+            'Çıkış Gücü': 'طاقة الخرج',
+            'Giriş': 'مدخل',
+            'Soğutma': 'تبريد',
+            'Sıvı': 'سائل',
+            'İzolasyon': 'عزل',
+            'Koruma': 'حماية',
+            'Ağırlık': 'الوزن',
+            'Mobil': 'متنقل',
+            'Römork': 'مقطورة',
+            'Sistem': 'نظام',
+            'Uzaktan İzleme': 'المراقبة عن بعد',
+            'Güneş Entegreli': 'متكامل مع الطاقة الشمسية',
+            'Araç Kapasitesi': 'سعة المركبة',
+            'Araç': 'مركبة',
+            'araç': 'مركبة',
+            'Panel Sayısı': 'عدد الألواح',
+            'Kurulu Güç': 'الطاقة المثبتة',
+            'Şarj Altyapısı': 'بنية الشحن التحتية',
+            'Opsiyonel': 'اختياري',
+            'Aralığı': 'نطاق',
+            'Voltaj Aralığı': 'نطاق الجهد',
+            'Kurulu': 'مثبتة',
+            'Max PV Güç': 'أقصى طاقة شمسية',
+            'Max': 'أقصى',
+            'Artırılabilir Kapasite': 'سعة قابلة للزيادة',
+            'Artırılabilir': 'قابل للزيادة',
+            'tek kabin': 'كابينة واحدة',
+            'kabin': 'كابينة',
+            'Güç': 'طاقة',
+            'Gücü': 'طاقة',
+            'gücü': 'طاقة',
+            'Sayısı': 'عدد',
+            'sayısı': 'عدد',
+            'Faz': 'طور',
+            'faz': 'طور',
+            'CAN': 'كان',
+            'Çıkış Sayısı': 'عدد المخارج',
+            'DC Çıkış Gücü': 'قوة خرج تيار مستمر',
+            'AC Çıkış Gücü': 'قوة خرج تيار متردد',
+            'DC Gerilim': 'جهد تيار مستمر',
+            'AC Giriş': 'مدخل تيار متردد',
+            'Çıkış': 'مخرج',
         };
 
         for (const [unit, trans] of Object.entries(units)) {
@@ -854,7 +906,7 @@ export default async function ProductDetailPage({ params }: Props) {
             'R-STORAGE': 'آر-ستوريج',
             'R-CABINET': 'آر-كابينة',
             'R-LAYER': 'آر-طبقة',
-            'GRIDPACK': 'غريد باك',
+            'Şebeke Paketi': 'جريد باك',
             'R-PICKUP': 'آر-بيك اب',
             'R-GRID-CORE': 'آر-غريد كور',
             'R-GRID-PULSE': 'آر-غريد بلس',
@@ -878,7 +930,9 @@ export default async function ProductDetailPage({ params }: Props) {
 
     // Replace data with localized versions if available
     const localizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product.name;
-    const localizedDesc = tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : product.description;
+    const localizedDesc = translateLabel(tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : (product.description || ''), locale);
+
+
 
     // We always use the hardcoded features from code (technical specs)
     // The translateLabel function handles translations for other languages
@@ -916,7 +970,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Endüstriyel Enerji Depolama (Tek Kabin)': 'Industrial Energy Storage (Single Cabinet)',
                                                 'Araç Üstü Mobil Enerji Sistemi': 'On-Vehicle Mobile Energy System',
                                                 'Ölçeklenebilir Endüstriyel Batarya': 'Scalable Industrial Battery',
-                                                'Şebeke Ölçekli Konteyner Tip BESS': 'Grid-Scale Container BESS',
+                                                'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi': 'Grid-Scale Container Battery Energy Storage System',
                                                 'Konteyner Tip Enerji + Güneş Entegrasyonu': 'Container Type Energy + Solar Integration',
                                                 'Mobil Güneş Enerjili Römork Sistem': 'Mobile Solar Trailer System',
                                                 'Solar Carport + EV Şarj + Enerji Depolama': 'Solar Carport + EV Charging + Energy Storage',
@@ -933,7 +987,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Endüstriyel Enerji Depolama (Tek Kabin)': 'تخزين الطاقة الصناعية (كابينة واحدة)',
                                                 'Araç Üstü Mobil Enerji Sistemi': 'نظام طاقة متنقل على المركبة',
                                                 'Ölçeklenebilir Endüstriyel Batarya': 'بطارية صناعية قابلة للتطوير',
-                                                'Şebeke Ölçekli Konteyner Tip BESS': 'BESS من نوع حاوية على نطاق الشبكة',
+                                                'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi': 'نظام تخزين طاقة البطارية من نوع حاوية على نطاق الشبكة',
                                                 'Konteyner Tip Enerji + Güneş Entegrasyonu': 'تكامل الطاقة بالحاوية + الطاقة الشمسية',
                                                 'Mobil Güneş Enerjili Römork Sistem': 'نظام مقطورة بالطاقة الشمسية المتنقلة',
                                                 'Solar Carport + EV Şarj + Enerji Depolama': 'مرآب شمسي + شحن المركبات الكهربائية + تخزين الطاقة',

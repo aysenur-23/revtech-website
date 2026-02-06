@@ -77,7 +77,7 @@ const getServiceCategories = (t: any, locale: string, loading: boolean) => [
     href: `/${locale}/hizmetlerimiz/endustriyel-kurulum`,
     description: t('megaMenu.industrialInstallationDesc'),
     products: [
-      { slug: 'endustriyel-kurulum', name: loading ? 'Endüstriyel Kurulum' : t('products.industrialInstallation.title'), images: ['/images/services/power-installation.png'] } as Product,
+      { slug: 'endustriyel-kurulum', name: loading ? 'Endüstriyel Kurulum' : t('products.industrialInstallation.title'), images: ['/images/services/industrial-service-new.webp'] } as Product,
     ]
   }
 ]
@@ -101,13 +101,6 @@ export function MegaMenu({ isOpen, onClose, type, onHoverChange }: MegaMenuProps
       onHoverChange(isMenuHovered)
     }
   }, [isOpen, isMenuHovered, onHoverChange])
-
-  // Mega menü kapanma mantığı
-  useEffect(() => {
-    if (!isMenuHovered && !isOpen) {
-      onClose()
-    }
-  }, [isMenuHovered, isOpen, onClose])
 
   if (!isOpen) return null
 
@@ -141,21 +134,19 @@ export function MegaMenu({ isOpen, onClose, type, onHoverChange }: MegaMenuProps
                 >
                   <Link
                     href={category.href}
-                    className={`flex items-center justify-between w-full text-left px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 ${
-                      activeCategory === index 
-                        ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-900 font-semibold shadow-sm border border-blue-200' 
-                        : 'text-black hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 hover:text-gray-900 hover:shadow-sm'
-                    }`}
+                    className={`flex items-center justify-between w-full text-left px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 ${activeCategory === index
+                      ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-900 font-semibold shadow-sm border border-blue-200'
+                      : 'text-black hover:bg-gradient-to-r hover:from-gray-50 hover:to-gray-100 hover:text-gray-900 hover:shadow-sm'
+                      }`}
                     onClick={() => onClose()}
                   >
                     <span className={activeCategory === index ? 'font-semibold' : 'font-medium'}>
                       {category.name}
                     </span>
-                    <ChevronRight className={`w-3 h-3 sm:w-4 sm:h-4 transition-all duration-300 ${
-                      activeCategory === index 
-                        ? 'text-blue-600 transform translate-x-1' 
-                        : 'text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1'
-                    }`} />
+                    <ChevronRight className={`w-3 h-3 sm:w-4 sm:h-4 transition-all duration-300 ${activeCategory === index
+                      ? 'text-blue-600 transform translate-x-1'
+                      : 'text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1'
+                      }`} />
                   </Link>
                 </div>
               ))}
@@ -177,9 +168,8 @@ export function MegaMenu({ isOpen, onClose, type, onHoverChange }: MegaMenuProps
                   className="group block bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:scale-105"
                   onClick={() => onClose()}
                 >
-                  <div className={`aspect-square rounded-lg sm:rounded-xl overflow-hidden mb-2 sm:mb-3 shadow-sm flex items-center justify-center ${
-                    product.slug === 'r-u200000' ? 'bg-transparent' : 'bg-gradient-to-br from-gray-50 to-gray-100'
-                  }`}>
+                  <div className={`aspect-square rounded-lg sm:rounded-xl overflow-hidden mb-2 sm:mb-3 shadow-sm flex items-center justify-center ${product.slug === 'r-u200000' ? 'bg-transparent' : 'bg-gradient-to-br from-gray-50 to-gray-100'
+                    }`}>
                     {product.images?.[0] && (
                       <Image
                         src={product.images[0]}
@@ -195,13 +185,13 @@ export function MegaMenu({ isOpen, onClose, type, onHoverChange }: MegaMenuProps
                   </h4>
                 </Link>
               ))}
-              
+
               {/* TÜM ÜRÜNLER kartı - grid içinde */}
               <Link
-              href={`/${locale}/${type === 'products' ? 'urunlerimiz' : 'hizmetlerimiz'}`}
-              className="group block bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:scale-105"
-              onClick={() => onClose()}
-            >
+                href={`/${locale}/${type === 'products' ? 'urunlerimiz' : 'hizmetlerimiz'}`}
+                className="group block bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:scale-105"
+                onClick={() => onClose()}
+              >
                 <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg sm:rounded-xl overflow-hidden mb-2 sm:mb-3 shadow-sm flex items-center justify-center">
                   <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
                 </div>

@@ -516,16 +516,31 @@
     "description": "Her projenin kendine özgü gereksinimleri vardır. Uzman ekibimizle birlikte ihtiyaçlarınıza en uygun enerji çözümlerini tasarlıyor ve hayata geçiriyoruz.",
     "technicalConsulting": "Teknik Danışmanlık",
     "technicalConsultingDesc": "İhtiyaçlarınıza özel enerji çözümleri için uzman danışmanlık hizmeti.",
-    "technicalConsultingFeatures": ["İhtiyaç analizi", "Teknik değerlendirme", "Çözüm önerileri"],
+    "technicalConsultingFeatures": [
+      "İhtiyaç analizi",
+      "Teknik değerlendirme",
+      "Çözüm önerileri"
+    ],
     "customDesign": "Özel Tasarım",
     "customDesignDesc": "Benzersiz gereksinimleriniz için özel olarak tasarlanmış sistemler.",
-    "customDesignFeatures": ["Özel mühendislik", "Prototip geliştirme", "Test ve doğrulama"],
+    "customDesignFeatures": [
+      "Özel mühendislik",
+      "Prototip geliştirme",
+      "Test ve doğrulama"
+    ],
     "projectManagement": "Proje Yönetimi",
     "projectManagementDesc": "Kurulumdan teslime kadar tüm süreçlerin profesyonel yönetimi.",
-    "projectManagementFeatures": ["Proje planlama", "Zaman yönetimi", "Kalite kontrol"],
+    "projectManagementFeatures": [
+      "Proje planlama",
+      "Zaman yönetimi",
+      "Kalite kontrol"
+    ],
     "ongoingSupport": "Sürekli Destek",
     "ongoingSupportDesc": "Sisteminizin optimal performansı için sürekli bakım ve destek.",
-    "ongoingSupportFeatures": ["Periyodik bakım", "Yedek parça temini"],
+    "ongoingSupportFeatures": [
+      "Periyodik bakım",
+      "Yedek parça temini"
+    ],
     "consultationButton": "Danışmanlık Talep Et"
   },
   "featuredProject": {
@@ -784,8 +799,8 @@
       }
     },
     "gridpack100": {
-      "title": "GridPack 100",
-      "description": "REVIUM GridPack 100, endüstriyel tesisler, savunma alanları, mobil enerji merkezleri ve afet bölgeleri için geliştirilmiş, yüksek kapasiteli enerji depolama ve yönetim sistemidir. Entegre inverter, MPPT şarj kontrolü, akıllı batarya yönetim sistemi (BMS) ve uzaktan izleme özellikleriyle, tüm enerji sürecini tek noktadan yönetilebilen tam entegre bir plug-and-play enerji istasyonu sunar. Dayanıklı yapısı, uzun ömürlü LiFePO₄ batarya teknolojisi ve yüksek verimliliği sayesinde, her koşulda kesintisiz, güvenli ve sürdürülebilir enerji sağlar.",
+      "title": "Şebeke Paketi 100",
+      "description": "REVIUM Şebeke Paketi 100, endüstriyel tesisler, savunma alanları, mobil enerji merkezleri ve afet bölgeleri için geliştirilmiş, yüksek kapasiteli enerji depolama ve yönetim sistemidir. Entegre inverter, MPPT şarj kontrolü, akıllı batarya yönetim sistemi (BMS) ve uzaktan izleme özellikleriyle, tüm enerji sürecini tek noktadan yönetilebilen tam entegre bir plug-and-play enerji istasyonu sunar. Dayanıklı yapısı, uzun ömürlü LiFePO₄ batarya teknolojisi ve yüksek verimliliği sayesinde, her koşulda kesintisiz, güvenli ve sürdürülebilir enerji sağlar.",
       "applications": {
         "industrial": "Endüstriyel tesisler",
         "defense": "Savunma alanları",
@@ -813,90 +828,6 @@
         "usbAc": "USB ve AC çıkışları",
         "ledLight": "LED ışık sistemi",
         "solarCompatible": "Güneş paneli uyumluluğu",
-        "quickCharge": "Hızlı şarj desteği"
-      },
-      "applications": {
-        "largeHomes": "Büyük ölçekli evler",
-        "mediumBusiness": "Orta ölçekli işletmeler",
-        "camping": "Kamp ve karavan",
-        "emergency": "Acil durum yedeklemesi",
-        "outdoor": "Dış mekan etkinlikleri",
-        "mobileOffice": "Mobil ofisler"
-      }
-    },
-    "rSb2700d": {
-      "title": "2.7 kWh Taşınabilir Güç Paketi",
-      "description": "Dayanıklı tasarımı ile zorlu koşullarda kullanım için ideal 2.7 kWh taşınabilir güç paketi. Kompakt/sağlam gövde ve 2 kW saf sinüs çıkışı.",
-      "features": {
-        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
-        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 700 W PV şarj",
-        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
-        "dimensions": "Boyutlar: 500 × 335 × 285 mm",
-        "weight": "Ağırlık: 35 kg",
-        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
-        "warranty": "Garanti: 3 yıl",
-        "compact": "Kompakt/sağlam gövde",
-        "sineOutput": "2 kW saf sinüs çıkış",
-        "durable": "Dayanıklı kasa tasarımı",
-        "usbAc": "USB ve AC çıkışları",
-        "ledLight": "LED ışık sistemi",
-        "quickCharge": "Hızlı şarj desteği"
-      },
-      "applications": {
-        "construction": "İnşaat sahaları",
-        "emergency": "Acil durumlar",
-        "travel": "Seyahat ve kamp",
-        "outdoor": "Dış mekan etkinlikleri",
-        "smallBusiness": "Küçük işletmeler",
-        "mobileOffice": "Mobil ofisler"
-      }
-    },
-    "rSb5400c": {
-      "title": "5.4 kWh Taşınabilir Güç Paketi",
-      "description": "Orta kasa tasarımı ile 5.4 kWh kapasiteli taşınabilir güç paketi. 3 kW saf sinüs çıkışı ve saha kullanımına uygun form.",
-      "features": {
-        "capacity": "Kapasite: 5.4 kWh (LiFePO₄)",
-        "powerOutput": "Güç Çıkışı: 220 VAC, 3000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 1500 W PV şarj",
-        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
-        "dimensions": "Boyutlar: 400 × 391 × 410 mm",
-        "weight": "Ağırlık: 62 kg",
-        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
-        "warranty": "Garanti: 3 yıl",
-        "sineOutput": "3 kW saf sinüs çıkış",
-        "fieldUse": "Saha kullanımına uygun form",
-        "mediumCase": "Orta kasa tasarımı",
-        "usbAc": "USB ve AC çıkışları",
-        "ledLight": "LED ışık sistemi",
-        "quickCharge": "Hızlı şarj desteği"
-      },
-      "applications": {
-        "mediumHomes": "Orta ölçekli evler",
-        "smallBusiness": "Küçük işletmeler",
-        "camping": "Kamp ve karavan",
-        "emergency": "Acil durum yedeklemesi",
-        "outdoor": "Dış mekan etkinlikleri",
-        "mobileOffice": "Mobil ofisler"
-      }
-    },
-    "rSb5400h": {
-      "title": "5.4 kWh Taşınabilir Güç Paketi",
-      "description": "Yüksek çıkış gücü ile 5.4 kWh kapasiteli taşınabilir güç paketi. 4 kW yüksek güç ve 3 kW PV desteği ile zorlu enerji ihtiyaçlarını karşılar.",
-      "features": {
-        "capacity": "Kapasite: 5.4 kWh (LiFePO₄)",
-        "powerOutput": "Güç Çıkışı: 220 VAC, 4000 W (pure sine)",
-        "pvMppt": "PV/MPPT: 3000 W PV şarj",
-        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
-        "dimensions": "Boyutlar: 400 × 391 × 488 mm",
-        "weight": "Ağırlık: 67 kg",
-        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
-        "warranty": "Garanti: 3 yıl",
-        "highPower": "4 kW yüksek güç",
-        "pvSupport": "3 kW PV desteği",
-        "highOutput": "Yüksek çıkış gücü",
-        "usbAc": "USB ve AC çıkışları",
-        "ledLight": "LED ışık sistemi",
         "quickCharge": "Hızlı şarj desteği"
       },
       "applications": {
