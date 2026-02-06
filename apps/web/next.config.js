@@ -5,7 +5,7 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Static export configuration for Hostinger
-  // output: 'export', // Development için kapalı
+  output: 'export', // Development için kapalı
   trailingSlash: true,
   reactStrictMode: true,
 
