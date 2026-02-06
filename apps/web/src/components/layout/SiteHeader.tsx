@@ -195,14 +195,14 @@ export default function SiteHeader() {
                             {/* Mega Menu Overlay - Products */}
                             {item.hasMegaMenu === 'products' && activeMegaMenu === 'products' && (
                                 <div
-                                    className="absolute top-full left-0 w-full bg-white border-t border-neutral-100 shadow-xl border-b z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                                    className="absolute top-full left-0 w-full bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                                     onMouseEnter={handleMenuContentEnter}
                                     onMouseLeave={handleMouseLeave}
                                 >
                                     <div className="max-w-7xl mx-auto px-6 py-8">
                                         <div className="flex gap-8">
                                             {/* Sidebar Categories */}
-                                            <div className="w-64 shrink-0 border-r border-neutral-100 pr-6">
+                                            <div className="w-64 shrink-0 pr-6">
                                                 <h3 className="text-[11px] font-semibold text-neutral-500 uppercase tracking-wider mb-4 px-3">
                                                     {t('categories')}
                                                 </h3>
@@ -243,7 +243,7 @@ export default function SiteHeader() {
                                                         <Link
                                                             key={product.slug}
                                                             href={`/${locale}/urunlerimiz/${product.slug}/`}
-                                                            className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                            className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 block"
                                                             onClick={handleLinkClick}
                                                         >
                                                             <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
@@ -265,11 +265,11 @@ export default function SiteHeader() {
                                                             </div>
                                                         </Link>
                                                     ))}
-                                                    
+
                                                     {/* Tüm Ürünler Kartı */}
                                                     <Link
                                                         href={`/${locale}/urunlerimiz/`}
-                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 block"
                                                         onClick={handleLinkClick}
                                                     >
                                                         <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-blue-50/50 group-hover/card:bg-blue-100/50 transition-colors flex items-center justify-center">
@@ -293,14 +293,14 @@ export default function SiteHeader() {
                             {/* Services Mega Menu */}
                             {item.hasMegaMenu === 'services' && activeMegaMenu === 'services' && (
                                 <div
-                                    className="absolute left-0 top-full w-full border-t border-neutral-100 bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
+                                    className="absolute left-0 top-full w-full bg-white shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200"
                                     onMouseEnter={handleMenuContentEnter}
                                     onMouseLeave={handleMouseLeave}
                                 >
                                     <div className="max-w-7xl mx-auto px-6 py-8">
                                         <div className="flex gap-8">
                                             {/* Sidebar Categories */}
-                                            <div className="w-64 shrink-0 border-r border-neutral-100 pr-6">
+                                            <div className="w-64 shrink-0 pr-6">
                                                 <h3 className="text-[11px] font-semibold text-neutral-500 uppercase tracking-wider mb-4 px-3">
                                                     {t('categories')}
                                                 </h3>
@@ -345,7 +345,7 @@ export default function SiteHeader() {
                                                         <Link
                                                             key={service.slug}
                                                             href={`/${locale}/hizmetlerimiz/${service.slug}/`}
-                                                            className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                            className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 block"
                                                             onClick={handleLinkClick}
                                                         >
                                                             <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
@@ -366,11 +366,11 @@ export default function SiteHeader() {
                                                             </div>
                                                         </Link>
                                                     ))}
-                                                    
+
                                                     {/* Tüm Hizmetler Kartı */}
                                                     <Link
                                                         href={`/${locale}/hizmetlerimiz/`}
-                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out border border-neutral-100 hover:border-blue-100 hover:-translate-y-1 block"
+                                                        className="group/card bg-white hover:shadow-xl hover:shadow-blue-900/5 rounded-xl p-4 transition-all duration-300 ease-out hover:-translate-y-1 block"
                                                         onClick={handleLinkClick}
                                                     >
                                                         <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-blue-50/50 group-hover/card:bg-blue-100/50 transition-colors flex items-center justify-center">
@@ -511,7 +511,7 @@ export default function SiteHeader() {
                                 <span>{t('products')}</span>
                                 <ChevronDown className={cn("h-4 w-4 transition-transform", mobileProductsOpen && "rotate-180")} />
                             </button>
-                            
+
                             {mobileProductsOpen && (
                                 <div className="mt-2 ml-2 space-y-1">
                                     {productCategories.map((cat) => (
@@ -528,7 +528,7 @@ export default function SiteHeader() {
                                                 <span>{cat.name[locale]}</span>
                                                 <ChevronRight className={cn("h-3.5 w-3.5 transition-transform", mobileActiveCategoryId === cat.id && "rotate-90")} />
                                             </button>
-                                            
+
                                             {mobileActiveCategoryId === cat.id && (
                                                 <div className="mt-1 ml-3 space-y-1 border-l-2 border-blue-100 pl-3">
                                                     {cat.products.map((product) => (
@@ -575,7 +575,7 @@ export default function SiteHeader() {
                                 <span>{t('services')}</span>
                                 <ChevronDown className={cn("h-4 w-4 transition-transform", mobileServicesOpen && "rotate-180")} />
                             </button>
-                            
+
                             {mobileServicesOpen && (
                                 <div className="mt-2 ml-2 space-y-1">
                                     {serviceCategories.map((cat) => (

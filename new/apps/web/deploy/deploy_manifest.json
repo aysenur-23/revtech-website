@@ -1,0 +1,1925 @@
+{
+  "buildDate": "2025-10-26T11:01:52.839Z",
+  "projectType": "Next.js Static Export",
+  "totalFiles": 319,
+  "totalSize": 306056789,
+  "files": [
+    {
+      "path": "404.html",
+      "size": 9431,
+      "modified": "2025-10-26T10:53:53.373Z"
+    },
+    {
+      "path": "favicon.png",
+      "size": 116997,
+      "modified": "2025-10-18T13:23:33.710Z"
+    },
+    {
+      "path": "index.html",
+      "size": 7060,
+      "modified": "2025-10-26T10:52:56.696Z"
+    },
+    {
+      "path": "index.txt",
+      "size": 3803,
+      "modified": "2025-10-26T10:52:56.611Z"
+    },
+    {
+      "path": "404\\index.html",
+      "size": 9431,
+      "modified": "2025-10-26T10:53:53.347Z"
+    },
+    {
+      "path": "en\\index.html",
+      "size": 99449,
+      "modified": "2025-10-26T10:52:56.513Z"
+    },
+    {
+      "path": "en\\index.txt",
+      "size": 30188,
+      "modified": "2025-10-26T10:52:56.424Z"
+    },
+    {
+      "path": "images\\logo.original.png",
+      "size": 249775,
+      "modified": "2025-10-01T20:26:16.659Z"
+    },
+    {
+      "path": "images\\logo.png",
+      "size": 235049,
+      "modified": "2025-10-26T10:53:57.505Z"
+    },
+    {
+      "path": "images\\logo.webp",
+      "size": 86556,
+      "modified": "2025-10-26T10:54:01.469Z"
+    },
+    {
+      "path": "tr\\index.html",
+      "size": 99449,
+      "modified": "2025-10-26T10:52:56.716Z"
+    },
+    {
+      "path": "tr\\index.txt",
+      "size": 30188,
+      "modified": "2025-10-26T10:52:56.621Z"
+    },
+    {
+      "path": "videos\\hero.mp4",
+      "size": 12210652,
+      "modified": "2025-10-01T19:08:47.250Z"
+    },
+    {
+      "path": "en\\fiyat-teklifi\\index.html",
+      "size": 27059,
+      "modified": "2025-10-26T10:52:54.833Z"
+    },
+    {
+      "path": "en\\fiyat-teklifi\\index.txt",
+      "size": 6071,
+      "modified": "2025-10-26T10:52:54.734Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\index.html",
+      "size": 48115,
+      "modified": "2025-10-26T10:52:55.189Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\index.txt",
+      "size": 22361,
+      "modified": "2025-10-26T10:52:55.108Z"
+    },
+    {
+      "path": "en\\iletisim\\index.html",
+      "size": 33640,
+      "modified": "2025-10-26T10:52:54.805Z"
+    },
+    {
+      "path": "en\\iletisim\\index.txt",
+      "size": 6100,
+      "modified": "2025-10-26T10:52:54.687Z"
+    },
+    {
+      "path": "en\\kurumsal\\index.html",
+      "size": 61339,
+      "modified": "2025-10-26T10:52:58.127Z"
+    },
+    {
+      "path": "en\\kurumsal\\index.txt",
+      "size": 29242,
+      "modified": "2025-10-26T10:52:58.066Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero-new.original.png",
+      "size": 4809894,
+      "modified": "2025-10-19T15:11:05.339Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero-new.png",
+      "size": 2904857,
+      "modified": "2025-10-26T10:54:07.682Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero-new.webp",
+      "size": 305308,
+      "modified": "2025-10-26T10:54:13.835Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero.original.png",
+      "size": 7369200,
+      "modified": "2025-10-05T06:40:17.832Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero.png",
+      "size": 4318940,
+      "modified": "2025-10-26T10:54:15.606Z"
+    },
+    {
+      "path": "images\\contact\\contact-hero.webp",
+      "size": 213674,
+      "modified": "2025-10-26T10:54:45.985Z"
+    },
+    {
+      "path": "images\\contact\\contact-visual.original.png",
+      "size": 7139879,
+      "modified": "2025-10-19T15:10:18.031Z"
+    },
+    {
+      "path": "images\\contact\\contact-visual.png",
+      "size": 4065475,
+      "modified": "2025-10-26T10:54:48.985Z"
+    },
+    {
+      "path": "images\\contact\\contact-visual.webp",
+      "size": 232768,
+      "modified": "2025-10-26T10:55:07.681Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\index.html",
+      "size": 95785,
+      "modified": "2025-10-26T10:52:59.077Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\index.txt",
+      "size": 47093,
+      "modified": "2025-10-26T10:52:59.028Z"
+    },
+    {
+      "path": "images\\features\\durable.jpg",
+      "size": 361097,
+      "modified": "2025-10-26T10:55:10.624Z"
+    },
+    {
+      "path": "images\\features\\durable.original.jpg",
+      "size": 7136161,
+      "modified": "2025-10-01T14:16:17.682Z"
+    },
+    {
+      "path": "images\\features\\durable.webp",
+      "size": 215524,
+      "modified": "2025-10-26T10:55:12.602Z"
+    },
+    {
+      "path": "images\\features\\modular.jpg",
+      "size": 391845,
+      "modified": "2025-10-26T10:55:14.607Z"
+    },
+    {
+      "path": "images\\features\\modular.original.jpg",
+      "size": 7607474,
+      "modified": "2025-10-01T14:16:17.971Z"
+    },
+    {
+      "path": "images\\features\\modular.webp",
+      "size": 246834,
+      "modified": "2025-10-26T10:55:17.091Z"
+    },
+    {
+      "path": "images\\features\\reliable.jpg",
+      "size": 251881,
+      "modified": "2025-10-26T10:55:20.376Z"
+    },
+    {
+      "path": "images\\features\\reliable.original.jpg",
+      "size": 6553291,
+      "modified": "2025-10-01T14:16:17.357Z"
+    },
+    {
+      "path": "images\\features\\reliable.webp",
+      "size": 142502,
+      "modified": "2025-10-26T10:55:21.971Z"
+    },
+    {
+      "path": "images\\features\\sustainable.jpg",
+      "size": 314272,
+      "modified": "2025-10-26T10:55:23.838Z"
+    },
+    {
+      "path": "images\\features\\sustainable.original.jpg",
+      "size": 8063414,
+      "modified": "2025-10-01T14:16:17.604Z"
+    },
+    {
+      "path": "images\\features\\sustainable.webp",
+      "size": 201996,
+      "modified": "2025-10-26T10:55:26.136Z"
+    },
+    {
+      "path": "images\\hero\\1.original.png",
+      "size": 7607474,
+      "modified": "2025-10-01T14:16:17.971Z"
+    },
+    {
+      "path": "images\\hero\\1.png",
+      "size": 4250429,
+      "modified": "2025-10-26T10:55:28.572Z"
+    },
+    {
+      "path": "images\\hero\\1.webp",
+      "size": 260726,
+      "modified": "2025-10-26T10:55:50.498Z"
+    },
+    {
+      "path": "images\\hero\\100.original.png",
+      "size": 7507696,
+      "modified": "2025-10-05T06:40:16.718Z"
+    },
+    {
+      "path": "images\\hero\\100.png",
+      "size": 5278806,
+      "modified": "2025-10-26T10:55:52.510Z"
+    },
+    {
+      "path": "images\\hero\\100.webp",
+      "size": 584506,
+      "modified": "2025-10-26T10:56:06.162Z"
+    },
+    {
+      "path": "images\\hero\\2.original.png",
+      "size": 7136161,
+      "modified": "2025-10-01T14:16:17.682Z"
+    },
+    {
+      "path": "images\\hero\\2.png",
+      "size": 4064139,
+      "modified": "2025-10-26T10:56:09.202Z"
+    },
+    {
+      "path": "images\\hero\\2.webp",
+      "size": 225626,
+      "modified": "2025-10-26T10:56:28.216Z"
+    },
+    {
+      "path": "images\\hero\\3.original.png",
+      "size": 6553291,
+      "modified": "2025-10-01T14:16:17.357Z"
+    },
+    {
+      "path": "images\\hero\\3.png",
+      "size": 3668120,
+      "modified": "2025-10-26T10:56:30.476Z"
+    },
+    {
+      "path": "images\\hero\\3.webp",
+      "size": 148042,
+      "modified": "2025-10-26T10:56:48.945Z"
+    },
+    {
+      "path": "images\\hero\\4.original.png",
+      "size": 8063414,
+      "modified": "2025-10-01T14:16:17.604Z"
+    },
+    {
+      "path": "images\\hero\\4.png",
+      "size": 4305780,
+      "modified": "2025-10-26T10:56:50.782Z"
+    },
+    {
+      "path": "images\\hero\\4.webp",
+      "size": 207334,
+      "modified": "2025-10-26T10:57:10.061Z"
+    },
+    {
+      "path": "images\\hero\\5.original.png",
+      "size": 6335036,
+      "modified": "2025-10-01T14:16:17.149Z"
+    },
+    {
+      "path": "images\\hero\\5.png",
+      "size": 3554749,
+      "modified": "2025-10-26T10:57:10.608Z"
+    },
+    {
+      "path": "images\\hero\\5.webp",
+      "size": 130926,
+      "modified": "2025-10-26T10:57:15.605Z"
+    },
+    {
+      "path": "images\\hero\\6.jpeg",
+      "size": 146025,
+      "modified": "2025-10-01T13:55:43.369Z"
+    },
+    {
+      "path": "images\\references\\logo1.png",
+      "size": 104985,
+      "modified": "2025-10-24T10:58:45.166Z"
+    },
+    {
+      "path": "images\\references\\logo2.original.png",
+      "size": 592913,
+      "modified": "2025-10-24T11:02:24.299Z"
+    },
+    {
+      "path": "images\\references\\logo2.png",
+      "size": 386350,
+      "modified": "2025-10-26T10:58:35.111Z"
+    },
+    {
+      "path": "images\\references\\logo2.webp",
+      "size": 190292,
+      "modified": "2025-10-26T10:58:36.482Z"
+    },
+    {
+      "path": "images\\references\\logo3.original.png",
+      "size": 255524,
+      "modified": "2025-10-24T11:01:55.764Z"
+    },
+    {
+      "path": "images\\references\\logo3.png",
+      "size": 115042,
+      "modified": "2025-10-26T10:58:38.279Z"
+    },
+    {
+      "path": "images\\references\\logo3.webp",
+      "size": 56984,
+      "modified": "2025-10-26T10:58:39.220Z"
+    },
+    {
+      "path": "images\\references\\logo4.original.png",
+      "size": 937031,
+      "modified": "2025-10-24T11:01:26.002Z"
+    },
+    {
+      "path": "images\\references\\logo4.png",
+      "size": 605045,
+      "modified": "2025-10-26T10:58:40.324Z"
+    },
+    {
+      "path": "images\\references\\logo4.webp",
+      "size": 75060,
+      "modified": "2025-10-26T10:58:44.700Z"
+    },
+    {
+      "path": "images\\references\\logo5.original.png",
+      "size": 243793,
+      "modified": "2025-10-09T09:02:22.620Z"
+    },
+    {
+      "path": "images\\references\\logo5.png",
+      "size": 224209,
+      "modified": "2025-10-26T10:58:46.349Z"
+    },
+    {
+      "path": "images\\references\\logo5.webp",
+      "size": 104976,
+      "modified": "2025-10-26T10:58:47.540Z"
+    },
+    {
+      "path": "images\\references\\README.md",
+      "size": 598,
+      "modified": "2025-10-08T07:42:19.280Z"
+    },
+    {
+      "path": "images\\products\\10-5kwh-1.original.png",
+      "size": 1111674,
+      "modified": "2025-10-18T14:17:26.352Z"
+    },
+    {
+      "path": "images\\products\\10-5kwh-1.png",
+      "size": 692007,
+      "modified": "2025-10-26T10:57:16.133Z"
+    },
+    {
+      "path": "images\\products\\10-5kwh-1.webp",
+      "size": 92062,
+      "modified": "2025-10-26T10:57:16.959Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-a-1.original.png",
+      "size": 576486,
+      "modified": "2025-10-01T13:55:43.471Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-a-1.png",
+      "size": 478366,
+      "modified": "2025-10-26T10:57:17.943Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-a-1.webp",
+      "size": 68866,
+      "modified": "2025-10-26T10:57:18.407Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-b-1.original.png",
+      "size": 1540180,
+      "modified": "2025-10-19T14:14:42.317Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-b-1.png",
+      "size": 946750,
+      "modified": "2025-10-26T10:57:18.853Z"
+    },
+    {
+      "path": "images\\products\\2-7kwh-b-1.webp",
+      "size": 97512,
+      "modified": "2025-10-26T10:57:20.037Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-2000w-1.original.png",
+      "size": 847982,
+      "modified": "2025-10-18T14:17:26.244Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-2000w-1.png",
+      "size": 627897,
+      "modified": "2025-10-26T10:57:21.044Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-2000w-1.webp",
+      "size": 93394,
+      "modified": "2025-10-26T10:57:21.825Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-3000w-1.original.png",
+      "size": 1436274,
+      "modified": "2025-10-18T14:27:40.460Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-3000w-1.png",
+      "size": 891459,
+      "modified": "2025-10-26T10:57:22.803Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-3000w-1.webp",
+      "size": 117552,
+      "modified": "2025-10-26T10:57:24.821Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-4000w-1.original.png",
+      "size": 1500040,
+      "modified": "2025-10-18T14:17:26.330Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-4000w-1.png",
+      "size": 926843,
+      "modified": "2025-10-26T10:57:27.208Z"
+    },
+    {
+      "path": "images\\products\\5-4kwh-4000w-1.webp",
+      "size": 114570,
+      "modified": "2025-10-26T10:57:29.896Z"
+    },
+    {
+      "path": "images\\products\\cabin-power.original.png",
+      "size": 1250956,
+      "modified": "2025-10-22T14:17:50.195Z"
+    },
+    {
+      "path": "images\\products\\cabin-power.png",
+      "size": 942938,
+      "modified": "2025-10-26T10:57:31.572Z"
+    },
+    {
+      "path": "images\\products\\cabin-power.webp",
+      "size": 82338,
+      "modified": "2025-10-26T10:57:32.792Z"
+    },
+    {
+      "path": "images\\products\\hilux-21-6kwh-1.original.png",
+      "size": 886342,
+      "modified": "2025-10-18T14:44:25.169Z"
+    },
+    {
+      "path": "images\\products\\hilux-21-6kwh-1.png",
+      "size": 657035,
+      "modified": "2025-10-26T10:57:33.311Z"
+    },
+    {
+      "path": "images\\products\\hilux-21-6kwh-1.webp",
+      "size": 88332,
+      "modified": "2025-10-26T10:57:34.171Z"
+    },
+    {
+      "path": "images\\products\\newsu.original.png",
+      "size": 7607474,
+      "modified": "2025-10-01T14:16:17.971Z"
+    },
+    {
+      "path": "images\\products\\newsu.png",
+      "size": 4250429,
+      "modified": "2025-10-26T10:57:35.768Z"
+    },
+    {
+      "path": "images\\products\\newsu.webp",
+      "size": 260726,
+      "modified": "2025-10-26T10:57:53.713Z"
+    },
+    {
+      "path": "images\\products\\poertable-power3.original.png",
+      "size": 576486,
+      "modified": "2025-10-01T13:55:43.471Z"
+    },
+    {
+      "path": "images\\products\\poertable-power3.png",
+      "size": 478366,
+      "modified": "2025-10-26T10:57:56.310Z"
+    },
+    {
+      "path": "images\\products\\poertable-power3.webp",
+      "size": 68866,
+      "modified": "2025-10-26T10:57:58.234Z"
+    },
+    {
+      "path": "images\\products\\portable-power.original.png",
+      "size": 1111308,
+      "modified": "2025-10-22T14:17:16.424Z"
+    },
+    {
+      "path": "images\\products\\portable-power.png",
+      "size": 886884,
+      "modified": "2025-10-26T10:58:00.243Z"
+    },
+    {
+      "path": "images\\products\\portable-power.webp",
+      "size": 145120,
+      "modified": "2025-10-26T10:58:05.829Z"
+    },
+    {
+      "path": "images\\products\\portable-power2.jpeg",
+      "size": 146025,
+      "modified": "2025-10-01T13:55:43.369Z"
+    },
+    {
+      "path": "images\\products\\portable-power2.jpg",
+      "size": 302378,
+      "modified": "2025-10-26T10:58:08.768Z"
+    },
+    {
+      "path": "images\\products\\portable-power2.original.jpg",
+      "size": 6897918,
+      "modified": "2025-10-01T14:16:17.433Z"
+    },
+    {
+      "path": "images\\products\\portable-power2.webp",
+      "size": 188672,
+      "modified": "2025-10-26T10:58:10.691Z"
+    },
+    {
+      "path": "images\\products\\solar-panels.original.png",
+      "size": 3217322,
+      "modified": "2025-10-07T13:43:20.678Z"
+    },
+    {
+      "path": "images\\products\\solar-panels.png",
+      "size": 2821836,
+      "modified": "2025-10-26T10:58:12.870Z"
+    },
+    {
+      "path": "images\\products\\solar-panels.webp",
+      "size": 420538,
+      "modified": "2025-10-26T10:58:15.928Z"
+    },
+    {
+      "path": "images\\products\\solar-panels1.jpg",
+      "size": 432315,
+      "modified": "2025-10-26T10:58:19.319Z"
+    },
+    {
+      "path": "images\\products\\solar-panels1.original.jpg",
+      "size": 396320,
+      "modified": "2025-09-30T09:27:17.452Z"
+    },
+    {
+      "path": "images\\products\\solar-panels1.webp",
+      "size": 461848,
+      "modified": "2025-10-26T10:58:20.518Z"
+    },
+    {
+      "path": "images\\products\\stack-21-6kwh-1.original.png",
+      "size": 2217040,
+      "modified": "2025-10-18T14:17:17.254Z"
+    },
+    {
+      "path": "images\\products\\stack-21-6kwh-1.png",
+      "size": 1394163,
+      "modified": "2025-10-26T10:58:21.540Z"
+    },
+    {
+      "path": "images\\products\\stack-21-6kwh-1.webp",
+      "size": 144938,
+      "modified": "2025-10-26T10:58:27.384Z"
+    },
+    {
+      "path": "images\\products\\unimog-200kwh-1.jpg",
+      "size": 150286,
+      "modified": "2025-10-26T10:58:31.222Z"
+    },
+    {
+      "path": "images\\products\\unimog-200kwh-1.original.jpg",
+      "size": 1532513,
+      "modified": "2025-10-03T14:34:44.113Z"
+    },
+    {
+      "path": "images\\products\\unimog-200kwh-1.webp",
+      "size": 88544,
+      "modified": "2025-10-26T10:58:32.101Z"
+    },
+    {
+      "path": "images\\products\\vehicle-power2.jpg",
+      "size": 150286,
+      "modified": "2025-10-26T10:58:33.318Z"
+    },
+    {
+      "path": "images\\products\\vehicle-power2.original.jpg",
+      "size": 1532513,
+      "modified": "2025-10-03T14:34:44.113Z"
+    },
+    {
+      "path": "images\\products\\vehicle-power2.webp",
+      "size": 88544,
+      "modified": "2025-10-26T10:58:34.205Z"
+    },
+    {
+      "path": "images\\services\\ges-hero.original.png",
+      "size": 3217323,
+      "modified": "2025-10-19T14:58:19.681Z"
+    },
+    {
+      "path": "images\\services\\ges-hero.png",
+      "size": 2821836,
+      "modified": "2025-10-26T10:58:48.838Z"
+    },
+    {
+      "path": "images\\services\\ges-hero.webp",
+      "size": 420538,
+      "modified": "2025-10-26T10:58:53.427Z"
+    },
+    {
+      "path": "images\\services\\ges-visual.original.png",
+      "size": 5093899,
+      "modified": "2025-10-19T15:07:41.710Z"
+    },
+    {
+      "path": "images\\services\\ges-visual.png",
+      "size": 3207201,
+      "modified": "2025-10-26T10:58:57.892Z"
+    },
+    {
+      "path": "images\\services\\ges-visual.webp",
+      "size": 311240,
+      "modified": "2025-10-26T10:59:07.723Z"
+    },
+    {
+      "path": "images\\services\\ges-visuall.original.png",
+      "size": 6080774,
+      "modified": "2025-10-19T14:58:58.334Z"
+    },
+    {
+      "path": "images\\services\\ges-visuall.png",
+      "size": 3250953,
+      "modified": "2025-10-26T10:59:09.166Z"
+    },
+    {
+      "path": "images\\services\\ges-visuall.webp",
+      "size": 305458,
+      "modified": "2025-10-26T10:59:19.066Z"
+    },
+    {
+      "path": "images\\services\\industrial-hero.original.png",
+      "size": 4283927,
+      "modified": "2025-10-19T16:21:24.554Z"
+    },
+    {
+      "path": "images\\services\\industrial-hero.png",
+      "size": 2641821,
+      "modified": "2025-10-26T10:59:20.616Z"
+    },
+    {
+      "path": "images\\services\\industrial-hero.webp",
+      "size": 302254,
+      "modified": "2025-10-26T10:59:24.434Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-1.original.png",
+      "size": 8229392,
+      "modified": "2025-10-19T15:03:26.600Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-1.png",
+      "size": 5620693,
+      "modified": "2025-10-26T10:59:26.247Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-1.webp",
+      "size": 656156,
+      "modified": "2025-10-26T10:59:34.012Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-2.original.png",
+      "size": 10144408,
+      "modified": "2025-10-19T15:06:16.144Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-2.png",
+      "size": 7962941,
+      "modified": "2025-10-26T10:59:36.193Z"
+    },
+    {
+      "path": "images\\services\\industrial-project-2.webp",
+      "size": 1379410,
+      "modified": "2025-10-26T10:59:40.140Z"
+    },
+    {
+      "path": "images\\services\\industrial-visual.original.png",
+      "size": 4681743,
+      "modified": "2025-10-19T15:07:00.249Z"
+    },
+    {
+      "path": "images\\services\\industrial-visual.png",
+      "size": 2856303,
+      "modified": "2025-10-26T10:59:42.473Z"
+    },
+    {
+      "path": "images\\services\\industrial-visual.webp",
+      "size": 229150,
+      "modified": "2025-10-26T10:59:54.254Z"
+    },
+    {
+      "path": "images\\services\\power-installation.original.png",
+      "size": 1792191,
+      "modified": "2025-10-07T15:36:59.390Z"
+    },
+    {
+      "path": "images\\services\\power-installation.png",
+      "size": 1162590,
+      "modified": "2025-10-26T10:59:56.380Z"
+    },
+    {
+      "path": "images\\services\\power-installation.webp",
+      "size": 115872,
+      "modified": "2025-10-26T11:00:01.430Z"
+    },
+    {
+      "path": "images\\services\\power-installation0.jpg",
+      "size": 271629,
+      "modified": "2025-10-26T11:00:05.625Z"
+    },
+    {
+      "path": "images\\services\\power-installation0.original.jpg",
+      "size": 3906918,
+      "modified": "2025-10-03T14:41:45.147Z"
+    },
+    {
+      "path": "images\\services\\power-installation0.webp",
+      "size": 191286,
+      "modified": "2025-10-26T11:00:06.664Z"
+    },
+    {
+      "path": "images\\services\\solar-installation.original.png",
+      "size": 3500497,
+      "modified": "2025-10-07T15:23:04.740Z"
+    },
+    {
+      "path": "images\\services\\solar-installation.png",
+      "size": 2501465,
+      "modified": "2025-10-26T11:00:08.290Z"
+    },
+    {
+      "path": "images\\services\\solar-installation.webp",
+      "size": 273450,
+      "modified": "2025-10-26T11:00:13.236Z"
+    },
+    {
+      "path": "images\\services\\solar-installation0.jpg",
+      "size": 430653,
+      "modified": "2025-10-26T11:00:14.837Z"
+    },
+    {
+      "path": "images\\services\\solar-installation0.original.jpg",
+      "size": 7592418,
+      "modified": "2025-10-03T14:42:04.030Z"
+    },
+    {
+      "path": "images\\services\\solar-installation0.webp",
+      "size": 327912,
+      "modified": "2025-10-26T11:00:16.169Z"
+    },
+    {
+      "path": "tr\\fiyat-teklifi\\index.html",
+      "size": 27059,
+      "modified": "2025-10-26T10:52:54.833Z"
+    },
+    {
+      "path": "tr\\fiyat-teklifi\\index.txt",
+      "size": 6071,
+      "modified": "2025-10-26T10:52:54.732Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\index.html",
+      "size": 48115,
+      "modified": "2025-10-26T10:52:55.114Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\index.txt",
+      "size": 22361,
+      "modified": "2025-10-26T10:52:55.024Z"
+    },
+    {
+      "path": "tr\\iletisim\\index.html",
+      "size": 33640,
+      "modified": "2025-10-26T10:52:55.082Z"
+    },
+    {
+      "path": "tr\\iletisim\\index.txt",
+      "size": 6100,
+      "modified": "2025-10-26T10:52:55.027Z"
+    },
+    {
+      "path": "tr\\kurumsal\\index.html",
+      "size": 61339,
+      "modified": "2025-10-26T10:52:58.123Z"
+    },
+    {
+      "path": "tr\\kurumsal\\index.txt",
+      "size": 29242,
+      "modified": "2025-10-26T10:52:58.068Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\index.html",
+      "size": 95785,
+      "modified": "2025-10-26T10:52:58.570Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\index.txt",
+      "size": 47093,
+      "modified": "2025-10-26T10:52:58.513Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\ges-kurulumu\\index.html",
+      "size": 53971,
+      "modified": "2025-10-26T10:52:58.045Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\ges-kurulumu\\index.txt",
+      "size": 25706,
+      "modified": "2025-10-26T10:52:57.954Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\endustriyel-kurulum\\index.html",
+      "size": 56540,
+      "modified": "2025-10-26T10:52:57.688Z"
+    },
+    {
+      "path": "en\\hizmetlerimiz\\endustriyel-kurulum\\index.txt",
+      "size": 27033,
+      "modified": "2025-10-26T10:52:57.582Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-cabinet-21600\\index.html",
+      "size": 84466,
+      "modified": "2025-10-26T10:52:57.909Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-cabinet-21600\\index.txt",
+      "size": 41279,
+      "modified": "2025-10-26T10:52:57.829Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-h21600\\index.html",
+      "size": 76542,
+      "modified": "2025-10-26T10:52:56.855Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-h21600\\index.txt",
+      "size": 37197,
+      "modified": "2025-10-26T10:52:56.813Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-m21600\\index.html",
+      "size": 76842,
+      "modified": "2025-10-26T10:52:59.178Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-m21600\\index.txt",
+      "size": 37352,
+      "modified": "2025-10-26T10:52:59.129Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-p2700\\index.html",
+      "size": 76559,
+      "modified": "2025-10-26T10:52:58.372Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-p2700\\index.txt",
+      "size": 37209,
+      "modified": "2025-10-26T10:52:58.313Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-p5400\\index.html",
+      "size": 79633,
+      "modified": "2025-10-26T10:52:55.298Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-p5400\\index.txt",
+      "size": 38789,
+      "modified": "2025-10-26T10:52:55.228Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-s10500\\index.html",
+      "size": 77907,
+      "modified": "2025-10-26T10:52:55.271Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-s10500\\index.txt",
+      "size": 37905,
+      "modified": "2025-10-26T10:52:55.219Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb2700b\\index.html",
+      "size": 78030,
+      "modified": "2025-10-26T10:52:55.331Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb2700b\\index.txt",
+      "size": 37969,
+      "modified": "2025-10-26T10:52:55.263Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb2700d\\index.html",
+      "size": 78032,
+      "modified": "2025-10-26T10:52:56.934Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb2700d\\index.txt",
+      "size": 37970,
+      "modified": "2025-10-26T10:52:56.884Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400b\\index.html",
+      "size": 78020,
+      "modified": "2025-10-26T10:52:55.185Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400b\\index.txt",
+      "size": 37964,
+      "modified": "2025-10-26T10:52:55.099Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400c\\index.html",
+      "size": 78016,
+      "modified": "2025-10-26T10:52:58.970Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400c\\index.txt",
+      "size": 37962,
+      "modified": "2025-10-26T10:52:58.904Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400h\\index.html",
+      "size": 78056,
+      "modified": "2025-10-26T10:52:56.673Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-sb5400h\\index.txt",
+      "size": 37982,
+      "modified": "2025-10-26T10:52:56.550Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-u200000\\index.html",
+      "size": 78122,
+      "modified": "2025-10-26T10:52:56.290Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\r-u200000\\index.txt",
+      "size": 38015,
+      "modified": "2025-10-26T10:52:56.112Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\rev-1\\index.html",
+      "size": 77960,
+      "modified": "2025-10-26T10:52:56.917Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\rev-1\\index.txt",
+      "size": 37928,
+      "modified": "2025-10-26T10:52:56.866Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\rev-2\\index.html",
+      "size": 76639,
+      "modified": "2025-10-26T10:52:58.171Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\rev-2\\index.txt",
+      "size": 37246,
+      "modified": "2025-10-26T10:52:58.113Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\endustriyel-kurulum\\index.html",
+      "size": 56540,
+      "modified": "2025-10-26T10:52:57.865Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\endustriyel-kurulum\\index.txt",
+      "size": 27033,
+      "modified": "2025-10-26T10:52:57.724Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\ges-kurulumu\\index.html",
+      "size": 53971,
+      "modified": "2025-10-26T10:52:58.130Z"
+    },
+    {
+      "path": "tr\\hizmetlerimiz\\ges-kurulumu\\index.txt",
+      "size": 25706,
+      "modified": "2025-10-26T10:52:58.077Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-cabinet-21600\\index.html",
+      "size": 84466,
+      "modified": "2025-10-26T10:52:57.912Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-cabinet-21600\\index.txt",
+      "size": 41279,
+      "modified": "2025-10-26T10:52:57.808Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-h21600\\index.html",
+      "size": 76542,
+      "modified": "2025-10-26T10:52:56.862Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-h21600\\index.txt",
+      "size": 37197,
+      "modified": "2025-10-26T10:52:56.785Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-m21600\\index.html",
+      "size": 76842,
+      "modified": "2025-10-26T10:52:59.186Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-m21600\\index.txt",
+      "size": 37352,
+      "modified": "2025-10-26T10:52:59.130Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-p2700\\index.html",
+      "size": 76559,
+      "modified": "2025-10-26T10:52:58.349Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-p2700\\index.txt",
+      "size": 37209,
+      "modified": "2025-10-26T10:52:58.280Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-p5400\\index.html",
+      "size": 79633,
+      "modified": "2025-10-26T10:52:55.224Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-p5400\\index.txt",
+      "size": 38789,
+      "modified": "2025-10-26T10:52:55.145Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-s10500\\index.html",
+      "size": 77907,
+      "modified": "2025-10-26T10:52:55.233Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-s10500\\index.txt",
+      "size": 37905,
+      "modified": "2025-10-26T10:52:55.182Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb2700b\\index.html",
+      "size": 78030,
+      "modified": "2025-10-26T10:52:55.380Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb2700b\\index.txt",
+      "size": 37969,
+      "modified": "2025-10-26T10:52:55.323Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400c\\index.html",
+      "size": 78016,
+      "modified": "2025-10-26T10:52:58.901Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400c\\index.txt",
+      "size": 37962,
+      "modified": "2025-10-26T10:52:58.790Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb2700d\\index.html",
+      "size": 78032,
+      "modified": "2025-10-26T10:52:56.937Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb2700d\\index.txt",
+      "size": 37970,
+      "modified": "2025-10-26T10:52:56.892Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400b\\index.html",
+      "size": 78020,
+      "modified": "2025-10-26T10:52:55.337Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400b\\index.txt",
+      "size": 37964,
+      "modified": "2025-10-26T10:52:55.269Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400h\\index.html",
+      "size": 78056,
+      "modified": "2025-10-26T10:52:56.606Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-sb5400h\\index.txt",
+      "size": 37982,
+      "modified": "2025-10-26T10:52:56.536Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\rev-1\\index.html",
+      "size": 77960,
+      "modified": "2025-10-26T10:52:56.900Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\rev-1\\index.txt",
+      "size": 37928,
+      "modified": "2025-10-26T10:52:56.840Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-u200000\\index.html",
+      "size": 78122,
+      "modified": "2025-10-26T10:52:56.549Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\r-u200000\\index.txt",
+      "size": 38015,
+      "modified": "2025-10-26T10:52:56.444Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\rev-2\\index.html",
+      "size": 76639,
+      "modified": "2025-10-26T10:52:57.796Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\rev-2\\index.txt",
+      "size": 37246,
+      "modified": "2025-10-26T10:52:57.639Z"
+    },
+    {
+      "path": "_next\\static\\build-1761475837808\\_buildManifest.js",
+      "size": 224,
+      "modified": "2025-10-26T10:51:52.322Z"
+    },
+    {
+      "path": "_next\\static\\build-1761475837808\\_ssgManifest.js",
+      "size": 1297,
+      "modified": "2025-10-26T10:53:05.181Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\0c811af8-31b755afc8809a9f.js",
+      "size": 172832,
+      "modified": "2025-10-26T10:51:52.292Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\3926-0bf3483e804f2d06.js",
+      "size": 13272,
+      "modified": "2025-10-26T10:51:52.293Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\4993.98dd9ccdd4a33821.js",
+      "size": 3197,
+      "modified": "2025-10-26T10:51:52.392Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\5291-d8614d2112bc4ffb.js",
+      "size": 123801,
+      "modified": "2025-10-26T10:51:52.305Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\590.e58169292ef40d10.js",
+      "size": 3768,
+      "modified": "2025-10-26T10:51:52.392Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\7164-c9998aee9db2bd13.js",
+      "size": 45173,
+      "modified": "2025-10-26T10:51:52.316Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\8215-2dbd967f7a2e74f0.js",
+      "size": 20373,
+      "modified": "2025-10-26T10:51:52.298Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\824-08485d909fdf844e.js",
+      "size": 23597,
+      "modified": "2025-10-26T10:51:52.304Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\framework-8f0792a07c308ff1.js",
+      "size": 139982,
+      "modified": "2025-10-26T10:51:52.291Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\main-app-d19f1b0608dbd5c5.js",
+      "size": 465,
+      "modified": "2025-10-26T10:51:52.184Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\main-f6fdb9ecd8e9ff63.js",
+      "size": 110958,
+      "modified": "2025-10-26T10:51:52.184Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\polyfills-42372ed130431b0a.js",
+      "size": 112594,
+      "modified": "2025-10-26T10:51:52.306Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\webpack-2bc5bd2899a0d49b.js",
+      "size": 3659,
+      "modified": "2025-10-26T10:51:52.292Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\cabin\\index.html",
+      "size": 51438,
+      "modified": "2025-10-26T10:52:56.603Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\cabin\\index.txt",
+      "size": 24384,
+      "modified": "2025-10-26T10:52:56.468Z"
+    },
+    {
+      "path": "_next\\static\\media\\19cfc7226ec3afaa-s.woff2",
+      "size": 19044,
+      "modified": "2025-10-26T10:51:52.180Z"
+    },
+    {
+      "path": "_next\\static\\media\\21350d82a1f187e9-s.woff2",
+      "size": 18744,
+      "modified": "2025-10-26T10:51:52.180Z"
+    },
+    {
+      "path": "_next\\static\\media\\438aa629764e75f3-s.woff2",
+      "size": 2592,
+      "modified": "2025-10-26T10:51:52.181Z"
+    },
+    {
+      "path": "_next\\static\\media\\4c9affa5bc8f420e-s.p.woff2",
+      "size": 24576,
+      "modified": "2025-10-26T10:51:52.183Z"
+    },
+    {
+      "path": "_next\\static\\media\\51251f8b9793cdb3-s.woff2",
+      "size": 9360,
+      "modified": "2025-10-26T10:51:52.183Z"
+    },
+    {
+      "path": "_next\\static\\media\\875ae681bfde4580-s.woff2",
+      "size": 14544,
+      "modified": "2025-10-26T10:51:52.183Z"
+    },
+    {
+      "path": "_next\\static\\media\\8e9860b6e62d6359-s.p.woff2",
+      "size": 85272,
+      "modified": "2025-10-26T10:51:52.183Z"
+    },
+    {
+      "path": "_next\\static\\media\\ba9851c3c22cd980-s.woff2",
+      "size": 25844,
+      "modified": "2025-10-26T10:51:52.178Z"
+    },
+    {
+      "path": "_next\\static\\media\\c5fe6dc8356a8c31-s.woff2",
+      "size": 11272,
+      "modified": "2025-10-26T10:51:52.178Z"
+    },
+    {
+      "path": "_next\\static\\media\\cc978ac5ee68c2b6-s.p.woff2",
+      "size": 15240,
+      "modified": "2025-10-26T10:51:52.180Z"
+    },
+    {
+      "path": "_next\\static\\media\\df0a9ae256c0569c-s.woff2",
+      "size": 10280,
+      "modified": "2025-10-26T10:51:52.180Z"
+    },
+    {
+      "path": "_next\\static\\media\\e4af272ccee01ff0-s.p.woff2",
+      "size": 48432,
+      "modified": "2025-10-26T10:51:52.178Z"
+    },
+    {
+      "path": "_next\\static\\media\\e857b654a2caa584-s.woff2",
+      "size": 8492,
+      "modified": "2025-10-26T10:51:52.183Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\portable\\index.html",
+      "size": 84168,
+      "modified": "2025-10-26T10:52:59.260Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\portable\\index.txt",
+      "size": 41255,
+      "modified": "2025-10-26T10:52:59.224Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\solar\\index.html",
+      "size": 40660,
+      "modified": "2025-10-26T10:52:58.917Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\solar\\index.txt",
+      "size": 18873,
+      "modified": "2025-10-26T10:52:58.817Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\vehicle\\index.html",
+      "size": 51960,
+      "modified": "2025-10-26T10:52:58.371Z"
+    },
+    {
+      "path": "en\\urunlerimiz\\kategori\\vehicle\\index.txt",
+      "size": 24639,
+      "modified": "2025-10-26T10:52:58.322Z"
+    },
+    {
+      "path": "_next\\static\\css\\1b3a026119e52708.css",
+      "size": 103378,
+      "modified": "2025-10-26T10:51:52.394Z"
+    },
+    {
+      "path": "_next\\static\\css\\6dfe1f9e2c2442f3.css",
+      "size": 4300,
+      "modified": "2025-10-26T10:51:52.392Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\cabin\\index.html",
+      "size": 51438,
+      "modified": "2025-10-26T10:52:56.806Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\cabin\\index.txt",
+      "size": 24384,
+      "modified": "2025-10-26T10:52:56.718Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\portable\\index.html",
+      "size": 84168,
+      "modified": "2025-10-26T10:52:59.355Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\portable\\index.txt",
+      "size": 41255,
+      "modified": "2025-10-26T10:52:59.292Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\solar\\index.html",
+      "size": 40660,
+      "modified": "2025-10-26T10:52:58.849Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\solar\\index.txt",
+      "size": 18873,
+      "modified": "2025-10-26T10:52:58.796Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\vehicle\\index.html",
+      "size": 51960,
+      "modified": "2025-10-26T10:52:58.159Z"
+    },
+    {
+      "path": "tr\\urunlerimiz\\kategori\\vehicle\\index.txt",
+      "size": 24639,
+      "modified": "2025-10-26T10:52:58.112Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\error-681c72eee0545d4b.js",
+      "size": 726,
+      "modified": "2025-10-26T10:51:52.215Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\global-error-96e6d8aa01e61818.js",
+      "size": 920,
+      "modified": "2025-10-26T10:51:52.215Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\layout-698f04ed2a4aebaf.js",
+      "size": 5333,
+      "modified": "2025-10-26T10:51:52.215Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\not-found-d3b2e6f8cfb4211e.js",
+      "size": 179,
+      "modified": "2025-10-26T10:51:52.217Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\page-14974dd94c361b00.js",
+      "size": 179,
+      "modified": "2025-10-26T10:51:52.218Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\pages\\_app-df827a85e2ec52a9.js",
+      "size": 282,
+      "modified": "2025-10-26T10:51:52.209Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\pages\\_error-93c23f5eac92fbc2.js",
+      "size": 250,
+      "modified": "2025-10-26T10:51:52.215Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\error-0bc6ae168d7c28de.js",
+      "size": 722,
+      "modified": "2025-10-26T10:51:52.218Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\layout-130b0c852563ea4a.js",
+      "size": 21959,
+      "modified": "2025-10-26T10:51:52.218Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\not-found-2928e6908f5ab33b.js",
+      "size": 179,
+      "modified": "2025-10-26T10:51:52.219Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\page-c47439deb3fdd37d.js",
+      "size": 29433,
+      "modified": "2025-10-26T10:51:52.241Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\_not-found\\page-0eb88940f349e175.js",
+      "size": 179,
+      "modified": "2025-10-26T10:51:52.223Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\fiyat-teklifi\\page-3019046e80759c08.js",
+      "size": 18971,
+      "modified": "2025-10-26T10:51:52.232Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\iletisim\\page-3f2c838c0800483e.js",
+      "size": 25034,
+      "modified": "2025-10-26T10:51:52.243Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\page-0169600cc7fc2594.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.219Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\kurumsal\\page-3c4bce9d59682477.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.283Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\page-668ca995d26b4527.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.250Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\endustriyel-kurulum\\page-de11a08865cb7b9d.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.232Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\ges-kurulumu\\page-ca0d7c84e3327295.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.234Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-h21600\\page-2aa75aeda24059c1.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.261Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-cabinet-21600\\page-fa9a3479b6b3881d.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.291Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-m21600\\page-e33eeb5bbefbaf19.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.266Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-p2700\\page-85c2df176048a5c7.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.249Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-p5400\\page-adcc92b1cc5872e4.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.247Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-s10500\\page-69700cb55c916cd2.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.268Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb2700b\\page-d9679665ac18ac29.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.266Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb2700d\\page-5e2618c33d0acb6d.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.275Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400b\\page-20eac09ea8b49053.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.268Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-u200000\\page-6ceb8cec22206b4f.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.283Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400h\\page-9440f95ad59eda0d.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.274Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\rev-2\\page-ae4239ea6ae6d51f.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.291Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\rev-1\\page-360c64f0b7cacdd6.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.272Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\cabin\\page-9e13d940fc68c7c1.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.260Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\portable\\page-560203b9fd9a562f.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.259Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\solar\\page-8df5ff67810df398.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.260Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\vehicle\\page-de3e0d9b38d47f43.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.260Z"
+    },
+    {
+      "path": "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400c\\page-75ee53c096d799ae.js",
+      "size": 375,
+      "modified": "2025-10-26T10:51:52.291Z"
+    }
+  ],
+  "checksums": {
+    "404.html": "dbaf3223b75a9c44bcfa8700416f608ddc0f3bab4e5ac633ebb4d6be4d14c22f",
+    "favicon.png": "d46e8728d69e5dc3f530de9a79791b95b5279fd0c0d4b61efce104be14ed3f8a",
+    "index.html": "fcc2129631364c07e487f92e670865dcad360504079131a62c08bc244f688459",
+    "index.txt": "13dbd3d0d950b61b326167fc1b88ea754df8a52a0f5c49d101f2543f7ee91e7a",
+    "404\\index.html": "dbaf3223b75a9c44bcfa8700416f608ddc0f3bab4e5ac633ebb4d6be4d14c22f",
+    "en\\index.html": "b7fc23e2919a3c4cf265abf79ca1375880627e15752ac8b02ba46cc46b308c76",
+    "en\\index.txt": "1ba3efb3fbfe893b0503c7cceb5414442f2c1b6fdcd499dfe185e6ce7f1b9c77",
+    "images\\logo.original.png": "4851cc2f1af2d7e88485410e7d03a0e7278029af8be321aec4e4b2fada18eb6a",
+    "images\\logo.png": "764a2af02c863f0f50cd15c4250eac1bd1b2dbcaffabd911815594f57f502022",
+    "images\\logo.webp": "e3675b449f41305ca81ae0c4ea070f6b02bba7389955c798be3a2efe6e6d5f90",
+    "tr\\index.html": "09bc2f22bd9c5d6856cf08347cba3308df6ca4c9f7ea6831bf352cd5294b22eb",
+    "tr\\index.txt": "25cf84e7f91a9c5c8d21b125579153bfe25966d6a9d400d04ee1c8083acb31db",
+    "videos\\hero.mp4": "50f5dd0c2894693c98bca520bf4c1b3a5c3c7ef1ed49dae91b5e60f0e063e4be",
+    "en\\fiyat-teklifi\\index.html": "592caac50af90c129c336269dfdc0566a8712d2fab78678e38a555a7a59ad217",
+    "en\\fiyat-teklifi\\index.txt": "d7077bd78859628ba52ed38661b9ff56984c715286a24f48fd4cba813f47f052",
+    "en\\hizmetlerimiz\\index.html": "0e8d5459f3a3a25a2cb6b5a37c5e20b4a7d397e326181f472c70f82241137bfb",
+    "en\\hizmetlerimiz\\index.txt": "289548f66139dfc0c457c476edb6d2bd47f1c3718843df1fee1f5ab4e3e9205a",
+    "en\\iletisim\\index.html": "533fe7917e6099b3564f82023683bdb1f7d9ba3b2faffe244b9cf2b7a77583f2",
+    "en\\iletisim\\index.txt": "4529c5a110a232484497bc8ee4bdb9f355723d33c6e6cb8622ef6a7ee99046ec",
+    "en\\kurumsal\\index.html": "e664e862bff9ac538f1ddcab0a176fc1b77f9c95378b2c1f14a168ab87dbd590",
+    "en\\kurumsal\\index.txt": "dbcd470409745e8e5aab62fe248c3e47e008d0e9745fd3f71285d0b436238ae0",
+    "images\\contact\\contact-hero-new.original.png": "f7bc9995b54bb5058a7ff57134c97d7e6becf4625d98a5f666ef266be1067ec4",
+    "images\\contact\\contact-hero-new.png": "7a161a73a2fde0cb0421ec872d310b0c6924b0021a6e7af814d135511690162a",
+    "images\\contact\\contact-hero-new.webp": "a75ba27279dee96915755e2503fee197667181f12c51b410d240446b87feb945",
+    "images\\contact\\contact-hero.original.png": "c20003e551e2af38ccf4e81e4be95d34e21aca112fa22a63c2722bc77b58326d",
+    "images\\contact\\contact-hero.png": "f110de4071b2aaed673ab85c70e1f428a1383e1d5d3339915ead716a8b57505f",
+    "images\\contact\\contact-hero.webp": "9e22ba1855cf0dbda2820d96f7183c4661978a656e23753682cfd2d323f8df9b",
+    "images\\contact\\contact-visual.original.png": "eebd0cca943311f6ccf1f49a7113a32bc327676c00d58113475d28f373fbffbe",
+    "images\\contact\\contact-visual.png": "f475b49e15150109caafef5528f0b03fb2e66954e81c3b1414d4899880eaae26",
+    "images\\contact\\contact-visual.webp": "935a6c23e354b78ffc62f987716c017ef2610d8c4cf352b1e0bc09770e5dca9d",
+    "en\\urunlerimiz\\index.html": "4093df72140718dfb406659181c71f4388c056395bcfc67eff2d9761c68c150a",
+    "en\\urunlerimiz\\index.txt": "d4712e601be3d5a287ef86da3ac2d038c0f8d2656a7097212e0d1c05e24129e7",
+    "images\\features\\durable.jpg": "db079eee1b896177479aca1da0d8cf215de10b298ae6f2cd5df6722eafd46d6e",
+    "images\\features\\durable.original.jpg": "3c0e3193f79b2581cee3c44895b04c3e90732c4f733f3ffb277ca763b8e5e638",
+    "images\\features\\durable.webp": "5911b6ae352e95d84c563db1fbd06c6cdcc5a0d79172302e3d11bed6529b4bee",
+    "images\\features\\modular.jpg": "2a431dac53e2b4c02b21d5ccbda218eba51dd59018703029266d008beb8618ca",
+    "images\\features\\modular.original.jpg": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a",
+    "images\\features\\modular.webp": "1387db629a90bd84827e287156c7e432074934e3bfc8a113313861dd934eee30",
+    "images\\features\\reliable.jpg": "ee684cbe1f98170d4fee55c59b292ff05d42fb63b67d924cdbe45c8f4f807270",
+    "images\\features\\reliable.original.jpg": "1f3fa21e5ce63af2465dd10c1856195b334a0fb25d3b4df82461c73493d76dea",
+    "images\\features\\reliable.webp": "4871fcce161c8a0057b8041af37815e2b44c02bff1bd7580509bf5b5217524a8",
+    "images\\features\\sustainable.jpg": "5350f0c4bfe979aed610b0c05f6f9462fecdc46653cabb5f3f1bf49c5cb7a3f8",
+    "images\\features\\sustainable.original.jpg": "846e6521cc0f8bfb1f840b5a4b04370b6f61420da741bcdd54f6de96cb082a60",
+    "images\\features\\sustainable.webp": "a6152684eada8bf83336022f49733659e0834749195481c6c1a2cfd7f08ae7bc",
+    "images\\hero\\1.original.png": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a",
+    "images\\hero\\1.png": "d8c695abf8ee9528d3417475d32161f8c857fe412c44df5732e25ef8a542a690",
+    "images\\hero\\1.webp": "dbff4f10cafc49f46c5b1a1109bfdc9863300abb49f29b9adb10c6919a93732d",
+    "images\\hero\\100.original.png": "7ccc9a81f6322b6b22fc5c6924b9574e61fe281841b65cd1c098159f8f3bd0d7",
+    "images\\hero\\100.png": "24ec05dfb601d8c2ffe79e402fb029c47b2f679ccb3e02391da05db10b096407",
+    "images\\hero\\100.webp": "560c75e880c21f012b5240dfe581a32eb8f9746861347c50a3355916ab164a13",
+    "images\\hero\\2.original.png": "3c0e3193f79b2581cee3c44895b04c3e90732c4f733f3ffb277ca763b8e5e638",
+    "images\\hero\\2.png": "39b33874c163783d34082af25306f5432a70cfa7f44f8439d3502568906c47d6",
+    "images\\hero\\2.webp": "11ccb82f9549d66a9fb562b72bf2432f18e4dbcb8eee39898133ad8749a4ffca",
+    "images\\hero\\3.original.png": "1f3fa21e5ce63af2465dd10c1856195b334a0fb25d3b4df82461c73493d76dea",
+    "images\\hero\\3.png": "cfb7d68245414f0ee29fb08d6001e8f32e5060bfdec9d4b08e6246b47090b6d4",
+    "images\\hero\\3.webp": "d21180fe906f46568a957d89f556ffbc756a564287555debcd8d97a371cb4100",
+    "images\\hero\\4.original.png": "846e6521cc0f8bfb1f840b5a4b04370b6f61420da741bcdd54f6de96cb082a60",
+    "images\\hero\\4.png": "8b3d950636d6030f9a685307faed74a57a917dddfd69920404c6128f7308452a",
+    "images\\hero\\4.webp": "82c92716421ef47657de110874a04e675627d2b500e339e5ac49c8a13f9392b9",
+    "images\\hero\\5.original.png": "b02b915b12a5822703d40f227bb6e81548a33cce47194c4e396eaa6dd5b5a1c0",
+    "images\\hero\\5.png": "9ec99cb867c7446697ab36c15584e905d47c3b6f1373eb83fdd9b6b6d4b24b49",
+    "images\\hero\\5.webp": "42cb80df599487ff6951ee1d5d49cc5edd8cfe3c460a283f1575cc1a8178ff07",
+    "images\\hero\\6.jpeg": "9cf8cd8347cd6148bd218fd94eeeb1dd5f5a9ea50f8211a39dafbbe3f4b2c73a",
+    "images\\references\\logo1.png": "17463ef113a99e0f726d0e2279c142861fd973dda3288652e2df1d399d8afcdd",
+    "images\\references\\logo2.original.png": "0d6ba28816c52a3e967a945aa277a6ea3175a4a86df2048f990ef67887c29d08",
+    "images\\references\\logo2.png": "792dc46ff9c901319e17c88676cc5ed66a99777f707c14b59ede412bda5815e2",
+    "images\\references\\logo2.webp": "0fa4e8062cb51ce155fc74d74322ec140c51b84ab783a62bbe0bfeeadf2beec7",
+    "images\\references\\logo3.original.png": "fde6d1c9032d945215444f311079153b8bba9562f390692738a693a33174d1a6",
+    "images\\references\\logo3.png": "b48109e0d5adc3b4be6096218e61f8c5cca152cb7b10c7f4ac25e15ecdfb1af7",
+    "images\\references\\logo3.webp": "7e4e4ead4a49203074ec9834625cf748dd0469005ee73143970a638cbeec2e81",
+    "images\\references\\logo4.original.png": "3180e28dacf4bf6d9ecb7d08c821f77baf9e2ce450fbc82a397561339ab8a3f7",
+    "images\\references\\logo4.png": "ffb7d2650e08ee2f33e7b40bf7bd2f35a98345af3475ef1736a5d9cf0b11ea55",
+    "images\\references\\logo4.webp": "4e50c70f7a04fcb435d52851ad167ddebc7ecbe1b379c3eb0d5da9f17d08635b",
+    "images\\references\\logo5.original.png": "ebbe10fdcb54fcdb353640221a444c9c5acc8589bbe6d79d2226c2e013be29de",
+    "images\\references\\logo5.png": "bd1888c2ca3ddd78b7c52d57a7865ed2c5ab4d9de67df77fb88cb046dbd00f8e",
+    "images\\references\\logo5.webp": "d4c43c51ac249dd85c6187cb947b4dc59e16c60c594e826fa6c7acf4f26a2a43",
+    "images\\references\\README.md": "b3e9fd2569ded233b101567ec542a075c7441b354d5e8979cca098c8d58f69dc",
+    "images\\products\\10-5kwh-1.original.png": "2268455cc053d0bdbaba827724921258a504c591298211d04012863c6b02a747",
+    "images\\products\\10-5kwh-1.png": "7dfa6ab4a1e4985d490c96f57cb97fa450c25f8dd79553704a74a3102a67d7e7",
+    "images\\products\\10-5kwh-1.webp": "802cab7ebfa80a8c4cdd6b4448b64c6fe4772bb89ea3164ac089ec3a7e09882e",
+    "images\\products\\2-7kwh-a-1.original.png": "c2df0188a43a39c067f65d41617fb28c40d8df331be16e0c26ed0309dc36749f",
+    "images\\products\\2-7kwh-a-1.png": "050ae31cd4776983aa79e9b1c53ebecb01acc7df9d7f259ff6dc0176bf78f7e6",
+    "images\\products\\2-7kwh-a-1.webp": "86fc2b994b9e5431ef8ff073bc24562c254a7b6c434937f33637d1e20fc34e13",
+    "images\\products\\2-7kwh-b-1.original.png": "cd8540433e23e41be6556bfb82ce01edc137773581f55127f15c7df123fd76a0",
+    "images\\products\\2-7kwh-b-1.png": "7373b52e697e2e8a030354f67fab5ebc76c23229c55952b4f7b3b9d589816d92",
+    "images\\products\\2-7kwh-b-1.webp": "b0bb0b24d2757557d8030f61ae6ec8840deedcc9c8bd134737e064cf7e2a1979",
+    "images\\products\\5-4kwh-2000w-1.original.png": "02d65ddb162c807cdaf17a2e45f3d63208da63be0dc40dc3873e6b0a877abcc4",
+    "images\\products\\5-4kwh-2000w-1.png": "669e18444f215df042b2b4c8dd6a7a5bf06450c98b116e89709f00288e58f372",
+    "images\\products\\5-4kwh-2000w-1.webp": "0871c81d9341e1b8c63e4dcfb7c4a039561251c20f83431a96a7763349275b2c",
+    "images\\products\\5-4kwh-3000w-1.original.png": "b073fa4f32587b7287d7c6168c7ac44b6f354ccf5c5d440dbf68973856d4640a",
+    "images\\products\\5-4kwh-3000w-1.png": "b09e76c615c28ffd404edf99343046bc075a2223e7b288db26ea5c952cf06236",
+    "images\\products\\5-4kwh-3000w-1.webp": "cb142486cb38d741557c449f80ef6ec8e9e5c0e56470d69b0f8760f671cd6678",
+    "images\\products\\5-4kwh-4000w-1.original.png": "a152a07e1d46b22aa03cb17addab42abce3097952a2811b287c64372772a7476",
+    "images\\products\\5-4kwh-4000w-1.png": "1f25219d808b75ba1013718c9db1d45b10350d4b435862991f2a2d9116c66044",
+    "images\\products\\5-4kwh-4000w-1.webp": "accadfb649751d0d5b14dc1286dfdafe74f1b45775970dceca8f71763b4938df",
+    "images\\products\\cabin-power.original.png": "87c56eb61577f3418533966f787bd064c532072e3d2942b1dc58ed8dcf61491c",
+    "images\\products\\cabin-power.png": "db5b6d0b14f306715fa349dbb2320134c8bb9b0cae2f7bb9094bc3e6ff858c5e",
+    "images\\products\\cabin-power.webp": "d6634981219fe8e42858e64daf27f437833ccbaf65a59a516eac41a183b1f832",
+    "images\\products\\hilux-21-6kwh-1.original.png": "5db66cd5b023c41cc0b3473653775a74e86a9a8e17b446dbd1e334341d49cb4d",
+    "images\\products\\hilux-21-6kwh-1.png": "4eff82e8d93367dfea81b6fa6a5d454ea990a83138c4a29ec5d0865b2856cae0",
+    "images\\products\\hilux-21-6kwh-1.webp": "582cbb8ca1641129560f6904e60491c4d5acf63611ad7902b1c9691ce95fee94",
+    "images\\products\\newsu.original.png": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a",
+    "images\\products\\newsu.png": "d8c695abf8ee9528d3417475d32161f8c857fe412c44df5732e25ef8a542a690",
+    "images\\products\\newsu.webp": "dbff4f10cafc49f46c5b1a1109bfdc9863300abb49f29b9adb10c6919a93732d",
+    "images\\products\\poertable-power3.original.png": "c2df0188a43a39c067f65d41617fb28c40d8df331be16e0c26ed0309dc36749f",
+    "images\\products\\poertable-power3.png": "050ae31cd4776983aa79e9b1c53ebecb01acc7df9d7f259ff6dc0176bf78f7e6",
+    "images\\products\\poertable-power3.webp": "86fc2b994b9e5431ef8ff073bc24562c254a7b6c434937f33637d1e20fc34e13",
+    "images\\products\\portable-power.original.png": "dc2671d2f85e9583626123772ea797e8a631165d2236b62313e6e3a6e1745fd1",
+    "images\\products\\portable-power.png": "428db0e1d5a508604f70ca6c4e3b2df88346e8ad7e9bb8e03499f9602dcfeb5b",
+    "images\\products\\portable-power.webp": "149fb636d83ac42d5232e48285dac1a5128071423f8abdd9a6c4e328e5bf2419",
+    "images\\products\\portable-power2.jpeg": "9cf8cd8347cd6148bd218fd94eeeb1dd5f5a9ea50f8211a39dafbbe3f4b2c73a",
+    "images\\products\\portable-power2.jpg": "7a9c9c6137519929f4c8b19c4b98a7da3e7fb7b8dcd0d6e284fa4cff733a1fb2",
+    "images\\products\\portable-power2.original.jpg": "1af724e22dec4d31445c167efe6c3c684aae5a4ad026bb98432f95eee23e1bed",
+    "images\\products\\portable-power2.webp": "54efa90585537d501f2261c6b6d168db1142991e566177ef5716c218ad1c0391",
+    "images\\products\\solar-panels.original.png": "36ebd70a19f3c0f2a4f9df7e61684f164e6035e21652019f90606690f34b4327",
+    "images\\products\\solar-panels.png": "906ce59978c991aeb2b2f58c8dd45deb9328556cd63147fb7a1cb98fa6a107fa",
+    "images\\products\\solar-panels.webp": "ab9ff6aa3ecd14676536fa2baa4a6fe3cbe2f8ce244b015159f2e1ae05d4c5e2",
+    "images\\products\\solar-panels1.jpg": "01826c7a936c98ed4b28fb61594999fdf7b9cabaf08e9088905e6a548f13c270",
+    "images\\products\\solar-panels1.original.jpg": "09234808df8c37fb644c9c6a12b6d4cb98f72349a0e0e63f54ecf7236820eff0",
+    "images\\products\\solar-panels1.webp": "3a75ec5c8b83651f8c508c6fb0eaa806fa3fad16b07c93dcabbf91b1b72ec84e",
+    "images\\products\\stack-21-6kwh-1.original.png": "c117a5390a2eac891a8b2de8dbce4bd26e2adc168b43cbdf830b9c9d7f6b22f9",
+    "images\\products\\stack-21-6kwh-1.png": "969023bfbd2b2eb8fcafb5d70222f6f10bb05c3a5144e8c128bab96444d64bf6",
+    "images\\products\\stack-21-6kwh-1.webp": "ecee369c533aa185f939b09b6938b8b27b4ea93593d631eec4cffa72d2a3c72c",
+    "images\\products\\unimog-200kwh-1.jpg": "792783cee3821b917a2be8c73364e6e7df68e2f840da9e4cc35faa04567b3f10",
+    "images\\products\\unimog-200kwh-1.original.jpg": "54d1cf24d631aec7db92c13002216f858e8e59c7ffb20e396f72792a7aed3a64",
+    "images\\products\\unimog-200kwh-1.webp": "e1db599dbb74023327b648764ae45aeea943807efaa7eba7e84cefd91d89da79",
+    "images\\products\\vehicle-power2.jpg": "792783cee3821b917a2be8c73364e6e7df68e2f840da9e4cc35faa04567b3f10",
+    "images\\products\\vehicle-power2.original.jpg": "54d1cf24d631aec7db92c13002216f858e8e59c7ffb20e396f72792a7aed3a64",
+    "images\\products\\vehicle-power2.webp": "e1db599dbb74023327b648764ae45aeea943807efaa7eba7e84cefd91d89da79",
+    "images\\services\\ges-hero.original.png": "335c236d5ce1b3b41971a246c089126ecb2e28c4d06d7841580ee4e7a09ccd06",
+    "images\\services\\ges-hero.png": "906ce59978c991aeb2b2f58c8dd45deb9328556cd63147fb7a1cb98fa6a107fa",
+    "images\\services\\ges-hero.webp": "ab9ff6aa3ecd14676536fa2baa4a6fe3cbe2f8ce244b015159f2e1ae05d4c5e2",
+    "images\\services\\ges-visual.original.png": "0e2ea688efa4b7d7c2645d974adca65983555cd66591384d5afd4dc9bde4dad8",
+    "images\\services\\ges-visual.png": "6c285801d9118529e973a3a400b76314c7c511ba6c1f1669db025722cd90b9c9",
+    "images\\services\\ges-visual.webp": "4c12fac3c26d92f00863f5a70d9cd03817b8b765e1976fb79f29c1e067283539",
+    "images\\services\\ges-visuall.original.png": "61a777236b359e35e2a35cc711bf2ed7498a9d56c4edc6ca339262032627e22c",
+    "images\\services\\ges-visuall.png": "222f1a262f8764f23e2dc4970568a00041cfd766d754fd5cd3d0caf97d513b40",
+    "images\\services\\ges-visuall.webp": "8e4f554f734211feae2912b36db997de2224e78b68e71983f440efd63b8853bd",
+    "images\\services\\industrial-hero.original.png": "07a2a6260c9f2d8e4e5fb0c7b6e3e1f68433b4d27bb3d7e97e0b15414c224a6e",
+    "images\\services\\industrial-hero.png": "c17fd9a381b76eb555ca8f41eb04d92ed46e341ac1bbc6813d32da3967b46b56",
+    "images\\services\\industrial-hero.webp": "959104a167d002672965290adc13dc4610cfa46601d524cc206c3519f76880d2",
+    "images\\services\\industrial-project-1.original.png": "a22825ddea70bddb94b150dc812642dcd6c4a32ae17612c3de8b9468d18a949a",
+    "images\\services\\industrial-project-1.png": "702cb5e0c48da9e29048ae97df90b0941bbdb955556679df5642297fba7ace30",
+    "images\\services\\industrial-project-1.webp": "9c77a1116343fff07f9d158d5408bbfaa3a36d60a2fecaa1898f180a52a29a08",
+    "images\\services\\industrial-project-2.original.png": "e9ac0e74446f12d49dd5f935b9358c805622f7867a576d3628c68428709330fd",
+    "images\\services\\industrial-project-2.png": "06f1787305baaf27af05cf3ed1bc561234141dc6e7ab17f827f47a7eeb1cd219",
+    "images\\services\\industrial-project-2.webp": "5365e60b0628e75ad11eef04a71d20096c0aeed2bd0968c31f3f80adc9111b93",
+    "images\\services\\industrial-visual.original.png": "ee26a5414955a7c3d7ea99c74cc88c7511b8fd482d75f5dcfc9eac7ee51e2f0f",
+    "images\\services\\industrial-visual.png": "524433500698ac3c06e4a6bee09c50afc252199c45da2b6812ca09836ff65344",
+    "images\\services\\industrial-visual.webp": "e824a626c47a0d0d4afe559b69d081fdef5c2509d7fa6a419fe9c8783779242e",
+    "images\\services\\power-installation.original.png": "0c6eb21958b1a8d9624c0b081ed3f30e7c5410197afd8137d10a5c7d7ea548e6",
+    "images\\services\\power-installation.png": "7ba888198d5d85661fb40d8f7f2c27280826a0ab35ee3ebaa47b6108b03e86ef",
+    "images\\services\\power-installation.webp": "624ee24833dab2495b28d90529bd58cfa03a85b975c640f0343dd5dac8fed473",
+    "images\\services\\power-installation0.jpg": "ff0f2ce87955983e1df81a78c6be7ad0e81b327710c23b4da662498f9456e472",
+    "images\\services\\power-installation0.original.jpg": "4fb1366c79a76dd1f44b1888e30a5b9da346ca871baa8ccc693c58beb85fa919",
+    "images\\services\\power-installation0.webp": "c3cbcb93f2a49c9fc220c1ca6a59386a7dce5600fe3e26d8f3d4fdb670760515",
+    "images\\services\\solar-installation.original.png": "3947c0106a3de3741027c7a77e005a62a36605b115e65a69b6ae4228b1fc7a7c",
+    "images\\services\\solar-installation.png": "5dbaffb416cb82c4d424a7f828b75f4c99531b5714064086f43f236aa63153e0",
+    "images\\services\\solar-installation.webp": "6d31c1ef99121c8684049f60f14f9f8e982a4b2635f83bb2f7eca9742490442d",
+    "images\\services\\solar-installation0.jpg": "5975308b2677d68d8cbeb1bf89a199fc611de27fee94c966658eb45e4e1ac281",
+    "images\\services\\solar-installation0.original.jpg": "153abd0d58ee48a089f929a92ae0bd8941588db7c117d4cd8d9514ebd8cd6ada",
+    "images\\services\\solar-installation0.webp": "5e977673bd13203c4377ea114129c0a43e6a4a12b20d8da3beff19692f21135b",
+    "tr\\fiyat-teklifi\\index.html": "c89cf96865593cb5373fea731804d3ea02c94e1be2d883c432388c0defdc6ff0",
+    "tr\\fiyat-teklifi\\index.txt": "c58e2e38a13b53b7144604355c7b16a88d606ecc09e7bd71ae5b56b002e7a522",
+    "tr\\hizmetlerimiz\\index.html": "e7ac04814ed80da4193108e69effd879aefa521fd6e9e51da988ed514a8c90cc",
+    "tr\\hizmetlerimiz\\index.txt": "35274898730ca1bebcc171e46c23c6aa14a154f24e6e6af713ffba30dff5e55c",
+    "tr\\iletisim\\index.html": "93362df80e97700e17203709d3584195e8ab346620a3620b3a51c8378397f01e",
+    "tr\\iletisim\\index.txt": "9789be878c85df4ac044a84544e92db3e952f038d6f21414e5b1ada371acbeb0",
+    "tr\\kurumsal\\index.html": "1c9e046fcbaeeb6625ec31e0d41b3c2c51d50ee3cd9a8ba8e1282bd02de1d94a",
+    "tr\\kurumsal\\index.txt": "cbdd865bcfafa96e06ed057a88a09478138288366422f6d6b01c6595dfbdb4bb",
+    "tr\\urunlerimiz\\index.html": "c8bf46264c347e39337c71f4a804991805410f26e49931bd4b729498e3813a8f",
+    "tr\\urunlerimiz\\index.txt": "9e57147d73371baed5bee6b0b7f73b55a35f30a5fc22742f9f911356e1f126da",
+    "en\\hizmetlerimiz\\ges-kurulumu\\index.html": "391402996ec78ae74f68a40da6d50fc221b2640a2ba9322895591439d007ac8d",
+    "en\\hizmetlerimiz\\ges-kurulumu\\index.txt": "0646ad4d929434b49afc0be28f32d779dd96a7004997c23a627ea01db7aa194f",
+    "en\\hizmetlerimiz\\endustriyel-kurulum\\index.html": "f8a6647ffae12700557d6c231270f02e751f4359ce9955379db100b6ded9db4d",
+    "en\\hizmetlerimiz\\endustriyel-kurulum\\index.txt": "9be054ae0c964865f04632acdbe8aba38c78da0db8f29fa63a0f9909c0873451",
+    "en\\urunlerimiz\\r-cabinet-21600\\index.html": "83ed5f001c1b0da45eac5b64bed084be2b14cff400b5b7ebb28cc69406858f39",
+    "en\\urunlerimiz\\r-cabinet-21600\\index.txt": "707da17c48b134806d9e81a113988f3ad153342fd300b5685ae882645515b3df",
+    "en\\urunlerimiz\\r-h21600\\index.html": "bea7d83bc9a0f5f872be80a43acc00b01e9e6ff6eb68cf147f22a6632ca19663",
+    "en\\urunlerimiz\\r-h21600\\index.txt": "2047cb031b1c2089a63acb2364206c31c2f9105f2a5c9310e708b62894c4e745",
+    "en\\urunlerimiz\\r-m21600\\index.html": "907f870a77e4d07929defbb929a11cca353ef8536d1a63e1543b8e28569712ef",
+    "en\\urunlerimiz\\r-m21600\\index.txt": "0a7b8e54e6ec5a3ddb667e7333a89e30b5bab51e1f3e74594de85bf6b9c04e8e",
+    "en\\urunlerimiz\\r-p2700\\index.html": "7afa5f47acd6ac0e752844418f520b76ef2650cdac69771f8dce58f6a4757fdb",
+    "en\\urunlerimiz\\r-p2700\\index.txt": "674e7d26cb45580aaa1994dc7672f9f7899ee37855c4e476a3a26464616727b4",
+    "en\\urunlerimiz\\r-p5400\\index.html": "92b63838e49f835ce698aced7faa239cb77b6803ab26f6d62dca2d76c536d2f0",
+    "en\\urunlerimiz\\r-p5400\\index.txt": "cde326100398bdbd371dd233a214da1f399b6e0769e95ab0580e623ea7aa8813",
+    "en\\urunlerimiz\\r-s10500\\index.html": "77c3c34f2cbcb7416348d5e4a851e4aec490af94ac1ccbb48f79e2bb706741bb",
+    "en\\urunlerimiz\\r-s10500\\index.txt": "8e29afa92b7327418549803d77c09b9ebcaedfd6cd5e90ad96dbaf204bc733b8",
+    "en\\urunlerimiz\\r-sb2700b\\index.html": "403c7ec30a128cfc1c6499e33bb000d1fa4623fed48db3d8740f257a07b7c67f",
+    "en\\urunlerimiz\\r-sb2700b\\index.txt": "3c8ff90e6af0ded69b47d2aeb4fb9144ec7682fd44b6dfa6be72c1bde3e8dabb",
+    "en\\urunlerimiz\\r-sb2700d\\index.html": "6f495ac7671f0ce6ea75de72de6122c5b68c6d01b70dcddd15b0f17e277f5220",
+    "en\\urunlerimiz\\r-sb2700d\\index.txt": "920c787ce206e2cab9fa4e5fad6aed1c2eb2f2027e6ea69725f6e1a0d2c62277",
+    "en\\urunlerimiz\\r-sb5400b\\index.html": "846da44643d999befa7e82fd5c04a09d707f043a78c61d665e76c1ca7a58446d",
+    "en\\urunlerimiz\\r-sb5400b\\index.txt": "6fb37f5ffa40a6c165aab0bf84cda2bba2c08cd94c0dde048580110ab6edfcdd",
+    "en\\urunlerimiz\\r-sb5400c\\index.html": "a3b80dfc5140733a22bd2727b1b12ce59a92a30317ec7c4982931b902c1a839e",
+    "en\\urunlerimiz\\r-sb5400c\\index.txt": "5b9574aee7260f73cc6a83129125d51dc38eeb8e5df9837cc91d2f23e74ed5e6",
+    "en\\urunlerimiz\\r-sb5400h\\index.html": "d4b4e41c236458a8cca4fb328b27814ea1cbd0e6cd55a0c5c9d481b06023e5dc",
+    "en\\urunlerimiz\\r-sb5400h\\index.txt": "28072b7c456da4c9256341a525b5d77a2bf1f7883c349743a4e31fe2aef8f167",
+    "en\\urunlerimiz\\r-u200000\\index.html": "3e54f734e507cd4bbffc5e3d30ba0a5b441253d2d4eb5004a1b48b3f27e46312",
+    "en\\urunlerimiz\\r-u200000\\index.txt": "b1c7d73c8deab7fece752ceca98e544f50c2043818775e3fc4169d9c28ca60b5",
+    "en\\urunlerimiz\\rev-1\\index.html": "c8fe89801bf5f245f851f43ecad8aad2882af34469a09288b942836ee072af59",
+    "en\\urunlerimiz\\rev-1\\index.txt": "cb949f6e7dc8efc730f620719742cbc4edbe42fc91a0f37a383fb7bd1df8d8f1",
+    "en\\urunlerimiz\\rev-2\\index.html": "37359cd26dc49792603887da187554c25a97c5d163ae1607f281d4ffbefc2a39",
+    "en\\urunlerimiz\\rev-2\\index.txt": "f12b12b7c9db99e29c3b6be0f12a37c14762dc7a75d49ee20b321ac0ffa8b879",
+    "tr\\hizmetlerimiz\\endustriyel-kurulum\\index.html": "329d69f77f1a0a072f6e54a12892cf651c87d0ff9c710f3d3279f090eab7c3a3",
+    "tr\\hizmetlerimiz\\endustriyel-kurulum\\index.txt": "d9b446503864354713f25915dba474ba2bdc76c963c581f05c8cef7c1f03b560",
+    "tr\\hizmetlerimiz\\ges-kurulumu\\index.html": "69a9da40c0227f078351b8a262c5cb15ffde946f68814312278cd08d7c3f99d1",
+    "tr\\hizmetlerimiz\\ges-kurulumu\\index.txt": "3721df705e2169ab08bd7fb68fb7004f4ae8a85a7cc34ca8046294721714bb8c",
+    "tr\\urunlerimiz\\r-cabinet-21600\\index.html": "962af077b9f8edfd8521bb3675ea43808d61df57c861ea57610b1941648887b5",
+    "tr\\urunlerimiz\\r-cabinet-21600\\index.txt": "84fdd6d811719fd8527f3130be83dc8931dd65cf694ecdafee8a569d0ca0bcb1",
+    "tr\\urunlerimiz\\r-h21600\\index.html": "e02b7df14f8cad73c30fa3d580df787f317fbec0255719fd2728b2701fdd4106",
+    "tr\\urunlerimiz\\r-h21600\\index.txt": "dd9de6cb280de14a250444e8f7556333d81bb78389442348fb68da81b5a17634",
+    "tr\\urunlerimiz\\r-m21600\\index.html": "cefca4dbe474b22c4bcdf2f36870777f3f71b94b45d78fd7da65b16f4c887010",
+    "tr\\urunlerimiz\\r-m21600\\index.txt": "40a64a8cec7e6c4696d7cb1f5f4b351445e547ace503c068a75db1465c5cc7a1",
+    "tr\\urunlerimiz\\r-p2700\\index.html": "f18869bfefa77c019f61c2050d621fdb0733baeec78ec83d3cfc819f22bf24d2",
+    "tr\\urunlerimiz\\r-p2700\\index.txt": "3a26554904caf5c4ecbf881251da3d83627808eb35df17ee5aa90da5ee14d1f8",
+    "tr\\urunlerimiz\\r-p5400\\index.html": "c9282cdd4a316b773295ea226adbdea18d7550f429ee1f61825581d6e9403d74",
+    "tr\\urunlerimiz\\r-p5400\\index.txt": "e38bb9a9889a08464f39d84118ecb572f2ec3fb102660c7d901446ebec73ecab",
+    "tr\\urunlerimiz\\r-s10500\\index.html": "142a7b61faee4b500c18e595c4c6d1972b67b111b0c9f75f6e409b22159d99d0",
+    "tr\\urunlerimiz\\r-s10500\\index.txt": "8dec2fb591621bcec48bf4453f54df7a826da82f9d56ca3f59a0df09d7e8feec",
+    "tr\\urunlerimiz\\r-sb2700b\\index.html": "2454c623025eb8ef048b4cfb343b4f4d2c4fc6618d56ca72d13b4f47d092cabd",
+    "tr\\urunlerimiz\\r-sb2700b\\index.txt": "05210c88ff28ca227ea79dc6fef1f12e3effac55f100b6e33b2679435c971624",
+    "tr\\urunlerimiz\\r-sb5400c\\index.html": "cbed4c95e2b915444bd026d36f7f0de864d15d103ac72d971adf8f48824976f7",
+    "tr\\urunlerimiz\\r-sb5400c\\index.txt": "3ab283b80c1a8fb845c47a3744db52d268de41255f8e062680bc2a136aad230b",
+    "tr\\urunlerimiz\\r-sb2700d\\index.html": "38b57fb0d7a171e5963741f8548f32dd72596fb2b2d8ea93d6307325657fdb76",
+    "tr\\urunlerimiz\\r-sb2700d\\index.txt": "89db5ac38bbe0c16c63b7bfe54d4f4c273100946aa354fdcaf7db7720fa0326e",
+    "tr\\urunlerimiz\\r-sb5400b\\index.html": "f50ee823ebc41943b5dc6ccc40a82d959674c00d06aa26ffcd025a8dcf18106a",
+    "tr\\urunlerimiz\\r-sb5400b\\index.txt": "09a41bfc65b5e09d9a7cfc42a2b877ff72161c9fad705ec5d1316ee23c6b6002",
+    "tr\\urunlerimiz\\r-sb5400h\\index.html": "4fc9bc84047394b5f51f102f453bb4833258d6207bf029f173e55fb228ff6d2b",
+    "tr\\urunlerimiz\\r-sb5400h\\index.txt": "d694e36bf50de11c3fbff7eedf56ec767db5ffa4c5bc874b36cbcc01ce38dada",
+    "tr\\urunlerimiz\\rev-1\\index.html": "972d5d8e49d855bb556343a156bccfac634f935644347d54b24028d50983aa18",
+    "tr\\urunlerimiz\\rev-1\\index.txt": "7340460a854af28af7964262c5b1e610d1f59354e7e8b0ffa5802a6149570c73",
+    "tr\\urunlerimiz\\r-u200000\\index.html": "d8379dc4dd49a7ed40b23953e9add3e6d0557a6a8e64c02e6d182e5b0c2c777a",
+    "tr\\urunlerimiz\\r-u200000\\index.txt": "4f27de15c42b4f652f4191abc531f316043974ecaf7cc213cc519e0402788d34",
+    "tr\\urunlerimiz\\rev-2\\index.html": "1be262ba70710de5dfcdbbd8562286ad15ba562f4f6c5cea92503aea7558b2cc",
+    "tr\\urunlerimiz\\rev-2\\index.txt": "aed1c45405aa8ab3f5089208e4d5bf5cfde86e852de41bace11954adbd12cb8f",
+    "_next\\static\\build-1761475837808\\_buildManifest.js": "6b87d245990a2676b91445df126505fea341886a115e4b220e9b3d819635a499",
+    "_next\\static\\build-1761475837808\\_ssgManifest.js": "6901e1c5f62560cbd8dc30b1cbf7bd2590f5ac63c750baf9472be4f137f55be9",
+    "_next\\static\\chunks\\0c811af8-31b755afc8809a9f.js": "148a870581bf52de036db98694ac5b01f57d66356e679fd6d64bd645b2533cbc",
+    "_next\\static\\chunks\\3926-0bf3483e804f2d06.js": "412c2244a7fe2c980b5f3f646a0e14ea454242f4b1859288dcd41ab27e8c9bc8",
+    "_next\\static\\chunks\\4993.98dd9ccdd4a33821.js": "8059f8b037bba20a4a94f08f7083cbaec5a6c6925a224cdb98a84fa61f454505",
+    "_next\\static\\chunks\\5291-d8614d2112bc4ffb.js": "f4f12dffadd7c9e49ef377a648a02d519f9e418567c8e100cf8d92a19f99848e",
+    "_next\\static\\chunks\\590.e58169292ef40d10.js": "d9dc659def41838466dd791d7912a08792061eea03e916a12311db6e258b2fc0",
+    "_next\\static\\chunks\\7164-c9998aee9db2bd13.js": "791092b6b487016d75a2e2683a6c64b81b5f387b0b2782fdfc89b248ab2243eb",
+    "_next\\static\\chunks\\8215-2dbd967f7a2e74f0.js": "1eee2736516d8b780ec2b623d01f6f70b30f60af7b7899e78a0c3448f2ec9c4e",
+    "_next\\static\\chunks\\824-08485d909fdf844e.js": "cb5525d76bb557838452ac3466786564cd7cc5a8b66f81ff149188e80d98ff66",
+    "_next\\static\\chunks\\framework-8f0792a07c308ff1.js": "e5a52462ac864e94f01388a5bf924c4dc1c8ae69d70ca0bedb38a5dc3eb90ad2",
+    "_next\\static\\chunks\\main-app-d19f1b0608dbd5c5.js": "ff8f20a064acdedfc4a2d9c6826fa8577ee423b61c1f33d6f926732db6956df0",
+    "_next\\static\\chunks\\main-f6fdb9ecd8e9ff63.js": "310f3bc0cd3c05eb328ec0a700ab5ed4ce5c434cd56feefd7871517725c53fcd",
+    "_next\\static\\chunks\\polyfills-42372ed130431b0a.js": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+    "_next\\static\\chunks\\webpack-2bc5bd2899a0d49b.js": "9598753e2b40ab9ede63a578447f5261039bf50600975c33b234a5121e90e769",
+    "en\\urunlerimiz\\kategori\\cabin\\index.html": "e293e490267c770ef0f489c0a1530053b25a08c5d24f08195f9ad83211907e04",
+    "en\\urunlerimiz\\kategori\\cabin\\index.txt": "a5212c29544a323311e214c86d8b240cd919c3ec5d67eec143804eb1fba3f17b",
+    "_next\\static\\media\\19cfc7226ec3afaa-s.woff2": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf",
+    "_next\\static\\media\\21350d82a1f187e9-s.woff2": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6",
+    "_next\\static\\media\\438aa629764e75f3-s.woff2": "e8c0b39992f06b3dc9a9834494088014859f363bf6ca8792b6bb07e17c7965f3",
+    "_next\\static\\media\\4c9affa5bc8f420e-s.p.woff2": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f",
+    "_next\\static\\media\\51251f8b9793cdb3-s.woff2": "40af11327fe5308166c6cb5787808b042db6da889abf602f0a4876c49675d87e",
+    "_next\\static\\media\\875ae681bfde4580-s.woff2": "95a493061fe0a8d0d027c2892747134ba747141112d3be4d5022e70ab7d3a1a6",
+    "_next\\static\\media\\8e9860b6e62d6359-s.p.woff2": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2",
+    "_next\\static\\media\\ba9851c3c22cd980-s.woff2": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5",
+    "_next\\static\\media\\c5fe6dc8356a8c31-s.woff2": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271",
+    "_next\\static\\media\\cc978ac5ee68c2b6-s.p.woff2": "ce093b341d9c10658ee1eaa85c5f8042ff3307bc6ccfc5f405616eb437f0009e",
+    "_next\\static\\media\\df0a9ae256c0569c-s.woff2": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931",
+    "_next\\static\\media\\e4af272ccee01ff0-s.p.woff2": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+    "_next\\static\\media\\e857b654a2caa584-s.woff2": "bab757f8a0a1bc04055ee98cb5777f3254aab11f6d222366e1f40a36f390506a",
+    "en\\urunlerimiz\\kategori\\portable\\index.html": "38b4c24bb24e210acb02a616b75461255861c1607cebcae06a7130901138d459",
+    "en\\urunlerimiz\\kategori\\portable\\index.txt": "dbd01aaae47a67445cabc8704308f811d5236330ead57753109d54ca60a79cb4",
+    "en\\urunlerimiz\\kategori\\solar\\index.html": "3d8a97c6c9a221bad6e79ec7989e32a08f00ad4ecf57b02bc5b1a2a5e0c2d260",
+    "en\\urunlerimiz\\kategori\\solar\\index.txt": "5a99f68ee9e4525ccf917063f89bb3cfd0cf3a1db64ab93a9c3892a1c93b5e23",
+    "en\\urunlerimiz\\kategori\\vehicle\\index.html": "653cdf4f1a236075fa831e378c8caf70b86daa0950ab08b7cae033503634ba44",
+    "en\\urunlerimiz\\kategori\\vehicle\\index.txt": "a33a4d75b27586d6ef1cf8cc6d25e13e3123b7737d597988cb94151dc1e27f5c",
+    "_next\\static\\css\\1b3a026119e52708.css": "d3865663a6f57fa7413147bce6d96f74dfcc659a4b8f6e2010d161fd1d484414",
+    "_next\\static\\css\\6dfe1f9e2c2442f3.css": "13ded209cf9459105912e1f27114636ed8e092c296bce4f0208a1f2d8344ef44",
+    "tr\\urunlerimiz\\kategori\\cabin\\index.html": "7f0135c65d8a4ba95a61365039b61ea87fd4e7e512b3d68fb38f5e05238f3548",
+    "tr\\urunlerimiz\\kategori\\cabin\\index.txt": "fc9b102d2c16faeb75c5a8576eb6b3c24dec90c0c9eb9a3f2e06827d818dce9a",
+    "tr\\urunlerimiz\\kategori\\portable\\index.html": "0af8e39005f26c75861de9b80dc6d47a9d3c42895da681512e03f031653d5bf3",
+    "tr\\urunlerimiz\\kategori\\portable\\index.txt": "bbaa82defe23c558afbcf0b356c7c30bda5b13611a2a57f8120826d118d1524a",
+    "tr\\urunlerimiz\\kategori\\solar\\index.html": "cea1f6422f3cd3e7a92a04a6c13bdefe5fdecb3a9119a923a679d3f8cfd9beb2",
+    "tr\\urunlerimiz\\kategori\\solar\\index.txt": "6bac742b1ddf0bbd81f33370dde8a7365f4b844ad147d974890c3643df1daba2",
+    "tr\\urunlerimiz\\kategori\\vehicle\\index.html": "fc67126413ad6e4544b8913dd6c977d82f7e98407e7edba417ec7bfd18425d00",
+    "tr\\urunlerimiz\\kategori\\vehicle\\index.txt": "6cb0175dcc906f8d005d465bb9f192f0acc4788b75452841a263b7a2d37c9b6d",
+    "_next\\static\\chunks\\app\\error-681c72eee0545d4b.js": "f5d7ffca79a6ed3fc4e4c03c10a78f1282b3116695e6ea873a14f36c47f55248",
+    "_next\\static\\chunks\\app\\global-error-96e6d8aa01e61818.js": "83c11efa73f9c625fc3fc9d91a215a27c37aa7ae8ba328a02de2a7a81bee9ed9",
+    "_next\\static\\chunks\\app\\layout-698f04ed2a4aebaf.js": "d4d68847198607120ce948b55665445d215c3b6579be19dd4d180e787d0c349b",
+    "_next\\static\\chunks\\app\\not-found-d3b2e6f8cfb4211e.js": "53b2799205f97b39f2ca302de0a9748c04d6ea7876ff37bfa176fe2089606e94",
+    "_next\\static\\chunks\\app\\page-14974dd94c361b00.js": "e8cb4f466ced7d95a9bdf5e4ca5f7973887a8259463949d58b75da727313098f",
+    "_next\\static\\chunks\\pages\\_app-df827a85e2ec52a9.js": "feb7258002d1f72318ee5666f8435b8df9866ba2d9388596bc236ef739e31806",
+    "_next\\static\\chunks\\pages\\_error-93c23f5eac92fbc2.js": "51ba39cd5fa35748a05e5e245b25cff2780275b9b6676afcf4c6227059ed5097",
+    "_next\\static\\chunks\\app\\[locale]\\error-0bc6ae168d7c28de.js": "5fc7be62fcfccfbe3e2948a7d26548b4f70f62b40b9bb6d08ea8660199b74632",
+    "_next\\static\\chunks\\app\\[locale]\\layout-130b0c852563ea4a.js": "3c5076d239947354d822b2a80204fd923da5a0e73f0138ecf864d2e9beb993b9",
+    "_next\\static\\chunks\\app\\[locale]\\not-found-2928e6908f5ab33b.js": "efca3f0a799c4377a3b7d3a55bff1ecd4bf0776eac96b94e8e3b2032835f5885",
+    "_next\\static\\chunks\\app\\[locale]\\page-c47439deb3fdd37d.js": "4543e3c5c9a6b639ae445f5c05a9b8603c443e9253412dc9599149202a6ad838",
+    "_next\\static\\chunks\\app\\_not-found\\page-0eb88940f349e175.js": "0d1fc52783bb02de208565952f6617890e462d5d4140f672149a723d0ba768a4",
+    "_next\\static\\chunks\\app\\[locale]\\fiyat-teklifi\\page-3019046e80759c08.js": "f88536e7b4ef8ca96e389d536365846b95221e9a95c1db42c44e4116f42c056e",
+    "_next\\static\\chunks\\app\\[locale]\\iletisim\\page-3f2c838c0800483e.js": "5129f413bf82400b55f257000ddc584be3b0857a8c0773c15c77f19c0fa02abd",
+    "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\page-0169600cc7fc2594.js": "8e0d208d1174734bddcba0b9b6f90d77936ae7d2651fd9caad004ae8f45eadc9",
+    "_next\\static\\chunks\\app\\[locale]\\kurumsal\\page-3c4bce9d59682477.js": "f3b5381a08195c9a059303286024f8055d4dc92e3b53569e68d5236ae522e35d",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\page-668ca995d26b4527.js": "17060610f703e0dd93576dd89654fc8c29077e01280b22cd171705b3956ad2ec",
+    "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\endustriyel-kurulum\\page-de11a08865cb7b9d.js": "599be17fe45f0fd5c3ec3d2f87b753179db1c8d3d3f41bcce42f34476d111701",
+    "_next\\static\\chunks\\app\\[locale]\\hizmetlerimiz\\ges-kurulumu\\page-ca0d7c84e3327295.js": "115827ba53d8f855a8126577202e5d11e4b7d7522ba1f17d24567103566344bf",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-h21600\\page-2aa75aeda24059c1.js": "357078d1df907ef2d545062ca4d6dc5e17b1ca00d14613183c27b98eb19e5766",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-cabinet-21600\\page-fa9a3479b6b3881d.js": "7e996a01097eb15b82bb7540475d26b2d118e299ee90c6f9933f43c9fd14eac8",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-m21600\\page-e33eeb5bbefbaf19.js": "0e7bbdc147578cf1e2ca698a9cf6f3bf557b78c6693ab1c06e61ee9f4280279b",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-p2700\\page-85c2df176048a5c7.js": "497dd9de1d847cea5a51bc83cbcd646316020e3b183130ff9a86975c0a6ece6b",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-p5400\\page-adcc92b1cc5872e4.js": "5e0fa4729e8c247b587a48b5f6b42cdd2a496ec478913392b439927a5afac44d",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-s10500\\page-69700cb55c916cd2.js": "e9850dcada8c3eece050a391d9e62238700d137ff8de3a1c271fb2ef5ae15708",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb2700b\\page-d9679665ac18ac29.js": "3f6d4f9336f90ad61f0e896d23e7ecb7754c5ee4b63c70fca8e256341279c7ac",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb2700d\\page-5e2618c33d0acb6d.js": "9cfc33004d1ec592ac74fd41bc0615a954168591551f0211463095267df12a6c",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400b\\page-20eac09ea8b49053.js": "33df833620228609a351baf7fd14e2a9d601aeb78baef2673472e6741fd6e213",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-u200000\\page-6ceb8cec22206b4f.js": "2b8f3ac05acc56ec8af3546e70ef64816ce1dfeb975b19a7f937a08b202d3445",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400h\\page-9440f95ad59eda0d.js": "e3476704c81fd208966d9fb969561dc5560e8276b3537b437f4d4cf0b3fd8a9a",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\rev-2\\page-ae4239ea6ae6d51f.js": "04e6e33b43d6a65348e3aae48355a2d3b6b26d6338c2dcd7aaf0f1968817067d",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\rev-1\\page-360c64f0b7cacdd6.js": "278bb693659a208ee5daab562ef15cb7c4942f08a515ebde0717ad9508f9d51d",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\cabin\\page-9e13d940fc68c7c1.js": "380aa0493bc3c360c5ce55cf3d26c989974285e2b2faf8e82a1a8a3307e7c208",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\portable\\page-560203b9fd9a562f.js": "c50c92336b7253d7f735d68012c847d0841a92a1cca28a88b01fd91895e38425",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\solar\\page-8df5ff67810df398.js": "8a1bb857d3060f9f4d1dddfe71220a2d4f98c5cfd1243855adbb3197a56b14ff",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\kategori\\vehicle\\page-de3e0d9b38d47f43.js": "b3e53dd7a30d7a2b8f6f32d667f252d51c7192b3557b3fd260950cc531376b79",
+    "_next\\static\\chunks\\app\\[locale]\\urunlerimiz\\r-sb5400c\\page-75ee53c096d799ae.js": "13343bdf342f8c0314f4d73169fc8ada0ff5ff2be755931589e6d2b9f2f13e4a"
+  },
+  "zipSize": 299244036
+}

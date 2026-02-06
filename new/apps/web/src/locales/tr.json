@@ -1,0 +1,271 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünlerimiz",
+    "solutions": "Çözümlerimiz",
+    "technology": "Teknoloji",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "quote": "Teklif Al"
+  },
+  "hero": {
+    "title": "Enerjiyi",
+    "subtitle": "Yeniden Tanımlıyoruz",
+    "description": "Güçlü, dayanıklı ve özgür enerji depolama çözümlerinde yeni standartlar belirliyoruz.",
+    "cta": "Ürünlerimizi İncele",
+    "ctaSecondary": "Teklif Al"
+  },
+  "mission": {
+    "title": "Güçlü, Dayanıklı, Özgür",
+    "subtitle": "— enerjiyi yeniden tanımlıyoruz.",
+    "cta": "KURUMSAL"
+  },
+  "about": {
+    "title": "Revium: Sürdürülebilir Bir Yarın Güçlendiriyor!",
+    "subtitle": "Enerji Depolamada Öncü",
+    "description": "Revium, yenilikçi batarya depolama ve yenilenebilir enerji çözümleriyle sürdürülebilir enerjiye geçişi hızlandırır. Gelişmiş batarya sistemlerimiz ve modüler tasarımlarımız, çölden kıyı bölgelerine kadar farklı iklimlerde güvenilirlik sağlar.",
+    "mission": "Toplulukları ve endüstrileri temiz, verimli ve uygun maliyetli enerji çözümleriyle güçlendiririz.",
+    "stats": {
+      "projects": "Tamamlanan Pilot Proje",
+      "delivered": "Başarıyla Teslim Proje", 
+      "satisfaction": "Müşteri Memnuniyeti",
+      "years": "Yıllık Deneyim"
+    },
+    "achievements": [
+      "Yenilikçi batarya depolama teknolojileri",
+      "Modüler ve ölçeklenebilir tasarım", 
+      "Farklı iklim koşullarında test edilmiş",
+      "Çevre dostu ve sürdürülebilir çözümler"
+    ],
+    "cta": "Daha Fazla Bilgi"
+  },
+  "products": {
+    "title": "Ürünlerimiz ve Hizmetlerimiz",
+    "subtitle": "Geleceğin enerji ihtiyaçlarını karşılayan yenilikçi çözümlerimizle tanışın.",
+    "portablePower": {
+      "title": "Taşınabilir Güç Kaynakları",
+      "subtitle": "Kamp ve acil durumlar için kesintisiz enerji.",
+      "description": "Hafif ve güçlü taşınabilir güç kaynaklarımızla her yerde enerjiniz yanınızda. Doğa sporlarından ev yedeklemesine kadar geniş kullanım alanı."
+    },
+    "solarInstallation": {
+      "title": "Güneş Paneli Kurulumu",
+      "subtitle": "Uzman ekibimizle anahtar teslim çözümler.",
+      "description": "Ev ve iş yerleriniz için profesyonel güneş paneli kurulum hizmetleri. Enerji bağımsızlığınızı bizimle sağlayın."
+    },
+    "industrialInstallation": {
+      "title": "Endüstriyel Enerji Depolama Sistemleri Kurulumu",
+      "subtitle": "Büyük ölçekli endüstriyel tesisler için yüksek kapasiteli sistemler.",
+      "description": "Endüstriyel tesisleriniz için SCADA entegrasyonu ve uzaktan izleme ile endüstriyel standartlarda enerji depolama çözümleri."
+    },
+    "vehiclePower": {
+      "title": "Araç Güç Paketleri",
+      "subtitle": "Seyahatlerinizde ve işinizde güvenilir güç.",
+      "description": "Araçlarınız için özel olarak tasarlanmış yüksek kapasiteli güç paketleri. Uzun yolculuklarda ve mobil ofis ihtiyaçlarınızda ideal."
+    },
+    "cabinPower": {
+      "title": "Kabin Boy Güç Paketleri",
+      "subtitle": "Kompakt tasarım, maksimum verimlilik.",
+      "description": "Küçük alanlar ve taşınabilirlik ön planda olan projeler için ideal. Yüksek enerji yoğunluğu ile uzun süreli kullanım."
+    },
+    "learnMore": "Daha Fazla Bilgi",
+    "r-p2700": {
+      "title": "2.7 kWh Depolanabilir Güç Paketi",
+      "subtitle": "R-P2700",
+      "description": "Kompakt ve taşınabilir enerji çözümü",
+      "energy": "2.7 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "2000 W",
+      "maxPvPower": "700 W MPPT",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "550×391×317 mm / 33–35 kg",
+      "examples": "Hilti Kırıcı (3.2s), Matkap (3.2s), USB-C (15W), Aydınlatma (4.8s/1000W)"
+    },
+    "r-p5400": {
+      "title": "5.4 kWh Depolanabilir Güç Paketi",
+      "subtitle": "R-P5400",
+      "description": "Orta ölçekli enerji depolama çözümü",
+      "energy": "5.4 kWh",
+      "outputVoltage": "220 VAC",
+      "outputPower": "2000–4000 W (modeline göre)",
+      "maxPvPower": "700W–3000W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "800×335×910 mm, 60–67 kg",
+      "examples": "Hilti Kırıcı (3.2s), Matkap (3.2s), USB-C (15W), Aydınlatma (4.8s/1000W)"
+    },
+    "r-s10500": {
+      "title": "10.5 kWh Storage Battery",
+      "subtitle": "R-S10500",
+      "description": "Büyük ölçekli enerji depolama sistemi",
+      "energy": "10.5 kWh",
+      "outputVoltage": "220 VAC",
+      "outputPower": "4000 W",
+      "maxPvPower": "3000 W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "732×391×400 mm / 100 kg",
+      "usage": "Acil durumlar, mobil istasyonlar, dış mekân"
+    },
+    "r-sb2700b": {
+      "title": "2.7 kWh Storage Battery (Bluetooth)",
+      "subtitle": "R-SB2700B",
+      "description": "Bluetooth özellikli kompakt depolama",
+      "nominalVoltage": "24V",
+      "capacity": "206 Ah",
+      "energy": "2.7 kWh",
+      "outputPower": "2000 W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "400×391×244 mm / 45 kg",
+      "extra": "Bluetooth mevcut"
+    },
+    "r-sb5400b": {
+      "title": "5.4 kWh Storage Battery (Bluetooth)",
+      "subtitle": "R-SB5400B",
+      "description": "Bluetooth özellikli orta ölçekli depolama",
+      "nominalVoltage": "48V",
+      "capacity": "105 Ah",
+      "energy": "5.4 kWh",
+      "outputPower": "3000–4000W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "400×391×244 mm / 45 kg",
+      "extra": "Bluetooth mevcut"
+    },
+    "r-m21600": {
+      "title": "Güç Katmanı – Modüler Enerji Depolama Ünitesi",
+      "subtitle": "R-M21600",
+      "description": "Artırılabilir kapasiteli modüler sistem",
+      "nominalVoltage": "51.2V",
+      "capacity": "105Ah / 210Ah / 315Ah / 420Ah",
+      "energy": "5.4 / 10.8 / 16.2 / 21.6 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "3–12 kW",
+      "maxPvPower": "4–16 kW",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Tam Sinüs",
+      "dimensions": "1660×535×535 mm / 66–210 kg"
+    },
+    "r-h21600": {
+      "title": "Hilux Güç Paketi",
+      "subtitle": "R-H21600",
+      "description": "Yüksek kapasiteli güç paketi",
+      "energy": "21.6 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "3–12 kW (3 faz ve tek faz opsiyonlu)",
+      "maxPvPower": "4–16 kW",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Tam Sinüs"
+    },
+    "r-u200000": {
+      "title": "Savunma Sanayi UNIMOG Güç Paketi",
+      "subtitle": "R-U200000",
+      "description": "Savunma sanayi için özel tasarım",
+      "energy": "200 kWh",
+      "outputVoltage": "230 VAC / 380 VAC",
+      "outputPower": "60 kW",
+      "maxPvPower": "80 kW",
+      "batteryLife": "2000 Cycle",
+      "fastCharge": "100 kW",
+      "acCharge": "22 kW"
+    }
+  },
+  "features": {
+    "title": "Neden Revium?",
+    "subtitle": "Avantajlarımız",
+    "items": {
+      "modular": {
+        "title": "Modüler",
+        "description": "Küçükten büyüğe esnek çözümler"
+      },
+      "durable": {
+        "title": "Dayanıklı",
+        "description": "2000+ cycle, uzun ömürlü hücreler"
+      },
+      "reliable": {
+        "title": "Güvenilir",
+        "description": "Endüstri standardı üretim hattı"
+      },
+      "sustainable": {
+        "title": "Sürdürülebilir",
+        "description": "Yenilenebilir enerji uyumlu"
+      }
+    }
+  },
+  "footer": {
+    "description": "Revium olarak, enerji depolama ve yenilenebilir enerji çözümlerinde öncü bir rol üstleniyoruz.",
+    "quickLinks": "Hızlı Linkler",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "kvkk": "KVKK",
+    "social": "Sosyal Medya",
+    "contact": "İletişim",
+    "address": "Fevzi Çakmak Mah. Milenyum Cad. No:81 Karatay/KONYA",
+    "phone": "+90 (551) 829-1613",
+    "email": "info@reviumtech.com",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "products": {
+    "categories": {
+      "title": "Ürün Kategorilerimiz",
+      "subtitle": "Geniş ürün yelpazemizle her ihtiyaca uygun enerji depolama çözümleri sunuyoruz."
+    },
+    "portablePower": {
+      "title": "Taşınabilir Güç Paketleri",
+      "subtitle": "Kamp ve acil durumlar için kompakt çözümler",
+      "description": "Hafif ve taşınabilir tasarımı ile her yerde güvenilir enerji. Kamp ve acil durumlar için ideal çözümler."
+    },
+    "vehiclePower": {
+      "title": "Araç Tipi Güç Paketleri",
+      "subtitle": "Araçlarda kullanım için özel tasarım sistemler",
+      "description": "Araç entegrasyonu için özel olarak tasarlanmış güçlü sistemler. Yüksek kapasite ve dayanıklı yapı."
+    },
+    "cabinPower": {
+      "title": "Kabin Tipi Güç Paketleri",
+      "subtitle": "Sabit kurulum için yüksek kapasiteli sistemler",
+      "description": "Endüstriyel kullanım için tasarlanmış sabit kurulum sistemleri. Yüksek kapasite ve sürekli güç."
+    },
+    "solarInstallation": {
+      "title": "Güneş Paneli Kurulumu",
+      "subtitle": "Uzman ekibimizle anahtar teslim çözümler",
+      "description": "Profesyonel güneş paneli kurulum hizmetleri. Enerji bağımsızlığınızı bizimle sağlayın."
+    },
+    "learnMore": "İncele"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Enerji depolama çözümlerinde öncü",
+    "description": "ReviumTech olarak, enerji depolama teknolojilerinde yenilikçi çözümler sunuyoruz. Modüler ve ölçeklenebilir tasarımımızla her ihtiyaca uygun sistemler geliştiriyoruz.",
+    "stats": {
+      "projects": "Proje",
+      "delivered": "Teslim",
+      "satisfaction": "Memnuniyet"
+    },
+    "features": {
+      "sustainable": {
+        "title": "Sürdürülebilir",
+        "description": "Çevre dostu teknolojiler"
+      },
+      "innovative": {
+        "title": "Yenilikçi",
+        "description": "Gelişmiş batarya sistemleri"
+      },
+      "reliable": {
+        "title": "Güvenilir",
+        "description": "Farklı iklimlerde test edilmiş"
+      }
+    },
+    "achievements": [
+      "Yenilikçi batarya depolama teknolojileri",
+      "Modüler ve ölçeklenebilir tasarım",
+      "Uzun ömürlü ve dayanıklı yapı",
+      "Kolay kurulum ve bakım"
+    ],
+    "cta": {
+      "text": "Daha fazla bilgi",
+      "button": "Detayları İncele"
+    }
+  }
+}

@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
+  
   /* Brand Colors */
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;

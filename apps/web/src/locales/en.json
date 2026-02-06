@@ -1,0 +1,944 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "corporate": "Corporate",
+    "contact": "Contact",
+    "quote": "Get Quote",
+    "gesInstallation": "GES Installation",
+    "industrialInstallation": "Industrial Installation",
+    "languageSelection": "Language",
+    "menuOpen": "Open Menu",
+    "menuClose": "Close Menu",
+    "expand": "Expand",
+    "collapse": "Collapse"
+  },
+  "hero": {
+    "title": "Energy",
+    "subtitle": "Redefined",
+    "description": "We are setting new standards in energy storage solutions with performance, durability and freedom.",
+    "cta": "Explore Our Products",
+    "ctaSecondary": "Get Quote"
+  },
+  "mission": {
+    "title": "Performance, durability and freedom",
+    "subtitle": "— we are redefining energy.",
+    "cta": "CORPORATE"
+  },
+  "about": {
+    "title": "Revium: Powering a Sustainable Tomorrow!",
+    "subtitle": "Pioneer in Energy Storage",
+    "description": "Revium accelerates the transition to sustainable energy with innovative battery storage and renewable energy solutions. Our advanced battery systems and modular designs ensure reliability across different climates from deserts to coastal regions.",
+    "mission": "We empower communities and industries with clean, efficient and cost-effective energy solutions.",
+    "stats": {
+      "projects": "Completed Pilot Projects",
+      "delivered": "Successfully Delivered Projects",
+      "satisfaction": "Customer Satisfaction", 
+      "years": "Years of Experience"
+    },
+    "achievements": [
+      "Innovative battery storage technologies",
+      "Modular and scalable design",
+      "Tested in different climate conditions",
+      "Environmentally friendly and sustainable solutions"
+    ],
+    "cta": "Learn More"
+  },
+  "products": {
+    "categories": {
+      "title": "Our Product Categories",
+      "subtitle": "We offer energy storage solutions suitable for every need with our wide product range."
+    },
+    "portablePower": {
+      "title": "Portable Power Packages",
+      "subtitle": "Compact solutions for camping and emergencies",
+      "description": "Reliable energy anywhere with lightweight and portable design. Ideal solutions for camping and emergencies."
+    },
+    "vehiclePower": {
+      "title": "Vehicle Type Power Packages",
+      "subtitle": "Special design systems for vehicle use",
+      "description": "Powerful systems specially designed for vehicle integration. High capacity and durable structure."
+    },
+    "cabinPower": {
+      "title": "Cabin Type Power Packages",
+      "subtitle": "High capacity systems for fixed installation",
+      "description": "Fixed installation systems designed for industrial use. High capacity and continuous power."
+    },
+    "gesProducts": {
+      "title": "GES Type Products",
+      "subtitle": "Solar energy systems and integration solutions",
+      "description": "Innovative energy storage solutions integrated with solar energy systems. Sustainable and environmentally friendly technologies."
+    },
+    "solarInstallation": {
+      "title": "Solar Panel Installation",
+      "subtitle": "Turnkey solutions with our expert team",
+      "description": "Professional solar panel installation services. Ensure your energy independence with us."
+    },
+    "industrialInstallation": {
+      "title": "Industrial Energy Storage System Installation",
+      "subtitle": "High capacity systems for large-scale industrial facilities",
+      "description": "Energy storage solutions according to industrial standards with SCADA integration and remote monitoring for industrial facilities."
+    },
+    "learnMore": "Explore"
+  },
+  "productPage": {
+    "features": {
+      "title": "Features",
+      "description": "product's technical features, characteristics and advantages"
+    },
+    "applications": {
+      "title": "Applications",
+      "description": "product's ideal application areas"
+    },
+    "whyChoose": {
+      "title": "Why Revium?",
+      "description": "strong reasons to choose the product",
+      "experience": "Reliable Technology",
+      "experienceDesc": "Products equipped with the latest technology and reliable solutions",
+      "customers": "High Performance",
+      "customersDesc": "Long-lasting and high-efficiency energy storage solutions",
+      "quality": "Global Quality",
+      "qualityDesc": "Quality and certifications at international standards",
+      "portable": {
+        "lightweight": "Lightweight and Portable",
+        "lightweightDesc": "Easily transportable anywhere with compact design",
+        "fastCharge": "Fast Charging",
+        "fastChargeDesc": "Quick charging capability with solar energy",
+        "versatile": "Versatile Use",
+        "versatileDesc": "Ideal for camping, emergencies and daily use"
+      },
+      "ges": {
+        "sustainable": "Sustainable Energy",
+        "sustainableDesc": "Environmentally friendly solutions with clean and renewable energy sources",
+        "efficiency": "High Efficiency",
+        "efficiencyDesc": "Maximum energy efficiency with advanced technology",
+        "longevity": "Long Lifespan",
+        "longevityDesc": "Durable structure and long-lasting battery technology"
+      },
+      "industrial": {
+        "highCapacity": "High Capacity",
+        "highCapacityDesc": "High capacity systems suitable for industrial needs",
+        "reliable": "Reliable Performance",
+        "reliableDesc": "Reliable systems providing uninterrupted energy",
+        "support": "24/7 Support",
+        "supportDesc": "Continuous monitoring and technical support service"
+      },
+      "cabin": {
+        "fixed": "Fixed Installation",
+        "fixedDesc": "Fixed installation optimized for industrial facilities",
+        "powerful": "Powerful Performance",
+        "powerfulDesc": "Ideal for critical systems with high output power",
+        "durable": "Durable Structure",
+        "durableDesc": "Industrial quality resistant to harsh conditions"
+      }
+    },
+    "cta": {
+      "title": "Learn More About",
+      "description": "Contact our expert team to get detailed information about this product or request a price quote",
+      "quoteButton": "Request Price Quote",
+      "consultationButton": "Expert Consultation"
+    }
+  },
+  "ctaSection": {
+    "title": "Shape Your Energy",
+    "titleHighlight": "Future",
+    "description": "Switch to sustainable energy solutions with Revium. Contact us immediately for consultation and start saving energy.",
+    "quoteButton": "Request Quote",
+    "productsButton": "Explore Our Products"
+  },
+  "categoryPage": {
+    "productsTitle": "Our Products",
+    "productsDescription": "options for different needs",
+    "featuresTitle": "Features",
+    "whyTitle": "Why",
+    "whyDescription": "advantages offered by solutions",
+    "applicationsTitle": "Applications",
+    "applicationsDescription": "ideal application areas for solutions",
+    "viewDetails": "View Details",
+    "freeConsultation": "Request Free Consultation"
+  },
+  "footer": {
+    "products": "Our Products",
+    "services": "Our Services",
+    "quickAccess": "Quick Access",
+    "portablePower": "Portable Power Packages",
+    "cabinPower": "Cabin Type Power Packages",
+    "vehiclePower": "Vehicle Type Power Packages",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "addressLine1": "Fevzi Çakmak Neighborhood Milenyum Street No:81",
+    "addressLine2": "Karatay/KONYA",
+    "address": {
+      "neighborhood": "Fevzi Çakmak Neighborhood",
+      "street": "Milenyum Street",
+      "number": "No:",
+      "city": "Karatay/KONYA"
+    },
+    "getDirections": "Get Directions"
+  },
+  "features": {
+    "whyTitle": "Why",
+    "whyTitleHighlight": "Revium?",
+    "subtitle": "The right choice for powerful, durable and free energy solutions",
+    "highPerformance": "High Performance",
+    "highPerformanceDesc": "4000+ cycle life and maximum reliability with LiFePO₄ technology",
+    "durableDesign": "Durable Design",
+    "durableDesignDesc": "Excellent performance even in harsh conditions with IP54 protection class",
+    "quickSolution": "Quick Solution",
+    "quickSolutionDesc": "Ready-to-use systems in minutes with plug-and-play installation"
+  },
+  "megaMenu": {
+    "categories": "CATEGORIES",
+    "allProducts": "All Products",
+    "allServices": "All Services",
+    "portablePowerPacks": "PORTABLE POWER PACKS",
+    "portablePowerPacksDesc": "Compact solutions for camping and emergencies",
+    "cabinPowerPacks": "CABIN TYPE POWER PACKS",
+    "cabinPowerPacksDesc": "High capacity systems for fixed installation",
+    "vehiclePowerPacks": "VEHICLE TYPE POWER PACKS",
+    "vehiclePowerPacksDesc": "Systems with power source filling the entire vehicle",
+    "gesProducts": "GES TYPE PRODUCTS",
+    "gesProductsDesc": "Solar energy systems and integration solutions",
+    "gesInstallation": "SOLAR POWER PLANT INSTALLATION",
+    "gesInstallationDesc": "Solar power plant installation and integration services",
+    "industrialInstallation": "INDUSTRIAL INSTALLATION",
+    "industrialInstallationDesc": "Large-scale energy storage system installation and integration"
+  },
+  "menuData": {
+    "portablePowerPacks": "Portable Power Packs",
+    "cabinPowerPacks": "Cabin Type Power Packs",
+    "vehiclePowerPacks": "Vehicle Type Power Packs",
+    "powerLayer": "Power Layer",
+    "powerCabinet": "Power Cabinet",
+    "hiluxPowerPack": "Hilux Power Pack",
+    "unimogPowerPack": "Defense Industry UNIMOG Power Pack"
+  },
+  "gesPage": {
+    "heroTitle": "Solar Power Plant Installation",
+    "heroDescription": "Bring your solar power plants to life with our professional team. Invest in your clean energy future.",
+    "whyTitle": "Why",
+    "whyTitleHighlight": "Revium?",
+    "whyDescription": "We make a difference in GES installation with our expert team and quality service approach",
+    "features": {
+      "projectDesign": "Project Design and Planning",
+      "projectDesignDesc": "Site-specific detailed analysis and optimal system design",
+      "professionalInstallation": "Professional Installation",
+      "professionalInstallationDesc": "Safe and quality installation by expert team",
+      "systemIntegration": "System Integration",
+      "systemIntegrationDesc": "Compatible integration with existing electrical infrastructure",
+      "testing": "Testing and Commissioning",
+      "testingDesc": "Comprehensive tests and safe commissioning process"
+    },
+    "processTitle": "Installation",
+    "processTitleHighlight": "Process",
+    "processDescription": "How do we carry out your GES installation step by step?",
+    "process": {
+      "siteAnalysis": "Site Analysis",
+      "siteAnalysisDesc": "Solar energy potential and technical suitability analysis",
+      "systemDesign": "System Design",
+      "systemDesignDesc": "Optimal system design and planning suitable for needs",
+      "materialSupply": "Material Supply",
+      "materialSupplyDesc": "Procurement of quality and certified materials",
+      "installation": "Installation",
+      "installationDesc": "Safe installation by professional team",
+      "testing": "Testing and Commissioning",
+      "testingDesc": "Comprehensive tests and system commissioning",
+      "maintenance": "Maintenance and Support",
+      "maintenanceDesc": "Continuous maintenance and 7/24 technical support service"
+    },
+    "ctaTitle": "Bring Your GES Project",
+    "ctaTitleHighlight": "To Life",
+    "ctaDescription": "Contact our expert team and get consultation. Let's bring your GES project to life at the most affordable cost.",
+    "otherServices": "Other Services"
+  },
+  "industrialPage": {
+    "heroTitle": "Industrial System Installation",
+    "heroDescription": "Energy storage system installation for large-scale industrial facilities. High capacity and reliable solutions.",
+    "featuresTitle": "Service",
+    "featuresTitleHighlight": "Features",
+    "featuresDescription": "Comprehensive services we offer in industrial installation",
+    "features": {
+      "systemDesign": "Industrial Capacity System Design",
+      "systemDesignDesc": "Special design and planning for large-scale facilities",
+      "highPowerBattery": "High Power Battery Systems",
+      "highPowerBatteryDesc": "High capacity systems suitable for industrial needs",
+      "scadaIntegration": "SCADA System Integration",
+      "scadaIntegrationDesc": "Remote monitoring and control systems integration"
+    },
+    "processTitle": "Installation",
+    "processTitleHighlight": "Process",
+    "processDescription": "Step-by-step process we follow in industrial installation",
+    "process": {
+      "needsAnalysis": "Needs Analysis",
+      "needsAnalysisDesc": "Detailed analysis of industrial facility's energy needs",
+      "systemDesign": "System Design",
+      "systemDesignDesc": "Special industrial system design and engineering",
+      "materialSupply": "Material Supply",
+      "materialSupplyDesc": "Procurement of industrial quality materials",
+      "installation": "Installation and Integration",
+      "installationDesc": "Professional installation and integration with existing systems",
+      "testing": "Testing and Commissioning",
+      "testingDesc": "Comprehensive tests and safe commissioning",
+      "monitoring": "Monitoring and Maintenance",
+      "monitoringDesc": "Continuous monitoring and periodic maintenance services"
+    },
+    "ctaTitle": "Bring Your Industrial Project",
+    "ctaTitleHighlight": "To Life",
+    "ctaDescription": "Contact our expert team and get consultation. Let's bring your industrial energy storage project to life at the most affordable cost.",
+    "otherServices": "Other Services"
+  },
+  "productsPage": {
+    "heroTitle": "Energy",
+    "heroSubtitle": "Products",
+    "heroDescription": "Discover all energy storage solutions offered by Revium. High quality and reliable products suitable for every need.",
+    "allProductsTitle": "Our Energy Storage Solutions",
+    "allProductsDescription": "Browse all our products in different categories and choose the one that suits your needs",
+    "capacity": "Capacity",
+    "power": "Power",
+    "mppt": "MPPT",
+    "cycles": "Cycles",
+    "viewDetails": "View Details",
+    "whyTitle": "Why Revium?",
+    "whyDescription": "Advantages we offer in our energy storage solutions",
+    "highCapacity": "High Capacity",
+    "highCapacityDesc": "Battery systems optimized for long-term energy storage",
+    "safeUsage": "Safe Usage",
+    "safeUsageDesc": "Protected with international standard safety certifications",
+    "ecoFriendly": "Eco-Friendly",
+    "ecoFriendlyDesc": "Nature-friendly technology with sustainable energy solutions",
+    "ctaTitle": "Let's Find",
+    "ctaTitleHighlight": "The Right Solution",
+    "ctaDescription": "Contact our expert team to determine the product that suits your energy needs",
+    "consultationButton": "Request Consultation",
+    "quoteButton": "Request Quote"
+  },
+  "servicesPage": {
+    "heroTitle": "Energy",
+    "heroSubtitle": "Services",
+    "heroDescription": "Revium provides professional services in all processes from installation to maintenance of your energy storage systems.",
+    "viewDetails": "View Details",
+    "ctaTitle": "Let's Bring Your Project to Life",
+    "ctaDescription": "Contact our expert team to determine the solution that suits your energy needs",
+    "freeConsultation": "Request Free Consultation",
+    "viewProducts": "Explore Our Products",
+    "gesFeatures": {
+      "design": "Project design and planning",
+      "materials": "Material supply",
+      "installation": "Professional installation",
+      "integration": "System integration",
+      "testing": "Testing and commissioning",
+      "maintenance": "Maintenance and repair"
+    },
+    "industrialFeatures": {
+      "design": "Industrial capacity system design",
+      "battery": "High power battery systems",
+      "connections": "Medium voltage connections",
+      "scada": "SCADA system integration",
+      "monitoring": "Remote monitoring and control"
+    }
+  },
+  "corporatePage": {
+    "heroTitle": "Corporate",
+    "heroSubtitle": "Identity",
+    "heroDescription": "As Revium, we offer pioneering solutions in the field of energy storage and work for a sustainable future.",
+    "aboutTitle": "About Us",
+    "aboutDesc1": "Revium offers renewable energy storage solutions to shape a sustainable future. With our advanced storage technologies, modern engineering approach and experienced team, we enable both businesses and individuals to easily access sustainable energy.",
+    "aboutDesc2": "Revium, which integrates renewable energy sources with modern storage systems, continues its work to reduce the carbon footprint and create a more livable world. Our goal is to contribute to the formation of a sustainable ecosystem that will meet today's and tomorrow's energy needs.",
+    "viewProducts": "Explore Our Products",
+    "contactUs": "Contact Us",
+    "missionVisionTitle": "Our Mission & Vision",
+    "missionVisionDescription": "We work to be a pioneer in the field of energy storage and for a sustainable future",
+    "missionTitle": "Our Mission",
+    "missionDescription": "To empower communities and industries with clean, efficient and cost-effective energy solutions. To contribute to environmental sustainability by ensuring effective use of renewable energy sources and to provide reliable energy storage solutions to our customers.",
+    "visionTitle": "Our Vision",
+    "visionDescription": "To be the leading company of the sustainable energy future, recognized worldwide in energy storage technologies with innovative solutions. To accelerate the transition to sustainable energy with innovative battery storage and renewable energy solutions.",
+    "valuesTitle": "Our Values",
+    "valuesDescription": "The fundamental elements that form our working principles and values",
+    "sustainability": "Sustainability",
+    "sustainabilityDesc": "We reduce the carbon footprint by offering environmentally friendly and sustainable solutions.",
+    "innovation": "Innovation",
+    "innovationDesc": "We develop pioneering solutions with innovative battery storage technologies and modular designs.",
+    "customerFocus": "Customer Focus",
+    "customerFocusDesc": "We prioritize satisfaction by offering solutions tailored to our customers' needs.",
+    "globalReach": "Global Reach",
+    "globalReachDesc": "We offer reliable energy solutions worldwide.",
+    "reliability": "Reliability",
+    "reliabilityDesc": "We develop systems that provide reliability under all conditions.",
+    "excellence": "Excellence",
+    "excellenceDesc": "We offer the highest quality services and products with modular and scalable design.",
+    "technologyTitle": "Technology & Innovation",
+    "technologyDescription": "Our pioneering solutions in energy storage technologies",
+    "lifepo4Tech": "LiFePO₄ Technology",
+    "lifepo4TechDesc": "Safe, long-lasting and environmentally friendly lithium iron phosphate battery technology",
+    "smartBMS": "Smart BMS",
+    "smartBMSDesc": "Optimal performance and safety with advanced battery management system",
+    "modularDesign": "Modular Design",
+    "modularDesignDesc": "Solutions suitable for every need with scalable and flexible system architecture",
+    "ctaTitle": "Work",
+    "ctaTitleHighlight": "With Us",
+    "ctaDescription": "Contact our expert team for sustainable energy solutions",
+    "getQuote": "Get Price Quote"
+  },
+  "common": {
+    "category": "Category",
+    "ges": "Solar Power Plant",
+    "gesAbbreviation": "SPP"
+  },
+  "contactPage": {
+    "heroTitle": "Get",
+    "heroSubtitle": "In Touch",
+    "heroDescription": "Contact our expert team for your energy solutions. We are here to offer you the most suitable solution.",
+    "getQuote": "Get Quote",
+    "sendMessage": "Send Message",
+    "formTitle": "Get",
+    "formTitleHighlight": "In Touch",
+    "formDescription": "Contact our expert team for your energy needs. We are here to offer you the most suitable solution.",
+    "sendMessageTitle": "Send Message",
+    "sendMessageSubtitle": "Send us your questions, we will respond as soon as possible",
+    "fullName": "Full Name",
+    "email": "Email",
+    "emailPlaceholder": "example@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "subject": "Subject",
+    "message": "Message",
+    "selectSubject": "Select subject",
+    "generalInfo": "General Information",
+    "quoteRequest": "Quote Request",
+    "technicalSupport": "Technical Support",
+    "sales": "Sales",
+    "serviceRequest": "Service Request",
+    "complaint": "Complaint/Suggestion",
+    "messagePlaceholder": "Write your message in detail...",
+    "sending": "Sending...",
+    "sendButton": "Send Message",
+    "successMessage": "Your message has been sent successfully! We will get back to you as soon as possible.",
+    "errorMessage": "An error occurred while sending the message. Please try again.",
+    "quickContact": "Quick Contact",
+    "phoneLabel": "Phone",
+    "phoneNumber": "+90 (551) 829-1613",
+    "emailLabel": "Email",
+    "emailAddress": "info@reviumtech.com",
+    "addressLabel": "Address",
+    "workingHours": "Working Hours",
+    "weekdays": "Mon-Fri: 09:00-18:00",
+    "saturday": "Sat: 09:00-13:00",
+    "sunday": "Sun: Closed",
+    "contactInfoTitle": "Contact",
+    "contactInfoTitleHighlight": "Information",
+    "contactInfoDescription": "All communication channels you can reach us"
+  },
+  "quotePage": {
+    "heroTitle": "Request Price Quote",
+    "heroDescription": "Get a detailed price quote for a solution suitable for your energy needs. Our expert team will offer you the most suitable options.",
+    "formTitle": "Quote Form",
+    "personalInfo": "Personal Information",
+    "projectInfo": "Project Information",
+    "technicalRequirements": "Technical Requirements",
+    "additionalInfo": "Additional Information",
+    "name": "Full Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "phone": "Phone",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "company": "Company",
+    "companyPlaceholder": "Company name (optional)",
+    "productCategory": "Product Category",
+    "powerNeed": "Power Need",
+    "application": "Application Area",
+    "budget": "Budget Range",
+    "select": "Select",
+    "other": "Other",
+    "requirements": "Special Requirements",
+    "requirementsPlaceholder": "Specify special requirements for your project...",
+    "installationDate": "Installation Date",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Information you want to add...",
+    "productOtherPlaceholder": "Please specify the product category",
+    "powerOtherPlaceholder": "Please specify your power need (e.g., 150 kW)",
+    "applicationOtherPlaceholder": "Please specify your application area",
+    "budgetOtherPlaceholder": "Please specify your budget range (e.g., ₺500,000+)",
+    "sending": "Sending...",
+    "sendButton": "Send Quote Request",
+    "successMessage": "Your quote request has been sent successfully! We will get back to you within 24 hours.",
+    "errorMessage": "An error occurred while sending the quote request. Please try again.",
+    "quickResponse": "Quick Response",
+    "quickResponseDesc": "We get back to you within 24 hours",
+    "detailedQuote": "Detailed Quote",
+    "detailedQuoteDesc": "Comprehensive technical and financial analysis",
+    "expertConsultation": "Expert Consultation",
+    "expertConsultationDesc": "Support from our expert team",
+    "productTypes": {
+      "portable": "Portable Power Packs",
+      "vehicle": "Vehicle Type Power Packs",
+      "cabin": "Cabin Type Power Packs",
+      "ges": "GES Type Products",
+      "solar": "Solar Battery Packs",
+      "industrial": "Industrial Systems",
+      "custom": "Custom Solution",
+      "other": "Other"
+    },
+    "applications": {
+      "residential": "Residential Use",
+      "commercial": "Commercial Use",
+      "industrial": "Industrial Use",
+      "vehicle": "Vehicle Applications",
+      "offGrid": "Off-Grid Systems",
+      "emergency": "Emergency Systems"
+    },
+    "budgetRanges": {
+      "range1": "$0 - $1,500",
+      "range2": "$1,500 - $3,000",
+      "range3": "$3,000 - $7,500",
+      "range4": "$7,500+"
+    }
+  },
+  "customSolutions": {
+    "title": "Custom Solutions",
+    "description": "Every project has its own unique requirements. Together with our expert team, we design and implement the most suitable energy solutions for your needs.",
+    "technicalConsulting": "Technical Consulting",
+    "technicalConsultingDesc": "Expert consulting service for energy solutions tailored to your needs.",
+    "technicalConsultingFeatures": ["Needs analysis", "Technical evaluation", "Solution proposals"],
+    "customDesign": "Custom Design",
+    "customDesignDesc": "Systems specially designed for your unique requirements.",
+    "customDesignFeatures": ["Custom engineering", "Prototype development", "Testing and validation"],
+    "projectManagement": "Project Management",
+    "projectManagementDesc": "Professional management of all processes from installation to delivery.",
+    "projectManagementFeatures": ["Project planning", "Time management", "Quality control"],
+    "ongoingSupport": "Ongoing Support",
+    "ongoingSupportDesc": "Continuous maintenance and support for optimal performance of your system.",
+    "ongoingSupportFeatures": ["Periodic maintenance", "Spare parts supply"],
+    "consultationButton": "Request Consultation"
+  },
+  "featuredProject": {
+    "badge": "Featured Project",
+    "title": "2.7 kWh Bag Type Power Storage System",
+    "description": "2.7 kWh capacity power storage system that can be used anywhere with its portable and compact design. Offers easy transport and quick installation.",
+    "capacity2_7": "2.7 kWh Capacity",
+    "bagDesign": "Bag Design",
+    "portable": "Portable",
+    "quickInstall": "Quick Installation",
+    "energyCapacity": "Energy Capacity",
+    "weight": "Weight",
+    "chargeFeature": "Charge Feature",
+    "quickCharge": "Quick Charge",
+    "altText": "2.7 kWh Bag Type Power Storage System"
+  },
+  "portablePower": {
+    "title": "Revium 5.4 kWh Power Pack",
+    "subtitle": "High Capacity Portable Energy Solution",
+    "description": "Provides reliable energy for critical loads, emergencies and professional applications with 5.4 kWh capacity and 2000W output power.",
+    "capacity5_4": "5.4 kWh Capacity",
+    "capacity5_4Desc": "High energy density with LiFePO₄ technology",
+    "output2000": "2000W Output",
+    "output2000Desc": "Pure sine wave, 20ms UPS transition",
+    "pv1500": "1500W PV Charge",
+    "pv1500Desc": "Fast charging with solar energy",
+    "protection": "Comprehensive Protection",
+    "protectionDesc": "Overload, current, thermal protection",
+    "spec5_4": "5.4 kWh",
+    "spec2000": "2000W",
+    "specLiFePO4": "LiFePO₄",
+    "spec4000": "4000+ Cycles",
+    "detailsButton": "5.4 kWh 2000W Details",
+    "detailsButtonMobile": "View Details",
+    "quoteButton": "Get Quote",
+    "altText": "Revium 5.4 kWh 2000W Power Pack"
+  },
+  "productDetails": {
+    "rP2700": {
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "2.7 kWh capacity portable power pack. Ideal portable energy solution for camping and emergencies. 2 kW pure sine output and 700 W MPPT solar integration.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 550 × 391 × 317 mm",
+        "weight": "Weight: 33 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "2 kW pure sine output",
+        "solarIntegration": "700 W MPPT solar integration",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "compactDesign": "Compact design"
+      },
+      "applications": {
+        "camping": "Camping activities",
+        "emergency": "Emergencies",
+        "travel": "Travel",
+        "outdoor": "Outdoor events",
+        "tools": "Demolition tools",
+        "electronics": "Electronic devices"
+      }
+    },
+    "rSb2700b": {
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "2.7 kWh capacity portable power pack with Model B design. 2 kW pure sine output and 700 W MPPT solar integration.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 550 × 391 × 317 mm",
+        "weight": "Weight: 33 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "2 kW pure sine output",
+        "solarIntegration": "700 W MPPT solar integration",
+        "modelB": "Model B design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "professional": "Professional use",
+        "industrial": "Industrial applications",
+        "emergency": "Emergency systems",
+        "mobileOffice": "Mobile offices",
+        "smallBusiness": "Small businesses",
+        "electronics": "Electronic devices"
+      }
+    },
+    "rSb5400b": {
+      "title": "5.4 kWh Portable Power Pack",
+      "description": "5.4 kWh capacity portable power pack with large case design. 3 kW pure sine output and 1.5 kW PV fast charging.",
+      "features": {
+        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 220 VAC, 3000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 1500 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 800 × 458 × 910 mm",
+        "weight": "Weight: 60 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "3 kW pure sine output",
+        "quickCharge": "1.5 kW PV fast charging",
+        "largeCase": "Large case design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickChargeSupport": "Fast charging support"
+      },
+      "applications": {
+        "mediumHomes": "Medium-scale homes",
+        "smallBusiness": "Small businesses",
+        "camping": "Camping and caravans",
+        "emergency": "Emergency backup",
+        "outdoor": "Outdoor events",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "rS10500": {
+      "title": "10.5 kWh Power Pack",
+      "description": "10.5 kWh capacity power pack for rack and cabin type installation. High capacity and 3-4 kW inverter options ideal for industrial use.",
+      "features": {
+        "capacity": "Capacity: 10.5 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 220 VAC, 3000-4000 W (pure/full sine options)",
+        "pvMppt": "PV/MPPT: ~3000 W (depending on model)",
+        "life": "Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 400 × 391 × 732 mm",
+        "weight": "Weight: 100 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "highCapacity": "High capacity",
+        "inverterOptions": "3-4 kW inverter options",
+        "rackCabin": "Rack/cabin compatible design",
+        "industrial": "Industrial use",
+        "easyInstall": "Easy installation",
+        "longLife": "Long-lasting"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "cabin": "Cabin systems",
+        "container": "Container applications",
+        "mobileOffice": "Mobile offices",
+        "construction": "Construction sites",
+        "emergency": "Emergency systems"
+      }
+    },
+    "rM21600": {
+      "title": "Power Layer",
+      "description": "Flexible energy storage solution with modular design. Ideal solution for industrial and commercial applications with layered scaling and capacity increase in the same base area.",
+      "features": {
+        "nominalVoltage": "Nominal Voltage: 51.2 V DC",
+        "modularCapacity": "Modular Capacity: 105/210/315/420 Ah • 5.4/10.8/16.2/21.6 kWh",
+        "life": "Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 400 × 391 × 365/609/853/1097 mm",
+        "weight": "Weight: 66/114/162/210 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "layered": "Layered scaling",
+        "capacityIncrease": "Capacity increase in same base area",
+        "modular": "Modular design",
+        "industrial": "Industrial use",
+        "easyInstall": "Easy installation",
+        "longLife": "Long-lasting"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "cabin": "Cabin systems",
+        "container": "Container applications",
+        "mobileOffice": "Mobile offices",
+        "construction": "Construction sites",
+        "emergency": "Emergency systems"
+      }
+    },
+    "rH21600": {
+      "title": "Hilux Power Pack",
+      "description": "Vehicle Top - Vehicle top power pack specially designed for Hilux vehicles. Provides mobile energy solution with 80 kWh energy and multi single/three-phase usage.",
+      "features": {
+        "energy": "Energy: 80 kWh (LiFePO₄)",
+        "output": "Output: 3×10 kW @ 380 VAC (single output up to 20 kW) / 5×5 kW @ 220 VAC (single output up to 10 kW)",
+        "pvInput": "PV Input: 20 kW",
+        "dimensions": "Dimensions: Depends on vehicle integration",
+        "weight": "Weight: Depends on vehicle integration",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "multiPhase": "Multi single/three-phase usage",
+        "pvSupport": "20 kW PV support",
+        "vehicleCompatible": "Vehicle compatible design",
+        "hiluxIntegration": "Hilux integration",
+        "mobile": "Mobile energy solution",
+        "industrial": "Industrial use"
+      },
+      "applications": {
+        "hilux": "Hilux vehicles",
+        "mobile": "Mobile energy systems",
+        "vehicleTop": "Vehicle top installations",
+        "industrial": "Industrial vehicles",
+        "defense": "Defense industry",
+        "emergency": "Emergency vehicles"
+      }
+    },
+    "rU200000": {
+      "title": "Defense Industry UNIMOG Power Pack",
+      "description": "Vehicle Top - Vehicle top power pack specially designed for UNIMOG vehicles. Provides reliable energy in harsh conditions with 200 kWh energy and 60 kW high power.",
+      "features": {
+        "energy": "Energy: 200 kWh",
+        "output": "Output: 230/380 VAC, 60 kW",
+        "pvInput": "PV Input: 80 kW",
+        "charging": "Charging: 100 kW DC fast / 22 kW AC",
+        "dimensions": "Dimensions: Depends on vehicle integration",
+        "weight": "Weight: Depends on vehicle integration",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "highPower": "60 kW high power",
+        "fastCharge": "100 kW DC fast charging",
+        "unimogCompatible": "UNIMOG compatible design",
+        "industrial": "Industrial use",
+        "defense": "Defense industry applications",
+        "harshConditions": "Use in harsh conditions"
+      },
+      "applications": {
+        "unimog": "UNIMOG vehicles",
+        "mobile": "Mobile energy systems",
+        "vehicleTop": "Vehicle top installations",
+        "industrial": "Industrial vehicles",
+        "defense": "Defense industry",
+        "emergency": "Emergency vehicles"
+      }
+    },
+    "rCabinet21600": {
+      "title": "Power Cabinet",
+      "description": "21.6 kWh Integrated System - High capacity integrated power cabinet system designed for fixed installation. Reliable energy solution for critical infrastructure systems with 21.6 kWh energy capacity and 5 kW output power.",
+      "features": {
+        "energyCapacity": "21.6 kWh energy capacity",
+        "outputPower": "5 kW output power",
+        "nominalVoltage": "51.2 VDC nominal voltage",
+        "dimensions": "600 × 500 × 1000 mm dimensions",
+        "weight": "200 kg weight",
+        "batteryTech": "Long-lasting battery technology",
+        "integrated": "Integrated system design",
+        "optimized": "Optimized for fixed installation",
+        "highCapacity": "High capacity energy storage",
+        "modular": "Modular structure",
+        "safe": "Safe operation",
+        "maintenance": "Easy maintenance and service"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "dataCenter": "Data centers",
+        "hospitals": "Hospitals and health facilities",
+        "telecom": "Telecommunications centers",
+        "solar": "Solar power plants",
+        "critical": "Critical infrastructure systems"
+      }
+    },
+    "gridpack100": {
+      "title": "GridPack 100",
+      "description": "REVIUM GridPack 100 is a high-capacity energy storage and management system developed for industrial facilities, defense areas, mobile energy centers, and disaster zones. With integrated inverter, MPPT charge control, intelligent battery management system (BMS), and remote monitoring features, it offers a fully integrated plug-and-play energy station that can manage the entire energy process from a single point. Thanks to its durable structure, long-lasting LiFePO₄ battery technology, and high efficiency, it provides uninterrupted, safe, and sustainable energy under all conditions.",
+      "applications": {
+        "industrial": "Industrial facilities",
+        "defense": "Defense areas",
+        "mobile": "Mobile energy centers",
+        "disaster": "Disaster zones",
+        "critical": "Critical infrastructure systems",
+        "offGrid": "Off-grid systems"
+      }
+    },
+    "rP5400": {
+      "title": "5.4 kWh Portable (High Output)",
+      "description": "5.4 kWh capacity portable power pack with high output power. Meets demanding energy needs with strong performance and high output capacity.",
+      "features": {
+        "capacity": "Capacity: 5.4 kWh",
+        "acOutput": "AC Output: 220–230 VAC",
+        "battery": "Battery Operation: ≈20–28.8 VDC",
+        "pvMppt": "PV/MPPT: 30–80 VDC (Voc ≈102 V)",
+        "dimensions": "Dimensions: 400 × 391 × 488 mm",
+        "weight": "Weight: 67 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "highOutput": "High output power",
+        "strongPerformance": "Strong performance",
+        "modular": "Modular structure",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "solarCompatible": "Solar panel compatibility",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "largeHomes": "Large-scale homes",
+        "mediumBusiness": "Medium-scale businesses",
+        "camping": "Camping and caravans",
+        "emergency": "Emergency backup",
+        "outdoor": "Outdoor events",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "rSb2700d": {
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "Ideal 2.7 kWh portable power pack for use in harsh conditions with durable design. Compact/robust body and 2 kW pure sine output.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 500 × 335 × 285 mm",
+        "weight": "Weight: 35 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "compact": "Compact/robust body",
+        "sineOutput": "2 kW pure sine output",
+        "durable": "Durable case design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "construction": "Construction sites",
+        "emergency": "Emergencies",
+        "travel": "Travel and camping",
+        "outdoor": "Outdoor events",
+        "smallBusiness": "Small businesses",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "rSb5400c": {
+      "title": "5.4 kWh Portable Power Pack",
+      "description": "5.4 kWh capacity portable power pack with medium case design. 3 kW pure sine output and field-use suitable form.",
+      "features": {
+        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 220 VAC, 3000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 1500 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 400 × 391 × 410 mm",
+        "weight": "Weight: 62 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "3 kW pure sine output",
+        "fieldUse": "Field-use suitable form",
+        "mediumCase": "Medium case design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "mediumHomes": "Medium-scale homes",
+        "smallBusiness": "Small businesses",
+        "camping": "Camping and caravans",
+        "emergency": "Emergency backup",
+        "outdoor": "Outdoor events",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "rSb5400h": {
+      "title": "5.4 kWh Portable Power Pack",
+      "description": "5.4 kWh capacity portable power pack with high output power. Meets demanding energy needs with 4 kW high power and 3 kW PV support.",
+      "features": {
+        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 220 VAC, 4000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 3000 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 400 × 391 × 488 mm",
+        "weight": "Weight: 67 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "highPower": "4 kW high power",
+        "pvSupport": "3 kW PV support",
+        "highOutput": "High output power",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "largeHomes": "Large-scale homes",
+        "mediumBusiness": "Medium-scale businesses",
+        "camping": "Camping and caravans",
+        "emergency": "Emergency backup",
+        "outdoor": "Outdoor events",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "gesPowerStation": {
+      "title": "GES & Power Station",
+      "description": "This innovative solution combines advanced solar panel technology with high-capacity battery storage system, providing uninterrupted, sustainable and efficient power management by intelligently balancing energy production and consumption. REVIUM Storage GES not only produces energy, but also stores excess energy and makes it available for reuse when needed. This reduces grid dependency, lowers energy costs and minimizes carbon footprint. Thanks to its modular architecture, the system can easily adapt to different scales and usage scenarios from industrial facilities to commercial buildings, from rural settlements to mobile energy stations. The integrated Battery Management System (BMS) and remote monitoring infrastructure guarantee safe operating conditions while tracking energy flow in real time. Long-lasting LiFePO₄ battery technology and high-efficiency inverter structure ensure that the system delivers superior results in terms of durability, safety and performance even under the most challenging conditions.",
+      "applications": {
+        "residential": "Residential applications",
+        "commercial": "Commercial facilities",
+        "industrial": "Industrial facilities",
+        "solarFarms": "Solar power plants",
+        "offGrid": "Off-grid systems",
+        "hybrid": "Hybrid energy systems"
+      }
+    },
+    "solarportDuo": {
+      "title": "Solarport DUO",
+      "description": "SolarPort Duo is an innovative solar-powered parking system that brings together solar energy and modern architecture. Thanks to its durable aluminum-steel construction, high-efficiency solar panels and integrated energy storage unit, it offers both aesthetic and functional solutions. Its structure fully compatible with electric vehicle charging stations transforms parking areas from mere protection areas into active energy production centers. SolarPort Duo is a smart parking system that adds value to future cities with clean energy production, sustainable infrastructure and modern design.",
+      "applications": {
+        "residential": "Residential applications",
+        "commercial": "Commercial facilities",
+        "solarFarms": "Solar power plants",
+        "offGrid": "Off-grid systems",
+        "hybrid": "Hybrid energy systems",
+        "mobile": "Mobile applications"
+      }
+    },
+    "solarVoltwagon": {
+      "title": "Solar VOLTWAGON",
+      "description": "REVIUM VoltWagon is a portable solar-powered mobile station designed to access energy anywhere. Thanks to its trailer-type modular structure, it can be easily transported; it produces energy with integrated solar panels and provides safe storage with high-capacity LiFePO₄ batteries. It offers fast-installation, environmentally friendly and uninterrupted power solutions in rural areas, disaster areas and field operations. VoltWagon is the new generation portable form of modern energy infrastructure with its compact design that makes mobile energy independence possible.",
+      "applications": {
+        "vehicles": "Vehicle applications",
+        "mobile": "Mobile energy systems",
+        "camping": "Camping and caravan",
+        "emergency": "Emergency vehicles",
+        "commercial": "Commercial vehicles",
+        "offGrid": "Off-grid systems"
+      }
+    },
+    "gesStreetLighting": {
+      "title": "GES Street Lighting System",
+      "description": "REVIUM Solar StreetLight is a modern LED lighting system powered by solar energy. Thanks to high-efficiency solar panels, integrated LiFePO₄ battery and smart control module, it provides uninterrupted, reliable and balanced lighting throughout the night. With its completely grid-independent operation feature, it reduces energy costs to zero and minimizes maintenance needs. With its aesthetic design, long-lasting structure and environmentally friendly technology, it sets a new standard for sustainable city lighting.",
+      "applications": {
+        "streetLighting": "Street lighting",
+        "parkLighting": "Park and garden lighting",
+        "pathwayLighting": "Pathway lighting",
+        "security": "Security lighting",
+        "public": "Public areas",
+        "residential": "Residential areas"
+      }
+    }
+  }
+}

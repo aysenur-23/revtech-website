@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "quote": "Get Quote"
+  },
+  "hero": {
+    "title": "Energy",
+    "subtitle": "Redefined",
+    "description": "We are setting new standards in energy storage solutions with performance, durability and freedom.",
+    "cta": "Explore Our Products",
+    "ctaSecondary": "Get Quote"
+  },
+  "mission": {
+    "title": "Performance, durability and freedom",
+    "subtitle": "— we are redefining energy.",
+    "cta": "CORPORATE"
+  },
+  "about": {
+    "title": "Revium: Powering a Sustainable Tomorrow!",
+    "subtitle": "Pioneer in Energy Storage",
+    "description": "Revium accelerates the transition to sustainable energy with innovative battery storage and renewable energy solutions. Our advanced battery systems and modular designs ensure reliability across different climates from deserts to coastal regions.",
+    "mission": "We empower communities and industries with clean, efficient and cost-effective energy solutions.",
+    "stats": {
+      "projects": "Completed Pilot Projects",
+      "delivered": "Successfully Delivered Projects",
+      "satisfaction": "Customer Satisfaction", 
+      "years": "Years of Experience"
+    },
+    "achievements": [
+      "Innovative battery storage technologies",
+      "Modular and scalable design",
+      "Tested in different climate conditions",
+      "Environmentally friendly and sustainable solutions"
+    ],
+    "cta": "Learn More"
+  },
+  "products": {
+    "title": "Our Products and Services",
+    "subtitle": "Meet our innovative solutions that meet the energy needs of the future.",
+    "portablePower": {
+      "title": "Portable Power Sources",
+      "subtitle": "Uninterrupted energy for camping and emergencies.",
+      "description": "Have your energy with you everywhere with our light and powerful portable power sources. Wide range of use from outdoor sports to home backup."
+    },
+    "solarInstallation": {
+      "title": "Solar Panel Installation",
+      "subtitle": "Turnkey solutions with our expert team.",
+      "description": "Professional solar panel installation services for your homes and workplaces. Ensure your energy independence with us."
+    },
+    "vehiclePower": {
+      "title": "Vehicle Power Packs",
+      "subtitle": "Reliable power in your travels and work.",
+      "description": "High-capacity power packs specially designed for your vehicles. Ideal for long journeys and mobile office needs."
+    },
+    "cabinPower": {
+      "title": "Cabin Size Power Packs",
+      "subtitle": "Compact design, maximum efficiency.",
+      "description": "Ideal for projects where small spaces and portability are at the forefront. Long-term use with high energy density."
+    },
+    "learnMore": "Learn More",
+    "r-p2700": {
+      "title": "2.7 kWh Storable Power Pack",
+      "subtitle": "R-P2700",
+      "description": "Compact and portable energy solution",
+      "energy": "2.7 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "2000 W",
+      "maxPvPower": "700 W MPPT",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "550×391×317 mm / 33–35 kg",
+      "examples": "Hilti Breaker (3.2s), Drill (3.2s), USB-C (15W), Lighting (4.8s/1000W)"
+    },
+    "r-p5400": {
+      "title": "5.4 kWh Storable Power Pack",
+      "subtitle": "R-P5400",
+      "description": "Medium-scale energy storage solution",
+      "energy": "5.4 kWh",
+      "outputVoltage": "220 VAC",
+      "outputPower": "2000–4000 W (depending on model)",
+      "maxPvPower": "700W–3000W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "800×335×910 mm, 60–67 kg",
+      "examples": "Hilti Breaker (3.2s), Drill (3.2s), USB-C (15W), Lighting (4.8s/1000W)"
+    },
+    "r-s10500": {
+      "title": "10.5 kWh Storage Battery",
+      "subtitle": "R-S10500",
+      "description": "Large-scale energy storage system",
+      "energy": "10.5 kWh",
+      "outputVoltage": "220 VAC",
+      "outputPower": "4000 W",
+      "maxPvPower": "3000 W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "732×391×400 mm / 100 kg",
+      "usage": "Emergency situations, mobile stations, outdoor"
+    },
+    "r-sb2700b": {
+      "title": "2.7 kWh Storage Battery (Bluetooth)",
+      "subtitle": "R-SB2700B",
+      "description": "Bluetooth-enabled compact storage",
+      "nominalVoltage": "24V",
+      "capacity": "206 Ah",
+      "energy": "2.7 kWh",
+      "outputPower": "2000 W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "400×391×244 mm / 45 kg",
+      "extra": "Bluetooth available"
+    },
+    "r-sb5400b": {
+      "title": "5.4 kWh Storage Battery (Bluetooth)",
+      "subtitle": "R-SB5400B",
+      "description": "Bluetooth-enabled medium-scale storage",
+      "nominalVoltage": "48V",
+      "capacity": "105 Ah",
+      "energy": "5.4 kWh",
+      "outputPower": "3000–4000W",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "400×391×244 mm / 45 kg",
+      "extra": "Bluetooth available"
+    },
+    "r-m21600": {
+      "title": "Power Layer – Modular Energy Storage Unit",
+      "subtitle": "R-M21600",
+      "description": "Expandable capacity modular system",
+      "nominalVoltage": "51.2V",
+      "capacity": "105Ah / 210Ah / 315Ah / 420Ah",
+      "energy": "5.4 / 10.8 / 16.2 / 21.6 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "3–12 kW",
+      "maxPvPower": "4–16 kW",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine",
+      "dimensions": "1660×535×535 mm / 66–210 kg"
+    },
+    "r-h21600": {
+      "title": "Hilux Power Pack",
+      "subtitle": "R-H21600",
+      "description": "High-capacity power pack",
+      "energy": "21.6 kWh",
+      "outputVoltage": "230 VAC",
+      "outputPower": "3–12 kW (3-phase and single-phase options)",
+      "maxPvPower": "4–16 kW",
+      "batteryLife": "4000 Cycle",
+      "waveType": "Pure Sine"
+    },
+    "r-u200000": {
+      "title": "Defense Industry UNIMOG Power Pack",
+      "subtitle": "R-U200000",
+      "description": "Special design for defense industry",
+      "energy": "200 kWh",
+      "outputVoltage": "230 VAC / 380 VAC",
+      "outputPower": "60 kW",
+      "maxPvPower": "80 kW",
+      "batteryLife": "2000 Cycle",
+      "fastCharge": "100 kW",
+      "acCharge": "22 kW"
+    }
+  },
+  "features": {
+    "title": "Why Revium?",
+    "subtitle": "Our Advantages",
+    "items": {
+      "modular": {
+        "title": "Modular",
+        "description": "Flexible solutions from small to large scale"
+      },
+      "durable": {
+        "title": "Durable",
+        "description": "2000+ cycle, long-lasting cells"
+      },
+      "reliable": {
+        "title": "Reliable",
+        "description": "Industry standard production line"
+      },
+      "sustainable": {
+        "title": "Sustainable",
+        "description": "Renewable energy compatible"
+      }
+    }
+  },
+  "footer": {
+    "description": "As Revium, we play a leading role in energy storage and renewable energy solutions.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Fevzi Çakmak Mah. Milenyum Cad. No:81 Karatay/KONYA",
+    "phone": "+90 (551) 829-1613",
+    "email": "info@reviumtech.com",
+    "rights": "All rights reserved."
+  },
+  "products": {
+    "categories": {
+      "title": "Our Product Categories",
+      "subtitle": "We offer energy storage solutions suitable for every need with our wide product range."
+    },
+    "portablePower": {
+      "title": "Portable Power Packages",
+      "subtitle": "Compact solutions for camping and emergencies",
+      "description": "Reliable energy anywhere with lightweight and portable design. Ideal solutions for camping and emergencies."
+    },
+    "vehiclePower": {
+      "title": "Vehicle Type Power Packages",
+      "subtitle": "Special design systems for vehicle use",
+      "description": "Powerful systems specially designed for vehicle integration. High capacity and durable structure."
+    },
+    "cabinPower": {
+      "title": "Cabin Type Power Packages",
+      "subtitle": "High capacity systems for fixed installation",
+      "description": "Fixed installation systems designed for industrial use. High capacity and continuous power."
+    },
+    "solarInstallation": {
+      "title": "Solar Panel Installation",
+      "subtitle": "Turnkey solutions with our expert team",
+      "description": "Professional solar panel installation services. Ensure your energy independence with us."
+    },
+    "learnMore": "Explore"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Pioneer in energy storage solutions",
+    "description": "As ReviumTech, we offer innovative solutions in energy storage technologies. We develop systems suitable for every need with our modular and scalable design.",
+    "stats": {
+      "projects": "Projects",
+      "delivered": "Delivered",
+      "satisfaction": "Satisfaction"
+    },
+    "features": {
+      "sustainable": {
+        "title": "Sustainable",
+        "description": "Environmentally friendly technologies"
+      },
+      "innovative": {
+        "title": "Innovative",
+        "description": "Advanced battery systems"
+      },
+      "reliable": {
+        "title": "Reliable",
+        "description": "Tested in different climates"
+      }
+    },
+    "achievements": [
+      "Innovative battery storage technologies",
+      "Modular and scalable design",
+      "Long-lasting and durable structure",
+      "Easy installation and maintenance"
+    ],
+    "cta": {
+      "text": "More information",
+      "button": "View Details"
+    }
+  }
+}
