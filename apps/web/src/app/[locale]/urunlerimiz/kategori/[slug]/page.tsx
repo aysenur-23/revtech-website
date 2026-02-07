@@ -194,14 +194,17 @@ export default async function CategoryPage({ params }: Props) {
                                 className={`group bg-white rounded-2xl lg:rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ring-1 ring-slate-100 hover:ring-blue-100 min-h-0 ${isMiddleCard ? 'lg:mx-2 lg:px-1' : ''}`}
                                 style={{ animationDelay: `${idx * 100}ms` }}
                             >
-                                {/* Sabit yükseklikte görsel alanı */}
+                                {/* Sabit yükseklikte görsel alanı - native img ile mobilde güvenilir yükleme (disableStaticImages) */}
                                 <div className="relative w-full h-52 sm:h-56 lg:h-60 flex-shrink-0 flex items-center justify-center bg-gradient-to-b from-slate-50 to-white transition-colors group-hover:from-blue-50/30 group-hover:to-white">
-                                    <Image
-                                        src={product.images?.[0] || '/images/products/placeholder.png'}
+                                    <img
+                                        src={product.images?.[0] || '/images/products/2-7kwh-a-1.webp'}
                                         alt={productName}
-                                        fill
-                                        className={`object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md ${product.slug === 'revium-2-7-kwh' ? 'p-2 sm:p-3' : 'p-5 sm:p-6'}`}
-                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        width={320}
+                                        height={240}
+                                        loading={idx < 3 ? 'eager' : 'lazy'}
+                                        fetchPriority={idx < 3 ? 'high' : 'auto'}
+                                        decoding="async"
+                                        className={`w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md ${product.slug === 'revium-2-7-kwh' ? 'p-2 sm:p-3' : 'p-5 sm:p-6'}`}
                                     />
                                 </div>
 

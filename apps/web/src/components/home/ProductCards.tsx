@@ -46,8 +46,8 @@ export default function ProductCards() {
         {
             key: 'vehiclePower',
             slug: 'vehicle',
-            image: '/images/products/vehicle-category-new.jpg',
-            priority: false,
+            image: '/images/products/vehicle-power-new.png',
+            priority: true,
             defaultTitle: 'Araç Tipi Güç Paketleri',
         },
         {
@@ -134,7 +134,7 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
             )}
         >
             {/* Full-Bleed Background Image */}
-            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl bg-slate-200">
                 <Image
                     alt={t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                     src={category.image}

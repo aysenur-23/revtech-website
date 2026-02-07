@@ -736,6 +736,18 @@
           "Uzaktan İzleme"
         ]
       },
+      "ges-power-station": {
+        "name": "Powerstation Serisi",
+        "description": "Güneş enerjisi ve depolamayı tek bir ünitede birleştiren akıllı istasyonlar.",
+        "features": [
+          "Güneş Paneli Girişi",
+          "Depolama Ünitesi",
+          "Tekerlekli Mobil Şasi",
+          "Tak-Çalıştır",
+          "Her Yerde Enerji",
+          "Uzaktan İzleme"
+        ]
+      },
       "revium-voltwagon": {
         "name": "VoltWagon",
         "description": "Güneşten aldığı gücü mobil olarak taşıyan, her türlü araziye uygun güneş enerjili römork.",

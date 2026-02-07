@@ -32,7 +32,7 @@ const nextConfig = {
   experimental: {
     // optimizeCss: true, // Disabled due to critters compatibility issue
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
-    // formatjs/next-intl vendor chunk çözümleme hatasını önler
+    // Vendor chunk çözümleme hatasını önler
     serverComponentsExternalPackages: ['@formatjs/icu-messageformat-parser'],
   },
 

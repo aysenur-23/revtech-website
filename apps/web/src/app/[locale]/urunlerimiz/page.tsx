@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, Battery, Truck, Zap, Server, Sun } from 'lucide-react';
 
 interface Props {
@@ -121,10 +120,11 @@ export default async function ProductsPage({ params }: Props) {
             </section>
 
             {/* Categories & Products */}
-            {categories.map((cat) => {
+            {categories.map((cat, catIndex) => {
                 const catProducts = allProducts.filter(p => p.category === cat.id);
                 if (catProducts.length === 0) return null;
                 const Icon = cat.icon;
+                const productStartIndex = categories.slice(0, catIndex).reduce((acc, c) => acc + allProducts.filter(p => p.category === c.id).length, 0);
 
                 return (
                     <section key={cat.id} id={cat.id} className="py-16 border-b border-slate-200 last:border-0">
@@ -144,22 +144,28 @@ export default async function ProductsPage({ params }: Props) {
                                 </div>
                             </div>
 
-                            {/* Products Grid */}
+                            {/* Products Grid - ilk 4 görsel priority ile mobilde hemen yüklensin */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {catProducts.map((product) => (
+                                {catProducts.map((product, productIndex) => {
+                                    const isAboveFold = (productStartIndex + productIndex) < 4;
+                                    return (
                                     <Link
                                         key={product.id}
                                         href={`/${locale}/urunlerimiz/${product.id}/`}
                                         className="group bg-white rounded-[2rem] p-6 hover:shadow-xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 flex flex-col"
                                     >
-                                        <div className="aspect-[4/3] relative rounded-2xl bg-slate-50 mb-6 overflow-hidden">
-                                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white opacity-50" />
-                                            <Image
+                                        <div className="aspect-[4/3] relative rounded-2xl bg-slate-50 mb-6 overflow-hidden flex items-center justify-center">
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white opacity-50 pointer-events-none" />
+                                            {/* disableStaticImages nedeniyle native img: mobilde güvenilir yükleme */}
+                                            <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                fill
-                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-4 sm:p-6' : product.id === 'revium-2-7-kwh-bag' ? 'p-14 sm:p-16' : 'p-6'
-                                                    }`}
+                                                width={400}
+                                                height={300}
+                                                loading={isAboveFold ? 'eager' : 'lazy'}
+                                                fetchPriority={isAboveFold ? 'high' : 'auto'}
+                                                decoding="async"
+                                                className={`w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-4 sm:p-6' : product.id === 'revium-2-7-kwh-bag' ? 'p-14 sm:p-16' : 'p-6'}`}
                                             />
                                             <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                                                 <div className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm text-slate-800">
@@ -193,7 +199,8 @@ export default async function ProductsPage({ params }: Props) {
                                             </div>
                                         </div>
                                     </Link>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     </section>

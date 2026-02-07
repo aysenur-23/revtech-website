@@ -1034,7 +1034,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
 
     // Use Arabic features from messages when available; otherwise use code features + translateLabel
-    const rawFeatures = tDetail.raw(`products.${slug}.features`) as string[] | undefined;
+    const rawFeatures = tDetail.has(`products.${slug}.features`) ? (tDetail.raw(`products.${slug}.features`) as string[] | undefined) : undefined;
     const useLocalizedFeatures = locale === 'ar' && Array.isArray(rawFeatures) && rawFeatures.length > 0;
     const localizedFeatures = useLocalizedFeatures ? rawFeatures! : product.features;
     // Özellik sayısı çift olsun (grid dengesi için); tek sayıda ise bir boş placeholder ekle

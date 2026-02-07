@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import {
   Toast,
@@ -10,8 +10,11 @@ import {
 } from "@/components/ui/toast"
 import { useToast } from "@/hooks/use-toast"
 
+const hasToastComponents = Boolean(ToastProvider && Toast && ToastTitle && ToastDescription && ToastClose && ToastViewport)
+
 export function Toaster() {
   const { toasts } = useToast()
+  if (!hasToastComponents) return null
 
   return (
     <ToastProvider>

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import {
     Send, CheckCircle, Calculator, User, Mail,
-    Phone, Building2, Package, Zap, Layout,
+    Phone, Building2, Package, Zap, LayoutTemplate as LayoutIcon,
     TrendingUp, Calendar, MessageSquare, ArrowRight,
     Check, Settings, Shield, FileText, Clock
 } from 'lucide-react';
@@ -313,7 +313,7 @@ export default function QuotePage() {
                                         <div className="space-y-1.5">
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('areaLabel')}</label>
                                             <div className="relative">
-                                                <Layout className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                                                <LayoutIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
                                                     name="quote-area"
                                                     className="w-full h-12 pl-11 pr-11 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none [&::-ms-expand]:hidden bg-no-repeat bg-[right_1rem_center] bg-[length:1rem_1rem]"
