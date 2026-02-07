@@ -44,9 +44,9 @@ const products: Record<string, {
         modelId: 'R-SB2700',
         capacity: '2.7 kWh',
         power: '2000 W',
-        image: '/images/products/2-7kwh-a-1.webp',
+        image: '/images/products/2-7kwh-a-1.png',
         categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
-        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
+        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda. Katalog 2026: 2.7 kWh çanta tipi, 548×391×335 mm, 35 kg.',
         features: [
             'Enerji: 2.7 kWh',
             'Çıkış Voltajı: 220 VAC',
@@ -91,7 +91,7 @@ const products: Record<string, {
         power: '2000 W',
         image: '/images/products/2-7kwh-b-1.webp',
         categoryTitle: 'Taşınabilir Enerji Depolama',
-        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
+        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Katalog 2026: 2.7 kWh depolanabilir, 500×335×285 mm, 35 kg, 1000 W MPPT, 6000 çevrim.',
         features: [
             'Enerji: 2.7 kWh',
             'Çıkış Voltajı: 220 VAC',
@@ -137,7 +137,7 @@ const products: Record<string, {
         power: 'VDC System',
         image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Sabit / Modüler Batarya',
-        description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü.',
+        description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü. Katalog 2026: 2.7 / 5.4 kWh LFP, nominal voltaj, kapasite, enerji, boyut, ağırlık, Bluetooth.',
         features: [
             'Nominal Voltaj: 12 / 24 / 48 VDC',
             'Kapasite: 105 / 206 Ah',
@@ -169,7 +169,7 @@ const products: Record<string, {
         power: '3000 W',
         image: '/images/products/5-4kwh-h-1.webp',
         categoryTitle: 'Yüksek Kapasiteli Taşınabilir Güç',
-        description: 'Yüksek enerji ihtiyacı duyan profesyoneller için 5.4 kWh kapasiteli devasa güç.',
+        description: 'Yüksek enerji ihtiyacı duyan profesyoneller için 5.4 kWh kapasiteli devasa güç. Katalog 2026: 777×458×1340 mm, 60 kg.',
         features: [
             'Enerji: 5.4 kWh',
             'Çıkış Voltajı: 220 VAC',
@@ -214,7 +214,7 @@ const products: Record<string, {
         power: '3 – 20 kW',
         image: '/images/products/cabin-power.webp',
         categoryTitle: 'Endüstriyel Enerji Depolama (Tek Kabin)',
-        description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini.',
+        description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini. Katalog 2026: 5.4–21.6 kWh, boyut 480/960×460/900×1660/2250 mm, 70–270 kg.',
         features: [
             'Enerji: 5.4 – 21.6 kWh (tek kabin)',
             'Çıkış Voltajı: 220 VAC',
@@ -222,8 +222,10 @@ const products: Record<string, {
             'Max PV Güç: 1 – 30 kW (MPPT)',
             'Batarya Ömrü: 6000 çevrim',
             'Dalga Tipi: Saf Sinüs',
+            'Boyutlar: 480/960 × 460/900 × 1660/2250 mm',
             'Ağırlık: 70 – 270 kg',
-            'Koruma: IP54'
+            'Koruma: IP54',
+            'Çalışma Sıcaklığı: -20°C ~ +50°C'
         ],
         specs: [
             { label: 'Enerji', value: '5.4 – 21.6 kWh' },
@@ -232,6 +234,7 @@ const products: Record<string, {
             { label: 'Max PV Güç', value: '1 – 30 kW (MPPT)' },
             { label: 'Batarya Ömrü', value: '6000 çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Boyutlar', value: '480/960 × 460/900 × 1660/2250 mm' },
             { label: 'Ağırlık', value: '70 – 270 kg' },
         ],
         usageAreas: [
@@ -247,14 +250,15 @@ const products: Record<string, {
         power: '30 kW (3-Phase)',
         image: '/images/products/hilux-21-6kwh-1.webp',
         categoryTitle: 'Araç Üstü Mobil Enerji Sistemi',
-        description: 'Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.',
+        description: 'Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem. Katalog 2026: 3×10 kW / 5×5 kW, 30 kW PV.',
         features: [
             'Enerji: 60 – 100 kWh',
             'Çıkış Gücü (3 Faz): 3 × 10 kW (380 VAC)',
             'Çıkış Gücü (Tek Faz): 5 × 5 kW (220 VAC)',
             'Max PV Güç: 30 kW',
             'Batarya Ömrü: 6000 çevrim',
-            'Dalga Tipi: Saf Sinüs'
+            'Dalga Tipi: Saf Sinüs',
+            'Araç Uyumu: Hilux / Pick Up'
         ],
         specs: [
             { label: 'Enerji', value: '60 – 100 kWh' },
@@ -277,14 +281,16 @@ const products: Record<string, {
         power: 'Scalable',
         image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Ölçeklenebilir Endüstriyel Batarya',
-        description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları.',
+        description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları. Katalog 2026: 51.2 V, 105–420 Ah, 5.4–172 kWh, boyut 400/860×391/800×365/2180 mm, 66–950 kg.',
         features: [
             'Nominal Voltaj: 51.2 V',
             'Artırılabilir Kapasite: 105 / 210 / 315 / 420 Ah',
             'Enerji Aralığı: 5.4 – 172 kWh',
             'Batarya Ömrü: 6000 çevrim',
+            'Boyutlar: 400–860 × 391–800 × 365–2180 mm',
             'Ağırlık: 66 – 950 kg',
-            'Hücre Tipi: LiFePO4'
+            'Hücre Tipi: LiFePO4',
+            'Modüler Kurulum'
         ],
         specs: [
             { label: 'Nominal Voltaj', value: '51.2 V' },
@@ -306,7 +312,7 @@ const products: Record<string, {
         power: '250 kW – 2.5 MW',
         image: '/images/products/gridpack.webp',
         categoryTitle: 'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi',
-        description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
+        description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm. Katalog 2026: 500 kWh–5 MWh, 600–1500 VDC, 250 kW–2.5 MW, sıvı soğutma.',
         features: [
             'Enerji Kapasitesi: 500 kWh – 5 MWh',
             'Voltaj Aralığı: 600 – 1500 VDC',
@@ -380,7 +386,8 @@ const products: Record<string, {
             'Ağırlık: 2450 kg',
             'Mobil Römork',
             'Güneş Entegreli',
-            'Uzaktan İzleme'
+            'Uzaktan İzleme',
+            'Çalışma Sıcaklığı: -20°C ~ +50°C'
         ],
         specs: [
             { label: 'Kapasite', value: '192 kWh' },
@@ -401,13 +408,13 @@ const products: Record<string, {
         power: '6 – 24 kW AC',
         image: '/images/products/solarport-final.png',
         categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
-        description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
+        description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport. Katalog 2026: 2–8 araç, 8–48 panel, 4.8–38.8 kWp, 22 kW AC, opsiyonel DC.',
         features: [
             'Araç Kapasitesi: 2 – 8 araç',
             'Panel Sayısı: 8 – 48 adet',
             'Kurulu Güç: 4.8 – 38.8 kWp',
             'MPPT Voltaj Aralığı: 180 – 950 VDC',
-            'AC Çıkış Gücü: 6 – 24 kW',
+            'AC Çıkış Gücü: 6 – 24 kW (22 kW AC)',
             'Şarj Altyapısı: 22 kW AC',
             'Opsiyonel: DC hızlı şarj',
             'Koruma: IP65'
@@ -434,13 +441,14 @@ const products: Record<string, {
         power: '45 – 180 kW',
         image: '/images/products/grid-core.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
+        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu. Katalog 2026: 45–180 kW, 7" dokunmatik ekran, 690×400×1950 mm.',
         features: [
             'DC Çıkış Gücü: 45 – 180 kW',
             'DC Gerilim: 150 – 1000 VDC',
             'AC Giriş: 400 VAC, 3 Faz',
             'Konnektör: CCS2',
-            'Çıkış Sayısı: 1 DC',
+            'Ekran: 7" dokunmatik',
+            'Boyutlar: 690 × 400 × 1950 mm',
             'Haberleşme: Ethernet / CAN / 4G',
             'Protokol: OCPP 1.6',
             'Koruma: IP54'
@@ -468,7 +476,7 @@ const products: Record<string, {
         power: '90 – 270 kW',
         image: '/images/products/grid-pulse.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
+        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu. Katalog 2026: 90–270 kW, 15" ekran, RFID/QR/NFC, 580×970×1950 mm, ~450 kg.',
         features: [
             'DC Çıkış Gücü: 90 – 270 kW',
             'DC Gerilim: 150 – 1000 VDC',
@@ -476,6 +484,8 @@ const products: Record<string, {
             'Çıkış Sayısı: 2 DC',
             'AC Giriş: 400 VAC, 3 Faz',
             'Ödeme: RFID / QR / NFC',
+            'Ekran: 15" dokunmatik',
+            'Boyutlar / Ağırlık: 580 × 970 × 1950 mm, ~450 kg',
             'Protokol: OCPP 1.6',
             'Koruma: IP54'
         ],
@@ -928,8 +938,10 @@ export default async function ProductDetailPage({ params }: Props) {
         notFound();
     }
 
-    // Replace data with localized versions if available
-    const localizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product.name;
+    // Replace data with localized versions if available; avoid showing translation keys (e.g. "title")
+    const rawLocalizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : (tDetail.has(`${slug}.title`) ? tDetail(`${slug}.title`) : product.name);
+    const looksLikeKey = (s: string) => !s || s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+    const localizedName = (rawLocalizedName && !looksLikeKey(String(rawLocalizedName))) ? String(rawLocalizedName) : (product?.name ?? slug ?? '');
     const localizedDesc = translateLabel(tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : (product.description || ''), locale);
 
 
@@ -1397,14 +1409,14 @@ export default async function ProductDetailPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Final CTA */}
-                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-blue-50 to-slate-50">
+                {/* Final CTA - yüksek kontrast, okunabilir metin */}
+                <section className="py-8 sm:py-10 md:py-12 bg-white border-t border-slate-200">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
-                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-3 sm:mb-4 px-4">
                                 {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : locale === 'ar' ? 'مزيد من المعلومات حول' : 'More Information About'}
                             </h2>
-                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
                                 {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : locale === 'ar' ? 'اتصل بفريق خبرائنا للحصول على معلومات مفصلة أو طلب عرض سعر لهذا المنتج' : 'Contact our expert team for detailed information or to request a quote for this product'}
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">

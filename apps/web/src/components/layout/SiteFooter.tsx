@@ -29,8 +29,8 @@ export default async function SiteFooter() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/vehicle/`} className="hover:text-blue-600 transition-colors">
-                                    {t('vehiclePower')}
+                                <Link href={`/${locale}/urunlerimiz/kategori/charging/`} className="hover:text-blue-600 transition-colors">
+                                    {t('evCharging')}
                                 </Link>
                             </li>
                             <li>
@@ -41,6 +41,11 @@ export default async function SiteFooter() {
                             <li>
                                 <Link href={`/${locale}/urunlerimiz/kategori/battery/`} className="hover:text-blue-600 transition-colors">
                                     {t('batteryPower')}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={`/${locale}/urunlerimiz/kategori/vehicle/`} className="hover:text-blue-600 transition-colors">
+                                    {t('vehiclePower')}
                                 </Link>
                             </li>
                         </ul>

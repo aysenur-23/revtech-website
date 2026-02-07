@@ -8,6 +8,11 @@ export default function RU200000Page() {
   
   const product = {
     name: 'R-U200000',
+    modelId: 'R-U200000',
+    categoryTitle: loading ? 'Araç Üstü Mobil Enerji Sistemi' : t('productDetails.rU200000.categoryTitle'),
+    capacity: '200 kWh',
+    power: '60 kW',
+    batteryLabel: 'LiFePO₄',
     title: loading ? 'Savunma Sanayi UNIMOG Güç Paketi' : t('productDetails.rU200000.title'),
     description: loading ? 'Araç Üstü - UNIMOG araçları için özel olarak tasarlanmış araç üstü güç paketi. 200 kWh enerji ve 60 kW yüksek güç ile zorlu koşullarda güvenilir enerji sağlar.' : t('productDetails.rU200000.description'),
     image: '/images/products/unimog-200kwh-1.jpg',

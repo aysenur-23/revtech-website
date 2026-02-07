@@ -136,6 +136,8 @@ playwright/.cache/
 
 # Deployment
 public_html/
+revtech-website-new/
+apps/web/deploy/
 temp_htaccess
 temp_images_backup/
 optimize-images.mjs

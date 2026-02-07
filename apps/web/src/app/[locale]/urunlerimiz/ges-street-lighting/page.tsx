@@ -6,14 +6,14 @@ import { Sun, TrendingUp, Shield } from 'lucide-react'
 
 export default function GesStreetLightingPage() {
   const { t, loading } = useTranslation()
-  
+
   const sustainableTitle = t('productPage.whyChoose.ges.sustainable')
   const sustainableDesc = t('productPage.whyChoose.ges.sustainableDesc')
   const efficiencyTitle = t('productPage.whyChoose.ges.efficiency')
   const efficiencyDesc = t('productPage.whyChoose.ges.efficiencyDesc')
   const longevityTitle = t('productPage.whyChoose.ges.longevity')
   const longevityDesc = t('productPage.whyChoose.ges.longevityDesc')
-  
+
   const whyChooseItems = [
     {
       icon: Sun,
@@ -40,11 +40,16 @@ export default function GesStreetLightingPage() {
       hoverColor: 'text-green-600'
     }
   ]
-  
+
   const product = {
     name: 'GES Sokak Aydınlatma Sistemi',
-    title: loading ? 'GES Sokak Aydınlatma Sistemi' : t('productDetails.gesStreetLighting.title'),
-    description: loading ? 'REVIUM Solar StreetLight, güneş enerjisiyle çalışan modern bir LED aydınlatma sistemidir. Yüksek verimli güneş panelleri, entegre LiFePO₄ batarya ve akıllı kontrol modülü sayesinde gece boyunca kesintisiz, güvenilir ve dengeli aydınlatma sağlar. Tamamen şebekeden bağımsız çalışma özelliğiyle enerji maliyetlerini sıfıra indirir, bakım ihtiyacını minimuma düşürür. Estetik tasarımı, uzun ömürlü yapısı ve çevre dostu teknolojisiyle sürdürülebilir şehir aydınlatmasının yeni standardını oluşturur.' : t('productDetails.gesStreetLighting.description'),
+    modelId: 'STREETLIGHT',
+    categoryTitle: loading ? 'Güneş Enerjili Aydınlatma' : t('productDetails.ges-street-lighting.categoryTitle'),
+    capacity: 'Off-grid',
+    power: 'LED',
+    batteryLabel: 'LiFePO₄',
+    title: loading ? 'GES Sokak Aydınlatma Sistemi' : t('productDetails.ges-street-lighting.title'),
+    description: loading ? 'REVIUM Solar StreetLight, güneş enerjisiyle çalışan modern bir LED aydınlatma sistemidir. Yüksek verimli güneş panelleri, entegre LiFePO₄ batarya ve akıllı kontrol modülü sayesinde gece boyunca kesintisiz, güvenilir ve dengeli aydınlatma sağlar. Tamamen şebekeden bağımsız çalışma özelliğiyle enerji maliyetlerini sıfıra indirir, bakım ihtiyacını minimuma düşürür. Estetik tasarımı, uzun ömürlü yapısı ve çevre dostu teknolojisiyle sürdürülebilir şehir aydınlatmasının yeni standardını oluşturur.' : t('productDetails.ges-street-lighting.description'),
     image: '/images/products/ges-street-lighting.png',
     whyChooseItems,
     features: [],
@@ -56,12 +61,12 @@ export default function GesStreetLightingPage() {
       'Kamu alanları',
       'Konut alanları'
     ] : [
-      t('productDetails.gesStreetLighting.applications.streetLighting'),
-      t('productDetails.gesStreetLighting.applications.parkLighting'),
-      t('productDetails.gesStreetLighting.applications.pathwayLighting'),
-      t('productDetails.gesStreetLighting.applications.security'),
-      t('productDetails.gesStreetLighting.applications.public'),
-      t('productDetails.gesStreetLighting.applications.residential')
+      t('productDetails.ges-street-lighting.applications.streetLighting'),
+      t('productDetails.ges-street-lighting.applications.parkLighting'),
+      t('productDetails.ges-street-lighting.applications.pathwayLighting'),
+      t('productDetails.ges-street-lighting.applications.security'),
+      t('productDetails.ges-street-lighting.applications.public'),
+      t('productDetails.ges-street-lighting.applications.residential')
     ]
   }
 

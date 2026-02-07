@@ -1,34 +1,18 @@
-﻿import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+    return twMerge(clsx(inputs));
 }
 
-export function formatDate(date: Date | string) {
-  return new Intl.DateTimeFormat('tr-TR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }).format(new Date(date))
-}
-
-export function formatCurrency(amount: number, currency = 'TRY') {
-  return new Intl.NumberFormat('tr-TR', {
-    style: 'currency',
-    currency,
-  }).format(amount)
-}
-
-export function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s_-]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
-
-export function truncate(text: string, length: number) {
-  if (text.length <= length) return text
-  return text.slice(0, length) + '...'
+// Convert Western numbers to Arabic-Indic numerals for Arabic locale
+export function toArabicNumeral(num: number | string, locale: string): string {
+    if (locale === 'ar') {
+        const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+        return num.toString().split('').map(d => {
+            const digit = parseInt(d);
+            return !isNaN(digit) ? arabicNumerals[digit] : d;
+        }).join('');
+    }
+    return num.toString();
 }

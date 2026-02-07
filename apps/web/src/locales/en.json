@@ -81,6 +81,10 @@
       "subtitle": "High capacity systems for large-scale industrial facilities",
       "description": "Energy storage solutions according to industrial standards with SCADA integration and remote monitoring for industrial facilities."
     },
+    "charging": {
+      "title": "Charging & Power Stations",
+      "subtitle": "Fast charging and power station solutions"
+    },
     "learnMore": "Explore"
   },
   "productPage": {
@@ -563,6 +567,244 @@
     "altText": "Revium 5.4 kWh 2000W Power Pack"
   },
   "productDetails": {
+    "revium-2-7-kwh": {
+      "categoryTitle": "Field-Type Portable Power Unit",
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "2.7 kWh capacity portable power pack. Ideal for camping and emergencies. 2 kW pure sine output and 700 W MPPT solar integration.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 550 × 391 × 317 mm",
+        "weight": "Weight: 33 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "2 kW pure sine output",
+        "solarIntegration": "700 W MPPT solar integration",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "compactDesign": "Compact design",
+        "safety": "Safety: Overload and short circuit protection"
+      },
+      "applications": {
+        "camping": "Camping activities",
+        "emergency": "Emergencies",
+        "travel": "Travel",
+        "outdoor": "Outdoor events",
+        "tools": "Demolition tools",
+        "electronics": "Electronic devices"
+      }
+    },
+    "revium-2-7-kwh-bag": {
+      "categoryTitle": "Portable Energy Storage",
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "2.7 kWh portable power pack with Model B design. 2 kW pure sine output and 700 W MPPT solar integration.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 550 × 391 × 317 mm",
+        "weight": "Weight: 33 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "2 kW pure sine output",
+        "solarIntegration": "700 W MPPT solar integration",
+        "modelB": "Model B design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "professional": "Professional use",
+        "industrial": "Industrial applications",
+        "emergency": "Emergency systems",
+        "mobileOffice": "Mobile offices",
+        "smallBusiness": "Small businesses",
+        "electronics": "Electronic devices"
+      }
+    },
+    "revium-5-4-kwh": {
+      "categoryTitle": "High-Capacity Portable Power",
+      "title": "5.4 kWh Portable Power Pack",
+      "description": "5.4 kWh portable power pack with large case design. 3 kW pure sine output and 1.5 kW PV fast charging.",
+      "features": {
+        "capacity": "Capacity: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 220 VAC, 3000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 1500 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 800 × 458 × 910 mm",
+        "weight": "Weight: 60 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "sineOutput": "3 kW pure sine output",
+        "quickCharge": "1.5 kW PV fast charging",
+        "largeCase": "Large case design",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickChargeSupport": "Fast charging support"
+      },
+      "applications": {
+        "mediumHomes": "Medium-scale homes",
+        "smallBusiness": "Small businesses",
+        "camping": "Camping and caravans",
+        "emergency": "Emergency backup",
+        "outdoor": "Outdoor events",
+        "mobileOffice": "Mobile offices"
+      }
+    },
+    "revium-power-cabinet": {
+      "categoryTitle": "Industrial Energy Storage (Single Cabinet)",
+      "title": "Power Cabinet",
+      "description": "21.6 kWh Integrated System - High capacity integrated power cabinet for fixed installation. Reliable energy for critical infrastructure.",
+      "features": {
+        "energyCapacity": "21.6 kWh energy capacity",
+        "outputPower": "5 kW output power",
+        "nominalVoltage": "51.2 VDC nominal voltage",
+        "dimensions": "600 × 500 × 1000 mm dimensions",
+        "weight": "200 kg weight",
+        "batteryTech": "Long-lasting battery technology",
+        "integrated": "Integrated system design",
+        "optimized": "Optimized for fixed installation",
+        "highCapacity": "High capacity energy storage",
+        "modular": "Modular structure",
+        "safe": "Safe operation",
+        "maintenance": "Easy maintenance and service"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "dataCenter": "Data centers",
+        "hospitals": "Hospitals and health facilities",
+        "telecom": "Telecommunications centers",
+        "solar": "Solar power plants",
+        "critical": "Critical infrastructure systems"
+      }
+    },
+    "revium-power-layer": {
+      "categoryTitle": "Scalable Industrial Battery",
+      "title": "Power Layer – Modular Energy Storage Unit",
+      "description": "Flexible energy storage with modular design. Ideal for industrial and commercial applications.",
+      "features": {
+        "nominalVoltage": "Nominal Voltage: 51.2 V DC",
+        "modularCapacity": "Modular Capacity: 105/210/315/420 Ah • 5.4/10.8/16.2/21.6 kWh",
+        "life": "Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 400 × 391 × 365/609/853/1097 mm",
+        "weight": "Weight: 66/114/162/210 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "layered": "Layered scaling",
+        "capacityIncrease": "Capacity increase in same base area",
+        "modular": "Modular design",
+        "industrial": "Industrial use",
+        "easyInstall": "Easy installation",
+        "longLife": "Long-lasting"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "cabin": "Cabin systems",
+        "container": "Container applications",
+        "mobileOffice": "Mobile offices",
+        "construction": "Construction sites",
+        "emergency": "Emergency systems"
+      }
+    },
+    "revium-gridpack": {
+      "categoryTitle": "Grid-Scale Energy Storage",
+      "title": "GridPack 100",
+      "description": "REVIUM GridPack 100, high-capacity energy storage and management system for industrial facilities, defense, mobile energy centers and disaster zones.",
+      "features": {
+        "capacity": "100 kWh Capacity",
+        "inverter": "Integrated Inverter",
+        "bms": "Smart BMS",
+        "monitoring": "Remote Monitoring",
+        "battery": "LiFePO₄ Battery",
+        "efficiency": "High Efficiency"
+      },
+      "applications": {
+        "industrial": "Industrial facilities",
+        "defense": "Defense areas",
+        "mobile": "Mobile energy centers",
+        "disaster": "Disaster zones",
+        "critical": "Critical infrastructure systems",
+        "offGrid": "Off-grid systems"
+      }
+    },
+    "revium-pickup-power-pack": {
+      "categoryTitle": "On-Vehicle Mobile Energy System",
+      "title": "Hilux Power Pack",
+      "description": "Integrated power pack designed for pickup vehicles. Durable and high-performance energy solution.",
+      "features": {
+        "capacity": "Capacity: 7.2 kWh",
+        "output": "AC Output: 3000W",
+        "integration": "Vehicle Integration",
+        "protection": "IP65 Protection",
+        "vibration": "Vibration Resistance",
+        "charging": "Fast Charging"
+      },
+      "applications": {
+        "camping": "Camping and Caravan",
+        "mobileService": "Mobile Service Vehicles",
+        "emergency": "Emergency Response Vehicles",
+        "fieldWork": "Field Work",
+        "offRoad": "Off-Road Activities"
+      }
+    },
+    "solar-voltwagon": {
+      "categoryTitle": "Mobile Solar Trailer System",
+      "title": "Solar VOLTWAGON",
+      "description": "REVIUM VoltWagon, portable solar-powered mobile station for energy anywhere.",
+      "applications": {
+        "vehicles": "Vehicle applications",
+        "mobile": "Mobile energy systems",
+        "camping": "Camping and caravan",
+        "emergency": "Emergency vehicles",
+        "commercial": "Commercial vehicles",
+        "offGrid": "Off-grid systems"
+      }
+    },
+    "ges-street-lighting": {
+      "categoryTitle": "Solar-Powered Lighting",
+      "title": "GES Street Lighting System",
+      "description": "REVIUM Solar StreetLight, modern LED lighting system powered by solar energy.",
+      "applications": {
+        "streetLighting": "Street lighting",
+        "parkLighting": "Park and garden lighting",
+        "pathwayLighting": "Pathway lighting",
+        "security": "Security lighting",
+        "public": "Public areas",
+        "residential": "Residential areas"
+      }
+    },
+    "rSb2700d": {
+      "categoryTitle": "Portable Energy Storage",
+      "title": "2.7 kWh Portable Power Pack",
+      "description": "Durable 2.7 kWh portable power pack for harsh conditions. Compact design and 2 kW pure sine output.",
+      "features": {
+        "capacity": "Capacity: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Power Output: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV charging",
+        "cycleLife": "Cycle Life: ≈4000 cycles",
+        "dimensions": "Dimensions: 550 × 391 × 317 mm",
+        "weight": "Weight: 33 kg",
+        "operatingTemp": "Operating Temperature: -20°C to +60°C",
+        "warranty": "Warranty: 3 years",
+        "compact": "Compact design",
+        "sineOutput": "2 kW pure sine output",
+        "durable": "Durable structure",
+        "usbAc": "USB and AC outputs",
+        "ledLight": "LED light system",
+        "quickCharge": "Fast charging support"
+      },
+      "applications": {
+        "construction": "Construction sites",
+        "emergency": "Emergencies",
+        "travel": "Travel",
+        "outdoor": "Outdoor events",
+        "smallBusiness": "Small businesses",
+        "mobileOffice": "Mobile offices"
+      }
+    },
     "rP2700": {
       "title": "2.7 kWh Portable Power Pack",
       "description": "2.7 kWh capacity portable power pack. Ideal portable energy solution for camping and emergencies. 2 kW pure sine output and 700 W MPPT solar integration.",
@@ -647,7 +889,8 @@
       }
     },
     "rS10500": {
-      "title": "10.5 kWh Power Pack",
+      "categoryTitle": "Rack / Cabin Type Power Pack",
+      "title": "10.5 kWh Power Pack (Rack/Cabin Type)",
       "description": "10.5 kWh capacity power pack for rack and cabin type installation. High capacity and 3-4 kW inverter options ideal for industrial use.",
       "features": {
         "capacity": "Capacity: 10.5 kWh (LiFePO₄)",
@@ -663,7 +906,8 @@
         "rackCabin": "Rack/cabin compatible design",
         "industrial": "Industrial use",
         "easyInstall": "Easy installation",
-        "longLife": "Long-lasting"
+        "longLife": "Long-lasting",
+        "safety": "Safety: BMS and protection circuits"
       },
       "applications": {
         "industrial": "Industrial facilities",
@@ -675,7 +919,8 @@
       }
     },
     "rM21600": {
-      "title": "Power Layer",
+      "categoryTitle": "Modular Energy Storage",
+      "title": "Power Layer – Modular Energy Storage Unit",
       "description": "Flexible energy storage solution with modular design. Ideal solution for industrial and commercial applications with layered scaling and capacity increase in the same base area.",
       "features": {
         "nominalVoltage": "Nominal Voltage: 51.2 V DC",
@@ -729,6 +974,7 @@
       }
     },
     "rU200000": {
+      "categoryTitle": "On-Vehicle Mobile Energy System",
       "title": "Defense Industry UNIMOG Power Pack",
       "description": "Vehicle Top - Vehicle top power pack specially designed for UNIMOG vehicles. Provides reliable energy in harsh conditions with 200 kWh energy and 60 kW high power.",
       "features": {
@@ -795,6 +1041,7 @@
       }
     },
     "rP5400": {
+      "categoryTitle": "High-Capacity Portable Power",
       "title": "5.4 kWh Portable (High Output)",
       "description": "5.4 kWh capacity portable power pack with high output power. Meets demanding energy needs with strong performance and high output capacity.",
       "features": {
@@ -812,7 +1059,8 @@
         "usbAc": "USB and AC outputs",
         "ledLight": "LED light system",
         "solarCompatible": "Solar panel compatibility",
-        "quickCharge": "Fast charging support"
+        "quickCharge": "Fast charging support",
+        "safety": "Safety: Overload and short circuit protection"
       },
       "applications": {
         "largeHomes": "Large-scale homes",
@@ -821,6 +1069,60 @@
         "emergency": "Emergency backup",
         "outdoor": "Outdoor events",
         "mobileOffice": "Mobile offices"
+      }
+    },
+    "ges-power-station": {
+      "categoryTitle": "Container Type Energy + Solar Integration",
+      "name": "Powerstation Series",
+      "title": "GES & Power Station",
+      "description": "This innovative solution combines advanced solar panel technology with a high-capacity battery storage system, intelligently balancing energy production and consumption for sustainable and efficient energy management.",
+      "applications": {
+        "residential": "Residential Applications",
+        "commercial": "Commercial Facilities",
+        "industrial": "Industrial Facilities",
+        "solarFarms": "Solar Farms",
+        "offGrid": "Off-Grid Systems",
+        "hybrid": "Hybrid Energy Systems"
+      }
+    },
+    "revium-powerstation-series": {
+      "name": "Powerstation Series",
+      "title": "Powerstation Series",
+      "description": "This innovative solution combines advanced solar panel technology with a high-capacity battery storage system, intelligently balancing energy production and consumption for sustainable and efficient energy management.",
+      "applications": {
+        "residential": "Residential Applications",
+        "commercial": "Commercial Facilities",
+        "industrial": "Industrial Facilities",
+        "solarFarms": "Solar Farms",
+        "offGrid": "Off-Grid Systems",
+        "hybrid": "Hybrid Energy Systems"
+      }
+    },
+    "solarport-duo": {
+      "categoryTitle": "Solar Carport + EV Charging + Energy Storage",
+      "name": "Solarport",
+      "title": "Solarport DUO",
+      "description": "Solarport DUO is an innovative solar carport system that combines solar energy with modern architecture. With its durable aluminum and steel structure, high-efficiency solar panels, and integrated energy storage unit, it offers both aesthetic and functional solutions.",
+      "applications": {
+        "residential": "Residential Applications",
+        "commercial": "Commercial Facilities",
+        "solarFarms": "Solar Farms",
+        "offGrid": "Off-Grid Systems",
+        "hybrid": "Hybrid Energy Systems",
+        "mobile": "Mobile Applications"
+      }
+    },
+    "revium-solarport": {
+      "name": "Solarport",
+      "title": "Solarport",
+      "description": "Solarport DUO is an innovative solar carport system that combines solar energy with modern architecture. With its durable aluminum and steel structure, high-efficiency solar panels, and integrated energy storage unit, it offers both aesthetic and functional solutions.",
+      "applications": {
+        "residential": "Residential Applications",
+        "commercial": "Commercial Facilities",
+        "solarFarms": "Solar Farms",
+        "offGrid": "Off-Grid Systems",
+        "hybrid": "Hybrid Energy Systems",
+        "mobile": "Mobile Applications"
       }
     },
     "gesPowerStation": {

@@ -43,8 +43,12 @@ export default function SolarportDuoPage() {
 
   const product = {
     name: 'Solarport DUO',
-    title: loading ? 'Solarport DUO' : t('productDetails.solarportDuo.title'),
-    description: loading ? 'SolarPort Duo, güneş enerjisini modern mimariyle buluşturan yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum-çelik konstrüksiyonu, yüksek verimli güneş panelleri ve entegre enerji depolama birimi sayesinde hem estetik hem de fonksiyonel bir çözüm sunar. Elektrikli araç şarj istasyonlarıyla tam uyumlu yapısı, park alanlarını sadece koruma alanı olmaktan çıkarıp aktif bir enerji üretim merkezine dönüştürür. SolarPort Duo, temiz enerji üretimi, sürdürülebilir altyapı ve modern tasarımıyla geleceğin şehirlerine değer katan akıllı bir otopark sistemidir.' : t('productDetails.solarportDuo.description'),
+    modelId: 'SOLARPORT',
+    categoryTitle: loading ? 'Solar Carport + EV Şarj + Enerji Depolama' : t('productDetails.solarport-duo.categoryTitle'),
+    capacity: '2 – 8 Araç',
+    power: '6 – 24 kW AC',
+    title: loading ? 'Solarport DUO' : t('productDetails.solarport-duo.title'),
+    description: loading ? 'SolarPort Duo, güneş enerjisini modern mimariyle buluşturan yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum-çelik konstrüksiyonu, yüksek verimli güneş panelleri ve entegre enerji depolama birimi sayesinde hem estetik hem de fonksiyonel bir çözüm sunar. Elektrikli araç şarj istasyonlarıyla tam uyumlu yapısı, park alanlarını sadece koruma alanı olmaktan çıkarıp aktif bir enerji üretim merkezine dönüştürür. SolarPort Duo, temiz enerji üretimi, sürdürülebilir altyapı ve modern tasarımıyla geleceğin şehirlerine değer katan akıllı bir otopark sistemidir.' : t('productDetails.solarport-duo.description'),
     image: '/images/products/solarport-updated.png',
     whyChooseItems,
     features: [],
@@ -56,12 +60,12 @@ export default function SolarportDuoPage() {
       'Hibrit enerji sistemleri',
       'Mobil uygulamalar'
     ] : [
-      t('productDetails.solarportDuo.applications.residential'),
-      t('productDetails.solarportDuo.applications.commercial'),
-      t('productDetails.solarportDuo.applications.solarFarms'),
-      t('productDetails.solarportDuo.applications.offGrid'),
-      t('productDetails.solarportDuo.applications.hybrid'),
-      t('productDetails.solarportDuo.applications.mobile')
+      t('productDetails.solarport-duo.applications.residential'),
+      t('productDetails.solarport-duo.applications.commercial'),
+      t('productDetails.solarport-duo.applications.solarFarms'),
+      t('productDetails.solarport-duo.applications.offGrid'),
+      t('productDetails.solarport-duo.applications.hybrid'),
+      t('productDetails.solarport-duo.applications.mobile')
     ]
   }
 

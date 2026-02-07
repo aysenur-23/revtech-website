@@ -32,8 +32,8 @@ const allProducts = [
     { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
 
     // Solar Products
-    { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
-    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-updated.png', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
+    { id: 'ges-power-station', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'ges-power-station.description' },
+    { id: 'solarport-duo', name: 'Solarport', image: '/images/products/solarport-updated.png', category: 'gesProducts', descriptionKey: 'solarport-duo.description' },
 ];
 
 const categories = [
@@ -49,7 +49,7 @@ export default async function ProductsPage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations('products');
-    const tDetails = await getTranslations('productDetails.products');
+    const tDetails = await getTranslations('productDetails');
 
     const heroContent = {
         tr: {
@@ -158,7 +158,7 @@ export default async function ProductsPage({ params }: Props) {
                                                 src={product.image}
                                                 alt={product.name}
                                                 fill
-                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-12' : 'p-6'
+                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${(product.id === 'revium-2-7-kwh' || product.id === 'revium-2-7-kwh-bag') ? 'p-14 sm:p-16' : 'p-6'
                                                     }`}
                                             />
                                             <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
@@ -174,10 +174,18 @@ export default async function ProductsPage({ params }: Props) {
                                                 <span>{t(`${product.category}.title`)}</span>
                                             </div>
                                             <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                                                {tDetails(`${product.id}.name`) || product.name}
+                                                {(() => {
+                                                    const v = tDetails(`${product.id}.title`) || tDetails(`${product.id}.name`);
+                                                    const isKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+                                                    return (v && !isKey(String(v))) ? v : product.name;
+                                                })()}
                                             </h3>
                                             <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-6">
-                                                {tDetails(`${product.id}.description`)}
+                                                {(() => {
+                                                    const v = tDetails(`${product.id}.description`);
+                                                    const isKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+                                                    return (v && !isKey(String(v))) ? v : (product.description ?? '');
+                                                })()}
                                             </p>
 
                                             <div className="flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors">

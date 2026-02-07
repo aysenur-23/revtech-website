@@ -6,17 +6,9 @@ import { ConfigService } from '@nestjs/config';
 @Injectable()
 export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
   constructor(private configService: ConfigService) {
-    const clientId = configService.get<string>('oauth.google.clientId');
-    const clientSecret = configService.get<string>('oauth.google.clientSecret');
-    
-    // Only initialize if OAuth credentials are provided
-    if (!clientId || !clientSecret) {
-      throw new Error('Google OAuth credentials not configured. Please set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET environment variables.');
-    }
-    
     super({
-      clientID: clientId,
-      clientSecret: clientSecret,
+      clientID: configService.get<string>('oauth.google.clientId'),
+      clientSecret: configService.get<string>('oauth.google.clientSecret'),
       callbackURL: '/auth/google/callback',
       scope: ['email', 'profile'],
     });

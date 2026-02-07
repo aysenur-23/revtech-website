@@ -1,246 +1,226 @@
-import { PRODUCTS, getProductsByCategory, type Product } from '../../../../data/products'
-import { 
-  Card, 
-  CardContent, 
-  CardDescription, 
-  CardHeader, 
-  CardTitle 
-} from '@/components/ui/shadcn-card'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { Battery, Zap, Shield, Leaf, ArrowRight, CheckCircle, Package, Truck, Home, Sun, Star } from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { ui, cn } from '@/lib/ui.config'
+import { setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
+import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRight, Battery, Truck, Zap, Server, Sun } from 'lucide-react';
 
-// Tüm ürünleri tek listede topla
+interface Props {
+    params: Promise<{ locale: string }>;
+}
+
 const allProducts = [
-  ...getProductsByCategory('portable').map((product: Product) => ({
-    ...product,
-    category: 'Taşınabilir Güç Paketleri',
-    categoryIcon: Package,
-    categoryColor: 'from-emerald-500 to-emerald-600',
-    categoryHref: '/tr/urunlerimiz/kategori/portable'
-  })),
-  ...getProductsByCategory('cabin').map((product: Product) => ({
-    ...product,
-    category: 'Kabin Tipi Güç Paketleri',
-    categoryIcon: Home,
-    categoryColor: 'from-slate-500 to-slate-600',
-    categoryHref: '/tr/urunlerimiz/kategori/cabin'
-  })),
-  ...getProductsByCategory('vehicle').map((product: Product) => ({
-    ...product,
-    category: 'Araç Tipi Güç Paketleri',
-    categoryIcon: Truck,
-    categoryColor: 'from-blue-500 to-blue-600',
-    categoryHref: '/tr/urunlerimiz/kategori/vehicle'
-  })),
-]
+    // Portable Power
+    { id: 'revium-2-7-kwh', name: '2.7 kWh Çanta Tipi Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', category: 'portablePower', descriptionKey: 'revium-2-7-kwh.description' },
+    { id: 'revium-2-7-kwh-bag', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-b-1.webp', category: 'portablePower', descriptionKey: 'revium-2-7-kwh-bag.description' },
+    { id: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', category: 'portablePower', descriptionKey: 'revium-5-4-kwh.description' },
 
-const benefits = [
-  {
-    icon: Battery,
-    title: 'Yüksek Kapasite',
-    description: 'Uzun süreli enerji depolama için optimize edilmiş batarya sistemleri'
-  },
-  {
-    icon: Shield,
-    title: 'Güvenli Kullanım',
-    description: 'Uluslararası standartlarda güvenlik sertifikaları ile korumalı'
-  },
-  {
-    icon: Leaf,
-    title: 'Çevre Dostu',
-    description: 'Sürdürülebilir enerji çözümleri ile doğaya saygılı teknoloji'
-  }
-]
+    // Vehicle Power
+    { id: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.webp', category: 'vehiclePower', descriptionKey: 'revium-pickup-power-pack.description' },
 
-export default function UrunlerimizPage() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
-      
-      {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 md:py-32 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-transparent to-teal-900/20" />
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-          backgroundSize: '20px 20px'
-        }} />
-        
-        <div className="container relative z-10 px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-white">
-              <span className="block">Enerji</span>
-              <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Ürünlerimiz
-              </span>
-            </h1>
-            <p className="text-lg sm:text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed px-4">
-              Revium'in sunduğu tüm enerji depolama çözümlerini keşfedin. 
-              Her ihtiyaca uygun, yüksek kaliteli ve güvenilir ürünler.
-            </p>
-          </div>
-        </div>
-      </section>
+    // Charging Stations
+    { id: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.webp', category: 'charging', descriptionKey: 'revium-grid-core.description' },
+    { id: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.webp', category: 'charging', descriptionKey: 'revium-grid-pulse.description' },
+    { id: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.webp', category: 'charging', descriptionKey: 'revium-grid-pulse-gen2.description' },
 
-      {/* All Products Section */}
-      <section id="products" className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-slate-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 sm:mb-6">
-              Enerji Depolama Çözümlerimiz
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto px-4">
-              Farklı kategorilerdeki tüm ürünlerimizi inceleyin ve ihtiyacınıza uygun olanı seçin
-            </p>
-          </div>
+    // Cabin Power
+    { id: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', category: 'cabinPower', descriptionKey: 'revium-power-cabinet.description' },
+    { id: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', category: 'cabinPower', descriptionKey: 'revium-power-layer.description' },
+    { id: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
 
-          {/* Products Grid - Responsive düzen */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {allProducts.map((product: any, index: number) => {
-              const CategoryIcon = product.categoryIcon
-              return (
-                <Card key={index} className="group overflow-hidden hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 bg-white border border-slate-200 shadow-sm flex flex-col h-auto sm:h-[500px]">
-                  {/* Product Image */}
-                  <div className={`relative h-48 sm:h-64 overflow-hidden flex items-center justify-center ${
-                    product.slug === 'r-u200000' ? 'bg-transparent' : 'bg-slate-100'
-                  }`}>
-                    <Image
-                      src={product.images[0]}
-                      alt={product.name}
-                      fill
-                      className={`object-contain group-hover:scale-105 transition-transform duration-300 ${
-                        product.slug === 'r-u200000' ? 'p-0' : 'p-3 sm:p-4'
-                      }`}
-                    />
-                    <div className="absolute top-2 right-2 sm:top-3 sm:right-3">
-                      <Badge variant="secondary" className="bg-white/90 text-slate-700 text-xs px-2 py-1">
-                        {product.category}
-                      </Badge>
-                    </div>
-                  </div>
-                  
-                  {/* Product Content - Responsive */}
-                  <CardContent className="p-3 sm:p-4 flex-1 flex flex-col justify-center">
-                    {/* Product Title */}
-                    <div className="text-center mb-3 sm:mb-4">
-                      <h3 className="text-sm sm:text-base font-semibold text-slate-900 group-hover:text-emerald-700 transition-colors leading-tight">
-                        {product.name}
-                      </h3>
-                    </div>
-                    
-                    {/* Product Specs - Responsive */}
-                    <div className="space-y-1 sm:space-y-2 mb-3 sm:mb-4">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs sm:text-sm text-slate-600">Kapasite:</span>
-                        <span className="text-xs sm:text-sm font-semibold text-slate-900">{product.capacity_kwh} kWh</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs sm:text-sm text-slate-600">Güç:</span>
-                        <span className="text-xs sm:text-sm font-semibold text-slate-900">
-                          {Array.isArray(product.output_w) ? product.output_w[0] : product.output_w}W
-                        </span>
-                      </div>
-                      {product.mppt_w ? (
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs sm:text-sm text-slate-600">MPPT:</span>
-                          <span className="text-xs sm:text-sm font-semibold text-slate-900">{product.mppt_w}W</span>
-                        </div>
-                      ) : (
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs sm:text-sm text-slate-600">MPPT:</span>
-                          <span className="text-xs sm:text-sm font-semibold text-slate-900">-</span>
-                        </div>
-                      )}
-                      {product.cycles ? (
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs sm:text-sm text-slate-600">Döngü:</span>
-                          <span className="text-xs sm:text-sm font-semibold text-slate-900">{product.cycles}</span>
-                        </div>
-                      ) : (
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs sm:text-sm text-slate-600">Döngü:</span>
-                          <span className="text-xs sm:text-sm font-semibold text-slate-900">-</span>
-                        </div>
-                      )}
-                    </div>
-                    
-                    {/* Separator Line */}
-                    <div className="border-t border-slate-200 mb-2 sm:mb-3"></div>
-                    
-                    {/* Action Button */}
-                    <Button asChild className="w-full bg-emerald-600 hover:bg-emerald-700 text-white transition-colors duration-200 rounded-lg py-2 sm:py-3">
-                      <Link href={`/tr/urunlerimiz/${product.slug}`} className="flex items-center justify-center gap-2 text-sm sm:text-base">
-                        Detayları İncele
-                        <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+    // Battery Systems
+    { id: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-2-7-kwh-lfp.description' },
+    { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
 
-      {/* Benefits Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-emerald-900">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
-              Neden Revium?
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto px-4">
-              Enerji depolama çözümlerimizde sunduğumuz avantajlar
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 group-hover:shadow-md">
-                  <div className="mx-auto flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-500 shadow-sm group-hover:scale-110 transition-transform duration-300 mb-4 sm:mb-6">
-                    <benefit.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">{benefit.title}</h3>
-                  <p className="text-sm sm:text-base text-blue-100 leading-relaxed">{benefit.description}</p>
+    // Solar Products
+    { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
+    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
+];
+
+const categories = [
+    { id: 'portablePower', icon: Battery },
+    { id: 'cabinPower', icon: Server },
+    { id: 'charging', icon: Zap },
+    { id: 'gesProducts', icon: Sun },
+    { id: 'batteryPower', icon: Battery },
+    { id: 'vehiclePower', icon: Truck },
+];
+
+export default async function ProductsPage({ params }: Props) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('products');
+    const tDetails = await getTranslations('productDetails.products');
+
+    const heroContent = {
+        tr: {
+            titleLine1: 'Yeni Nesil',
+            titleLine2: 'Enerjinin Geleceğine',
+            titleHighlight: 'Yön Ver',
+            description: "Revium'un gelişmiş enerji depolama çözümleri ile tanışın. Sürdürülebilir ve akıllı sistemlerle kesintisiz güç.",
+        },
+        en: {
+            titleLine1: 'Next Generation',
+            titleLine2: 'Shape the Future of',
+            titleHighlight: 'Energy',
+            description: "Meet Revium's advanced energy storage solutions. Uninterrupted power with sustainable and smart systems.",
+        },
+        ar: {
+            titleLine1: 'الجيل القادم',
+            titleLine2: 'شكّل مستقبل',
+            titleHighlight: 'الطاقة',
+            description: 'تعرف على حلول تخزين الطاقة المتقدمة من ريفيوم. طاقة متواصلة مع أنظمة مستدامة وذكية.',
+        }
+    };
+
+    const hero = heroContent[locale as keyof typeof heroContent] || heroContent.en;
+
+    return (
+        <div className="min-h-screen bg-slate-50">
+            {/* Hero Section */}
+            {/* Hero Section - Premium Redesign without Grid */}
+            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-white">
+                {/* Premium Animated Background */}
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-100/40 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
+                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-100/40 rounded-full blur-[100px] mix-blend-multiply animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-sky-50/60 rounded-full blur-[80px]" />
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 sm:mb-6">
-              Size Uygun Çözümü{' '}
-              <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
-                Bulalım
-              </span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed mb-8 sm:mb-12 px-4">
-              Enerji ihtiyaçlarınıza uygun ürünü belirlemek için uzman ekibimizle iletişime geçin
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-              <Button size="lg" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
-                <Link href="/tr/iletisim" className="flex items-center justify-center gap-2">
-                  Danışmanlık Talep Et
-                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg border-2 border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 shadow-sm hover:shadow-md transition-all duration-300">
-                <Link href="/tr/fiyat-teklifi" className="flex items-center justify-center gap-2">
-                  Teklif Talep Et
-                </Link>
-              </Button>
-            </div>
-          </div>
+                <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+                    {/* Badge */}
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100/50 mb-8">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
+                        <span className="text-sm font-bold text-blue-600 tracking-widest uppercase">{t('allProductsTitle')}</span>
+                    </div>
+
+                    <h1 className="font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
+                        <span className="block font-medium text-slate-500 text-base sm:text-lg lg:text-xl mb-3 tracking-normal">
+                            {hero.titleLine1}
+                        </span>
+                        <span className="text-3xl sm:text-4xl lg:text-5xl block mb-2">
+                            {hero.titleLine2}{' '}
+                            <span className="relative inline-block">
+                                <span className="relative z-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 bg-clip-text text-transparent">
+                                    {hero.titleHighlight}
+                                </span>
+                                {/* Underline decoration */}
+                                <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
+                                </svg>
+                            </span>
+                        </span>
+                    </h1>
+
+                    <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
+                        {hero.description}
+                    </p>
+                </div>
+            </section>
+
+            {/* Categories & Products */}
+            {categories.map((cat) => {
+                const catProducts = allProducts.filter(p => p.category === cat.id);
+                if (catProducts.length === 0) return null;
+                const Icon = cat.icon;
+
+                return (
+                    <section key={cat.id} id={cat.id} className="py-16 border-b border-slate-200 last:border-0">
+                        <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                            {/* Category Header */}
+                            <div className="flex items-center gap-4 mb-10">
+                                <div className="p-3 bg-blue-100 rounded-xl text-blue-600">
+                                    <Icon className="w-8 h-8" />
+                                </div>
+                                <div>
+                                    <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+                                        {t(`${cat.id}.title`)}
+                                    </h2>
+                                    <p className="text-slate-500 mt-1">
+                                        {t(`${cat.id}.description`)}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Products Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {catProducts.map((product) => (
+                                    <Link
+                                        key={product.id}
+                                        href={`/${locale}/urunlerimiz/${product.id}/`}
+                                        className="group bg-white rounded-[2rem] p-6 hover:shadow-xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 flex flex-col"
+                                    >
+                                        <div className="aspect-[4/3] relative rounded-2xl bg-slate-50 mb-6 overflow-hidden">
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white opacity-50" />
+                                            <Image
+                                                src={product.image}
+                                                alt={product.name}
+                                                fill
+                                                className="object-contain p-6 group-hover:scale-110 transition-transform duration-700 ease-out"
+                                            />
+                                            <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                                                <div className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm text-slate-800">
+                                                    {t('viewDetails')}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="mt-auto">
+                                            <div className="flex items-center gap-2 text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">
+                                                <Icon className="w-3 h-3" />
+                                                <span>{t(`${product.category}.title`)}</span>
+                                            </div>
+                                            <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                                {tDetails(`${product.id}.name`) || product.name}
+                                            </h3>
+                                            <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-6">
+                                                {tDetails(`${product.id}.description`)}
+                                            </p>
+
+                                            <div className="flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                                {t('viewDetails')} <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                            </div>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                );
+            })}
+
+            {/* Bottom CTA */}
+            <section className="py-24 bg-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.05)_1px,transparent_1px)] bg-[size:40px_40px] opacity-[0.3]" />
+                <div className="container px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center relative z-10">
+                    <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight mb-6">
+                        {t('cta.title')}
+                    </h2>
+                    <p className="text-xl text-slate-600 mb-10 leading-relaxed">
+                        {t('cta.subtitle')}
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link
+                            href={`/${locale}/iletisim/`}
+                            className="px-10 py-5 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl"
+                        >
+                            {t('cta.contactUs')}
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  )
+    );
+}
+
+export async function generateMetadata({ params }: Props) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'products' });
+    return {
+        title: `${t('allProductsTitle')} | Revium`,
+        description: t('allProductsSubtitle'),
+    };
 }

@@ -138,7 +138,7 @@ export function SiteHeader() {
   const navigation: NavigationItem[] = [
     { name: loading ? 'Ana Sayfa' : t('nav.home'), href: `/${locale}` },
     {
-      name: loading ? 'Ürünlerimiz' : t('nav.products'),
+      name: 'Ürünlerimiz',
       href: `/${locale}/urunlerimiz`,
       children: MENU_SERIES.map(series => ({
         name: series.title,

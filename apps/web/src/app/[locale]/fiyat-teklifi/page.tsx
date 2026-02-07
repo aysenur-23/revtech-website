@@ -161,7 +161,7 @@ export default function QuotePage() {
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('nameLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('nameLabel')}</label>
                                             <div className="relative">
                                                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                                 <input
@@ -173,7 +173,7 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('emailLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('emailLabel')}</label>
                                             <div className="relative">
                                                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                                 <input
@@ -185,7 +185,7 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('phoneLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('phoneLabel')}</label>
                                             <div className="relative">
                                                 <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                                 <input
@@ -221,7 +221,7 @@ export default function QuotePage() {
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('categoryLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('categoryLabel')}</label>
                                             <div className="relative appearance-none">
                                                 <Package className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
@@ -243,7 +243,7 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('powerLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('powerLabel')}</label>
                                             <div className="relative">
                                                 <Zap className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
@@ -263,7 +263,7 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('areaLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('areaLabel')}</label>
                                             <div className="relative">
                                                 <Layout className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select

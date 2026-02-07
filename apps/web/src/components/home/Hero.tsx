@@ -18,7 +18,7 @@ export default function Hero() {
                     loop
                     playsInline
                     preload="auto"
-                    poster="/images/hero/1.png"
+                    poster="/images/hero/revium-hero-2-7kwh.png"
                     className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
                     style={{ objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.15)' }}
                 >

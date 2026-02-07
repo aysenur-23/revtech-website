@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
@@ -21,9 +21,9 @@ const getProductCategories = (t: any, locale: string, loading: boolean) => [
     href: `/${locale}/urunlerimiz/kategori/portable`,
     description: t('megaMenu.portablePowerPacksDesc'),
     products: [
-      { slug: 'r-p2700', name: loading ? '2.7 kWh Model A' : t('productDetails.rP2700.title'), images: ['/images/products/2-7kwh-a-1.png'] } as Product,
-      { slug: 'r-sb2700b', name: loading ? '2.7 kWh Model B' : t('productDetails.rSb2700b.title'), images: ['/images/products/2-7kwh-b-1.png'] } as Product,
-      { slug: 'r-sb5400b', name: loading ? '5.4 kWh 2000W' : t('productDetails.rSb5400b.title'), images: ['/images/products/5-4kwh-2000w-1.png'] } as Product,
+      { slug: 'revium-2-7-kwh', name: loading ? '2.7 kWh Çanta Tipi' : t('productDetails.revium-2-7-kwh.title'), images: ['/images/products/2-7kwh-a-1.webp'] } as Product,
+      { slug: 'revium-2-7-kwh-bag', name: loading ? '2.7 kWh Model B' : t('productDetails.revium-2-7-kwh-bag.title'), images: ['/images/products/2-7kwh-b-1.webp'] } as Product,
+      { slug: 'revium-5-4-kwh', name: loading ? '5.4 kWh Güç Paketi' : t('productDetails.revium-5-4-kwh.title'), images: ['/images/products/5-4kwh-h-1.webp'] } as Product,
     ]
   },
   {
@@ -32,9 +32,9 @@ const getProductCategories = (t: any, locale: string, loading: boolean) => [
     href: `/${locale}/urunlerimiz/kategori/cabin`,
     description: t('megaMenu.cabinPowerPacksDesc'),
     products: [
-      { slug: 'r-m21600', name: loading ? 'Güç Katmanı' : t('productDetails.rM21600.title'), images: ['/images/products/stack-21-6kwh-1.png'] } as Product,
-      { slug: 'r-cabinet-21600', name: loading ? 'Güç Kabini' : t('productDetails.rCabinet21600.title'), images: ['/images/products/cabin-power.png'] } as Product,
-      { slug: 'gridpack-100', name: loading ? 'GridPack 100' : t('productDetails.gridpack100.title'), images: ['/images/products/gridpack-100.png'] } as Product,
+      { slug: 'revium-power-layer', name: loading ? 'Güç Katmanı' : t('productDetails.revium-power-layer.title'), images: ['/images/products/stack-21-6kwh-1.webp'] } as Product,
+      { slug: 'revium-power-cabinet', name: loading ? 'Güç Kabini' : t('productDetails.revium-power-cabinet.title'), images: ['/images/products/cabin-power.webp'] } as Product,
+      { slug: 'revium-gridpack', name: loading ? 'Şebeke Paketi' : t('productDetails.revium-gridpack.title'), images: ['/images/products/gridpack.webp'] } as Product,
     ]
   },
   {
@@ -43,8 +43,7 @@ const getProductCategories = (t: any, locale: string, loading: boolean) => [
     href: `/${locale}/urunlerimiz/kategori/vehicle`,
     description: t('megaMenu.vehiclePowerPacksDesc'),
     products: [
-      { slug: 'r-h21600', name: loading ? 'Hilux Güç Paketi' : t('productDetails.rH21600.title'), images: ['/images/products/hilux-21-6kwh-1.png'] } as Product,
-      { slug: 'r-u200000', name: loading ? 'Savunma Sanayi UNIMOG Güç Paketi' : t('productDetails.rU200000.title'), images: ['/images/products/unimog-200kwh-1.jpg'] } as Product,
+      { slug: 'revium-pickup-power-pack', name: loading ? 'Pick Up Güç Paketi' : t('productDetails.revium-pickup-power-pack.title'), images: ['/images/products/hilux-21-6kwh-1.webp'] } as Product,
     ]
   },
   {
@@ -53,10 +52,10 @@ const getProductCategories = (t: any, locale: string, loading: boolean) => [
     href: `/${locale}/urunlerimiz/kategori/ges`,
     description: loading ? 'Güneş enerjisi sistemleri ve entegrasyon çözümleri' : t('products.gesProducts.subtitle'),
     products: [
-      { slug: 'ges-power-station', name: loading ? 'GES & Güç İstasyonu' : t('productDetails.gesPowerStation.title'), images: ['/images/products/ges-power-station.png'] } as Product,
-      { slug: 'solarport-duo', name: loading ? 'Solarport DUO' : t('productDetails.solarportDuo.title'), images: ['/images/products/solarport-duo.png'] } as Product,
-      { slug: 'solar-voltwagon', name: loading ? 'Solar VOLTWAGON' : t('productDetails.solarVoltwagon.title'), images: ['/images/products/solar-voltwagon.png'] } as Product,
-      { slug: 'ges-street-lighting', name: loading ? 'GES Sokak Aydınlatma Sistemi' : t('productDetails.gesStreetLighting.title'), images: ['/images/products/ges-street-lighting.png'] } as Product,
+      { slug: 'ges-power-station', name: loading ? 'GES & Güç İstasyonu' : t('productDetails.ges-power-station.title'), images: ['/images/products/ges-power-station.png'] } as Product,
+      { slug: 'solarport-duo', name: loading ? 'Solarport DUO' : t('productDetails.solarport-duo.title'), images: ['/images/products/solarport-duo.png'] } as Product,
+      { slug: 'solar-voltwagon', name: loading ? 'Solar VOLTWAGON' : t('productDetails.solar-voltwagon.title'), images: ['/images/products/solar-voltwagon.png'] } as Product,
+      { slug: 'ges-street-lighting', name: loading ? 'GES Sokak Aydınlatma Sistemi' : t('productDetails.ges-street-lighting.title'), images: ['/images/products/ges-street-lighting.png'] } as Product,
     ]
   }
 ]

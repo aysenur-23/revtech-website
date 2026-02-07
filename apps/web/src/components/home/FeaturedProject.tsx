@@ -62,7 +62,7 @@ export default function FeaturedProject() {
 
                                 <Image
                                     alt={t('imageAlt')}
-                                    src="/images/products/newsu.webp"
+                                    src="/images/hero/revium-hero-2-7kwh.png"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105 z-10 mix-blend-multiply"
                                     loading="lazy"

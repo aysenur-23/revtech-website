@@ -43,6 +43,11 @@ export default function RP5400Page() {
   
   const product = {
     name: 'R-P5400',
+    modelId: 'R-P5400',
+    categoryTitle: loading ? 'Yüksek Kapasiteli Taşınabilir Güç' : t('productDetails.rP5400.categoryTitle'),
+    capacity: '5.4 kWh',
+    power: '3000 W',
+    batteryLabel: 'LiFePO₄',
     title: loading ? '5.4 kWh Taşınabilir (Yüksek Çıkış)' : t('productDetails.rP5400.title'),
     description: loading ? 'Yüksek çıkış gücü ile 5.4 kWh kapasiteli taşınabilir güç paketi. Güçlü performansı ve yüksek çıkış kapasitesi ile zorlu enerji ihtiyaçlarını karşılar.' : t('productDetails.rP5400.description'),
     image: '/images/products/5-4kwh-h-1.png',
@@ -62,7 +67,8 @@ export default function RP5400Page() {
       'USB ve AC çıkışları',
       'LED ışık sistemi',
       'Güneş paneli uyumluluğu',
-      'Hızlı şarj desteği'
+      'Hızlı şarj desteği',
+      'Güvenlik: Aşırı yük ve kısa devre koruması'
     ] : [
       t('productDetails.rP5400.features.capacity'),
       t('productDetails.rP5400.features.acOutput'),
@@ -78,7 +84,8 @@ export default function RP5400Page() {
       t('productDetails.rP5400.features.usbAc'),
       t('productDetails.rP5400.features.ledLight'),
       t('productDetails.rP5400.features.solarCompatible'),
-      t('productDetails.rP5400.features.quickCharge')
+      t('productDetails.rP5400.features.quickCharge'),
+      t('productDetails.rP5400.features.safety')
     ],
     applications: loading ? [
       'Büyük ölçekli evler',

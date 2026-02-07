@@ -4,7 +4,7 @@
         "learnMore": "Learn More",
         "getQuote": "Get Quote",
         "contact": "Contact",
-        "products": "Products",
+        "products": "Product Categories",
         "services": "Services",
         "corporate": "About Us",
         "home": "Home"
@@ -148,24 +148,24 @@
         "quickLinks": "Quick Links",
         "contact": "Contact",
         "copyright": "All rights reserved.",
-        "portablePower": "Portable Power Packs",
-        "cabinPower": "Cabin Type Power Packs",
-        "vehiclePower": "Vehicle Type Power Packs",
-        "gesProducts": "Solar Products",
-        "gesInstallation": "Solar Installation",
-        "industrialInstallation": "Industrial Installation",
         "getDirections": "Get Directions",
         "corporate": "About Us",
         "getQuote": "Get Quote",
-        "charging": "Charging Stations",
+        "portablePower": "Portable Power Packs",
+        "cabinPower": "Cabin Type Power Packs",
+        "evCharging": "EV Charging Solutions",
+        "gesProducts": "Solar Products",
         "batteryPower": "Battery Systems",
+        "vehiclePower": "Vehicle Type Power Packs",
+        "gesInstallation": "Solar Installation",
+        "industrialInstallation": "Industrial Installation",
         "address": "Fevzi Cakmak District, Milenyum Street No:81\nKaratay/KONYA"
     },
     "hero": {
         "title1": "Redefining",
         "title2": "Energy",
         "description": "We set new standards in energy storage solutions with performance, durability, and freedom.",
-        "exploreProducts": "Explore Products",
+        "exploreProducts": "Explore Product Categories",
         "getQuote": "Get Quote"
     },
     "mission": {
@@ -191,7 +191,7 @@
         }
     },
     "products": {
-        "title": "Products",
+        "title": "Product Categories",
         "allProducts": "All Products",
         "categoryTag": "PRODUCT GROUP",
         "categories": {
@@ -215,12 +215,34 @@
                     "name": "5.4 kWh Power Pack",
                     "description": "High-capacity professional portable power."
                 }
-            }
+            },
+            "ctaDiscoverTitle1": "Discover Your",
+            "ctaDiscoverTitle2": "Portable Power Solution",
+            "ctaDiscoverSubtitle": "Contact our expert team and let's find the most suitable portable power pack for you."
         },
         "vehiclePower": {
             "title": "Vehicle Power",
             "subtitle": "Mobile Energy",
-            "description": "High-capacity vehicle-mounted systems.",
+            "description": "Systems where the entire vehicle is filled with power sources. Reliable performance resistant to harsh vehicle conditions.",
+            "heroTitle1": "Vehicle Type",
+            "heroTitle2": "Power Packs",
+            "heroDescription": "Systems where the entire vehicle is filled with power sources. Reliable performance resistant to harsh vehicle conditions.",
+            "advantagesTitle1": "Advantages of",
+            "advantagesTitle2": "Vehicle Type Power Packs",
+            "advantagesSubtitle": "Systems where the entire vehicle is filled with power sources",
+            "integrationTitle": "Vehicle Integration",
+            "integrationDesc": "Perfect integration with vehicle-specific design. Structure resistant to harsh vehicle conditions.",
+            "capacityTitle": "High Capacity",
+            "capacityDesc": "A solution for every need with wide capacity options from 21.6 kWh to 200 kWh.",
+            "defenseTitle": "Defense Industry",
+            "defenseDesc": "Specially designed powerful energy systems for defense industry vehicles such as UNIMOG.",
+            "ctaDiscoverTitle1": "Discover Your",
+            "ctaDiscoverTitle2": "Vehicle Type Energy Solution",
+            "ctaDiscoverSubtitle": "Contact our expert team and let's find the most suitable vehicle power pack for you.",
+            "consultancyButton": "Request Consultancy",
+            "viewProductsButton": "See All Products",
+            "priceQuoteRequest": "Request a price quote",
+            "detailReview": "Review Details",
             "products": {
                 "revium-pickup-power-pack": {
                     "name": "Pick Up Power Pack",
@@ -406,7 +428,8 @@
                 "High Power Battery Systems",
                 "SCADA System Integration",
                 "Medium Voltage Connections",
-                "Remote Monitoring and Control"
+                "Remote Monitoring and Control",
+                "Maintenance and Warranty Support"
             ],
             "whyUs": {
                 "title": "Service Features",

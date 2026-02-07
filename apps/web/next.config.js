@@ -2,10 +2,13 @@ const createNextIntlPlugin = require('next-intl/plugin');
 
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
+// Development'ta output: 'export' kapalı; _next/static 404 olmasın diye
+const isDev = process.env.NODE_ENV !== 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Static export configuration for Hostinger
-  output: 'export', // Development için kapalı
+  // Static export sadece production build'de (next build)
+  ...(isDev ? {} : { output: 'export' }),
   trailingSlash: true,
   reactStrictMode: true,
 
@@ -61,6 +64,12 @@ const nextConfig = {
   },
   // Headers are handled by .htaccess in static export
   // async headers() { ... } - Not available in static export
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

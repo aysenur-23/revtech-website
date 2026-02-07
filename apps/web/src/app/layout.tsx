@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Inter, Manrope } from 'next/font/google'
 import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
@@ -115,8 +115,8 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <link rel="canonical" href="https://reviumtech.com" />
-        {/* Preload LCP image for better performance */}
-        <link rel="preload" as="image" href="/images/hero/1.png" fetchPriority="high" />
+        {/* Preload LCP hero (Hero.tsx ile aynı görsel kullanılıyor) */}
+        <link rel="preload" as="image" href="/images/hero/revium-hero-2-7kwh.png" fetchPriority="high" />
         {/* Preconnect to improve resource loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

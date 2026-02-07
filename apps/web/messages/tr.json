@@ -149,17 +149,18 @@
     "quickLinks": "Hızlı Erişim",
     "contact": "İletişim",
     "copyright": "Tüm hakları saklıdır.",
-    "portablePower": "Taşınabilir Güç Paketleri",
-    "cabinPower": "Kabin Tipi Güç Paketleri",
-    "vehiclePower": "Araç Tipi Güç Paketleri",
-    "gesProducts": "Solar Ürünler",
-    "gesInstallation": "GES Kurulumu",
-    "industrialInstallation": "Endüstriyel Kurulum",
     "getDirections": "Yol Tarifi Al",
     "corporate": "Kurumsal",
     "getQuote": "Teklif Al",
-    "charging": "Şarj İstasyonları",
-    "batteryPower": "Batarya Sistemleri"
+    "portablePower": "Taşınabilir Güç Paketleri",
+    "cabinPower": "Kabin Tipi Güç Paketleri",
+    "evCharging": "EV Şarj Çözümleri",
+    "gesProducts": "Solar Ürünler",
+    "batteryPower": "Batarya Sistemleri",
+    "vehiclePower": "Araç Tipi Güç Paketleri",
+    "gesInstallation": "GES Kurulumu",
+    "industrialInstallation": "Endüstriyel Kurulum",
+    "address": "Fevzi Çakmak Mahallesi Milenyum Caddesi No:81\nKaratay/KONYA"
   },
   "hero": {
     "title1": "Enerjiyi",
@@ -215,12 +216,34 @@
           "name": "5.4 kWh Güç Paketi",
           "description": "Yüksek kapasiteli profesyonel taşınabilir güç."
         }
-      }
+      },
+      "ctaDiscoverTitle1": "Taşınabilir Güç Çözümünüzü",
+      "ctaDiscoverTitle2": "Keşfedin",
+      "ctaDiscoverSubtitle": "Uzman ekibimizle iletişime geçin ve size en uygun taşınabilir güç paketini bulalım."
     },
     "vehiclePower": {
       "title": "Araç Tipi Güç Paketleri",
       "subtitle": "Mobil Enerji",
-      "description": "Yüksek kapasiteli araç üstü sistemler.",
+      "description": "Bir aracın tamamı olabildiğince güç kaynağı dolu sistemler. Zorlu araç koşullarına dayanıklı, güvenilir performans.",
+      "heroTitle1": "Araç Tipi",
+      "heroTitle2": "Güç Paketleri",
+      "heroDescription": "Bir aracın tamamı olabildiğince güç kaynağı dolu sistemler. Zorlu araç koşullarına dayanıklı, güvenilir performans.",
+      "advantagesTitle1": "Araç Tipi Güç Paketlerinin",
+      "advantagesTitle2": "Avantajları",
+      "advantagesSubtitle": "Bir aracın tamamı olabildiğince güç kaynağı dolu sistemler",
+      "integrationTitle": "Araç Entegrasyonu",
+      "integrationDesc": "Araçlara özel tasarım ile mükemmel entegrasyon. Zorlu araç koşullarına dayanıklı yapı.",
+      "capacityTitle": "Yüksek Kapasite",
+      "capacityDesc": "21.6 kWh'den 200 kWh'ye kadar geniş kapasite seçenekleri ile her ihtiyaca uygun çözüm.",
+      "defenseTitle": "Savunma Sanayi",
+      "defenseDesc": "UNIMOG gibi savunma sanayi araçları için özel tasarım güçlü enerji sistemleri.",
+      "ctaDiscoverTitle1": "Araç Tipi Enerji Çözümünüzü",
+      "ctaDiscoverTitle2": "Keşfedin",
+      "ctaDiscoverSubtitle": "Uzman ekibimizle iletişime geçin ve size en uygun araç tipi güç paketini bulalım. ",
+      "consultancyButton": "Danışmanlık Talep Et",
+      "viewProductsButton": "Tüm Ürünleri Gör",
+      "priceQuoteRequest": "Fiyat teklifi talep edin",
+      "detailReview": "Detayları İncele",
       "products": {
         "revium-pickup-power-pack": {
           "name": "Pick Up Güç Paketi",
@@ -406,7 +429,8 @@
         "Yüksek Güçlü Batarya Sistemleri",
         "SCADA Sistemi Entegrasyonu",
         "Orta Gerilim Bağlantıları",
-        "Uzaktan İzleme ve Kontrol"
+        "Uzaktan İzleme ve Kontrol",
+        "Bakım ve Garanti Desteği"
       ],
       "whyUs": {
         "title": "Hizmet Özellikleri",

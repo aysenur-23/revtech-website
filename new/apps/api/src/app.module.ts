@@ -3,14 +3,13 @@ import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { BullModule } from '@nestjs/bull';
 import { ScheduleModule } from '@nestjs/schedule';
-// import { MailerModule } from '@nestjs-modules/mailer';
+import { MailerModule } from '@nestjs-modules/mailer';
 import { PrismaModule } from './common/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { FilesModule } from './modules/files/files.module';
 import { ContentModule } from './modules/content/content.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
-import { FormsModule } from './modules/forms/forms.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { configuration } from './config/configuration';
@@ -37,16 +36,28 @@ import { validationSchema } from './config/validation';
       },
     }),
     ScheduleModule.forRoot(),
-    // MailerModule - disabled for development
-    // Uncomment and configure when SMTP is needed
-    // MailerModule.forRoot({...}),
+    MailerModule.forRoot({
+      transport: {
+        host: process.env.SMTP_HOST || 'localhost',
+        port: parseInt(process.env.SMTP_PORT || '1025'),
+        secure: false,
+        auth: process.env.SMTP_USER
+          ? {
+              user: process.env.SMTP_USER,
+              pass: process.env.SMTP_PASS,
+            }
+          : undefined,
+      },
+      defaults: {
+        from: process.env.SMTP_FROM || 'noreply@example.com',
+      },
+    }),
     PrismaModule,
-    AuthModule,
+    AuthModule.forRootAsync(),
     UsersModule,
     FilesModule,
     ContentModule,
     NotificationsModule,
-    FormsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
