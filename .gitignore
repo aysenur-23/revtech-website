@@ -134,10 +134,14 @@ playwright/.cache/
 # Fly.io
 .fly
 
-# Deployment
+# Deployment (ZIP'ler 100MB+ olduğu için GitHub'a push edilmez)
+*.zip
 public_html/
 revtech-website-new/
 apps/web/deploy/
+deploy/
+new/apps/web/deploy/
+new/deploy/
 temp_htaccess
 temp_images_backup/
 optimize-images.mjs
