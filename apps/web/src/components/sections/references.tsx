@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 // References component with logo spacing
 
 import Image from 'next/image'

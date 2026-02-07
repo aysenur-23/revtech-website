@@ -56,6 +56,8 @@ export default function FeaturedProject() {
                                             alt=""
                                             fill
                                             className="object-contain brightness-0 grayscale opacity-50"
+                                            loading="lazy"
+                                            sizes="70vw"
                                         />
                                     </div>
                                 </div>
@@ -66,6 +68,7 @@ export default function FeaturedProject() {
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105 z-10 mix-blend-multiply"
                                     loading="lazy"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                 />
 
                                 {/* Capacity Badge */}

@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Wrench, CheckCircle, ArrowRight, Clock, Users, Shield, Zap, Settings, Phone, Building2, Battery } from 'lucide-react'
+import { Wrench, CheckCircle, ArrowRight, Clock, Users, Shield, Zap, Settings, Phone, Building2, Battery, Factory, Warehouse, Activity, Gauge } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from '@/hooks/useTranslation'
@@ -120,6 +120,40 @@ export default function EndustriyelKurulumPage() {
         </div>
       </section>
 
+      {/* Uygulama Alanları - Endüstriyel kurulum nerede kullanılır */}
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mb-4 tracking-tight">
+              {locale === 'tr' && 'Uygulama '}
+              <span className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
+                {locale === 'tr' ? 'Alanları' : locale === 'en' ? 'Application Areas' : 'مجالات التطبيق'}
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+              {locale === 'tr' && 'Endüstriyel enerji depolama sistemlerimiz geniş kullanım alanlarına uygun çözümler sunar.'}
+              {locale === 'en' && 'Our industrial energy storage systems offer solutions for a wide range of applications.'}
+              {locale === 'ar' && 'أنظمة تخزين الطاقة الصناعية لدينا تقدم حلولاً لمجموعة واسعة من التطبيقات.'}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {[
+              { icon: Factory, title: locale === 'tr' ? 'Üretim Tesisleri' : locale === 'en' ? 'Manufacturing' : 'التصنيع', desc: locale === 'tr' ? 'Fabrika ve atölye kesintisiz güç' : locale === 'en' ? 'Uninterrupted power for factories' : 'طاقة متواصلة للمصانع' },
+              { icon: Warehouse, title: locale === 'tr' ? 'Depo & Lojistik' : locale === 'en' ? 'Warehouse & Logistics' : 'المستودعات', desc: locale === 'tr' ? 'Depo aydınlatma ve ekipman gücü' : locale === 'en' ? 'Lighting and equipment power' : 'الإضاءة ومعدات الطاقة' },
+              { icon: Activity, title: locale === 'tr' ? 'Sağlık & Veri Merkezleri' : locale === 'en' ? 'Healthcare & Data Centers' : 'الرعاية الصحية', desc: locale === 'tr' ? 'Kritik yükler için yedek güç' : locale === 'en' ? 'Backup power for critical loads' : 'طاقة احتياطية للأحمال الحرجة' },
+              { icon: Gauge, title: locale === 'tr' ? 'Enerji Yoğun Sektörler' : locale === 'en' ? 'Energy-Intensive Sectors' : 'القطاعات المكثفة', desc: locale === 'tr' ? 'Madencilik, çimento, metal işleme' : locale === 'en' ? 'Mining, cement, metal processing' : 'التعدين والأسمنت والمعادن' },
+            ].map((item, i) => (
+              <div key={i} className="group p-6 sm:p-7 bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-200/40 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-xl flex items-center justify-center mb-4 ring-2 ring-blue-100 group-hover:ring-blue-200 transition-all">
+                  <item.icon className="h-7 w-7 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
+                <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section - gradient/pattern ayrıştırma, buton kontrast */}
       <section id="contact" className="py-16 lg:py-24 relative overflow-hidden">

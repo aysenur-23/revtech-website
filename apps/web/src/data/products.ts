@@ -46,16 +46,16 @@ export const PRODUCTS: Product[] = [
     mppt_w: '30–80 VDC (Voc ≈102 V)',
     cycles: 'Uzun ömürlü'
   },
-  // 5.4 kWh 2000W
+  // 5.4 kWh 3000W
   {
     slug: 'revium-5-4-kwh',
-    name: '5.4 kWh 2000W',
+    name: '5.4 kWh 3000W',
     images: ['/images/products/5-4kwh-h-1.webp'],
     category: 'portable',
     capacity_kwh: '5.4',
     dimensions: '800 × 458 × 910 mm',
     weight: '60 kg',
-    output_w: '2000W',
+    output_w: '3000W',
     battery_type: '≈20–28.8 VDC',
     mppt_w: '30–80 VDC (Voc ≈102 V)',
     cycles: 'Uzun ömürlü'

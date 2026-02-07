@@ -1,7 +1,6 @@
 'use client'
 
 import { ProductPage } from '@/components/templates/product-page'
-import { RuntimeCalculator } from '@/components/tools/runtime-calculator'
 import { useTranslation } from '@/hooks/useTranslation'
 import { Truck, Zap, Shield } from 'lucide-react'
 
@@ -84,10 +83,5 @@ export default function ReviumPickupPowerPackPage() {
     ]
   }
 
-  return (
-    <>
-      <ProductPage {...product} />
-      <RuntimeCalculator capacityWh={7200} productName={product.title} />
-    </>
-  )
+  return <ProductPage {...product} />
 }

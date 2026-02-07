@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { Menu, X, ChevronDown, ChevronRight, Globe, ArrowRight, Battery, Zap, Truck, Sun } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { PRODUCTS } from '@/data/products';
 
 // Product data for mega menu - synced with categoryData from projecttest.com.tr
 const productCategories = [
@@ -101,6 +102,13 @@ export default function SiteHeader() {
 
     const locale = useLocale() as 'tr' | 'en' | 'ar';
     const t = useTranslations('header');
+    const tDetails = useTranslations('productDetails');
+    const looksLikeKey = (s: string) => (typeof s === 'string' && (s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s)));
+    const getProductDisplayName = (slug: string, fallback: string) => {
+        const raw = tDetails(`${slug}.title`) || tDetails(`${slug}.name`) || tDetails(`products.${slug}.name`);
+        if (raw && !looksLikeKey(String(raw))) return raw;
+        return PRODUCTS.find(p => p.slug === slug)?.name ?? fallback;
+    };
 
     const navigation = [
         { name: t('home'), href: `/${locale}/` },
@@ -163,9 +171,9 @@ export default function SiteHeader() {
                         <Image
                             src="/images/logo.png"
                             alt="Revium Logo"
-                            width={80}
-                            height={40}
-                            className="h-10 w-auto sm:h-12 lg:h-14 sm:w-auto brightness-0"
+                            width={100}
+                            height={50}
+                            className="h-11 w-auto sm:h-14 lg:h-16 sm:w-auto brightness-0"
                             style={{ filter: 'brightness(0)' }}
                             priority
                         />
@@ -357,9 +365,11 @@ export default function SiteHeader() {
                                                 <div className="aspect-square relative w-full rounded-xl overflow-hidden mb-4 bg-neutral-50 group-hover/card:bg-white transition-colors">
                                                     <Image
                                                         src={product.image}
-                                                        alt={typeof product.name === 'string' ? product.name : product.name[locale]}
+                                                        alt={getProductDisplayName(product.slug, typeof product.name === 'string' ? product.name : product.name[locale])}
                                                         fill
-                                                        className={`object-contain group-hover/card:scale-110 transition-transform duration-500 ${(product as any).zoomOut ? 'p-6' : 'p-3'}`}
+                                                        className={`object-contain group-hover/card:scale-110 transition-transform duration-500 ${product.slug === 'revium-2-7-kwh' ? 'p-2' : (product as any).zoomOut ? 'p-6' : 'p-3'}`}
+                                                        loading="lazy"
+                                                        sizes="120px"
                                                     />
                                                 </div>
                                                 <div className="space-y-1">
@@ -368,7 +378,7 @@ export default function SiteHeader() {
                                                         {locale === 'ar' ? 'ريفيوم' : 'Revium'}
                                                     </div>
                                                     <p className="text-[13px] font-bold text-neutral-900 group-hover/card:text-blue-700 transition-colors line-clamp-2 leading-snug">
-                                                        {typeof product.name === 'string' ? product.name : product.name[locale]}
+                                                        {getProductDisplayName(product.slug, typeof product.name === 'string' ? product.name : product.name[locale])}
                                                     </p>
                                                 </div>
                                             </Link>
@@ -449,6 +459,8 @@ export default function SiteHeader() {
                                                         alt={service.name[locale]}
                                                         fill
                                                         className="object-contain p-3 group-hover/card:scale-110 transition-transform duration-500"
+                                                        loading="lazy"
+                                                        sizes="120px"
                                                     />
                                                 </div>
                                                 <div className="space-y-1">
@@ -539,7 +551,7 @@ export default function SiteHeader() {
                                                             className="block px-3 py-2 text-sm text-neutral-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
                                                             onClick={() => setIsMobileMenuOpen(false)}
                                                         >
-                                                            {product.name[locale]}
+                                                            {getProductDisplayName(product.slug, product.name[locale])}
                                                         </Link>
                                                     ))}
                                                     <Link

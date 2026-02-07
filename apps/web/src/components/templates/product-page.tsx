@@ -153,40 +153,40 @@ export function ProductPage({
                 </p>
               </div>
 
-              {/* Ana özellik kartı - Enerji / Güç / Batarya */}
+              {/* Ana özellik kartı - Enerji / Güç / Batarya (tek satır) */}
               {hasKeySpecs && (
-                <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200 shadow-lg ring-1 ring-slate-100/50 max-w-fit mx-auto lg:mx-0">
+                <div className="flex flex-nowrap justify-center lg:justify-start gap-3 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200 shadow-lg ring-1 ring-slate-100/50 max-w-full mx-auto lg:mx-0">
                   {capacity && (
                     <>
-                      <div className="space-y-1 text-left">
+                      <div className="flex-1 min-w-0 space-y-1 text-left">
                         <div className="flex items-center gap-1.5 sm:gap-2 text-blue-600">
-                          <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
+                          <Battery className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                           <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{labelEnergy}</span>
                         </div>
-                        <div className="text-lg sm:text-2xl font-black text-slate-900">{capacity}</div>
+                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{capacity}</div>
                       </div>
-                      {(capacity && power) && <div className="w-px h-14 bg-slate-200 hidden sm:block" />}
+                      {(capacity && power) && <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />}
                     </>
                   )}
                   {power && (
                     <>
-                      <div className="space-y-1 text-left">
+                      <div className="flex-1 min-w-0 space-y-1 text-left">
                         <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-600">
-                          <Zap className="h-4 w-4 sm:h-5 sm:w-5" />
+                          <Zap className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                           <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{labelPower}</span>
                         </div>
-                        <div className="text-lg sm:text-2xl font-black text-slate-900">{power}</div>
+                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{power}</div>
                       </div>
-                      {(power && batteryLabel) && <div className="w-px h-14 bg-slate-200 hidden sm:block" />}
+                      {(power && batteryLabel) && <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />}
                     </>
                   )}
                   {batteryLabel && (
-                    <div className="space-y-1 text-left">
+                    <div className="flex-1 min-w-0 space-y-1 text-left">
                       <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600">
-                        <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
+                        <Shield className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                         <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{labelBattery}</span>
                       </div>
-                      <div className="text-lg sm:text-2xl font-black text-slate-900">{batteryLabel}</div>
+                      <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{batteryLabel}</div>
                     </div>
                   )}
                 </div>
@@ -212,7 +212,7 @@ export function ProductPage({
             {/* Sağ: Ürün görseli + model rozeti */}
             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
               <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
-                <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
+                <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
                 <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
                   {/* Yerel görseller next.config'de disableStaticImages olduğu için img kullanılıyor */}
                   <img
@@ -223,10 +223,11 @@ export function ProductPage({
                     className="w-full h-auto object-contain drop-shadow-xl sm:drop-shadow-2xl"
                     loading="eager"
                     decoding="async"
+                    fetchPriority="high"
                   />
                 </div>
                 {(modelId || name) && (
-                  <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
+                  <div className="absolute -bottom-2 right-2 sm:right-8 p-2 sm:p-4 rounded-lg sm:rounded-2xl bg-white border border-slate-200 shadow-lg">
                     <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{labelModelId}</div>
                     <div className="text-lg sm:text-xl font-bold text-slate-900">{modelId || name}</div>
                   </div>

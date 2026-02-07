@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -181,11 +181,12 @@ export function SiteHeader() {
             <img
               src="/images/logo.png"
               alt="Revium Logo"
-              width={80}
-              height={40}
-              className="h-10 w-auto sm:h-12 lg:h-14 sm:w-auto brightness-0"
+              width={100}
+              height={50}
+              className="h-11 w-auto sm:h-14 lg:h-16 sm:w-auto brightness-0"
               style={{ filter: 'brightness(0)' }}
               loading="eager"
+              decoding="async"
               fetchPriority="high"
             />
           </Link>

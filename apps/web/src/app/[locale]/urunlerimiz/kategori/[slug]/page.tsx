@@ -180,7 +180,7 @@ export default async function CategoryPage({ params }: Props) {
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {categoryProducts.map((product, idx) => {
-                        const rawName = tDetails(`${product.slug}.title`) || tDetails(`${product.slug}.name`);
+                        const rawName = tDetails(`${product.slug}.title`) || tDetails(`${product.slug}.name`) || tDetails(`products.${product.slug}.name`);
                         const looksLikeKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
                         const productName = (rawName && !looksLikeKey(String(rawName))) ? rawName : (product.name || product.slug);
                         const rawDesc = tDetails(`${product.slug}.description`);
@@ -200,7 +200,7 @@ export default async function CategoryPage({ params }: Props) {
                                         src={product.images?.[0] || '/images/products/placeholder.png'}
                                         alt={productName}
                                         fill
-                                        className="object-contain p-5 sm:p-6 group-hover:scale-105 transition-transform duration-500 drop-shadow-md"
+                                        className={`object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md ${product.slug === 'revium-2-7-kwh' ? 'p-2 sm:p-3' : 'p-5 sm:p-6'}`}
                                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     />
                                 </div>

@@ -3,20 +3,38 @@
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
+import { useRef, useEffect } from 'react';
 
 export default function Hero() {
     const t = useTranslations('hero');
     const locale = useLocale();
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    // Mobil (özellikle iOS): autoPlay bazen uygulanmaz; muted + playsInline + programatik play
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        video.setAttribute('playsinline', 'true');
+        video.setAttribute('webkit-playsinline', 'true');
+        video.muted = true;
+        const playPromise = video.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+            playPromise.catch(() => {});
+        }
+    }, []);
 
     return (
         <section className="relative w-[100vw] min-h-[130vh] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] bg-black -mt-20 flex flex-col items-center justify-center overflow-hidden">
-            {/* Background: Video her ekran boyutunda */}
+            {/* Background: Video - mobil uyumlu (playsInline, muted, programatik play) */}
             <div className="absolute inset-[-20px] w-[calc(100%+40px)] h-[calc(100%+40px)]">
                 <video
+                    ref={videoRef}
                     autoPlay
                     muted
                     loop
                     playsInline
+                    disablePictureInPicture
+                    disableRemotePlayback
                     preload="auto"
                     poster="/images/hero/revium-hero-2-7kwh.jpg"
                     className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"

@@ -564,23 +564,23 @@
   "portablePower": {
     "title": "Revium 5,4 kWh Güç Paketi",
     "subtitle": "Yüksek Kapasiteli Taşınabilir Enerji Çözümü",
-    "description": "5.4 kWh kapasite ve 2000W çıkış gücü ile kritik yükler, acil durumlar ve profesyonel uygulamalar için güvenilir enerji sağlar.",
+    "description": "5.4 kWh kapasite ve 3000W çıkış gücü ile kritik yükler, acil durumlar ve profesyonel uygulamalar için güvenilir enerji sağlar.",
     "capacity5_4": "5.4 kWh Kapasite",
     "capacity5_4Desc": "LiFePO₄ teknolojisi ile yüksek enerji yoğunluğu",
-    "output2000": "2000W Çıkış",
+    "output2000": "3000W Çıkış",
     "output2000Desc": "Saf sinüs dalga, 20ms UPS geçiş",
     "pv1500": "1500W PV Şarj",
     "pv1500Desc": "Güneş enerjisi ile hızlı şarj",
     "protection": "Kapsamlı Koruma",
     "protectionDesc": "Aşırı yük, akım, termal koruma",
     "spec5_4": "5.4 kWh",
-    "spec2000": "2000W",
+    "spec2000": "3000W",
     "specLiFePO4": "LiFePO₄",
     "spec4000": "4000+ Döngü",
-    "detailsButton": "5.4 kWh 2000W Detayları",
+    "detailsButton": "5.4 kWh 3000W Detayları",
     "detailsButtonMobile": "Detayları Gör",
     "quoteButton": "Teklif Al",
-    "altText": "Revium 5.4 kWh 2000W Güç Paketi"
+    "altText": "Revium 5.4 kWh 3000W Güç Paketi"
   },
   "productDetails": {
     "revium-2-7-kwh": {

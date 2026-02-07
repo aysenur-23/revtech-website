@@ -1,4 +1,4 @@
-﻿// This function should be called inside a component that has access to useTranslation
+// This function should be called inside a component that has access to useTranslation
 export const getMenuSeries = (t: any, locale: string, loading: boolean = false) => [
   {
     title: t('menuData.portablePowerPacks'),
@@ -6,7 +6,7 @@ export const getMenuSeries = (t: any, locale: string, loading: boolean = false) 
     items: [
       { title: '2.7 kWh Model A', href: `/${locale}/urunlerimiz/r-p2700` },
       { title: '2.7 kWh Model B', href: `/${locale}/urunlerimiz/r-sb2700b` },
-      { title: '5.4 kWh 2000W', href: `/${locale}/urunlerimiz/r-sb5400b` },
+      { title: '5.4 kWh 3000W', href: `/${locale}/urunlerimiz/r-sb5400b` },
     ],
   },
   {

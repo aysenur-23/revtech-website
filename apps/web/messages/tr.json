@@ -320,7 +320,7 @@
       }
     },
     "learnMore": "Detayları İncele",
-    "viewDetails": "DETAYLI incele",
+    "viewDetails": "Detaylı İncele",
     "allProductsTitle": "Tüm Ürünlerimiz",
     "allProductsSubtitle": "Enerjinizi özgürleştiren en gelişmiş depolama çözümlerini keşfedin.",
     "cta": {
@@ -572,6 +572,19 @@
     "ar": "العربية"
   },
   "productDetails": {
+    "revium-2-7-kwh": { "title": "2.7 kWh Çanta Tipi Güç Paketi" },
+    "revium-2-7-kwh-bag": { "title": "2.7 kWh Güç Paketi" },
+    "revium-5-4-kwh": { "title": "5.4 kWh Güç Paketi" },
+    "revium-power-cabinet": { "title": "Güç Kabini" },
+    "revium-power-layer": { "title": "Güç Katmanı" },
+    "revium-gridpack": { "title": "Şebeke Paketi" },
+    "revium-grid-core": { "title": "Grid Core" },
+    "revium-grid-pulse": { "title": "Grid Pulse" },
+    "revium-grid-pulse-gen2": { "title": "Grid Pulse Gen2" },
+    "revium-powerstation-series": { "title": "Powerstation Serisi" },
+    "revium-solarport": { "title": "Solarport" },
+    "revium-2-7-kwh-lfp": { "title": "2.7 kWh LFP Batarya" },
+    "revium-5-4-kwh-lfp": { "title": "5.4 kWh LFP Batarya" },
     "revium-pickup-power-pack": {
       "name": "Pick Up Güç Paketi",
       "description": "Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.",

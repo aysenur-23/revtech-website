@@ -47,14 +47,14 @@ export default function ProductCards() {
             key: 'vehiclePower',
             slug: 'vehicle',
             image: '/images/products/vehicle-category-new.jpg',
-            priority: true,
+            priority: false,
             defaultTitle: 'Araç Tipi Güç Paketleri',
         },
         {
             key: 'charging',
             slug: 'charging',
             image: '/images/categories/charging-category.webp',
-            priority: true,
+            priority: false,
             defaultTitle: 'Şarj İstasyonları',
         },
         {
@@ -141,6 +141,8 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
                     fill
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 brightness-105"
                     priority={category.priority}
+                    loading={category.priority ? undefined : 'lazy'}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent z-10" />
             </div>

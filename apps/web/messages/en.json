@@ -49,6 +49,7 @@
         "ctaButton2": "Explore Products"
     },
     "quote": {
+        "badge": "QUICK QUOTE",
         "title": "Get a Quote",
         "subtitle": "Request a Quote for Your Project",
         "description": "Get a detailed price quote for our energy solutions customized to your needs. Our expert team will provide you with the most suitable options.",
@@ -338,13 +339,13 @@
         "description": "Provides reliable energy for critical loads, emergencies, and professional applications with {capacity} capacity and {power} output.",
         "capacity": "5.4 kWh Capacity",
         "capacityDesc": "High energy density with LiFePO₄ technology",
-        "output": "2000W Output",
+        "output": "3000W Output",
         "outputDesc": "Pure sine wave, 20ms UPS transition",
         "pvCharging": "1500W PV Charging",
         "pvChargingDesc": "Fast charging with solar energy",
         "protection": "Comprehensive Protection",
         "protectionDesc": "Overload, overcurrent, thermal protection",
-        "viewDetails": "5.4 kWh 2000W Details",
+        "viewDetails": "5.4 kWh 3000W Details",
         "getQuote": "Get Quote"
     },
     "services": {
@@ -571,6 +572,19 @@
         "ar": "العربية"
     },
     "productDetails": {
+        "revium-2-7-kwh": { "title": "2.7 kWh Case Type Power Pack" },
+        "revium-2-7-kwh-bag": { "title": "2.7 kWh Power Pack" },
+        "revium-5-4-kwh": { "title": "5.4 kWh Power Pack" },
+        "revium-power-cabinet": { "title": "Power Cabinet" },
+        "revium-power-layer": { "title": "Power Layer" },
+        "revium-gridpack": { "title": "Grid Pack" },
+        "revium-grid-core": { "title": "Grid Core" },
+        "revium-grid-pulse": { "title": "Grid Pulse" },
+        "revium-grid-pulse-gen2": { "title": "Grid Pulse Gen2" },
+        "revium-powerstation-series": { "title": "Powerstation Series" },
+        "revium-solarport": { "title": "Solarport" },
+        "revium-2-7-kwh-lfp": { "title": "2.7 kWh LFP Battery" },
+        "revium-5-4-kwh-lfp": { "title": "5.4 kWh LFP Battery" },
         "revium-pickup-power-pack": {
             "name": "Pick Up Power Pack",
             "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",

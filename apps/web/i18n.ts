@@ -4,7 +4,7 @@ import tr from './messages/tr.json';
 import en from './messages/en.json';
 import ar from './messages/ar.json';
 
-const messages: Record<Locale, typeof tr> = { tr, en, ar: ar as typeof tr };
+const messages = { tr, en, ar } as unknown as Record<Locale, typeof tr>;
 
 export default getRequestConfig(async ({ requestLocale }) => {
     let locale = await requestLocale;

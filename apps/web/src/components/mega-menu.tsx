@@ -173,9 +173,10 @@ export function MegaMenu({ isOpen, onClose, type, onHoverChange }: MegaMenuProps
                       <Image
                         src={product.images[0]}
                         alt={product.name}
-                        width={60}
-                        height={60}
-                        className="w-3/4 h-3/4 sm:w-4/5 sm:h-4/5 object-contain group-hover:scale-110 transition-transform duration-300"
+                        width={product.slug === 'revium-2-7-kwh' ? 80 : 60}
+                        height={product.slug === 'revium-2-7-kwh' ? 80 : 60}
+                        className={`object-contain group-hover:scale-110 transition-transform duration-300 ${product.slug === 'revium-2-7-kwh' ? 'w-full h-full sm:w-11/12 sm:h-11/12' : 'w-3/4 h-3/4 sm:w-4/5 sm:h-4/5'}`}
+                        loading="lazy"
                       />
                     )}
                   </div>

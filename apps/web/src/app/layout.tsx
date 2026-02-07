@@ -120,6 +120,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="https://reviumtech.com" />
+        {/* Hero poster ve video - mobilde hızlı görünüm */}
+        <link rel="preload" as="image" href="/images/hero/revium-hero-2-7kwh.jpg" />
       </head>
       <body className={`${inter.variable} ${manrope.variable} font-sans antialiased`}>
         <QueryProvider>

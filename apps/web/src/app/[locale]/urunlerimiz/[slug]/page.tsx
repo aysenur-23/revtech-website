@@ -256,7 +256,8 @@ const products: Record<string, {
             'Maksimum PV Güç: 30 kW',
             'Batarya Ömrü: 6000 Çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Araç Uyumu: Hilux / Pick Up'
+            'Araç Uyumu: Hilux / Pick Up',
+            'Koruma: IP54'
         ],
         specs: [
             { label: 'Enerji', value: '60 – 100 kWh' },
@@ -265,6 +266,8 @@ const products: Record<string, {
             { label: 'Maksimum PV Güç', value: '30 kW' },
             { label: 'Batarya Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Araç Uyumu', value: 'Hilux / Pick Up' },
+            { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
             { label: 'Araç Üstü', icon: 'Truck' },
@@ -364,6 +367,37 @@ const products: Record<string, {
             { label: 'Mikro Şebeke', icon: 'Zap' },
         ]
     },
+    // Alias: ana ürün listesinde id 'ges-power-station' kullanıldığı için aynı içerik
+    'ges-power-station': {
+        name: 'Revium Powerstation Serisi',
+        modelId: 'POWERSTATION',
+        capacity: '500 kWh – 5 MW',
+        power: '200 kW – 1 MW',
+        image: '/images/products/ges-power-station.png',
+        categoryTitle: 'Konteyner Tip Enerji + Güneş Entegrasyonu',
+        description: 'Güneş enerjisi ve depolamayı tek bir konteynerde birleştiren hibrit çözüm.',
+        features: [
+            'Batarya Kapasitesi: 500 kWh – 5 MW',
+            'Çıkış Gücü: 200 kW – 1 MW',
+            'PV Giriş: 650A / 624VDC',
+            'PV Entegrasyonu: 624 adet 650Wp panel',
+            'Soğutma: Sıvı',
+            'Çevrim: 6000 (%80 DOD)',
+            'İzolasyon: Class II',
+            'Koruma: IP54'
+        ],
+        specs: [
+            { label: 'PV Kapasite', value: 'Max 624 Panels' },
+            { label: 'AC Giriş', value: '230 / 400 VAC' },
+            { label: 'Kapasite', value: 'Max 5 MW' },
+            { label: 'Koruma', value: 'IP54' },
+        ],
+        usageAreas: [
+            { label: 'Solar Park', icon: 'Sun' },
+            { label: 'Off-grid', icon: 'Globe' },
+            { label: 'Mikro Şebeke', icon: 'Zap' },
+        ]
+    },
     'revium-voltwagon': {
         name: 'Revium VoltWagon',
         modelId: 'VOLTWAGON',
@@ -412,7 +446,8 @@ const products: Record<string, {
             'MPPT Voltaj Aralığı: 180 VDC – 950 VDC',
             'AC Çıkış Gücü: 6 kW – 24 kW',
             'Şarj Altyapısı: 22 kW AC şarj ünitesi (Opsiyonel DC hızlı şarj)',
-            'Koruma: IP65'
+            'Koruma: IP65',
+            'Çalışma Sıcaklığı: -25°C ~ +50°C'
         ],
         specs: [
             { label: 'Araç Kapasitesi', value: '2 – 8 Araç' },
@@ -421,6 +456,8 @@ const products: Record<string, {
             { label: 'MPPT Voltaj Aralığı', value: '180 – 950 VDC' },
             { label: 'AC Çıkış Gücü', value: '6 – 24 kW' },
             { label: 'Şarj Altyapısı', value: '22 kW AC (Opsiyonel DC)' },
+            { label: 'Koruma', value: 'IP65' },
+            { label: 'Çalışma Sıcaklığı', value: '-25°C ~ +50°C' },
         ],
         usageAreas: [
             { label: 'Otopark', icon: 'Building2' },
@@ -479,7 +516,8 @@ const products: Record<string, {
             'Boyutlar: 580 × 970 × 1950 mm',
             'Ağırlık: ≈ 450 kg',
             'Protokol: OCPP 1.6',
-            'Koruma: IP54'
+            'Koruma: IP54',
+            'Haberleşme: Ethernet / 4G / LTE'
         ],
         specs: [
             { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
@@ -489,7 +527,9 @@ const products: Record<string, {
             { label: 'Ödeme Desteği', value: 'RFID / QR / NFC' },
             { label: 'Boyutlar', value: '580 × 970 × 1950 mm' },
             { label: 'Ağırlık', value: '≈ 450 kg' },
+            { label: 'Protokol', value: 'OCPP 1.6' },
             { label: 'Koruma', value: 'IP54' },
+            { label: 'Haberleşme', value: 'Ethernet / 4G / LTE' },
         ],
         usageAreas: [
             { label: 'Halka Açık Şarj', icon: 'Globe' },
@@ -579,7 +619,8 @@ const products: Record<string, {
             'Haberleşme: Ethernet / 4G / LTE (OCPP 1.6)',
             'Boyutlar: 580 × 970 × 1950 mm',
             'Ağırlık: ≈ 450 kg',
-            'Koruma: IP54'
+            'Koruma: IP54',
+            'Çalışma Sıcaklığı: -30°C ~ +50°C'
         ],
         specs: [
             { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
@@ -589,6 +630,7 @@ const products: Record<string, {
             { label: 'Boyutlar', value: '580 × 970 × 1950 mm' },
             { label: 'Ağırlık', value: '≈ 450 kg' },
             { label: 'Koruma', value: 'IP54' },
+            { label: 'Çalışma Sıcaklığı', value: '-30°C ~ +50°C' },
         ],
         usageAreas: [
             { label: 'Akıllı Şehir', icon: 'Globe' },
@@ -780,7 +822,6 @@ function translateLabel(label: string, locale: string): string {
         'Hücre Tipi': { en: 'Cell Type', ar: 'نوع الخلية' },
         'İzolasyon': { en: 'Insulation', ar: 'العزل' },
         'Sıvı': { en: 'Liquid', ar: 'سائل' },
-        'Çevrim': { en: 'Cycle', ar: 'دورة' },
         'Ekran: 7" dokunmatik': { en: 'Screen: 7" touchscreen', ar: 'شاشة: ٧ بوصة لمس' },
         'Ekran: 15" dokunmatik': { en: 'Screen: 15" touchscreen', ar: 'شاشة: ١٥ بوصة لمس' },
         // Ürün sayfası – ek teknik ve alan ifadeleri
@@ -808,7 +849,6 @@ function translateLabel(label: string, locale: string): string {
         '400 VAC, 3 Faz': { en: '400 VAC, 3 Phase', ar: '٤٠٠ فولت تيار متردد، ٣ مراحل' },
         'RFID / QR / NFC': { en: 'RFID / QR / NFC', ar: 'آر إف آي دي / كيو آر / إن إف سي' },
         'Bluetooth: Mevcut': { en: 'Bluetooth: Available', ar: 'بلوتوث: متوفر' },
-        'Max PV Güç': { en: 'Max PV Power', ar: 'أقصى طاقة شمسية' },
         'Güneş Entegreli': { en: 'Solar Integrated', ar: 'مدمج بالطاقة الشمسية' },
         'Uzaktan İzleme': { en: 'Remote Monitoring', ar: 'المراقبة عن بعد' },
         // Runtime summary cümleleri (fallback)
@@ -1071,40 +1111,40 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </p>
                                 </div>
 
-                                {/* Key Specs - Light Theme */}
-                                <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
-                                    <div className="space-y-1 text-left">
+                                {/* Key Specs - Light Theme (Enerji / Güç / Batarya tek satırda) */}
+                                <div className="flex flex-nowrap justify-center lg:justify-start gap-3 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-full mx-auto lg:mx-0">
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-blue-600">
-                                            <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <Battery className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.energy') || (locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.capacity, locale)
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{translateLabel(formatNumber(product.capacity, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
                                             .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
                                             .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
-                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
-                                    <div className="space-y-1 text-left">
+                                    <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-600">
-                                            <Zap className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <Zap className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.power') || (locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.power, locale)
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{translateLabel(formatNumber(product.power, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
                                             .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
                                             .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
-                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
-                                    <div className="space-y-1 text-left">
+                                    <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600">
-                                            <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
+                                            <Shield className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.battery') || (locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
                                     </div>
                                 </div>
 
@@ -1128,8 +1168,8 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Right Content - Larger Product Image */}
                             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
                                 <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
-                                    {/* Decorative Circle - Hidden on mobile */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
+                                    {/* Decorative Circle */}
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
 
                                     {/* Product Image */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
@@ -1144,7 +1184,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
 
                                     {/* Model Badge */}
-                                    <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
+                                    <div className="absolute -bottom-2 right-2 sm:right-8 p-2 sm:p-4 rounded-lg sm:rounded-2xl bg-white border border-slate-200 shadow-lg">
                                         <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
                                         <div className="text-lg sm:text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
@@ -1213,8 +1253,8 @@ export default async function ProductDetailPage({ params }: Props) {
                                         const hasArabic = /[\u0600-\u06FF]/.test(rawStr);
                                         const isTurkish = /[ışğüöçİŞĞÜÖÇ]|taşınabilir|besleyebilmektedir|saat\s|gün\s/.test(rawStr);
                                         const useArabicFallback = locale === 'ar' && product.runtimeSummary && (!hasArabic || isTurkish);
-                                        const text = useArabicFallback ? translateLabel(product.runtimeSummary, 'ar') : raw;
-                                        return formatNumber(text, locale);
+                                        const text = useArabicFallback ? translateLabel(product.runtimeSummary ?? '', 'ar') : raw;
+                                        return formatNumber(text ?? '', locale);
                                     })()}
                                 </p>
                             </div>

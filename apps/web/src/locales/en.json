@@ -548,23 +548,23 @@
   "portablePower": {
     "title": "Revium 5.4 kWh Power Pack",
     "subtitle": "High Capacity Portable Energy Solution",
-    "description": "Provides reliable energy for critical loads, emergencies and professional applications with 5.4 kWh capacity and 2000W output power.",
+    "description": "Provides reliable energy for critical loads, emergencies and professional applications with 5.4 kWh capacity and 3000W output power.",
     "capacity5_4": "5.4 kWh Capacity",
     "capacity5_4Desc": "High energy density with LiFePO₄ technology",
-    "output2000": "2000W Output",
+    "output2000": "3000W Output",
     "output2000Desc": "Pure sine wave, 20ms UPS transition",
     "pv1500": "1500W PV Charge",
     "pv1500Desc": "Fast charging with solar energy",
     "protection": "Comprehensive Protection",
     "protectionDesc": "Overload, current, thermal protection",
     "spec5_4": "5.4 kWh",
-    "spec2000": "2000W",
+    "spec2000": "3000W",
     "specLiFePO4": "LiFePO₄",
     "spec4000": "4000+ Cycles",
-    "detailsButton": "5.4 kWh 2000W Details",
+    "detailsButton": "5.4 kWh 3000W Details",
     "detailsButtonMobile": "View Details",
     "quoteButton": "Get Quote",
-    "altText": "Revium 5.4 kWh 2000W Power Pack"
+    "altText": "Revium 5.4 kWh 3000W Power Pack"
   },
   "productDetails": {
     "revium-2-7-kwh": {

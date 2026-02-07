@@ -158,7 +158,7 @@ export default async function ProductsPage({ params }: Props) {
                                                 src={product.image}
                                                 alt={product.name}
                                                 fill
-                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${(product.id === 'revium-2-7-kwh' || product.id === 'revium-2-7-kwh-bag') ? 'p-14 sm:p-16' : 'p-6'
+                                                className={`object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-4 sm:p-6' : product.id === 'revium-2-7-kwh-bag' ? 'p-14 sm:p-16' : 'p-6'
                                                     }`}
                                             />
                                             <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
@@ -182,9 +182,9 @@ export default async function ProductsPage({ params }: Props) {
                                             </h3>
                                             <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-6">
                                                 {(() => {
-                                                    const v = tDetails(`${product.id}.description`);
+                                                    const v = tDetails(product.descriptionKey) || tDetails(`${product.id}.description`);
                                                     const isKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
-                                                    return (v && !isKey(String(v))) ? v : (product.description ?? '');
+                                                    return (v && !isKey(String(v))) ? v : '';
                                                 })()}
                                             </p>
 
