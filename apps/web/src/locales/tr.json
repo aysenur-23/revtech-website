@@ -747,16 +747,17 @@
       }
     },
     "revium-pickup-power-pack": {
+      "name": "Pick Up Güç Paketi",
       "categoryTitle": "Araç Üstü Mobil Enerji Sistemi",
-      "title": "Hilux Güç Paketi",
-      "description": "Pickup araçlar için özel olarak tasarlanmış entegre güç paketi. Araç arkası kullanıma uygun, dayanıklı ve yüksek performanslı enerji çözümü.",
+      "title": "Pick Up Güç Paketi",
+      "description": "Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.",
       "features": {
-        "capacity": "Kapasite: 7.2 kWh",
-        "output": "AC Çıkış: 3000W",
-        "integration": "Araç Entegrasyonu",
-        "protection": "IP65 Koruma",
+        "capacity": "Enerji: 60 - 100 kWh",
+        "output": "Çıkış Gücü (3 Faz): 3x10 kW (380 VAC)",
+        "integration": "Araç Uyumu: Hilux / Pick Up",
+        "protection": "Dalga Tipi: Saf Sinüs",
         "vibration": "Titreşim Dayanımı",
-        "charging": "Hızlı Şarj"
+        "charging": "Batarya Ömrü: 6000 Çevrim"
       },
       "applications": {
         "camping": "Kamp ve Karavan",

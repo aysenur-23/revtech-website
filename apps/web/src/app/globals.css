@@ -37,6 +37,17 @@ body {
   width: 100%;
 }
 
+/* Tekil dropdown ok: tarayıcı yerel okunu gizle (fiyat teklifi formu) */
+select.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+}
+select.appearance-none::-ms-expand {
+  display: none;
+}
+
 /* Gradient utilities */
 .gradient-electric {
   background: linear-gradient(to right, #2563eb, #0d9488);

@@ -73,55 +73,55 @@ export default function GESKurulumuPage() {
   const processSteps = getProcessSteps(t, loading, locale)
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50">
-      {/* Hero Section - premium hizmet girişi */}
-      <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
+      {/* Hero Section - modern glass & gradient */}
+      <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-28 overflow-hidden min-h-[60vh] flex items-center">
+        {/* Arka plan: mesh gradient + nokta desen */}
         <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.06)_1px,transparent_1px)] bg-[size:48px_48px]" aria-hidden />
-          <div className="absolute top-0 right-0 w-[520px] h-[520px] bg-blue-100/30 blur-[110px] rounded-full -translate-y-1/4 translate-x-1/4" />
-          <div className="absolute bottom-0 left-0 w-[420px] h-[420px] bg-cyan-100/20 blur-[90px] rounded-full translate-y-1/4 -translate-x-1/4" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_70%_-20%,rgba(56,189,248,0.25),transparent),radial-gradient(ellipse_60%_40%_at_20%_100%,rgba(16,185,129,0.2),transparent),linear-gradient(to_bottom_right,#f8fafc,#f1f5f9)]" />
+          <div className="absolute inset-0 opacity-[0.4] bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.08)_1px,transparent_0)] bg-[size:32px_32px]" aria-hidden />
         </div>
+
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-200/80 ring-1 ring-slate-100/80">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center p-8 sm:p-10 md:p-14">
-              <div className="relative order-first lg:order-1">
-                <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50/50 border border-slate-100 shadow-lg ring-1 ring-slate-200/50">
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/5 to-transparent z-10 pointer-events-none" />
-                  <Image
-                    src="/images/services/ges-service-new.webp"
-                    alt="GES Kurulumu"
-                    width={600}
-                    height={450}
-                    className="w-full h-auto object-cover"
-                  />
+          <div className="relative rounded-3xl overflow-hidden border border-white/60 bg-white/70 backdrop-blur-xl shadow-2xl shadow-slate-300/30 ring-1 ring-slate-200/50">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-[420px] lg:min-h-[480px]">
+              {/* Görsel - tam yükseklik, modern kırpma */}
+              <div className="relative order-first lg:order-1 min-h-[280px] lg:min-h-0">
+                <div className="absolute inset-0 lg:inset-[1rem] rounded-2xl overflow-hidden bg-slate-100">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/images/services/ges-service-new.webp"
+                      alt="GES Kurulumu"
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-900/20 via-transparent to-transparent pointer-events-none" />
                 </div>
               </div>
 
-              <div className="space-y-6 order-2 lg:order-2">
-                <div className="space-y-4">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50/90 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest shadow-sm">
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+              {/* İçerik - dikey ortalı */}
+              <div className="relative order-2 lg:order-2 flex flex-col justify-center p-8 sm:p-10 lg:p-14">
+                <div className="space-y-5">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[2.85rem] font-extrabold text-slate-900 leading-[1.08] tracking-tight">
+                    <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">
+                      {loading ? 'GES Kurulumu' : t('gesPage.heroTitle')}
                     </span>
-                    {loading ? 'Hizmet' : t('gesPage.whyTitle')}
-                  </div>
-                  <div className="h-0.5 w-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" />
-                  <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[2.75rem] font-bold text-slate-900 leading-[1.1] tracking-tight">
-                    {loading ? 'GES Kurulumu' : t('gesPage.heroTitle')}
                   </h1>
                   <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg">
                     {loading ? 'Güneş enerjisi santrallerinizi profesyonel ekibimizle hayata geçirin. Temiz enerji geleceğinize yatırım yapın.' : t('gesPage.heroDescription')}
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-1">
-                  <Button asChild className="group bg-emerald-600 hover:bg-emerald-700 text-white px-6 sm:px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/25 hover:shadow-xl hover:shadow-emerald-600/30 transition-all duration-300 hover:-translate-y-0.5 flex-1 border-0">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
+                  <Button asChild className="group bg-slate-900 hover:bg-slate-800 text-white px-6 sm:px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base shadow-lg shadow-slate-900/20 hover:shadow-xl hover:shadow-slate-900/25 transition-all duration-300 hover:-translate-y-0.5 flex-1 border-0">
                     <Link href={`/${locale}/fiyat-teklifi`} className="flex items-center justify-center gap-2 sm:gap-3">
                       <span>{loading ? 'Teklif Talep Et' : t('nav.quote')}</span>
                       <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" className="group bg-white hover:bg-slate-50 text-slate-700 border-2 border-slate-200 hover:border-slate-300 px-6 sm:px-8 py-4 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow transition-all duration-300 flex-1">
+                  <Button asChild variant="outline" className="group bg-white/80 hover:bg-white text-slate-700 border border-slate-200 hover:border-slate-300 px-6 sm:px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base backdrop-blur-sm transition-all duration-300 flex-1">
                     <Link href={`/${locale}/iletisim`} className="flex items-center justify-center gap-2 sm:gap-3">
                       <span>{loading ? 'Uzman Danışmanlığı' : t('productPage.cta.consultationButton')}</span>
                     </Link>

@@ -44,8 +44,8 @@ const productCategories = [
         name: { tr: 'SOLAR ÜRÜNLER', en: 'SOLAR PRODUCTS', ar: 'المنتجات الشمسية' },
         icon: Sun,
         products: [
-            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطات الطاقة' }, image: '/images/products/ges-power-station.webp' },
-            { slug: 'revium-solarport', name: { tr: 'Solarport', en: 'Solarport', ar: 'سولار بورت' }, image: '/images/products/solarport-duo.webp' },
+            { slug: 'revium-powerstation-series', name: { tr: 'Powerstation Serisi', en: 'Powerstation Series', ar: 'سلسلة محطات الطاقة' }, image: '/images/products/ges-power-station.png' },
+            { slug: 'revium-solarport', name: { tr: 'Solarport', en: 'Solarport', ar: 'سولار بورت' }, image: '/images/products/solarport-duo.png' },
         ]
     },
 

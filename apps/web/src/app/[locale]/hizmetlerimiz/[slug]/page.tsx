@@ -56,71 +56,62 @@ export default async function ServiceDetailPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero - premium hizmet sayfası girişi */}
-            <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-28 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/40">
-                {/* Arka plan: hafif grid + yumuşak blur */}
+            {/* Hero - modern glass & gradient */}
+            <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-28 overflow-hidden min-h-[60vh] flex items-center">
                 <div className="absolute inset-0 z-0 pointer-events-none">
-                    <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.06)_1px,transparent_1px)] bg-[size:48px_48px]" aria-hidden />
-                    <div className="absolute top-0 right-0 w-[520px] h-[520px] bg-blue-100/30 rounded-full blur-[110px] -translate-y-1/4 translate-x-1/4" />
-                    <div className="absolute bottom-0 left-0 w-[420px] h-[420px] bg-emerald-100/20 rounded-full blur-[90px] translate-y-1/4 -translate-x-1/4" />
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_70%_-20%,rgba(56,189,248,0.22),transparent),radial-gradient(ellipse_60%_40%_at_20%_100%,rgba(16,185,129,0.18),transparent),linear-gradient(to_bottom_right,#f8fafc,#f1f5f9)]" />
+                    <div className="absolute inset-0 opacity-[0.4] bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.08)_1px,transparent_0)] bg-[size:32px_32px]" aria-hidden />
                 </div>
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-                        {/* Sol: İçerik */}
-                        <div className="space-y-6">
-                            <div>
-                                <div className="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full bg-blue-50/90 border border-blue-100 shadow-sm">
-                                    <span className="relative flex h-2 w-2">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
-                                    </span>
-                                    <span className="text-xs font-bold uppercase tracking-widest text-blue-700">
+                    <div className="relative rounded-3xl overflow-hidden border border-white/60 bg-white/70 backdrop-blur-xl shadow-2xl shadow-slate-300/30 ring-1 ring-slate-200/50">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch min-h-[420px] lg:min-h-[480px]">
+                            {/* Sol: İçerik */}
+                            <div className="relative order-2 lg:order-1 flex flex-col justify-center p-8 sm:p-10 lg:p-14">
+                                <div className="space-y-5">
+                                    <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
                                         {t('serviceTag')}
-                                    </span>
+                                    </p>
+                                    <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[2.85rem] font-extrabold leading-[1.08] tracking-tight">
+                                        <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent">
+                                            {t(`${service.key}.title`)}
+                                        </span>
+                                    </h1>
+                                    <p className="text-base lg:text-lg text-slate-600 leading-relaxed max-w-lg">
+                                        {t(`${service.key}.subtitle`)}
+                                    </p>
                                 </div>
-                                <div className="h-0.5 w-14 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full mb-6" />
+                                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
+                                    <Link
+                                        href={`/${locale}/fiyat-teklifi/`}
+                                        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/20 hover:shadow-xl hover:-translate-y-0.5"
+                                    >
+                                        {t('getQuote')}
+                                        <ArrowRight className="w-4 h-4" />
+                                    </Link>
+                                    <Link
+                                        href={`/${locale}/iletisim/`}
+                                        className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 bg-white/80 text-slate-700 border border-slate-200 rounded-2xl font-semibold hover:bg-white hover:border-slate-300 transition-all backdrop-blur-sm"
+                                    >
+                                        {t('freeConsultation')}
+                                    </Link>
+                                </div>
                             </div>
 
-                            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[2.75rem] font-bold text-slate-900 tracking-tight leading-[1.12]">
-                                {t(`${service.key}.title`)}
-                            </h1>
-
-                            <p className="text-base lg:text-lg text-slate-600 leading-relaxed max-w-lg">
-                                {t(`${service.key}.subtitle`)}
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                                <Link
-                                    href={`/${locale}/fiyat-teklifi/`}
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 text-white rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/25 hover:shadow-xl hover:shadow-emerald-600/30 hover:-translate-y-0.5"
-                                >
-                                    {t('getQuote')}
-                                    <ArrowRight className="w-4 h-4" />
-                                </Link>
-                                <Link
-                                    href={`/${locale}/iletisim/`}
-                                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-slate-700 border-2 border-slate-200 rounded-xl font-semibold hover:bg-slate-50 hover:border-slate-300 transition-all"
-                                >
-                                    {t('freeConsultation')}
-                                </Link>
-                            </div>
-                        </div>
-
-                        {/* Sağ: Hizmet görseli */}
-                        <div className="relative order-first lg:order-last">
-                            <div className="relative aspect-[4/3] w-full max-w-[560px] mx-auto">
-                                <div className="absolute -inset-1 bg-gradient-to-br from-blue-100/50 via-slate-100 to-emerald-100/50 rounded-2xl blur-sm" />
-                                <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200/50 bg-white">
-                                    <Image
-                                        src={service.image}
-                                        alt={t(`${service.key}.title`)}
-                                        fill
-                                        className="object-cover"
-                                        priority
-                                        sizes="(max-width: 1024px) 100vw, 560px"
-                                    />
+                            {/* Sağ: Görsel */}
+                            <div className="relative order-first lg:order-2 min-h-[280px] lg:min-h-0">
+                                <div className="absolute inset-0 lg:inset-[1rem] rounded-2xl overflow-hidden bg-slate-100">
+                                    <div className="relative w-full h-full">
+                                        <Image
+                                            src={service.image}
+                                            alt={t(`${service.key}.title`)}
+                                            fill
+                                            className="object-cover object-center"
+                                            priority
+                                            sizes="(max-width: 1024px) 100vw, 50vw"
+                                        />
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-l from-slate-900/20 via-transparent to-transparent pointer-events-none" />
                                 </div>
                             </div>
                         </div>

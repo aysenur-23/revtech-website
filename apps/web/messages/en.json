@@ -59,17 +59,17 @@
         "additionalInfo": "Additional Information",
         "nameLabel": "Full Name",
         "namePlaceholder": "Your full name",
-        "emailLabel": "Email *",
+        "emailLabel": "Email",
         "emailPlaceholder": "example@email.com",
-        "phoneLabel": "Phone *",
+        "phoneLabel": "Phone",
         "phonePlaceholder": "+90 5XX XXX XX XX",
         "companyLabel": "Company",
         "companyPlaceholder": "Company name",
-        "categoryLabel": "Product Category *",
+        "categoryLabel": "Product Category",
         "categorySelect": "Select Category",
-        "powerLabel": "Power Requirement *",
+        "powerLabel": "Power Requirement",
         "powerSelect": "Select Power Range",
-        "areaLabel": "Application Area *",
+        "areaLabel": "Application Area",
         "areaSelect": "Select Area",
         "budgetLabel": "Estimated Budget",
         "budgetSelect": "Select Budget Range",
@@ -571,9 +571,32 @@
         "ar": "العربية"
     },
     "productDetails": {
+        "revium-pickup-power-pack": {
+            "name": "Pick Up Power Pack",
+            "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",
+            "categoryTitle": "Vehicle-Mounted Mobile Energy System",
+            "features": {
+                "capacity": "Energy: 60 – 100 kWh",
+                "output": "Output Power (3-Phase): 3×10 kW (380 VAC)",
+                "integration": "Vehicle Compatibility: Hilux / Pick Up",
+                "protection": "Waveform: Pure Sine",
+                "vibration": "Vibration Resistant",
+                "charging": "Cycle Life: 6000 Cycles"
+            },
+            "applications": {
+                "camping": "Camping & Caravan",
+                "mobileService": "Mobile Service Vehicles",
+                "emergency": "Emergency Response Vehicles",
+                "fieldWork": "Field Operations",
+                "offRoad": "Off-Road Activities"
+            }
+        },
         "labels": {
+            "energy": "Energy",
             "capacity": "Capacity",
-            "power": "Output Power",
+            "power": "Power",
+            "battery": "Battery",
+            "powerLong": "Output Power",
             "cellType": "Cell Type",
             "cycleLife": "Cycle Life",
             "protection": "Protection",
@@ -590,6 +613,7 @@
             "keyFeatures": "Key Features",
             "getSpecialOffer": "Get Special Offer",
             "getQuote": "Get Quote",
+            "requestQuote": "Request Quote",
             "premiumEnergy": "Premium Energy"
         },
         "products": {

@@ -29,7 +29,7 @@ const categoryConfig: Record<string, { titleKey: string; heroImage: string; data
     },
     cabin: {
         titleKey: 'cabinPower',
-        heroImage: '/images/categories/cabin-category.jpg',
+        heroImage: '/images/categories/cabin-category.png',
         dataCategory: 'cabin'
     },
     ges: {

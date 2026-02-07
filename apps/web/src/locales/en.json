@@ -731,16 +731,17 @@
       }
     },
     "revium-pickup-power-pack": {
+      "name": "Pick Up Power Pack",
       "categoryTitle": "On-Vehicle Mobile Energy System",
-      "title": "Hilux Power Pack",
-      "description": "Integrated power pack designed for pickup vehicles. Durable and high-performance energy solution.",
+      "title": "Pick Up Power Pack",
+      "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",
       "features": {
-        "capacity": "Capacity: 7.2 kWh",
-        "output": "AC Output: 3000W",
-        "integration": "Vehicle Integration",
-        "protection": "IP65 Protection",
-        "vibration": "Vibration Resistance",
-        "charging": "Fast Charging"
+        "capacity": "Energy: 60 – 100 kWh",
+        "output": "Output Power (3-Phase): 3×10 kW (380 VAC)",
+        "integration": "Vehicle Compatibility: Hilux / Pick Up",
+        "protection": "Waveform: Pure Sine",
+        "vibration": "Vibration Resistant",
+        "charging": "Cycle Life: 6000 Cycles"
       },
       "applications": {
         "camping": "Camping and Caravan",

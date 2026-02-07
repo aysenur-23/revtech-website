@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'r-cabinet-21600',
     name: 'Güç Kabini',
-    images: ['/images/products/cabin-power.png'],
+    images: ['/images/products/cabin-power.webp'],
     category: 'cabin',
     capacity_kwh: '21.6',
     dimensions: '600 × 500 × 1000 mm',

@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, CheckCircle, Shield, Zap, Battery, Globe, LucideIcon, Hammer, Monitor, Laptop, Snowflake, Lightbulb, Tv, Home, Clock } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useTranslation } from '@/hooks/useTranslation'
 
 interface WhyChooseItem {
@@ -66,6 +65,9 @@ export function ProductPage({
   const showTitleGradient = titleWords.length >= 2
 
   const hasKeySpecs = Boolean(capacity || power || batteryLabel)
+
+  // Özellik sayısı çift olsun (grid dengesi için)
+  const featuresEven: (string | null)[] = features.length % 2 === 0 ? features : [...features, null]
 
   // Default whyChooseItems if not provided
   const experienceTitle = t('productPage.whyChoose.experience')
@@ -212,14 +214,15 @@ export function ProductPage({
               <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
                 <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
                 <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
-                  <Image
+                  {/* Yerel görseller next.config'de disableStaticImages olduğu için img kullanılıyor */}
+                  <img
                     src={image}
                     alt={title}
                     width={800}
                     height={800}
                     className="w-full h-auto object-contain drop-shadow-xl sm:drop-shadow-2xl"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    priority
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 {(modelId || name) && (
@@ -248,15 +251,19 @@ export function ProductPage({
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl hover:border-blue-200 transition-all duration-300"
-                >
-                  <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-slate-700 font-medium">{feature}</span>
-                </div>
-              ))}
+              {featuresEven.map((feature, index) =>
+                feature === null ? (
+                  <div key={`placeholder-${index}`} className="p-4 sm:p-5 rounded-2xl border border-transparent bg-transparent min-h-[56px] sm:min-h-[64px]" aria-hidden />
+                ) : (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl hover:border-blue-200 transition-all duration-300"
+                  >
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
+                    <span className="text-sm sm:text-base text-slate-700 font-medium">{feature}</span>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </section>

@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:3001": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prepare-public-html": "node scripts/prepare-public-html.cjs"
+    "prepare-public-html": "node scripts/prepare-public-html.cjs",
+    "deploy:hostinger": "pnpm run build && pnpm run prepare-public-html"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",

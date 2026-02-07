@@ -32,8 +32,8 @@ const allProducts = [
     { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
 
     // Solar Products
-    { id: 'ges-power-station', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'ges-power-station.description' },
-    { id: 'solarport-duo', name: 'Solarport', image: '/images/products/solarport-updated.png', category: 'gesProducts', descriptionKey: 'solarport-duo.description' },
+    { id: 'ges-power-station', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.png', category: 'gesProducts', descriptionKey: 'ges-power-station.description' },
+    { id: 'solarport-duo', name: 'Solarport', image: '/images/products/solarport-duo.png', category: 'gesProducts', descriptionKey: 'solarport-duo.description' },
 ];
 
 const categories = [

@@ -79,7 +79,7 @@ export default function Cabinet21600Page() {
       batteryLabel="LiFePO₄"
       title={loading ? "Güç Kabini" : t('productDetails.revium-power-cabinet.title')}
       description={loading ? "21.6 kWh Entegre Sistem - Sabit kurulum için tasarlanmış yüksek kapasiteli entegre güç kabini sistemi. 21.6 kWh enerji kapasitesi ve 5 kW çıkış gücü ile kritik altyapı sistemleri için güvenilir enerji çözümü." : t('productDetails.revium-power-cabinet.description')}
-      image="/images/products/cabin-power.png"
+      image="/images/products/cabin-power.webp"
       whyChooseItems={whyChooseItems}
       features={productFeatures}
       applications={loading ? [

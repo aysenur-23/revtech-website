@@ -49,7 +49,7 @@ export default function SolarportDuoPage() {
     power: '6 – 24 kW AC',
     title: loading ? 'Solarport DUO' : t('productDetails.solarport-duo.title'),
     description: loading ? 'SolarPort Duo, güneş enerjisini modern mimariyle buluşturan yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum-çelik konstrüksiyonu, yüksek verimli güneş panelleri ve entegre enerji depolama birimi sayesinde hem estetik hem de fonksiyonel bir çözüm sunar. Elektrikli araç şarj istasyonlarıyla tam uyumlu yapısı, park alanlarını sadece koruma alanı olmaktan çıkarıp aktif bir enerji üretim merkezine dönüştürür. SolarPort Duo, temiz enerji üretimi, sürdürülebilir altyapı ve modern tasarımıyla geleceğin şehirlerine değer katan akıllı bir otopark sistemidir.' : t('productDetails.solarport-duo.description'),
-    image: '/images/products/solarport-updated.png',
+    image: '/images/products/solarport-duo.png',
     whyChooseItems,
     features: [],
     applications: loading ? [

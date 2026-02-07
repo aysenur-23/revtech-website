@@ -60,7 +60,7 @@ export default function ProductCards() {
         {
             key: 'cabinPower',
             slug: 'cabin',
-            image: '/images/categories/cabin-category.jpg',
+            image: '/images/categories/cabin-category.png',
             priority: false,
             defaultTitle: 'Kabin Tipi Güç Paketleri',
         },

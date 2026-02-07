@@ -1,4 +1,4 @@
-﻿export interface Product {
+export interface Product {
   slug: string
   name: string
   images: string[]
@@ -116,7 +116,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'revium-powerstation-series',
     name: 'Powerstation Serisi',
-    images: ['/images/products/ges-power-station.webp'],
+    images: ['/images/products/ges-power-station.png'],
     category: 'ges',
     capacity_kwh: '500-5000',
     output_w: '200-1000 kW',
@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
   {
     slug: 'revium-solarport',
     name: 'Solarport',
-    images: ['/images/products/solarport-duo.webp'],
+    images: ['/images/products/solarport-duo.png'],
     category: 'ges',
     capacity_kwh: 'Solar Carport',
     output_w: '6-24 kW AC',

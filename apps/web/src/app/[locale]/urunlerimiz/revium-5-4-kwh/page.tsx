@@ -53,7 +53,7 @@ export default function RSB5400BPage() {
     batteryLabel: 'LiFePO₄',
     title: loading ? '5.4 kWh Taşınabilir Güç Paketi' : t('productDetails.revium-5-4-kwh.title'),
     description: loading ? 'Büyük kasa tasarımı ile 5.4 kWh kapasiteli taşınabilir güç paketi. 3 kW saf sinüs çıkışı ve 1.5 kW PV ile hızlı dolum.' : t('productDetails.revium-5-4-kwh.description'),
-    image: '/images/products/5-4kwh-2000w-1.png',
+    image: '/images/products/5-4kwh-h-1.webp',
     whyChooseItems,
     features: loading ? [
       'Kapasite: 5.4 kWh (LiFePO₄)',

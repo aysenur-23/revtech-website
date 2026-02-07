@@ -44,15 +44,15 @@ export default function ReviumPickupPowerPackPage() {
   ]
 
   const product = {
-    name: 'Revium Pickup Power Pack',
+    name: loading ? 'Pick Up Güç Paketi' : t('productDetails.revium-pickup-power-pack.name'),
     modelId: 'R-PICKUP',
     categoryTitle: loading ? 'Araç Üstü Mobil Enerji Sistemi' : t('productDetails.revium-pickup-power-pack.categoryTitle'),
     capacity: '60 – 100 kWh',
     power: '30 kW (3-Phase)',
     batteryLabel: 'LiFePO₄',
-    title: loading ? 'Hilux Güç Paketi' : t('productDetails.revium-pickup-power-pack.title'),
-    description: loading ? 'Pickup araçlar için özel olarak tasarlanmış entegre güç paketi. Araç arkası kullanıma uygun, dayanıklı ve yüksek performanslı enerji çözümü.' : t('productDetails.revium-pickup-power-pack.description'),
-    image: '/images/products/hilux-power.png',
+    title: loading ? 'Pick Up Güç Paketi' : t('productDetails.revium-pickup-power-pack.name'),
+    description: loading ? 'Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.' : t('productDetails.revium-pickup-power-pack.description'),
+    image: '/images/products/hilux-21-6kwh-1.webp',
     whyChooseItems,
     features: loading ? [
       'Kapasite: 7.2 kWh',

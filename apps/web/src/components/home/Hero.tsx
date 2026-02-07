@@ -10,7 +10,7 @@ export default function Hero() {
 
     return (
         <section className="relative w-[100vw] min-h-[130vh] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] bg-black -mt-20 flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Video */}
+            {/* Background: Video her ekran boyutunda */}
             <div className="absolute inset-[-20px] w-[calc(100%+40px)] h-[calc(100%+40px)]">
                 <video
                     autoPlay
@@ -18,7 +18,7 @@ export default function Hero() {
                     loop
                     playsInline
                     preload="auto"
-                    poster="/images/hero/revium-hero-2-7kwh.png"
+                    poster="/images/hero/revium-hero-2-7kwh.jpg"
                     className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
                     style={{ objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.15)' }}
                 >

@@ -51,7 +51,7 @@ export default function GridPack100Page() {
     batteryLabel: 'LiFePO₄',
     title: loading ? 'GridPack 100' : t('productDetails.revium-gridpack.title'),
     description: loading ? 'REVIUM GridPack 100, endüstriyel tesisler, savunma alanları, mobil enerji merkezleri ve afet bölgeleri için geliştirilmiş, yüksek kapasiteli enerji depolama ve yönetim sistemidir. Entegre inverter, MPPT şarj kontrolü, akıllı batarya yönetim sistemi (BMS) ve uzaktan izleme özellikleriyle, tüm enerji sürecini tek noktadan yönetilebilen tam entegre bir plug-and-play enerji istasyonu sunar. Dayanıklı yapısı, uzun ömürlü LiFePO₄ batarya teknolojisi ve yüksek verimliliği sayesinde, her koşulda kesintisiz, güvenli ve sürdürülebilir enerji sağlar.' : t('productDetails.revium-gridpack.description'),
-    image: '/images/products/gridpack-100.png',
+    image: '/images/products/gridpack.webp',
     whyChooseItems,
     features: loading ? [
       '100 kWh Kapasite',

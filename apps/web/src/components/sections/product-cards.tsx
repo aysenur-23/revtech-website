@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useTranslation } from '@/hooks/useTranslation'
 import { CardGrid } from '@/components/ui/card-grid'
@@ -32,7 +32,7 @@ export function ProductCards() {
     },
     {
       title: t('products.cabinPower.title'),
-      imageSrc: '/images/products/cabin-power-new.png',
+      imageSrc: '/images/products/cabin-power.webp',
       imageAlt: t('products.cabinPower.title'),
       href: `/${locale}/urunlerimiz/kategori/cabin`,
       ratio: '4:3',
