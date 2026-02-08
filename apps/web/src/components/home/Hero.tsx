@@ -24,14 +24,16 @@ export default function Hero() {
         video.load();
 
         const onPlaying = () => setVideoPlaying(true);
+        const onCanPlay = () => { video.play().catch(() => {}); };
         video.addEventListener('playing', onPlaying);
+        video.addEventListener('canplay', onCanPlay);
 
-        const playPromise = video.play();
-        if (playPromise && typeof playPromise.then === 'function') {
-            playPromise.then(() => setVideoPlaying(true)).catch(() => {});
-        }
+        video.play().then(() => setVideoPlaying(true)).catch(() => {});
 
-        return () => video.removeEventListener('playing', onPlaying);
+        return () => {
+            video.removeEventListener('playing', onPlaying);
+            video.removeEventListener('canplay', onCanPlay);
+        };
     }, []);
 
     return (
@@ -48,6 +50,7 @@ export default function Hero() {
                     disableRemotePlayback
                     preload="auto"
                     poster={HERO_POSTER}
+                    fetchPriority="high"
                     className="absolute inset-0 w-full h-full min-w-full min-h-full object-cover object-top sm:object-center scale-[1.2] sm:scale-[1.15] origin-center"
                 >
                     <source src="/videos/hero-new.mp4" type="video/mp4" />

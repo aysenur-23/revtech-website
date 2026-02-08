@@ -19,7 +19,7 @@ const categoryConfig: Record<string, { titleKey: string; heroImage: string; data
     },
     vehicle: {
         titleKey: 'vehiclePower',
-        heroImage: '/images/products/vehicle-category-new.jpg',
+        heroImage: '/images/products/vehicle-category-new.jpg?v=2',
         dataCategory: 'vehicle'
     },
     charging: {

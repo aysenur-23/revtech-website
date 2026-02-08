@@ -9,7 +9,6 @@ function formatNumber(value: string | number, locale: string): string {
     return str.replace(/\d/g, (d) => arabicDigits[parseInt(d)]);
 }
 
-import Image from 'next/image';
 import Link from 'next/link';
 import {
     Battery, Zap, Sun, Shield, ArrowRight, CheckCircle, Tent, TriangleAlert,
@@ -1171,15 +1170,17 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {/* Decorative Circle */}
                                     <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
 
-                                    {/* Product Image */}
+                                    {/* Product Image - disableStaticImages nedeniyle native img */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
-                                        <Image
+                                        <img
                                             src={product.image}
                                             alt={localizedName}
                                             width={800}
                                             height={800}
                                             className="w-full h-auto object-contain drop-shadow-xl sm:drop-shadow-2xl"
-                                            priority
+                                            loading="eager"
+                                            fetchPriority="high"
+                                            decoding="async"
                                         />
                                     </div>
 
