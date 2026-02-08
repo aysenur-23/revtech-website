@@ -1,0 +1,28 @@
+import * as Joi from 'joi';
+
+export const validationSchema = Joi.object({
+  NODE_ENV: Joi.string().valid('development', 'production', 'test').default('development'),
+  PORT: Joi.number().default(3333),
+  DATABASE_URL: Joi.string().required(),
+  REDIS_URL: Joi.string().optional(),
+  REDIS_HOST: Joi.string().default('localhost'),
+  REDIS_PORT: Joi.number().default(6379),
+  REDIS_PASSWORD: Joi.string().allow('').optional(),
+  JWT_SECRET: Joi.string().required(),
+  JWT_EXPIRES_IN: Joi.string().default('7d'),
+  CORS_ORIGIN: Joi.string().default('http://localhost:3000'),
+  SMTP_HOST: Joi.string().default('localhost'),
+  SMTP_PORT: Joi.number().default(1025),
+  SMTP_USER: Joi.string().allow('').optional(),
+  SMTP_PASS: Joi.string().allow('').optional(),
+  SMTP_FROM: Joi.string().default('noreply@example.com'),
+  S3_ENDPOINT: Joi.string().optional(),
+  S3_ACCESS_KEY: Joi.string().optional(),
+  S3_SECRET_KEY: Joi.string().optional(),
+  S3_BUCKET: Joi.string().optional(),
+  S3_REGION: Joi.string().default('us-east-1'),
+  GOOGLE_CLIENT_ID: Joi.string().allow('').optional(),
+  GOOGLE_CLIENT_SECRET: Joi.string().allow('').optional(),
+  GITHUB_CLIENT_ID: Joi.string().allow('').optional(),
+  GITHUB_CLIENT_SECRET: Joi.string().allow('').optional(),
+});

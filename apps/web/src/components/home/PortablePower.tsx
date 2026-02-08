@@ -27,7 +27,7 @@ export default function PortablePower() {
 
     const features = [
         { key: 'capacity', value: locale === 'ar' ? '٥.٤ كيلوواط ساعة' : '5.4 kWh', icon: Battery },
-        { key: 'output', value: locale === 'ar' ? '٢٠٠٠ واط' : '2000W', icon: Zap },
+        { key: 'output', value: locale === 'ar' ? '٣٠٠٠ واط' : '3000W', icon: Zap },
         { key: 'pvCharging', value: locale === 'ar' ? '١٥٠٠ واط' : '1500W', icon: Gauge },
         { key: 'protection', value: locale === 'ar' ? 'نظام إدارة بطارية متطور' : 'Advanced BMS', icon: ShieldCheck }
     ];
@@ -120,6 +120,8 @@ export default function PortablePower() {
                                                 alt=""
                                                 fill
                                                 className="object-contain brightness-0 grayscale opacity-50"
+                                                loading="lazy"
+                                                sizes="70vw"
                                             />
                                         </div>
                                     </div>
@@ -130,7 +132,8 @@ export default function PortablePower() {
                                         width={750}
                                         height={600}
                                         className="relative z-10 w-full h-auto transform group-hover:scale-105 transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]"
-                                        priority
+                                        loading="lazy"
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                     />
                                     <div className="absolute top-[80%] left-1/2 -translate-x-1/2 w-4/5 h-1/5 bg-slate-900/5 blur-[40px] rounded-[100%]" />
                                 </div>

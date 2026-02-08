@@ -58,6 +58,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Internationalization**: [next-intl](https://next-intl-docs.vercel.app/)
 - **Email**: Nodemailer
 
+## 🌐 Yayın için public_html hazırlama
+
+Statik siteyi barındırma klasörüne yüklemek için eksiksiz `public_html` klasörünü oluşturun:
+
+```bash
+cd apps/web
+pnpm build
+pnpm run prepare-public-html
+```
+
+`public_html` klasörü oluşur; içinde tüm HTML/CSS/JS ve görseller ile `.htaccess` bulunur. Bu klasörü sunucunuzun `public_html` (veya `htdocs`) dizinine yükleyebilirsiniz.
+
 ## 📝 License
 
 © 2024 Revium Tech. All rights reserved.

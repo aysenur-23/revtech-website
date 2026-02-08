@@ -39,14 +39,14 @@ export default function ProductCards() {
         {
             key: 'portablePower',
             slug: 'portable',
-            image: '/images/categories/portable-power-new.webp',
+            image: '/images/categories/portable-power-new.png',
             priority: true,
             defaultTitle: 'Taşınabilir Güç Paketleri',
         },
         {
             key: 'vehiclePower',
             slug: 'vehicle',
-            image: '/images/products/vehicle-category-new.jpg',
+            image: '/images/products/vehicle-category-new.jpg?v=2',
             priority: true,
             defaultTitle: 'Araç Tipi Güç Paketleri',
         },
@@ -54,13 +54,13 @@ export default function ProductCards() {
             key: 'charging',
             slug: 'charging',
             image: '/images/categories/charging-category.webp',
-            priority: true,
+            priority: false,
             defaultTitle: 'Şarj İstasyonları',
         },
         {
             key: 'cabinPower',
             slug: 'cabin',
-            image: '/images/categories/cabin-category.jpg',
+            image: '/images/categories/cabin-category.png',
             priority: false,
             defaultTitle: 'Kabin Tipi Güç Paketleri',
         },
@@ -134,19 +134,21 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
             )}
         >
             {/* Full-Bleed Background Image */}
-            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl bg-slate-200">
                 <Image
                     alt={t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                     src={category.image}
                     fill
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 brightness-105"
                     priority={category.priority}
+                    loading={category.priority ? undefined : 'lazy'}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/25 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent z-10" />
             </div>
 
             {/* Content */}
-            <div className="absolute bottom-5 left-6 sm:bottom-7 sm:left-8 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
+            <div className="absolute bottom-3 left-6 sm:bottom-5 sm:left-8 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
                 <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-blue-300 transition-colors duration-300 drop-shadow-lg">
                     {t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                 </h3>

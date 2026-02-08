@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünlerimiz",
+    "solutions": "Çözümlerimiz",
+    "technology": "Teknoloji",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim",
+    "quote": "Teklif Talep Et"
+  },
+  "hero": {
+    "title": "Sürdürülebilir Enerji Çözümleri",
+    "subtitle": "Revium Tech ile Geleceğin Enerjisini Bugün Yaşayın",
+    "description": "Taşınabilir, modüler yapı; 700W MPPT, 4000 döngü, Tam Sine inverter. İnşaat, kamp, acil durum ve ticari uygulamalar için güvenilir enerji depolama sistemleri.",
+    "cta1": "Ürünleri Keşfet",
+    "cta2": "Teklif Al"
+  },
+  "features": {
+    "title": "Öne Çıkan Teknikler",
+    "subtitle": "İleri teknoloji ile güçlendirilmiş çözümler",
+    "mppt": {
+      "title": "700W MPPT",
+      "description": "Maksimum güç noktası takibi ile optimum güneş enerjisi verimliliği"
+    },
+    "inverter": {
+      "title": "Tam Sine Inverter",
+      "description": "Saf sinüs dalga ile hassas elektronik cihazlar için güvenli güç"
+    },
+    "cycles": {
+      "title": "4000 Döngü",
+      "description": "Uzun ömürlü lityum batarya teknolojisi ile dayanıklılık"
+    },
+    "phases": {
+      "title": "3-Faz Seçenekleri",
+      "description": "Endüstriyel uygulamalar için yüksek güçlü çıkış seçenekleri"
+    }
+  },
+  "footer": {
+    "description": "Enerji depolama ve yenilenebilir enerji çözümleri ile sürdürülebilir bir gelecek inşa ediyoruz.",
+    "quickLinks": "Hızlı Linkler",
+    "legal": "Yasal",
+    "social": "Sosyal Medya",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "kvkk": "KVKK"
+  }
+}

@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+
+AddType 'text/html; charset=UTF-8' .html
+AddType 'text/css; charset=UTF-8'  .css
+AddType 'application/javascript; charset=UTF-8' .js
+AddType 'application/json; charset=UTF-8' .json
+AddType 'image/svg+xml; charset=UTF-8' .svg
+AddType 'text/plain; charset=UTF-8' .txt .xml
+
+<IfModule mod_headers.c>
+  Header set Content-Type "text/html; charset=UTF-8" "expr=%{CONTENT_TYPE} =~ m#^text/html#"
+  Header edit Content-Type "^text/css$" "text/css; charset=UTF-8"
+  Header edit Content-Type "^application/javascript$" "application/javascript; charset=UTF-8"
+  Header edit Content-Type "^application/json$" "application/json; charset=UTF-8"
+  Header edit Content-Type "^image/svg\\+xml$" "image/svg+xml; charset=UTF-8"
+  Header edit Content-Type "^text/plain$" "text/plain; charset=UTF-8"
+</IfModule>

@@ -1,0 +1,1338 @@
+{
+  "packageRoot": "deploy/hostinger_public_html",
+  "generatedAt": "2025-10-19T20:43:10.783Z",
+  "projectType": "Next.js Static Export",
+  "totalFiles": 260,
+  "totalSize": 206399721,
+  "files": [
+    {
+      "path": "deploy\\hostinger_public_html\\.htaccess",
+      "size": 1191,
+      "sha256": "c65508367656cf2e917d1d3ea1218936e9a457cfaee3a4c459b846b5080b25e2"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\.well-known\\appspecific\\com.chrome.devtools.json",
+      "size": 180,
+      "sha256": "fb170b6de0274c0d25071920defb3663ad363365609a80a45cbfffbaf13197b9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\404.html",
+      "size": 10504,
+      "sha256": "9d1ca87ceda032746c7f2ca95ccfa5f8fa6eafa533daee9e675779cd056fdfc2"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\en.html",
+      "size": 115808,
+      "sha256": "46c1a5668f82f0dab24f0fd89c0575073d936e5878cd3c05b0a9f4bd2e667d86"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\en.txt",
+      "size": 40211,
+      "sha256": "045739f7ee1fd8db60bd8ba056623226567f352297e2842120680dacaa478fbc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\favicon.png",
+      "size": 116997,
+      "sha256": "d46e8728d69e5dc3f530de9a79791b95b5279fd0c0d4b61efce104be14ed3f8a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\fix-styles.css",
+      "size": 3062,
+      "sha256": "d4cf624ffdbb08b61fab414280027d9c4c6dac4d171e2ff0f192077a081464b9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\fiyat-teklifi.html",
+      "size": 21732,
+      "sha256": "4954bfec432f98891484a8e12278bb5ef2ed393fe6374e2ea30cd30a11119e50"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\fiyat-teklifi.txt",
+      "size": 4882,
+      "sha256": "20ba71480c11cd3048cd0f8adaab9465352f4ae61a542a0d9681f5f6f52e546a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz\\endustriyel-kurulum.html",
+      "size": 72428,
+      "sha256": "fd186a1003b32077fed98ea77bbb3908576b6b8d8659281450774292d837f5ef"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz\\endustriyel-kurulum.txt",
+      "size": 36218,
+      "sha256": "c51d176d0e1aac9b01adf62327575a3e85d494279874d58541f931405e8ad16c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz\\ges-kurulumu.html",
+      "size": 72605,
+      "sha256": "3d3e1ee43e5ac25fc4d48cebe0b42a988bfc903af337a293ab2d18dccc82ad03"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz\\ges-kurulumu.txt",
+      "size": 36363,
+      "sha256": "ad9d1582295c2897dfadec8ab0467a7a8b16be744ac6f85074eacedb238ba393"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz.html",
+      "size": 47712,
+      "sha256": "5557f23a3f9f2983cee847152edc985e38b72f7e9f0280288444aa3bb331ebf6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\hizmetlerimiz.txt",
+      "size": 22993,
+      "sha256": "5e88dd4e9498d498fe65becfff5853e70635567d9456e706e6aa54f7e08ea41b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\iletisim.html",
+      "size": 28293,
+      "sha256": "784572d6f52efeeecc934221c6c09aa124e16cc327f49218d9376f5e998b26be"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\iletisim.txt",
+      "size": 4910,
+      "sha256": "6845658080d0aaa94da69d3184ab317ffe1697fa18d188f560c9c51c3ca5b149"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\contact\\contact-hero-new.png",
+      "size": 4809894,
+      "sha256": "f7bc9995b54bb5058a7ff57134c97d7e6becf4625d98a5f666ef266be1067ec4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\contact\\contact-hero.png",
+      "size": 7369200,
+      "sha256": "c20003e551e2af38ccf4e81e4be95d34e21aca112fa22a63c2722bc77b58326d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\contact\\contact-visual.png",
+      "size": 7139879,
+      "sha256": "eebd0cca943311f6ccf1f49a7113a32bc327676c00d58113475d28f373fbffbe"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\features\\durable.jpg",
+      "size": 7136161,
+      "sha256": "3c0e3193f79b2581cee3c44895b04c3e90732c4f733f3ffb277ca763b8e5e638"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\features\\modular.jpg",
+      "size": 7607474,
+      "sha256": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\features\\reliable.jpg",
+      "size": 6553291,
+      "sha256": "1f3fa21e5ce63af2465dd10c1856195b334a0fb25d3b4df82461c73493d76dea"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\features\\sustainable.jpg",
+      "size": 8063414,
+      "sha256": "846e6521cc0f8bfb1f840b5a4b04370b6f61420da741bcdd54f6de96cb082a60"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\1.png",
+      "size": 7607474,
+      "sha256": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\100.png",
+      "size": 7507696,
+      "sha256": "7ccc9a81f6322b6b22fc5c6924b9574e61fe281841b65cd1c098159f8f3bd0d7"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\2.png",
+      "size": 7136161,
+      "sha256": "3c0e3193f79b2581cee3c44895b04c3e90732c4f733f3ffb277ca763b8e5e638"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\3.png",
+      "size": 6553291,
+      "sha256": "1f3fa21e5ce63af2465dd10c1856195b334a0fb25d3b4df82461c73493d76dea"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\4.png",
+      "size": 8063414,
+      "sha256": "846e6521cc0f8bfb1f840b5a4b04370b6f61420da741bcdd54f6de96cb082a60"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\5.png",
+      "size": 6335036,
+      "sha256": "b02b915b12a5822703d40f227bb6e81548a33cce47194c4e396eaa6dd5b5a1c0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\hero\\6.jpeg",
+      "size": 146025,
+      "sha256": "9cf8cd8347cd6148bd218fd94eeeb1dd5f5a9ea50f8211a39dafbbe3f4b2c73a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\logo.png",
+      "size": 249775,
+      "sha256": "4851cc2f1af2d7e88485410e7d03a0e7278029af8be321aec4e4b2fada18eb6a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\10-5kwh-1.png",
+      "size": 1111674,
+      "sha256": "2268455cc053d0bdbaba827724921258a504c591298211d04012863c6b02a747"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\2-7kwh-a-1.png",
+      "size": 576486,
+      "sha256": "c2df0188a43a39c067f65d41617fb28c40d8df331be16e0c26ed0309dc36749f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\2-7kwh-b-1.png",
+      "size": 1540180,
+      "sha256": "cd8540433e23e41be6556bfb82ce01edc137773581f55127f15c7df123fd76a0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\5-4kwh-2000w-1.png",
+      "size": 847982,
+      "sha256": "02d65ddb162c807cdaf17a2e45f3d63208da63be0dc40dc3873e6b0a877abcc4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\5-4kwh-3000w-1.png",
+      "size": 1436274,
+      "sha256": "b073fa4f32587b7287d7c6168c7ac44b6f354ccf5c5d440dbf68973856d4640a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\5-4kwh-4000w-1.png",
+      "size": 1500040,
+      "sha256": "a152a07e1d46b22aa03cb17addab42abce3097952a2811b287c64372772a7476"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\cabin-power.jpg",
+      "size": 2217795,
+      "sha256": "4bdabb94207e3fbd21d11d8536e32459f6a716abe7baf227a7eef9790c4fbfca"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\hilux-21-6kwh-1.png",
+      "size": 886342,
+      "sha256": "5db66cd5b023c41cc0b3473653775a74e86a9a8e17b446dbd1e334341d49cb4d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\newsu.png",
+      "size": 7607474,
+      "sha256": "015070b064a26e068dcd5e3046852ef57aef71a6014028251fbbb32696b0432a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\poertable-power3.png",
+      "size": 576486,
+      "sha256": "c2df0188a43a39c067f65d41617fb28c40d8df331be16e0c26ed0309dc36749f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\portable-power.png",
+      "size": 1122016,
+      "sha256": "89e109b1a92fcc9f7f97dc3b4fbf358edc0ef2f05e77b1d811b4c97176b36273"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\portable-power2.jpeg",
+      "size": 146025,
+      "sha256": "9cf8cd8347cd6148bd218fd94eeeb1dd5f5a9ea50f8211a39dafbbe3f4b2c73a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\portable-power2.jpg",
+      "size": 6897918,
+      "sha256": "1af724e22dec4d31445c167efe6c3c684aae5a4ad026bb98432f95eee23e1bed"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\solar-panels.png",
+      "size": 3217322,
+      "sha256": "36ebd70a19f3c0f2a4f9df7e61684f164e6035e21652019f90606690f34b4327"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\solar-panels1.jpg",
+      "size": 396320,
+      "sha256": "09234808df8c37fb644c9c6a12b6d4cb98f72349a0e0e63f54ecf7236820eff0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\stack-21-6kwh-1.png",
+      "size": 2217040,
+      "sha256": "c117a5390a2eac891a8b2de8dbce4bd26e2adc168b43cbdf830b9c9d7f6b22f9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\unimog-200kwh-1.jpg",
+      "size": 1532513,
+      "sha256": "54d1cf24d631aec7db92c13002216f858e8e59c7ffb20e396f72792a7aed3a64"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\products\\vehicle-power2.jpg",
+      "size": 1532513,
+      "sha256": "54d1cf24d631aec7db92c13002216f858e8e59c7ffb20e396f72792a7aed3a64"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\logo1.png",
+      "size": 94845,
+      "sha256": "31ccfe19e28634f4373c0a898c6b1ede424ae02550e0793e6b0ad0c69b93ea18"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\logo2.png",
+      "size": 221535,
+      "sha256": "f1da12e24965ff690c46ed936f246c3d11de38624dea6b429bcc3f751f7841cd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\logo3.png",
+      "size": 97724,
+      "sha256": "32efc66bb25f6fed453eceeb709bfa24d7ee640624f05bd2b04f0d25e099abb0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\logo4.png",
+      "size": 839857,
+      "sha256": "cbe1ae5753874b0846ded633d1c0ec9ebbc25930787ee7f26a5f07d2d2aad6f8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\logo5.png",
+      "size": 243793,
+      "sha256": "ebbe10fdcb54fcdb353640221a444c9c5acc8589bbe6d79d2226c2e013be29de"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\README.md",
+      "size": 598,
+      "sha256": "b3e9fd2569ded233b101567ec542a075c7441b354d5e8979cca098c8d58f69dc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\references\\tredium-logo.png",
+      "size": 97724,
+      "sha256": "32efc66bb25f6fed453eceeb709bfa24d7ee640624f05bd2b04f0d25e099abb0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\ges-hero.png",
+      "size": 3217323,
+      "sha256": "335c236d5ce1b3b41971a246c089126ecb2e28c4d06d7841580ee4e7a09ccd06"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\ges-visual.png",
+      "size": 5093899,
+      "sha256": "0e2ea688efa4b7d7c2645d974adca65983555cd66591384d5afd4dc9bde4dad8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\ges-visuall.png",
+      "size": 6080774,
+      "sha256": "61a777236b359e35e2a35cc711bf2ed7498a9d56c4edc6ca339262032627e22c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\industrial-hero.png",
+      "size": 4283927,
+      "sha256": "07a2a6260c9f2d8e4e5fb0c7b6e3e1f68433b4d27bb3d7e97e0b15414c224a6e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\industrial-project-1.png",
+      "size": 8229392,
+      "sha256": "a22825ddea70bddb94b150dc812642dcd6c4a32ae17612c3de8b9468d18a949a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\industrial-project-2.png",
+      "size": 10144408,
+      "sha256": "e9ac0e74446f12d49dd5f935b9358c805622f7867a576d3628c68428709330fd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\industrial-visual.png",
+      "size": 4681743,
+      "sha256": "ee26a5414955a7c3d7ea99c74cc88c7511b8fd482d75f5dcfc9eac7ee51e2f0f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\power-installation.png",
+      "size": 1792191,
+      "sha256": "0c6eb21958b1a8d9624c0b081ed3f30e7c5410197afd8137d10a5c7d7ea548e6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\power-installation0.jpg",
+      "size": 3906918,
+      "sha256": "4fb1366c79a76dd1f44b1888e30a5b9da346ca871baa8ccc693c58beb85fa919"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\solar-installation.png",
+      "size": 3500497,
+      "sha256": "3947c0106a3de3741027c7a77e005a62a36605b115e65a69b6ae4228b1fc7a7c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\images\\services\\solar-installation0.jpg",
+      "size": 7592418,
+      "sha256": "153abd0d58ee48a089f929a92ae0bd8941588db7c117d4cd8d9514ebd8cd6ada"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\index-fixed.html",
+      "size": 6813,
+      "sha256": "44a07a8c232b0bb5e15903fbbce0c28921b81dc14f276b99cb1fb4f2e936db22"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\index.html",
+      "size": 7793,
+      "sha256": "9b7cae2dbdae408e34c9a97b4acfab8b90b56450587db2533c02bbe9e2f87bdd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\index.txt",
+      "size": 4151,
+      "sha256": "8ee9b024e920046f477c07bc5f8218e169e6b5623cf12dad705188f29e34d634"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\hakkimizda.html",
+      "size": 66638,
+      "sha256": "e081452bf5ec8d11c7da7265d72f64642ea217a3ba206a0a985d8f6a8e732f93"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\hakkimizda.txt",
+      "size": 33318,
+      "sha256": "72c41640e15cdb8fe1d42eeae4beacf35dcbab3b629bb9717adb46275ddd0d9f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\kariyer.html",
+      "size": 88416,
+      "sha256": "b962b737c5093b96d0de264a4dc1465eccc6fab2cd8b256128298745065bbb03"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\kariyer.txt",
+      "size": 44523,
+      "sha256": "9a810b4acc7153a1dc2bd084713302187b0fde1f1f69476ad0bc552e4c5e621c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\vizyon-misyon.html",
+      "size": 68407,
+      "sha256": "5c69af542af03e50b01518963013dd052122507c0adb82c76f8f0c52441e1268"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal\\vizyon-misyon.txt",
+      "size": 34160,
+      "sha256": "fd0ce58c490b8a87011815e008f10656f4a00fe427fc760630cd68739d91723c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal.html",
+      "size": 49116,
+      "sha256": "7eac1233296d13f9fda1c5acd436ecc7260673bdcccf24b949169c5c1e0c58cc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\kurumsal.txt",
+      "size": 23897,
+      "sha256": "bf785d23a8da6ac53f2914812e46cb04677762ebc0548e190214ea3349965439"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\legal\\privacy.html",
+      "size": 30791,
+      "sha256": "b8f26715325cf41ba08c6e38ba7f123bafebe32544667da0fcf7cbe4cbcb275d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\legal\\privacy.txt",
+      "size": 13954,
+      "sha256": "bd3f9be96c1b78714a862acf02e61d3670c5a0a0ae29e714ef08e55d601c9d3c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\legal\\terms.html",
+      "size": 32070,
+      "sha256": "09a701a3aa24bbdbdbb73bbce8ec7a66182f3ca029e5c197500ebf6ec5dda694"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\legal\\terms.txt",
+      "size": 14473,
+      "sha256": "4dc170addbf64077386ba25ca3ead2c04c1d2d76a74c9d1e931441a607696451"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\robots.txt",
+      "size": 171,
+      "sha256": "b45584906d387637081588425710f90b99aaf55b35c907862a80556aed0eb55e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\simple-test.html",
+      "size": 1045,
+      "sha256": "791a24e2a966f78db400abc19671eda467366b0b9e7cb0d493905750673ff62f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\sitemap.xml",
+      "size": 348,
+      "sha256": "b5e08b9af3eea918ad575adf79c389997becdea236490dd43876c9d2103d3885"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\test.html",
+      "size": 2686,
+      "sha256": "58b525ca224b48afd6e40acf2f210340e0fb8f197fcbeb8cdb6df62933e88890"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\fiyat-teklifi.html",
+      "size": 36279,
+      "sha256": "cd350b3d24205ca93e6cec0237b844965a629f07a361bb9a9bd5edab625271d8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\fiyat-teklifi.txt",
+      "size": 12800,
+      "sha256": "b81d56e980898ba55426c378f561ee3bd6f7b805b0e9c11e99705f756da2ddc1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\endustriyel-kurulum.html",
+      "size": 64267,
+      "sha256": "aec2de6fb3fd2ea68b2cccdf299f6ff74bd5577491988e5f14ecf0a7eb8a99e3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\endustriyel-kurulum.txt",
+      "size": 32118,
+      "sha256": "fc34b277f67b31d1ca7c5e0bf5c385cb85100b54796c0cdb10fa1be03de1ce7f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\ges-kurulumu.html",
+      "size": 66769,
+      "sha256": "2844810ce70860095791b9de79bbb2a3ebd7bb157adf4cc4788789c29d2deed5"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\ges-kurulumu.txt",
+      "size": 33322,
+      "sha256": "bebf76bad0363537bcac63539f5c273968eb051e724705cda3d5128c8a722a66"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\size-ozel-cozumler.html",
+      "size": 88741,
+      "sha256": "ecc6c785ad76f5371fe99ac1cff8607228ff74dcac86deda3aaf01da45088163"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz\\size-ozel-cozumler.txt",
+      "size": 44680,
+      "sha256": "70cc3778ff5bf4d91ff9d82f5281b983a01034d5fa4f2062aa04a3711cc2202a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz.html",
+      "size": 54507,
+      "sha256": "6cb3a267b46b07b42a69821568a51b1c37c4e3eaca95cd41afb4ff04f60da615"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\hizmetlerimiz.txt",
+      "size": 26770,
+      "sha256": "835620072b20e42fa84a584a7b01af7a3feea5d271f488b8f1889769f516b771"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\iletisim.html",
+      "size": 65532,
+      "sha256": "53b99c04a2add210e7da2278115d16ad01769ac39f16b102a692b19eae0cfd68"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\iletisim.txt",
+      "size": 32528,
+      "sha256": "9c64d7ca9cbffedb9d0857f55c2d86103cc15b851b0e53286a4ba541af37e502"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\kurumsal.html",
+      "size": 58658,
+      "sha256": "65ad4545e99c9e60e15c4e2fe7d1dee455787b11e9a86971459d54750949627b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\kurumsal.txt",
+      "size": 29145,
+      "sha256": "b274142a36472804ca1a321573cd5b92daacbb4b8293f6591238c1d7b7f805f1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\cabin.html",
+      "size": 55855,
+      "sha256": "c9a9f01eade4d7d9146ed6c83414312b66377db7e04529cb7943637645ce779d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\cabin.txt",
+      "size": 27760,
+      "sha256": "c2bb750e8c34baba4c4351109ab81722310f40bc45ceb1c1129edad81217a827"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\portable.html",
+      "size": 88550,
+      "sha256": "266710990582e0675a22e539461b5bd7a9afc592275ed9bc1b9c3a37ed229cdc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\portable.txt",
+      "size": 44567,
+      "sha256": "345872e2d83f95b702d20cc7a99e57c326e8130cacf7f9df095e39675942c20b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\solar.html",
+      "size": 89358,
+      "sha256": "6e1843a4e06380869bc61966c47715ce9adc5a9ec5df519d35475a82af4923d3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\solar.txt",
+      "size": 45014,
+      "sha256": "fb41331a292b23f6f826d141e8c328286da2241592f4621c08627477f88e2723"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\vehicle.html",
+      "size": 56206,
+      "sha256": "1c46e4ee682fe4ebd6421381fe0dc632bdaaff518587a6c647b46cc0d569a8dc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\kategori\\vehicle.txt",
+      "size": 27933,
+      "sha256": "d96d8e592e95c929c6ed818132fad8989f255470f369b4f09b246d63b532b156"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-h21600.html",
+      "size": 76760,
+      "sha256": "8173bb368eb622e016fe333b46d460220c51ef7bc46f2d0b4f7c931e4abe82a9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-h21600.txt",
+      "size": 38659,
+      "sha256": "3e4d9deb8221bb6666fc4e7fa72bb1cc82c904f5c65fb77648c0dd16dcce9830"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-m21600.html",
+      "size": 73152,
+      "sha256": "4301d49b218890beac2801c83a530d8ea221c788128392efd1112a70b3cbdd3c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-m21600.txt",
+      "size": 36783,
+      "sha256": "365a7d54b11f324c700209cb537178cef4c6526456b0647aab0c6122d90c83a5"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-p2700.html",
+      "size": 73265,
+      "sha256": "e7f1f6efdec68a3cbf85343cfd04da96d12525ed8c96614fb4c04556e1951a98"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-p2700.txt",
+      "size": 36838,
+      "sha256": "080be54ebafee71f0ba1510b21b4cc2f2a5ac231e88b8c7f8621d1580932e4f1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-p5400.html",
+      "size": 73377,
+      "sha256": "ccf14d582a361108479eb6977976b6de972d06f838f848195306ebe795fd67fa"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-p5400.txt",
+      "size": 36894,
+      "sha256": "96b4af969c3ae8eae962843046346d8cacc257dcb33f69aeed04a1a5e772cffc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-s10500.html",
+      "size": 73108,
+      "sha256": "0c138065cb74722b9e236ca76d2bd5c56cf31251f06334604d38a3eaaa537a0f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-s10500.txt",
+      "size": 36761,
+      "sha256": "3d9ca40d3b3f131bea93199b73432cb8d164f183797a5b3f94b13f72f46a2485"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-sb2700b.html",
+      "size": 73013,
+      "sha256": "a0e03161fa07faef37e4feb6b98f8fdd7be21bf797455c94275eb9a0f0bd4eac"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-sb2700b.txt",
+      "size": 36714,
+      "sha256": "3846f4ababfc1983a070f5b1f8396ef633b3105b1ad25b864a178798e95e96d3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-sb5400b.html",
+      "size": 73067,
+      "sha256": "8be1b0c6a99bb9f4586429bfbf9e12560d7ad7fc8c88d2e601e42a24fee009f6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-sb5400b.txt",
+      "size": 36742,
+      "sha256": "411db3f33af158c18ddc81b4525eebf27fe52330ddfcf44a1d57b8f4054c8388"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-u200000.html",
+      "size": 73271,
+      "sha256": "83690c014dad236ab3172c7f0d8857b8c4cd3455048c5bcfedba73a57a5c8a20"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\r-u200000.txt",
+      "size": 36844,
+      "sha256": "cf28a2a3aa391bf8da8ebb6575896241c74fd3cc3c9e02a22e9d9f4866de1cfc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\rev-1.html",
+      "size": 73221,
+      "sha256": "c3dbb5e2d8ad1b2c299db17dbaafb408c46f635a78ca9ec9fdd0268fa25363db"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\rev-1.txt",
+      "size": 36813,
+      "sha256": "3d0eedfdc52cd5baebfaa42a129cb8f20705dbd8da8c6f97003b91c77b55fcf1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\rev-2.html",
+      "size": 73127,
+      "sha256": "b9682441249cd069f029b01e76144c68839fd6c246e679903d53e27069ebd22a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz\\rev-2.txt",
+      "size": 36766,
+      "sha256": "670267b1a0711a8d8f6b7a8734d3d808bed532a931d06f43f26dfd9982108978"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz.html",
+      "size": 104821,
+      "sha256": "543e6f164c364217c9deea8ef0535bcc1e0e2ea2b2c3f9fc57d49639a0551af2"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr\\urunlerimiz.txt",
+      "size": 52893,
+      "sha256": "2e7accb9f0d79be21ae8d9af43a1d4295a3771d61faea4d134a3387a8e1f17ed"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr.html",
+      "size": 107090,
+      "sha256": "6c1446b45ae681506f11fdbbc07b1f7dbb980db5b0c4a316f25a07fd012c31a3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\tr.txt",
+      "size": 36286,
+      "sha256": "acd66b9227d736d943a2ccc9fc4d17f23634ee30e2625581ddc263862f790e3d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\cabin.html",
+      "size": 78072,
+      "sha256": "322c43d4fb0b966b9962126bf3834bf7cca7e903a527e08a9771d8272ea278cd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\cabin.txt",
+      "size": 39425,
+      "sha256": "ef911e47d245e3a2a1cab44860c90e54dfef10062158dd03fdd64a5478af7a41"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\portable.html",
+      "size": 114167,
+      "sha256": "9fe2ffdbb6f16c1a6aaec27c7f197d8e7fa4143f5803a6f27e5b260d3db65893"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\portable.txt",
+      "size": 57975,
+      "sha256": "4c26920fb1fa95cc9a8978bcb61d2447e931a24482cb695fec39e0fc9b9d03a9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\solar.html",
+      "size": 94549,
+      "sha256": "0b8d8d56556630cb875795e77578d10af1209f43fce936caa84f5f4d858d83d9"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\solar.txt",
+      "size": 48116,
+      "sha256": "29e5d37bd5d46331c24368d2bcb653e110c2292da8ba5c492b28735f546d2c3d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\vehicle.html",
+      "size": 93462,
+      "sha256": "fcbde384f87f5a4dc792494a56cd799e3c8b0037d52758d79be181d7c2be3d29"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\kategori\\vehicle.txt",
+      "size": 47530,
+      "sha256": "cb1e25043f5efe117fb5b8c6435aa7da734aa9da9f7309835030fd12e2700173"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-h21600.html",
+      "size": 44379,
+      "sha256": "f0572270ec64cc1b6e3a73d10b6debb8468648e1fad507f873c5696fd2d736b0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-h21600.txt",
+      "size": 5452,
+      "sha256": "939bbacfe4d0341dc5625b5810311d4e826378b517ef5defd20caa948acf9e2c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-m21600.html",
+      "size": 44445,
+      "sha256": "6ab8104c6b56fa0e1b0661b28448cd698ff265eec5f85bd382054236e6a19f2e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-m21600.txt",
+      "size": 5485,
+      "sha256": "1c6d7b66ef2fa3c76ccfd605f856728116ce00b639fd4f1290f46f1320b63b72"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-p2700.html",
+      "size": 44422,
+      "sha256": "ae2245ddf11b170d70c7b9bc4acf2db29e32fe002ea5543ecbe21b9d1c0e3047"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-p2700.txt",
+      "size": 5479,
+      "sha256": "d91f375cf43b1965342c9192a1fa8c7b1b15577a086e62ab2e0270363b79b210"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-p5400.html",
+      "size": 44428,
+      "sha256": "bb6fc1bf4564795ed45f0215e222e050b751e773672889787fed3b5264c8c9bd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-p5400.txt",
+      "size": 5482,
+      "sha256": "3a953be6294beda9c00cc64f4175ffba6acfd39dbe2ed946578ef33f8cb20b98"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-s10500.html",
+      "size": 44427,
+      "sha256": "3f2e530b438e40ea27a210f405d7b9c6de07304f825418c9c0aa3e3af718a646"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-s10500.txt",
+      "size": 5476,
+      "sha256": "1b84841cd0f6964fde7cc0fbd64e0970377820380217edccf7dc2d8ae39d2fa4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-sb2700b.html",
+      "size": 44400,
+      "sha256": "a7d23860a130577a13b9f320cd440fe90cca77462fa6b7f3eaaf13c0e42f2fcf"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-sb2700b.txt",
+      "size": 5457,
+      "sha256": "e77d04312cb82a9ed6a2ddeb206f84c0283fc949119de3a9ca541f7b10a2e174"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-sb5400b.html",
+      "size": 44418,
+      "sha256": "58a9c4ef6bb6a737893ef5ac4b1001dbf4333ad4cc702af63d285d4d71e01185"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-sb5400b.txt",
+      "size": 5466,
+      "sha256": "2458d8dbf1352a1959be4321face6a37deb4035f55ace7843d09e50a6d50b8a6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-u200000.html",
+      "size": 44442,
+      "sha256": "0c93889d0c9ab82cc08143725c41893a7b5ac25eccae1e07f56b4ec22cd92027"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\r-u200000.txt",
+      "size": 5478,
+      "sha256": "2d715f5d86eeb1fce9cc563c99b71d69479b593670a55c4b07589f0958c1b4cb"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\rev-1.html",
+      "size": 116179,
+      "sha256": "04e71768b9aef564d27dbfdab2578666822ea45d2b0c08ecafd0aa5b11d95e5e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\rev-1.txt",
+      "size": 58692,
+      "sha256": "b1c732fd6c24f5c5d41b33efe48f877d9a01162c94b76fe3dfb90c0c34b6fefd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\rev-2.html",
+      "size": 117998,
+      "sha256": "f6a67cb75d27092e21f235f50c6c7c15a8583fbf3c1a434710cb0ea98b5b6c84"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz\\rev-2.txt",
+      "size": 59635,
+      "sha256": "28e5e65ede637eb98c4c1368d45c101333d0d544c7645994ade28741275e0067"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz.html",
+      "size": 60738,
+      "sha256": "b3a9de2e2c5695d585b1f522b0974d904402ff8e6fc179b59551cf8dadb93e1a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\urunlerimiz.txt",
+      "size": 30099,
+      "sha256": "6dc8e87226531bfdbd920aafeb23048304c3ba993ea96ccd5cb2d07b6ffd31b6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\videos\\hero.mp4",
+      "size": 12210652,
+      "sha256": "50f5dd0c2894693c98bca520bf4c1b3a5c3c7ef1ed49dae91b5e60f0e063e4be"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\0c811af8-0749d0efd5d04cb4.js",
+      "size": 172834,
+      "sha256": "22b9dd0fa1e006ba233ad213e1c0f6f12f1317ae1eceec7f16089f49e95df205"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\1109-616f1f0231658573.js",
+      "size": 17296,
+      "sha256": "5c257254c719ce0b8ab697b6bf7fe8f8fbe6bffc1b2a37f0f1ff38a80dd99d98"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\2398-299f59fd1c3cbf5f.js",
+      "size": 8488,
+      "sha256": "bf1883ad8a85a647bba041ed7b471ebdbfd9a3b8a8837ed16e8643b35f91f469"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\348-d64b5e33807f242b.js",
+      "size": 9834,
+      "sha256": "7ee40b4e1b1717fa1bcb06d76001ee6b187c3a6afc5589984fde003782cae6ec"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\3926-b65840f2e40d8f17.js",
+      "size": 13067,
+      "sha256": "7d0b50d41f8fdb27bd411bd32283c30918aa83fddc767a89ada3b8626368b856"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\4993.60cc3643a8028c07.js",
+      "size": 6099,
+      "sha256": "9cf053f724c2908ca7494fcf02e5f9efdbae7d4faee1500a85e9b43fdd158d52"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\5291-1f1a12d3e8bb4f86.js",
+      "size": 123747,
+      "sha256": "6fe5adb86d93a3b5bba7f6402cdd5db9b75c75550a2a67ae2d13a43a8bd24b18"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\5834-1be11ef79fbc68e8.js",
+      "size": 48604,
+      "sha256": "509469a60cd6ea6c34d49b410ddc39f35c3dd339feafedbd8c0d2bfd279fd911"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\590.f813b1bb28f6bf1e.js",
+      "size": 7266,
+      "sha256": "9c4d75344246384fd683ded36e09ae27d5d637c16d1576c87e0de753009164da"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\8215-65ecce1e0fd18cef.js",
+      "size": 20581,
+      "sha256": "7f63d0674cd9668168dc135817db09562cbba97695596ceb2bb31da77eed306b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\824-38514f258f6a33bc.js",
+      "size": 23599,
+      "sha256": "89e4017d6cb286075129dc35513e1e904fd2b1d51d1bc01b0c507e7e4da36607"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\8990-5b6c03491e8d305e.js",
+      "size": 26231,
+      "sha256": "0ad738dd84bf1135c9a53818c118b40feaf555d9e6a94a7880673e80ceb19653"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\error-1b1209768764f598.js",
+      "size": 758,
+      "sha256": "9cf13dcb2729dbdf8237bd34aded693fdcd3256315cf4ebefdb826e7a4ba7c44"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\fiyat-teklifi\\page-1b2facea0c25c7a1.js",
+      "size": 25146,
+      "sha256": "8c8f4ee4588ff4e01a7c741654b159fa6f487f6481c25fff762a25831ce386be"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\global-error-c6fd47c5ae441468.js",
+      "size": 962,
+      "sha256": "3bc587e10ded797e698a8e013598813d4fd58dcb0d391b09d8b589cadb8c010f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\hizmetlerimiz\\endustriyel-kurulum\\page-45b25bf992c91d75.js",
+      "size": 1113,
+      "sha256": "1d1e6636f614773394228507568bbba9e2090fa4ee1742460cfaac9e6e3a756a"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\hizmetlerimiz\\ges-kurulumu\\page-50be65aa0208ddb6.js",
+      "size": 1113,
+      "sha256": "b2d00798f8810fd52afbdd2c4770d78338fe2bdc1f80f6b533933f8f76b0b799"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\hizmetlerimiz\\page-0f1b30bee322adda.js",
+      "size": 1113,
+      "sha256": "bc11eca00b4b00130bf406e2b10208c8d3b27ebabf07a58c11b2ebf758172c45"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\iletisim\\page-04834b0c21a2d6ac.js",
+      "size": 10020,
+      "sha256": "e186eba24404fd3507846abdc87177c94c72d6ac185a9a99857fe00750aa3b68"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\kurumsal\\hakkimizda\\page-a9fa4f92929a33a7.js",
+      "size": 1113,
+      "sha256": "fa7312ee3f9a4696a911933daf6470c470e2b60fa5745101140ac8ab7671e0a7"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\kurumsal\\kariyer\\page-dc7b1a6b44ebf910.js",
+      "size": 1113,
+      "sha256": "58c67ae2d9aaf0cc5961fd2eb0f490267ff0d80185ec86b051f5b32bae6133f8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\kurumsal\\page-2cd57717c3bc80eb.js",
+      "size": 1113,
+      "sha256": "2327d924cc36e4b296abe890b4a3b9d0111de4031021e97ed837ebf9c9b7bdea"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\kurumsal\\vizyon-misyon\\page-e02fb6d4c09b09e5.js",
+      "size": 1113,
+      "sha256": "63f2ff5e41de38b4b58c78b53b88dba4609d1da50a67418800df4fb7fc65fddd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\layout-6aa79f804183e730.js",
+      "size": 5484,
+      "sha256": "05f4d6eea7562728d5984c5bfd2d3b1c820bdc8a01b118e85975e0eb65f68f92"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\legal\\privacy\\page-d8b8e43fb5c1c8c6.js",
+      "size": 1113,
+      "sha256": "c01ea4c1344eb2af2a3ff74270e68339d469357776953ac0c10392a9cd37e578"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\legal\\terms\\page-5faa7c0e15387e1c.js",
+      "size": 1113,
+      "sha256": "7cc3ae05a08214aa125f555c039cfc3af416f6a4931ed3bd70ad231977d85a7d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\not-found-42284153586643f9.js",
+      "size": 181,
+      "sha256": "831b0530f06fcbb1f53fa05ec0d2d8e0170e2c63b27e6de06fde78d12a868e87"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\page-dc5ddc7ba38d8453.js",
+      "size": 181,
+      "sha256": "997c8cf88c59fe973fefed04b4b7cadbab9d5924a93cc82cad41ada4753d0d8e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\error-f1346673ce2adedb.js",
+      "size": 756,
+      "sha256": "d71cf7b438856c6b328243e06298fcc930cd8f08656924426ecdff55565ed8ac"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\fiyat-teklifi\\page-0f557968f41a2ea5.js",
+      "size": 11185,
+      "sha256": "5063771f05b164d150aebaff44fa9a1a262647ec3abe7143890fda2829aa6a64"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\hizmetlerimiz\\endustriyel-kurulum\\page-218809971c029286.js",
+      "size": 362,
+      "sha256": "5aa88aa4e8e758638efc342a04e90ba765c8356536ef25668fc0acfd83d1db93"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\hizmetlerimiz\\ges-kurulumu\\page-2c91ac373bc74661.js",
+      "size": 362,
+      "sha256": "9c0883f43d09b682d27558bbb94b535ada47ff5debf3ecf7138567914e5105fd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\hizmetlerimiz\\page-5d5a23d915340cb4.js",
+      "size": 362,
+      "sha256": "502bcf1d644fcb35a974c631c9e4f8dbc98f0143288c88f803e5e89a4dbf9253"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\hizmetlerimiz\\size-ozel-cozumler\\page-29db6b2bd3b6fcfb.js",
+      "size": 362,
+      "sha256": "66ac0f341f97ddf845344cca2d3ef728a042dbc1aff439b34894ea0482033dd5"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\iletisim\\page-67fd67adf2424da1.js",
+      "size": 438,
+      "sha256": "4f4175e36f0fa037136f6398079e535c1b8b0182702ff08de6b2df5c0fb5e663"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\kurumsal\\page-e0a3ab5b635c074c.js",
+      "size": 362,
+      "sha256": "e9fd8f8ace5a4398bc22cd7dafa45319fe7bd84180082b48c66386bfc04607b2"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\layout-5b7aac271ab2ba02.js",
+      "size": 1113,
+      "sha256": "fee1d0f7e3d4a0e2d06f7f302bed04e7978cab9a3cec4c1cf8807a1ba4b633d0"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\not-found-827cdc3fc3bef2c8.js",
+      "size": 181,
+      "sha256": "cfa84a0f26306a608b994729d1e8c63537bc1ff2564928d74a502d114d5a6c79"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\page-16e78d19d222d854.js",
+      "size": 168,
+      "sha256": "8157fe996239df90f1bd17b1cdeac065c325e50a7ce199acf10abad554b36da8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\kategori\\cabin\\page-9c1c4de451f0196a.js",
+      "size": 362,
+      "sha256": "a5c5557dcdf32b48fe35919d7489e5fd539529a50cae869f9b5d364bdb3fb8ca"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\kategori\\portable\\page-c18191670803af53.js",
+      "size": 362,
+      "sha256": "e490f59f878baf46cf36e6747ed1b660fa2506818d79f3a9072c1c8482b64b45"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\kategori\\solar\\page-67a73f56fcfc3936.js",
+      "size": 362,
+      "sha256": "531ec5b62a81780f38bcb415643d7efef27e6cfd609df14accee4984a209c490"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\kategori\\vehicle\\page-d60d1c95e1e07255.js",
+      "size": 362,
+      "sha256": "ee6adec1732c0bb7094462e877792de5458992f67e7dd70da4dbe692da7175ce"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\page-1c1196295c316119.js",
+      "size": 362,
+      "sha256": "bd9f56cc420a68f82c48662b7de393302a78c4c786a5e89979d76aadafc05bad"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-h21600\\page-11b23e28af5bf1e3.js",
+      "size": 362,
+      "sha256": "9268098fa9959e2282435e338bbc42f892ecbcd1b841e3ad3cb1ad25c97642ad"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-m21600\\page-e3955c7e3211591c.js",
+      "size": 362,
+      "sha256": "e9da578f60b70c8f42bfa084db44dd586059479a592345d12cd39242301828d3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-p2700\\page-d94316a2063eea84.js",
+      "size": 362,
+      "sha256": "e389b07f8f4925f9a6182cc76b9140cb95acc235bc9aec801a9c04944d40e71f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-p5400\\page-3ff5f41aab1ef6e9.js",
+      "size": 362,
+      "sha256": "d9fc90ee981af5f8164479aae518045709a96f9a3ec55605c353cf4185c43cd8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-s10500\\page-e185d729efb71002.js",
+      "size": 362,
+      "sha256": "6cca108cb68b4ebe1f1d00609a483512561a477a4ec4259985d42ebf66cdb4d1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-sb2700b\\page-5a2e373918dc9221.js",
+      "size": 362,
+      "sha256": "abbeeebc6f87831c32bdfb450cfcc0fd7a3b6fe2c4928823c00608e50e7b2c0d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-sb5400b\\page-93bc4895375be472.js",
+      "size": 362,
+      "sha256": "5245fffe94b8b1e0800a1253fef17015b34f5b9f34f115400190373174027be1"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\r-u200000\\page-4811c3302888f05b.js",
+      "size": 362,
+      "sha256": "bab04dd9ea48137e9edda003d16bd97d648ebeb4d80c0ec264b25bc6b0b81dcd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\rev-1\\page-375177d286673e3a.js",
+      "size": 362,
+      "sha256": "b38cda128a3ee296f46a885a45765051cb324b3b66a1cad751ef1c1029e60fcc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\tr\\urunlerimiz\\rev-2\\page-4b217fa670280057.js",
+      "size": 362,
+      "sha256": "6a00d0ef5795de6f34dbcfc4c20c1318e5f0e4ec5f970540cfa99d8c64dd8e05"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\kategori\\cabin\\page-586b16675e1eb8fb.js",
+      "size": 1113,
+      "sha256": "ff8b2fc0f89cc4cb054e7fb1092a6dde93a5417462190cfbe4575ec136241c5e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\kategori\\portable\\page-9afd6d0590115c6a.js",
+      "size": 1113,
+      "sha256": "66bfa3b186803ee7fff7e0d3100f30a183262f9ab21ab0b21452aca50835971b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\kategori\\solar\\page-ca9b5da49f1f1d58.js",
+      "size": 1113,
+      "sha256": "8b91f26e00591323119718a0e8b5f6c29873408f15a19442f3940e1de9ac6ebe"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\kategori\\vehicle\\page-b3d5a59100d73630.js",
+      "size": 1113,
+      "sha256": "d506e3bce891121c684f29b332f16f18b2e45e5a78753eb8539fb0c8995daef4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\page-55c2360c66d503bc.js",
+      "size": 1113,
+      "sha256": "9461029c276ed89115afee548792ed4649f6460697b78f28b228bd22a30665fd"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-h21600\\page-cbc7d85bd227cbc3.js",
+      "size": 177,
+      "sha256": "bce3b162d2bcbf0a5ede940c52784aafe9a7f0890c45cebe8e2baa0e91cb98d7"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-m21600\\page-7082fd630cf33c31.js",
+      "size": 177,
+      "sha256": "374ab8c875d8e64edc5c85a19f590a8b8adf39481bbea94a2bf34c21f1b289e4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-p2700\\page-6c11d2d18b1c1d7d.js",
+      "size": 177,
+      "sha256": "2c74f89c5a8f6a07c67572eb248e76cd98680970d65473db81386801fd478497"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-p5400\\page-63b37c98e96103e4.js",
+      "size": 177,
+      "sha256": "e1f41f725373288719d58038e965fbdd4876a772f995af9eda881e5cc9af7faf"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-s10500\\page-6474085565892287.js",
+      "size": 177,
+      "sha256": "d297046eefb40201b34b04cbc4f57df1b5a8d746b088448625f53f354a53e405"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-sb2700b\\page-61ecf81ea7741047.js",
+      "size": 177,
+      "sha256": "cb342dc6c159bcaa5fc562fa8cc22809a305aa31449e84629f90068989afa0bc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-sb5400b\\page-21d9f0d38c071346.js",
+      "size": 177,
+      "sha256": "511930d62923d0e1d25b05af2ad03aaa698f2e4b307a6c12b82d64400148149e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\r-u200000\\page-194bb4f4e7633507.js",
+      "size": 177,
+      "sha256": "03384ddca41c5eecf09d2b816985fa696feeaa32957185ef7a5d18b419660a6b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\rev-1\\page-ff2d427cea0db0ef.js",
+      "size": 1113,
+      "sha256": "203735c124d9a4e4f2519f7e3bd3580c5c564163d0e469036e4a7f629ef494c4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\urunlerimiz\\rev-2\\page-1f29220b6165873d.js",
+      "size": 1113,
+      "sha256": "fc3677961f75cf2a8d4c010dc743cd799064f8690a1418097ef91061659c8c31"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\[locale]\\layout-841ba632e76bf16a.js",
+      "size": 7429,
+      "sha256": "f9d8ec17dfde1c3430620311dfd8f551b8a8f762f0170b3a42245d2eec3a5fc8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\[locale]\\page-866a19367d9911ca.js",
+      "size": 166,
+      "sha256": "52844cb6db14f72f8bc47825329143ed227672c569fbfcc7b9232196927359df"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\app\\_not-found\\page-8dacaaca8ea1117b.js",
+      "size": 181,
+      "sha256": "b6b529c346419461bdda149655de5b06c8fc4a69731337aad7265fa6a1a24a5f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\framework-8f0792a07c308ff1.js",
+      "size": 139984,
+      "sha256": "0dc9366554bea8044a49c7f4ba3257c9a08751ec1c8e63bcc2cc71a9239f243d"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\main-2329ca697c9def90.js",
+      "size": 112739,
+      "sha256": "6126d8ffacc2a4131b86614ace1292fe0859656564ac2f5e89fc5ebf8ece7d57"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\main-app-d19f1b0608dbd5c5.js",
+      "size": 467,
+      "sha256": "78369cae565b9290e67cbf425bf087b8d586157ae53d7b6077a8acf63c7a05b8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\pages\\_app-df827a85e2ec52a9.js",
+      "size": 284,
+      "sha256": "d27b329a3f3febcb089f78bfbb63bffad40608e36b5d0cf128580fd7898cef3c"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\pages\\_error-93c23f5eac92fbc2.js",
+      "size": 252,
+      "sha256": "79e94d38a65928bf2775e489a58080cf19e0270ff16e2c254f8c046b11cf3ae8"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\polyfills-42372ed130431b0a.js",
+      "size": 112595,
+      "sha256": "bd057b79572a448b76dcacdb7f298ae4d14fe855b42a826a8fd9c6843c0c8edc"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\chunks\\webpack-192961af69a4a9b1.js",
+      "size": 3661,
+      "sha256": "1e3c4bfc53a15e455a57593463eae9a9ef65d9d0b7080c9fcd33c5fba998972b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\css\\083b09de90d51c33.css",
+      "size": 4298,
+      "sha256": "b7f48908e2aefb94caed19fcb57e2ab212f58117afc6c9158a3872643588bc32"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\css\\a7757a9ff670b7b2.css",
+      "size": 129907,
+      "sha256": "e9198650ab0d5b3f646e05cbc2bb1a5580b25ff5104b86d8b33ab63e107b5843"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\h0sIpT8uYrZ3cPKoJ1IR9\\_buildManifest.js",
+      "size": 226,
+      "sha256": "3233ae13fe26a9929d4400eb6a37007be20b2004aec83907140d4715eab8f461"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\h0sIpT8uYrZ3cPKoJ1IR9\\_ssgManifest.js",
+      "size": 98,
+      "sha256": "7ff332c3fa78609069fcca1739dc7d071aca5b42aa4583071a4c04029c58977b"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\19cfc7226ec3afaa-s.woff2",
+      "size": 19044,
+      "sha256": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\21350d82a1f187e9-s.woff2",
+      "size": 18744,
+      "sha256": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\438aa629764e75f3-s.woff2",
+      "size": 2592,
+      "sha256": "e8c0b39992f06b3dc9a9834494088014859f363bf6ca8792b6bb07e17c7965f3"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\4c9affa5bc8f420e-s.p.woff2",
+      "size": 24576,
+      "sha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\51251f8b9793cdb3-s.woff2",
+      "size": 9360,
+      "sha256": "40af11327fe5308166c6cb5787808b042db6da889abf602f0a4876c49675d87e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\875ae681bfde4580-s.woff2",
+      "size": 14544,
+      "sha256": "95a493061fe0a8d0d027c2892747134ba747141112d3be4d5022e70ab7d3a1a6"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\8e9860b6e62d6359-s.woff2",
+      "size": 85272,
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\ba9851c3c22cd980-s.woff2",
+      "size": 25844,
+      "sha256": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\c5fe6dc8356a8c31-s.woff2",
+      "size": 11272,
+      "sha256": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\cc978ac5ee68c2b6-s.woff2",
+      "size": 15240,
+      "sha256": "ce093b341d9c10658ee1eaa85c5f8042ff3307bc6ccfc5f405616eb437f0009e"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\df0a9ae256c0569c-s.woff2",
+      "size": 10280,
+      "sha256": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\e4af272ccee01ff0-s.p.woff2",
+      "size": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "path": "deploy\\hostinger_public_html\\_next\\static\\media\\e857b654a2caa584-s.woff2",
+      "size": 8492,
+      "sha256": "bab757f8a0a1bc04055ee98cb5777f3254aab11f6d222366e1f40a36f390506a"
+    }
+  ],
+  "buildInfo": {
+    "nextVersion": "14.2.15",
+    "reactVersion": "18.2.0",
+    "buildMode": "static-export",
+    "outputDirectory": "out",
+    "assetPrefix": "",
+    "basePath": "",
+    "trailingSlash": false,
+    "imageOptimization": false,
+    "compression": true,
+    "minification": true
+  },
+  "optimizations": {
+    "gzipEnabled": true,
+    "brotliEnabled": true,
+    "cacheHeaders": true,
+    "securityHeaders": true,
+    "spaRouting": true,
+    "mimeTypes": true
+  },
+  "deployment": {
+    "target": "Hostinger Shared Hosting",
+    "webServer": "Apache",
+    "phpVersion": "N/A",
+    "nodeVersion": "N/A",
+    "staticFiles": true,
+    "htaccessRequired": true,
+    "sslRequired": true
+  }
+}

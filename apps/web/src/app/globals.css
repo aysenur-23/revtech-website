@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
+  
   /* Brand Colors */
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;
@@ -35,6 +35,17 @@ body {
   font-family: Inter, system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
   width: 100%;
+}
+
+/* Tekil dropdown ok: tarayıcı yerel okunu gizle (fiyat teklifi formu) */
+select.appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+}
+select.appearance-none::-ms-expand {
+  display: none;
 }
 
 /* Gradient utilities */

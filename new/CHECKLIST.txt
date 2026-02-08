@@ -1,0 +1,92 @@
+# Unstyled Page Fix - Checklist
+
+## ✅ Tamamlanan İşlemler
+
+### 1. Keşif ve Analiz
+- [x] Next.js 14.2.15 framework tespit edildi
+- [x] Static export yapılandırması kontrol edildi
+- [x] Asset yolları analiz edildi (göreli vs mutlak)
+- [x] Çıktı klasörü yapısı incelendi
+- [x] 404 pattern analizi yapıldı
+
+### 2. Next.js Yapılandırması
+- [x] `next.config.js` kontrol edildi
+- [x] `output: 'export'` aktif
+- [x] `trailingSlash: true` ayarlandı
+- [x] `assetPrefix: ''` ayarlandı
+- [x] `images.unoptimized: true` ayarlandı
+
+### 3. Asset Yolları Düzeltme
+- [x] `relativize-paths.cjs` scripti güncellendi
+- [x] Göreli yolları mutlak yapma regex'leri eklendi
+- [x] `./_next/` → `/_next/` dönüşümü
+- [x] `./images/` → `/images/` dönüşümü
+- [x] `./videos/` → `/videos/` dönüşümü
+- [x] `./favicon` → `/favicon` dönüşümü
+
+### 4. .htaccess Optimizasyonu
+- [x] Static asset koruması eklendi
+- [x] `RewriteRule ^_next/ - [L]` eklendi
+- [x] `RewriteRule ^images/ - [L]` eklendi
+- [x] `RewriteRule ^videos/ - [L]` eklendi
+- [x] Favicon koruması eklendi
+- [x] TR routing kuralları korundu
+
+### 5. Deployment Paketi
+- [x] `public_html` klasörü kopyalandı
+- [x] `hostinger_public_html` klasörü oluşturuldu
+- [x] Yeni ZIP dosyası oluşturuldu: `hostinger_public_html_fixed.zip`
+
+## 🔍 Kontrol Edilmesi Gerekenler
+
+### Asset Yolları
+- [ ] `/_next/static/css/...` - CSS dosyaları
+- [ ] `/_next/static/chunks/...` - JS dosyaları
+- [ ] `/images/...` - Görsel dosyaları
+- [ ] `/videos/...` - Video dosyaları
+- [ ] `/favicon.ico` - Favicon dosyası
+
+### URL Testleri
+- [ ] `https://projecttest.com.tr/` - Kök sayfa
+- [ ] `https://projecttest.com.tr/tr/` - TR sayfası
+- [ ] CSS yükleniyor mu?
+- [ ] JS yükleniyor mu?
+- [ ] Görseller yükleniyor mu?
+- [ ] 404 hataları var mı?
+
+### .htaccess Kuralları
+- [ ] Static dosyalar doğrudan servis ediliyor mu?
+- [ ] TR routing çalışıyor mu?
+- [ ] Rewrite kuralları çakışıyor mu?
+
+## 📋 Beklenen Sonuçlar
+
+### Başarı Kriterleri
+- ✅ `/tr/` altında sayfa stilli görünüyor
+- ✅ CSS/JS dosyaları 200 dönüyor
+- ✅ Görseller yükleniyor
+- ✅ 404 hataları yok
+- ✅ Asset yolları mutlak (`/` ile başlıyor)
+
+### Test Edilecek URL'ler
+1. `https://projecttest.com.tr/` → Ana sayfa
+2. `https://projecttest.com.tr/tr/` → TR sayfası
+3. `https://projecttest.com.tr/_next/static/css/...` → CSS
+4. `https://projecttest.com.tr/images/logo.png` → Logo
+5. `https://projecttest.com.tr/favicon.ico` → Favicon
+
+## 🚀 Deployment Adımları
+
+1. `hostinger_public_html_fixed.zip` dosyasını indir
+2. Hostinger File Manager'da mevcut dosyaları sil
+3. ZIP dosyasını yükle ve çıkar
+4. `.htaccess` dosyasının yüklendiğini kontrol et
+5. URL'leri test et
+
+## 📝 Notlar
+
+- Asset yolları artık mutlak (`/` ile başlıyor)
+- `.htaccess` static dosyaları koruyor
+- TR routing korundu
+- Next.js static export uyumlu
+- Hostinger shared hosting uyumlu

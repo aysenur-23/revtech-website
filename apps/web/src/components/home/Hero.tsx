@@ -3,30 +3,71 @@
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
+import { useRef, useEffect, useState } from 'react';
+
+const HERO_POSTER = '/images/hero/revium-hero-2-7kwh.jpg';
 
 export default function Hero() {
     const t = useTranslations('hero');
     const locale = useLocale();
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [videoPlaying, setVideoPlaying] = useState(false);
+
+    // Videoyu hemen yükle ve oynat; mobilde poster'ı videoya geçince kaldır
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        video.setAttribute('playsinline', 'true');
+        video.setAttribute('webkit-playsinline', 'true');
+        video.muted = true;
+        video.preload = 'auto';
+        video.load();
+
+        const onPlaying = () => setVideoPlaying(true);
+        const onCanPlay = () => { video.play().catch(() => {}); };
+        video.addEventListener('playing', onPlaying);
+        video.addEventListener('canplay', onCanPlay);
+
+        video.play().then(() => setVideoPlaying(true)).catch(() => {});
+
+        return () => {
+            video.removeEventListener('playing', onPlaying);
+            video.removeEventListener('canplay', onCanPlay);
+        };
+    }, []);
 
     return (
-        <section className="relative w-[100vw] min-h-[130vh] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] bg-black -mt-20 flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Video */}
-            <div className="absolute inset-[-20px] w-[calc(100%+40px)] h-[calc(100%+40px)]">
+        <section className="relative w-[100vw] min-h-[100vh] sm:min-h-[120vh] lg:min-h-[130vh] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] bg-black -mt-20 flex flex-col items-center justify-center overflow-hidden">
+            {/* Background: Video - mobilde boyut/konum optimize, masaüstünde mevcut görünüm */}
+            <div className="absolute inset-0 sm:inset-[-20px] w-full sm:w-[calc(100%+40px)] h-full sm:h-[calc(100%+40px)]">
                 <video
+                    ref={videoRef}
                     autoPlay
                     muted
                     loop
                     playsInline
+                    disablePictureInPicture
+                    disableRemotePlayback
                     preload="auto"
-                    poster="/images/hero/1.png"
-                    className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
-                    style={{ objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.15)' }}
+                    poster={HERO_POSTER}
+                    fetchPriority="high"
+                    className="absolute inset-0 w-full h-full min-w-full min-h-full object-cover object-top sm:object-center scale-[1.2] sm:scale-[1.15] origin-center"
                 >
                     <source src="/videos/hero-new.mp4" type="video/mp4" />
                 </video>
+                {/* Poster overlay: videoya geçer geçmez kalkar */}
+                <div
+                    className="absolute inset-0 w-full h-full bg-cover bg-top sm:bg-center transition-opacity duration-300 pointer-events-none scale-[1.2] sm:scale-[1.15] origin-center"
+                    style={{
+                        backgroundImage: `url(${HERO_POSTER})`,
+                        opacity: videoPlaying ? 0 : 1,
+                        zIndex: 1,
+                    }}
+                    aria-hidden
+                />
 
                 {/* Gradient Overlays */}
-                <div className="absolute inset-[-20px] bg-neutral-900/40" style={{ zIndex: 2 }} />
+                <div className="absolute inset-0 sm:inset-[-20px] bg-neutral-900/40" style={{ zIndex: 2 }} />
             </div>
 
             {/* Animated Background Elements */}

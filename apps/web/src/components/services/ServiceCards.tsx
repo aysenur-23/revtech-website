@@ -110,6 +110,8 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
                     src={service.image}
                     fill
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {/* Refined gradient: lighter and more focused at the very bottom */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-90 z-10" />

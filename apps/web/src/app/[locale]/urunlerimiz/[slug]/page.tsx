@@ -9,7 +9,6 @@ function formatNumber(value: string | number, locale: string): string {
     return str.replace(/\d/g, (d) => arabicDigits[parseInt(d)]);
 }
 
-import Image from 'next/image';
 import Link from 'next/link';
 import {
     Battery, Zap, Sun, Shield, ArrowRight, CheckCircle, Tent, TriangleAlert,
@@ -40,29 +39,29 @@ const products: Record<string, {
     runtimeSummary?: string;
 }> = {
     'revium-2-7-kwh': {
-        name: 'Revium 2.7 kWh Çanta Tipi Güç Paketi',
+        name: 'Revium 2.7 kWh Çanta Tip Depolanabilir Güç Paketi',
         modelId: 'R-SB2700',
         capacity: '2.7 kWh',
         power: '2000 W',
         image: '/images/products/2-7kwh-a-1.webp',
         categoryTitle: 'Saha Tipi Taşınabilir Güç Ünitesi',
-        description: 'Dayanıklı çanta tipi tasarımı ile en zorlu saha koşullarında yanınızda.',
+        description: 'Saha kullanımı için özel olarak dayanıklı bir gövdeye sahip, "Çanta Tip" olarak adlandırılan bu model, taşınabilir yapısıyla öne çıkar.',
         features: [
             'Enerji: 2.7 kWh',
             'Çıkış Voltajı: 220 VAC',
             'Çıkış Gücü: 2000 W',
-            'Maks. PV Güç: 1000 W (MPPT)',
-            'Çevrim Ömrü: 6000 çevrim',
+            'Maksimum PV Güç: 1000 W MPPT',
+            'Çevrim Ömrü: 6000 Çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Boyutlar: 548 × 391 × 335 mm',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 548 × 391 × 335 mm',
             'Ağırlık: 35 kg'
         ],
         specs: [
             { label: 'Enerji', value: '2.7 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
             { label: 'Çıkış Gücü', value: '2000 W' },
-            { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
-            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Maksimum PV Güç', value: '1000 W MPPT' },
+            { label: 'Çevrim Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Boyutlar', value: '548 × 391 × 335 mm' },
             { label: 'Ağırlık', value: '35 kg' },
@@ -91,23 +90,23 @@ const products: Record<string, {
         power: '2000 W',
         image: '/images/products/2-7kwh-b-1.webp',
         categoryTitle: 'Taşınabilir Enerji Depolama',
-        description: 'Taşınabilir enerji depolama çözümlerinde yeni standart. Hafif, güçlü ve uzun ömürlü.',
+        description: 'Elektrikli el aletleri ve aydınlatma sistemleri için tasarlanmış taşınabilir ve güvenilir bir enerji çözümüdür. Matkap, hilti veya LED aydınlatma gibi cihazları kesintisiz çalıştırabilir.',
         features: [
             'Enerji: 2.7 kWh',
             'Çıkış Voltajı: 220 VAC',
             'Çıkış Gücü: 2000 W',
-            'Maks. PV Güç: 1000 W (MPPT)',
-            'Çevrim Ömrü: 6000 çevrim',
+            'Maksimum PV Güç: 1000 W MPPT',
+            'Çevrim Ömrü: 6000 Çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Boyutlar: 500 × 335 × 285 mm',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 500 × 335 × 285 mm',
             'Ağırlık: 35 kg'
         ],
         specs: [
             { label: 'Enerji', value: '2.7 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
             { label: 'Çıkış Gücü', value: '2000 W' },
-            { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
-            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Maksimum PV Güç', value: '1000 W MPPT' },
+            { label: 'Çevrim Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Boyutlar', value: '500 × 335 × 285 mm' },
             { label: 'Ağırlık', value: '35 kg' },
@@ -137,7 +136,7 @@ const products: Record<string, {
         power: 'VDC System',
         image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Sabit / Modüler Batarya',
-        description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü.',
+        description: 'Modüler yapısı ile ihtiyaca göre ölçeklenebilir sabit batarya çözümü. Katalog 2026: 2.7 / 5.4 kWh LFP, nominal voltaj, kapasite, enerji, boyut, ağırlık, Bluetooth.',
         features: [
             'Nominal Voltaj: 12 / 24 / 48 VDC',
             'Kapasite: 105 / 206 Ah',
@@ -169,23 +168,23 @@ const products: Record<string, {
         power: '3000 W',
         image: '/images/products/5-4kwh-h-1.webp',
         categoryTitle: 'Yüksek Kapasiteli Taşınabilir Güç',
-        description: 'Yüksek enerji ihtiyacı duyan profesyoneller için 5.4 kWh kapasiteli devasa güç.',
+        description: 'Yüksek enerji kapasitesi ve tekerlekli yapısıyla saha operasyonları ve ağır hizmet uygulamaları için geliştirilmiş güçlü bir çözümdür.',
         features: [
             'Enerji: 5.4 kWh',
             'Çıkış Voltajı: 220 VAC',
             'Çıkış Gücü: 3000 W',
-            'Maks. PV Güç: 1000 W (MPPT)',
-            'Çevrim Ömrü: 6000 çevrim',
+            'Maksimum PV Güç: 1000 W MPPT',
+            'Çevrim Ömrü: 6000 Çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Boyutlar: 777 × 458 × 1340 mm',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 777 × 458 × 1340 mm',
             'Ağırlık: 60 kg'
         ],
         specs: [
             { label: 'Enerji', value: '5.4 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
             { label: 'Çıkış Gücü', value: '3000 W' },
-            { label: 'Maks. PV Güç', value: '1000 W (MPPT)' },
-            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
+            { label: 'Maksimum PV Güç', value: '1000 W MPPT' },
+            { label: 'Çevrim Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
             { label: 'Boyutlar', value: '777 × 458 × 1340 mm' },
             { label: 'Ağırlık', value: '60 kg' },
@@ -214,24 +213,25 @@ const products: Record<string, {
         power: '3 – 20 kW',
         image: '/images/products/cabin-power.webp',
         categoryTitle: 'Endüstriyel Enerji Depolama (Tek Kabin)',
-        description: 'Endüstriyel tesisler için hepsi bir arada kompakt enerji depolama kabini.',
+        description: 'Endüstriyel ve ticari uygulamalar için tasarlanmış, tek kabin içinde ölçeklenebilir enerji depolama ve güç yönetimi çözümüdür.',
         features: [
-            'Enerji: 5.4 – 21.6 kWh (tek kabin)',
+            'Enerji Kapasitesi: 5.4 kWh – 21.6 kWh (Tek Kabinde)',
             'Çıkış Voltajı: 220 VAC',
-            'Çıkış Gücü: 3 – 20 kW',
-            'Max PV Güç: 1 – 30 kW (MPPT)',
-            'Batarya Ömrü: 6000 çevrim',
+            'Çıkış Gücü: 3 kW – 20 kW',
+            'Maksimum PV Güç: 1 kW – 30 kW MPPT',
+            'Batarya Ömrü: 6000 Çevrim',
             'Dalga Tipi: Saf Sinüs',
-            'Ağırlık: 70 – 270 kg',
-            'Koruma: IP54'
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 480/960 × 460/900 × 1660/2250 mm',
+            'Ağırlık: 70 – 270 kg'
         ],
         specs: [
-            { label: 'Enerji', value: '5.4 – 21.6 kWh' },
+            { label: 'Enerji Kapasitesi', value: '5.4 – 21.6 kWh' },
             { label: 'Çıkış Voltajı', value: '220 VAC' },
             { label: 'Çıkış Gücü', value: '3 – 20 kW' },
-            { label: 'Max PV Güç', value: '1 – 30 kW (MPPT)' },
-            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Maksimum PV Güç', value: '1 – 30 kW MPPT' },
+            { label: 'Batarya Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Boyutlar', value: '480/960 × 460/900 × 1660/2250 mm' },
             { label: 'Ağırlık', value: '70 – 270 kg' },
         ],
         usageAreas: [
@@ -241,28 +241,32 @@ const products: Record<string, {
         ]
     },
     'revium-pickup-power-pack': {
-        name: 'Revium Pick Up Güç Paketi',
+        name: 'Pick Up Güç Paketi',
         modelId: 'R-PICKUP',
         capacity: '60 – 100 kWh',
         power: '30 kW (3-Phase)',
         image: '/images/products/hilux-21-6kwh-1.webp',
         categoryTitle: 'Araç Üstü Mobil Enerji Sistemi',
-        description: 'Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.',
+        description: 'Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.',
         features: [
             'Enerji: 60 – 100 kWh',
-            'Çıkış Gücü (3 Faz): 3 × 10 kW (380 VAC)',
-            'Çıkış Gücü (Tek Faz): 5 × 5 kW (220 VAC)',
-            'Max PV Güç: 30 kW',
-            'Batarya Ömrü: 6000 çevrim',
-            'Dalga Tipi: Saf Sinüs'
+            'Çıkış Gücü (3 Faz): 3×10 kW (380 VAC)',
+            'Çıkış Gücü (Tek Faz): 5×5 kW (220 VAC)',
+            'Maksimum PV Güç: 30 kW',
+            'Batarya Ömrü: 6000 Çevrim',
+            'Dalga Tipi: Saf Sinüs',
+            'Araç Uyumu: Hilux / Pick Up',
+            'Koruma: IP54'
         ],
         specs: [
             { label: 'Enerji', value: '60 – 100 kWh' },
-            { label: 'Çıkış Gücü (3 Faz)', value: '3 × 10 kW (380 VAC)' },
-            { label: 'Çıkış Gücü (Tek Faz)', value: '5 × 5 kW (220 VAC)' },
-            { label: 'Max PV Güç', value: '30 kW' },
-            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Çıkış Gücü (3 Faz)', value: '3×10 kW (380 VAC)' },
+            { label: 'Çıkış Gücü (Tek Faz)', value: '5×5 kW (220 VAC)' },
+            { label: 'Maksimum PV Güç', value: '30 kW' },
+            { label: 'Batarya Ömrü', value: '6000 Çevrim' },
             { label: 'Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Araç Uyumu', value: 'Hilux / Pick Up' },
+            { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
             { label: 'Araç Üstü', icon: 'Truck' },
@@ -271,26 +275,29 @@ const products: Record<string, {
         ]
     },
     'revium-power-layer': {
-        name: 'Revium Güç Katmanı – Modüler Enerji Depolama Ünitesi',
+        name: 'Güç Katmanı – Modüler Enerji Depolama Ünitesi',
         modelId: 'R-LAYER',
         capacity: '5.4 – 172 kWh',
         power: 'Scalable',
         image: '/images/products/stack-21-6kwh-1.webp',
         categoryTitle: 'Ölçeklenebilir Endüstriyel Batarya',
-        description: 'Büyük ölçekli endüstriyel projeler için sınırsız ölçeklenebilir batarya katmanları.',
+        description: 'Orta ve yüksek kapasiteli ihtiyaçlar için modüler mimariye sahip, 172 kWh\'e kadar ölçeklenebilen bir sistemdir.',
         features: [
             'Nominal Voltaj: 51.2 V',
-            'Artırılabilir Kapasite: 105 / 210 / 315 / 420 Ah',
-            'Enerji Aralığı: 5.4 – 172 kWh',
-            'Batarya Ömrü: 6000 çevrim',
+            'Artırılabilir Kapasite: 105 Ah / 210 Ah / 315 Ah / 420 Ah',
+            'Enerji: 5.4 – 172 kWh',
+            'Batarya Ömrü: 6000 Çevrim',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 400/860 × 391/800 × 365/2180 mm',
             'Ağırlık: 66 – 950 kg',
-            'Hücre Tipi: LiFePO4'
+            'Hücre Tipi: LiFePO4',
+            'Modüler Kurulum'
         ],
         specs: [
             { label: 'Nominal Voltaj', value: '51.2 V' },
             { label: 'Artırılabilir Kapasite', value: '105 / 210 / 315 / 420 Ah' },
-            { label: 'Enerji Aralığı', value: '5.4 – 172 kWh' },
-            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Enerji', value: '5.4 – 172 kWh' },
+            { label: 'Batarya Ömrü', value: '6000 Çevrim' },
+            { label: 'Boyutlar', value: '400/860 × 391/800 × 365/2180 mm' },
             { label: 'Ağırlık', value: '66 – 950 kg' },
         ],
         usageAreas: [
@@ -300,31 +307,28 @@ const products: Record<string, {
         ]
     },
     'revium-gridpack': {
-        name: 'Revium GRIDPACK',
+        name: 'Revium Gridpack',
         modelId: 'GRIDPACK',
         capacity: '500 kWh – 5 MWh',
         power: '250 kW – 2.5 MW',
         image: '/images/products/gridpack.webp',
-        categoryTitle: 'Şebeke Ölçekli Konteyner Tip BESS',
-        description: 'Şebeke ölçeğinde enerji depolama için konteyner tipi sıvı soğutmalı çözüm.',
+        categoryTitle: 'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi',
+        description: 'Şebeke ölçekli enerji depolama uygulamaları için tasarlanmış, konteyner tipi entegre batarya sistemidir.',
         features: [
             'Enerji Kapasitesi: 500 kWh – 5 MWh',
             'Voltaj Aralığı: 600 – 1500 VDC',
             'AC Çıkış Gücü: 250 kW – 2.5 MW',
-            'Çevrim Ömrü: 6000 çevrim',
-            'AC Dalga Tipi: Saf Sinüs',
+            'Çevrim Ömrü: 6000 Çevrim',
             'Çalışma Ortamı: -30°C ~ +55°C',
-            'Soğutma: Sıvı Soğutma',
-            'Koruma: IP54'
+            'Soğutma Yöntemi: Sıvı Soğutma'
         ],
         specs: [
             { label: 'Enerji Kapasitesi', value: '500 kWh – 5 MWh' },
             { label: 'Voltaj Aralığı', value: '600 – 1500 VDC' },
             { label: 'AC Çıkış Gücü', value: '250 kW – 2.5 MW' },
-            { label: 'Çevrim Ömrü', value: '6000 çevrim' },
-            { label: 'AC Dalga Tipi', value: 'Saf Sinüs' },
+            { label: 'Çevrim Ömrü', value: '6000 Çevrim' },
             { label: 'Çalışma Ortamı', value: '-30°C ~ +55°C' },
-            { label: 'Soğutma', value: 'Sıvı Soğutma' },
+            { label: 'Soğutma Yöntemi', value: 'Sıvı Soğutma' },
         ],
         usageAreas: [
             { label: 'Şebeke', icon: 'Zap' },
@@ -337,7 +341,38 @@ const products: Record<string, {
         modelId: 'POWERSTATION',
         capacity: '500 kWh – 5 MW',
         power: '200 kW – 1 MW',
-        image: '/images/products/ges-power-station.webp',
+        image: '/images/products/ges-power-station.png',
+        categoryTitle: 'Konteyner Tip Enerji + Güneş Entegrasyonu',
+        description: 'Güneş enerjisi ve depolamayı tek bir konteynerde birleştiren hibrit çözüm.',
+        features: [
+            'Batarya Kapasitesi: 500 kWh – 5 MW',
+            'Çıkış Gücü: 200 kW – 1 MW',
+            'PV Giriş: 650A / 624VDC',
+            'PV Entegrasyonu: 624 adet 650Wp panel',
+            'Soğutma: Sıvı',
+            'Çevrim: 6000 (%80 DOD)',
+            'İzolasyon: Class II',
+            'Koruma: IP54'
+        ],
+        specs: [
+            { label: 'PV Kapasite', value: 'Max 624 Panels' },
+            { label: 'AC Giriş', value: '230 / 400 VAC' },
+            { label: 'Kapasite', value: 'Max 5 MW' },
+            { label: 'Koruma', value: 'IP54' },
+        ],
+        usageAreas: [
+            { label: 'Solar Park', icon: 'Sun' },
+            { label: 'Off-grid', icon: 'Globe' },
+            { label: 'Mikro Şebeke', icon: 'Zap' },
+        ]
+    },
+    // Alias: ana ürün listesinde id 'ges-power-station' kullanıldığı için aynı içerik
+    'ges-power-station': {
+        name: 'Revium Powerstation Serisi',
+        modelId: 'POWERSTATION',
+        capacity: '500 kWh – 5 MW',
+        power: '200 kW – 1 MW',
+        image: '/images/products/ges-power-station.png',
         categoryTitle: 'Konteyner Tip Enerji + Güneş Entegrasyonu',
         description: 'Güneş enerjisi ve depolamayı tek bir konteynerde birleştiren hibrit çözüm.',
         features: [
@@ -367,7 +402,7 @@ const products: Record<string, {
         modelId: 'VOLTWAGON',
         capacity: '192 kWh',
         power: '20 kW',
-        image: '/images/products/solar-voltwagon.webp',
+        image: '/images/products/solar-voltwagon.png',
         categoryTitle: 'Mobil Güneş Enerjili Römork Sistem',
         description: 'Her yere taşınabilen devasa güneş enerjili mobil römork sistemi.',
         features: [
@@ -380,7 +415,8 @@ const products: Record<string, {
             'Ağırlık: 2450 kg',
             'Mobil Römork',
             'Güneş Entegreli',
-            'Uzaktan İzleme'
+            'Uzaktan İzleme',
+            'Çalışma Sıcaklığı: -20°C ~ +50°C'
         ],
         specs: [
             { label: 'Kapasite', value: '192 kWh' },
@@ -399,27 +435,28 @@ const products: Record<string, {
         modelId: 'SOLARPORT',
         capacity: '2 – 8 Araç',
         power: '6 – 24 kW AC',
-        image: '/images/products/solarport-duo.webp',
+        image: '/images/products/solarport-duo.png',
         categoryTitle: 'Solar Carport + EV Şarj + Enerji Depolama',
-        description: 'Otoparkları enerji santraline dönüştüren hepsi bir arada solar carport.',
+        description: 'Güneş enerjisi üretimi ve elektrikli araç şarj altyapısını birleştiren otopark sistemidir.',
         features: [
-            'Araç Kapasitesi: 2 – 8 araç',
-            'Panel Sayısı: 8 – 48 adet',
-            'Kurulu Güç: 4.8 – 38.8 kWp',
-            'MPPT Voltaj Aralığı: 180 – 950 VDC',
-            'AC Çıkış Gücü: 6 – 24 kW',
-            'Şarj Altyapısı: 22 kW AC',
-            'Opsiyonel: DC hızlı şarj',
-            'Koruma: IP65'
+            'Araç Kapasitesi: 2 – 8 Araç',
+            'Panel Sayısı: 8 – 48 Adet',
+            'Toplam Kurulu Güç: 4.8 kWp – 38.8 kWp',
+            'MPPT Voltaj Aralığı: 180 VDC – 950 VDC',
+            'AC Çıkış Gücü: 6 kW – 24 kW',
+            'Şarj Altyapısı: 22 kW AC şarj ünitesi (Opsiyonel DC hızlı şarj)',
+            'Koruma: IP65',
+            'Çalışma Sıcaklığı: -25°C ~ +50°C'
         ],
         specs: [
-            { label: 'Araç Kapasitesi', value: '2 – 8 araç' },
-            { label: 'Panel Sayısı', value: '8 – 48 adet' },
-            { label: 'Kurulu Güç', value: '4.8 – 38.8 kWp' },
+            { label: 'Araç Kapasitesi', value: '2 – 8 Araç' },
+            { label: 'Panel Sayısı', value: '8 – 48 Adet' },
+            { label: 'Toplam Kurulu Güç', value: '4.8 – 38.8 kWp' },
             { label: 'MPPT Voltaj Aralığı', value: '180 – 950 VDC' },
             { label: 'AC Çıkış Gücü', value: '6 – 24 kW' },
-            { label: 'Şarj Altyapısı', value: '22 kW AC' },
-            { label: 'Opsiyonel', value: 'DC hızlı şarj' },
+            { label: 'Şarj Altyapısı', value: '22 kW AC (Opsiyonel DC)' },
+            { label: 'Koruma', value: 'IP65' },
+            { label: 'Çalışma Sıcaklığı', value: '-25°C ~ +50°C' },
         ],
         usageAreas: [
             { label: 'Otopark', icon: 'Building2' },
@@ -434,25 +471,25 @@ const products: Record<string, {
         power: '45 – 180 kW',
         image: '/images/products/grid-core.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
+        description: 'Yüksek güçlü DC hızlı şarj uygulamaları için geliştirilmiş elektrikli araç şarj istasyonudur.',
         features: [
             'DC Çıkış Gücü: 45 – 180 kW',
-            'DC Gerilim: 150 – 1000 VDC',
-            'AC Giriş: 400 VAC, 3 Faz',
-            'Konnektör: CCS2',
-            'Çıkış Sayısı: 1 DC',
-            'Haberleşme: Ethernet / CAN / 4G',
-            'Protokol: OCPP 1.6',
+            'DC Çıkış Gerilimi: 150 – 1000 VDC',
+            'AC Giriş: 400 VAC ±10%, 3 Faz, 50 Hz',
+            'Konnektör: CCS2 (1 DC çıkış)',
+            'Haberleşme/Protokol: Ethernet, CAN, 4G / OCPP 1.6',
+            'Ekran: 7" Dokunmatik',
+            'Boyutlar: 690 × 400 × 1950 mm',
             'Koruma: IP54'
         ],
         specs: [
             { label: 'DC Çıkış Gücü', value: '45 – 180 kW' },
-            { label: 'DC Gerilim', value: '150 – 1000 VDC' },
-            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
-            { label: 'Konnektör', value: 'CCS2' },
-            { label: 'Çıkış Sayısı', value: '1 DC' },
-            { label: 'Haberleşme', value: 'Ethernet / CAN / 4G' },
-            { label: 'Protokol', value: 'OCPP 1.6' },
+            { label: 'DC Çıkış Gerilimi', value: '150 – 1000 VDC' },
+            { label: 'AC Giriş', value: '400 VAC ±10%, 3 Faz, 50 Hz' },
+            { label: 'Konnektör', value: 'CCS2 (1 DC çıkış)' },
+            { label: 'Haberleşme/Protokol', value: 'Ethernet, CAN, 4G / OCPP 1.6' },
+            { label: 'Ekran', value: '7" Dokunmatik' },
+            { label: 'Boyutlar', value: '690 × 400 × 1950 mm' },
             { label: 'Koruma', value: 'IP54' },
         ],
         usageAreas: [
@@ -468,25 +505,30 @@ const products: Record<string, {
         power: '90 – 270 kW',
         image: '/images/products/grid-pulse.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Yüksek güçlü DC hızlı şarj istasyonu, tüm elektrikli araçlarla tam uyumlu.',
+        description: 'Aynı anda birden fazla araca hizmet verebilen, yüksek kapasiteli DC hızlı şarj istasyonudur.',
         features: [
             'DC Çıkış Gücü: 90 – 270 kW',
-            'DC Gerilim: 150 – 1000 VDC',
-            'Konnektör: CCS1 / CCS2',
-            'Çıkış Sayısı: 2 DC',
-            'AC Giriş: 400 VAC, 3 Faz',
-            'Ödeme: RFID / QR / NFC',
+            'DC Çıkış Gerilimi: 150 – 1000 VDC',
+            'Konnektör: CCS1 / CCS2 (2 adet DC çıkış)',
+            'Ekran: 15" Dokunmatik Ekran',
+            'Ödeme Desteği: RFID / QR / NFC',
+            'Boyutlar: 580 × 970 × 1950 mm',
+            'Ağırlık: ≈ 450 kg',
             'Protokol: OCPP 1.6',
-            'Koruma: IP54'
+            'Koruma: IP54',
+            'Haberleşme: Ethernet / 4G / LTE'
         ],
         specs: [
             { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
-            { label: 'DC Gerilim', value: '150 – 1000 VDC' },
-            { label: 'Konnektör', value: 'CCS1 / CCS2' },
-            { label: 'Çıkış Sayısı', value: '2 DC' },
-            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
-            { label: 'Ödeme', value: 'RFID / QR / NFC' },
+            { label: 'DC Çıkış Gerilimi', value: '150 – 1000 VDC' },
+            { label: 'Konnektör', value: 'CCS1 / CCS2 (2 DC çıkış)' },
+            { label: 'Ekran', value: '15" Dokunmatik Ekran' },
+            { label: 'Ödeme Desteği', value: 'RFID / QR / NFC' },
+            { label: 'Boyutlar', value: '580 × 970 × 1950 mm' },
+            { label: 'Ağırlık', value: '≈ 450 kg' },
+            { label: 'Protokol', value: 'OCPP 1.6' },
             { label: 'Koruma', value: 'IP54' },
+            { label: 'Haberleşme', value: 'Ethernet / 4G / LTE' },
         ],
         usageAreas: [
             { label: 'Halka Açık Şarj', icon: 'Globe' },
@@ -501,13 +543,13 @@ const products: Record<string, {
         power: '12 / 24 VDC',
         image: '/images/products/2.7-lfp.webp',
         categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
-        description: 'Güneş enerjisi sistemleri ve mobil uygulamalar için güvenilir LFP batarya.',
+        description: 'Kompakt yapısı ve uzun çevrim ömrü ile yedek enerji uygulamaları, güneş enerjisi sistemleri ve mobil güç çözümleri için tasarlanmıştır.',
         features: [
             'Nominal Voltaj: 12 / 24 VDC',
             'Kapasite: 105 / 206 Ah',
             'Enerji: 2.7 kWh',
-            'Batarya Ömrü: 6000 çevrim',
-            'Boyutlar: 400 × 320 × 244 mm',
+            'Batarya Ömrü: 6000 Çevrim',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 400 × 320 × 244 mm',
             'Ağırlık: 25 kg',
             'Bluetooth: Mevcut',
             'Hücre Tipi: LiFePO4'
@@ -516,7 +558,7 @@ const products: Record<string, {
             { label: 'Nominal Voltaj', value: '12 / 24 VDC' },
             { label: 'Kapasite', value: '105 / 206 Ah' },
             { label: 'Enerji', value: '2.7 kWh' },
-            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Batarya Ömrü', value: '6000 Çevrim' },
             { label: 'Boyutlar', value: '400 × 320 × 244 mm' },
             { label: 'Ağırlık', value: '25 kg' },
             { label: 'Bluetooth', value: 'Mevcut' },
@@ -534,13 +576,13 @@ const products: Record<string, {
         power: '24 / 48 VDC',
         image: '/images/products/5.4-lfp.webp',
         categoryTitle: 'Lityum Demir Fosfat (LFP) Batarya Çözümleri',
-        description: 'Yüksek kapasiteli ve uzun ömürlü LFP batarya çözümü.',
+        description: 'Orta ölçekli yüklerin beslenmesi için uygun, uzun ömürlü ve güvenli LiFePO4 hücre teknolojisine sahip bir depolama birimidir.',
         features: [
             'Nominal Voltaj: 24 / 48 VDC',
             'Kapasite: 105 / 206 Ah',
             'Enerji: 5.4 kWh',
-            'Batarya Ömrü: 6000 çevrim',
-            'Boyutlar: 400 × 391 × 244 mm',
+            'Batarya Ömrü: 6000 Çevrim',
+            'Boyutlar (Uzunluk × Genişlik × Yükseklik): 400 × 391 × 244 mm',
             'Ağırlık: 45 kg',
             'Bluetooth: Mevcut',
             'Hücre Tipi: LiFePO4'
@@ -549,7 +591,7 @@ const products: Record<string, {
             { label: 'Nominal Voltaj', value: '24 / 48 VDC' },
             { label: 'Kapasite', value: '105 / 206 Ah' },
             { label: 'Enerji', value: '5.4 kWh' },
-            { label: 'Batarya Ömrü', value: '6000 çevrim' },
+            { label: 'Batarya Ömrü', value: '6000 Çevrim' },
             { label: 'Boyutlar', value: '400 × 391 × 244 mm' },
             { label: 'Ağırlık', value: '45 kg' },
             { label: 'Bluetooth', value: 'Mevcut' },
@@ -568,26 +610,26 @@ const products: Record<string, {
         power: '90 – 270 kW',
         image: '/images/products/grid-pulse-gen2.webp',
         categoryTitle: 'Elektrikli Araç Şarj Çözümleri',
-        description: 'Yeni nesil, akıllı ve bağlantılı yüksek hızlı DC şarj istasyonu.',
+        description: 'Grid Pulse modelinin ikinci nesli olup, yoğun kullanım senaryoları için optimize edilmiş profesyonel bir DC şarj çözümüdür.',
         features: [
-            'DC Çıkış Gücü: 90 – 270 kW',
-            'DC Gerilim: 150 – 1000 VDC',
-            'Konnektör: CCS2',
-            'Çıkış Sayısı: 2 DC',
-            'AC Giriş: 400 VAC, 3 Faz',
-            'Haberleşme: Ethernet / 4G / LTE',
-            'Protokol: OCPP 1.6',
-            'Koruma: IP54'
+            'DC Çıkış Gücü: 90 kW – 270 kW',
+            'DC Çıkış Gerilimi: 150 – 1000 VDC',
+            'Konnektör: CCS2 (2 adet DC çıkış)',
+            'Haberleşme: Ethernet / 4G / LTE (OCPP 1.6)',
+            'Boyutlar: 580 × 970 × 1950 mm',
+            'Ağırlık: ≈ 450 kg',
+            'Koruma: IP54',
+            'Çalışma Sıcaklığı: -30°C ~ +50°C'
         ],
         specs: [
             { label: 'DC Çıkış Gücü', value: '90 – 270 kW' },
-            { label: 'DC Gerilim', value: '150 – 1000 VDC' },
-            { label: 'Konnektör', value: 'CCS2' },
-            { label: 'Çıkış Sayısı', value: '2 DC' },
-            { label: 'AC Giriş', value: '400 VAC, 3 Faz' },
-            { label: 'Haberleşme', value: 'Ethernet / 4G / LTE' },
-            { label: 'Protokol', value: 'OCPP 1.6' },
+            { label: 'DC Çıkış Gerilimi', value: '150 – 1000 VDC' },
+            { label: 'Konnektör', value: 'CCS2 (2 DC çıkış)' },
+            { label: 'Haberleşme', value: 'Ethernet / 4G / LTE (OCPP 1.6)' },
+            { label: 'Boyutlar', value: '580 × 970 × 1950 mm' },
+            { label: 'Ağırlık', value: '≈ 450 kg' },
             { label: 'Koruma', value: 'IP54' },
+            { label: 'Çalışma Sıcaklığı', value: '-30°C ~ +50°C' },
         ],
         usageAreas: [
             { label: 'Akıllı Şehir', icon: 'Globe' },
@@ -640,9 +682,22 @@ function translateLabel(label: string, locale: string): string {
         'Masaüstü Bilgisayar': { en: 'Desktop Computer', ar: 'كمبيوتر مكتبي' },
         'Laptop': { en: 'Laptop', ar: 'لابتوب' },
         'Buzdolabı (A++)': { en: 'Refrigerator (A++)', ar: 'ثلاجة (A++)' },
-        'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة ليد' },
+        'LED Aydınlatma': { en: 'LED Lighting', ar: 'إضاءة LED' },
+        'Saha Aydınlatma': { en: 'Site Lighting', ar: 'إضاءة الموقع' },
         'TV + Modem': { en: 'TV + Modem', ar: 'تلفزيون + مودم' },
         'Genel Ev': { en: 'General Home', ar: 'المنزل العام' },
+        // Runtime stats – büyük harfli Türkçe (CSS uppercase vb.; Latin I / Türkçe İ varyantları)
+        'LAPTOP': { en: 'Laptop', ar: 'لابتوب' },
+        'MASAÜSTÜ BİLGİSAYAR': { en: 'Desktop Computer', ar: 'كمبيوتر مكتبي' },
+        'MASAÜSTÜ BILGISAYAR': { en: 'Desktop Computer', ar: 'كمبيوتر مكتبي' },
+        'MATKAP / EL ALETİ': { en: 'Drill / Power Tool', ar: 'مثقاب / أداة كهربائية' },
+        'MATKAP / EL ALETI': { en: 'Drill / Power Tool', ar: 'مثقاب / أداة كهربائية' },
+        'HİLTİ / KIRICI': { en: 'Demolition Hammer', ar: 'مطرقة الهدم' },
+        'HILTI / KIRICI': { en: 'Demolition Hammer', ar: 'مطرقة الهدم' },
+        'GENEL EV': { en: 'General Home', ar: 'المنزل العام' },
+        'TV + MODEM': { en: 'TV + Modem', ar: 'تلفزيون + مودم' },
+        'LED AYDINLATMA': { en: 'LED Lighting', ar: 'إضاءة LED' },
+        'BUZDOLABI (A++)': { en: 'Refrigerator (A++)', ar: 'ثلاجة (A++)' },
         // Usage Areas
         'Kamp': { en: 'Camping', ar: 'تخييم' },
         'Acil Durum': { en: 'Emergency', ar: 'طوارئ' },
@@ -695,6 +750,7 @@ function translateLabel(label: string, locale: string): string {
         'Endüstriyel Güç': { en: 'Industrial Power', ar: 'طاقة صناعية' },
         'Nominal Voltaj': { en: 'Nominal Voltage', ar: 'الجهد الاسمي' },
         'çevrim': { en: 'cycles', ar: 'دورات' },
+        'Çevrim': { en: 'Cycles', ar: 'دورات' },
         'CCS2 Konnektör': { en: 'CCS2 Connector', ar: 'CCS2' },
         'IP54 Koruma': { en: 'IP54 Protection', ar: 'IP54' },
         'OCPP 1.6 Protokolü': { en: 'OCPP 1.6 Protocol', ar: 'بروتوكول OCPP ١.٦' },
@@ -705,6 +761,15 @@ function translateLabel(label: string, locale: string): string {
         'Çıkış Voltajı': { en: 'Output Voltage', ar: 'جهد الخرج' },
         'Sürekli Güç': { en: 'Continuous Power', ar: 'خرج مستمر' },
         'Maks. PV Güç': { en: 'Max PV Power', ar: 'أقصى طاقة شمسية' },
+        'Maksimum PV Güç': { en: 'Maximum PV Power', ar: 'أقصى طاقة شمسية' },
+        'Boyutlar (Uzunluk × Genişlik × Yükseklik)': { en: 'Dimensions (L × W × H)', ar: 'الأبعاد (الطول × العرض × الارتفاع)' },
+        'Soğutma Yöntemi': { en: 'Cooling Method', ar: 'طريقة التبريد' },
+        'Toplam Kurulu Güç': { en: 'Total Installed Power', ar: 'إجمالي الطاقة المثبتة' },
+        'DC Çıkış Gerilimi': { en: 'DC Output Voltage', ar: 'جهد خرج التيار المستمر' },
+        'Haberleşme/Protokol': { en: 'Communication/Protocol', ar: 'الاتصال/البروتوكول' },
+        'Ödeme Desteği': { en: 'Payment Support', ar: 'دعم الدفع' },
+        '7" Dokunmatik': { en: '7" Touchscreen', ar: '٧ بوصة لمس' },
+        '15" Dokunmatik Ekran': { en: '15" Touchscreen', ar: 'شاشة لمس ١٥ بوصة' },
         'Boyutlar': { en: 'Dimensions', ar: 'الأبعاد' },
         'Ağırlık': { en: 'Weight', ar: 'الوزن' },
         'Enerji Aralığı': { en: 'Energy Range', ar: 'نطاق الطاقة' },
@@ -756,13 +821,45 @@ function translateLabel(label: string, locale: string): string {
         'Hücre Tipi': { en: 'Cell Type', ar: 'نوع الخلية' },
         'İzolasyon': { en: 'Insulation', ar: 'العزل' },
         'Sıvı': { en: 'Liquid', ar: 'سائل' },
-        'Çevrim': { en: 'Cycle', ar: 'دورة' },
+        'Ekran: 7" dokunmatik': { en: 'Screen: 7" touchscreen', ar: 'شاشة: ٧ بوصة لمس' },
+        'Ekran: 15" dokunmatik': { en: 'Screen: 15" touchscreen', ar: 'شاشة: ١٥ بوصة لمس' },
+        // Ürün sayfası – ek teknik ve alan ifadeleri
+        'Modüler Kurulum': { en: 'Modular Installation', ar: 'تركيب معياري' },
+        'Araç Uyumu': { en: 'Vehicle Compatibility', ar: 'توافق المركبة' },
+        'Boyutlar / Ağırlık': { en: 'Dimensions / Weight', ar: 'الأبعاد / الوزن' },
+        'Off-grid Sistemler': { en: 'Off-grid Systems', ar: 'أنظمة خارج الشبكة' },
+        'PV Entegrasyonu': { en: 'PV Integration', ar: 'تكامل الطاقة الشمسية' },
+        'Çalışma Sıcaklığı': { en: 'Operating Temperature', ar: 'درجة حرارة التشغيل' },
+        'Hilux / Pick Up': { en: 'Hilux / Pick Up', ar: 'هيلوكس / بيك آب' },
+        'Mobil Römork': { en: 'Mobile Trailer', ar: 'مقطورة متنقلة' },
+        'Enerji:': { en: 'Energy:', ar: 'الطاقة:' },
+        'tek kabin': { en: 'single cabinet', ar: 'كابينة واحدة' },
+        '(tek kabin)': { en: '(single cabinet)', ar: '(كابينة واحدة)' },
+        '1 DC': { en: '1 DC', ar: '١ تيار مستمر' },
+        '2 DC': { en: '2 DC', ar: '٢ تيار مستمر' },
+        'Max 624 Panels': { en: 'Max 624 Panels', ar: '٦٢٤ لوحة كحد أقصى' },
+        '230 / 400 VAC': { en: '230 / 400 VAC', ar: '٢٣٠ / ٤٠٠ فولت تيار متردد' },
+        'Max 5 MW': { en: 'Max 5 MW', ar: '٥ ميغاواط كحد أقصى' },
+        '8 – 48 adet': { en: '8 – 48 pcs', ar: '٨ – ٤٨ قطعة' },
+        '2 – 8 araç': { en: '2 – 8 vehicles', ar: '٢ – ٨ مركبات' },
+        'Ethernet / CAN / 4G': { en: 'Ethernet / CAN / 4G', ar: 'إيثرنت / كان / ٤ جي' },
+        'Batarya Voltajı': { en: 'Battery Voltage', ar: 'جهد البطارية' },
+        'PV Panel Sayısı': { en: 'PV Panel Count', ar: 'عدد ألواح الطاقة الشمسية' },
+        '400 VAC, 3 Faz': { en: '400 VAC, 3 Phase', ar: '٤٠٠ فولت تيار متردد، ٣ مراحل' },
+        'RFID / QR / NFC': { en: 'RFID / QR / NFC', ar: 'آر إف آي دي / كيو آر / إن إف سي' },
+        'Bluetooth: Mevcut': { en: 'Bluetooth: Available', ar: 'بلوتوث: متوفر' },
+        'Güneş Entegreli': { en: 'Solar Integrated', ar: 'مدمج بالطاقة الشمسية' },
+        'Uzaktan İzleme': { en: 'Remote Monitoring', ar: 'المراقبة عن بعد' },
+        // Runtime summary cümleleri (fallback)
+        'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.': { en: 'Revium portable power packs; the 2.7 kWh model can power a demolition hammer for about 2.7 hours and a household refrigerator for up to 18 hours continuously.', ar: 'حزم الطاقة المحمولة من ريفيوم؛ في طراز ٢.٧ كيلوواط ساعة، يمكنها تشغيل مثقاب هدم لمدة ٢.٧ ساعة تقريبًا وثلاجة منزلية لمدة تصل إلى ١٨ ساعة بشكل مستمر.' },
+        'Revium taşınabilir güç paketleri; 5.4 kWh modelinde bir hiltiyi 5.4 saat, bir evi ise 14–16 saat aralığında kesintisiz besleyebilmektedir.': { en: 'Revium portable power packs; the 5.4 kWh model can power a demolition hammer for 5.4 hours and a home for 14–16 hours continuously.', ar: 'حزم الطاقة المحمولة من ريفيوم؛ في طراز ٥.٤ كيلوواط ساعة، يمكنها تشغيل مثقاب هدم لمدة ٥.٤ ساعة ومنزل لمدة ١٤–١٦ ساعة بشكل مستمر.' },
     };
 
     let result = label;
 
-    // First, translate device names
-    for (const [tr, trans] of Object.entries(deviceTranslations)) {
+    // First, translate device names (longer keys first so full sentences match before substrings)
+    const entries = Object.entries(deviceTranslations).sort((a, b) => b[0].length - a[0].length);
+    for (const [tr, trans] of entries) {
         if (result.includes(tr)) {
             result = result.replace(tr, trans[locale] || trans.en || tr);
         }
@@ -784,6 +881,7 @@ function translateLabel(label: string, locale: string): string {
             'Hz': 'هرتز',
             'EV': 'مركبة كهربائية',
             'BESS': 'نظام تخزين الطاقة',
+            'GRIDPACK': 'جريد باك',
             'PV': 'طاقة شمسية',
             'DC': 'تيار مستمر',
             'AC': 'تيار متردد',
@@ -810,7 +908,57 @@ function translateLabel(label: string, locale: string): string {
             'Wi-Fi': 'واي فاي',
             'GPS': 'جي بي إس',
             'USB': 'يو إس بي',
-            'LED': 'ليد',
+            'Phase': 'طور',
+            '3-Phase': '٣ مراحل',
+            'Entegrasyonu': 'تكامل',
+            'adet': 'قطعة',
+            'panel': 'لوحة',
+            'DOD': 'عمق التفريغ',
+            'Batarya Kapasitesi': 'سعة البطارية',
+            'Batarya': 'بطارية',
+            'Kapasitesi': 'سعة',
+            'Çıkış Gücü': 'طاقة الخرج',
+            'Giriş': 'مدخل',
+            'Soğutma': 'تبريد',
+            'Sıvı': 'سائل',
+            'İzolasyon': 'عزل',
+            'Koruma': 'حماية',
+            'Ağırlık': 'الوزن',
+            'Mobil': 'متنقل',
+            'Römork': 'مقطورة',
+            'Sistem': 'نظام',
+            'Uzaktan İzleme': 'المراقبة عن بعد',
+            'Güneş Entegreli': 'متكامل مع الطاقة الشمسية',
+            'Araç Kapasitesi': 'سعة المركبة',
+            'Araç': 'مركبة',
+            'araç': 'مركبة',
+            'Panel Sayısı': 'عدد الألواح',
+            'Kurulu Güç': 'الطاقة المثبتة',
+            'Şarj Altyapısı': 'بنية الشحن التحتية',
+            'Opsiyonel': 'اختياري',
+            'Aralığı': 'نطاق',
+            'Voltaj Aralığı': 'نطاق الجهد',
+            'Kurulu': 'مثبتة',
+            'Max PV Güç': 'أقصى طاقة شمسية',
+            'Max': 'أقصى',
+            'Artırılabilir Kapasite': 'سعة قابلة للزيادة',
+            'Artırılabilir': 'قابل للزيادة',
+            'tek kabin': 'كابينة واحدة',
+            'kabin': 'كابينة',
+            'Güç': 'طاقة',
+            'Gücü': 'طاقة',
+            'gücü': 'طاقة',
+            'Sayısı': 'عدد',
+            'sayısı': 'عدد',
+            'Faz': 'طور',
+            'faz': 'طور',
+            'CAN': 'كان',
+            'Çıkış Sayısı': 'عدد المخارج',
+            'DC Çıkış Gücü': 'قوة خرج تيار مستمر',
+            'AC Çıkış Gücü': 'قوة خرج تيار متردد',
+            'DC Gerilim': 'جهد تيار مستمر',
+            'AC Giriş': 'مدخل تيار متردد',
+            'Çıkış': 'مخرج',
         };
 
         for (const [unit, trans] of Object.entries(units)) {
@@ -854,7 +1002,7 @@ export default async function ProductDetailPage({ params }: Props) {
             'R-STORAGE': 'آر-ستوريج',
             'R-CABINET': 'آر-كابينة',
             'R-LAYER': 'آر-طبقة',
-            'GRIDPACK': 'غريد باك',
+            'Şebeke Paketi': 'جريد باك',
             'R-PICKUP': 'آر-بيك اب',
             'R-GRID-CORE': 'آر-غريد كور',
             'R-GRID-PULSE': 'آر-غريد بلس',
@@ -868,21 +1016,30 @@ export default async function ProductDetailPage({ params }: Props) {
         return map[id] || id;
     };
 
-    const t = await getTranslations('products');
-    const tDetail = await getTranslations('productDetails');
+    const t = await getTranslations({ locale, namespace: 'products' });
+    const tDetail = await getTranslations({ locale, namespace: 'productDetails' });
 
     const product = products[slug];
     if (!product) {
         notFound();
     }
 
-    // Replace data with localized versions if available
-    const localizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : product.name;
-    const localizedDesc = tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : product.description;
+    // Replace data with localized versions if available; avoid showing translation keys (e.g. "title")
+    const rawLocalizedName = tDetail.has(`products.${slug}.name`) ? tDetail(`products.${slug}.name`) : (tDetail.has(`${slug}.title`) ? tDetail(`${slug}.title`) : product.name);
+    const looksLikeKey = (s: string) => !s || s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+    const localizedName = (rawLocalizedName && !looksLikeKey(String(rawLocalizedName))) ? String(rawLocalizedName) : (product?.name ?? slug ?? '');
+    const localizedDesc = translateLabel(tDetail.has(`products.${slug}.description`) ? tDetail(`products.${slug}.description`) : (product.description || ''), locale);
 
-    // We always use the hardcoded features from code (technical specs)
-    // The translateLabel function handles translations for other languages
-    const localizedFeatures = product.features;
+
+
+    // Use Arabic features from messages when available; otherwise use code features + translateLabel
+    const rawFeatures = tDetail.has(`products.${slug}.features`) ? (tDetail.raw(`products.${slug}.features`) as string[] | undefined) : undefined;
+    const useLocalizedFeatures = locale === 'ar' && Array.isArray(rawFeatures) && rawFeatures.length > 0;
+    const localizedFeatures = useLocalizedFeatures ? rawFeatures! : product.features;
+    // Özellik sayısı çift olsun (grid dengesi için); tek sayıda ise bir boş placeholder ekle
+    const featuresEven: (string | null)[] = localizedFeatures.length % 2 === 0
+        ? localizedFeatures
+        : [...localizedFeatures, null];
 
     return (
         <div className="min-h-screen bg-white">
@@ -905,7 +1062,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
                                         <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
                                         <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
-                                            {locale === 'en' ? ({
+                                            {tDetail.has(`products.${slug}.categoryTitle`) ? tDetail(`products.${slug}.categoryTitle`) : locale === 'en' ? ({
                                                 'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
                                                 'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
                                                 'Sabit / Modüler Batarya': 'Fixed / Modular Battery',
@@ -916,7 +1073,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Endüstriyel Enerji Depolama (Tek Kabin)': 'Industrial Energy Storage (Single Cabinet)',
                                                 'Araç Üstü Mobil Enerji Sistemi': 'On-Vehicle Mobile Energy System',
                                                 'Ölçeklenebilir Endüstriyel Batarya': 'Scalable Industrial Battery',
-                                                'Şebeke Ölçekli Konteyner Tip BESS': 'Grid-Scale Container BESS',
+                                                'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi': 'Grid-Scale Container Battery Energy Storage System',
                                                 'Konteyner Tip Enerji + Güneş Entegrasyonu': 'Container Type Energy + Solar Integration',
                                                 'Mobil Güneş Enerjili Römork Sistem': 'Mobile Solar Trailer System',
                                                 'Solar Carport + EV Şarj + Enerji Depolama': 'Solar Carport + EV Charging + Energy Storage',
@@ -933,7 +1090,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 'Endüstriyel Enerji Depolama (Tek Kabin)': 'تخزين الطاقة الصناعية (كابينة واحدة)',
                                                 'Araç Üstü Mobil Enerji Sistemi': 'نظام طاقة متنقل على المركبة',
                                                 'Ölçeklenebilir Endüstriyel Batarya': 'بطارية صناعية قابلة للتطوير',
-                                                'Şebeke Ölçekli Konteyner Tip BESS': 'BESS من نوع حاوية على نطاق الشبكة',
+                                                'Şebeke Ölçekli Konteyner Tip Batarya Enerji Depolama Sistemi': 'نظام تخزين طاقة البطارية من نوع حاوية على نطاق الشبكة',
                                                 'Konteyner Tip Enerji + Güneş Entegrasyonu': 'تكامل الطاقة بالحاوية + الطاقة الشمسية',
                                                 'Mobil Güneş Enerjili Römork Sistem': 'نظام مقطورة بالطاقة الشمسية المتنقلة',
                                                 'Solar Carport + EV Şarj + Enerji Depolama': 'مرآب شمسي + شحن المركبات الكهربائية + تخزين الطاقة',
@@ -953,40 +1110,40 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </p>
                                 </div>
 
-                                {/* Key Specs - Light Theme */}
-                                <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
-                                    <div className="space-y-1 text-left">
+                                {/* Key Specs - Light Theme (Enerji / Güç / Batarya tek satırda) */}
+                                <div className="flex flex-nowrap justify-center lg:justify-start gap-3 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-full mx-auto lg:mx-0">
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-blue-600">
-                                            <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
-                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
+                                            <Battery className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.energy') || (locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.capacity, locale)
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{translateLabel(formatNumber(product.capacity, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
                                             .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
                                             .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
-                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
-                                    <div className="space-y-1 text-left">
+                                    <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-600">
-                                            <Zap className="h-4 w-4 sm:h-5 sm:w-5" />
-                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
+                                            <Zap className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.power') || (locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{translateLabel(formatNumber(product.power, locale)
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{translateLabel(formatNumber(product.power, locale)
                                             .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
                                             .replace('MW', locale === 'ar' ? ' ميغاواط' : 'MW')
                                             .replace('kWh', locale === 'ar' ? ' كيلوواط ساعة' : 'kWh')
                                             .replace('kW', locale === 'ar' ? ' كيلوواط' : 'kW')
                                             .replace('W', locale === 'ar' ? ' واط' : 'W'), locale)}</div>
                                     </div>
-                                    <div className="w-px h-14 bg-slate-200 hidden sm:block" />
-                                    <div className="space-y-1 text-left">
+                                    <div className="w-px h-12 sm:h-14 bg-slate-200 flex-shrink-0" />
+                                    <div className="flex-1 min-w-0 space-y-1 text-left">
                                         <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600">
-                                            <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
-                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
+                                            <Shield className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                                            <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{tDetail('labels.battery') || (locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya')}</span>
                                         </div>
-                                        <div className="text-lg sm:text-2xl font-black text-slate-900">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
+                                        <div className="text-sm sm:text-lg lg:text-2xl font-black text-slate-900 whitespace-nowrap">{locale === 'ar' ? 'ليثيوم فوسفات الحديد' : 'LiFePO₄'}</div>
                                     </div>
                                 </div>
 
@@ -995,7 +1152,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                         href={`/${locale}/fiyat-teklifi/`}
                                         className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
                                     >
-                                        <span>{tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
+                                        <span>{tDetail('labels.requestQuote') || tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
                                         <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                                     </Link>
                                     <Link
@@ -1010,23 +1167,25 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Right Content - Larger Product Image */}
                             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
                                 <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
-                                    {/* Decorative Circle - Hidden on mobile */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
+                                    {/* Decorative Circle */}
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100" />
 
-                                    {/* Product Image */}
+                                    {/* Product Image - disableStaticImages nedeniyle native img */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
-                                        <Image
+                                        <img
                                             src={product.image}
                                             alt={localizedName}
                                             width={800}
                                             height={800}
                                             className="w-full h-auto object-contain drop-shadow-xl sm:drop-shadow-2xl"
-                                            priority
+                                            loading="eager"
+                                            fetchPriority="high"
+                                            decoding="async"
                                         />
                                     </div>
 
                                     {/* Model Badge */}
-                                    <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
+                                    <div className="absolute -bottom-2 right-2 sm:right-8 p-2 sm:p-4 rounded-lg sm:rounded-2xl bg-white border border-slate-200 shadow-lg">
                                         <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
                                         <div className="text-lg sm:text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
@@ -1049,11 +1208,15 @@ export default async function ProductDetailPage({ params }: Props) {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                            {localizedFeatures.map((feature, index) => (
-                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-blue-200 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-                                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
-                                    <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
-                                </div>
+                            {featuresEven.map((feature, index) => (
+                                feature === null ? (
+                                    <div key={`placeholder-${index}`} className="p-3 sm:p-4 rounded-lg sm:rounded-xl border border-transparent bg-transparent min-h-[52px] sm:min-h-[60px]" aria-hidden />
+                                ) : (
+                                    <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-blue-200 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+                                        <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
+                                        <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(useLocalizedFeatures ? feature : translateLabel(feature, locale), locale)}</span>
+                                    </div>
+                                )
                             ))}
                         </div>
                     </div>
@@ -1076,16 +1239,24 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {locale === 'en' ? 'Device-Based Runtime' : locale === 'ar' ? 'مدة التشغيل حسب الجهاز' : 'Cihaz Bazlı Çalışma Süreleri'}
                                 </h2>
                                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-                                    {formatNumber(tDetail.has(`products.${slug}.runtimeSummary`)
-                                        ? tDetail(`products.${slug}.runtimeSummary`)
-                                        : locale === 'en' && product.runtimeSummary
-                                            ? product.runtimeSummary
-                                                .replace('taşınabilir güç paketleri', 'portable power packs')
-                                                .replace('modelinde bir hiltiyi', 'model can power a hammer drill for')
-                                                .replace('bir evi ise', 'and a home for')
-                                                .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
-                                                .replace(/saat/gi, 'hours')
-                                            : product.runtimeSummary || '', locale)}
+                                    {(() => {
+                                        const raw = tDetail.has(`products.${slug}.runtimeSummary`)
+                                            ? tDetail(`products.${slug}.runtimeSummary`)
+                                            : locale === 'en' && product.runtimeSummary
+                                                ? product.runtimeSummary
+                                                    .replace('taşınabilir güç paketleri', 'portable power packs')
+                                                    .replace('modelinde bir hiltiyi', 'model can power a hammer drill for')
+                                                    .replace('bir evi ise', 'and a home for')
+                                                    .replace('aralığında kesintisiz besleyebilmektedir', 'continuously')
+                                                    .replace(/saat/gi, 'hours')
+                                                : (product.runtimeSummary || '');
+                                        const rawStr = String(raw);
+                                        const hasArabic = /[\u0600-\u06FF]/.test(rawStr);
+                                        const isTurkish = /[ışğüöçİŞĞÜÖÇ]|taşınabilir|besleyebilmektedir|saat\s|gün\s/.test(rawStr);
+                                        const useArabicFallback = locale === 'ar' && product.runtimeSummary && (!hasArabic || isTurkish);
+                                        const text = useArabicFallback ? translateLabel(product.runtimeSummary ?? '', 'ar') : raw;
+                                        return formatNumber(text ?? '', locale);
+                                    })()}
                                 </p>
                             </div>
 
@@ -1107,9 +1278,9 @@ export default async function ProductDetailPage({ params }: Props) {
                                                         .replace('W', locale === 'ar' ? ' واط' : 'W')}</div>
                                                 </div>
                                                 <div className="space-y-0.5">
-                                                    <h4 className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
+                                                    <h4 className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">{translateLabel(stat.label, locale === 'ar' ? 'ar' : locale)}</h4>
                                                     <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
-                                                        {formatNumber(translateLabel(stat.duration, locale), locale)}
+                                                        {formatNumber(translateLabel(stat.duration, locale === 'ar' ? 'ar' : locale), locale)}
                                                     </div>
                                                 </div>
                                             </div>
@@ -1343,14 +1514,14 @@ export default async function ProductDetailPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Final CTA */}
-                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-blue-50 to-slate-50">
+                {/* Final CTA - yüksek kontrast, okunabilir metin */}
+                <section className="py-8 sm:py-10 md:py-12 bg-white border-t border-slate-200">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
-                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-3 sm:mb-4 px-4">
                                 {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : locale === 'ar' ? 'مزيد من المعلومات حول' : 'More Information About'}
                             </h2>
-                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
                                 {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : locale === 'ar' ? 'اتصل بفريق خبرائنا للحصول على معلومات مفصلة أو طلب عرض سعر لهذا المنتج' : 'Contact our expert team for detailed information or to request a quote for this product'}
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
@@ -1358,7 +1529,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     href={`/${locale}/fiyat-teklifi/`}
                                     className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
-                                    <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
+                                    <span>{tDetail('labels.requestQuote') || tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
                                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                                 </Link>
                                 <Link

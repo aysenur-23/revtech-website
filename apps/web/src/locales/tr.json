@@ -1,0 +1,1194 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünlerimiz",
+    "solutions": "Çözümlerimiz",
+    "technology": "Teknoloji",
+    "services": "Hizmetlerimiz",
+    "corporate": "Kurumsal",
+    "contact": "İletişim",
+    "quote": "Teklif Al",
+    "gesInstallation": "GES Kurulumu",
+    "industrialInstallation": "Endüstriyel Kurulum",
+    "languageSelection": "Dil Seçimi",
+    "menuOpen": "Menüyü Aç",
+    "menuClose": "Menüyü Kapat",
+    "expand": "Aç",
+    "collapse": "Kapat"
+  },
+  "hero": {
+    "title": "Enerjiyi",
+    "subtitle": "Yeniden Tanımlıyoruz",
+    "description": "Güçlü, dayanıklı ve özgür enerji depolama çözümlerinde yeni standartlar belirliyoruz.",
+    "cta": "Ürünlerimizi İncele",
+    "ctaSecondary": "Teklif Al"
+  },
+  "mission": {
+    "title": "Güçlü, Dayanıklı, Özgür",
+    "subtitle": "— enerjiyi yeniden tanımlıyoruz.",
+    "cta": "KURUMSAL"
+  },
+  "products": {
+    "categories": {
+      "title": "Ürün Kategorilerimiz",
+      "subtitle": "Geniş ürün yelpazemizle her ihtiyaca uygun enerji depolama çözümleri sunuyoruz."
+    },
+    "portablePower": {
+      "title": "Taşınabilir Güç Paketleri",
+      "subtitle": "Kamp ve acil durumlar için kompakt çözümler",
+      "description": "Hafif ve taşınabilir tasarımı ile her yerde güvenilir enerji. Kamp ve acil durumlar için ideal çözümler."
+    },
+    "vehiclePower": {
+      "title": "Araç Tipi Güç Paketleri",
+      "subtitle": "Araçlarda kullanım için özel tasarım sistemler",
+      "description": "Araç entegrasyonu için özel olarak tasarlanmış güçlü sistemler. Yüksek kapasite ve dayanıklı yapı."
+    },
+    "cabinPower": {
+      "title": "Kabin Tipi Güç Paketleri",
+      "subtitle": "Sabit kurulum için yüksek kapasiteli sistemler",
+      "description": "Endüstriyel kullanım için tasarlanmış sabit kurulum sistemleri. Yüksek kapasite ve sürekli güç."
+    },
+    "gesProducts": {
+      "title": "Ges Tipi Ürünler",
+      "subtitle": "Güneş enerjisi sistemleri ve entegrasyon çözümleri",
+      "description": "Güneş enerjisi sistemleri ile entegre edilmiş yenilikçi enerji depolama çözümleri. Sürdürülebilir ve çevre dostu teknolojiler."
+    },
+    "solarInstallation": {
+      "title": "Güneş Paneli Kurulumu",
+      "subtitle": "Uzman ekibimizle anahtar teslim çözümler",
+      "description": "Profesyonel güneş paneli kurulum hizmetleri. Enerji bağımsızlığınızı bizimle sağlayın."
+    },
+    "industrialInstallation": {
+      "title": "Endüstriyel Enerji Depolama Sistemleri Kurulumu",
+      "subtitle": "Büyük ölçekli endüstriyel tesisler için yüksek kapasiteli sistemler.",
+      "description": "Endüstriyel tesisleriniz için SCADA entegrasyonu ve uzaktan izleme ile endüstriyel standartlarda enerji depolama çözümleri."
+    },
+    "charging": {
+      "title": "Şarj ve Enerji İstasyonları",
+      "subtitle": "Hızlı şarj ve enerji istasyonu çözümleri"
+    },
+    "learnMore": "İncele"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Enerji depolama çözümlerinde öncü",
+    "description": "ReviumTech olarak, enerji depolama teknolojilerinde yenilikçi çözümler sunuyoruz. Modüler ve ölçeklenebilir tasarımımızla her ihtiyaca uygun sistemler geliştiriyoruz.",
+    "stats": {
+      "projects": "Proje",
+      "delivered": "Teslim",
+      "satisfaction": "Memnuniyet"
+    },
+    "features": {
+      "sustainable": {
+        "title": "Sürdürülebilir",
+        "description": "Çevre dostu teknolojiler"
+      },
+      "innovative": {
+        "title": "Yenilikçi",
+        "description": "Gelişmiş batarya sistemleri"
+      },
+      "reliable": {
+        "title": "Güvenilir",
+        "description": "Farklı iklimlerde test edilmiş"
+      }
+    },
+    "achievements": [
+      "Yenilikçi batarya depolama teknolojileri",
+      "Modüler ve ölçeklenebilir tasarım",
+      "Uzun ömürlü ve dayanıklı yapı",
+      "Kolay kurulum ve bakım"
+    ],
+    "cta": {
+      "text": "Daha fazla bilgi",
+      "button": "Detayları İncele"
+    }
+  },
+  "productPage": {
+    "features": {
+      "title": "Özellikler",
+      "description": "ürününün teknik özellikleri, özellikleri ve avantajları"
+    },
+    "applications": {
+      "title": "Kullanım Alanları",
+      "description": "ürününün ideal kullanım alanları"
+    },
+    "whyChoose": {
+      "title": "Neden Revium?",
+      "description": "ürününü seçmeniz için güçlü nedenler",
+      "experience": "Güvenilir Teknoloji",
+      "experienceDesc": "En son teknoloji ve güvenilir çözümlerle donatılmış ürünler",
+      "customers": "Yüksek Performans",
+      "customersDesc": "Uzun ömürlü ve yüksek verimlilikte enerji depolama çözümleri",
+      "quality": "Global Kalite",
+      "qualityDesc": "Uluslararası standartlarda kalite ve sertifikasyonlar",
+      "portable": {
+        "lightweight": "Hafif ve Taşınabilir",
+        "lightweightDesc": "Kompakt tasarımı ile her yere kolayca taşınabilir",
+        "fastCharge": "Hızlı Şarj",
+        "fastChargeDesc": "Güneş enerjisi ile hızlı şarj imkanı",
+        "versatile": "Çok Amaçlı Kullanım",
+        "versatileDesc": "Kamp, acil durum ve günlük kullanım için ideal"
+      },
+      "ges": {
+        "sustainable": "Sürdürülebilir Enerji",
+        "sustainableDesc": "Temiz ve yenilenebilir enerji kaynakları ile çevre dostu çözümler",
+        "efficiency": "Yüksek Verimlilik",
+        "efficiencyDesc": "Gelişmiş teknoloji ile maksimum enerji verimliliği",
+        "longevity": "Uzun Ömür",
+        "longevityDesc": "Dayanıklı yapı ve uzun ömürlü batarya teknolojisi"
+      },
+      "industrial": {
+        "highCapacity": "Yüksek Kapasite",
+        "highCapacityDesc": "Endüstriyel ihtiyaçlara uygun yüksek kapasiteli sistemler",
+        "reliable": "Güvenilir Performans",
+        "reliableDesc": "Kesintisiz enerji sağlayan güvenilir sistemler",
+        "support": "7/24 Destek",
+        "supportDesc": "Sürekli izleme ve teknik destek hizmeti"
+      },
+      "cabin": {
+        "fixed": "Sabit Kurulum",
+        "fixedDesc": "Endüstriyel tesisler için optimize edilmiş sabit kurulum",
+        "powerful": "Güçlü Performans",
+        "powerfulDesc": "Yüksek çıkış gücü ile kritik sistemler için ideal",
+        "durable": "Dayanıklı Yapı",
+        "durableDesc": "Zorlu koşullara dayanıklı endüstriyel kalite"
+      }
+    },
+    "cta": {
+      "title": "Hakkında Daha Fazla Bilgi",
+      "description": "Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin",
+      "quoteButton": "Fiyat Teklifi Talep Et",
+      "consultationButton": "Uzman Danışmanlığı"
+    }
+  },
+  "ctaSection": {
+    "title": "Enerji Geleceğinizi",
+    "titleHighlight": "Şekillendirin",
+    "description": "Revium ile sürdürülebilir enerji çözümlerine geçin. Danışmanlık için hemen iletişime geçin ve enerji tasarrufuna başlayın.",
+    "quoteButton": "Teklif Talep Et",
+    "productsButton": "Ürünlerimizi İncele"
+  },
+  "categoryPage": {
+    "productsTitle": "Ürünlerimiz",
+    "productsDescription": "Farklı ihtiyaçlara yönelik seçenekleri",
+    "featuresTitle": "Özellikler",
+    "whyTitle": "Neden",
+    "whyDescription": "çözümlerinin sunduğu avantajlar",
+    "applicationsTitle": "Kullanım Alanları",
+    "applicationsDescription": "çözümlerinin ideal kullanım alanları",
+    "viewDetails": "Detayları Gör",
+    "freeConsultation": "Ücretsiz Danışmanlık Talep Et"
+  },
+  "footer": {
+    "products": "Ürünlerimiz",
+    "services": "Hizmetlerimiz",
+    "quickAccess": "Hızlı Erişim",
+    "portablePower": "Taşınabilir Güç Paketleri",
+    "cabinPower": "Kabin Tipi Güç Paketleri",
+    "vehiclePower": "Araç Tipi Güç Paketleri",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "addressLine1": "Fevzi Çakmak Mahallesi Milenyum Caddesi No:81",
+    "addressLine2": "Karatay/KONYA",
+    "address": {
+      "neighborhood": "Fevzi Çakmak Mahallesi",
+      "street": "Milenyum Caddesi",
+      "number": "No:",
+      "city": "Karatay/KONYA"
+    },
+    "getDirections": "Yol Tarifi Al"
+  },
+  "features": {
+    "whyTitle": "Neden",
+    "whyTitleHighlight": "Revium?",
+    "subtitle": "Güçlü, dayanıklı ve özgür enerji çözümleri için doğru tercih",
+    "highPerformance": "Yüksek Performans",
+    "highPerformanceDesc": "LiFePO₄ teknolojisi ile 4000+ döngü ömrü ve maksimum güvenilirlik",
+    "durableDesign": "Dayanıklı Tasarım",
+    "durableDesignDesc": "IP54 koruma sınıfı ile zorlu koşullarda bile mükemmel performans",
+    "quickSolution": "Hızlı Çözüm",
+    "quickSolutionDesc": "Plug-and-play kurulum ile dakikalar içinde kullanıma hazır sistemler"
+  },
+  "megaMenu": {
+    "categories": "KATEGORİLER",
+    "allProducts": "Tüm Ürünler",
+    "allServices": "Tüm Hizmetler",
+    "portablePowerPacks": "TAŞINABİLİR GÜÇ PAKETLERİ",
+    "portablePowerPacksDesc": "Kamp ve acil durumlar için kompakt çözümler",
+    "cabinPowerPacks": "KABİN TİPİ GÜÇ PAKETLERİ",
+    "cabinPowerPacksDesc": "Sabit kurulum için yüksek kapasiteli sistemler",
+    "vehiclePowerPacks": "ARAÇ TİPİ GÜÇ PAKETLERİ",
+    "vehiclePowerPacksDesc": "Bir aracın tamamı olabildiğince güç kaynağı dolu sistemler",
+    "gesProducts": "GES TİPİ ÜRÜNLER",
+    "gesProductsDesc": "Güneş enerjisi sistemleri ve entegrasyon çözümleri",
+    "gesInstallation": "GES KURULUMU",
+    "gesInstallationDesc": "Güneş enerjisi santrali kurulumu ve entegrasyon hizmetleri",
+    "industrialInstallation": "ENDÜSTRİYEL KURULUM",
+    "industrialInstallationDesc": "Büyük ölçekli enerji depolama sistemleri kurulumu ve entegrasyonu"
+  },
+  "menuData": {
+    "portablePowerPacks": "Taşınabilir Güç Paketleri",
+    "cabinPowerPacks": "Kabin Tipi Güç Paketleri",
+    "vehiclePowerPacks": "Araç Tipi Güç Paketleri",
+    "powerLayer": "Güç Katmanı",
+    "powerCabinet": "Güç Kabini",
+    "hiluxPowerPack": "Hilux Güç Paketi",
+    "unimogPowerPack": "Savunma Sanayi UNIMOG Güç Paketi"
+  },
+  "gesPage": {
+    "heroTitle": "GES Kurulumu",
+    "heroDescription": "Güneş enerjisi santrallerinizi profesyonel ekibimizle hayata geçirin. Temiz enerji geleceğinize yatırım yapın.",
+    "whyTitle": "Neden",
+    "whyTitleHighlight": "Revium?",
+    "whyDescription": "GES kurulumunda uzman ekibimiz ve kaliteli hizmet anlayışımızla fark yaratıyoruz",
+    "features": {
+      "projectDesign": "Proje Tasarımı ve Planlama",
+      "projectDesignDesc": "Sahaya özel detaylı analiz ve en uygun sistem tasarımı",
+      "professionalInstallation": "Profesyonel Kurulum",
+      "professionalInstallationDesc": "Uzman ekip tarafından güvenli ve kaliteli kurulum",
+      "systemIntegration": "Sistem Entegrasyonu",
+      "systemIntegrationDesc": "Mevcut elektrik altyapısı ile uyumlu entegrasyon",
+      "testing": "Test ve Devreye Alma",
+      "testingDesc": "Kapsamlı testler ve güvenli devreye alma süreci"
+    },
+    "processTitle": "Kurulum",
+    "processTitleHighlight": "Süreci",
+    "processDescription": "GES kurulumunuzu adım adım nasıl gerçekleştiriyoruz?",
+    "process": {
+      "siteAnalysis": "Saha Analizi",
+      "siteAnalysisDesc": "Güneş enerjisi potansiyeli ve teknik uygunluk analizi",
+      "systemDesign": "Sistem Tasarımı",
+      "systemDesignDesc": "İhtiyaca uygun optimal sistem tasarımı ve planlama",
+      "materialSupply": "Malzeme Tedariki",
+      "materialSupplyDesc": "Kaliteli ve sertifikalı malzemelerin temin edilmesi",
+      "installation": "Kurulum",
+      "installationDesc": "Profesyonel ekip tarafından güvenli kurulum",
+      "testing": "Test ve Devreye Alma",
+      "testingDesc": "Kapsamlı testler ve sistemin devreye alınması",
+      "maintenance": "Bakım ve Destek",
+      "maintenanceDesc": "Sürekli bakım ve 7/24 teknik destek hizmeti"
+    },
+    "ctaTitle": "GES Projenizi",
+    "ctaTitleHighlight": "Hayata Geçirin",
+    "ctaDescription": "Uzman ekibimizle iletişime geçin ve danışmanlık alın. GES projenizi en uygun maliyetle hayata geçirelim.",
+    "otherServices": "Diğer Hizmetler"
+  },
+  "industrialPage": {
+    "heroTitle": "Endüstriyel Sistem Kurulumu",
+    "heroDescription": "Büyük ölçekli endüstriyel tesisler için enerji depolama sistemleri kurulumu. Yüksek kapasiteli ve güvenilir çözümler.",
+    "featuresTitle": "Hizmet",
+    "featuresTitleHighlight": "Özellikleri",
+    "featuresDescription": "Endüstriyel kurulumda sunduğumuz kapsamlı hizmetler",
+    "features": {
+      "systemDesign": "Endüstriyel Kapasiteli Sistem Tasarımı",
+      "systemDesignDesc": "Büyük ölçekli tesisler için özel tasarım ve planlama",
+      "highPowerBattery": "Yüksek Güçlü Batarya Sistemleri",
+      "highPowerBatteryDesc": "Endüstriyel ihtiyaçlara uygun yüksek kapasiteli sistemler",
+      "scadaIntegration": "SCADA Sistemi Entegrasyonu",
+      "scadaIntegrationDesc": "Uzaktan izleme ve kontrol sistemleri entegrasyonu"
+    },
+    "processTitle": "Kurulum",
+    "processTitleHighlight": "Süreci",
+    "processDescription": "Endüstriyel kurulumda izlediğimiz adım adım süreç",
+    "process": {
+      "needsAnalysis": "İhtiyaç Analizi",
+      "needsAnalysisDesc": "Endüstriyel tesisin enerji ihtiyaçlarının detaylı analizi",
+      "systemDesign": "Sistem Tasarımı",
+      "systemDesignDesc": "Özel endüstriyel sistem tasarımı ve mühendislik",
+      "materialSupply": "Malzeme Tedariki",
+      "materialSupplyDesc": "Endüstriyel kalitede malzemelerin temin edilmesi",
+      "installation": "Kurulum ve Entegrasyon",
+      "installationDesc": "Profesyonel kurulum ve mevcut sistemlerle entegrasyon",
+      "testing": "Test ve Devreye Alma",
+      "testingDesc": "Kapsamlı testler ve güvenli devreye alma",
+      "monitoring": "İzleme ve Bakım",
+      "monitoringDesc": "Sürekli izleme ve periyodik bakım hizmetleri"
+    },
+    "ctaTitle": "Endüstriyel Projenizi",
+    "ctaTitleHighlight": "Hayata Geçirin",
+    "ctaDescription": "Uzman ekibimizle iletişime geçin ve danışmanlık alın. Endüstriyel enerji depolama projenizi en uygun maliyetle hayata geçirelim.",
+    "otherServices": "Diğer Hizmetler"
+  },
+  "productsPage": {
+    "heroTitle": "Enerji",
+    "heroSubtitle": "Ürünlerimiz",
+    "heroDescription": "Revium'in sunduğu tüm enerji depolama çözümlerini keşfedin. Her ihtiyaca uygun, yüksek kaliteli ve güvenilir ürünler.",
+    "allProductsTitle": "Enerji Depolama Çözümlerimiz",
+    "allProductsDescription": "Farklı kategorilerdeki tüm ürünlerimizi inceleyin ve ihtiyacınıza uygun olanı seçin",
+    "capacity": "Kapasite",
+    "power": "Güç",
+    "mppt": "MPPT",
+    "cycles": "Döngü",
+    "viewDetails": "Detayları İncele",
+    "whyTitle": "Neden Revium?",
+    "whyDescription": "Enerji depolama çözümlerimizde sunduğumuz avantajlar",
+    "highCapacity": "Yüksek Kapasite",
+    "highCapacityDesc": "Uzun süreli enerji depolama için optimize edilmiş batarya sistemleri",
+    "safeUsage": "Güvenli Kullanım",
+    "safeUsageDesc": "Uluslararası standartlarda güvenlik sertifikaları ile korumalı",
+    "ecoFriendly": "Çevre Dostu",
+    "ecoFriendlyDesc": "Sürdürülebilir enerji çözümleri ile doğaya saygılı teknoloji",
+    "ctaTitle": "Size Uygun Çözümü",
+    "ctaTitleHighlight": "Bulalım",
+    "ctaDescription": "Enerji ihtiyaçlarınıza uygun ürünü belirlemek için uzman ekibimizle iletişime geçin",
+    "consultationButton": "Danışmanlık Talep Et",
+    "quoteButton": "Teklif Talep Et"
+  },
+  "servicesPage": {
+    "heroTitle": "Enerji",
+    "heroSubtitle": "Hizmetlerimiz",
+    "heroDescription": "Revium, enerji depolama sistemlerinizin kurulumundan bakımına kadar tüm süreçlerde profesyonel hizmet sunar.",
+    "viewDetails": "Detayları Gör",
+    "ctaTitle": "Projenizi Hayata Geçirelim",
+    "ctaDescription": "Enerji ihtiyaçlarınıza uygun çözümü belirlemek için uzman ekibimizle iletişime geçin",
+    "freeConsultation": "Ücretsiz Danışmanlık Talep Et",
+    "viewProducts": "Ürünlerimizi İncele",
+    "gesFeatures": {
+      "design": "Proje tasarımı ve planlama",
+      "materials": "Malzeme tedariki",
+      "installation": "Profesyonel kurulum",
+      "integration": "Sistem entegrasyonu",
+      "testing": "Test ve devreye alma",
+      "maintenance": "Bakım ve onarım"
+    },
+    "industrialFeatures": {
+      "design": "Endüstriyel kapasiteli sistem tasarımı",
+      "battery": "Yüksek güçlü batarya sistemleri",
+      "connections": "Orta gerilim bağlantıları",
+      "scada": "SCADA sistemi entegrasyonu",
+      "monitoring": "Uzaktan izleme ve kontrol"
+    }
+  },
+  "corporatePage": {
+    "heroTitle": "Kurumsal",
+    "heroSubtitle": "Kimliğimiz",
+    "heroDescription": "Revium olarak enerji depolama alanında öncü çözümler sunuyor, sürdürülebilir gelecek için çalışıyoruz.",
+    "aboutTitle": "Hakkımızda",
+    "aboutDesc1": "Revium, sürdürülebilir bir geleceği şekillendirmek amacıyla yenilenebilir enerji depolama çözümleri sunmaktadır. Gelişmiş depolama teknolojilerimiz, modern mühendislik yaklaşımımız ve deneyimli ekibimiz ile hem işletmelerin hem de bireylerin sürdürülebilir enerjiye kolayca erişimini sağlamaktayız.",
+    "aboutDesc2": "Yenilenebilir enerji kaynaklarını modern depolama sistemleriyle entegre eden Revium, karbon ayak izinin azaltılması ve daha yaşanabilir bir dünya oluşturulması için çalışmalarını sürdürmektedir. Amacımız; bugünün ve yarının enerji ihtiyaçlarını karşılayacak, sürdürülebilir bir ekosistemin oluşumuna katkı sağlamaktır.",
+    "viewProducts": "Ürünlerimizi İncele",
+    "contactUs": "İletişime Geç",
+    "missionVisionTitle": "Misyonumuz & Vizyonumuz",
+    "missionVisionDescription": "Enerji depolama alanında öncü olmak ve sürdürülebilir gelecek için çalışıyoruz",
+    "missionTitle": "Misyonumuz",
+    "missionDescription": "Toplulukları ve endüstrileri temiz, verimli ve uygun maliyetli enerji çözümleriyle güçlendirmek. Yenilenebilir enerji kaynaklarının etkin kullanımını sağlayarak, çevresel sürdürülebilirliğe katkıda bulunmak ve müşterilerimize güvenilir enerji depolama çözümleri sunmaktır.",
+    "visionTitle": "Vizyonumuz",
+    "visionDescription": "Enerji depolama teknolojilerinde dünya çapında tanınan, inovatif çözümleri ile sürdürülebilir enerji geleceğinin öncü şirketi olmak. Yenilikçi batarya depolama ve yenilenebilir enerji çözümleriyle sürdürülebilir enerjiye geçişi hızlandırmak.",
+    "valuesTitle": "Değerlerimiz",
+    "valuesDescription": "Çalışma prensiplerimizi ve değerlerimizi oluşturan temel unsurlar",
+    "sustainability": "Sürdürülebilirlik",
+    "sustainabilityDesc": "Çevre dostu ve sürdürülebilir çözümler sunarak karbon ayak izini azaltıyoruz.",
+    "innovation": "İnovasyon",
+    "innovationDesc": "Yenilikçi batarya depolama teknolojileri ve modüler tasarımlarla öncü çözümler geliştiriyoruz.",
+    "customerFocus": "Müşteri Odaklılık",
+    "customerFocusDesc": "Müşterilerimizin ihtiyaçlarına özel çözümler sunarak memnuniyeti ön planda tutuyoruz.",
+    "globalReach": "Küresel Erişim",
+    "globalReachDesc": "Dünya çapında güvenilir enerji çözümleri sunuyoruz.",
+    "reliability": "Güvenilirlik",
+    "reliabilityDesc": "Her koşulda güvenilirlik sağlayan sistemler geliştiriyoruz.",
+    "excellence": "Mükemmeliyet",
+    "excellenceDesc": "Modüler ve ölçeklenebilir tasarım ile en yüksek kalitede hizmet ve ürünler sunuyoruz.",
+    "technologyTitle": "Teknoloji & İnovasyon",
+    "technologyDescription": "Enerji depolama teknolojilerinde öncü çözümlerimiz",
+    "lifepo4Tech": "LiFePO₄ Teknolojisi",
+    "lifepo4TechDesc": "Güvenli, uzun ömürlü ve çevre dostu lityum demir fosfat batarya teknolojisi",
+    "smartBMS": "Akıllı BMS",
+    "smartBMSDesc": "Gelişmiş batarya yönetim sistemi ile optimal performans ve güvenlik",
+    "modularDesign": "Modüler Tasarım",
+    "modularDesignDesc": "Ölçeklenebilir ve esnek sistem mimarisi ile her ihtiyaca uygun çözümler",
+    "ctaTitle": "Bizimle",
+    "ctaTitleHighlight": "Çalışın",
+    "ctaDescription": "Sürdürülebilir enerji çözümleri için uzman ekibimizle iletişime geçin",
+    "getQuote": "Fiyat Teklifi Al"
+  },
+  "common": {
+    "category": "Kategori",
+    "ges": "Güneş Enerjisi Santrali",
+    "gesAbbreviation": "GES"
+  },
+  "contactPage": {
+    "heroTitle": "İletişime",
+    "heroSubtitle": "Geçin",
+    "heroDescription": "Enerji çözümleriniz için uzman ekibimizle iletişime geçin. Size en uygun çözümü sunmak için buradayız.",
+    "getQuote": "Teklif Al",
+    "sendMessage": "Mesaj Gönder",
+    "formTitle": "Bizimle",
+    "formTitleHighlight": "İletişime Geçin",
+    "formDescription": "Enerji ihtiyaçlarınız için uzman ekibimizle iletişime geçin. Size en uygun çözümü sunmak için buradayız.",
+    "sendMessageTitle": "Mesaj Gönderin",
+    "sendMessageSubtitle": "Sorularınızı bize iletin, en kısa sürede yanıtlayalım",
+    "fullName": "Ad Soyad",
+    "email": "E-posta",
+    "emailPlaceholder": "ornek@email.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "subject": "Konu",
+    "message": "Mesaj",
+    "selectSubject": "Konu seçiniz",
+    "generalInfo": "Genel Bilgi",
+    "quoteRequest": "Teklif Talebi",
+    "technicalSupport": "Teknik Destek",
+    "sales": "Satış",
+    "serviceRequest": "Hizmet Talebi",
+    "complaint": "Şikayet/Öneri",
+    "messagePlaceholder": "Mesajınızı detaylı bir şekilde yazın...",
+    "sending": "Gönderiliyor...",
+    "sendButton": "Mesaj Gönder",
+    "successMessage": "Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
+    "errorMessage": "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "quickContact": "Hızlı İletişim",
+    "phoneLabel": "Telefon",
+    "phoneNumber": "+90 (551) 829-1613",
+    "emailLabel": "E-posta",
+    "emailAddress": "info@reviumtech.com",
+    "addressLabel": "Adres",
+    "workingHours": "Çalışma Saatleri",
+    "weekdays": "Pzt-Cum: 09:00-18:00",
+    "saturday": "Cmt: 09:00-13:00",
+    "sunday": "Pazar: Kapalı",
+    "contactInfoTitle": "İletişim",
+    "contactInfoTitleHighlight": "Bilgileri",
+    "contactInfoDescription": "Size ulaşabileceğiniz tüm iletişim kanalları"
+  },
+  "quotePage": {
+    "heroTitle": "Fiyat Teklifi Talep Edin",
+    "heroDescription": "Enerji ihtiyaçlarınıza uygun çözüm için detaylı fiyat teklifi alın. Uzman ekibimiz size en uygun seçenekleri sunacak.",
+    "formTitle": "Teklif Formu",
+    "personalInfo": "Kişisel Bilgiler",
+    "projectInfo": "Proje Bilgileri",
+    "technicalRequirements": "Teknik Gereksinimler",
+    "additionalInfo": "Ek Bilgiler",
+    "name": "Ad Soyad",
+    "namePlaceholder": "Adınız ve soyadınız",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "company": "Şirket",
+    "companyPlaceholder": "Şirket adı (opsiyonel)",
+    "productCategory": "Ürün Kategorisi",
+    "powerNeed": "Güç İhtiyacı",
+    "application": "Kullanım Alanı",
+    "budget": "Bütçe Aralığı",
+    "select": "Seçiniz",
+    "other": "Diğer",
+    "requirements": "Özel Gereksinimler",
+    "requirementsPlaceholder": "Projeniz için özel gereksinimlerinizi belirtin...",
+    "installationDate": "Kurulum Tarihi",
+    "messageLabel": "Mesaj",
+    "messagePlaceholder": "Eklemek istediğiniz bilgiler...",
+    "productOtherPlaceholder": "Lütfen ürün kategorisini belirtiniz",
+    "powerOtherPlaceholder": "Lütfen güç ihtiyacınızı belirtiniz (örn: 150 kW)",
+    "applicationOtherPlaceholder": "Lütfen kullanım alanınızı belirtiniz",
+    "budgetOtherPlaceholder": "Lütfen bütçe aralığınızı belirtiniz (örn: ₺500.000+)",
+    "sending": "Gönderiliyor...",
+    "sendButton": "Teklif Talebini Gönder",
+    "successMessage": "Teklif talebiniz başarıyla gönderildi! 24 saat içinde size dönüş yapacağız.",
+    "errorMessage": "Teklif talebi gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "quickResponse": "Hızlı Yanıt",
+    "quickResponseDesc": "24 saat içinde size geri dönüş yapıyoruz",
+    "detailedQuote": "Detaylı Teklif",
+    "detailedQuoteDesc": "Kapsamlı teknik ve mali analiz",
+    "expertConsultation": "Uzman Danışmanlık",
+    "expertConsultationDesc": "Alanında uzman ekibimizden destek",
+    "productTypes": {
+      "portable": "Taşınabilir Güç Paketleri",
+      "vehicle": "Araç Tipi Güç Paketleri",
+      "cabin": "Kabin Tipi Güç Paketleri",
+      "ges": "GES TİPİ ÜRÜNLER",
+      "solar": "Solar Batarya Paketleri",
+      "industrial": "Endüstriyel Sistemler",
+      "custom": "Özel Çözüm",
+      "other": "Diğer"
+    },
+    "applications": {
+      "residential": "Ev Kullanımı",
+      "commercial": "Ticari Kullanım",
+      "industrial": "Endüstriyel Kullanım",
+      "vehicle": "Araç Uygulamaları",
+      "offGrid": "Off-Grid Sistemler",
+      "emergency": "Acil Durum Sistemleri"
+    },
+    "budgetRanges": {
+      "range1": "₺0 - ₺50.000",
+      "range2": "₺50.000 - ₺100.000",
+      "range3": "₺100.000 - ₺250.000",
+      "range4": "₺250.000+"
+    }
+  },
+  "customSolutions": {
+    "title": "Size Özel Çözümler",
+    "description": "Her projenin kendine özgü gereksinimleri vardır. Uzman ekibimizle birlikte ihtiyaçlarınıza en uygun enerji çözümlerini tasarlıyor ve hayata geçiriyoruz.",
+    "technicalConsulting": "Teknik Danışmanlık",
+    "technicalConsultingDesc": "İhtiyaçlarınıza özel enerji çözümleri için uzman danışmanlık hizmeti.",
+    "technicalConsultingFeatures": [
+      "İhtiyaç analizi",
+      "Teknik değerlendirme",
+      "Çözüm önerileri"
+    ],
+    "customDesign": "Özel Tasarım",
+    "customDesignDesc": "Benzersiz gereksinimleriniz için özel olarak tasarlanmış sistemler.",
+    "customDesignFeatures": [
+      "Özel mühendislik",
+      "Prototip geliştirme",
+      "Test ve doğrulama"
+    ],
+    "projectManagement": "Proje Yönetimi",
+    "projectManagementDesc": "Kurulumdan teslime kadar tüm süreçlerin profesyonel yönetimi.",
+    "projectManagementFeatures": [
+      "Proje planlama",
+      "Zaman yönetimi",
+      "Kalite kontrol"
+    ],
+    "ongoingSupport": "Sürekli Destek",
+    "ongoingSupportDesc": "Sisteminizin optimal performansı için sürekli bakım ve destek.",
+    "ongoingSupportFeatures": [
+      "Periyodik bakım",
+      "Yedek parça temini"
+    ],
+    "consultationButton": "Danışmanlık Talep Et"
+  },
+  "featuredProject": {
+    "badge": "Öne Çıkan Proje",
+    "title": "2.7 kWh Çanta Tipi Güç Depolama Sistemi",
+    "description": "Taşınabilir ve kompakt tasarımı ile her yerde kullanılabilen 2.7 kWh kapasiteli güç depolama sistemi. Kolay taşıma ve hızlı kurulum imkanı sunar.",
+    "capacity2_7": "2.7 kWh Kapasite",
+    "bagDesign": "Çanta Tasarım",
+    "portable": "Taşınabilir",
+    "quickInstall": "Hızlı Kurulum",
+    "energyCapacity": "Enerji Kapasitesi",
+    "weight": "Ağırlık",
+    "chargeFeature": "Şarj Özelliği",
+    "quickCharge": "Hızlı Şarj",
+    "altText": "2.7 kWh Çanta Tipi Güç Depolama Sistemi"
+  },
+  "portablePower": {
+    "title": "Revium 5,4 kWh Güç Paketi",
+    "subtitle": "Yüksek Kapasiteli Taşınabilir Enerji Çözümü",
+    "description": "5.4 kWh kapasite ve 3000W çıkış gücü ile kritik yükler, acil durumlar ve profesyonel uygulamalar için güvenilir enerji sağlar.",
+    "capacity5_4": "5.4 kWh Kapasite",
+    "capacity5_4Desc": "LiFePO₄ teknolojisi ile yüksek enerji yoğunluğu",
+    "output2000": "3000W Çıkış",
+    "output2000Desc": "Saf sinüs dalga, 20ms UPS geçiş",
+    "pv1500": "1500W PV Şarj",
+    "pv1500Desc": "Güneş enerjisi ile hızlı şarj",
+    "protection": "Kapsamlı Koruma",
+    "protectionDesc": "Aşırı yük, akım, termal koruma",
+    "spec5_4": "5.4 kWh",
+    "spec2000": "3000W",
+    "specLiFePO4": "LiFePO₄",
+    "spec4000": "4000+ Döngü",
+    "detailsButton": "5.4 kWh 3000W Detayları",
+    "detailsButtonMobile": "Detayları Gör",
+    "quoteButton": "Teklif Al",
+    "altText": "Revium 5.4 kWh 3000W Güç Paketi"
+  },
+  "productDetails": {
+    "revium-2-7-kwh": {
+      "categoryTitle": "Saha Tipi Taşınabilir Güç Ünitesi",
+      "title": "2.7 kWh Taşınabilir Güç Paketi",
+      "description": "2.7 kWh kapasiteli taşınabilir güç paketi. Kamp ve acil durumlar için ideal taşınabilir enerji çözümü. 2 kW saf sinüs çıkışı ve 700 W MPPT ile güneş entegrasyonu.",
+      "features": {
+        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 550 × 391 × 317 mm",
+        "weight": "Ağırlık: 33 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "2 kW saf sinüs çıkış",
+        "solarIntegration": "700 W MPPT ile güneş entegrasyonu",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "compactDesign": "Kompakt tasarım",
+        "safety": "Güvenlik: Aşırı yük ve kısa devre koruması"
+      },
+      "applications": {
+        "camping": "Kamp aktiviteleri",
+        "emergency": "Acil durumlar",
+        "travel": "Seyahat",
+        "outdoor": "Dış mekan etkinlikleri",
+        "tools": "Kırıcı delici aletler",
+        "electronics": "Elektronik cihazlar"
+      }
+    },
+    "revium-2-7-kwh-bag": {
+      "categoryTitle": "Taşınabilir Enerji Depolama",
+      "title": "2.7 kWh Taşınabilir Güç Paketi",
+      "description": "Model B tasarımı ile 2.7 kWh kapasiteli taşınabilir güç paketi. 2 kW saf sinüs çıkışı ve 700 W MPPT ile güneş entegrasyonu.",
+      "features": {
+        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 550 × 391 × 317 mm",
+        "weight": "Ağırlık: 33 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "2 kW saf sinüs çıkış",
+        "solarIntegration": "700 W MPPT ile güneş entegrasyonu",
+        "modelB": "Model B tasarımı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "quickCharge": "Hızlı şarj desteği"
+      },
+      "applications": {
+        "professional": "Profesyonel kullanım",
+        "industrial": "Endüstriyel uygulamalar",
+        "emergency": "Acil durum sistemleri",
+        "mobileOffice": "Mobil ofisler",
+        "smallBusiness": "Küçük işletmeler",
+        "electronics": "Elektronik cihazlar"
+      }
+    },
+    "revium-5-4-kwh": {
+      "categoryTitle": "Yüksek Kapasiteli Taşınabilir Güç",
+      "title": "5.4 kWh Taşınabilir Güç Paketi",
+      "description": "Büyük kasa tasarımı ile 5.4 kWh kapasiteli taşınabilir güç paketi. 3 kW saf sinüs çıkışı ve 1.5 kW PV ile hızlı dolum.",
+      "features": {
+        "capacity": "Kapasite: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 220 VAC, 3000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 1500 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 800 × 458 × 910 mm",
+        "weight": "Ağırlık: 60 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "3 kW saf sinüs çıkış",
+        "quickCharge": "1.5 kW PV ile hızlı dolum",
+        "largeCase": "Büyük kasa tasarımı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "quickChargeSupport": "Hızlı şarj desteği"
+      },
+      "applications": {
+        "mediumHomes": "Orta ölçekli evler",
+        "smallBusiness": "Küçük işletmeler",
+        "camping": "Kamp ve karavan",
+        "emergency": "Acil durum yedeklemesi",
+        "outdoor": "Dış mekan etkinlikleri",
+        "mobileOffice": "Mobil ofisler"
+      }
+    },
+    "revium-power-cabinet": {
+      "categoryTitle": "Endüstriyel Enerji Depolama (Tek Kabin)",
+      "title": "Güç Kabini",
+      "description": "21.6 kWh Entegre Sistem - Sabit kurulum için tasarlanmış yüksek kapasiteli entegre güç kabini sistemi. 21.6 kWh enerji kapasitesi ve 5 kW çıkış gücü ile kritik altyapı sistemleri için güvenilir enerji çözümü.",
+      "features": {
+        "energyCapacity": "21.6 kWh enerji kapasitesi",
+        "outputPower": "5 kW çıkış gücü",
+        "nominalVoltage": "51.2 VDC nominal voltaj",
+        "dimensions": "600 × 500 × 1000 mm boyutlar",
+        "weight": "200 kg ağırlık",
+        "batteryTech": "Uzun ömürlü batarya teknolojisi",
+        "integrated": "Entegre sistem tasarımı",
+        "optimized": "Sabit kurulum için optimize edilmiş",
+        "highCapacity": "Yüksek kapasiteli enerji depolama",
+        "modular": "Modüler yapı",
+        "safe": "Güvenli operasyon",
+        "maintenance": "Kolay bakım ve servis"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "dataCenter": "Veri merkezleri",
+        "hospitals": "Hastaneler ve sağlık tesisleri",
+        "telecom": "Telekomünikasyon merkezleri",
+        "solar": "Güneş enerjisi santralleri",
+        "critical": "Kritik altyapı sistemleri"
+      }
+    },
+    "revium-power-layer": {
+      "categoryTitle": "Ölçeklenebilir Endüstriyel Batarya",
+      "title": "Güç Katmanı – Modüler Enerji Depolama Ünitesi",
+      "description": "Modüler tasarımı ile esnek enerji depolama çözümü. Katmanlı ölçeklenme ve aynı taban alanda kapasite artışı ile endüstriyel ve ticari uygulamalar için ideal çözüm.",
+      "features": {
+        "nominalVoltage": "Nominal Gerilim: 51.2 V DC",
+        "modularCapacity": "Modüler Kapasite: 105/210/315/420 Ah • 5.4/10.8/16.2/21.6 kWh",
+        "life": "Ömür: ≈4000 cycle",
+        "dimensions": "Boyutlar: 400 × 391 × 365/609/853/1097 mm",
+        "weight": "Ağırlık: 66/114/162/210 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "layered": "Katmanlı ölçeklenme",
+        "capacityIncrease": "Aynı taban alanda kapasite artışı",
+        "modular": "Modüler tasarım",
+        "industrial": "Endüstriyel kullanım",
+        "easyInstall": "Kolay kurulum",
+        "longLife": "Uzun ömürlü"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "cabin": "Kabin sistemleri",
+        "container": "Konteyner uygulamaları",
+        "mobileOffice": "Mobil ofisler",
+        "construction": "İnşaat sahaları",
+        "emergency": "Acil durum sistemleri"
+      }
+    },
+    "revium-gridpack": {
+      "categoryTitle": "Şebeke Ölçekli Enerji Depolama",
+      "title": "GridPack 100",
+      "description": "REVIUM GridPack 100, endüstriyel tesisler, savunma alanları, mobil enerji merkezleri ve afet bölgeleri için geliştirilmiş, yüksek kapasiteli enerji depolama ve yönetim sistemidir.",
+      "features": {
+        "capacity": "100 kWh Kapasite",
+        "inverter": "Entegre Inverter",
+        "bms": "Akıllı BMS",
+        "monitoring": "Uzaktan İzleme",
+        "battery": "LiFePO₄ Batarya",
+        "efficiency": "Yüksek Verimlilik"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "defense": "Savunma alanları",
+        "mobile": "Mobil enerji merkezleri",
+        "disaster": "Afet bölgeleri",
+        "critical": "Kritik altyapı sistemleri",
+        "offGrid": "Şebeke dışı sistemler"
+      }
+    },
+    "revium-pickup-power-pack": {
+      "name": "Pick Up Güç Paketi",
+      "categoryTitle": "Araç Üstü Mobil Enerji Sistemi",
+      "title": "Pick Up Güç Paketi",
+      "description": "Araç üstü (özellikle pickup/hilux tarzı araçlar için) entegrasyona uygun, yüksek kapasiteli mobil enerji depolama sistemidir.",
+      "features": {
+        "capacity": "Enerji: 60 - 100 kWh",
+        "output": "Çıkış Gücü (3 Faz): 3x10 kW (380 VAC)",
+        "integration": "Araç Uyumu: Hilux / Pick Up",
+        "protection": "Dalga Tipi: Saf Sinüs",
+        "vibration": "Titreşim Dayanımı",
+        "charging": "Batarya Ömrü: 6000 Çevrim"
+      },
+      "applications": {
+        "camping": "Kamp ve Karavan",
+        "mobileService": "Mobil Servis Araçları",
+        "emergency": "Acil Müdahale Araçları",
+        "fieldWork": "Dış Saha Çalışmaları",
+        "offRoad": "Off-Road Aktiviteleri"
+      }
+    },
+    "solar-voltwagon": {
+      "categoryTitle": "Mobil Güneş Enerjili Römork Sistem",
+      "title": "Solar VOLTWAGON",
+      "description": "REVIUM VoltWagon, enerjiye her yerde ulaşmak için tasarlanmış taşınabilir güneş enerjili mobil istasyondur.",
+      "applications": {
+        "vehicles": "Araç uygulamaları",
+        "mobile": "Mobil enerji sistemleri",
+        "camping": "Kamp ve karavan",
+        "emergency": "Acil durum araçları",
+        "commercial": "Ticari araçlar",
+        "offGrid": "Şebeke dışı sistemler"
+      }
+    },
+    "ges-street-lighting": {
+      "categoryTitle": "Güneş Enerjili Aydınlatma",
+      "title": "GES Sokak Aydınlatma Sistemi",
+      "description": "REVIUM Solar StreetLight, güneş enerjisiyle çalışan modern bir LED aydınlatma sistemidir.",
+      "applications": {
+        "streetLighting": "Sokak aydınlatması",
+        "parkLighting": "Park ve bahçe aydınlatması",
+        "pathwayLighting": "Yol aydınlatması",
+        "security": "Güvenlik aydınlatması",
+        "public": "Kamu alanları",
+        "residential": "Konut alanları"
+      }
+    },
+    "rSb2700d": {
+      "categoryTitle": "Taşınabilir Enerji Depolama",
+      "title": "2.7 kWh Taşınabilir Güç Paketi",
+      "description": "Dayanıklı tasarımı ile zorlu koşullarda kullanım için ideal 2.7 kWh taşınabilir güç paketi. Kompakt/sağlam gövde ve 2 kW saf sinüs çıkışı.",
+      "features": {
+        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 550 × 391 × 317 mm",
+        "weight": "Ağırlık: 33 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "compact": "Kompakt tasarım",
+        "sineOutput": "2 kW saf sinüs çıkış",
+        "durable": "Dayanıklı yapı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "quickCharge": "Hızlı şarj desteği"
+      },
+      "applications": {
+        "construction": "İnşaat sahaları",
+        "emergency": "Acil durumlar",
+        "travel": "Seyahat",
+        "outdoor": "Dış mekan etkinlikleri",
+        "smallBusiness": "Küçük işletmeler",
+        "mobileOffice": "Mobil ofisler"
+      }
+    },
+    "rP2700": {
+      "title": "2.7 kWh Taşınabilir Güç Paketi",
+      "description": "2.7 kWh kapasiteli taşınabilir güç paketi. Kamp ve acil durumlar için ideal taşınabilir enerji çözümü. 2 kW saf sinüs çıkışı ve 700 W MPPT ile güneş entegrasyonu.",
+      "features": {
+        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 550 × 391 × 317 mm",
+        "weight": "Ağırlık: 33 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "2 kW saf sinüs çıkış",
+        "solarIntegration": "700 W MPPT ile güneş entegrasyonu",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "compactDesign": "Kompakt tasarım"
+      },
+      "applications": {
+        "camping": "Kamp aktiviteleri",
+        "emergency": "Acil durumlar",
+        "travel": "Seyahat",
+        "outdoor": "Dış mekan etkinlikleri",
+        "tools": "Kırıcı delici aletler",
+        "electronics": "Elektronik cihazlar"
+      }
+    },
+    "rSb2700b": {
+      "title": "2.7 kWh Taşınabilir Güç Paketi",
+      "description": "Model B tasarımı ile 2.7 kWh kapasiteli taşınabilir güç paketi. 2 kW saf sinüs çıkışı ve 700 W MPPT ile güneş entegrasyonu.",
+      "features": {
+        "capacity": "Kapasite: 2.7 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 230 VAC, 2000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 700 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 550 × 391 × 317 mm",
+        "weight": "Ağırlık: 33 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "2 kW saf sinüs çıkış",
+        "solarIntegration": "700 W MPPT ile güneş entegrasyonu",
+        "modelB": "Model B tasarımı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "quickCharge": "Hızlı şarj desteği"
+      },
+      "applications": {
+        "professional": "Profesyonel kullanım",
+        "industrial": "Endüstriyel uygulamalar",
+        "emergency": "Acil durum sistemleri",
+        "mobileOffice": "Mobil ofisler",
+        "smallBusiness": "Küçük işletmeler",
+        "electronics": "Elektronik cihazlar"
+      }
+    },
+    "rSb5400b": {
+      "title": "5.4 kWh Taşınabilir Güç Paketi",
+      "description": "Büyük kasa tasarımı ile 5.4 kWh kapasiteli taşınabilir güç paketi. 3 kW saf sinüs çıkışı ve 1.5 kW PV ile hızlı dolum.",
+      "features": {
+        "capacity": "Kapasite: 5.4 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 220 VAC, 3000 W (pure sine)",
+        "pvMppt": "PV/MPPT: 1500 W PV şarj",
+        "cycleLife": "Çevrim Ömrü: ≈4000 cycle",
+        "dimensions": "Boyutlar: 800 × 458 × 910 mm",
+        "weight": "Ağırlık: 60 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "sineOutput": "3 kW saf sinüs çıkış",
+        "quickCharge": "1.5 kW PV ile hızlı dolum",
+        "largeCase": "Büyük kasa tasarımı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "quickChargeSupport": "Hızlı şarj desteği"
+      },
+      "applications": {
+        "mediumHomes": "Orta ölçekli evler",
+        "smallBusiness": "Küçük işletmeler",
+        "camping": "Kamp ve karavan",
+        "emergency": "Acil durum yedeklemesi",
+        "outdoor": "Dış mekan etkinlikleri",
+        "mobileOffice": "Mobil ofisler"
+      }
+    },
+    "rS10500": {
+      "categoryTitle": "Raf / Kabin Tip Güç Paketi",
+      "title": "10.5 kWh Güç Paketi (Raf/Kabin Tip)",
+      "description": "Raf ve kabin tipi kurulum için 10.5 kWh kapasiteli güç paketi. Yüksek kapasite ve 3-4 kW inverter opsiyonları ile endüstriyel kullanım için ideal çözüm.",
+      "features": {
+        "capacity": "Kapasite: 10.5 kWh (LiFePO₄)",
+        "powerOutput": "Güç Çıkışı: 220 VAC, 3000-4000 W (pure/tam sinüs seçenekleri)",
+        "pvMppt": "PV/MPPT: ~3000 W (modeline göre)",
+        "life": "Ömür: ≈4000 cycle",
+        "dimensions": "Boyutlar: 400 × 391 × 732 mm",
+        "weight": "Ağırlık: 100 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "highCapacity": "Yüksek kapasite",
+        "inverterOptions": "3-4 kW inverter opsiyonları",
+        "rackCabin": "Raf/kabin uyumlu tasarım",
+        "industrial": "Endüstriyel kullanım",
+        "easyInstall": "Kolay kurulum",
+        "longLife": "Uzun ömürlü",
+        "safety": "Güvenlik: BMS ve koruma devreleri"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "cabin": "Kabin sistemleri",
+        "container": "Konteyner uygulamaları",
+        "mobileOffice": "Mobil ofisler",
+        "construction": "İnşaat sahaları",
+        "emergency": "Acil durum sistemleri"
+      }
+    },
+    "rM21600": {
+      "categoryTitle": "Modüler Enerji Depolama",
+      "title": "Güç Katmanı – Modüler Enerji Depolama Ünitesi",
+      "description": "Modüler tasarımı ile esnek enerji depolama çözümü. Katmanlı ölçeklenme ve aynı taban alanda kapasite artışı ile endüstriyel ve ticari uygulamalar için ideal çözüm.",
+      "features": {
+        "nominalVoltage": "Nominal Gerilim: 51.2 V DC",
+        "modularCapacity": "Modüler Kapasite: 105/210/315/420 Ah • 5.4/10.8/16.2/21.6 kWh",
+        "life": "Ömür: ≈4000 cycle",
+        "dimensions": "Boyutlar: 400 × 391 × 365/609/853/1097 mm",
+        "weight": "Ağırlık: 66/114/162/210 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "layered": "Katmanlı ölçeklenme",
+        "capacityIncrease": "Aynı taban alanda kapasite artışı",
+        "modular": "Modüler tasarım",
+        "industrial": "Endüstriyel kullanım",
+        "easyInstall": "Kolay kurulum",
+        "longLife": "Uzun ömürlü"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "cabin": "Kabin sistemleri",
+        "container": "Konteyner uygulamaları",
+        "mobileOffice": "Mobil ofisler",
+        "construction": "İnşaat sahaları",
+        "emergency": "Acil durum sistemleri"
+      }
+    },
+    "rH21600": {
+      "title": "Hilux Güç Paketi",
+      "description": "Araç Üstü - Hilux araçları için özel olarak tasarlanmış araç üstü güç paketi. 80 kWh enerji ve çoklu tek/üç-faz kullanım ile mobil enerji çözümü sunar.",
+      "features": {
+        "energy": "Enerji: 80 kWh (LiFePO₄)",
+        "output": "Çıkış: 3×10 kW @ 380 VAC (tek çıkış 20 kW'a kadar) / 5×5 kW @ 220 VAC (tek çıkış 10 kW'a kadar)",
+        "pvInput": "PV Girişi: 20 kW",
+        "dimensions": "Boyutlar: Araç entegrasyonuna bağlı",
+        "weight": "Ağırlık: Araç entegrasyonuna bağlı",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "multiPhase": "Çoklu tek/üç-faz kullanım",
+        "pvSupport": "20 kW PV desteği",
+        "vehicleCompatible": "Araç uyumlu tasarım",
+        "hiluxIntegration": "Hilux entegrasyonu",
+        "mobile": "Mobil enerji çözümü",
+        "industrial": "Endüstriyel kullanım"
+      },
+      "applications": {
+        "hilux": "Hilux araçları",
+        "mobile": "Mobil enerji sistemleri",
+        "vehicleTop": "Araç üstü kurulumlar",
+        "industrial": "Endüstriyel araçlar",
+        "defense": "Savunma sanayi",
+        "emergency": "Acil durum araçları"
+      }
+    },
+    "rU200000": {
+      "categoryTitle": "Araç Üstü Mobil Enerji Sistemi",
+      "title": "Savunma Sanayi UNIMOG Güç Paketi",
+      "description": "Araç Üstü - UNIMOG araçları için özel olarak tasarlanmış araç üstü güç paketi. 200 kWh enerji ve 60 kW yüksek güç ile zorlu koşullarda güvenilir enerji sağlar.",
+      "features": {
+        "energy": "Enerji: 200 kWh",
+        "output": "Çıkış: 230/380 VAC, 60 kW",
+        "pvInput": "PV Girişi: 80 kW",
+        "charging": "Şarj: 100 kW DC hızlı / 22 kW AC",
+        "dimensions": "Boyutlar: Araç entegrasyonuna bağlı",
+        "weight": "Ağırlık: Araç entegrasyonuna bağlı",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "highPower": "60 kW yüksek güç",
+        "fastCharge": "100 kW DC hızlı şarj",
+        "unimogCompatible": "UNIMOG uyumlu tasarım",
+        "industrial": "Endüstriyel kullanım",
+        "defense": "Savunma sanayi uygulamaları",
+        "harshConditions": "Zorlu koşullarda kullanım"
+      },
+      "applications": {
+        "unimog": "UNIMOG araçları",
+        "mobile": "Mobil enerji sistemleri",
+        "vehicleTop": "Araç üstü kurulumlar",
+        "industrial": "Endüstriyel araçlar",
+        "defense": "Savunma sanayi",
+        "emergency": "Acil durum araçları"
+      }
+    },
+    "rCabinet21600": {
+      "title": "Güç Kabini",
+      "description": "21.6 kWh Entegre Sistem - Sabit kurulum için tasarlanmış yüksek kapasiteli entegre güç kabini sistemi. 21.6 kWh enerji kapasitesi ve 5 kW çıkış gücü ile kritik altyapı sistemleri için güvenilir enerji çözümü.",
+      "features": {
+        "energyCapacity": "21.6 kWh enerji kapasitesi",
+        "outputPower": "5 kW çıkış gücü",
+        "nominalVoltage": "51.2 VDC nominal voltaj",
+        "dimensions": "600 × 500 × 1000 mm boyutlar",
+        "weight": "200 kg ağırlık",
+        "batteryTech": "Uzun ömürlü batarya teknolojisi",
+        "integrated": "Entegre sistem tasarımı",
+        "optimized": "Sabit kurulum için optimize edilmiş",
+        "highCapacity": "Yüksek kapasiteli enerji depolama",
+        "modular": "Modüler yapı",
+        "safe": "Güvenli operasyon",
+        "maintenance": "Kolay bakım ve servis"
+      },
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "dataCenter": "Veri merkezleri",
+        "hospitals": "Hastaneler ve sağlık tesisleri",
+        "telecom": "Telekomünikasyon merkezleri",
+        "solar": "Güneş enerjisi santralleri",
+        "critical": "Kritik altyapı sistemleri"
+      }
+    },
+    "gridpack100": {
+      "title": "Şebeke Paketi 100",
+      "description": "REVIUM Şebeke Paketi 100, endüstriyel tesisler, savunma alanları, mobil enerji merkezleri ve afet bölgeleri için geliştirilmiş, yüksek kapasiteli enerji depolama ve yönetim sistemidir. Entegre inverter, MPPT şarj kontrolü, akıllı batarya yönetim sistemi (BMS) ve uzaktan izleme özellikleriyle, tüm enerji sürecini tek noktadan yönetilebilen tam entegre bir plug-and-play enerji istasyonu sunar. Dayanıklı yapısı, uzun ömürlü LiFePO₄ batarya teknolojisi ve yüksek verimliliği sayesinde, her koşulda kesintisiz, güvenli ve sürdürülebilir enerji sağlar.",
+      "applications": {
+        "industrial": "Endüstriyel tesisler",
+        "defense": "Savunma alanları",
+        "mobile": "Mobil enerji merkezleri",
+        "disaster": "Afet bölgeleri",
+        "critical": "Kritik altyapı sistemleri",
+        "offGrid": "Şebeke dışı sistemler"
+      }
+    },
+    "rP5400": {
+      "categoryTitle": "Yüksek Kapasiteli Taşınabilir Güç",
+      "title": "5.4 kWh Taşınabilir (Yüksek Çıkış)",
+      "description": "Yüksek çıkış gücü ile 5.4 kWh kapasiteli taşınabilir güç paketi. Güçlü performansı ve yüksek çıkış kapasitesi ile zorlu enerji ihtiyaçlarını karşılar.",
+      "features": {
+        "capacity": "Kapasite: 5.4 kWh",
+        "acOutput": "AC Çıkış: 220–230 VAC",
+        "battery": "Batarya Çalışma: ≈20–28.8 VDC",
+        "pvMppt": "PV/MPPT: 30–80 VDC (Voc ≈102 V)",
+        "dimensions": "Boyutlar: 400 × 391 × 488 mm",
+        "weight": "Ağırlık: 67 kg",
+        "operatingTemp": "Çalışma Sıcaklığı: -20°C ile +60°C",
+        "warranty": "Garanti: 3 yıl",
+        "highOutput": "Yüksek çıkış gücü",
+        "strongPerformance": "Güçlü performans",
+        "modular": "Modüler yapı",
+        "usbAc": "USB ve AC çıkışları",
+        "ledLight": "LED ışık sistemi",
+        "solarCompatible": "Güneş paneli uyumluluğu",
+        "quickCharge": "Hızlı şarj desteği",
+        "safety": "Güvenlik: Aşırı yük ve kısa devre koruması"
+      },
+      "applications": {
+        "largeHomes": "Büyük ölçekli evler",
+        "mediumBusiness": "Orta ölçekli işletmeler",
+        "camping": "Kamp ve karavan",
+        "emergency": "Acil durum yedeklemesi",
+        "outdoor": "Dış mekan etkinlikleri",
+        "mobileOffice": "Mobil ofisler"
+      }
+    },
+    "gesPowerStation": {
+      "title": "GES & Güç İstasyonu",
+      "description": "Gelişmiş güneş panel teknolojisini yüksek kapasiteli batarya depolama sistemiyle birleştiren bu yenilikçi çözüm, enerji üretimini ve tüketimini akıllıca dengeleyerek kesintisiz, sürdürülebilir ve verimli güç yönetimi sağlar. REVIUM Depolamalı GES, yalnızca enerji üretmekle kalmaz, aynı zamanda fazla enerjiyi depolayarak ihtiyaç anında yeniden kullanıma sunar. Bu sayede şebeke bağımlılığını azaltır, enerji maliyetlerini düşürür ve karbon ayak izini minimuma indirir. Modüler mimarisi sayesinde sistem, endüstriyel tesislerden ticari yapılara, kırsal yerleşimlerden mobil enerji istasyonlarına kadar farklı ölçek ve kullanım senaryolarına kolaylıkla uyarlanabilir. Entegre Batarya Yönetim Sistemi (BMS) ve uzaktan izleme altyapısı, enerji akışını anlık olarak takip ederken güvenli çalışma koşullarını garanti eder. Uzun ömürlü LiFePO₄ batarya teknolojisi ve yüksek verimli inverter yapısı, sistemin dayanıklılık, güvenlik ve performans açısından en zorlu koşullarda bile üstün sonuçlar sunmasını sağlar.",
+      "applications": {
+        "residential": "Konut uygulamaları",
+        "commercial": "Ticari tesisler",
+        "industrial": "Endüstriyel tesisler",
+        "solarFarms": "Güneş enerjisi santralleri",
+        "offGrid": "Şebeke dışı sistemler",
+        "hybrid": "Hibrit enerji sistemleri"
+      }
+    },
+    "ges-power-station": {
+      "categoryTitle": "Konteyner Tip Enerji + Güneş Entegrasyonu",
+      "name": "Powerstation Serisi",
+      "title": "GES & Güç İstasyonu",
+      "description": "Bu yenilikçi çözüm, gelişmiş güneş paneli teknolojisini yüksek kapasiteli batarya depolama sistemi ile birleştirir, enerji üretimini ve tüketimini akıllıca dengeleyerek sürdürülebilir ve verimli bir enerji yönetimi sağlar.",
+      "applications": {
+        "residential": "Bireysel Uygulamalar",
+        "commercial": "Ticari Tesisler",
+        "industrial": "Endüstriyel Tesisler",
+        "solarFarms": "GES Santralleri",
+        "offGrid": "Şebekeden Bağımsız Sistemler",
+        "hybrid": "Hibrit Enerji Sistemleri"
+      }
+    },
+    "revium-powerstation-series": {
+      "name": "Powerstation Serisi",
+      "title": "Powerstation Serisi",
+      "description": "Bu yenilikçi çözüm, gelişmiş güneş paneli teknolojisini yüksek kapasiteli batarya depolama sistemi ile birleştirir, enerji üretimini ve tüketimini akıllıca dengeleyerek sürdürülebilir ve verimli bir enerji yönetimi sağlar.",
+      "applications": {
+        "residential": "Bireysel Uygulamalar",
+        "commercial": "Ticari Tesisler",
+        "industrial": "Endüstriyel Tesisler",
+        "solarFarms": "GES Santralleri",
+        "offGrid": "Şebekeden Bağımsız Sistemler",
+        "hybrid": "Hibrit Enerji Sistemleri"
+      }
+    },
+    "solarportDuo": {
+      "title": "Solarport DUO",
+      "description": "SolarPort Duo, güneş enerjisini modern mimariyle buluşturan yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum-çelik konstrüksiyonu, yüksek verimli güneş panelleri ve entegre enerji depolama birimi sayesinde hem estetik hem de fonksiyonel bir çözüm sunar. Elektrikli araç şarj istasyonlarıyla tam uyumlu yapısı, park alanlarını sadece koruma alanı olmaktan çıkarıp aktif bir enerji üretim merkezine dönüştürür. SolarPort Duo, temiz enerji üretimi, sürdürülebilir altyapı ve modern tasarımıyla geleceğin şehirlerine değer katan akıllı bir otopark sistemidir.",
+      "applications": {
+        "residential": "Konut uygulamaları",
+        "commercial": "Ticari tesisler",
+        "solarFarms": "Güneş enerjisi santralleri",
+        "offGrid": "Şebeke dışı sistemler",
+        "hybrid": "Hibrit enerji sistemleri",
+        "mobile": "Mobil uygulamalar"
+      }
+    },
+    "solarport-duo": {
+      "categoryTitle": "Solar Carport + EV Şarj + Enerji Depolama",
+      "name": "Solarport",
+      "title": "Solarport DUO",
+      "description": "Solarport DUO, güneş enerjisi ve modern mimariyi birleştiren, yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum ve çelik yapısı, yüksek verimli güneş panelleri ve entegre enerji depolama birimi ile hem estetik hem de fonksiyonel çözümler sunar.",
+      "applications": {
+        "residential": "Bireysel Uygulamalar",
+        "commercial": "Ticari Tesisler",
+        "solarFarms": "GES Santralleri",
+        "offGrid": "Şebekeden Bağımsız Sistemler",
+        "hybrid": "Hibrit Enerji Sistemleri",
+        "mobile": "Mobil Uygulamalar"
+      }
+    },
+    "revium-solarport": {
+      "name": "Solarport",
+      "title": "Solarport",
+      "description": "Solarport DUO, güneş enerjisi ve modern mimariyi birleştiren, yenilikçi bir güneş enerjili otopark sistemidir. Dayanıklı alüminyum ve çelik yapısı, yüksek verimli güneş panelleri ve entegre enerji depolama birimi ile hem estetik hem de fonksiyonel çözümler sunar.",
+      "applications": {
+        "residential": "Bireysel Uygulamalar",
+        "commercial": "Ticari Tesisler",
+        "solarFarms": "GES Santralleri",
+        "offGrid": "Şebekeden Bağımsız Sistemler",
+        "hybrid": "Hibrit Enerji Sistemleri",
+        "mobile": "Mobil Uygulamalar"
+      }
+    },
+    "solarVoltwagon": {
+      "title": "Solar VOLTWAGON",
+      "description": "REVIUM VoltWagon, enerjiye her yerde ulaşmak için tasarlanmış taşınabilir güneş enerjili mobil istasyondur. Römork tipi modüler yapısı sayesinde kolayca taşınabilir; entegre güneş panelleriyle enerji üretir ve yüksek kapasiteli LiFePO₄ bataryalarıyla güvenli depolama sağlar. Kırsal bölgeler, afet alanları ve saha operasyonlarında hızlı kurulumlu, çevre dostu ve kesintisiz güç çözümü sunar. VoltWagon, mobil enerji bağımsızlığını mümkün kılan kompakt tasarımıyla modern enerji altyapısının yeni nesil taşınabilir formudur.",
+      "applications": {
+        "vehicles": "Araç uygulamaları",
+        "mobile": "Mobil enerji sistemleri",
+        "camping": "Kamp ve karavan",
+        "emergency": "Acil durum araçları",
+        "commercial": "Ticari araçlar",
+        "offGrid": "Şebeke dışı sistemler"
+      }
+    },
+    "gesStreetLighting": {
+      "title": "GES Sokak Aydınlatma Sistemi",
+      "description": "REVIUM Solar StreetLight, güneş enerjisiyle çalışan modern bir LED aydınlatma sistemidir. Yüksek verimli güneş panelleri, entegre LiFePO₄ batarya ve akıllı kontrol modülü sayesinde gece boyunca kesintisiz, güvenilir ve dengeli aydınlatma sağlar. Tamamen şebekeden bağımsız çalışma özelliğiyle enerji maliyetlerini sıfıra indirir, bakım ihtiyacını minimuma düşürür. Estetik tasarımı, uzun ömürlü yapısı ve çevre dostu teknolojisiyle sürdürülebilir şehir aydınlatmasının yeni standardını oluşturur.",
+      "applications": {
+        "streetLighting": "Sokak aydınlatması",
+        "parkLighting": "Park ve bahçe aydınlatması",
+        "pathwayLighting": "Yol aydınlatması",
+        "security": "Güvenlik aydınlatması",
+        "public": "Kamu alanları",
+        "residential": "Konut alanları"
+      }
+    }
+  }
+}

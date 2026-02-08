@@ -106,6 +106,8 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
                     src={service.image}
                     fill
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 brightness-105"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/25 to-transparent z-10" />
             </div>

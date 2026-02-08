@@ -4,7 +4,7 @@
         "learnMore": "Learn More",
         "getQuote": "Get Quote",
         "contact": "Contact",
-        "products": "Products",
+        "products": "Product Categories",
         "services": "Services",
         "corporate": "About Us",
         "home": "Home"
@@ -49,6 +49,7 @@
         "ctaButton2": "Explore Products"
     },
     "quote": {
+        "badge": "QUICK QUOTE",
         "title": "Get a Quote",
         "subtitle": "Request a Quote for Your Project",
         "description": "Get a detailed price quote for our energy solutions customized to your needs. Our expert team will provide you with the most suitable options.",
@@ -59,17 +60,17 @@
         "additionalInfo": "Additional Information",
         "nameLabel": "Full Name",
         "namePlaceholder": "Your full name",
-        "emailLabel": "Email *",
+        "emailLabel": "Email",
         "emailPlaceholder": "example@email.com",
-        "phoneLabel": "Phone *",
+        "phoneLabel": "Phone",
         "phonePlaceholder": "+90 5XX XXX XX XX",
         "companyLabel": "Company",
         "companyPlaceholder": "Company name",
-        "categoryLabel": "Product Category *",
+        "categoryLabel": "Product Category",
         "categorySelect": "Select Category",
-        "powerLabel": "Power Requirement *",
+        "powerLabel": "Power Requirement",
         "powerSelect": "Select Power Range",
-        "areaLabel": "Application Area *",
+        "areaLabel": "Application Area",
         "areaSelect": "Select Area",
         "budgetLabel": "Estimated Budget",
         "budgetSelect": "Select Budget Range",
@@ -148,24 +149,24 @@
         "quickLinks": "Quick Links",
         "contact": "Contact",
         "copyright": "All rights reserved.",
-        "portablePower": "Portable Power Packs",
-        "cabinPower": "Cabin Type Power Packs",
-        "vehiclePower": "Vehicle Type Power Packs",
-        "gesProducts": "Solar Products",
-        "gesInstallation": "Solar Installation",
-        "industrialInstallation": "Industrial Installation",
         "getDirections": "Get Directions",
         "corporate": "About Us",
         "getQuote": "Get Quote",
-        "charging": "Charging Stations",
+        "portablePower": "Portable Power Packs",
+        "cabinPower": "Cabin Type Power Packs",
+        "evCharging": "EV Charging Solutions",
+        "gesProducts": "Solar Products",
         "batteryPower": "Battery Systems",
+        "vehiclePower": "Vehicle Type Power Packs",
+        "gesInstallation": "Solar Installation",
+        "industrialInstallation": "Industrial Installation",
         "address": "Fevzi Cakmak District, Milenyum Street No:81\nKaratay/KONYA"
     },
     "hero": {
         "title1": "Redefining",
         "title2": "Energy",
         "description": "We set new standards in energy storage solutions with performance, durability, and freedom.",
-        "exploreProducts": "Explore Products",
+        "exploreProducts": "Explore Product Categories",
         "getQuote": "Get Quote"
     },
     "mission": {
@@ -191,7 +192,7 @@
         }
     },
     "products": {
-        "title": "Products",
+        "title": "Product Categories",
         "allProducts": "All Products",
         "categoryTag": "PRODUCT GROUP",
         "categories": {
@@ -215,12 +216,34 @@
                     "name": "5.4 kWh Power Pack",
                     "description": "High-capacity professional portable power."
                 }
-            }
+            },
+            "ctaDiscoverTitle1": "Discover Your",
+            "ctaDiscoverTitle2": "Portable Power Solution",
+            "ctaDiscoverSubtitle": "Contact our expert team and let's find the most suitable portable power pack for you."
         },
         "vehiclePower": {
             "title": "Vehicle Power",
             "subtitle": "Mobile Energy",
-            "description": "High-capacity vehicle-mounted systems.",
+            "description": "Systems where the entire vehicle is filled with power sources. Reliable performance resistant to harsh vehicle conditions.",
+            "heroTitle1": "Vehicle Type",
+            "heroTitle2": "Power Packs",
+            "heroDescription": "Systems where the entire vehicle is filled with power sources. Reliable performance resistant to harsh vehicle conditions.",
+            "advantagesTitle1": "Advantages of",
+            "advantagesTitle2": "Vehicle Type Power Packs",
+            "advantagesSubtitle": "Systems where the entire vehicle is filled with power sources",
+            "integrationTitle": "Vehicle Integration",
+            "integrationDesc": "Perfect integration with vehicle-specific design. Structure resistant to harsh vehicle conditions.",
+            "capacityTitle": "High Capacity",
+            "capacityDesc": "A solution for every need with wide capacity options from 21.6 kWh to 200 kWh.",
+            "defenseTitle": "Defense Industry",
+            "defenseDesc": "Specially designed powerful energy systems for defense industry vehicles such as UNIMOG.",
+            "ctaDiscoverTitle1": "Discover Your",
+            "ctaDiscoverTitle2": "Vehicle Type Energy Solution",
+            "ctaDiscoverSubtitle": "Contact our expert team and let's find the most suitable vehicle power pack for you.",
+            "consultancyButton": "Request Consultancy",
+            "viewProductsButton": "See All Products",
+            "priceQuoteRequest": "Request a price quote",
+            "detailReview": "Review Details",
             "products": {
                 "revium-pickup-power-pack": {
                     "name": "Pick Up Power Pack",
@@ -316,13 +339,13 @@
         "description": "Provides reliable energy for critical loads, emergencies, and professional applications with {capacity} capacity and {power} output.",
         "capacity": "5.4 kWh Capacity",
         "capacityDesc": "High energy density with LiFePO₄ technology",
-        "output": "2000W Output",
+        "output": "3000W Output",
         "outputDesc": "Pure sine wave, 20ms UPS transition",
         "pvCharging": "1500W PV Charging",
         "pvChargingDesc": "Fast charging with solar energy",
         "protection": "Comprehensive Protection",
         "protectionDesc": "Overload, overcurrent, thermal protection",
-        "viewDetails": "5.4 kWh 2000W Details",
+        "viewDetails": "5.4 kWh 3000W Details",
         "getQuote": "Get Quote"
     },
     "services": {
@@ -406,7 +429,8 @@
                 "High Power Battery Systems",
                 "SCADA System Integration",
                 "Medium Voltage Connections",
-                "Remote Monitoring and Control"
+                "Remote Monitoring and Control",
+                "Maintenance and Warranty Support"
             ],
             "whyUs": {
                 "title": "Service Features",
@@ -548,9 +572,45 @@
         "ar": "العربية"
     },
     "productDetails": {
+        "revium-2-7-kwh": { "title": "2.7 kWh Case Type Power Pack" },
+        "revium-2-7-kwh-bag": { "title": "2.7 kWh Power Pack" },
+        "revium-5-4-kwh": { "title": "5.4 kWh Power Pack" },
+        "revium-power-cabinet": { "title": "Power Cabinet" },
+        "revium-power-layer": { "title": "Power Layer" },
+        "revium-gridpack": { "title": "Grid Pack" },
+        "revium-grid-core": { "title": "Grid Core" },
+        "revium-grid-pulse": { "title": "Grid Pulse" },
+        "revium-grid-pulse-gen2": { "title": "Grid Pulse Gen2" },
+        "revium-powerstation-series": { "title": "Powerstation Series" },
+        "revium-solarport": { "title": "Solarport" },
+        "revium-2-7-kwh-lfp": { "title": "2.7 kWh LFP Battery" },
+        "revium-5-4-kwh-lfp": { "title": "5.4 kWh LFP Battery" },
+        "revium-pickup-power-pack": {
+            "name": "Pick Up Power Pack",
+            "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications.",
+            "categoryTitle": "Vehicle-Mounted Mobile Energy System",
+            "features": {
+                "capacity": "Energy: 60 – 100 kWh",
+                "output": "Output Power (3-Phase): 3×10 kW (380 VAC)",
+                "integration": "Vehicle Compatibility: Hilux / Pick Up",
+                "protection": "Waveform: Pure Sine",
+                "vibration": "Vibration Resistant",
+                "charging": "Cycle Life: 6000 Cycles"
+            },
+            "applications": {
+                "camping": "Camping & Caravan",
+                "mobileService": "Mobile Service Vehicles",
+                "emergency": "Emergency Response Vehicles",
+                "fieldWork": "Field Operations",
+                "offRoad": "Off-Road Activities"
+            }
+        },
         "labels": {
+            "energy": "Energy",
             "capacity": "Capacity",
-            "power": "Output Power",
+            "power": "Power",
+            "battery": "Battery",
+            "powerLong": "Output Power",
             "cellType": "Cell Type",
             "cycleLife": "Cycle Life",
             "protection": "Protection",
@@ -567,6 +627,7 @@
             "keyFeatures": "Key Features",
             "getSpecialOffer": "Get Special Offer",
             "getQuote": "Get Quote",
+            "requestQuote": "Request Quote",
             "premiumEnergy": "Premium Energy"
         },
         "products": {

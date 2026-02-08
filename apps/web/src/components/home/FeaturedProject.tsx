@@ -56,16 +56,19 @@ export default function FeaturedProject() {
                                             alt=""
                                             fill
                                             className="object-contain brightness-0 grayscale opacity-50"
+                                            loading="lazy"
+                                            sizes="70vw"
                                         />
                                     </div>
                                 </div>
 
                                 <Image
                                     alt={t('imageAlt')}
-                                    src="/images/products/newsu.webp"
+                                    src="/images/hero/revium-hero-2-7kwh.png"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105 z-10 mix-blend-multiply"
                                     loading="lazy"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                 />
 
                                 {/* Capacity Badge */}

@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "services": "Services",
+    "contact": "Contact",
+    "quote": "Get Quote"
+  },
+  "hero": {
+    "title": "Sustainable Energy Solutions",
+    "subtitle": "Experience Tomorrow's Energy Today with Revium Tech",
+    "description": "Portable, modular design; 700W MPPT, 4000 cycles, Pure Sine inverter. Reliable energy storage systems for construction, camping, emergency and commercial applications.",
+    "cta1": "Explore Products",
+    "cta2": "Get Quote"
+  },
+  "features": {
+    "title": "Outstanding Technologies",
+    "subtitle": "Solutions powered by advanced technology",
+    "mppt": {
+      "title": "700W MPPT",
+      "description": "Maximum power point tracking for optimal solar energy efficiency"
+    },
+    "inverter": {
+      "title": "Pure Sine Inverter",
+      "description": "Safe power for sensitive electronic devices with pure sine wave"
+    },
+    "cycles": {
+      "title": "4000 Cycles",
+      "description": "Durability with long-life lithium battery technology"
+    },
+    "phases": {
+      "title": "3-Phase Options",
+      "description": "High-power output options for industrial applications"
+    }
+  },
+  "footer": {
+    "description": "We are building a sustainable future with energy storage and renewable energy solutions.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "social": "Social Media",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "kvkk": "GDPR"
+  }
+}

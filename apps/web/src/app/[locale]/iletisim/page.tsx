@@ -3,63 +3,111 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { db } from '@/lib/firebase';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 export default function Iletisim() {
     const t = useTranslations('contact');
     const locale = useLocale();
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errors, setErrors] = useState<Record<string, string>>({});
+    const nameRef = useRef<HTMLDivElement>(null);
+    const emailRef = useRef<HTMLDivElement>(null);
+    const subjectRef = useRef<HTMLDivElement>(null);
+    const messageRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const keys = ['name', 'email', 'subject', 'message'] as const;
+        const refs = { name: nameRef, email: emailRef, subject: subjectRef, message: messageRef };
+        const first = keys.find((k) => errors[k]);
+        if (first && refs[first].current) {
+            refs[first].current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }, [errors]);
+
+    const requiredMsg = locale === 'tr' ? 'Bu alan zorunludur' : locale === 'ar' ? 'هذا الحقل مطلوب' : 'This field is required';
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const form = e.currentTarget;
-        setIsSubmitting(true);
-
         const formData = new FormData(form);
+        const name = (formData.get('name') as string)?.trim() ?? '';
+        const email = (formData.get('email') as string)?.trim() ?? '';
+        const subject = (formData.get('subject') as string)?.trim() ?? '';
+        const message = (formData.get('message') as string)?.trim() ?? '';
+
+        const newErrors: Record<string, string> = {};
+        if (!name) newErrors.name = requiredMsg;
+        if (!email) newErrors.email = requiredMsg;
+        if (!subject) newErrors.subject = requiredMsg;
+        if (!message) newErrors.message = requiredMsg;
+
+        setErrors(newErrors);
+        if (Object.keys(newErrors).length > 0) return;
+
+        setIsSubmitting(true);
         const phone = formData.get('phone') as string;
 
         try {
-            const contactData = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: phone || null,
-                subject: formData.get('subject'),
-                message: formData.get('message'),
-                locale: locale,
-                createdAt: serverTimestamp(),
-                status: 'new',
+            // Firebase yalnızca istemcide dinamik yüklenir (SSR hatasını önler)
+            const submitPromise = async () => {
+                const { db } = await import('@/lib/firebase');
+                const { collection, addDoc, serverTimestamp } = await import('firebase/firestore');
+
+                const contactData = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    phone: phone || null,
+                    subject: formData.get('subject'),
+                    message: formData.get('message'),
+                    locale: locale,
+                    createdAt: serverTimestamp(),
+                    status: 'new',
+                };
+
+                console.log('--- SUBMIT START ---');
+                console.log('Data:', contactData);
+
+                try {
+                    console.log('1. Adding contact doc...');
+                    await addDoc(collection(db, 'contact_messages'), contactData);
+                    console.log('1. Contact doc added.');
+
+                    console.log('2. Adding mail doc...');
+                    await addDoc(collection(db, 'mail'), {
+                        to: ['info@reviumtech.com', 'aslanaysenur063@gmail.com'],
+                        message: {
+                            subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
+                            html: `
+                                <h2>Yeni İletişim Formu Gönderimi</h2>
+                                <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
+                                <p><strong>Email:</strong> ${formData.get('email')}</p>
+                                ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
+                                <p><strong>Konu:</strong> ${formData.get('subject')}</p>
+                                <p><strong>Mesaj:</strong></p>
+                                <p>${formData.get('message')}</p>
+                                <hr>
+                                <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
+                            `,
+                        },
+                    });
+                    console.log('2. Mail doc added.');
+                    console.log('--- SUBMIT SUCCESS ---');
+                } catch (e) {
+                    console.error('--- SUBMIT ERROR ---', e);
+                    throw e;
+                }
             };
 
-            // Firebase Firestore'a kaydet
-            await addDoc(collection(db, 'contact_messages'), contactData);
-
-            // Firebase Extension "Trigger Email" için mail collection'a ekle
-            await addDoc(collection(db, 'mail'), {
-                to: ['info@reviumtech.com'],
-                message: {
-                    subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
-                    html: `
-                        <h2>Yeni İletişim Formu Gönderimi</h2>
-                        <p><strong>Ad Soyad:</strong> ${formData.get('name')}</p>
-                        <p><strong>Email:</strong> ${formData.get('email')}</p>
-                        ${phone ? `<p><strong>Telefon:</strong> ${phone}</p>` : ''}
-                        <p><strong>Konu:</strong> ${formData.get('subject')}</p>
-                        <p><strong>Mesaj:</strong></p>
-                        <p>${formData.get('message')}</p>
-                        <hr>
-                        <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
-                    `,
-                },
-            });
+            // Timeout kaldırıldı - Debug için
+            await submitPromise();
 
             alert(t('successMessage') || 'Mesajınız başarıyla gönderildi!');
             form.reset();
+            setErrors({});
         } catch (error: any) {
             console.error('Submission error:', error);
-            alert(`Hata: ${error.message || 'Mesaj gönderilemedi.'}`);
+            alert(`Hata: ${error?.message || 'Mesaj gönderilemedi.'}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -77,7 +125,7 @@ export default function Iletisim() {
         {
             icon: Mail,
             title: t('email'),
-            value: 'info@reviumtech.com',
+            value: locale === 'ar' ? 'انفو@ريفيوم-تيك.كوم' : 'info@reviumtech.com',
             href: 'mailto:info@reviumtech.com',
             color: 'text-emerald-600',
             bg: 'bg-emerald-50'
@@ -85,7 +133,7 @@ export default function Iletisim() {
         {
             icon: MapPin,
             title: t('address'),
-            value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: 81، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
+            value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: ٨١، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
             href: 'https://maps.app.goo.gl/dEJViRBejc7dpB3WA',
             color: 'text-orange-600',
             bg: 'bg-orange-50'
@@ -132,25 +180,36 @@ export default function Iletisim() {
                             </p>
                         </div>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} noValidate className="space-y-6">
+                            {Object.keys(errors).length > 0 && (
+                                <div className="rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-red-800 text-sm font-medium" role="alert">
+                                    {locale === 'tr' && 'Zorunlu alanlar eksik. Lütfen kırmızıyla işaretli alanları doldurun.'}
+                                    {locale === 'en' && 'Required fields are missing. Please fill in the fields marked in red.'}
+                                    {locale === 'ar' && 'الحقول المطلوبة ناقصة. يرجى ملء الحقول المشار إليها بالأحمر.'}
+                                </div>
+                            )}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <div className="space-y-1.5">
+                                <div className="space-y-1.5" ref={nameRef}>
                                     <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('nameLabel')} <span className="text-red-500">*</span></label>
                                     <input
                                         type="text"
                                         name="name"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className={cn("w-full h-12 px-4 bg-white border rounded-xl focus:ring-2 transition-all font-medium text-slate-900", errors.name ? "border-red-500 ring-2 ring-red-500/20 focus:border-red-500 focus:ring-red-500/20" : "border-slate-200 focus:ring-blue-500/10 focus:border-blue-500")}
+                                        onChange={() => setErrors((prev) => ({ ...prev, name: '' }))}
                                     />
+                                    {errors.name && <p className="text-red-500 text-xs mt-1 ml-1">{errors.name}</p>}
                                 </div>
-                                <div className="space-y-1.5">
+                                <div className="space-y-1.5" ref={emailRef}>
                                     <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('emailLabel')} <span className="text-red-500">*</span></label>
                                     <input
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className={cn("w-full h-12 px-4 bg-white border rounded-xl focus:ring-2 transition-all font-medium text-slate-900", errors.email ? "border-red-500 ring-2 ring-red-500/20 focus:border-red-500 focus:ring-red-500/20" : "border-slate-200 focus:ring-blue-500/10 focus:border-blue-500")}
+                                        onChange={() => setErrors((prev) => ({ ...prev, email: '' }))}
                                     />
+                                    {errors.email && <p className="text-red-500 text-xs mt-1 ml-1">{errors.email}</p>}
                                 </div>
                             </div>
                             <div className="space-y-1.5">
@@ -158,28 +217,31 @@ export default function Iletisim() {
                                 <input
                                     type="tel"
                                     name="phone"
-                                    placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
                                     className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     dir="ltr"
                                 />
                             </div>
-                            <div className="space-y-1.5">
+                            <div className="space-y-1.5" ref={subjectRef}>
                                 <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('subjectLabel')} <span className="text-red-500">*</span></label>
                                 <input
                                     type="text"
                                     name="subject"
                                     required
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className={cn("w-full h-12 px-4 bg-white border rounded-xl focus:ring-2 transition-all font-medium text-slate-900", errors.subject ? "border-red-500 ring-2 ring-red-500/20 focus:border-red-500 focus:ring-red-500/20" : "border-slate-200 focus:ring-blue-500/10 focus:border-blue-500")}
+                                    onChange={() => setErrors((prev) => ({ ...prev, subject: '' }))}
                                 />
+                                {errors.subject && <p className="text-red-500 text-xs mt-1 ml-1">{errors.subject}</p>}
                             </div>
-                            <div className="space-y-1.5">
+                            <div className="space-y-1.5" ref={messageRef}>
                                 <label className="text-xs font-bold text-slate-500 uppercase ml-1">{t('messageLabel')} <span className="text-red-500">*</span></label>
                                 <textarea
                                     name="message"
                                     rows={5}
                                     required
-                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
+                                    className={cn("w-full p-4 bg-white border rounded-xl focus:ring-2 transition-all font-medium text-slate-900 resize-none", errors.message ? "border-red-500 ring-2 ring-red-500/20 focus:border-red-500 focus:ring-red-500/20" : "border-slate-200 focus:ring-blue-500/10 focus:border-blue-500")}
+                                    onChange={() => setErrors((prev) => ({ ...prev, message: '' }))}
                                 />
+                                {errors.message && <p className="text-red-500 text-xs mt-1 ml-1">{errors.message}</p>}
                             </div>
                             <button
                                 type="submit"

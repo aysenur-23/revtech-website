@@ -1,89 +1,126 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import {
     Send, CheckCircle, Calculator, User, Mail,
-    Phone, Building2, Package, Zap, Layout,
+    Phone, Building2, Package, Zap, LayoutTemplate as LayoutIcon,
     TrendingUp, Calendar, MessageSquare, ArrowRight,
     Check, Settings, Shield, FileText, Clock
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import { db } from '@/lib/firebase';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+
+const isValidEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+const isValidPhone = (value: string) => {
+    const digits = value.replace(/\D/g, '');
+    return digits.length >= 10 && digits.length <= 15;
+};
 
 export default function QuotePage() {
     const t = useTranslations('quote');
     const locale = useLocale();
     const [submitted, setSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errors, setErrors] = useState<Record<string, string>>({});
+    const nameRef = useRef<HTMLDivElement>(null);
+    const emailRef = useRef<HTMLDivElement>(null);
+    const phoneRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const keys = ['name', 'email', 'phone'] as const;
+        const refs = { name: nameRef, email: emailRef, phone: phoneRef };
+        const first = keys.find((k) => errors[k]);
+        if (first && refs[first].current) {
+            refs[first].current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }, [errors]);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        const form = e.currentTarget;
+        const name = (form.elements.namedItem('quote-name') as HTMLInputElement)?.value?.trim() ?? '';
+        const email = (form.elements.namedItem('quote-email') as HTMLInputElement)?.value?.trim() ?? '';
+        const phone = (form.elements.namedItem('quote-phone') as HTMLInputElement)?.value?.trim() ?? '';
+
+        const newErrors: Record<string, string> = {};
+        if (!name) newErrors.name = locale === 'tr' ? 'Bu alan zorunludur' : locale === 'ar' ? 'هذا الحقل مطلوب' : 'This field is required';
+        if (!email) newErrors.email = locale === 'tr' ? 'Bu alan zorunludur' : locale === 'ar' ? 'هذا الحقل مطلوب' : 'This field is required';
+        else if (!isValidEmail(email)) newErrors.email = locale === 'tr' ? 'Geçerli bir e-posta adresi girin' : locale === 'ar' ? 'أدخل بريدًا إلكترونيًا صالحًا' : 'Enter a valid email address';
+        if (!phone) newErrors.phone = locale === 'tr' ? 'Bu alan zorunludur' : locale === 'ar' ? 'هذا الحقل مطلوب' : 'This field is required';
+        else if (!isValidPhone(phone)) newErrors.phone = locale === 'tr' ? 'Geçerli bir telefon numarası girin' : locale === 'ar' ? 'أدخل رقم هاتف صالح' : 'Enter a valid phone number';
+
+        setErrors(newErrors);
+        if (Object.keys(newErrors).length > 0) return;
+
         setIsSubmitting(true);
 
-        const form = e.currentTarget;
         const formData = {
             type: 'quote',
-            name: (form.elements[0] as HTMLInputElement).value,
-            email: (form.elements[1] as HTMLInputElement).value,
-            phone: (form.elements[2] as HTMLInputElement).value,
-            company: (form.elements[3] as HTMLInputElement).value,
-            category: (form.elements[4] as HTMLSelectElement).value,
-            power: (form.elements[5] as HTMLSelectElement).value,
-            area: (form.elements[6] as HTMLSelectElement).value,
-            budget: (form.elements[7] as HTMLSelectElement).value,
-            specs: (form.elements[8] as HTMLTextAreaElement).value,
-            date: (form.elements[9] as HTMLInputElement).value,
-            message: (form.elements[10] as HTMLTextAreaElement).value,
+            name,
+            email,
+            phone,
+            company: (form.elements.namedItem('quote-company') as HTMLInputElement)?.value ?? '',
+            category: (form.elements.namedItem('quote-category') as HTMLSelectElement)?.value ?? '',
+            power: (form.elements.namedItem('quote-power') as HTMLSelectElement)?.value ?? '',
+            area: (form.elements.namedItem('quote-area') as HTMLSelectElement)?.value ?? '',
+            budget: (form.elements.namedItem('quote-budget') as HTMLSelectElement)?.value ?? '',
+            specs: (form.elements.namedItem('quote-specs') as HTMLTextAreaElement)?.value ?? '',
+            date: (form.elements.namedItem('quote-date') as HTMLInputElement)?.value ?? '',
+            message: (form.elements.namedItem('quote-message') as HTMLTextAreaElement)?.value ?? '',
         };
 
         try {
-            // Firebase Firestore'a kaydet
-            await addDoc(collection(db, 'quote_requests'), {
-                ...formData,
-                locale: locale,
-                createdAt: serverTimestamp(),
-                status: 'new',
-            });
+            // Firebase yalnızca istemcide dinamik yüklenir (SSR hatasını önler)
+            const submitPromise = async () => {
+                const { db } = await import('@/lib/firebase');
+                const { collection, addDoc, serverTimestamp } = await import('firebase/firestore');
 
-            // Firebase Extension "Trigger Email" için mail collection'a ekle
-            await addDoc(collection(db, 'mail'), {
-                to: ['info@reviumtech.com'],
-                message: {
-                    subject: `Yeni Teklif Talebi: ${formData.name} - ${formData.category}`,
-                    html: `
-                        <h2>Yeni Teklif Talebi</h2>
-                        <h3>Kişisel Bilgiler</h3>
-                        <p><strong>Ad Soyad:</strong> ${formData.name}</p>
-                        <p><strong>Email:</strong> ${formData.email}</p>
-                        <p><strong>Telefon:</strong> ${formData.phone}</p>
-                        <p><strong>Firma:</strong> ${formData.company || 'Belirtilmedi'}</p>
-                        
-                        <h3>Proje Bilgileri</h3>
-                        <p><strong>Kategori:</strong> ${formData.category}</p>
-                        <p><strong>Güç İhtiyacı:</strong> ${formData.power}</p>
-                        <p><strong>Kullanım Alanı:</strong> ${formData.area}</p>
-                        <p><strong>Bütçe:</strong> ${formData.budget || 'Belirtilmedi'}</p>
-                        
-                        <h3>Teknik Gereksinimler</h3>
-                        <p><strong>Özel İstekler:</strong> ${formData.specs || 'Belirtilmedi'}</p>
-                        <p><strong>Hedef Tarih:</strong> ${formData.date || 'Belirtilmedi'}</p>
-                        
-                        <h3>Ek Bilgiler</h3>
-                        <p>${formData.message || 'Ek bilgi yok'}</p>
-                        
-                        <hr>
-                        <p><small>Bu talep reviumtech.com teklif formundan gönderildi.</small></p>
-                    `,
-                },
-            });
+                await addDoc(collection(db, 'quote_requests'), {
+                    ...formData,
+                    locale: locale,
+                    createdAt: serverTimestamp(),
+                    status: 'new',
+                });
+
+                await addDoc(collection(db, 'mail'), {
+                    to: ['info@reviumtech.com', 'aslanaysenur063@gmail.com'],
+                    message: {
+                        subject: `Yeni Teklif Talebi: ${formData.name} - ${formData.category}`,
+                        html: `
+                            <h2>Yeni Teklif Talebi</h2>
+                            <h3>Kişisel Bilgiler</h3>
+                            <p><strong>Ad Soyad:</strong> ${formData.name}</p>
+                            <p><strong>Email:</strong> ${formData.email}</p>
+                            <p><strong>Telefon:</strong> ${formData.phone}</p>
+                            <p><strong>Firma:</strong> ${formData.company || 'Belirtilmedi'}</p>
+                            
+                            <h3>Proje Bilgileri</h3>
+                            <p><strong>Kategori:</strong> ${formData.category}</p>
+                            <p><strong>Güç İhtiyacı:</strong> ${formData.power}</p>
+                            <p><strong>Kullanım Alanı:</strong> ${formData.area}</p>
+                            <p><strong>Bütçe:</strong> ${formData.budget || 'Belirtilmedi'}</p>
+                            
+                            <h3>Teknik Gereksinimler</h3>
+                            <p><strong>Özel İstekler:</strong> ${formData.specs || 'Belirtilmedi'}</p>
+                            <p><strong>Hedef Tarih:</strong> ${formData.date || 'Belirtilmedi'}</p>
+                            
+                            <h3>Ek Bilgiler</h3>
+                            <p>${formData.message || 'Ek bilgi yok'}</p>
+                            
+                            <hr>
+                            <p><small>Bu talep reviumtech.com teklif formundan gönderildi.</small></p>
+                        `,
+                    },
+                });
+            };
+
+            await submitPromise();
 
             setSubmitted(true);
         } catch (error) {
             console.error('Submission error:', error);
-            alert('Teklif formunu gönderirken bir hata oluştu. Lütfen tekrar deneyiniz.');
+            alert(`Hata: ${(error as any)?.message || 'Teklif formu gönderilemedi.'}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -145,7 +182,14 @@ export default function QuotePage() {
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
                     <div className="bg-white rounded-3xl shadow-xl shadow-slate-100/80 overflow-hidden border border-slate-200/60">
                         <div className="p-8 sm:p-12 lg:p-16">
-                            <form onSubmit={handleSubmit} className="space-y-10">
+                            <form onSubmit={handleSubmit} noValidate className="space-y-10">
+                                {Object.keys(errors).length > 0 && (
+                                    <div className="rounded-xl bg-red-50 border border-red-200 px-4 py-3 text-red-800 text-sm font-medium" role="alert">
+                                        {locale === 'tr' && 'Zorunlu alanlar eksik. Lütfen kırmızıyla işaretli alanları doldurun.'}
+                                        {locale === 'en' && 'Required fields are missing. Please fill in the fields marked in red.'}
+                                        {locale === 'ar' && 'الحقول المطلوبة ناقصة. يرجى ملء الحقول المشار إليها بالأحمر.'}
+                                    </div>
+                                )}
                                 {/* Personal Information */}
                                 <div className="space-y-6">
                                     <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
@@ -155,50 +199,58 @@ export default function QuotePage() {
                                         <h3 className="text-xl font-bold text-slate-900 tracking-tight">{t('personalInfo')}</h3>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                        <div className="space-y-1.5">
+                                        <div className="space-y-1.5" ref={nameRef}>
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('nameLabel')} <span className="text-red-500">*</span></label>
-                                            <div className="relative">
-                                                <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                                            <div className={cn("flex items-center h-12 rounded-xl border bg-white focus-within:ring-2 transition-all", errors.name ? "border-red-500 ring-2 ring-red-500/20" : "border-slate-200 focus-within:ring-blue-500/10 focus-within:border-blue-500")}>
+                                                <span className="flex items-center justify-center pl-4 text-slate-400 shrink-0" aria-hidden><User className="w-4 h-4" /></span>
                                                 <input
+                                                    name="quote-name"
                                                     type="text"
-                                                    required
                                                     placeholder={t('namePlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className={cn("flex-1 min-w-0 h-full px-4 pr-4 bg-transparent border-0 rounded-xl font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-0")}
+                                                    onChange={() => setErrors((prev) => ({ ...prev, name: '' }))}
                                                 />
                                             </div>
+                                            {errors.name && <p className="text-red-500 text-xs mt-1 ml-1">{errors.name}</p>}
                                         </div>
-                                        <div className="space-y-1.5">
+                                        <div className="space-y-1.5" ref={emailRef}>
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('emailLabel')} <span className="text-red-500">*</span></label>
-                                            <div className="relative">
-                                                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                                            <div className={cn("flex items-center h-12 rounded-xl border bg-white focus-within:ring-2 transition-all", errors.email ? "border-red-500 ring-2 ring-red-500/20" : "border-slate-200 focus-within:ring-blue-500/10 focus-within:border-blue-500")}>
+                                                <span className="flex items-center justify-center pl-4 text-slate-400 shrink-0" aria-hidden><Mail className="w-4 h-4" /></span>
                                                 <input
+                                                    name="quote-email"
                                                     type="email"
-                                                    required
                                                     placeholder={t('emailPlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className={cn("flex-1 min-w-0 h-full px-4 pr-4 bg-transparent border-0 rounded-xl font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-0")}
+                                                    onChange={() => setErrors((prev) => ({ ...prev, email: '' }))}
                                                 />
                                             </div>
+                                            {errors.email && <p className="text-red-500 text-xs mt-1 ml-1">{errors.email}</p>}
                                         </div>
-                                        <div className="space-y-1.5">
+                                        <div className="space-y-1.5" ref={phoneRef}>
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('phoneLabel')} <span className="text-red-500">*</span></label>
-                                            <div className="relative">
-                                                <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                                            <div className={cn("flex items-center h-12 rounded-xl border bg-white focus-within:ring-2 transition-all", errors.phone ? "border-red-500 ring-2 ring-red-500/20" : "border-slate-200 focus-within:ring-blue-500/10 focus-within:border-blue-500")}>
+                                                <span className="flex items-center justify-center pl-4 text-slate-400 shrink-0" aria-hidden><Phone className="w-4 h-4" /></span>
                                                 <input
+                                                    name="quote-phone"
                                                     type="tel"
-                                                    required
                                                     placeholder={t('phonePlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className={cn("flex-1 min-w-0 h-full px-4 pr-4 bg-transparent border-0 rounded-xl font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-0")}
+                                                    dir="ltr"
+                                                    onChange={() => setErrors((prev) => ({ ...prev, phone: '' }))}
                                                 />
                                             </div>
+                                            {errors.phone && <p className="text-red-500 text-xs mt-1 ml-1">{errors.phone}</p>}
                                         </div>
                                         <div className="space-y-1.5">
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('companyLabel')}</label>
-                                            <div className="relative">
-                                                <Building2 className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                                            <div className="flex items-center h-12 rounded-xl border border-slate-200 bg-white focus-within:ring-2 focus-within:ring-blue-500/10 focus-within:border-blue-500 transition-all">
+                                                <span className="flex items-center justify-center pl-4 text-slate-400 shrink-0" aria-hidden><Building2 className="w-4 h-4" /></span>
                                                 <input
+                                                    name="quote-company"
                                                     type="text"
                                                     placeholder={t('companyPlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className="flex-1 min-w-0 h-full px-4 pr-4 bg-transparent border-0 rounded-xl font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-0"
                                                 />
                                             </div>
                                         </div>
@@ -215,12 +267,13 @@ export default function QuotePage() {
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('categoryLabel')} <span className="text-red-500">*</span></label>
-                                            <div className="relative appearance-none">
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('categoryLabel')}</label>
+                                            <div className="relative">
                                                 <Package className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
-                                                    required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    name="quote-category"
+                                                    className="w-full h-12 pl-11 pr-11 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none [&::-ms-expand]:hidden bg-no-repeat bg-[right_1rem_center] bg-[length:1rem_1rem]"
+                                                    style={{ backgroundImage: 'none' }}
                                                 >
                                                     <option value="">{t('categorySelect')}</option>
                                                     <option value="portable">{t('categories.portable')}</option>
@@ -237,12 +290,13 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('powerLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('powerLabel')}</label>
                                             <div className="relative">
                                                 <Zap className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
-                                                    required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    name="quote-power"
+                                                    className="w-full h-12 pl-11 pr-11 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none [&::-ms-expand]:hidden bg-no-repeat bg-[right_1rem_center] bg-[length:1rem_1rem]"
+                                                    style={{ backgroundImage: 'none' }}
                                                 >
                                                     <option value="">{t('powerSelect')}</option>
                                                     <option value="0-5">{locale === 'ar' ? '٠-٥ كيلوواط' : '0-5 kW'}</option>
@@ -257,12 +311,13 @@ export default function QuotePage() {
                                             </div>
                                         </div>
                                         <div className="space-y-1.5">
-                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('areaLabel')} <span className="text-red-500">*</span></label>
+                                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('areaLabel')}</label>
                                             <div className="relative">
-                                                <Layout className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                                                <LayoutIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
-                                                    required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    name="quote-area"
+                                                    className="w-full h-12 pl-11 pr-11 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none [&::-ms-expand]:hidden bg-no-repeat bg-[right_1rem_center] bg-[length:1rem_1rem]"
+                                                    style={{ backgroundImage: 'none' }}
                                                 >
                                                     <option value="">{t('areaSelect')}</option>
                                                     <option value="residential">{locale === 'tr' ? 'Konut' : locale === 'ar' ? 'سكني' : 'Residential'}</option>
@@ -281,12 +336,14 @@ export default function QuotePage() {
                                             <div className="relative">
                                                 <TrendingUp className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    name="quote-budget"
+                                                    className="w-full h-12 pl-11 pr-11 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none [&::-ms-expand]:hidden bg-no-repeat bg-[right_1rem_center] bg-[length:1rem_1rem]"
+                                                    style={{ backgroundImage: 'none' }}
                                                 >
                                                     <option value="">{t('budgetSelect')}</option>
-                                                    <option value="low">₺0 - ₺50.000</option>
-                                                    <option value="mid">₺50.000 - ₺200.000</option>
-                                                    <option value="high">₺200.000+</option>
+                                                    <option value="low">{locale === 'ar' ? '₺٠ - ₺٥٠.٠٠٠' : '₺0 - ₺50.000'}</option>
+                                                    <option value="mid">{locale === 'ar' ? '₺٥٠.٠٠٠ - ₺٢٠٠.٠٠٠' : '₺50.000 - ₺200.000'}</option>
+                                                    <option value="high">{locale === 'ar' ? '₺٢٠٠.٠٠٠+' : '₺200.000+'}</option>
                                                 </select>
                                                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                                                     <ArrowRight className="w-4 h-4 text-slate-400 rotate-90" />
@@ -308,6 +365,7 @@ export default function QuotePage() {
                                         <div className="space-y-1.5">
                                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('specLabel')}</label>
                                             <textarea
+                                                name="quote-specs"
                                                 placeholder={t('specPlaceholder')}
                                                 rows={4}
                                                 className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"
@@ -318,6 +376,7 @@ export default function QuotePage() {
                                             <div className="relative">
                                                 <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                                 <input
+                                                    name="quote-date"
                                                     type="date"
                                                     className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                                 />
@@ -337,6 +396,7 @@ export default function QuotePage() {
                                     <div className="space-y-1.5">
                                         <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">{t('messageLabel')}</label>
                                         <textarea
+                                            name="quote-message"
                                             placeholder={t('messagePlaceholder')}
                                             rows={3}
                                             className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"

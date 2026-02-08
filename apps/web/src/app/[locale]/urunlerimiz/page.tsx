@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, Battery, Truck, Zap, Server, Sun } from 'lucide-react';
 
 interface Props {
@@ -25,15 +24,15 @@ const allProducts = [
     // Cabin Power
     { id: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', category: 'cabinPower', descriptionKey: 'revium-power-cabinet.description' },
     { id: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', category: 'cabinPower', descriptionKey: 'revium-power-layer.description' },
-    { id: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
+    { id: 'revium-gridpack', name: 'Şebeke Paketi', image: '/images/products/gridpack.webp', category: 'cabinPower', descriptionKey: 'revium-gridpack.description' },
 
     // Battery Systems
     { id: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-2-7-kwh-lfp.description' },
     { id: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', category: 'batteryPower', descriptionKey: 'revium-5-4-kwh-lfp.description' },
 
     // Solar Products
-    { id: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', category: 'gesProducts', descriptionKey: 'revium-powerstation-series.description' },
-    { id: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', category: 'gesProducts', descriptionKey: 'revium-solarport.description' },
+    { id: 'ges-power-station', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.png', category: 'gesProducts', descriptionKey: 'ges-power-station.description' },
+    { id: 'solarport-duo', name: 'Solarport', image: '/images/products/solarport-duo.png', category: 'gesProducts', descriptionKey: 'solarport-duo.description' },
 ];
 
 const categories = [
@@ -49,7 +48,7 @@ export default async function ProductsPage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations('products');
-    const tDetails = await getTranslations('productDetails.products');
+    const tDetails = await getTranslations('productDetails');
 
     const heroContent = {
         tr: {
@@ -121,10 +120,11 @@ export default async function ProductsPage({ params }: Props) {
             </section>
 
             {/* Categories & Products */}
-            {categories.map((cat) => {
+            {categories.map((cat, catIndex) => {
                 const catProducts = allProducts.filter(p => p.category === cat.id);
                 if (catProducts.length === 0) return null;
                 const Icon = cat.icon;
+                const productStartIndex = categories.slice(0, catIndex).reduce((acc, c) => acc + allProducts.filter(p => p.category === c.id).length, 0);
 
                 return (
                     <section key={cat.id} id={cat.id} className="py-16 border-b border-slate-200 last:border-0">
@@ -144,21 +144,28 @@ export default async function ProductsPage({ params }: Props) {
                                 </div>
                             </div>
 
-                            {/* Products Grid */}
+                            {/* Products Grid - ilk 4 görsel priority ile mobilde hemen yüklensin */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {catProducts.map((product) => (
+                                {catProducts.map((product, productIndex) => {
+                                    const isAboveFold = (productStartIndex + productIndex) < 4;
+                                    return (
                                     <Link
                                         key={product.id}
                                         href={`/${locale}/urunlerimiz/${product.id}/`}
                                         className="group bg-white rounded-[2rem] p-6 hover:shadow-xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 flex flex-col"
                                     >
-                                        <div className="aspect-[4/3] relative rounded-2xl bg-slate-50 mb-6 overflow-hidden">
-                                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white opacity-50" />
-                                            <Image
+                                        <div className="aspect-[4/3] relative rounded-2xl bg-slate-50 mb-6 overflow-hidden flex items-center justify-center">
+                                            <div className="absolute inset-0 bg-gradient-to-tr from-slate-100 to-white opacity-50 pointer-events-none" />
+                                            {/* disableStaticImages nedeniyle native img: mobilde güvenilir yükleme */}
+                                            <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                fill
-                                                className="object-contain p-6 group-hover:scale-110 transition-transform duration-700 ease-out"
+                                                width={400}
+                                                height={300}
+                                                loading={isAboveFold ? 'eager' : 'lazy'}
+                                                fetchPriority={isAboveFold ? 'high' : 'auto'}
+                                                decoding="async"
+                                                className={`w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 ${product.id === 'revium-2-7-kwh' ? 'p-4 sm:p-6' : product.id === 'revium-2-7-kwh-bag' ? 'p-14 sm:p-16' : 'p-6'}`}
                                             />
                                             <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                                                 <div className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm text-slate-800">
@@ -173,10 +180,18 @@ export default async function ProductsPage({ params }: Props) {
                                                 <span>{t(`${product.category}.title`)}</span>
                                             </div>
                                             <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                                                {tDetails(`${product.id}.name`) || product.name}
+                                                {(() => {
+                                                    const v = tDetails(`${product.id}.title`) || tDetails(`${product.id}.name`);
+                                                    const isKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+                                                    return (v && !isKey(String(v))) ? v : product.name;
+                                                })()}
                                             </h3>
                                             <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-6">
-                                                {tDetails(`${product.id}.description`)}
+                                                {(() => {
+                                                    const v = tDetails(product.descriptionKey) || tDetails(`${product.id}.description`);
+                                                    const isKey = (s: string) => s.startsWith('productDetails.') || /^[a-z0-9-]+\.[a-z]+$/.test(s);
+                                                    return (v && !isKey(String(v))) ? v : '';
+                                                })()}
                                             </p>
 
                                             <div className="flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
@@ -184,7 +199,8 @@ export default async function ProductsPage({ params }: Props) {
                                             </div>
                                         </div>
                                     </Link>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     </section>
