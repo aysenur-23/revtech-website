@@ -46,7 +46,7 @@ export default function ProductCards() {
         {
             key: 'vehiclePower',
             slug: 'vehicle',
-            image: '/images/products/vehicle-power-new.png',
+            image: '/images/products/vehicle-category-new.jpg',
             priority: true,
             defaultTitle: 'Araç Tipi Güç Paketleri',
         },
